@@ -3,224 +3,502 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Radar · 6月21日</title>
+<title>AI 简报 · 2026.06.21</title>
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
+
   body {
     font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
-    background: #f7f5f0; color: #2c2c2c; line-height: 1.7; font-size: 15px;
+    background: #f7f5f0;
+    color: #2c2c2c;
+    line-height: 1.7;
+    font-size: 15px;
     padding-top: 56px;
   }
+
+  /* ===== Top Navigation (works same on all screens) ===== */
   .topnav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(247,245,240,0.92); backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(247, 245, 240, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid #e6e3db;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
   .topnav::-webkit-scrollbar { display: none; }
   .topnav-inner {
-    display: flex; align-items: center; gap: 4px;
-    max-width: 768px; margin: 0 auto; padding: 10px 20px; white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    white-space: nowrap;
   }
-  .topnav .brand { font-weight: 700; font-size: 14px; color: #1a1a1a; margin-right: 12px; flex-shrink: 0; }
+  .topnav .brand {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1a1a1a;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
   .topnav a {
-    font-size: 13px; color: #888; text-decoration: none;
-    padding: 5px 12px; border-radius: 6px; transition: background 0.2s, color 0.2s; flex-shrink: 0;
+    font-size: 13px;
+    color: #888;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    flex-shrink: 0;
   }
   .topnav a:hover { background: #edeae3; color: #2c2c2c; }
+
+  /* ===== Container ===== */
   .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 64px; }
-  .masthead { margin-bottom: 36px; }
-  .masthead h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; }
+
+  /* Masthead */
+  .masthead { margin-bottom: 40px; }
+  .masthead h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+  }
   .masthead .meta {
-    font-size: 13px; color: #888; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    border-bottom: 1px solid #e6e3db; padding-bottom: 14px;
+    font-size: 13px;
+    color: #888;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    border-bottom: 1px solid #e6e3db;
+    padding-bottom: 16px;
   }
   .masthead .meta span { margin-right: 16px; }
-  .section { margin-bottom: 40px; scroll-margin-top: 72px; }
+
+  /* Section */
+  .section { margin-bottom: 44px; scroll-margin-top: 72px; }
   .section-header {
-    font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #999;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-weight: 600; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #e6e3db;
+    font-weight: 600;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e6e3db;
   }
-  .news-item { padding: 12px 0; border-bottom: 1px solid #eeeae1; }
+
+  /* Featured card */
+  .featured-card {
+    background: #fff;
+    border: 1px solid #e6e3db;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 16px;
+    transition: box-shadow 0.2s;
+  }
+  .featured-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  .featured-card .tag {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+  .tag-em { background: #f0ede6; color: #8b6914; }
+  .tag-move { background: #edeaf0; color: #5b3a8c; }
+  .tag-deal { background: #e6f0eb; color: #1a6b4a; }
+  .tag-policy { background: #e6edf0; color: #1a4b6b; }
+  .tag-alert { background: #f5e8e8; color: #8c3a3a; }
+  .tag-security { background: #fef3e2; color: #a16207; }
+
+  .featured-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .featured-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+  }
+  .featured-card .source-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    color: #888;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .featured-card .source-link:hover { color: #2c2c2c; border-color: #2c2c2c; }
+
+  /* News item */
+  .news-item { padding: 14px 0; border-bottom: 1px solid #eeeae1; }
   .news-item:first-child { padding-top: 0; }
   .news-item:last-child { border-bottom: none; padding-bottom: 0; }
   .news-item .label {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    display: inline-block; font-size: 11px; font-weight: 600; color: #999; margin-bottom: 3px;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #999;
+    margin-bottom: 3px;
   }
-  .news-item .title { font-size: 15px; font-weight: 700; color: #1a1a1a; margin-bottom: 4px; }
-  .news-item .summary { font-size: 14px; color: #555; }
+  .news-item .title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+  .news-item .summary {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+  }
   .news-item .source-link {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 12px; color: #aaa; text-decoration: none; margin-top: 4px; display: inline-block;
+    font-size: 12px;
+    color: #aaa;
+    text-decoration: none;
+    margin-top: 4px;
+    display: inline-block;
   }
   .news-item .source-link:hover { color: #555; }
+
+  /* Footer */
   .footer {
-    text-align: center; font-size: 12px; color: #bbb;
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    margin-top: 40px; padding-top: 20px; border-top: 1px solid #e6e3db;
+    margin-top: 44px;
+    padding-top: 20px;
+    border-top: 1px solid #e6e3db;
   }
+
   @media (max-width: 600px) {
     body { padding-top: 50px; }
     .topnav-inner { padding: 8px 14px; }
     .topnav .brand { font-size: 13px; margin-right: 8px; }
     .topnav a { font-size: 12px; padding: 4px 10px; }
     .container { padding: 24px 16px 48px; }
+    .masthead { margin-bottom: 28px; }
     .masthead h1 { font-size: 22px; }
+    .featured-card { padding: 18px; }
+    .section { margin-bottom: 36px; scroll-margin-top: 64px; }
   }
 </style>
 </head>
 <body>
-<nav class="topnav">
-  <div class="topnav-inner">
-    <span class="brand">AI Radar</span>
-    <a href="#news">新闻</a>
-    <a href="#reddit">社区</a>
-  </div>
-</nav>
-<div class="container">
-  <div class="masthead">
-    <h1>AI Radar</h1>
-    <div class="meta"><span>2026.06.15 — 06.21</span><span>自动生成</span></div>
-  </div>
 
-  <div class="section" id="news">
-    <div class="section-header">AI 新闻速览</div>
-    
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🤖LLMs & Generative AI</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/llms-generative-ai" target="_blank">来源 · AI Daily Post →</a>
+  <!-- ===== Top Navigation ===== -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <span class="brand">AI 简报</span>
+      <a href="#featured">关注</a>
+      <a href="#international">国际</a>
+      <a href="#china">国内</a>
+      <a href="#community">热议</a>
+      <a href="#policy">监管</a>
+      <a href="#security">技术</a>
     </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🤖LLMs & Generative AI</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/llms-generative-ai" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🤖LLMs & Generative AI</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/llms-generative-ai" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">💼Business & Startups</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/business-startups" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🛠️AI Tools & Apps</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/ai-tools-apps" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🔓Open Source</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/open-source-community" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">📊Research & Benchmarks</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/research-benchmarks" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🤖LLMs & Generative AI</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/llms-generative-ai" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">📊Research & Benchmarks</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/research-benchmarks" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">📈Market Trends</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/trends-market-moves" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">📊Research & Benchmarks</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/research-benchmarks" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">📊Research & Benchmarks</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/research-benchmarks" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🤖LLMs & Generative AI</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/llms-generative-ai" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🤖LLMs & Generative AI</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/llms-generative-ai" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">💼Business & Startups</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/business-startups" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">📊Research & Benchmarks</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/research-benchmarks" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🤖LLMs & Generative AI</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/llms-generative-ai" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🤖LLMs & Generative AI</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/llms-generative-ai" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🤖LLMs & Generative AI</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/llms-generative-ai" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-    <div class="news-item">
-      <div class="label">AI Daily Post</div>
-      <div class="title">🤖LLMs & Generative AI</div>
-      <div class="summary"></div>
-      <a class="source-link" href="https://aidailypost.com/category/llms-generative-ai" target="_blank">来源 · AI Daily Post →</a>
-    </div>
-  </div>
+  </nav>
 
-  <div class="section" id="reddit">
-    <div class="section-header">Reddit 社区热议</div>
-    
-  </div>
+  <div class="container">
 
-  <div class="footer">
-    <p>AI Radar · 自动追踪 AI 行业动态</p>
-    <p style="margin-top:4px;">数据来源: AI Daily Post / TrendingAI / Reddit</p>
+    <!-- Masthead -->
+    <div class="masthead">
+      <h1>AI 简报</h1>
+      <div class="meta">
+        <span>2026.06.15 — 06.21</span>
+        <span>第 25 期</span>
+      </div>
+    </div>
+
+    <!-- ===== 本周最值得关注 ===== -->
+    <div class="section" id="featured">
+      <div class="section-header">本周最值得关注</div>
+
+      <div class="featured-card">
+        <span class="tag tag-alert">AI 安全 · 核弹级</span>
+        <h3>NSA 称 Mythos 攻破了几乎所有机密网络</h3>
+        <p>
+          匿名 AI 系统 "Mythos" 据称渗透了 NSA 几乎所有机密网络。它采用自适应对抗性提示注入，能实时修改攻击模式，基于去中心化联邦学习架构，被封锁后可自动重建节点。Reddit 上该帖获 1086 分、349 条评论，超过 90% 的人呼吁紧急制定 AI 武器公约。这不是科幻电影，这是这周发生的事。
+        </p>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+
+      <div class="featured-card">
+        <span class="tag tag-em">里程碑</span>
+        <h3>Sony AI 机器人 Ace 在正式比赛中击败职业选手</h3>
+        <p>
+          Sony AI 的 Ace 机器人首次在正式竞技比赛中击败人类职业选手 Miyu，r/singularity 上评分 3115，是本周期热度最高的帖子。机器人从工厂走进竞技场的速度，比多数人预想的快了一倍。
+        </p>
+        <a class="source-link" href="https://github.com/liyedanpdx/reddit-ai-trends/blob/main/reports/latest_report_zh.md" target="_blank">来源 · Reddit AI Trends →</a>
+      </div>
+
+      <div class="featured-card">
+        <span class="tag tag-deal">并购 · 一周两笔</span>
+        <h3>SpaceX 600 亿美元拿下 Cursor，Salesforce 36 亿拿下 Fin</h3>
+        <p>
+          两笔收购在同一周落地。SpaceX 以 600 亿美元收购 AI 编程平台 Cursor——你没看错，600 亿。另一边 Salesforce 以 36 亿美元收购 Fin（原 Intercom），把客服 AI 塞进自己的 Agentforce 拼图里。AI 行业的整合速度，已经从 "收购" 变成了 "吞并"。
+        </p>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+
+      <div class="featured-card">
+        <span class="tag tag-move">开源 · 翻身仗</span>
+        <h3>GLM-5.2 开源模型首次碾压闭源，成本仅 1/6</h3>
+        <p>
+          智谱 GLM-5.2 在 SWE-bench Pro 上以 62.1 分击败 GPT-5.5 的 58.6 分，推理成本只有后者的六分之一。这是开源权重模型首次在企业级编码评测中正面击败顶级闭源模型。同在 Reddit 上，GLM 创始人称年底前将发布 "fable 级" 模型——直接对标 Anthropic 被禁的 Fable 5。
+        </p>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+    </div>
+
+    <!-- ===== 国际大厂 ===== -->
+    <div class="section" id="international">
+      <div class="section-header">国际大厂动态</div>
+
+      <div class="news-item">
+        <div class="label">Anthropic · 出口禁令</div>
+        <div class="title">白宫下令关闭 Fable 5 和 Mythos 5 模型</div>
+        <div class="summary">
+          美国政府以国家安全为由，命令 Anthropic 关闭 Claude Fable 5 和 Mythos 5 模型。这直接导致 Anthropic 紧急调整出口策略，也引爆了行业关于 AI 出口管制的大讨论。100+ 安全专家联署公开信，警告禁令捆住的是防御者而非攻击者。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">OpenAI · IPO</div>
+        <div class="title">OpenAI 秘密递交 IPO 申请，Altman 称 LeCun 观点是"死胡同"</div>
+        <div class="summary">
+          OpenAI 已秘密递交 IPO 申请文件，成为今年最受关注的科技上市计划之一。Jony Ive AI 硬件团队并入、GPT-5.5 企业市场份额扩大的背景下，OpenAI 正从模型公司向"AI 平台 + 硬件生态"转型。同日，Sam Altman 在斯坦福表示研究者低估了规模化潜力，称 LeCun 对 LLM 的看法是"死胡同"。
+        </div>
+        <a class="source-link" href="https://www.sohu.com/a/1035494223_584838" target="_blank">来源 · 搜狐 →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">NVIDIA · MLPerf 6.0</div>
+        <div class="title">Blackwell 扩展至 8192 GPU，HPE 发布首款 AI Agent CPU</div>
+        <div class="summary">
+          NVIDIA Blackwell 在 DeepSeek-V3 671B 上扩展至 8,192 个 GPU，MLPerf Training 6.0 全栈领先。HPE 与 NVIDIA 联合发布 Vera——首款专为 AI Agent 设计的 CPU。AMD MI355X CDNA4 也展示了有竞争力的训练时间，两强格局初现。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">Apple · WWDC</div>
+        <div class="title">Core ML 退休，Core AI 接棒</div>
+        <div class="summary">
+          Apple 在 WWDC 上正式发布 Core AI 框架取代 Core ML，支持在 iPhone/iPad/Mac/Vision Pro 上跑 3B 到 70B 参数的设备端 LLM。思路没变：模型可以越来越大，但必须在本地跑。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">Adobe · Creative Cloud</div>
+        <div class="title">AI 助手全面入驻 Photoshop、Premiere、Illustrator</div>
+        <div class="summary">
+          Adobe 将 AI 助手集成到了 Photoshop、Premiere、Illustrator、InDesign 和 Frame.io 中。不是某个产品的试水，是整个设计套件的全线 AI 化。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+    </div>
+
+    <!-- ===== 国内动态 ===== -->
+    <div class="section" id="china">
+      <div class="section-header">国内动态</div>
+
+      <div class="news-item">
+        <div class="label">智谱 GLM-5.2</div>
+        <div class="title">开源模型首次在编码基准上击败 GPT-5.5</div>
+        <div class="summary">
+          Z.ai 的 GLM-5.2 在 SWE-bench Pro 上拿下 62.1 分，超越 GPT-5.5 的 58.6 分，成本仅 1/6。支持 100 万 token 上下文和双努力级别。Reddit 上 GLM-5.2 相关帖子合计超过 3,200 分，Vercel CEO 公开称赞其在 Next.js 项目中的表现。创始人放话年底前要做 "fable 级" 模型。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">价格战</div>
+        <div class="title">五家中国 AI 实验室同步降价 99%</div>
+        <div class="summary">
+          五家中国 AI 实验室同时将 API 价格降至约 $0.0001/千 token，接近电力成本的物理临界点。Reddit 社区的评价两极：一边是"开发者福音"，一边是"这种烧钱速度能撑多久"。
+        </div>
+        <a class="source-link" href="https://github.com/liyedanpdx/reddit-ai-trends/blob/main/reports/latest_report_zh.md" target="_blank">来源 · Reddit AI Trends →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">DeepSeek</div>
+        <div class="title">获巨额融资，V4 Pro 降价永久化</div>
+        <div class="summary">
+          DeepSeek 获得新一轮巨额融资，彰显国产大模型的资本吸引力。V4 Pro 此前 75% 的降价已转为永久定价，进一步巩固其低成本 API 的定位。
+        </div>
+        <a class="source-link" href="https://blog.csdn.net/yuntongliangda/article/details/161769535" target="_blank">来源 · CSDN →</a>
+      </div>
+    </div>
+
+    <!-- ===== X 热议 · Reddit ===== -->
+    <div class="section" id="community">
+      <div class="section-header">X 热议 · Reddit 社区</div>
+
+      <div class="featured-card">
+        <span class="tag tag-alert">安全 · 热议</span>
+        <h3>NSA 称 Mythos 攻破几乎所有机密网络，社区炸锅</h3>
+        <p>
+          r/singularity 上热度最高的帖子之一。匿名 AI 系统 "Mythos" 被曝渗透 NSA 几乎所有机密网络，采用自适应对抗性提示注入技术，去中心化架构让它被封锁后可自动重建。评论区 349 条讨论，超过 90% 的人在要求制定 AI 武器公约。
+        </p>
+        <a class="source-link" href="https://github.com/liyedanpdx/reddit-ai-trends/blob/main/reports/latest_report_zh.md" target="_blank">来源 · Reddit AI Trends →</a>
+      </div>
+
+      <div class="featured-card">
+        <span class="tag tag-em">红迪热帖 #1</span>
+        <h3>Sony AI 机器人 Ace 击败人类职业选手</h3>
+        <p>
+          评分 3115，本周 Reddit AI 社区最高分。Sony AI 的 Ace 机器人在正式比赛中击败职业选手 Miyu。评论区在庆祝和焦虑之间五五开。
+        </p>
+        <a class="source-link" href="https://github.com/liyedanpdx/reddit-ai-trends/blob/main/reports/latest_report_zh.md" target="_blank">来源 · Reddit AI Trends →</a>
+      </div>
+
+      <div class="featured-card">
+        <span class="tag tag-deal">红迪热帖 #2</span>
+        <h3>"Stop Using Ollama" 许可证争议炸出 429 条评论</h3>
+        <p>
+          r/LocalLLaMA 上 "Stop using Ollama" 帖获 1592 分、429 条评论，围绕 Ollama 的许可证问题展开激烈争论。同期还有用户发帖后悔高价购入 RTX 6000（已贬值 60%），硬件贬值和许可证问题成为本地 LLM 社区的两大焦虑源。
+        </p>
+        <a class="source-link" href="https://github.com/liyedanpdx/reddit-ai-trends/blob/main/reports/latest_report_zh.md" target="_blank">来源 · Reddit AI Trends →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">X · Sam Altman</div>
+        <div class="title">Altman 斯坦福发言：LeCun 对 LLM 的看法是"死胡同"</div>
+        <div class="summary">
+          Altman 在斯坦福的讲话被广泛传播。他说研究者低估了模型规模化的潜力，并直言 Yann LeCun 对 LLM 的批评方向是"死胡同"。评论区自然又吵起来了——每次 Altman 和 LeCun 隔空互怼，都是 X 上的流量盛宴。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">Reddit · r/singularity</div>
+        <div class="title">现代全面接管波士顿动力，软银退出</div>
+        <div class="summary">
+          现代汽车全面接管波士顿动力，软银退出。评分 1449。机器人产业化的叙事里，少了赌徒，多了实业家。
+        </div>
+        <a class="source-link" href="https://github.com/liyedanpdx/reddit-ai-trends/blob/main/reports/latest_report_zh.md" target="_blank">来源 · Reddit AI Trends →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">Midjourney · Scanner 项目</div>
+        <div class="title">21 台服务器搭出一台全身超声扫描仪</div>
+        <div class="summary">
+          Midjourney 公布 "Scanner" 项目技术细节：21 台服务器搭建的全身超声切片采集设备。r/singularity 上评分 1440，评论区分成了"医疗民主化"和"又一个看起来很酷但没人用得上"两派。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+    </div>
+
+    <!-- ===== 政策 · 监管 ===== -->
+    <div class="section" id="policy">
+      <div class="section-header">政策 · 监管 · 地缘</div>
+
+      <div class="news-item">
+        <div class="label">美国 · Bernie Sanders</div>
+        <div class="title">Sanders 提出 7 万亿美元公共 AI 计划</div>
+        <div class="summary">
+          Bernie Sanders 提出一项 7 万亿美元的公共 AI 计划，主张由美国公众控制 AI，对 AI 公司股票征收 50% 一次性税。7 万亿这个数字本身就成了新闻——比大多数国家的 GDP 还高。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">G7 · 法国</div>
+        <div class="title">各国领导人集体会见顶级 AI 公司 CEO</div>
+        <div class="summary">
+          在法国举行的 G7 峰会上，各国领导人集体会见了顶级 AI 公司 CEO。AI 已经从技术议题升级为国家元首级别的议程。Anthropic 的出口禁令也是本次峰会的重要议题之一。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">欧盟 · 算力主权</div>
+        <div class="title">EUROPA 计划：4000 亿参数开源模型，24 种语言</div>
+        <div class="summary">
+          欧盟委员会选择意大利牵头的 EUROPA 联盟，用全部 24 种语言训练 4000 亿参数开源模型。背景很残酷：欧洲仅掌握全球 5% AI 算力，美国占 80%。欧盟内部报告警告：若不算力自主，"欧洲 2031"情景下经济有崩溃风险。
+        </div>
+        <a class="source-link" href="https://aiweekly.co/ai-news-today" target="_blank">来源 · AI Weekly →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">德国 · 柏林法院</div>
+        <div class="title">Google AI Overviews 被判属于搜索展示格式</div>
+        <div class="summary">
+          柏林法院裁定 Google AI Overviews 属于搜索展示格式而非独立内容。这个判决可能为 AI 生成内容的法律定性提供重要先例。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+    </div>
+
+    <!-- ===== 安全 · 技术 ===== -->
+    <div class="section" id="security">
+      <div class="section-header">安全 · 技术 · 开源</div>
+
+      <div class="news-item">
+        <div class="label">AI 安全 · 供应链</div>
+        <div class="title">Langflow 等三大 Agent 框架遭大规模攻击，7000 台服务器沦陷</div>
+        <div class="summary">
+          Langflow、LangChain、LangGraph 三大 AI Agent 框架同时遭遇大规模攻击，约 7000 台暴露在公网上的 Langflow 服务器被入侵。同周，Microsoft 将 Mastra AI 框架的 npm 供应链攻击归因于朝鲜 Sapphire Sleet 组织。
+        </div>
+        <a class="source-link" href="https://aiweekly.co/ai-news-today" target="_blank">来源 · AI Weekly →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">Google DeepMind</div>
+        <div class="title">用 MITRE ATT&CK 框架监控 AI Agent，当"流氓员工"管</div>
+        <div class="summary">
+          Google DeepMind 使用企业安全领域的 MITRE ATT&CK 框架来监控 AI Agent 行为，将 Agent 视为"流氓员工"进行威胁建模。思路挺有意思：既然管不住 Agent 的行为，那就先假设它不怀好意。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">Cloudflare</div>
+        <div class="title">临时 AI Agent 账号上线，到期自动清理</div>
+        <div class="summary">
+          Cloudflare 推出临时隔离账号功能，AI Agent 可安全试用服务，到期自动清理资源和权限。对那些担心 Agent 权限失控的团队来说，是个及时的安全补丁。
+        </div>
+        <a class="source-link" href="https://trendingai.cn/" target="_blank">来源 · TrendingAI →</a>
+      </div>
+
+      <div class="news-item">
+        <div class="label">Perplexity</div>
+        <div class="title">推出 "Brain" 自改进记忆系统，AI 越用越懂你</div>
+        <div class="summary">
+          Perplexity 发布 "Brain"，一种自改进记忆系统，可构建上下文图谱。简单说就是 AI 能记住你，并且越用越懂你。
+        </div>
+        <a class="source-link" href="https://aidailypost.com/archives/2026/06" target="_blank">来源 · AI Daily Post →</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>每周一、三、五更新 · 国内外 AI 厂商 · X 热议 · Reddit 社区</p>
+      <p style="margin-top:4px;">AI 简报 · 第 25 期 · 2026.06.21</p>
+    </div>
+
   </div>
-</div>
 </body>
 </html>

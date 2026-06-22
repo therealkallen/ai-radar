@@ -37,35 +37,30 @@
     font-size: 13px; color: #888; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     border-bottom: 1px solid #e6e3db; padding: 6px 0 14px; margin-top: 2px;
   }
-  .masthead .meta span { margin-right: 16px; }
+  .meta span { margin-right: 16px; }
   .section { margin-bottom: 40px; scroll-margin-top: 72px; }
   .section-header {
     font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #999;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 600; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #e6e3db;
   }
-  .featured-card {
+  .card {
     background: #fff; border: 1px solid #e6e3db; border-radius: 8px;
-    padding: 24px; margin-bottom: 16px; transition: box-shadow 0.2s;
+    padding: 24px; margin-bottom: 16px;
   }
-  .featured-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
-  .featured-card .tag {
+  .card .tag {
     display: inline-block; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 3px; margin-bottom: 8px;
+    background: #f0ede6; color: #555;
   }
-  .tag-deal { background: #e6f0eb; color: #1a6b4a; }
-  .tag-policy { background: #e6edf0; color: #1a4b6b; }
-  .tag-move { background: #edeaf0; color: #5b3a8c; }
-  .tag-alert { background: #f5e8e8; color: #8c3a3a; }
-  .tag-em { background: #f0ede6; color: #8b6914; }
-  .featured-card h3 { font-size: 17px; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; line-height: 1.4; }
-  .featured-card p { font-size: 14px; color: #555; line-height: 1.7; }
-  .featured-card .source-link {
+  .card h3 { font-size: 17px; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; line-height: 1.4; }
+  .card p { font-size: 14px; color: #555; line-height: 1.7; }
+  .card .source-link {
     display: inline-block; margin-top: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-size: 12px; color: #888; text-decoration: none; border-bottom: 1px solid #ddd;
   }
-  .featured-card .source-link:hover { color: #2c2c2c; border-color: #2c2c2c; }
+  .card .source-link:hover { color: #2c2c2c; border-color: #2c2c2c; }
   .news-item { padding: 14px 0; border-bottom: 1px solid #eeeae1; }
   .news-item:first-child { padding-top: 0; }
   .news-item:last-child { border-bottom: none; padding-bottom: 0; }
@@ -92,7 +87,7 @@
     .topnav a { font-size: 12px; padding: 4px 10px; }
     .container { padding: 24px 16px 48px; }
     .masthead h1 { font-size: 22px; }
-    .featured-card { padding: 18px; }
+    .card { padding: 18px; }
   }
 </style>
 </head>
@@ -100,221 +95,209 @@
 <nav class="topnav">
   <div class="topnav-inner">
     <span class="brand">AI Radar</span>
-    <a href="#featured">关注</a>
-    <a href="#international">国际</a>
-    <a href="#china">国内</a>
-    <a href="#policy">政策</a>
-    <a href="#tech">技术</a>
+    <a href="#picks">Radar Picks</a>
+    <a href="#models">模型与技术</a>
+    <a href="#enterprise">企业应用</a>
+    <a href="#china">国内动态</a>
+    <a href="#international">国际动态</a>
+    <a href="#policy">政策与监管</a>
+    <a href="#community">社区观察</a>
   </div>
 </nav>
+
 <div class="container">
   <div class="masthead">
     <h1>AI Radar</h1>
-    <div class="meta"><span>2026.06.20 — 06.22</span><span>第 1 期</span></div>
+    <div class="meta"><span>2026.06.19 — 06.22</span><span>第 1 期</span></div>
   </div>
 
-  <!-- 本周最值得关注 -->
-  <div class="section" id="featured">
-    <div class="section-header">本周最值得关注</div>
+  <!-- Radar Picks -->
+  <div class="section" id="picks">
+    <div class="section-header">Radar Picks</div>
 
-    <div class="featured-card">
-      <span class="tag tag-deal">IPO · 万亿</span>
-      <h3>SpaceX 完成 1.77 万亿美元 IPO，Musk 成全球首位万亿富翁</h3>
+    <div class="card">
+      <span class="tag">企业应用</span>
+      <h3>三星在全球范围内部署 ChatGPT Enterprise 与 Codex</h3>
       <p>
-        6月12日上市的 SpaceX 正式完成 1.77 万亿美元 IPO，Elon Musk 成为人类历史上第一位万亿富翁。SpaceX 纳入主要股指后，数百万美国人的 401(k) 退休计划间接绑定了这家公司，引发了对市场稳定性和经济不平等的广泛讨论。同场，Musk 表示 AI 和机器人将创造极大富足，"钱将变得无关紧要"。
+        三星电子宣布向韩国全体员工及全球 Device eXperience 事业部部署 ChatGPT Enterprise 和 Codex，这是 OpenAI 迄今规模最大的企业部署之一。三星计划将 AI 用于研发、制造、营销、软件开发等环节。Codex 在韩国的周活用户自 2 月以来增长近 800%，已有超过 500 万人每周使用。
       </p>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-20" target="_blank">来源 · aitoolly →</a>
+      <a class="source-link" href="https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/" target="_blank">来源 · OpenAI →</a>
     </div>
 
-    <div class="featured-card">
-      <span class="tag tag-policy">监管 · 先例</span>
-      <h3>挪威全面禁止小学使用 AI 工具</h3>
+    <div class="card">
+      <span class="tag">政策</span>
+      <h3>挪威宣布小学阶段近乎全面禁用生成式 AI</h3>
       <p>
-        挪威政府宣布对小学阶段实施近乎全面的 AI 禁令，覆盖生成式和分析式 AI 工具。理由很直接：担心 AI 影响儿童的基础学习过程和数字福祉。在欧洲各国纷纷出台 AI 监管的大背景下，挪威这一步走得最远也最激进。
+        挪威首相 Støre 于 6 月 19 日宣布，自 2026 年 8 月新学年起，对小学（6-13 岁）实施近乎全面的生成式 AI 禁令，14-16 岁需教师督导使用，17-19 岁应学习适当使用。这是全球主要国家中迄今最严格的 AI 教育禁令之一。
       </p>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-20" target="_blank">来源 · aitoolly →</a>
+      <a class="source-link" href="https://www.reuters.com/world/europe/norway-imposes-near-ban-ai-elementary-school-2026-06-19/" target="_blank">来源 · Reuters →</a>
     </div>
 
-    <div class="featured-card">
-      <span class="tag tag-move">开源 · 激流</span>
-      <h3>美团 LongCat 系列密集开源：多模态、TTS、世界模型评估</h3>
+    <div class="card">
+      <span class="tag">Agent</span>
+      <h3>Google DeepMind 发布 AI Agent 安全框架</h3>
       <p>
-        美团 LongCat 团队在周末一口气开源了多个项目：WBench（交互式视频世界模型评估）、LongCat-Next（原生多模态）、LongCat-AudioDiT（零样本 TTS 音色克隆）等。开源密度之高，在周末的 GitHub Trending 上几乎刷屏。
+        DeepMind 近期发布多项 Agent 安全研究成果，包括"Securing the future of AI agents"和多 Agent 安全研究投资计划。团队提出了系统性的 AI Agent 安全治理方案，重点关注多 Agent 环境下的对抗风险。
       </p>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-21" target="_blank">来源 · aitoolly →</a>
+      <a class="source-link" href="https://deepmind.google/blog/securing-the-future-of-ai-agents/" target="_blank">来源 · Google DeepMind →</a>
     </div>
 
-    <div class="featured-card">
-      <span class="tag tag-alert">预测 · 争论</span>
-      <h3>Altman 称 AI 2030 年超越人类智能，对手认为更早</h3>
+    <div class="card">
+      <span class="tag">开源</span>
+      <h3>headroom 开源项目爆火：LLM 输入压缩 60-95%，2.6k stars/日</h3>
       <p>
-        Sam Altman 在最新采访中表示 AI 将在 2030 年前超越人类智能。他的 Billionaire 对手们则认为这个时间点还会更早。SpaceX IPO 后，Musk 在同一周放话：AI 和机器人将创造无限供给，钱将变得无关紧要。
+        GitHub 项目 headroom 本周迅速走红，单日新增 2,600+ stars，累计突破 44k stars。它对 LLM 输入（工具输出、日志、RAG chunks）进行压缩，Token 消耗减少 60-95% 且输出不受影响。提供标准库、Agent 代理和 MCP 服务器三种集成方式。
       </p>
-      <a class="source-link" href="https://fortune.com/article/sam-altman-ai-superintelligence-stargate-chatgpt-human-intelligence-2030/" target="_blank">来源 · Fortune →</a>
-    </div>
-  </div>
-
-  <!-- 国际大厂 -->
-  <div class="section" id="international">
-    <div class="section-header">国际大厂动态</div>
-
-    <div class="news-item">
-      <div class="label">Anthropic · 安全</div>
-      <div class="title">推出 Mythos 网络安全模型，出口管制争议再起</div>
-      <div class="summary">
-        Anthropic 发布 Mythos，一款专门针对网络安全的 AI 模型。分析指出，过去 30 年网络安全软件出口管制屡屡失败，预计 Mythos 的监管将面临同样困境。这是 Anthropic 在 Fable 5 被白宫叫停后的又一次安全技术发布。
-      </div>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-20" target="_blank">来源 · aitoolly →</a>
-    </div>
-
-    <div class="news-item">
-      <div class="label">现代 · 波士顿动力</div>
-      <div class="title">3.25 亿美元拿下波士顿动力全资控股，2028 年部署人形机器人</div>
-      <div class="summary">
-        现代以 3.25 亿美元收购软银持有的波士顿动力剩余 9.65% 股份，完成全资控股。计划 2028 年在乔治亚州电动车工厂部署电动 Atlas 人形机器人。机器人正从实验室走向工厂车间。
-      </div>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-20" target="_blank">来源 · aitoolly →</a>
-    </div>
-
-    <div class="news-item">
-      <div class="label">Amazon</div>
-      <div class="title">Prime Day 提前一个月，AI 推动电商节奏变化</div>
-      <div class="summary">
-        Amazon 宣布将 Prime Day 提前整整一个月。Bloomberg 分析认为，AI 驱动的供应链优化和需求预测能力让 Amazon 可以更灵活地安排大促节奏，不再固守传统时间表。
-      </div>
-      <a class="source-link" href="https://thirdruntime.com/go/27476/amazon-advances-prime-day-by-one-month-amid-ai-shift" target="_blank">来源 · Bloomberg →</a>
-    </div>
-
-    <div class="news-item">
-      <div class="label">Apple · iOS 27</div>
-      <div class="title">Beyond Siri：iOS 27 实用的 AI 功能曝光</div>
-      <div class="summary">
-        TechCrunch 披露了即将在 iOS 27 中落地的一系列 AI 功能。不再只是 Siri 升级，而是系统级的 AI 能力嵌入，从照片、信息到健康应用都有涉及。
-      </div>
-      <a class="source-link" href="https://thirdruntime.com/go/27478/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27" target="_blank">来源 · TechCrunch →</a>
-    </div>
-
-    <div class="news-item">
-      <div class="label">Dream · 主权 AI</div>
-      <div class="title">以色列 AI 公司 Dream 融资 2.6 亿美元，主打"主权 AI"</div>
-      <div class="summary">
-        Dream 完成 2.6 亿美元融资，定位"主权 AI"——即每个国家拥有和控制自己的 AI 基础设施。在地缘政治紧张加剧的背景下，这个叙事越来越有市场。
-      </div>
-      <a class="source-link" href="https://thirdruntime.com/go/27474/dream-raised-260m-for-sovereign-ai" target="_blank">来源 · Tech Time →</a>
+      <a class="source-link" href="https://github.com/chopratejas/headroom" target="_blank">来源 · GitHub →</a>
     </div>
   </div>
 
-  <!-- 国内动态 -->
+  <!-- 模型与技术进展 -->
+  <div class="section" id="models">
+    <div class="section-header">模型与技术进展</div>
+
+    <div class="news-item">
+      <div class="label">Gemma 4 12B · Google</div>
+      <div class="title">Google 发布 Gemma 4 12B：统一免编码器多模态模型</div>
+      <div class="summary">Google 发布 Gemma 4 12B，这是首个省略传统编码器的统一多模态模型，在图像理解、文本生成等任务上表现高效，进一步降低了多模态应用的门槛。</div>
+      <a class="source-link" href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/" target="_blank">来源 · Google →</a>
+    </div>
+
+    <div class="news-item">
+      <div class="label">DiffusionGemma · Google</div>
+      <div class="title">DiffusionGemma：4 倍加速文本生成</div>
+      <div class="summary">DeepMind 发布 DiffusionGemma，通过扩散模型大幅提升文本生成速度，达到传统方法的 4 倍，同时保持生成质量。该技术可能改变 LLM 推理成本的计算方式。</div>
+      <a class="source-link" href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/" target="_blank">来源 · Google →</a>
+    </div>
+
+    <div class="news-item">
+      <div class="label">OpenAI · 科研</div>
+      <div class="title">OpenAI 发布 LifeSciBench：生命科学基准测试</div>
+      <div class="summary">OpenAI 推出 LifeSciBench，用于评估 AI 模型在药物化学、罕见病诊断等生命科学任务中的表现。同周，OpenAI 还展示了 AI 化学家自动改进药物化学反应的研究成果。</div>
+      <a class="source-link" href="https://openai.com/index/introducing-life-sci-bench/" target="_blank">来源 · OpenAI →</a>
+    </div>
+  </div>
+
+  <!-- 企业应用与工具观察 -->
+  <div class="section" id="enterprise">
+    <div class="section-header">企业应用与工具观察</div>
+
+    <div class="news-item">
+      <div class="label">OpenAI · 企业</div>
+      <div class="title">ChatGPT Enterprise 新增使用分析与消费控制</div>
+      <div class="summary">OpenAI 为企业用户推出新的使用分析面板和更新的消费控制功能，企业管理员可以更精细地监控和管控 AI 使用量，对企业级 AI 治理有直接帮助。</div>
+      <a class="source-link" href="https://openai.com/index/chatgpt-enterprise-spend-controls/" target="_blank">来源 · OpenAI →</a>
+    </div>
+
+    <div class="news-item">
+      <div class="label">OpenAI · 健康</div>
+      <div class="title">ChatGPT 增强健康情报功能</div>
+      <div class="summary">OpenAI 为 ChatGPT 改进了健康信息分析能力，提升了对医学问题的理解和回答准确性。同时发布的 AI 辅助罕见儿童疾病诊断研究展示了该技术的临床应用潜力。</div>
+      <a class="source-link" href="https://openai.com/index/improving-health-intelligence-in-chatgpt/" target="_blank">来源 · OpenAI →</a>
+    </div>
+
+    <div class="news-item">
+      <div class="label">OpenMontage · 开源</div>
+      <div class="title">OpenMontage：首个开源 Agentic 视频制作系统</div>
+      <div class="summary">GitHub 项目 OpenMontage 成为当日最热 Python 项目之一，提供了 12 条制作管线、52 种工具和 500+ Agent 技能。适合需要自动生成视频内容的团队，但仍在早期阶段，生产环境需谨慎评估。</div>
+      <a class="source-link" href="https://github.com/calesthio/OpenMontage" target="_blank">来源 · GitHub →</a>
+    </div>
+  </div>
+
+  <!-- 国内 AI 动态 -->
   <div class="section" id="china">
-    <div class="section-header">国内动态</div>
+    <div class="section-header">国内 AI 动态</div>
 
     <div class="news-item">
-      <div class="label">美团 · LongCat</div>
-      <div class="title">周末密集开源：世界模型评估、多模态、零样本 TTS 等 7 个项目</div>
-      <div class="summary">
-        美团 LongCat 团队上周末一口气开源了 WBench（交互式视频世界模型基准）、General 365（推理评估）、LongCat-Next（原生多模态）、LongCat-AudioDiT（零样本 TTS 音色克隆）、LongCat-Video-Avatar 1.5（数字人）、LongCat-Flash-Prover（数学定理证明）等多个项目。同时在 ACL 2026 上发表 6 篇论文。一家外卖公司的 AI 研究密度，已经不输一线大厂。
-      </div>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-21" target="_blank">来源 · aitoolly →</a>
+      <div class="label">字节跳动 · 开源</div>
+      <div class="title">deer-flow：字节跳动开源长周期 SuperAgent 框架</div>
+      <div class="summary">字节跳动在 GitHub 上开源 deer-flow（72k stars），这是一个支持长周期任务的 SuperAgent 框架，集成沙箱、记忆、工具、技能和消息网关，能够处理从几分钟到数小时的复杂任务。</div>
+      <a class="source-link" href="https://github.com/bytedance/deer-flow" target="_blank">来源 · GitHub →</a>
     </div>
 
     <div class="news-item">
-      <div class="label">智谱 AI</div>
-      <div class="title">GLM-5 系列发布：从 Vibe Coding 走向 Agent Engineering</div>
-      <div class="summary">
-        智谱 AI 发布 GLM-5/5.1/5.2 系列，明确喊出从"Vibe Coding"向"Agent Engineering"转型。不再强调直觉式提示交互，而是转向结构化的自主 AI Agent 工程框架。GLM-5.2 此前已在编码基准上超越 GPT-5.5，这次的方向转变更值得关注。
-      </div>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-20" target="_blank">来源 · aitoolly →</a>
+      <div class="label">THUDM · 开源</div>
+      <div class="title">智谱发布 slime：面向 RL Scaling 的 LLM 后训练框架</div>
+      <div class="summary">智谱（THUDM）在 GitHub 上发布 slime 框架（6.6k stars），专门用于 LLM 的强化学习规模化后训练。该工具支持多种 RL 算法，面向研究者和企业级模型训练场景。</div>
+      <a class="source-link" href="https://github.com/THUDM/slime" target="_blank">来源 · GitHub →</a>
     </div>
 
     <div class="news-item">
-      <div class="label">阿里巴巴</div>
-      <div class="title">开源 zvec：轻量级进程内向量数据库</div>
-      <div class="summary">
-        阿里巴巴发布 zvec，一个轻量级超快进程内向量数据库，与应用共享内存空间以显著降低延迟，面向 RAG 和推荐引擎等高性性能向量搜索场景。小而快，方向对了。
-      </div>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-20" target="_blank">来源 · aitoolly →</a>
+      <div class="label">美团 · 开源</div>
+      <div class="title">美团 LongCat 团队周末密集开源多项 AI 模型</div>
+      <div class="summary">美团 LongCat 团队本周末发布了 WBench（视频世界模型评估基准）、LongCat-Next（原生多模态模型）以及零样本 TTS 音色克隆等开源项目。团队在 ACL 2026 发表 6 篇论文，覆盖模型评估、推理优化和生成式推荐等方向。</div>
+      <a class="source-link" href="https://modelscope.cn/" target="_blank">来源 · ModelScope →</a>
     </div>
   </div>
 
-  <!-- 政策与监管 -->
+  <!-- 国际 AI 动态 -->
+  <div class="section" id="international">
+    <div class="section-header">国际 AI 动态</div>
+
+    <div class="news-item">
+      <div class="label">Anthropic · 扩张</div>
+      <div class="title">Anthropic 在首尔设立办公室，扩展韩国 AI 生态合作</div>
+      <div class="summary">Anthropic 于 6 月 17 日宣布在首尔开设办公室，并与韩国多家企业建立合作伙伴关系。此前 Anthropic 的 Fable 5 / Mythos 5 模型被美国政府以出口管制名义叫停，韩国市场的布局显示 Anthropic 仍在积极拓展国际业务。</div>
+      <a class="source-link" href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem" target="_blank">来源 · Anthropic →</a>
+    </div>
+
+    <div class="news-item">
+      <div class="label">OpenAI · 生态</div>
+      <div class="title">OpenAI 推出 Partner Network 合作伙伴网络</div>
+      <div class="summary">OpenAI 正式推出 Partner Network 计划，为企业客户提供经认证的实施和咨询合作伙伴。这标志着 OpenAI 从纯模型公司向企业服务平台化迈出重要一步。</div>
+      <a class="source-link" href="https://openai.com/index/introducing-openai-partner-network/" target="_blank">来源 · OpenAI →</a>
+    </div>
+
+    <div class="news-item">
+      <div class="label">Nous Research</div>
+      <div class="title">hermes-agent 持续火爆：19.9 万 stars，日增 700</div>
+      <div class="summary">Nous Research 的 hermes-agent 项目在 GitHub 上日增 700 stars，累计近 20 万 stars。该项目定位为"与你一起成长的 Agent"，体现了个人 AI Agent 方向的持续热度。</div>
+      <a class="source-link" href="https://github.com/NousResearch/hermes-agent" target="_blank">来源 · GitHub →</a>
+    </div>
+  </div>
+
+  <!-- 政策、监管与风险 -->
   <div class="section" id="policy">
-    <div class="section-header">政策 · 监管 · 社会</div>
+    <div class="section-header">政策、监管与风险</div>
 
     <div class="news-item">
-      <div class="label">美国 · AI 政治</div>
-      <div class="title">JD Vance 的 AI 学说：AI 巨头的广告战争渗透地方选举</div>
-      <div class="summary">
-        Atlantic 发表分析文章梳理 JD Vance 的 AI 政策立场框架。同日，LA Times 报道 AI 巨头正在资助全国各地选举中的广告战争。AI 的政治影响力已经从国家层面渗透到了地方选举。
-      </div>
-      <a class="source-link" href="https://thirdruntime.com/go/27483/j-d-vance-s-ai-doctrine" target="_blank">来源 · Atlantic →</a>
+      <div class="label">挪威 · 教育政策</div>
+      <div class="title">挪威小学 AI 禁令细则：6-13 岁全面禁用，14-16 岁需督导</div>
+      <div class="summary">挪威政府的 AI 教育禁令自 2026 年 8 月起生效，覆盖 6-13 岁小学阶段。该政策延续了挪威近年对教育数字化的审慎趋势——2024 年已禁止校园手机、2026 年加大纸质教材投入。</div>
+      <a class="source-link" href="https://www.reuters.com/world/europe/norway-imposes-near-ban-ai-elementary-school-2026-06-19/" target="_blank">来源 · Reuters →</a>
     </div>
 
     <div class="news-item">
-      <div class="label">社会 · 反思</div>
-      <div class="title">"我宁愿冒癌症风险，也不愿看到 AI 跑这么快"</div>
-      <div class="summary">
-        Atlantic 另一篇观点文章引发了大量讨论：作者直言对 AI 速度的恐惧超过了对癌症的恐惧。同一周，Nobel 奖得主 Acemoglu 批评当前 AI 讨论是"没有脑子"的，认为关于资本主义的神话和 AI 的炒作正在结合成危险的混合物。
-      </div>
-      <a class="source-link" href="https://thirdruntime.com/go/27472/i-d-rather-risk-cancer-than-see-ai-move-this-fast" target="_blank">来源 · Atlantic →</a>
-    </div>
-
-    <div class="news-item">
-      <div class="label">AI 数据中心</div>
-      <div class="title">地球上没人要 AI 数据中心，放到太空去？</div>
-      <div class="summary">
-        CNBC 报道了一个正在被认真讨论的想法：把 AI 数据中心送到太空。地球上的土地、能源、冷却水都不够用了，轨道数据中心可能不再是科幻。Marvell 的 CTO 则在同一周表示，AI 市场已经碰到了他们正在解决的瓶颈——互联带宽。
-      </div>
-      <a class="source-link" href="https://thirdruntime.com/go/27475/no-one-wants-ai-data-centers-on-earth-do-they-make-sense-in-space" target="_blank">来源 · CNBC →</a>
-    </div>
-
-    <div class="news-item">
-      <div class="label">AI 广告 · 虚假影响者</div>
-      <div class="title">品牌开始使用 AI 生成的社交媒体影响者推广产品</div>
-      <div class="summary">
-        The Guardian 报道，越来越多品牌正在使用 AI 生成的虚拟影响者在社交平台上推广产品。真人和假人的界限正在模糊，而消费者可能根本不知道屏幕对面的人不存在。
-      </div>
-      <a class="source-link" href="https://thirdruntime.com/go/27464/brands-using-ai-generated-influencers-to-promote-products-on-social-media" target="_blank">来源 · The Guardian →</a>
+      <div class="label">Anthropic · 出口管制</div>
+      <div class="title">美国政府指令暂停 Fable 5 和 Mythos 5 模型访问</div>
+      <div class="summary">美国政府以出口管制为由，命令 Anthropic 中止 Fable 5 和 Mythos 5 模型的访问。Anthropic 已发布官方声明回应。该事件在安全和政策社区引发关于 AI 出口管制的持续讨论。</div>
+      <a class="source-link" href="https://www.anthropic.com/news/fable-mythos-access" target="_blank">来源 · Anthropic →</a>
     </div>
   </div>
 
-  <!-- 技术与开源 -->
-  <div class="section" id="tech">
-    <div class="section-header">技术 · 开源 · 工具</div>
+  <!-- 社媒与开发者社区观察 -->
+  <div class="section" id="community">
+    <div class="section-header">社媒与开发者社区观察</div>
 
     <div class="news-item">
-      <div class="label">开源 · Headroom</div>
-      <div class="title">LLM 输入压缩工具：Token 减少 60-95%，结果不变</div>
-      <div class="summary">
-        GitHub 上开源项目 Headroom 引发了关注。它对 LLM 输入数据（工具输出、日志、文件、RAG chunks）进行压缩，Token 消耗减少 60%-95% 且输出结果不变。提供标准库、Agent 和 MCP 服务器三种集成方式。对那些 API 账单每月破万的团队来说，这是真金白银。
-      </div>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-21" target="_blank">来源 · aitoolly →</a>
+      <div class="label">Hacker News · 热议</div>
+      <div class="title">Anthropic 要求 Claude 用户身份验证引发大规模讨论（592 分，520 评论）</div>
+      <div class="summary">Reddit r/ClaudeAI 上 Anthropic 官方宣布将要求 Claude 用户进行身份验证，该帖在 Hacker News 上获得 592 点、520 条评论，成为本期最热门的 AI 社区话题。社区主要关注隐私和数据安全问题。该消息目前主要来自社区讨论，仍需等待 Anthropic 官方详细说明。</div>
+      <a class="source-link" href="https://old.reddit.com/r/ClaudeAI/comments/1ubm53n/official_anthropic_to_require_identity/" target="_blank">来源 · Reddit r/ClaudeAI →</a>
     </div>
 
     <div class="news-item">
-      <div class="label">开源 · codebase-memory-mcp</div>
-      <div class="title">MCP 服务器将代码索引为知识图谱，Token 减少 99%</div>
-      <div class="summary">
-        DeusData 推出的 codebase-memory-mcp 是一款高性能 MCP 服务器，将代码库转为持久化知识图谱，支持 158 种编程语言，毫秒级索引，声称减少 99% 的 Token 消耗。
-      </div>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-20" target="_blank">来源 · aitoolly →</a>
+      <div class="label">Hacker News · 讨论</div>
+      <div class="title">"切换到开放模型几乎没有下行风险"引发辩论（61 分）</div>
+      <div class="summary">一篇题为《取消 Claude 订阅，转用开放模型的理由》的博客在 Hacker News 上引发讨论。作者从成本、可控性和去依赖三个角度论证切换到开放模型的优势。社区反馈存在分歧——部分开发者认同成本优势，也有评论指出企业合规场景下闭源模型仍有不可替代的价值。</div>
+      <a class="source-link" href="https://www.marble.onl/posts/cancel_claude.html" target="_blank">来源 · marble.onl →</a>
     </div>
 
     <div class="news-item">
-      <div class="label">硬件 · GMKtec</div>
-      <div class="title">AI Mini PC 工作站发布：搭载 AMD Ryzen AI Max+ 395</div>
-      <div class="summary">
-        GMKtec 发布 EVO-X3，一款搭载 AMD Ryzen AI Max+ 395"Strix Halo"处理器的旗舰 AI Mini PC 工作站。Lisa Su 亲笔签名认证。本地 AI 推理的小型化硬件正在加速。
-      </div>
-      <a class="source-link" href="https://thirdruntime.com/go/27473/dramatically-redesigned-gmktec-evo-x3-shown-bearing-lisa-su-s-signature-of" target="_blank">来源 · Tom's Hardware →</a>
-    </div>
-
-    <div class="news-item">
-      <div class="label">Google Research</div>
-      <div class="title">TimesFM：时间序列预测的基础模型</div>
-      <div class="summary">
-        Google Research 开源 TimesFM，一个专门为时间序列预测设计的基础模型。标志着时序数据分析从传统的孤立模型走向通用预训练架构，基础模型的版图再次扩大。
-      </div>
-      <a class="source-link" href="https://aitoolly.com/ai-news/2026-06-21" target="_blank">来源 · aitoolly →</a>
+      <div class="label">Hacker News · 讨论</div>
+      <div class="title">Meta 员工请愿反对 ML 模型训练数据收集</div>
+      <div class="summary">Meta 员工发起请愿，反对公司收集员工培训数据用于 ML 模型训练。该话题在 HN 上获得 43 分、30 条讨论。社区反馈集中在企业使用内部数据训练 AI 的合规边界问题，但该请愿尚未有官方回应。</div>
+      <a class="source-link" href="https://mcipetition.com/" target="_blank">来源 · mcipetition.com →</a>
     </div>
   </div>
 

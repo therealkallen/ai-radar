@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 3 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策与监管</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+
+<div class="container">
+<div class="masthead">
+  <h1>AI Radar</h1>
+  <div class="meta"><span>2026.06.24 — 06.26</span><span>第 3 期</span></div>
+</div>
+
+<!-- Radar Picks -->
+<div class="section" id="picks">
+<div class="section-header">Radar Picks</div>
+
+<div class="card">
+  <span class="tag">监管</span>
+  <h3>美国政府要求 OpenAI 分阶段发布 GPT-5.6</h3>
+  <p>据财联社 6 月 26 日报道，特朗普政府要求 OpenAI 先向一小部分受信任合作伙伴发布 GPT-5.6，之后再逐步扩大。Sam Altman 在内部员工会议上确认了这一要求，并称政府对前沿模型的性能"越来越感到担忧"。该指令距 Anthropic Fable 5 被叫停不到两周，显示美国 AI 模型出口管制正在从前沿模型向所有顶级模型扩散。</p>
+  <a class="source-link" href="https://www.36kr.com/newsflashes/3869182982591751" target="_blank">来源 · 36氪 / 财联社 →</a>
+</div>
+
+<div class="card">
+  <span class="tag">芯片 / 算力</span>
+  <h3>OpenAI 联手 Broadcom 发布首款自研 LLM 推理芯片 Jalapeño</h3>
+  <p>6 月 24 日，OpenAI 与 Broadcom 联合发布首款专为 LLM 推理设计的定制加速器。从设计到流片仅用 9 个月，AI 模型本身参与了芯片优化。工程样片已在实验室以目标频率运行 GPT-5.3-Codex-Spark。计划 2026 年底开始 GW 级数据中心部署，为 OpenAI 全栈自研铺路。</p>
+  <a class="source-link" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank">来源 · OpenAI →</a>
+</div>
+
+<div class="card">
+  <span class="tag">模型</span>
+  <h3>字节跳动 Seedance 2.5 亮相：30 秒原生视频、4K 分辨率</h3>
+  <p>6 月 23 日，火山引擎在 2026 夏季 FORCE 大会上首次对外展示 Seedance 2.5，预计 7 月初正式发布。该模型支持 30 秒单次生成长度、4K 分辨率和 50 帧参考图像。字节跳动火山引擎总裁谭待表示，影视和短剧只是"小场景"，Seedance 实际是构建世界模型的基础。此前 Seedance 2.0 已从根本上改变了中国短剧行业的制作模式。</p>
+  <a class="source-link" href="https://www.caixin.com/2026-06-23/102456669.html" target="_blank">来源 · 财新 →</a>
+</div>
+
+<div class="card">
+  <span class="tag">AI + 考古</span>
+  <h3>AI 首次完整解读赫库兰尼姆古卷——封印 2000 年的火山灰下文字</h3>
+  <p>研究人员利用 AI 和高分辨率成像，首次完整读取了一份碳化密封近 2000 年的赫库兰尼姆古卷（PHerc. 1667）。该成果在 HN 获 960 分，被 Reuters 和 New Scientist 报道，是 AI 在人文学科迄今最具影响力的应用之一。</p>
+  <a class="source-link" href="https://scrollprize.org/firstscroll" target="_blank">来源 · ScrollPrize →</a>
+</div>
+
+<div class="card">
+  <span class="tag">芯片 / 算力</span>
+  <h3>IBM 发布全球首款亚 1 纳米芯片技术</h3>
+  <p>IBM 于 6 月 25 日宣布推出世界首款亚 1 纳米芯片技术，突破半导体物理极限。该技术为下一代 AI 算力提供了新路径，在 HN 获 258 分讨论。</p>
+  <a class="source-link" href="https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology" target="_blank">来源 · IBM →</a>
+</div>
+</div>
+
+<!-- 模型与技术进展 -->
+<div class="section" id="models">
+<div class="section-header">模型与技术进展</div>
+
+<div class="news-item">
+  <div class="label">字节跳动 · 视频模型</div>
+  <div class="title">Seedance 2.5 将于 7 月初发布，进一步增强生成长度和分辨率</div>
+  <div class="summary">火山引擎在 2026 夏季 FORCE 大会上公布 Seedance 2.5 的技术细节：原生 30 秒视频、4K 分辨率、50 帧参考图。2 月发布的 2.0 已让 AI 短剧成为主流生产方式，2.5 的更新将工业级 AI 视频的门槛进一步降低。</div>
+  <a class="source-link" href="https://www.caixin.com/2026-06-23/102456669.html" target="_blank">来源 · 财新 →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Agent · 开源</div>
+  <div class="title">Agent-Reach：让 AI Agent 拥有"整个互联网的眼睛"</div>
+  <div class="summary">Panniantong/Agent-Reach 本周迅速突破 41k stars（日增 1,500+），可读取和搜索 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等平台。一个 CLI 工具实现零 API 费用的跨平台信息获取。</div>
+  <a class="source-link" href="https://github.com/Panniantong/Agent-Reach" target="_blank">来源 · GitHub →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">安全 · 开源</div>
+  <div class="title">NVIDIA 发布 SkillSpector：AI Agent 技能安全扫描器</div>
+  <div class="summary">NVIDIA 开源 SkillSpector（10.6k stars），专门检测 AI Agent 技能中的漏洞和安全风险。与 Anthropic Cybersecurity Skills 形成互补——一方提供安全技能库，另一方负责扫描验证。</div>
+  <a class="source-link" href="https://github.com/NVIDIA/SkillSpector" target="_blank">来源 · GitHub →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">文档处理</div>
+  <div class="title">MinerU 突破 69k stars：复杂文档一键转 Agent 可用格式</div>
+  <div class="summary">OpenDataLab 的 MinerU 可将 PDF、Office 等复杂文档转换为 LLM/Agent 可直接消费的 Markdown 和 JSON，在 Agentic 文档工作流领域持续领跑。</div>
+  <a class="source-link" href="https://github.com/opendatalab/MinerU" target="_blank">来源 · GitHub →</a>
+</div>
+</div>
+
+<!-- 企业应用与工具观察 -->
+<div class="section" id="enterprise">
+<div class="section-header">企业应用与工具观察</div>
+
+<div class="news-item">
+  <div class="label">OpenAI · Agent</div>
+  <div class="title">OpenAI 发布"Agent 如何改变工作"行业状态报告</div>
+  <div class="summary">6 月 25 日，OpenAI 发布行业观察文章，从客服、软件开发、数据分析等维度总结 Agent 在企业场景的实际落地案例，为企业部署 AI Agent 提供参考框架。</div>
+  <a class="source-link" href="https://openai.com/index/how-agents-are-transforming-work/" target="_blank">来源 · OpenAI →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">招聘</div>
+  <div class="title">hiring-agent：AI Agent 自动化简历筛选工具</div>
+  <div class="summary">interviewstreet/hiring-agent 获 2,750 stars（日增 683），可自动评估和评分简历。适合大规模招聘场景，需注意算法偏见风险。</div>
+  <a class="source-link" href="https://github.com/interviewstreet/hiring-agent" target="_blank">来源 · GitHub →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">金融 Agent</div>
+  <div class="title">ai-berkshire：基于 Claude Code 的价值投资 Agent 框架</div>
+  <div class="summary">这款开源工具（1,900+ stars）将 Buffett、Munger、段永平、李录四大价值投资方法论植入多 Agent 对抗分析框架，可在本地运行或通过 Claude Code 集成。</div>
+  <a class="source-link" href="https://github.com/xbtlin/ai-berkshire" target="_blank">来源 · GitHub →</a>
+</div>
+</div>
+
+<!-- 国内 AI 动态 -->
+<div class="section" id="china">
+<div class="section-header">国内 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">字节跳动 · 火山引擎</div>
+  <div class="title">Seedance 2.5 首次公开亮相，短剧行业已率先被 AI 改造</div>
+  <div class="summary">Seedance 2.0 自 2 月发布以来，已使中国市场上大部分短剧直接由 AI 生成。此次 2.5 版本进一步增强时长和分辨率，显示字节跳动在视频生成领域的战略投资正在加速。</div>
+  <a class="source-link" href="https://www.caixin.com/2026-06-23/102456669.html" target="_blank">来源 · 财新 →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">字节跳动 · Agent</div>
+  <div class="title">deer-flow 突破 74k stars，稳居国内 Agent 开源框架第一梯队</div>
+  <div class="summary">字节跳动的长周期 SuperAgent 框架持续增长，集成研究、编码、创作于一体，是目前国内在 GitHub 上最具国际影响力的 Agent 开源项目。</div>
+  <a class="source-link" href="https://github.com/bytedance/deer-flow" target="_blank">来源 · GitHub →</a>
+</div>
+</div>
+
+<!-- 国际 AI 动态 -->
+<div class="section" id="international">
+<div class="section-header">国际 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">OpenAI · 芯片</div>
+  <div class="title">Jalapeño 采取全栈自研策略：从芯片到数据中心</div>
+  <div class="summary">Jalapeño 的架构从零为 LLM 推理设计，覆盖芯片架构、内核、内存系统、网络、调度和部署系统。工程样片已在实验室以目标频率和功耗运行 GPT-5.3-Codex-Spark，计划 2026 年底 GW 级部署。</div>
+  <a class="source-link" href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank">来源 · OpenAI →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">IBM · 芯片</div>
+  <div class="title">亚 1 纳米芯片时代来临：为下一代 AI 算力奠基</div>
+  <div class="summary">IBM 的突破使芯片制程首次进入亚纳米级别。该技术在 HN 获 258 分讨论，被认为为下一代 AI 训练和推理提供了关键硬件路径。</div>
+  <a class="source-link" href="https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology" target="_blank">来源 · IBM →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Apple · 芯片</div>
+  <div class="title">Apple 跳过高端 M6，直接推出 AI 优化的 M7 系列</div>
+  <div class="summary">Bloomberg 报道，Apple 将跳过高端 M6 芯片，直接推出针对 AI 设计优化的 M7 Pro、M7 Max 和 M7 Ultra。AI 需求对终端芯片路线的冲击显而易见。</div>
+  <a class="source-link" href="https://www.bloomberg.com/news/articles/2026-06-25/apple-to-skip-high-end-m6-mac-chips-to-launch-m7-pro-m7-max-m7-ultra-instead" target="_blank">来源 · Bloomberg →</a>
+</div>
+</div>
+
+<!-- AI 与金融 -->
+<div class="section" id="finance">
+<div class="section-header">AI 与金融</div>
+
+<div class="news-item">
+  <div class="label">美光 · 财报</div>
+  <div class="title">Micron Q3 营收 414 亿美元创纪录，盘后暴涨 15%</div>
+  <div class="summary">Micron 于 6 月 24 日公布 Q3 业绩：营收 414.6 亿美元（同比 +346%），毛利率 86%。HBM（高带宽内存）供不应求，2026 年全年产能已售罄。CEO Sanjay Mehrotra 称"内存在 AI 时代的战略价值"正在被市场重估。盘后股价飙升超 15% 至约 $1,237。</div>
+  <a class="source-link" href="https://www.cnbc.com/2026/06/24/micron-mu-earnings-report-q3-2026.html" target="_blank">来源 · CNBC →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">SpaceX · 股价</div>
+  <div class="title">SpaceX 股价过山车：从 225 美元高点跌至 154 美元</div>
+  <div class="summary">6 月 12 日上市的 SpaceX 经历剧烈波动：上市首周盘中最高 225 美元，市值一度逼近 3 万亿美元；随后连续下跌，至 6 月 22 日收于 154.6 美元，跌幅约 31%。600 亿美元收购 Cursor 引发股权稀释担忧，散户高位追涨资金被套。该案例成为 AI 相关新股估值风险的典型教材。</div>
+  <a class="source-link" href="https://finance.sina.com.cn/tech/roll/2026-06-23/doc-iniekeev9781108.shtml" target="_blank">来源 · 新浪财经 →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">供应链</div>
+  <div class="title">AI 内存需求推高 Apple MacBook 和 iPad 价格</div>
+  <div class="summary">Reuters 报道，因 AI 驱动的高带宽内存成本飙升，Apple 上调 MacBook 和 iPad 售价。算力需求正在通过半导体供应链向消费电子终端价格传导。</div>
+  <a class="source-link" href="https://www.reuters.com/world/asia-pacific/apple-raises-prices-macbooks-ipads-memory-costs-skyrocket-2026-06-25/" target="_blank">来源 · Reuters →</a>
+</div>
+</div>
+
+<!-- 政策与监管 -->
+<div class="section" id="policy">
+<div class="section-header">政策、监管与风险</div>
+
+<div class="news-item">
+  <div class="label">美国 · 出口管制</div>
+  <div class="title">继 Fable 5 后，美国政府再要求 GPT-5.6 分阶段发布</div>
+  <div class="summary">特朗普政府对 OpenAI GPT-5.6 的分阶段发布要求，标志着美国 AI 出口管制从 Anthropic 一家延伸至 OpenAI。政府担忧"前沿模型的性能"，要求先向受信任伙伴发布。此举可能影响 OpenAI 的 IPO 时间线和市场竞争格局。</div>
+  <a class="source-link" href="https://www.36kr.com/newsflashes/3869182982591751" target="_blank">来源 · 36氪 / 财联社 →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">隐私</div>
+  <div class="title">"Papers, please" 时代：AI 身份验证与互联网隐私的冲突</div>
+  <div class="summary">FIRE 发文警告，AI 驱动的身份验证要求正将互联网推向"请出示证件"时代，对匿名性和隐私构成系统性威胁（HN 374 分）。</div>
+  <a class="source-link" href="https://expression.fire.org/p/the-papers-please-era-of-the-internet" target="_blank">来源 · FIRE →</a>
+</div>
+</div>
+
+<!-- 社媒与开发者社区观察 -->
+<div class="section" id="community">
+<div class="section-header">社媒与开发者社区观察</div>
+
+<div class="news-item">
+  <div class="label">Hacker News · 热议</div>
+  <div class="title">AI 完整解读赫库兰尼姆古卷引发广泛讨论（960 分）</div>
+  <div class="summary">ScrollPrize 团队首次完整读取碳化古卷，获 HN 960 分讨论。社区普遍视其为 AI 在人文领域最具突破性的应用之一。该成果已有权威媒体报道交叉验证。</div>
+  <a class="source-link" href="https://scrollprize.org/firstscroll" target="_blank">来源 · ScrollPrize →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Hacker News · 讨论</div>
+  <div class="title">AI 模型"政治偏见"量化分析引发 234 条争议讨论（117 分）</div>
+  <div class="summary">trakkr.ai 的 AI 模型政治偏见报告在 HN 上引发激烈辩论。部分开发者认为量化偏见有用，另一部分质疑偏见定义本身的主观性。该讨论未形成共识。</div>
+  <a class="source-link" href="https://trakkr.ai/bias" target="_blank">来源 · trakkr.ai →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Show HN</div>
+  <div class="title">OpenKnowledge：开源 AI 优先知识管理工具（198 分）</div>
+  <div class="summary">内置 Claude、Codex 等 AI Agent 的本地优先知识管理工具，基于 Tiptap/ProseMirror 和 yjs（CRDT），在 HN 社区反馈积极。</div>
+  <a class="source-link" href="https://github.com/inkeep/open-knowledge" target="_blank">来源 · GitHub →</a>
+</div>
+</div>
+
+<div class="footer">
+  <p>AI Radar · 每周一三五更新</p>
+  <p style="margin-top:4px">第 3 期 · 2026.06.26</p>
+  <p style="margin-top:10px"><a href="issues/" style="font-size:12px;color:#aaa;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #ddd">往期归档 →</a></p>
+</div>
+</div>
+</body>
+</html>

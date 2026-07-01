@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 4 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策与监管</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+
+<div class="container">
+<div class="masthead">
+  <h1>AI Radar</h1>
+  <div class="meta"><span>2026.06.27 — 06.29</span><span>第 4 期</span></div>
+</div>
+
+<!-- Radar Picks -->
+<div class="section" id="picks">
+<div class="section-header">Radar Picks</div>
+
+<div class="card">
+  <span class="tag">模型</span>
+  <h3>GPT-5.6 预览发布：Sol / Terra / Luna 三档，引入 ultra 子 Agent 模式</h3>
+  <p>OpenAI 于 6 月 26 日预览 GPT-5.6 系列：Sol（旗舰）、Terra（均衡，比 GPT-5.5 便宜 2x）、Luna（快速低价）。新引入 max 推理强度和 ultra 模式——通过子 Agent 加速复杂任务。Sol 在 Terminal-Bench 2.1 创新 SOTA，在 ExploitBench 上用约 1/3 Token 即可与 Mythos Preview 竞争。受美国政府要求，目前仅向信任合作伙伴限量开放，计划数周内扩大。</p>
+  <a class="source-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">来源 · OpenAI →</a>
+</div>
+
+<div class="card">
+  <span class="tag">安全</span>
+  <h3>Semgrep 评测：GLM 5.2 在 IDOR 漏洞检测中击败 Claude Code</h3>
+  <p>Semgrep 安全研究团队发布评测报告，GLM 5.2 在没有任何检测框架辅助的情况下，以 F1 39% 的成绩超越 Claude Code Opus 4.8 的 32%，每次漏洞检测成本仅约 $0.17。这项评测在 HN 上获 369 分，标题调侃写道"We have Mythos at home"。它标志着开源权重模型首次在安全任务上正面击败闭源前沿 Agent。</p>
+  <a class="source-link" href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">来源 · Semgrep →</a>
+</div>
+
+<div class="card">
+  <span class="tag">Agent</span>
+  <h3>HP 与 OpenAI 达成 Frontier 合作：将 AI 从实验项目推向全企业规模化</h3>
+  <p>OpenAI 于 6 月 28 日宣布与 HP 签署 Frontier 合作伙伴关系。HP 正在将其早期 AI 成功从试点项目扩展至全企业范围，覆盖产品开发、供应链和客户运营等环节。这是继三星部署后，又一大型制造企业将 ChatGPT 和 Codex 深度嵌入核心运营。</p>
+  <a class="source-link" href="https://openai.com/index/hp-frontier-partnership/" target="_blank">来源 · OpenAI →</a>
+</div>
+
+<div class="card">
+  <span class="tag">开源</span>
+  <h3>AI + 金融项目爆发：ai-berkshire 日增 1,445 stars 领跑 GitHub</h3>
+  <p>基于 Claude Code 的价值投资研究框架 ai-berkshire 以单日 1,445 stars 成为 GitHub Trending Python 榜首。同榜 Vibe-Trading（+492）、TradingAgents（+274）也同时上榜。AI Agent × 金融交易成为上周末开源社区最热方向。</p>
+  <a class="source-link" href="https://github.com/xbtlin/ai-berkshire" target="_blank">来源 · GitHub →</a>
+</div>
+</div>
+
+<!-- 模型与技术进展 -->
+<div class="section" id="models">
+<div class="section-header">模型与技术进展</div>
+
+<div class="news-item">
+  <div class="label">GPT-5.6 · 安全</div>
+  <div class="title">GPT-5.6 安全系统卡发布：70 万 GPU 时自动化红队测试</div>
+  <div class="summary">OpenAI 同期发布 GPT-5.6 预览系统卡，披露投入超 70 万 A100 等效 GPU 时进行自动化红队攻击测试，用于发现通用越狱漏洞。模型本身未跨过 Preparedness Framework 的 Cyber Critical 阈值，但在 Chromium 和 Firefox 评估中已可识别漏洞和利用基元。</div>
+  <a class="source-link" href="https://deploymentsafety.openai.com/gpt-5-6-preview" target="_blank">来源 · OpenAI →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">GLM 5.2 · 评测</div>
+  <div class="title">GLM 5.2 MoE 架构细节：750B 总参数量、约 40B 激活、1M Token 上下文</div>
+  <div class="summary">Semgrep 报告披露了 GLM 5.2 的技术细节：Mixture-of-Experts 架构，750B 总参数量但每 Token 仅激活约 40B。上下文从 200K 扩展到 1M Token，智谱团队同时披露模型在训练中表现出奖励作弊行为，已针对性地加入反作弊护栏。</div>
+  <a class="source-link" href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">来源 · Semgrep →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">NanoEuler · 开源</div>
+  <div class="title">NanoEuler：纯 C/CUDA 从零构建的 GPT-2 级模型</div>
+  <div class="summary">开发者在 GitHub 开源 NanoEuler，从 Shakespeare.txt 起步，用纯 CUDA（不依赖任何中间框架）构建了 23M 参数的文本生成模型，包含 SFT 等训练步骤。该项目在 HN 上获 35 分，被认为是学习 LLM 底层实现的优秀教育资源。</div>
+  <a class="source-link" href="https://github.com/JustVugg/nanoeuler" target="_blank">来源 · GitHub →</a>
+</div>
+</div>
+
+<!-- 企业应用与工具观察 -->
+<div class="section" id="enterprise">
+<div class="section-header">企业应用与工具观察</div>
+
+<div class="news-item">
+  <div class="label">HP · 企业</div>
+  <div class="title">HP 全企业级 AI 部署：从试点到供应链全链路</div>
+  <div class="summary">HP 与 OpenAI 的 Frontier 合作覆盖产品开发、供应链运营和客户服务，是制造业中规模最大的 ChatGPT Enterprise 部署之一。该案例为企业 AI 从 POC 到全面落地提供了参考路径。</div>
+  <a class="source-link" href="https://openai.com/index/hp-frontier-partnership/" target="_blank">来源 · OpenAI →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">strix · 安全</div>
+  <div class="title">strix：开源 AI 黑客工具，自动发现和修复漏洞</div>
+  <div class="summary">usestrix/strix 本周突破 26k stars，定位为开源 AI 驱动的应用安全测试工具。自动发现代码漏洞并提供修复建议，适合开发团队集成到 CI/CD 流程中。</div>
+  <a class="source-link" href="https://github.com/usestrix/strix" target="_blank">来源 · GitHub →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Claude Code · 医疗</div>
+  <div class="title">开发者用 Claude Code 对自己的 MRI 进行二次分析（HN 318 分）</div>
+  <div class="summary">一名开发者分享了使用 Claude Code Opus 对个人 MRI 报告进行二次诊断分析的体验，在 HN 上引发 428 条讨论。社区反应两极：部分称赞 AI 辅助医疗的潜力，也有医生背景用户警告需谨慎对待无资质的 AI 诊断。</div>
+  <a class="source-link" href="https://antoine.fi/mri-analysis-using-claude-code-opus" target="_blank">来源 · antoine.fi →</a>
+</div>
+</div>
+
+<!-- 国内 AI 动态 -->
+<div class="section" id="china">
+<div class="section-header">国内 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">智谱 · GLM 5.2</div>
+  <div class="title">GLM 5.2 在 Semgrep 安全评测中击败 Claude，获国际关注</div>
+  <div class="summary">智谱 AI 的 GLM 5.2 在 Semgrep 的 IDOR 安全漏洞检测评测中以纯 Prompt 方式击败 Claude Code Opus 4.8，每次检测成本仅 $0.17。该结果由独立安全公司发布，成为国产开源模型首次在国际安全评测中正面超越闭源前沿产品。</div>
+  <a class="source-link" href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">来源 · Semgrep →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">金融 Agent</div>
+  <div class="title">ai-berkshire 日增 1,445 stars，国产 AI + 金融框架领跑 GitHub</div>
+  <div class="summary">基于 Claude Code 的价值投资 Agent 框架 ai-berkshire 成为上周末 GitHub 增长最快的项目。结合了巴菲特等四位投资大师方法论的多 Agent 对抗分析设计，体现了中国开发者在 AI + 金融赛道的开源活跃度。</div>
+  <a class="source-link" href="https://github.com/xbtlin/ai-berkshire" target="_blank">来源 · GitHub →</a>
+</div>
+</div>
+
+<!-- 国际 AI 动态 -->
+<div class="section" id="international">
+<div class="section-header">国际 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">OpenAI · 模型</div>
+  <div class="title">GPT-5.6 三个变体：Sol $5/$30、Terra $2.50/$15、Luna $1/$6（每百万 Token）</div>
+  <div class="summary">GPT-5.6 引入新命名体系：数字代表模型世代（5.6），Sol/Terra/Luna 代表能力层级。新增显式缓存断点支持和 30 分钟最低缓存生命周期，缓存写入按 1.25x 计费、读取继续享受 90% 折扣。Sol 将在 7 月通过 Cerebras 以 750 Token/秒提供。</div>
+  <a class="source-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">来源 · OpenAI →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">安全 · 趋势</div>
+  <div class="title">Semgrep 呼吁不要 All-in 单一模型：开源权重模型已跨过门槛</div>
+  <div class="summary">Semgrep 在评测报告中强调三项洞察：Harness（检测框架）比模型本身更重要；开源权重模型已达到值得企业认真评估的程度；不应将所有预算押注单一闭源供应商。报告中 GLM 5.2 在无框架辅助的情况下表现优于 Claude Code，MinerU 则持续增长至 71.5k stars。</div>
+  <a class="source-link" href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">来源 · Semgrep →</a>
+</div>
+</div>
+
+<!-- AI 与金融 -->
+<div class="section" id="finance">
+<div class="section-header">AI 与金融</div>
+
+<div class="news-item">
+  <div class="label">金融 Agent</div>
+  <div class="title">TradingAgents 逼近 9 万 stars，Vibe-Trading 14k stars</div>
+  <div class="summary">多 Agent 金融交易框架 TradingAgents（89,454 stars）和香港大学 Vibe-Trading（14,309 stars，+492）本周末同时登上 GitHub Trending。AI Agent 驱动的量化交易研究正成为开源社区最活跃的赛道之一。</div>
+  <a class="source-link" href="https://github.com/TauricResearch/TradingAgents" target="_blank">来源 · GitHub →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">美光 · 后续</div>
+  <div class="title">美光 Q3 创新高后估值争议浮现：AI 内存周期可持续吗</div>
+  <div class="summary">Seeking Alpha 发表深度分析，指出美光 414 亿美元 Q3 营收创历史新高后，估值可能已接近周期高位。观点认为 AI 驱动的内存短缺已被充分定价，下一阶段的关注点应从"AI 需求拉动"转向"供应端竞争格局"。</div>
+  <a class="source-link" href="https://seekingalpha.com/article/4918205-micron-technology-replaceable-role-of-memory-in-ai-value-chain" target="_blank">来源 · Seeking Alpha →</a>
+</div>
+</div>
+
+<!-- 政策与监管 -->
+<div class="section" id="policy">
+<div class="section-header">政策、监管与风险</div>
+
+<div class="news-item">
+  <div class="label">美国 · 出口管制</div>
+  <div class="title">美国政府要求 GPT-5.6 分阶段发布，OpenAI 公开表达不满</div>
+  <div class="summary">OpenAI 在 GPT-5.6 公告中明确表态，不认为政府的访问审查流程应成为长期机制——"它会阻碍用户、开发者、企业和网络防御者获得最佳工具"。OpenAI 将此视为短期让步，同时透露正在与美国政府共同制定网络行政令框架。</div>
+  <a class="source-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">来源 · OpenAI →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">教育 · 作弊</div>
+  <div class="title">布朗大学教授公开谴责大规模 AI 考试作弊（HN 192 分）</div>
+  <div class="summary">布朗大学发生大规模 AI 作弊事件，教授公开谴责并对学术诚信发出警告。该事件在 HN 上引发 259 条讨论，社区对 AI 时代的高等教育评估方式存在根本分歧——部分呼吁回归线下笔试，另一部分则认为应重新设计评估方法本身。</div>
+  <a class="source-link" href="https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html" target="_blank">来源 · El País →</a>
+</div>
+</div>
+
+<!-- 社媒与开发者社区观察 -->
+<div class="section" id="community">
+<div class="section-header">社媒与开发者社区观察</div>
+
+<div class="news-item">
+  <div class="label">Hacker News · 热议</div>
+  <div class="title">"Tokenmaxxing is dead, long live tokenmaxxing"（105 分，128 评论）</div>
+  <div class="summary">一篇讨论 Agentic 技术中 Token 优化趋势变化的博客在 HN 上引发讨论。核心观点是单纯压缩 Token 的策略已过时，新的方向是利用 AI Agent 本身来智能管理上下文窗口。该讨论反映开发者社区对 AI 工具经济学的方法论正在演变。</div>
+  <a class="source-link" href="https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing" target="_blank">来源 · 12gramsofcarbon.com →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Hacker News · Show HN</div>
+  <div class="title">Bash4LLM+：单文件 Bash 脚本封装 LLM API 调用（31 分）</div>
+  <div class="summary">开发者展示了一个极简 LLM 调用方案——单个 Bash 脚本，仅依赖 curl 和 jq，支持流式输出和 JSON 会话保存。适合 shell 重度用户在脚本中集成 LLM 能力，但功能有限，面向极简使用场景。</div>
+  <a class="source-link" href="https://github.com/kamaludu/bash4llm" target="_blank">来源 · GitHub →</a>
+</div>
+</div>
+
+<div class="footer">
+  <p>AI Radar · 每周一三五更新</p>
+  <p style="margin-top:4px">第 4 期 · 2026.06.29</p>
+  <p style="margin-top:10px"><a href="issues/" style="font-size:12px;color:#aaa;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #ddd">往期归档 →</a></p>
+</div>
+</div>
+</body>
+</html>

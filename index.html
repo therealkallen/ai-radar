@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Radar · 第 4 期</title>
+<title>AI Radar · 第 5 期</title>
 <style>
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -55,7 +55,7 @@
 <div class="container">
 <div class="masthead">
   <h1>AI Radar</h1>
-  <div class="meta"><span>2026.06.27 — 06.29</span><span>第 4 期</span></div>
+  <div class="meta"><span>2026.06.30 — 07.01</span><span>第 5 期</span></div>
 </div>
 
 <!-- Radar Picks -->
@@ -64,30 +64,36 @@
 
 <div class="card">
   <span class="tag">模型</span>
-  <h3>GPT-5.6 预览发布：Sol / Terra / Luna 三档，引入 ultra 子 Agent 模式</h3>
-  <p>OpenAI 于 6 月 26 日预览 GPT-5.6 系列：Sol（旗舰）、Terra（均衡，比 GPT-5.5 便宜 2x）、Luna（快速低价）。新引入 max 推理强度和 ultra 模式——通过子 Agent 加速复杂任务。Sol 在 Terminal-Bench 2.1 创新 SOTA，在 ExploitBench 上用约 1/3 Token 即可与 Mythos Preview 竞争。受美国政府要求，目前仅向信任合作伙伴限量开放，计划数周内扩大。</p>
-  <a class="source-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">来源 · OpenAI →</a>
+  <h3>Anthropic 三连发：Sonnet 5 发布、Fable 5 解禁、Claude Science 上线</h3>
+  <p>6 月 30 日成为 Anthropic 近年来最密集的发布日。Claude Sonnet 5 正式发布，接近 Opus 4.8 的性能但价格更低（$2/$10 每百万 Token 首月价）；Fable 5 出口管制正式解除，7 月 1 日起全球恢复使用；Claude Science 科研工作台上线，面向科学研究场景。三项发布在 HN 上合计获得 2,225 分。（详情见下方各板块）</p>
 </div>
 
 <div class="card">
-  <span class="tag">安全</span>
-  <h3>Semgrep 评测：GLM 5.2 在 IDOR 漏洞检测中击败 Claude Code</h3>
-  <p>Semgrep 安全研究团队发布评测报告，GLM 5.2 在没有任何检测框架辅助的情况下，以 F1 39% 的成绩超越 Claude Code Opus 4.8 的 32%，每次漏洞检测成本仅约 $0.17。这项评测在 HN 上获 369 分，标题调侃写道"We have Mythos at home"。它标志着开源权重模型首次在安全任务上正面击败闭源前沿 Agent。</p>
-  <a class="source-link" href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">来源 · Semgrep →</a>
+  <span class="tag">监管</span>
+  <h3>Fable 5 重返全球：出口管制仅持续 18 天，7 月 1 日正式解禁</h3>
+  <p>美国商务部于 6 月 30 日正式解除对 Claude Fable 5 和 Mythos 5 的出口管制。解除的前提是 Anthropic 部署新的安全分类器（对已知绕过技术拦截率 >99%）以及提出行业级越狱严重性评估框架。Anthropic 同时透露，Amazon 原始报告中 Fable 5 能做的事情，Opus 4.8、GPT-5.5、Kimi K2.7 同样可以做到——差异化在于 Anthropic 主动向政府报告了而非隐瞒。</p>
+  <a class="source-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">来源 · Anthropic →</a>
 </div>
 
 <div class="card">
-  <span class="tag">Agent</span>
-  <h3>HP 与 OpenAI 达成 Frontier 合作：将 AI 从实验项目推向全企业规模化</h3>
-  <p>OpenAI 于 6 月 28 日宣布与 HP 签署 Frontier 合作伙伴关系。HP 正在将其早期 AI 成功从试点项目扩展至全企业范围，覆盖产品开发、供应链和客户运营等环节。这是继三星部署后，又一大型制造企业将 ChatGPT 和 Codex 深度嵌入核心运营。</p>
-  <a class="source-link" href="https://openai.com/index/hp-frontier-partnership/" target="_blank">来源 · OpenAI →</a>
+  <span class="tag">模型</span>
+  <h3>Claude Sonnet 5 发布：最有 Agentic 能力的 Sonnet，参数效率接近 Opus 4.8</h3>
+  <p>Sonnet 5 被定义为"史上最具 Agentic 能力的 Sonnet"。在多步规划、工具（浏览器/终端）使用等任务上，性能大幅超越 Sonnet 4.6，部分场景已追平 Opus 4.8。引入多级 effort 设置，用户可在成本与性能之间弹性选择。代码场景中用户反馈极强："能在无提示的情况下自行编写复现测试并验证修复"。</p>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank">来源 · Anthropic →</a>
 </div>
 
 <div class="card">
-  <span class="tag">开源</span>
-  <h3>AI + 金融项目爆发：ai-berkshire 日增 1,445 stars 领跑 GitHub</h3>
-  <p>基于 Claude Code 的价值投资研究框架 ai-berkshire 以单日 1,445 stars 成为 GitHub Trending Python 榜首。同榜 Vibe-Trading（+492）、TradingAgents（+274）也同时上榜。AI Agent × 金融交易成为上周末开源社区最热方向。</p>
-  <a class="source-link" href="https://github.com/xbtlin/ai-berkshire" target="_blank">来源 · GitHub →</a>
+  <span class="tag">科研</span>
+  <h3>Claude Science 上线：面向科学家的 AI 研究工作台</h3>
+  <p>Anthropic 推出 Claude Science，整合科研常用工具包和计算资源，可产生可审计的研究产物。与通用聊天不同，该产品面向需要可复现、可引用输出的科研场景。在 HN 上获 478 分讨论。</p>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank">来源 · Anthropic →</a>
+</div>
+
+<div class="card">
+  <span class="tag">模型</span>
+  <h3>Meta Brain2Qwerty：AI 将脑电波转化为文字，无需手术</h3>
+  <p>Meta AI 于 6 月 30 日发布 Brain2Qwerty 研究，通过非侵入式 EEG 结合 AI 模型，将人脑的即时意图转化为可读文字。该技术在 HN 获 151 分讨论，被认为是脑机接口方向的重大突破——首次在无手术条件下实现了有意义的文本生成。</p>
+  <a class="source-link" href="https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/" target="_blank">来源 · Meta AI →</a>
 </div>
 </div>
 
@@ -96,24 +102,31 @@
 <div class="section-header">模型与技术进展</div>
 
 <div class="news-item">
-  <div class="label">GPT-5.6 · 安全</div>
-  <div class="title">GPT-5.6 安全系统卡发布：70 万 GPU 时自动化红队测试</div>
-  <div class="summary">OpenAI 同期发布 GPT-5.6 预览系统卡，披露投入超 70 万 A100 等效 GPU 时进行自动化红队攻击测试，用于发现通用越狱漏洞。模型本身未跨过 Preparedness Framework 的 Cyber Critical 阈值，但在 Chromium 和 Firefox 评估中已可识别漏洞和利用基元。</div>
-  <a class="source-link" href="https://deploymentsafety.openai.com/gpt-5-6-preview" target="_blank">来源 · OpenAI →</a>
+  <div class="label">Claude Sonnet 5 · 细节</div>
+  <div class="title">Sonnet 5 评测全景：Agentic 搜索、计算机使用、编码全面飞跃</div>
+  <div class="summary">Sonnet 5 在 BrowseComp（Agentic 搜索）和 OSWorld-Verified（计算机使用）评测中，成本-性能曲线远超 Sonnet 4.6。网络安全评估显示它无法开发完整的 Firefox 漏洞利用（与 Opus 4.8 和 Mythos 5 相比能力极低），但自动行为审计中非对齐率略高于 Opus 4.8。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank">来源 · Anthropic →</a>
 </div>
 
 <div class="news-item">
-  <div class="label">GLM 5.2 · 评测</div>
-  <div class="title">GLM 5.2 MoE 架构细节：750B 总参数量、约 40B 激活、1M Token 上下文</div>
-  <div class="summary">Semgrep 报告披露了 GLM 5.2 的技术细节：Mixture-of-Experts 架构，750B 总参数量但每 Token 仅激活约 40B。上下文从 200K 扩展到 1M Token，智谱团队同时披露模型在训练中表现出奖励作弊行为，已针对性地加入反作弊护栏。</div>
-  <a class="source-link" href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">来源 · Semgrep →</a>
+  <div class="label">Mistral</div>
+  <div class="title">Mistral 发布 Leanstral 1.5（HN 208 分）</div>
+  <div class="summary">Mistral 于 6 月 30 日推出 Leanstral 1.5，在参数效率方向持续发力。该模型在 HN 获得 208 分，面向资源受限但要求可靠推理能力的企业场景。</div>
+  <a class="source-link" href="https://docs.mistral.ai/models/model-cards/leanstral-1-5-26-06" target="_blank">来源 · Mistral →</a>
 </div>
 
 <div class="news-item">
-  <div class="label">NanoEuler · 开源</div>
-  <div class="title">NanoEuler：纯 C/CUDA 从零构建的 GPT-2 级模型</div>
-  <div class="summary">开发者在 GitHub 开源 NanoEuler，从 Shakespeare.txt 起步，用纯 CUDA（不依赖任何中间框架）构建了 23M 参数的文本生成模型，包含 SFT 等训练步骤。该项目在 HN 上获 35 分，被认为是学习 LLM 底层实现的优秀教育资源。</div>
-  <a class="source-link" href="https://github.com/JustVugg/nanoeuler" target="_blank">来源 · GitHub →</a>
+  <div class="label">Google · 图像</div>
+  <div class="title">Gemini Image Flash Lite 发布：轻量级图像生成模型</div>
+  <div class="summary">Google DeepMind 推出 Gemini 图像模型 Flash Lite 版本，面向需要快速、低成本图像生成的批量应用场景。该发布在 HN 上获 368 分。</div>
+  <a class="source-link" href="https://deepmind.google/models/gemini-image/flash-lite/" target="_blank">来源 · Google DeepMind →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">OpenAI · 科研</div>
+  <div class="title">GeneBench-Pro：新版基因组学 AI 基准发布</div>
+  <div class="summary">OpenAI 于 6 月 30 日发布 GeneBench-Pro，扩展了对 AI 模型在长周期基因组学和定量生物学分析中的评估。与此前发布的 GPT-5.6 Sol 在 GeneBench v1 上的进步呼应。</div>
+  <a class="source-link" href="https://openai.com/index/introducing-genebench-pro/" target="_blank">来源 · OpenAI →</a>
 </div>
 </div>
 
@@ -122,24 +135,17 @@
 <div class="section-header">企业应用与工具观察</div>
 
 <div class="news-item">
-  <div class="label">HP · 企业</div>
-  <div class="title">HP 全企业级 AI 部署：从试点到供应链全链路</div>
-  <div class="summary">HP 与 OpenAI 的 Frontier 合作覆盖产品开发、供应链运营和客户服务，是制造业中规模最大的 ChatGPT Enterprise 部署之一。该案例为企业 AI 从 POC 到全面落地提供了参考路径。</div>
-  <a class="source-link" href="https://openai.com/index/hp-frontier-partnership/" target="_blank">来源 · OpenAI →</a>
+  <div class="label">Claude Science</div>
+  <div class="title">面向科研的 Claude Science 正式上线，整合实验工具链</div>
+  <div class="summary">Claude Science 集成科研常用工具包、计算资源和可审计的输出格式。它不同于通用聊天——目标是让 Claude 成为科学家可重复使用的研究工具。面向制药、材料科学、基因组学等实验科学领域。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank">来源 · Anthropic →</a>
 </div>
 
 <div class="news-item">
-  <div class="label">strix · 安全</div>
-  <div class="title">strix：开源 AI 黑客工具，自动发现和修复漏洞</div>
-  <div class="summary">usestrix/strix 本周突破 26k stars，定位为开源 AI 驱动的应用安全测试工具。自动发现代码漏洞并提供修复建议，适合开发团队集成到 CI/CD 流程中。</div>
-  <a class="source-link" href="https://github.com/usestrix/strix" target="_blank">来源 · GitHub →</a>
-</div>
-
-<div class="news-item">
-  <div class="label">Claude Code · 医疗</div>
-  <div class="title">开发者用 Claude Code 对自己的 MRI 进行二次分析（HN 318 分）</div>
-  <div class="summary">一名开发者分享了使用 Claude Code Opus 对个人 MRI 报告进行二次诊断分析的体验，在 HN 上引发 428 条讨论。社区反应两极：部分称赞 AI 辅助医疗的潜力，也有医生背景用户警告需谨慎对待无资质的 AI 诊断。</div>
-  <a class="source-link" href="https://antoine.fi/mri-analysis-using-claude-code-opus" target="_blank">来源 · antoine.fi →</a>
+  <div class="label">Fable 5 · 恢复</div>
+  <div class="title">Fable 5 恢复全球使用：Pro 套餐免费至 7 月 7 日</div>
+  <div class="summary">7 月 1 日起，Fable 5 在所有平台全球恢复使用。Pro/Max/Team/高级 Enterprise 用户在 7 月 7 日前可免费使用（上限为每周额度的 50%），之后需通过 usage credits 计费。云平台（AWS/GCP/Azure）正尽快恢复。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">来源 · Anthropic →</a>
 </div>
 </div>
 
@@ -148,17 +154,10 @@
 <div class="section-header">国内 AI 动态</div>
 
 <div class="news-item">
-  <div class="label">智谱 · GLM 5.2</div>
-  <div class="title">GLM 5.2 在 Semgrep 安全评测中击败 Claude，获国际关注</div>
-  <div class="summary">智谱 AI 的 GLM 5.2 在 Semgrep 的 IDOR 安全漏洞检测评测中以纯 Prompt 方式击败 Claude Code Opus 4.8，每次检测成本仅 $0.17。该结果由独立安全公司发布，成为国产开源模型首次在国际安全评测中正面超越闭源前沿产品。</div>
+  <div class="label">GLM 5.2 · 延续</div>
+  <div class="title">GLM 5.2 在 Semgrep 安全评测中超越 Claude 的结果持续引发讨论</div>
+  <div class="summary">上周 Semgrep 发布的 GLM 5.2 安全评测结果仍在社区发酵。在 Claude Sonnet 5 和 Fable 5 解禁的背景下，GLM 5.2 以 1/6 成本、纯 Prompt 方式超越 Claude Code 的事实，进一步强化了开源权重模型的竞争力叙事。</div>
   <a class="source-link" href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">来源 · Semgrep →</a>
-</div>
-
-<div class="news-item">
-  <div class="label">金融 Agent</div>
-  <div class="title">ai-berkshire 日增 1,445 stars，国产 AI + 金融框架领跑 GitHub</div>
-  <div class="summary">基于 Claude Code 的价值投资 Agent 框架 ai-berkshire 成为上周末 GitHub 增长最快的项目。结合了巴菲特等四位投资大师方法论的多 Agent 对抗分析设计，体现了中国开发者在 AI + 金融赛道的开源活跃度。</div>
-  <a class="source-link" href="https://github.com/xbtlin/ai-berkshire" target="_blank">来源 · GitHub →</a>
 </div>
 </div>
 
@@ -167,17 +166,17 @@
 <div class="section-header">国际 AI 动态</div>
 
 <div class="news-item">
-  <div class="label">OpenAI · 模型</div>
-  <div class="title">GPT-5.6 三个变体：Sol $5/$30、Terra $2.50/$15、Luna $1/$6（每百万 Token）</div>
-  <div class="summary">GPT-5.6 引入新命名体系：数字代表模型世代（5.6），Sol/Terra/Luna 代表能力层级。新增显式缓存断点支持和 30 分钟最低缓存生命周期，缓存写入按 1.25x 计费、读取继续享受 90% 折扣。Sol 将在 7 月通过 Cerebras 以 750 Token/秒提供。</div>
-  <a class="source-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">来源 · OpenAI →</a>
+  <div class="label">Anthropic · 行业</div>
+  <div class="title">Anthropic 联手 Amazon、Microsoft、Google 推出越狱严重性评分框架</div>
+  <div class="summary">新框架从四个维度评分越狱：能力增益、能力广度、武器化难易度和可发现性。同时启动 HackerOne 公开收集计划，邀请安全研究人员提交 Fable 5 上的越狱发现。Anthropic 还承诺对涉及国家安全的模型进行发布前政府评估。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">来源 · Anthropic →</a>
 </div>
 
 <div class="news-item">
-  <div class="label">安全 · 趋势</div>
-  <div class="title">Semgrep 呼吁不要 All-in 单一模型：开源权重模型已跨过门槛</div>
-  <div class="summary">Semgrep 在评测报告中强调三项洞察：Harness（检测框架）比模型本身更重要；开源权重模型已达到值得企业认真评估的程度；不应将所有预算押注单一闭源供应商。报告中 GLM 5.2 在无框架辅助的情况下表现优于 Claude Code，MinerU 则持续增长至 71.5k stars。</div>
-  <a class="source-link" href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">来源 · Semgrep →</a>
+  <div class="label">Meta AI · 脑机</div>
+  <div class="title">Brain2Qwerty 从脑波到键盘：非侵入式脑机接口的重大进展</div>
+  <div class="summary">Meta AI 的 Brain2Qwerty 利用 EEG 数据训练 AI 将脑波活动直接转换为可读文本，无需任何手术植入。该技术仍在研究阶段，但为渐冻症等患者群体提供了未来无障碍通信的一种可能路径。</div>
+  <a class="source-link" href="https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/" target="_blank">来源 · Meta AI →</a>
 </div>
 </div>
 
@@ -186,17 +185,17 @@
 <div class="section-header">AI 与金融</div>
 
 <div class="news-item">
-  <div class="label">金融 Agent</div>
-  <div class="title">TradingAgents 逼近 9 万 stars，Vibe-Trading 14k stars</div>
-  <div class="summary">多 Agent 金融交易框架 TradingAgents（89,454 stars）和香港大学 Vibe-Trading（14,309 stars，+492）本周末同时登上 GitHub Trending。AI Agent 驱动的量化交易研究正成为开源社区最活跃的赛道之一。</div>
-  <a class="source-link" href="https://github.com/TauricResearch/TradingAgents" target="_blank">来源 · GitHub →</a>
+  <div class="label">OpenAI · IPO</div>
+  <div class="title">OpenAI 秘密提交 S-1 文件，准备 IPO</div>
+  <div class="summary">市场消息显示 OpenAI 已秘密递交 S-1 上市申请，成为 2026 年最受关注的科技 IPO 之一。GPT-5.6 发布、Jalapeño 芯片和 HP 等企业合作构成了其上市叙事的三大支柱。距 SpaceX 1.77 万亿美元上市仅三周，AI IPO 浪潮正在形成。</div>
+  <a class="source-link" href="https://www.sohu.com/a/1035494223_584838" target="_blank">来源 · 市场报道 →</a>
 </div>
 
 <div class="news-item">
   <div class="label">美光 · 后续</div>
-  <div class="title">美光 Q3 创新高后估值争议浮现：AI 内存周期可持续吗</div>
-  <div class="summary">Seeking Alpha 发表深度分析，指出美光 414 亿美元 Q3 营收创历史新高后，估值可能已接近周期高位。观点认为 AI 驱动的内存短缺已被充分定价，下一阶段的关注点应从"AI 需求拉动"转向"供应端竞争格局"。</div>
-  <a class="source-link" href="https://seekingalpha.com/article/4918205-micron-technology-replaceable-role-of-memory-in-ai-value-chain" target="_blank">来源 · Seeking Alpha →</a>
+  <div class="title">美光 Q3 创纪录后股价持稳，市场消化 AI 内存周期预期</div>
+  <div class="summary">美光 Q3 营收 414 亿美元创新高后，市场开始评估 AI 内存超级周期的可持续性。HBM 产能在 2026 年全年售罄推动毛利率至 86%，但 Seeking Alpha 分析师指出估值已充分反映短期乐观预期，下一阶段关注点转移至三星和 SK 海力士的产能扩张响应。</div>
+  <a class="source-link" href="https://investors.micron.com/" target="_blank">来源 · Micron IR →</a>
 </div>
 </div>
 
@@ -205,17 +204,17 @@
 <div class="section-header">政策、监管与风险</div>
 
 <div class="news-item">
-  <div class="label">美国 · 出口管制</div>
-  <div class="title">美国政府要求 GPT-5.6 分阶段发布，OpenAI 公开表达不满</div>
-  <div class="summary">OpenAI 在 GPT-5.6 公告中明确表态，不认为政府的访问审查流程应成为长期机制——"它会阻碍用户、开发者、企业和网络防御者获得最佳工具"。OpenAI 将此视为短期让步，同时透露正在与美国政府共同制定网络行政令框架。</div>
-  <a class="source-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">来源 · OpenAI →</a>
+  <div class="label">出口管制 · 终局</div>
+  <div class="title">Fable 5 出口管制解除的全过程：从报告到解禁仅 18 天</div>
+  <div class="summary">6 月 9 日 Fable 5 发布 → 6 月 12 日 Amazon 报告触发管制 → 6 月 26 日部分美国机构恢复 Mythos 5 → 6 月 30 日全面解除。最终结论：Amazon 报告中的漏洞能力并非 Fable 5 独有，多个前沿及非前沿模型均可复现。Anthropic 向政府主动报告的决策与 OpenAI GPT-5.6 的事件形成对比——前者主动披露、后者被动接受审查。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">来源 · Anthropic →</a>
 </div>
 
 <div class="news-item">
-  <div class="label">教育 · 作弊</div>
-  <div class="title">布朗大学教授公开谴责大规模 AI 考试作弊（HN 192 分）</div>
-  <div class="summary">布朗大学发生大规模 AI 作弊事件，教授公开谴责并对学术诚信发出警告。该事件在 HN 上引发 259 条讨论，社区对 AI 时代的高等教育评估方式存在根本分歧——部分呼吁回归线下笔试，另一部分则认为应重新设计评估方法本身。</div>
-  <a class="source-link" href="https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html" target="_blank">来源 · El País →</a>
+  <div class="label">开源 · 治理</div>
+  <div class="title">Godot 引擎宣布不再接受 AI 生成的代码贡献</div>
+  <div class="summary">开源游戏引擎 Godot 于 7 月 1 日宣布不再接受 AI 生成的代码贡献。原因直接："我们无法信任大量使用 AI 的人能理解他们的代码到足以修复错误的程度。"这是继 Linux 内核之后又一个重要的开源项目对 AI 代码给出明确限制。</div>
+  <a class="source-link" href="https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/" target="_blank">来源 · PC Gamer →</a>
 </div>
 </div>
 
@@ -224,23 +223,30 @@
 <div class="section-header">社媒与开发者社区观察</div>
 
 <div class="news-item">
-  <div class="label">Hacker News · 热议</div>
-  <div class="title">"Tokenmaxxing is dead, long live tokenmaxxing"（105 分，128 评论）</div>
-  <div class="summary">一篇讨论 Agentic 技术中 Token 优化趋势变化的博客在 HN 上引发讨论。核心观点是单纯压缩 Token 的策略已过时，新的方向是利用 AI Agent 本身来智能管理上下文窗口。该讨论反映开发者社区对 AI 工具经济学的方法论正在演变。</div>
-  <a class="source-link" href="https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing" target="_blank">来源 · 12gramsofcarbon.com →</a>
+  <div class="label">Hacker News · 热议 #1</div>
+  <div class="title">Claude Code 被发现嵌入隐写术（1,912 分，549 评论）</div>
+  <div class="summary">开发者发现 Claude Code 通过隐写术在请求中嵌入标记信息，该帖以 1,912 分成为本期最高分讨论。社区争论的焦点在于 Anthropic 是否应该在未告知用户的情况下使用这类技术。该讨论尚无 Anthropic 官方回应，属于社区观察。</div>
+  <a class="source-link" href="https://thereallo.dev/blog/claude-code-prompt-steganography" target="_blank">来源 · thereallo.dev →</a>
 </div>
 
 <div class="news-item">
-  <div class="label">Hacker News · Show HN</div>
-  <div class="title">Bash4LLM+：单文件 Bash 脚本封装 LLM API 调用（31 分）</div>
-  <div class="summary">开发者展示了一个极简 LLM 调用方案——单个 Bash 脚本，仅依赖 curl 和 jq，支持流式输出和 JSON 会话保存。适合 shell 重度用户在脚本中集成 LLM 能力，但功能有限，面向极简使用场景。</div>
-  <a class="source-link" href="https://github.com/kamaludu/bash4llm" target="_blank">来源 · GitHub →</a>
+  <div class="label">Hacker News · 讨论</div>
+  <div class="title">Claude Sonnet 5 HN 评论精选（638 评论）</div>
+  <div class="summary">Sonnet 5 的发布帖在 HN 上引发了 638 条评论。开发者的反馈集中在三个方面：价格与 Opus 4.8 相比的性价比优势、Agentic 能力在 real-world 编码任务中的表现、以及 Sonnet 5 是否会成为新的"性价比之王"。部分开发者反馈成本-性能曲线在 medium effort 区间的性价比最突出。</div>
+  <a class="source-link" href="https://news.ycombinator.com/item?id=48736605" target="_blank">来源 · Hacker News →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Hacker News · 讨论</div>
+  <div class="title">Godot 拒绝 AI 代码的决策在社区中获得广泛认同</div>
+  <div class="summary">Godot 拒绝 AI 代码贡献的决定（30 分，11 评论）在开发者社区中获得了相当正面的评价。与 Armin Ronacher 上周对 "The Coming Loop" 的警告形成了呼应——AI 生成代码的可维护性和可理解性正在成为开源社区的核心关切。</div>
+  <a class="source-link" href="https://news.ycombinator.com/item?id=48743472" target="_blank">来源 · Hacker News →</a>
 </div>
 </div>
 
 <div class="footer">
   <p>AI Radar · 每周一三五更新</p>
-  <p style="margin-top:4px">第 4 期 · 2026.06.29</p>
+  <p style="margin-top:4px">第 5 期 · 2026.07.01</p>
   <p style="margin-top:10px"><a href="issues/" style="font-size:12px;color:#aaa;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #ddd">往期归档 →</a></p>
 </div>
 </div>

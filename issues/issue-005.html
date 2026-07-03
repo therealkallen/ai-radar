@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 5 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策与监管</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+
+<div class="container">
+<div class="masthead">
+  <h1>AI Radar</h1>
+  <div class="meta"><span>2026.06.30 — 07.01</span><span>第 5 期</span></div>
+</div>
+
+<!-- Radar Picks -->
+<div class="section" id="picks">
+<div class="section-header">Radar Picks</div>
+
+<div class="card">
+  <span class="tag">模型</span>
+  <h3>Anthropic 三连发：Sonnet 5 发布、Fable 5 解禁、Claude Science 上线</h3>
+  <p>6 月 30 日成为 Anthropic 近年来最密集的发布日。Claude Sonnet 5 正式发布，接近 Opus 4.8 的性能但价格更低（$2/$10 每百万 Token 首月价）；Fable 5 出口管制正式解除，7 月 1 日起全球恢复使用；Claude Science 科研工作台上线，面向科学研究场景。三项发布在 HN 上合计获得 2,225 分。（详情见下方各板块）</p>
+</div>
+
+<div class="card">
+  <span class="tag">监管</span>
+  <h3>Fable 5 重返全球：出口管制仅持续 18 天，7 月 1 日正式解禁</h3>
+  <p>美国商务部于 6 月 30 日正式解除对 Claude Fable 5 和 Mythos 5 的出口管制。解除的前提是 Anthropic 部署新的安全分类器（对已知绕过技术拦截率 >99%）以及提出行业级越狱严重性评估框架。Anthropic 同时透露，Amazon 原始报告中 Fable 5 能做的事情，Opus 4.8、GPT-5.5、Kimi K2.7 同样可以做到——差异化在于 Anthropic 主动向政府报告了而非隐瞒。</p>
+  <a class="source-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">来源 · Anthropic →</a>
+</div>
+
+<div class="card">
+  <span class="tag">模型</span>
+  <h3>Claude Sonnet 5 发布：最有 Agentic 能力的 Sonnet，参数效率接近 Opus 4.8</h3>
+  <p>Sonnet 5 被定义为"史上最具 Agentic 能力的 Sonnet"。在多步规划、工具（浏览器/终端）使用等任务上，性能大幅超越 Sonnet 4.6，部分场景已追平 Opus 4.8。引入多级 effort 设置，用户可在成本与性能之间弹性选择。代码场景中用户反馈极强："能在无提示的情况下自行编写复现测试并验证修复"。</p>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank">来源 · Anthropic →</a>
+</div>
+
+<div class="card">
+  <span class="tag">科研</span>
+  <h3>Claude Science 上线：面向科学家的 AI 研究工作台</h3>
+  <p>Anthropic 推出 Claude Science，整合科研常用工具包和计算资源，可产生可审计的研究产物。与通用聊天不同，该产品面向需要可复现、可引用输出的科研场景。在 HN 上获 478 分讨论。</p>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank">来源 · Anthropic →</a>
+</div>
+
+<div class="card">
+  <span class="tag">模型</span>
+  <h3>Meta Brain2Qwerty：AI 将脑电波转化为文字，无需手术</h3>
+  <p>Meta AI 于 6 月 30 日发布 Brain2Qwerty 研究，通过非侵入式 EEG 结合 AI 模型，将人脑的即时意图转化为可读文字。该技术在 HN 获 151 分讨论，被认为是脑机接口方向的重大突破——首次在无手术条件下实现了有意义的文本生成。</p>
+  <a class="source-link" href="https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/" target="_blank">来源 · Meta AI →</a>
+</div>
+</div>
+
+<!-- 模型与技术进展 -->
+<div class="section" id="models">
+<div class="section-header">模型与技术进展</div>
+
+<div class="news-item">
+  <div class="label">Claude Sonnet 5 · 细节</div>
+  <div class="title">Sonnet 5 评测全景：Agentic 搜索、计算机使用、编码全面飞跃</div>
+  <div class="summary">Sonnet 5 在 BrowseComp（Agentic 搜索）和 OSWorld-Verified（计算机使用）评测中，成本-性能曲线远超 Sonnet 4.6。网络安全评估显示它无法开发完整的 Firefox 漏洞利用（与 Opus 4.8 和 Mythos 5 相比能力极低），但自动行为审计中非对齐率略高于 Opus 4.8。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank">来源 · Anthropic →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Mistral</div>
+  <div class="title">Mistral 发布 Leanstral 1.5（HN 208 分）</div>
+  <div class="summary">Mistral 于 6 月 30 日推出 Leanstral 1.5，在参数效率方向持续发力。该模型在 HN 获得 208 分，面向资源受限但要求可靠推理能力的企业场景。</div>
+  <a class="source-link" href="https://docs.mistral.ai/models/model-cards/leanstral-1-5-26-06" target="_blank">来源 · Mistral →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Google · 图像</div>
+  <div class="title">Gemini Image Flash Lite 发布：轻量级图像生成模型</div>
+  <div class="summary">Google DeepMind 推出 Gemini 图像模型 Flash Lite 版本，面向需要快速、低成本图像生成的批量应用场景。该发布在 HN 上获 368 分。</div>
+  <a class="source-link" href="https://deepmind.google/models/gemini-image/flash-lite/" target="_blank">来源 · Google DeepMind →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">OpenAI · 科研</div>
+  <div class="title">GeneBench-Pro：新版基因组学 AI 基准发布</div>
+  <div class="summary">OpenAI 于 6 月 30 日发布 GeneBench-Pro，扩展了对 AI 模型在长周期基因组学和定量生物学分析中的评估。与此前发布的 GPT-5.6 Sol 在 GeneBench v1 上的进步呼应。</div>
+  <a class="source-link" href="https://openai.com/index/introducing-genebench-pro/" target="_blank">来源 · OpenAI →</a>
+</div>
+</div>
+
+<!-- 企业应用与工具观察 -->
+<div class="section" id="enterprise">
+<div class="section-header">企业应用与工具观察</div>
+
+<div class="news-item">
+  <div class="label">Claude Science</div>
+  <div class="title">面向科研的 Claude Science 正式上线，整合实验工具链</div>
+  <div class="summary">Claude Science 集成科研常用工具包、计算资源和可审计的输出格式。它不同于通用聊天——目标是让 Claude 成为科学家可重复使用的研究工具。面向制药、材料科学、基因组学等实验科学领域。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank">来源 · Anthropic →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Fable 5 · 恢复</div>
+  <div class="title">Fable 5 恢复全球使用：Pro 套餐免费至 7 月 7 日</div>
+  <div class="summary">7 月 1 日起，Fable 5 在所有平台全球恢复使用。Pro/Max/Team/高级 Enterprise 用户在 7 月 7 日前可免费使用（上限为每周额度的 50%），之后需通过 usage credits 计费。云平台（AWS/GCP/Azure）正尽快恢复。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">来源 · Anthropic →</a>
+</div>
+</div>
+
+<!-- 国内 AI 动态 -->
+<div class="section" id="china">
+<div class="section-header">国内 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">GLM 5.2 · 延续</div>
+  <div class="title">GLM 5.2 在 Semgrep 安全评测中超越 Claude 的结果持续引发讨论</div>
+  <div class="summary">上周 Semgrep 发布的 GLM 5.2 安全评测结果仍在社区发酵。在 Claude Sonnet 5 和 Fable 5 解禁的背景下，GLM 5.2 以 1/6 成本、纯 Prompt 方式超越 Claude Code 的事实，进一步强化了开源权重模型的竞争力叙事。</div>
+  <a class="source-link" href="https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/" target="_blank">来源 · Semgrep →</a>
+</div>
+</div>
+
+<!-- 国际 AI 动态 -->
+<div class="section" id="international">
+<div class="section-header">国际 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">Anthropic · 行业</div>
+  <div class="title">Anthropic 联手 Amazon、Microsoft、Google 推出越狱严重性评分框架</div>
+  <div class="summary">新框架从四个维度评分越狱：能力增益、能力广度、武器化难易度和可发现性。同时启动 HackerOne 公开收集计划，邀请安全研究人员提交 Fable 5 上的越狱发现。Anthropic 还承诺对涉及国家安全的模型进行发布前政府评估。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">来源 · Anthropic →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Meta AI · 脑机</div>
+  <div class="title">Brain2Qwerty 从脑波到键盘：非侵入式脑机接口的重大进展</div>
+  <div class="summary">Meta AI 的 Brain2Qwerty 利用 EEG 数据训练 AI 将脑波活动直接转换为可读文本，无需任何手术植入。该技术仍在研究阶段，但为渐冻症等患者群体提供了未来无障碍通信的一种可能路径。</div>
+  <a class="source-link" href="https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/" target="_blank">来源 · Meta AI →</a>
+</div>
+</div>
+
+<!-- AI 与金融 -->
+<div class="section" id="finance">
+<div class="section-header">AI 与金融</div>
+
+<div class="news-item">
+  <div class="label">OpenAI · IPO</div>
+  <div class="title">OpenAI 秘密提交 S-1 文件，准备 IPO</div>
+  <div class="summary">市场消息显示 OpenAI 已秘密递交 S-1 上市申请，成为 2026 年最受关注的科技 IPO 之一。GPT-5.6 发布、Jalapeño 芯片和 HP 等企业合作构成了其上市叙事的三大支柱。距 SpaceX 1.77 万亿美元上市仅三周，AI IPO 浪潮正在形成。</div>
+  <a class="source-link" href="https://www.sohu.com/a/1035494223_584838" target="_blank">来源 · 市场报道 →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">美光 · 后续</div>
+  <div class="title">美光 Q3 创纪录后股价持稳，市场消化 AI 内存周期预期</div>
+  <div class="summary">美光 Q3 营收 414 亿美元创新高后，市场开始评估 AI 内存超级周期的可持续性。HBM 产能在 2026 年全年售罄推动毛利率至 86%，但 Seeking Alpha 分析师指出估值已充分反映短期乐观预期，下一阶段关注点转移至三星和 SK 海力士的产能扩张响应。</div>
+  <a class="source-link" href="https://investors.micron.com/" target="_blank">来源 · Micron IR →</a>
+</div>
+</div>
+
+<!-- 政策与监管 -->
+<div class="section" id="policy">
+<div class="section-header">政策、监管与风险</div>
+
+<div class="news-item">
+  <div class="label">出口管制 · 终局</div>
+  <div class="title">Fable 5 出口管制解除的全过程：从报告到解禁仅 18 天</div>
+  <div class="summary">6 月 9 日 Fable 5 发布 → 6 月 12 日 Amazon 报告触发管制 → 6 月 26 日部分美国机构恢复 Mythos 5 → 6 月 30 日全面解除。最终结论：Amazon 报告中的漏洞能力并非 Fable 5 独有，多个前沿及非前沿模型均可复现。Anthropic 向政府主动报告的决策与 OpenAI GPT-5.6 的事件形成对比——前者主动披露、后者被动接受审查。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">来源 · Anthropic →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">开源 · 治理</div>
+  <div class="title">Godot 引擎宣布不再接受 AI 生成的代码贡献</div>
+  <div class="summary">开源游戏引擎 Godot 于 7 月 1 日宣布不再接受 AI 生成的代码贡献。原因直接："我们无法信任大量使用 AI 的人能理解他们的代码到足以修复错误的程度。"这是继 Linux 内核之后又一个重要的开源项目对 AI 代码给出明确限制。</div>
+  <a class="source-link" href="https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/" target="_blank">来源 · PC Gamer →</a>
+</div>
+</div>
+
+<!-- 社媒与开发者社区观察 -->
+<div class="section" id="community">
+<div class="section-header">社媒与开发者社区观察</div>
+
+<div class="news-item">
+  <div class="label">Hacker News · 热议 #1</div>
+  <div class="title">Claude Code 被发现嵌入隐写术（1,912 分，549 评论）</div>
+  <div class="summary">开发者发现 Claude Code 通过隐写术在请求中嵌入标记信息，该帖以 1,912 分成为本期最高分讨论。社区争论的焦点在于 Anthropic 是否应该在未告知用户的情况下使用这类技术。该讨论尚无 Anthropic 官方回应，属于社区观察。</div>
+  <a class="source-link" href="https://thereallo.dev/blog/claude-code-prompt-steganography" target="_blank">来源 · thereallo.dev →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Hacker News · 讨论</div>
+  <div class="title">Claude Sonnet 5 HN 评论精选（638 评论）</div>
+  <div class="summary">Sonnet 5 的发布帖在 HN 上引发了 638 条评论。开发者的反馈集中在三个方面：价格与 Opus 4.8 相比的性价比优势、Agentic 能力在 real-world 编码任务中的表现、以及 Sonnet 5 是否会成为新的"性价比之王"。部分开发者反馈成本-性能曲线在 medium effort 区间的性价比最突出。</div>
+  <a class="source-link" href="https://news.ycombinator.com/item?id=48736605" target="_blank">来源 · Hacker News →</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Hacker News · 讨论</div>
+  <div class="title">Godot 拒绝 AI 代码的决策在社区中获得广泛认同</div>
+  <div class="summary">Godot 拒绝 AI 代码贡献的决定（30 分，11 评论）在开发者社区中获得了相当正面的评价。与 Armin Ronacher 上周对 "The Coming Loop" 的警告形成了呼应——AI 生成代码的可维护性和可理解性正在成为开源社区的核心关切。</div>
+  <a class="source-link" href="https://news.ycombinator.com/item?id=48743472" target="_blank">来源 · Hacker News →</a>
+</div>
+</div>
+
+<div class="footer">
+  <p>AI Radar · 每周一三五更新</p>
+  <p style="margin-top:4px">第 5 期 · 2026.07.01</p>
+  <p style="margin-top:10px"><a href="issues/" style="font-size:12px;color:#aaa;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #ddd">往期归档 →</a></p>
+</div>
+</div>
+</body>
+</html>

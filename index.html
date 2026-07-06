@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Radar · 第 6 期</title>
+<title>AI Radar · 第 7 期</title>
 <style>
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -55,179 +55,235 @@
 <div class="container">
 <div class="masthead">
   <h1>AI Radar</h1>
-  <div class="meta"><span>2026.07.01 — 07.03</span><span>第 6 期</span></div>
+  <div class="meta"><span>2026.07.03 — 07.06</span><span>第 7 期</span></div>
 </div>
 
+<!-- Radar Picks -->
 <div class="section" id="picks">
 <div class="section-header">Radar Picks</div>
 
 <div class="card">
-  <span class="tag">安全</span>
-  <h3>阿里巴巴因后门风险全面禁用 Claude Code，推荐 Qoder 替代</h3>
-  <p>Reuters 于 7 月 3 日报道，阿里巴巴因近期 Claude Code 被曝存在"植入了后门"的安全风险，经综合评估后将其列入高风险软件名单。自 7 月 10 日起，阿里巴巴将全面禁止内部员工在办公环境下使用 Claude Code，推荐使用自家工具 Qoder 作为替代。这直接呼应了上周 HN 上 1,912 分的隐写术爆料，一家中国科技巨头对 Anthropic 工具的安全性投下了不信任票。</p>
-  <a class="source-link" href="https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03/" target="_blank">来源 · Reuters →</a>
+  <span class="tag">模型发布</span>
+  <h3>Anthropic 三连发：Sonnet 5、Claude Science、Fable 5 回归</h3>
+  <p>Anthropic 本周密集发布三项重磅产品：Claude Sonnet 5 代理能力大幅跃升，在 BrowseComp 与 OSWorld 评测中逼近 Opus 4.8，introductory 价格 $2/$10 per MTok，仅为 Opus 的三分之一。同步上线 Claude Science 科学工作台，集成 60+ 领域技能连接器覆盖基因组学与蛋白组学。经历出口管制暂停后，Fable 5 于 7 月 1 日恢复全球访问，Anthropic 联合 Amazon、Microsoft、Google 提出行业越狱严重性评分框架。</p>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank">anthropic.com</a>
 </div>
 
 <div class="card">
-  <span class="tag">监管</span>
-  <h3>Anthropic 发布 Fable 5 安全白皮书 + 越狱严重性框架（CJS）</h3>
-  <p>Anthropic 于 7 月 2 日发布 Fable 5 网络安全防护的详细分类体系，将网安用途分为禁止、高风险双用途、低风险双用途和良性使用四类。同时联合 Amazon、Microsoft、Google 推出 AI 越狱严重性评分框架（Cyber Jailbreak Severity），从能力增益、广度、武器化难易度和可发现性四个维度评分，填补了行业空白。</p>
-  <a class="source-link" href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank">来源 · Anthropic →</a>
+  <span class="tag">模型发布</span>
+  <h3>GPT-5.6 Sol 预览发布，Sol Ultra 将集成 Codex CLI</h3>
+  <p>OpenAI 发布 GPT-5.6 Sol 预览版，同步公开系统安全卡。Sol 系列在推理与编码任务上较前代显著提升，支持扩展思维链与工具调用。HN 社区消息称 Sol Ultra 变体将直接集成到 Codex CLI 中，帖子当日 290 points、226 条评论，开发者社区反响热烈。</p>
+  <a class="source-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">openai.com</a>
 </div>
 
 <div class="card">
-  <span class="tag">企业应用</span>
-  <h3>加州政府与 Anthropic 签约：州政府机构以五折价全面部署 Claude</h3>
-  <p>加州州长 Newsom 于 6 月 29 日宣布与 Anthropic 达成"首创性"合作：所有州政府机构及地方城市、县政府均可五折使用 Claude，并附赠免费培训和开发者技术支持。Claude 是首款通过加州技术局统一门户（SITeS）面向全州机构的 AI 工具。该合作与联邦政府对 Anthropic 的态度形成鲜明对比。</p>
-  <a class="source-link" href="https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/" target="_blank">来源 · 加州州长办公室 →</a>
-</div>
-
-<div class="card">
-  <span class="tag">开发者工具</span>
-  <h3>WebKit 发布 Safari MCP Server：AI 助手可直接操控浏览器</h3>
-  <p>WebKit 官方于 7 月 3 日推出 Safari MCP Server，使 AI Agent 能够通过 Model Context Protocol 与 Safari 浏览器交互，支持 Web 开发的调试、测试和自动化工作流。这是首个由主流浏览器厂商发布的官方 MCP 服务器，进一步扩展了 MCP 生态的覆盖范围。</p>
-  <a class="source-link" href="https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/" target="_blank">来源 · WebKit →</a>
+  <span class="tag">政策</span>
+  <h3>欧盟 AI 法案核心条款 7 月 1 日全面生效</h3>
+  <p>全球首部综合性 AI 法规进入全面执行阶段。高风险 AI 系统（涉及就业、教育、执法、医疗等领域）须通过全生命周期合规评估；通用模型须提交训练数据摘要、能耗报告和红队测试结果。违规最高可处全球年营收 7% 或 3500 万欧元罚款，AI 产业正式进入强监管时代。</p>
+  <a class="source-link" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank">ec.europa.eu</a>
 </div>
 </div>
 
+<!-- 模型与技术进展 -->
 <div class="section" id="models">
 <div class="section-header">模型与技术进展</div>
 
 <div class="news-item">
-  <div class="label">Anthropic · 安全</div>
-  <div class="title">Fable 5 安全分类器详解：四层划分 + 误报率权衡</div>
-  <div class="summary">新发布的分类器将网安请求分为四类：禁止（勒索软件/恶意软件开发/数据外泄/C2基础设施）、高风险双用途（渗透测试/漏洞利用/提权）、低风险双用途（OSINT/密码协议测试）、良性（安全编码/补丁管理/事件响应）。Fable 5 的安全边界比此前任何模型都大——意味着更高误报率但更强防护。</div>
-  <a class="source-link" href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank">来源 · Anthropic →</a>
+  <div class="label">Anthropic</div>
+  <div class="title">Sonnet 5：自主规划、工具调用、多步推理全面升级</div>
+  <div class="summary">Sonnet 5 支持浏览器与终端工具自主调用，在 BrowseComp 代理搜索评测中以中等 effort 即可匹配 Opus 4.8 的峰值性能。安全方面整体有害行为率低于 Sonnet 4.6，默认启用网络安全防护，在 Firefox 漏洞利用测试中无完整成功案例。introductory 定价 $2/$10 per MTok 持续至 8 月 31 日。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank">anthropic.com</a>
 </div>
 
 <div class="news-item">
-  <div class="label">CJS · 框架</div>
-  <div class="title">越狱严重性框架四轴评分：从 CJS-0 到 CJS-4 的指数级风险</div>
-  <div class="summary">越狱框架首次以定量方式定义 AI 越狱严重性。当能力增益为 0 时自动判为 CJS-0（信息性），评分终止。最高 CJS-4（严重）表示可靠的专家级攻击输出，其他方式无法获得。Anthropic 同时启动了 HackerOne 公开收集计划。</div>
-  <a class="source-link" href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank">来源 · Anthropic →</a>
+  <div class="label">OpenAI</div>
+  <div class="title">GeneBench-Pro：基因组学 AI 评估基准发布</div>
+  <div class="summary">OpenAI 发布 GeneBench-Pro，专为评估 AI 模型在基因序列理解、变异识别和功能预测等任务上的能力而设计，旨在推动生命科学领域 AI 应用的评估标准化。</div>
+  <a class="source-link" href="https://openai.com/index/introducing-genebench-pro/" target="_blank">openai.com</a>
 </div>
 
 <div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">Claude-real-video：让任意 LLM 观看视频的开源方案（HN 136 分）</div>
-  <div class="summary">GitHub 开源项目 claude-real-video 通过帧提取、转录和上下文拼接，让任意 LLM 能理解和分析视频内容。该设计降低了视频 AI 能力的获取门槛，不再依赖特定多模态模型。</div>
-  <a class="source-link" href="https://github.com/HUANGCHIHHUNGLeo/claude-real-video" target="_blank">来源 · GitHub →</a>
+  <div class="label">研究</div>
+  <div class="title">代码整洁度是否影响 Coding Agent？受控实验给出答案</div>
+  <div class="summary">一篇 arXiv 论文通过最小对照实验研究代码整洁度对 AI coding agent 表现的影响，为开发者是否需要在交给 AI 前重构代码提供了实证依据。HN 讨论 125 points、69 comments。</div>
+  <a class="source-link" href="https://arxiv.org/abs/2605.20049" target="_blank">arxiv.org</a>
 </div>
 
 <div class="news-item">
-  <div class="label">性能优化</div>
-  <div class="title">Manticore 重建 ONNX 推理路径：嵌入向量生成加速 14 倍</div>
-  <div class="summary">Manticore Search 团队重写了 ONNX 推理的底层路径，embedding 生成速度提升了 14 倍。该优化直接降低 RAG 和向量搜索场景的推理成本，对生产级 AI 应用有实际价值。</div>
-  <a class="source-link" href="https://manticoresearch.com/blog/onnx-embeddings-speedup/" target="_blank">来源 · Manticore →</a>
+  <div class="label">研究</div>
+  <div class="title">AI 导师在 Dartmouth 课程中实现 0.71–1.30 SD 效应量</div>
+  <div class="summary">一项在 Dartmouth 大学开展的 AI 辅导系统研究显示，AI 导师在课程学习中达到 0.71 至 1.30 标准差的教育效应量，HN 社区以 165 points 推上首页，引发对 AI 教育规模化应用的广泛讨论。</div>
+  <a class="source-link" href="https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf" target="_blank">uu.nl</a>
 </div>
 </div>
 
+<!-- 企业应用与工具观察 -->
 <div class="section" id="enterprise">
 <div class="section-header">企业应用与工具观察</div>
 
 <div class="news-item">
-  <div class="label">加州 · 政府</div>
-  <div class="title">加州政府全面部署 Claude：从 DMV 到医保局，从客服到网络防御</div>
-  <div class="summary">加州 DMV 正在用 Claude 改善客户服务和缩短等待时间；加州医保局（全美最大 Medicaid 机构）使用 Claude 优化内部工作流；CalOES 用 Claude Code 扫描和修补州政府代码。这是迄今最大规模的政府 AI 部署案例之一。</div>
-  <a class="source-link" href="https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/" target="_blank">来源 · 加州州长办公室 →</a>
+  <div class="label">Anthropic</div>
+  <div class="title">Claude Science 科学工作台正式上线</div>
+  <div class="summary">集文献分析、蛋白结构可视化、基因组浏览器、化学结构渲染于一体，Claude Science 可按需调用本地或 HPC 集群算力，自动管理计算任务。Manifold Bio 用于药物靶点筛选，Allen Institute 以此构建多智能体文献综述流水线，UCSF 脑肿瘤中心将分析加速近十倍。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank">anthropic.com</a>
 </div>
 
 <div class="news-item">
-  <div class="label">Safari · MCP</div>
-  <div class="title">Safari MCP Server 开放：Web 开发者的 AI 辅助工具链再添一环</div>
-  <div class="summary">WebKit 的 MCP 服务器使 AI Agent 能在 Safari 中执行网页操作，面向开发者的调试、自动化测试和页面分析场景。此前 MCP 社区已有浏览器自动化方案，但官方支持意味着更稳定的 API 和长期维护承诺。</div>
-  <a class="source-link" href="https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/" target="_blank">来源 · WebKit →</a>
+  <div class="label">OpenAI + Broadcom</div>
+  <div class="title">Jalapeño：OpenAI 首款自研 AI 推理芯片亮相</div>
+  <div class="summary">OpenAI 与 Broadcom 联合发布 LLM 优化推理处理器 Jalapeño，9 个月内完成从设计到流片。芯片将部署于 GW 级数据中心，配合 Broadcom 网络芯片和 Celestica 系统集成，分析师预计该合作至 2029 年可贡献约 2000 亿美元营收机会。</div>
+  <a class="source-link" href="https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html" target="_blank">cnbc.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">OpenAI</div>
+  <div class="title">HP 通过 Frontier 计划将 AI 规模化部署到企业</div>
+  <div class="summary">HP 与 OpenAI 深化 Frontier 合作，将 ChatGPT 企业级能力嵌入内部工作流，展示早期 AI 投入如何在大型组织内实现跨部门规模化扩展。</div>
+  <a class="source-link" href="https://openai.com/index/hp-frontier-partnership/" target="_blank">openai.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Anthropic</div>
+  <div class="title">Claude Tag：面向团队协作的新交互方式</div>
+  <div class="summary">Claude Tag 允许团队通过标签机制组织、共享和引用 Claude 对话上下文，为多成员 AI 协作场景提供更灵活的信息管理方案。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank">anthropic.com</a>
 </div>
 </div>
 
+<!-- 国内 AI 动态 -->
 <div class="section" id="china">
 <div class="section-header">国内 AI 动态</div>
 
 <div class="news-item">
-  <div class="label">阿里巴巴 · 安全</div>
-  <div class="title">阿里继隐写术争议后禁用 Claude Code，推荐 Qoder 替代</div>
-  <div class="summary">根据南都报道和 Reuters 确认，阿里在 Claude Code 隐写术标记事件发酵后，将其列入高风险软件。自 7 月 10 日起全面禁用，推荐使用内部工具 Qoder 替代。这一决定在 HN 上引发 26 条讨论，部分评论认为这是一次"意料之中的安全避险"。<br>（注：该禁令的具体技术依据和官方声明仍有待 Anthropic 回应）</div>
-  <a class="source-link" href="https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03/" target="_blank">来源 · Reuters →</a>
+  <div class="label">产业</div>
+  <div class="title">《财富》中国科技 50 强发布，DeepSeek 首进前五</div>
+  <div class="summary">华为、字节跳动、宁德时代、腾讯、DeepSeek 位列 2026 年《财富》中国科技 50 强前五。报告指出中国科技企业正从应用层创新走向产业链上游，在芯片、算法、核心材料和基础设施领域加大研发投入。华为 2025 年研发投入 1923 亿元，占营收 21.8%。</div>
+  <a class="source-link" href="https://tech.ifeng.com/c/8uFFVTMgtnY" target="_blank">ifeng.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">合规</div>
+  <div class="title">中国 AI 监管体系持续完善，算法备案与深度合成规则扩展至 B 端</div>
+  <div class="summary">2026 年中国 AI 监管框架从算法推荐备案、深度合成管理规定向企业营销、招聘、信贷等 B 端场景持续扩展。《数据安全法》与《个人信息保护法》构成 AI 训练数据合规底线，执法力度逐步加强。</div>
+  <a class="source-link" href="https://hankunlaw.com/cn/portal/article/index/cid/8/id/16455.html" target="_blank">hankunlaw.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">产业</div>
+  <div class="title">中国 AI 核心产业规模突破 1.2 万亿元，企业超 6000 家</div>
+  <div class="summary">2026 世界智能产业博览会报告显示，中国 AI 企业数量超 6000 家，核心产业规模突破 1.2 万亿元。大模型竞争格局从参数军备竞赛转向智能体执行能力与场景落地，DeepSeek V4 和 Kimi K2.6 领衔长上下文与 Agent 能力突破。</div>
+  <a class="source-link" href="https://cloud.tencent.cn/developer/article/2672179" target="_blank">cloud.tencent.cn</a>
 </div>
 </div>
 
+<!-- 国际 AI 动态 -->
 <div class="section" id="international">
 <div class="section-header">国际 AI 动态</div>
 
 <div class="news-item">
-  <div class="label">Anthropic · 政府</div>
-  <div class="title">加州-Anthropic 合作与联邦管制的鲜明温差</div>
-  <div class="summary">联邦政府对 Anthropic 的顶级模型实施出口管制仅三周前，加州——Anthropic 的注册地所在州——即签署了全州级别的合作协议。这种"联邦说停、州说用"的温差，揭示了美国 AI 治理在联邦和州两个层级之间的显著张力。</div>
-  <a class="source-link" href="https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/" target="_blank">来源 · 加州州长办公室 →</a>
+  <div class="label">Anthropic</div>
+  <div class="title">Fable 5 恢复全球访问，产业联合提出越狱严重性评分框架</div>
+  <div class="summary">经历 6 月 12 日美国出口管制暂停后，Fable 5 于 7 月 1 日恢复全球部署。Anthropic 升级安全分类器，Amazon 报告的绕行行为拦截率超 99%。联合 Amazon、Microsoft、Google 等 Glasswing 伙伴发布四维越狱严重性评分标准（能力增益、广度、武器化难度、可发现性），并推出 HackerOne 悬赏征集 Fable 5 漏洞。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">anthropic.com</a>
 </div>
 
 <div class="news-item">
-  <div class="label">Anthropic · 安全</div>
-  <div class="title">Fable 5 安全细节揭示了 AI 行业的一个转折：主动监管 > 事后补救</div>
-  <div class="summary">Anthropic 的 CJS 框架和详细分类器标志着 AI 行业从"出了问题再修"到"预定义安全边界"的方法论转变。四层分类体系与 HackerOne 公开计划表明，前沿 AI 厂商正在把安全透明度和公共参与作为核心产品策略的一部分。</div>
-  <a class="source-link" href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank">来源 · Anthropic →</a>
+  <div class="label">OpenAI</div>
+  <div class="title">Daybreak：面向所有组织的安全防护工具套件</div>
+  <div class="summary">OpenAI 推出 Daybreak 安全工具套件，利用 AI 能力为各类组织提供威胁检测与安全运营支持，目标降低网络安全门槛。</div>
+  <a class="source-link" href="https://openai.com/index/daybreak-securing-the-world/" target="_blank">openai.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Anthropic</div>
+  <div class="title">Anthropic 首尔办公室开业，深化韩国 AI 生态合作</div>
+  <div class="summary">Anthropic 在首尔设立办公室，宣布与韩国多家企业和研究机构建立合作伙伴关系，进一步扩展亚太 AI 生态布局。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem" target="_blank">anthropic.com</a>
 </div>
 </div>
 
+<!-- AI 与金融 -->
 <div class="section" id="finance">
 <div class="section-header">AI 与金融</div>
 
 <div class="news-item">
-  <div class="label">半导体 · Q2</div>
-  <div class="title">AI 芯片 Q2 暴涨：Micron、Intel、AMD 合计新增 2 万亿美元市值</div>
-  <div class="summary">CNBC 于 6 月 30 日报道，AI 芯片需求推动 Q2 半导体板块大幅上涨：AMD 市值增 6,150 亿美元（股价近乎翻三倍）、Micron 创纪录盈利后享受 AI 内存溢价、Intel 受 AI CPU 需求推动年内涨超 220%。全球芯片市场预测 2026 年达到 1.3 万亿美元。</div>
-  <a class="source-link" href="https://www.cnbc.com/2026/06/30/ai-chip-rally-in-q2-adds-2-trillion-in-value-to-micron-intel-amd-.html" target="_blank">来源 · CNBC →</a>
+  <div class="label">IPO</div>
+  <div class="title">2026 AI IPO 大年：SpaceX/xAI 领衔，Anthropic 估值逼近万亿</div>
+  <div class="summary">2026 年 AI 公司占 IPO 总估值约 92%，为史上最集中。SpaceX（含 xAI）以 750 亿美元创纪录挂牌；Anthropic 估值 9650 亿美元已提交保密 IPO 申请；OpenAI 目标估值 7300–8500 亿美元同步推进上市。三家公司合计潜在市值近 3 万亿美元。</div>
+  <a class="source-link" href="https://tomtunguz.com/spacex-openai-anthropic-ipo-2026/" target="_blank">tomtunguz.com</a>
 </div>
 
 <div class="news-item">
-  <div class="label">OpenAI · IPO</div>
-  <div class="title">OpenAI S-1 秘密提交进程推进，AI IPO 浪潮正在形成</div>
-  <div class="summary">继 SpaceX 1.77 万亿美元上市后，OpenAI 的 S-1 秘密提交持续推进。随着 GPT-5.6 系列发布、Jalapeño 芯片以及与 Broadcom/HP/Samsung 等企业合作成形，市场对 OpenAI 的估值预期持续走高。AI 三巨头（SpaceX、OpenAI、Anthropic）将构成 2026 年下半年最大的 IPO 叙事。</div>
-  <a class="source-link" href="https://www.cnbc.com/2026/06/30/ai-chip-rally-in-q2-adds-2-trillion-in-value-to-micron-intel-amd-.html" target="_blank">来源 · CNBC →</a>
+  <div class="label">芯片</div>
+  <div class="title">NVIDIA 股价逼近 $200 关口，AI 半导体板块持续走强</div>
+  <div class="summary">NVIDIA 上周五收盘 $194.83，距 $200 里程碑仅差约 1260 亿美元市值。分析师预计 2026 年 AI 芯片市场规模 9750 亿美元，NVIDIA、AMD 和 Broadcom 持续受益于数据中心 AI 算力需求扩张。</div>
+  <a class="source-link" href="https://intellectia.ai/blog/ai-semiconductor-stocks-rally-july-2026" target="_blank">intellectia.ai</a>
+</div>
+
+<div class="news-item">
+  <div class="label">芯片</div>
+  <div class="title">Broadcom 受益 Jalapeño 合作，分析师看好长期营收前景</div>
+  <div class="summary">OpenAI 与 Broadcom 联合发布 Jalapeño 推理芯片后，市场对 Broadcom 定制 ASIC 业务给予积极预期。分析指出该合作标志着 AI 推理从 GPU 主导向专用 ASIC 方案的转折，Broadcom 有望在 2029 年前获得约 2000 亿美元相关营收。</div>
+  <a class="source-link" href="https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html" target="_blank">cnbc.com</a>
 </div>
 </div>
 
+<!-- 政策与监管 -->
 <div class="section" id="policy">
-<div class="section-header">政策、监管与风险</div>
+<div class="section-header">政策与监管</div>
 
 <div class="news-item">
-  <div class="label">中国 · 安全</div>
-  <div class="title">阿里禁用 Claude Code 触发连锁反应：其他中国公司是否会跟进？</div>
-  <div class="summary">阿里巴巴率先禁止 Claude Code，推荐使用自有工具 Qoder。此决定可能对中国科技企业的 AI 编码工具选型产生示范效应。如果更多中国公司跟进，中国科技企业将从 AI 工具使用端实质上形成一堵墙。</div>
-  <a class="source-link" href="https://www.reuters.com/world/china/alibaba-ban-claude-code-workplace-over-alleged-backdoor-risks-source-says-2026-07-03/" target="_blank">来源 · Reuters →</a>
+  <div class="label">欧盟</div>
+  <div class="title">EU AI Act 全面执行：风险分级管理正式落地</div>
+  <div class="summary">高风险分类覆盖关键基础设施、就业、教育、执法、移民等领域。所有在欧盟市场运营的 AI 系统须遵循全生命周期合规要求：数据治理、人类监督、透明度和可追溯性。通用模型须提供训练数据摘要、能耗评估和红队测试结果，标志全球 AI 正式进入强监管时代。</div>
+  <a class="source-link" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank">ec.europa.eu</a>
 </div>
 
 <div class="news-item">
-  <div class="label">Anthropic · 监管</div>
-  <div class="title">Anthropic 的监管策略转变：从被动合规到主动制定行业标准</div>
-  <div class="summary">从 Fable 5 发布初期的紧急响应，到如今推出 CJS 框架、HackerOne 计划、政府评估承诺和详细的四层分类体系——Anthropic 在不到一个月内完成了从"被告知暂停"到"为整个行业写规则"的转变。这种"以标准回应监管"的策略可能成为 AI 行业的新常态。</div>
-  <a class="source-link" href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank">来源 · Anthropic →</a>
+  <div class="label">行业</div>
+  <div class="title">Anthropic 联合产业发布越狱严重性统一评分框架</div>
+  <div class="summary">Anthropic 联合 Amazon、Microsoft、Google 提出四维越狱评分标准：能力增益、攻击广度、武器化难易度和可发现性。框架旨在建立行业共识，使开发者和政府能够量化评估越狱的严重程度并协调响应级别。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank">anthropic.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">美国</div>
+  <div class="title">Fable 5 出口管制解除，AI 技术出口政策调整信号</div>
+  <div class="summary">美国政府对 Fable 5 和 Mythos 5 的出口管制于 6 月底解除。此次管制从发布到解除仅 18 天，引发对前沿 AI 模型出口审批流程效率及其对全球 AI 合作影响的持续讨论。</div>
+  <a class="source-link" href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank">anthropic.com</a>
 </div>
 </div>
 
+<!-- 社媒与开发者社区 -->
 <div class="section" id="community">
 <div class="section-header">社媒与开发者社区观察</div>
 
 <div class="news-item">
-  <div class="label">Hacker News · 讨论</div>
-  <div class="title">"短皮带" AI 编程法：用约束力 vs Fable 的社区实验（134 分）</div>
-  <div class="summary">一位开发者分享了一种被称为"short leash"的编码方法——通过精细的任务拆分和持续的人类监督，让 AI 模型在狭窄边界内安全工作。该帖 164 条评论中，社区反馈把这套思路与 Anthropic 的四层安全分类体系做了对比：工程实践与厂商规则正在从两个方向接近同一个问题。</div>
-  <a class="source-link" href="https://blog.okturtles.org/2026/07/short-leash-ai-method/" target="_blank">来源 · okturtles →</a>
+  <div class="label">Hacker News</div>
+  <div class="title">GPT-5.6 Sol Ultra 将进入 Codex — 290 points, 226 comments</div>
+  <div class="summary">社区对 OpenAI 将 Sol Ultra 集成到 Codex CLI 的消息反应热烈，开发者讨论其对日常编码工作流的潜在影响及与 Claude Code 的竞争格局。</div>
+  <a class="source-link" href="https://x.com/haider1/status/2073695124220006575" target="_blank">x.com</a>
 </div>
 
 <div class="news-item">
-  <div class="label">Hacker News · 讨论</div>
-  <div class="title">阿里巴巴禁用 Claude Code 事件在 HN 上获得 58 分</div>
-  <div class="summary">阿里巴巴禁令的帖子在 HN 上获得 58 分、26 条评论。部分讨论集中在隐写术争议本身，也有评论质疑中国公司是否在使用安全担忧作为推广自有替代工具 Qoder 的借口。该观点尚未有确切证据支持。</div>
-  <a class="source-link" href="https://news.ycombinator.com/item?id=48744234" target="_blank">来源 · Hacker News →</a>
+  <div class="label">Hacker News</div>
+  <div class="title">When AI Costs More Than the Engineer — 73 comments</div>
+  <div class="summary">Tom Tunguz 分析 AI 使用成本与工程师薪酬的盈亏平衡点，预测 2029 年达到交叉点。社区就企业 AI 支出 ROI 和自建 vs 采购 AI 服务展开深入讨论。</div>
+  <a class="source-link" href="https://tomtunguz.com/ai-spend-breakeven-2029/" target="_blank">tomtunguz.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Hacker News</div>
+  <div class="title">AI 导师在 Dartmouth 课程实现 0.71–1.30 SD 效应量 — 165 points</div>
+  <div class="summary">实证研究引发对 AI 教育应用的广泛讨论：AI 辅导系统在真实大学课程中的显著效果是否意味着个性化教育规模化成为可能。</div>
+  <a class="source-link" href="https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf" target="_blank">uu.nl</a>
 </div>
 </div>
 
 <div class="footer">
-  <p>AI Radar · 每周一三五更新</p>
-  <p style="margin-top:4px">第 6 期 · 2026.07.03</p>
-  <p style="margin-top:10px"><a href="issues/" style="font-size:12px;color:#aaa;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #ddd">往期归档 →</a></p>
+  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
 </div>
 </div>
+
 </body>
 </html>

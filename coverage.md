@@ -58,7 +58,7 @@
 - 监管（Anthropic 监管策略转变）
 - 越狱
 
-### 第 7 期 (index.html) — 当前（已定稿，全部为 7.3–7.6 窗口内、1–6 期均未报道的内容）
+### 第 7 期 (issue-007) — 已归档（7.3–7.6 窗口内、1–6 期均未报道）
 - 欧盟 AI Act 7.1 全面生效（ec.europa.eu）
 - Microsoft Frontier Company 成立（$2.5B、6000 人，blogs.microsoft.com / cnbc.com）
 - Gemini Spark 登陆 Mac（techcrunch.com）
@@ -71,6 +71,20 @@
 - 中国 AI 上半年融资 3000 亿（IT桔子，aisort.net）
 - NVIDIA 逼近 $200（intellectia.ai）
 - Tom Tunguz：AI 支出 2029 年盈亏平衡（tomtunguz.com）
+
+### 第 8 期 (index.html) — 已定稿（7.6–7.8 窗口内、1–7 期均未报道）
+- 阿尔伯塔省政府用 Claude 排查修复安全漏洞（anthropic.com）
+- Meta Muse Image 图像生成模型（about.fb.com / techcrunch.com）
+- 2026 世界人工智能大会（WAIC）7.17–7.20 上海（cctv.com）
+- SovereignPA-Bench 个人智能体主权基准（arxiv 2607.05363）
+- Cloudflare Circl 加密库 AI 审计（zksecurity.xyz）
+- Rowboat 开源本地优先 Claude Desktop 替代（github.com）
+- 中国 AI 生态：AtomGit 1100 万开发者、人形机器人年产望破 10 万台、近 200 项标准（cctv.com）
+- 欧盟 GSR2 强制新车搭载驾驶员监控摄像头（allaboutcookies.org）
+- 科创 AI ETF 走强（sina.com.cn）
+- Anthropic 7.8 起对部分 Claude 能力强制实名认证（privacyguides.net）
+- 30papers.com Ilya 30 篇 ML 论文（30papers.com）
+- Kokoro 本地 TTS 社区热度（ariya.io）
 
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。

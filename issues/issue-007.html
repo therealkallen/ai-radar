@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 7 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策与监管</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+
+<div class="container">
+<div class="masthead">
+  <h1>AI Radar</h1>
+  <div class="meta"><span>2026.07.03 — 07.06</span><span>第 7 期</span></div>
+</div>
+
+<!-- Radar Picks -->
+<div class="section" id="picks">
+<div class="section-header">Radar Picks</div>
+
+<div class="card">
+  <span class="tag">政策</span>
+  <h3>欧盟 AI 法案核心条款 7 月 1 日全面生效</h3>
+  <p>全球首部综合性 AI 法规进入全面执行阶段。高风险 AI 系统（涉及就业、教育、执法、医疗等领域）须通过全生命周期合规评估；通用模型须提交训练数据摘要、能耗报告和红队测试结果。违规最高可处全球年营收 7% 或 3500 万欧元罚款，AI 产业正式进入强监管时代。</p>
+  <a class="source-link" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank">ec.europa.eu</a>
+</div>
+
+<div class="card">
+  <span class="tag">企业</span>
+  <h3>Microsoft 成立 Frontier Company，投资 25 亿美元、配置 6000 人</h3>
+  <p>微软于 7 月 2 日推出新运营业务 Microsoft Frontier Company，专注为全球客户交付 AI 转型。该业务获得 25 亿美元投资，嵌入约 6000 名行业与工程专家，与客户共同设计、部署并持续改进 AI 系统，是大型科技公司规模化 AI 咨询与实施的最新动作。</p>
+  <a class="source-link" href="https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/" target="_blank">blogs.microsoft.com</a>
+</div>
+
+<div class="card">
+  <span class="tag">产品</span>
+  <h3>Gemini Spark 智能体助手登陆 Mac</h3>
+  <p>Google 于 7 月 1 日将 agentic assistant Gemini Spark 扩展至 Mac，集成于现有 Gemini 桌面应用。新版本可读取与操作本地文件、通过 MCP 连接自定义应用，并实时追踪话题动态，同时接入 Google Tasks、Google Keep 与 Canva，加入桌面 AI 智能体的直接竞争。</p>
+  <a class="source-link" href="https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/" target="_blank">techcrunch.com</a>
+</div>
+</div>
+
+<!-- 模型与技术进展 -->
+<div class="section" id="models">
+<div class="section-header">模型与技术进展</div>
+
+<div class="news-item">
+  <div class="label">研究</div>
+  <div class="title">AI 导师在 Dartmouth 课程中实现 0.71–1.30 SD 效应量</div>
+  <div class="summary">一项在 Dartmouth 大学开展的 AI 辅导系统研究显示，AI 导师在课程学习中达到 0.71 至 1.30 标准差的教育效应量，HN 社区以 165 points 推上首页，引发对 AI 教育规模化应用的广泛讨论。</div>
+  <a class="source-link" href="https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf" target="_blank">uu.nl</a>
+</div>
+
+<div class="news-item">
+  <div class="label">研究</div>
+  <div class="title">代码整洁度是否影响 Coding Agent？受控实验给出答案</div>
+  <div class="summary">一篇 arXiv 论文通过最小对照实验研究代码整洁度对 AI coding agent 表现的影响，为开发者是否需要在交给 AI 前重构代码提供了实证依据。HN 讨论 125 points、69 comments。</div>
+  <a class="source-link" href="https://arxiv.org/abs/2605.20049" target="_blank">arxiv.org</a>
+</div>
+
+<div class="news-item">
+  <div class="label">基准</div>
+  <div class="title">AgenticDataBench：面向数据智能体的新基准发布</div>
+  <div class="summary">7 月 2 日发布的 AgenticDataBench 覆盖 15 个领域与 5 个真实 B2B 金融科技用例，以细粒度技能标签评估数据智能体的模式检查、表连接、清洗、可视化与业务推理能力。配套 GitHub 测试台与 Hugging Face 数据集开放复现。</div>
+  <a class="source-link" href="https://arxiv.org/abs/2607.01647" target="_blank">arxiv.org</a>
+</div>
+
+<div class="news-item">
+  <div class="label">基准</div>
+  <div class="title">PACE：用代理指标低成本评估智能体能力</div>
+  <div class="summary">7 月 3 日发布的 PACE 提出以代理指标（proxy）评估 LLM 智能体能力，针对 SWE-Bench、GAIA 等基准单次评测成本高、耗时长的问题，用轻量代理分数近似真实表现，降低智能体能力评测的门槛。</div>
+  <a class="source-link" href="https://arxiv.org/abs/2607.02032" target="_blank">arxiv.org</a>
+</div>
+</div>
+
+<!-- 企业应用与工具观察 -->
+<div class="section" id="enterprise">
+<div class="section-header">企业应用与工具观察</div>
+
+<div class="news-item">
+  <div class="label">Microsoft</div>
+  <div class="title">Frontier Company：25 亿美元 AI 实施单元，嵌入 6000 名专家</div>
+  <div class="summary">微软新业务将行业专家与工程团队前置到客户现场，共同设计、部署并迭代 AI 系统。CNBC 报道其规模为 25 亿美元投资、约 6000 名员工，标志着 AI 从"卖工具"走向"交付转型结果"的咨询化趋势。</div>
+  <a class="source-link" href="https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html" target="_blank">cnbc.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Google</div>
+  <div class="title">Gemini Spark Mac 版：本地文件、MCP 与实时追踪</div>
+  <div class="summary">Spark 登陆 Mac 后可直接读取与操作本机文档、代码和数据，通过 MCP 连接自定义应用，并支持实时话题追踪与 Google Tasks / Keep / Canva 等集成，定位为持续在线的个人 AI 智能体。</div>
+  <a class="source-link" href="https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/" target="_blank">techcrunch.com</a>
+</div>
+</div>
+
+<!-- 国内 AI 动态 -->
+<div class="section" id="china">
+<div class="section-header">国内 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">产业</div>
+  <div class="title">《财富》中国科技 50 强发布，DeepSeek 首进前五</div>
+  <div class="summary">华为、字节跳动、宁德时代、腾讯、DeepSeek 位列 2026 年《财富》中国科技 50 强前五。报告指出中国科技企业正从应用层创新走向产业链上游，在芯片、算法、核心材料和基础设施领域加大研发投入。华为 2025 年研发投入 1923 亿元，占营收 21.8%。</div>
+  <a class="source-link" href="https://tech.ifeng.com/c/8uFFVTMgtnY" target="_blank">ifeng.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">产业</div>
+  <div class="title">中国 AI 核心产业规模突破 1.2 万亿元，企业超 6000 家</div>
+  <div class="summary">2026 世界智能产业博览会报告显示，中国 AI 企业数量超 6000 家，核心产业规模突破 1.2 万亿元。大模型竞争格局从参数军备竞赛转向智能体执行能力与场景落地，DeepSeek V4 和 Kimi K2.6 领衔长上下文与 Agent 能力突破。</div>
+  <a class="source-link" href="https://cloud.tencent.cn/developer/article/2672179" target="_blank">cloud.tencent.cn</a>
+</div>
+
+<div class="news-item">
+  <div class="label">资本</div>
+  <div class="title">中国 AI 上半年融资 3000 亿元，占全市场近半</div>
+  <div class="summary">IT 桔子数据显示，2026 年上半年中国 AI 赛道融资达 1203 起、总额突破 3000 亿元，占全市场融资 48.6%。大模型赛道最吸金，DeepSeek、阶跃星辰、月之暗面三家合计融资约 930 亿元，产业资本化进入加速期。</div>
+  <a class="source-link" href="https://www.aisort.net/ai_news/20260704/china-ai-funding-h1-2026/" target="_blank">aisort.net</a>
+</div>
+</div>
+
+<!-- 国际 AI 动态 -->
+<div class="section" id="international">
+<div class="section-header">国际 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">欧洲</div>
+  <div class="title">EU AI Act 生效，全球 AI 治理进入强监管时代</div>
+  <div class="summary">7 月 1 日起，欧盟 AI 法案核心条款全面执行，为全球科技行业提供首套可操作的合规手册。高风险系统须通过全生命周期评估，通用模型须披露训练数据、能耗与红队结果。非欧盟企业若触及欧盟用户，也须将合规纳入全球产品策略。</div>
+  <a class="source-link" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank">ec.europa.eu</a>
+</div>
+
+<div class="news-item">
+  <div class="label">美国</div>
+  <div class="title">微软以 Frontier Company 切入全球 AI 转型服务</div>
+  <div class="summary">微软将 Frontier Company 定位为面向全球客户的 AI 转型业务，以 25 亿美元投资与约 6000 名专家提供从设计、部署到持续迭代的端到端服务，反映头部云厂商在 AI 落地环节的新一轮竞争。</div>
+  <a class="source-link" href="https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/" target="_blank">blogs.microsoft.com</a>
+</div>
+</div>
+
+<!-- AI 与金融 -->
+<div class="section" id="finance">
+<div class="section-header">AI 与金融</div>
+
+<div class="news-item">
+  <div class="label">芯片</div>
+  <div class="title">NVIDIA 股价逼近 $200 关口，AI 半导体板块持续走强</div>
+  <div class="summary">NVIDIA 上周五收盘 $194.83，距 $200 里程碑仅差约 1260 亿美元市值。分析师预计 2026 年 AI 芯片市场规模 9750 亿美元，NVIDIA、AMD 和 Broadcom 持续受益于数据中心 AI 算力需求扩张，板块 7 月延续上行。</div>
+  <a class="source-link" href="https://intellectia.ai/blog/ai-semiconductor-stocks-rally-july-2026" target="_blank">intellectia.ai</a>
+</div>
+
+<div class="news-item">
+  <div class="label">成本</div>
+  <div class="title">Tom Tunguz：AI 支出 2029 年达工程师成本盈亏平衡</div>
+  <div class="summary">知名 VC Tom Tunguz 分析企业 AI 使用成本与工程师薪酬的盈亏平衡点，预测 2029 年达到交叉点。分析为企业在自建 vs 采购 AI 服务、以及推理成本管控上提供了量化框架，引发从业者广泛讨论。</div>
+  <a class="source-link" href="https://tomtunguz.com/ai-spend-breakeven-2029/" target="_blank">tomtunguz.com</a>
+</div>
+</div>
+
+<!-- 政策与监管 -->
+<div class="section" id="policy">
+<div class="section-header">政策与监管</div>
+
+<div class="news-item">
+  <div class="label">欧盟</div>
+  <div class="title">EU AI Act 全面执行：风险分级管理正式落地</div>
+  <div class="summary">高风险分类覆盖关键基础设施、就业、教育、执法、移民等领域。所有在欧盟市场运营的 AI 系统须遵循全生命周期合规要求：数据治理、人类监督、透明度和可追溯性。通用模型须提供训练数据摘要、能耗评估和红队测试结果，标志全球 AI 正式进入强监管时代。</div>
+  <a class="source-link" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank">ec.europa.eu</a>
+</div>
+
+<div class="news-item">
+  <div class="label">中国</div>
+  <div class="title">AI 监管框架向 B 端场景扩展，合规进入企业核心议程</div>
+  <div class="summary">2026 年中国 AI 监管框架在《网络安全法》《数据安全法》《个人信息保护法》基础上持续完善，算法推荐备案与深度合成管理规定正从内容平台向企业营销、招聘、信贷等 B 端场景扩展，训练数据合规成为底线要求，执法力度逐步加强。</div>
+  <a class="source-link" href="https://hankunlaw.com/cn/portal/article/index/cid/8/id/16455.html" target="_blank">hankunlaw.com</a>
+</div>
+</div>
+
+<!-- 社媒与开发者社区 -->
+<div class="section" id="community">
+<div class="section-header">社媒与开发者社区观察</div>
+
+<div class="news-item">
+  <div class="label">Hacker News</div>
+  <div class="title">When AI Costs More Than the Engineer — 73 comments</div>
+  <div class="summary">Tom Tunguz 关于 AI 支出与工程师成本盈亏平衡的分析在 HN 引发 73 条讨论，社区就企业 AI 支出 ROI、自建 vs 采购 AI 服务、以及小团队如何控制推理成本展开深入交流。</div>
+  <a class="source-link" href="https://tomtunguz.com/ai-spend-breakeven-2029/" target="_blank">tomtunguz.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Hacker News</div>
+  <div class="title">Does code cleanliness affect coding agents? — 125 points, 69 comments</div>
+  <div class="summary">arXiv 关于代码整洁度对 AI coding agent 影响的受控实验登上 HN，社区围绕"是否应在交给 AI 前重构代码""脏代码是否暴露模型真实能力边界"等话题展开技术讨论。</div>
+  <a class="source-link" href="https://arxiv.org/abs/2605.20049" target="_blank">arxiv.org</a>
+</div>
+</div>
+
+<div class="footer">
+  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
+</div>
+</div>
+
+</body>
+</html>

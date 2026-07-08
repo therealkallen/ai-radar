@@ -11,10 +11,11 @@ AI Radar 跨期去重校验脚本（v2）
     1. 收集 issues/issue-0NN.html 中所有标题（.card h3 + .news-item .title）
     2. 收集待校验文件中的标题
     3. 两层校验：
-       A. 硬阻断：待校验标题若含「已结项的一次性故事词」（如 Fable 5、CJS、
-          SpaceX、Jalapeño 等），直接告警——这些故事已在往期报道过，不应再现。
-       B. 实义短语近似：以待校验标题中的 5+ 字实义短语，去匹配往期标题中的
-          5+ 字实义短语；命中即疑似重复（排除「发布/合作/推出」等通用词）。
+       A. 硬阻断：已停用。原用于按关键词拦截已结项故事，但关键词匹配会误拦
+          合理的后续进展（如 GPT-5.6 公开上线、Fable 5 订阅期延长），故不再作为
+          把关门槛；是否重复改由编辑按语义判断（见 coverage.md）。
+       B. 实义短语近似：仅作参考提示，对待校验标题中的 5+ 字实义短语，去匹配
+          往期标题中的 5+ 字实义短语；命中供编辑复核，不代表一定重复。
 
 注意: 这是辅助校验，最终是否「后续进展」由人工判断。
 """
@@ -25,24 +26,12 @@ import glob
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
-# A. 已结项的一次性故事词（在往期报道过、不应在无重大新进展时重现）
-#    这些词来自 coverage.md 中各期清单，持续维护即可。
-HARD_BLOCK = [
-    "Fable 5", "Mythos 5", "CJS", "越狱严重性", "HackerOne", "四层分类",
-    "越狱框架", "越狱", "SpaceX", "OpenAI S-1", "AI IPO 大年", "Qoder",
-    "short leash", "短皮带", "Safari MCP", "WebKit", "Claude Sonnet 5",
-    "Claude Science", "Claude Tag", "Daybreak", "Jalapeño", "GeneBench",
-    "GPT-5.6", "HP Frontier", "首尔办公室", "五眼联盟", "The Coming Loop",
-    "deer-flow", "slime", "美团 LongCat", "Gemma 4", "DiffusionGemma",
-    "LifeSciBench", "OpenMontage", "hermes-agent", "headroom", "MinerU",
-    "HALO", "NanoEuler", "strix", "ai-berkshire", "TradingAgents",
-    "GLM 5.2", "Mistral Leanstral", "Gemini Image Flash Lite", "Seedance",
-    "Brain2Qwerty", "Agent-Reach", "SkillSpector", "IBM 亚1纳米", "Apple M7",
-    "L'Oréal", "Sakana Fugu", "Qwen-AgentWorld", "DiffusionBench",
-    "Codex-Maxxing", "hiring-agent", "OpenKnowledge", "Godot", "Semgrep",
-    "赫库兰尼姆", "美光 Q3", "Papers please", "布朗大学", "挪威小学",
-    "Meta 请愿", "隐写术",
-]
+# A. 已结项的一次性故事词（历史遗留，已弃用为「把关」用途）
+#    ⚠️ 用户明确指示：去重应以「是否同一条新闻」的语义判断为准，
+#    不得用关键词/子串匹配来拦截——同一实体（如 GPT-5.6、Fable 5）
+#    在不同语境下是完全不同的新闻。因此本列表不再作为硬阻断门槛，
+#    仅保留作记忆参考。真正的把关由编辑（配合 coverage.md）完成。
+HARD_BLOCK = []
 
 # 通用词白名单（这些词出现在标题里不算「实义短语」，匹配时跳过）
 STOP = {

@@ -72,10 +72,12 @@
 - NVIDIA 逼近 $200（intellectia.ai）
 - Tom Tunguz：AI 支出 2029 年盈亏平衡（tomtunguz.com）
 
-### 第 8 期 (index.html) — 已定稿（7.6–7.8 窗口内、1–7 期均未报道）
+### 第 8 期 (index.html) — 已定稿（7.6–7.8 窗口内）
 - 阿尔伯塔省政府用 Claude 排查修复安全漏洞（anthropic.com）
 - Meta Muse Image 图像生成模型（about.fb.com / techcrunch.com）
 - 2026 世界人工智能大会（WAIC）7.17–7.20 上海（cctv.com）
+- GPT-5.6 系列 7.9 公开上线（OpenAI 7.8 确认，后续/新进展）（openai.com）
+- Fable 5 订阅体验延至 7.12、之后转积分计费（Anthropic 7.8，后续/新进展）（cnbctv18.com）
 - SovereignPA-Bench 个人智能体主权基准（arxiv 2607.05363）
 - Cloudflare Circl 加密库 AI 审计（zksecurity.xyz）
 - Rowboat 开源本地优先 Claude Desktop 替代（github.com）
@@ -90,16 +92,28 @@
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。
 
-## 去重机制（每次生成前必做）
+## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
-1. **扫描往期**：生成新一期前，先 `python3 check_dup.py` 校验 index.html 与 issues/ 全部归档是否重复。
-2. **硬阻断词**：`check_dup.py` 内置 `HARD_BLOCK` 列表（Fable 5、CJS、越狱、HackerOne、SpaceX、OpenAI S-1、Jalapeño、Claude Sonnet 5、Claude Science、Claude Tag、Daybreak、GeneBench、GPT-5.6、HP Frontier、首尔办公室……），命中即告警。
-3. **实义短语近似**：以待校验标题的 5+ 字实义短语匹配往期标题，命中即疑似重复。
-4. **本清单同步更新**：每发布一期，把其真实覆盖内容补进对应「第 N 期」小节，并视情况把一次性故事词加入 `HARD_BLOCK`。
+> ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。
+> 同一实体（如 Claude、GPT-5.6、Fable 5）在不同语境下是完全不同的新闻——
+> 例如「GPT-5.6 系列发布」与「GPT-5.6 周四公开上线」是两次不同的事件，后者是后续，应放入。
+> 因此**禁止用关键词/子串匹配来判定重复**，`check_dup.py` 的 `HARD_BLOCK` 与短语近似
+> 逻辑只作为「可能重叠」的参考提示，绝不作为把关门槛；最终是否重复由编辑自行判断。
 
-> ⚠️ 关键教训：late-June 的集中发布（Sonnet 5、Claude Science、Daybreak、Jalapeño、
-> GPT-5.6、Claude Tag 等）在 Issue 1–5 已**实时**报道过。新一期只报**本窗口内、且往期未报**
-> 的内容；同一事件只有在出现**全新硬进展**（如正式上市定价、监管裁决）时才作为后续放入。
+实际做法：
+1. **扫描往期**：生成新一期前，通读本清单各期「已报道实体」，回忆哪些新闻已经报过。
+2. **语义判断**：对每个候选，问自己——「这条新闻的「事件本身」我之前是不是已经作为独立条目报过？」
+   - 是同一事件 → 不放（除非是真正的硬进展，如正式上市定价、监管裁决、数据大幅更新）。
+   - 是同一实体的**新进展/后续**（如访问期延长、新的上线日期确认、新合作方）→ **放入**。
+   - 同一事件只在出现全新硬进展时才作为后续放入。
+3. **本清单同步更新**：每发布一期，把其真实覆盖内容（含后续进展）补进对应「第 N 期」小节。
+4. `check_dup.py` 可运行以查看潜在重叠，但编辑需逐条甄别：被脚本命中的，若是合理的后续进展，照常放入并注明「后续」。
+
+> 📌 关键教训：late-June 的集中发布（Sonnet 5、Claude Science、Daybreak、Jalapeño、
+> GPT-5.6、Claude Tag 等）在 Issue 1–5 已**实时**报道过。但「已报道过该实体」≠「不能报后续」。
+> 同一实体出现**全新硬进展**（如 GPT-5.6 公开上线日确认、Fable 5 订阅期延长）时，作为后续放入，
+> 这是用户明确允许的。脚本的历史 `HARD_BLOCK` 关键词（GPT-5.6、Fable 5 等）已因此被证明会误拦，
+> 仅作记忆参考。
 
 ## 注意事项
 - 「Fable 5 / 越狱 / CJS / HackerOne」已在第 5、6 期密集报道，**后续除非有全新的监管裁决或安全事件，否则不再单独成条**。

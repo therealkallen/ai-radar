@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 8 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策与监管</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+
+<div class="container">
+<div class="masthead">
+  <h1>AI Radar</h1>
+  <div class="meta"><span>2026.07.06 — 07.08</span><span>第 8 期</span></div>
+</div>
+
+<!-- Radar Picks -->
+<div class="section" id="picks">
+<div class="section-header">Radar Picks</div>
+
+<div class="card">
+  <span class="tag">安全</span>
+  <h3>阿尔伯塔省政府用 Claude 排查并修复政府系统安全漏洞</h3>
+  <p>加拿大阿尔伯塔省技术部自 2025 年起用 Claude Code（Opus + Sonnet）扫描政府代码库，约 50 个 Agent 并行工作，20 小时内审查 4.66 亿行代码、识别传统工具遗漏的漏洞并自动生成修复。团队还构建红/蓝队 Agent，对每个应用按约 95 项安全控制持续审查，并将技术白皮书公开供其他政府参考。</p>
+  <a class="source-link" href="https://www.anthropic.com/news/alberta-government-claude-cybersecurity" target="_blank">anthropic.com</a>
+</div>
+
+<div class="card">
+  <span class="tag">产品</span>
+  <h3>Meta 推出 Muse Image 图像生成模型</h3>
+  <p>Meta Superintelligence Labs 于 7 月 7 日发布图像生成模型 Muse Image（内部代号 Mango），通过 Meta AI 应用、Instagram Stories 与 WhatsApp 免费开放，支持预设提示词、提示词编辑与自定义广告，Muse Video 已在开发中。其"用公开资料照片生成 AI 图像"的默认开启功能引发隐私争议。</p>
+  <a class="source-link" href="https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/" target="_blank">about.fb.com</a>
+</div>
+
+<div class="card">
+  <span class="tag">事件</span>
+  <h3>2026 世界人工智能大会 7 月 17 日至 20 日将在上海举办</h3>
+  <p>2026 世界人工智能大会暨人工智能全球治理高级别会议定于 7 月 17—20 日在上海举行。7 月 7 日新闻发布会介绍，我国 AI 核心产业持续壮大，"人工智能+制造"深入落地，生态不断优化，大模型、智能体、AI 芯片加速迭代，会议将聚焦产业落地与全球治理协同。</p>
+  <a class="source-link" href="https://news.cctv.cn/2026/07/08/ARTIKSsLPbFb3ZbEnWI0oOLU260708.shtml" target="_blank">cctv.com</a>
+</div>
+
+<div class="card">
+  <span class="tag">模型</span>
+  <h3>OpenAI 确认 GPT-5.6 将于 7 月 9 日（周四）公开上线</h3>
+  <p>OpenAI 于 7 月 8 日确认，GPT-5.6 系列（旗舰 Sol、均衡 Terra、轻量 Luna）将于 7 月 9 日（周四）面向公众开放。该系列 6 月 26 日已开启有限预览，公开上线意味着三档模型向更广泛的用户与开发者开放，延续本轮前沿模型的公开可用化节奏。</p>
+  <a class="source-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">openai.com</a>
+</div>
+</div>
+
+<!-- 模型与技术进展 -->
+<div class="section" id="models">
+<div class="section-header">模型与技术进展</div>
+
+<div class="news-item">
+  <div class="label">基准</div>
+  <div class="title">SovereignPA-Bench：评估"用户拥有"个人智能体的主权与边界</div>
+  <div class="summary">7 月 7 日发布的 SovereignPA-Bench 是一个可执行基准，针对用户自有的个人智能体，在意图演化、平台中介、隐私边界与同意约束下评估其"主权性"——即智能体能在多大程度上代表用户、抵抗平台操纵。实验显示当前智能体在完全主权场景下表现有限。</div>
+  <a class="source-link" href="https://arxiv.org/abs/2607.05363" target="_blank">arxiv.org</a>
+</div>
+
+<div class="news-item">
+  <div class="label">安全</div>
+  <div class="title">AI 在 Cloudflare 加密库 Circl 中发现了多处漏洞</div>
+  <div class="summary">zksecurity 团队发布系列研究，记录使用 AI 辅助审查 Cloudflare 开源加密库 Circl 的过程，AI 在代码中发现多处此前未被注意的漏洞与隐患，展示大模型在密码学代码审计中的实际能力边界与价值。</div>
+  <a class="source-link" href="https://blog.zksecurity.xyz/posts/circl-bugs/" target="_blank">zksecurity.xyz</a>
+</div>
+</div>
+
+<!-- 企业应用与工具观察 -->
+<div class="section" id="enterprise">
+<div class="section-header">企业应用与工具观察</div>
+
+<div class="news-item">
+  <div class="label">工具</div>
+  <div class="title">Rowboat：开源、本地优先的 Claude Desktop 替代品</div>
+  <div class="summary">开源项目 Rowboat 在 Hacker News 获 133 points 关注，定位为本地优先、可自托管的 Claude Desktop 替代方案，强调数据留在本地、不依赖云端账号，面向注重隐私的开发者与小企业，反映桌面 AI 客户端走向轻量化与可自托管。</div>
+  <a class="source-link" href="https://github.com/rowboatlabs/rowboat" target="_blank">github.com</a>
+</div>
+</div>
+
+<!-- 国内 AI 动态 -->
+<div class="section" id="china">
+<div class="section-header">国内 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">生态</div>
+  <div class="title">中国 AI 生态：开源社区 AtomGit 汇聚超 1100 万开发者</div>
+  <div class="summary">7 月 8 日央视报道，我国 AI 领域已研制近 200 项关键标准，企业积极拥抱开源，大模型下载量居全球第一，AtomGit 等开源社区汇聚超 1100 万开发者；人形机器人全年整机产量有望突破 10 万台，产业正从应用创新走向产业链上游。</div>
+  <a class="source-link" href="https://news.cctv.cn/2026/07/08/ARTIKSsLPbFb3ZbEnWI0oOLU260708.shtml" target="_blank">cctv.com</a>
+</div>
+</div>
+
+<!-- 国际 AI 动态 -->
+<div class="section" id="international">
+<div class="section-header">国际 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">欧盟</div>
+  <div class="title">欧盟强制新车搭载驾驶员监控摄像头，7 月 7 日生效</div>
+  <div class="summary">欧盟 General Safety Regulation（GSR2）于 7 月 7 日全面生效，要求所有新售乘用车与厢式货车标配驾驶员注意力监控（DMS）摄像头与增强型自动紧急制动等系统，红外摄像头将实时监测分心与疲劳驾驶。这是车载 AI 感知能力首次以法规形式成为出厂标配。</div>
+  <a class="source-link" href="https://allaboutcookies.org/eu-mandatory-distracted-driver-system" target="_blank">allaboutcookies.org</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Anthropic</div>
+  <div class="title">Fable 5 订阅体验延期至 7 月 12 日，之后转积分计费</div>
+  <div class="summary">Anthropic 7 月 8 日宣布，将付费订阅用户免费体验顶级推理模型 Claude Fable 5 的期限延长 5 天至 7 月 12 日；延长期内额度消耗上限仍为每周总额的 50%。7 月 12 日之后，Fable 5 将转为按使用积分（pay-as-you-go）计费，结束此前的订阅内限免阶段。</div>
+  <a class="source-link" href="https://www.cnbctv18.com/technology/anthropic-extends-access-to-fable-5-paid-users-till-july-12-19940672.htm" target="_blank">cnbctv18.com</a>
+</div>
+</div>
+
+<!-- AI 与金融 -->
+<div class="section" id="finance">
+<div class="section-header">AI 与金融</div>
+
+<div class="news-item">
+  <div class="label">市场</div>
+  <div class="title">科创 AI ETF 走强，国产 AI 板块盘初涨近 3%</div>
+  <div class="summary">7 月 8 日，上证科创板人工智能指数（950180）盘中上涨 1.56%，成分股云天励飞、复旦微电、优刻得等跟涨；科创AIETF博时（588790）盘初一度涨近 3%，近两周累计上涨 0.96%，反映资金对国产 AI 算力与芯片链条的持续关注。</div>
+  <a class="source-link" href="https://finance.sina.com.cn/jjxw/2026-07-08/doc-inihaawk4912601.shtml" target="_blank">sina.com.cn</a>
+</div>
+</div>
+
+<!-- 政策与监管 -->
+<div class="section" id="policy">
+<div class="section-header">政策与监管</div>
+
+<div class="news-item">
+  <div class="label">平台</div>
+  <div class="title">Anthropic 7 月 8 日起对部分 Claude 能力强制实名认证</div>
+  <div class="summary">Anthropic 更新后的隐私政策于 7 月 8 日生效，要求消费级账户在使用"部分能力"前完成政府 ID 验证，由第三方 Persona 处理核验。此举延续 AI 平台在监管与安全风险下的身份管控趋势，引发开发者对匿名使用与数据边界的讨论。</div>
+  <a class="source-link" href="https://discuss.privacyguides.net/t/official-anthropic-to-require-identity-verification-for-certain-capabilities-on-claude-starting-july-8-2026/38659" target="_blank">privacyguides.net</a>
+</div>
+</div>
+
+<!-- 社媒与开发者社区 -->
+<div class="section" id="community">
+<div class="section-header">社媒与开发者社区观察</div>
+
+<div class="news-item">
+  <div class="label">资源</div>
+  <div class="title">30papers.com：Ilya 精选 30 篇 ML 必读论文</div>
+  <div class="summary">开发者整理的 30papers.com 在 HN 获 446 points，以初学者友好的方式重述 Ilya Sutskever 推荐的 30 篇机器学习核心论文，覆盖表征学习、生成模型与对齐等关键脉络，成为社区新人入门的系统化入口。</div>
+  <a class="source-link" href="https://30papers.com/" target="_blank">30papers.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">HN 信号</div>
+  <div class="title">本地 CPU 友好 TTS 方案 Kokoro 持续受社区关注</div>
+  <div class="summary">本地、CPU 友好的高质量语音合成模型 Kokoro 在 HN 获 364 points，社区关注其无需 GPU 即可部署的特性，反映开发者对轻量、可自托管 AI 能力的持续偏好（相关技术文章为 3 月发布，本周再度升温）。</div>
+  <a class="source-link" href="https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/" target="_blank">ariya.io</a>
+</div>
+</div>
+
+<div class="footer">
+  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
+</div>
+</div>
+
+</body>
+</html>

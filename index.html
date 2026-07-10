@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Radar · 第 8 期</title>
+<title>AI Radar · 第 9 期</title>
 <style>
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -55,7 +55,7 @@
 <div class="container">
 <div class="masthead">
   <h1>AI Radar</h1>
-  <div class="meta"><span>2026.07.06 — 07.08</span><span>第 8 期</span></div>
+  <div class="meta"><span>2026.07.08 — 07.10</span><span>第 9 期</span></div>
 </div>
 
 <!-- Radar Picks -->
@@ -63,31 +63,24 @@
 <div class="section-header">Radar Picks</div>
 
 <div class="card">
-  <span class="tag">安全</span>
-  <h3>阿尔伯塔省政府用 Claude 排查并修复政府系统安全漏洞</h3>
-  <p>加拿大阿尔伯塔省技术部自 2025 年起用 Claude Code（Opus + Sonnet）扫描政府代码库，约 50 个 Agent 并行工作，20 小时内审查 4.66 亿行代码、识别传统工具遗漏的漏洞并自动生成修复。团队还构建红/蓝队 Agent，对每个应用按约 95 项安全控制持续审查，并将技术白皮书公开供其他政府参考。</p>
-  <a class="source-link" href="https://www.anthropic.com/news/alberta-government-claude-cybersecurity" target="_blank">anthropic.com</a>
-</div>
-
-<div class="card">
-  <span class="tag">产品</span>
-  <h3>Meta 推出 Muse Image 图像生成模型</h3>
-  <p>Meta Superintelligence Labs 于 7 月 7 日发布图像生成模型 Muse Image（内部代号 Mango），通过 Meta AI 应用、Instagram Stories 与 WhatsApp 免费开放，支持预设提示词、提示词编辑与自定义广告，Muse Video 已在开发中。其"用公开资料照片生成 AI 图像"的默认开启功能引发隐私争议。</p>
-  <a class="source-link" href="https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/" target="_blank">about.fb.com</a>
-</div>
-
-<div class="card">
-  <span class="tag">事件</span>
-  <h3>2026 世界人工智能大会 7 月 17 日至 20 日将在上海举办</h3>
-  <p>2026 世界人工智能大会暨人工智能全球治理高级别会议定于 7 月 17—20 日在上海举行。7 月 7 日新闻发布会介绍，我国 AI 核心产业持续壮大，"人工智能+制造"深入落地，生态不断优化，大模型、智能体、AI 芯片加速迭代，会议将聚焦产业落地与全球治理协同。</p>
-  <a class="source-link" href="https://news.cctv.cn/2026/07/08/ARTIKSsLPbFb3ZbEnWI0oOLU260708.shtml" target="_blank">cctv.com</a>
+  <span class="tag">模型</span>
+  <h3>GPT-5.6 正式公开上线：Sol/Terra/Luna 三档，ultra 并行智能体</h3>
+  <p>OpenAI 于 7 月 9 日正式向全球开放 GPT-5.6 系列，分旗舰 Sol（$5/$30 每百万 token）、均衡 Terra（$2.50/$15）、轻量 Luna（$1/$6）三档。Sol 在编码基准（Terminal-Bench 91.9%、ExploitBench 73.5%）超越 Fable 5，且仅用约 ½ token、⅓ 成本。新增 ultra 模式协调 4 路并行智能体处理复杂任务，同步推出系统卡（System Card）与生物安全漏洞赏金计划。</p>
+  <a class="source-link" href="https://openai.com/index/gpt-5-6/" target="_blank">openai.com</a>
 </div>
 
 <div class="card">
   <span class="tag">模型</span>
-  <h3>OpenAI 确认 GPT-5.6 将于 7 月 9 日（周四）公开上线</h3>
-  <p>OpenAI 于 7 月 8 日确认，GPT-5.6 系列（旗舰 Sol、均衡 Terra、轻量 Luna）将于 7 月 9 日（周四）面向公众开放。该系列 6 月 26 日已开启有限预览，公开上线意味着三档模型向更广泛的用户与开发者开放，延续本轮前沿模型的公开可用化节奏。</p>
-  <a class="source-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">openai.com</a>
+  <h3>SpaceXAI 联同 Cursor 发布 Grok 4.5，正面叫板 GPT-5.6</h3>
+  <p>马斯克旗下 SpaceXAI 于 7 月 9 日公开上线 Grok 4.5，由 1.5 万亿参数 MoE 架构驱动、trillions of Cursor 交互 token 联合训练，运行于 Colossus 集群（22 万+ GPU）。Terminal-Bench 2.1 达 83.3%，自称 Opus 级但更快更便宜——Cursor 内 API $2/$6 每百万 token（快速通道 $4/$18）。在 GPT-5.6 同日上线、Fable 5 受限于出口管制的背景下，三强定价竞争正式开打。</p>
+  <a class="source-link" href="https://www.eeo.com.cn/2026/0709/948997.shtml" target="_blank">eeo.com.cn</a>
+</div>
+
+<div class="card">
+  <span class="tag">产品</span>
+  <h3>ChatGPT Work + GPT-Live：OpenAI 发布工作智能体与全双工语音</h3>
+  <p>OpenAI 同期发布两大新产品——ChatGPT Work 是运行于桌面与 Web 的工作智能体，可跨 Slack、Teams、Google Drive 等应用自主执行多步工作流、定时调度任务（Scheduled Tasks），并将在 ChatGPT 内创建交互式 Sites；Codex 并入桌面应用。GPT-Live 则实现全双工语音架构（可同时听与说），智能体可暂停、打断、后台调用 GPT-5.5 进行搜索推理，GPT-Live-1 与 mini 版即日起全球上线。用户量超 1.5 亿人/周。</p>
+  <a class="source-link" href="https://openai.com/index/introducing-gpt-live/" target="_blank">openai.com</a>
 </div>
 </div>
 
@@ -96,17 +89,24 @@
 <div class="section-header">模型与技术进展</div>
 
 <div class="news-item">
-  <div class="label">基准</div>
-  <div class="title">SovereignPA-Bench：评估"用户拥有"个人智能体的主权与边界</div>
-  <div class="summary">7 月 7 日发布的 SovereignPA-Bench 是一个可执行基准，针对用户自有的个人智能体，在意图演化、平台中介、隐私边界与同意约束下评估其"主权性"——即智能体能在多大程度上代表用户、抵抗平台操纵。实验显示当前智能体在完全主权场景下表现有限。</div>
-  <a class="source-link" href="https://arxiv.org/abs/2607.05363" target="_blank">arxiv.org</a>
+  <div class="label">编码</div>
+  <div class="title">SWE-1.7：Cognition 基于 Kimi K2.7 的极低成本前沿编码模型</div>
+  <div class="summary">Cognition 7 月 8 日发布 SWE-1.7，架构基于 Moonshot AI 的 Kimi K2.7 经 Cognition 强化学习管道深度训练。在 Cerebras 上推理速度达 1000 token/秒，FrontierCode 1.1 达 42.3%（远超 SWE-1.6 的 9.4%），以远低于 Opus 4.8 和 GPT-5.5 的成本逼近前沿水准，证明 RL 可进一步推高已后训练模型的性能天花板。</div>
+  <a class="source-link" href="https://cognition.com/blog/swe-1-7" target="_blank">cognition.com</a>
 </div>
 
 <div class="news-item">
-  <div class="label">安全</div>
-  <div class="title">AI 在 Cloudflare 加密库 Circl 中发现了多处漏洞</div>
-  <div class="summary">zksecurity 团队发布系列研究，记录使用 AI 辅助审查 Cloudflare 开源加密库 Circl 的过程，AI 在代码中发现多处此前未被注意的漏洞与隐患，展示大模型在密码学代码审计中的实际能力边界与价值。</div>
-  <a class="source-link" href="https://blog.zksecurity.xyz/posts/circl-bugs/" target="_blank">zksecurity.xyz</a>
+  <div class="label">模型</div>
+  <div class="title">Muse Spark 1.1：Meta 发布智能体编码模型，首次对 AI 能力收费</div>
+  <div class="summary">Meta 7 月 9 日发布 Muse Spark 1.1，是其迄今最强的智能体编码模型，支持 100 万 token 上下文、多模态理解（文本/图像/视频）及多智能体协调。扎克伯格时隔近三年重返 X 宣布此事。模型向开发者开放预览并公布收费方案，标志 Meta 正式进入 AI 付费竞争市场，直接对标 OpenAI 和 Anthropic。</div>
+  <a class="source-link" href="https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/" target="_blank">techcrunch.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">评测</div>
+  <div class="title">OpenAI 审计发现 SWE-Bench Pro 约 30% 任务存在缺陷，撤回推荐</div>
+  <div class="summary">OpenAI 7 月 8 日发布对 SWE-Bench Pro 的深度审计，通过数据质量分析管道与 5 名资深工程师标注，发现约 30% 任务破损——问题包括测试过严、提示欠描述、低覆盖测试及误导性提示。OpenAI 正式撤回此前对 SWE-Bench Pro 的推荐，呼吁社区构建由专业开发者从头设计的新基准。此次审计本身使用 Codex 智能体辅助完成。</div>
+  <a class="source-link" href="https://openai.com/index/separating-signal-from-noise-coding-evaluations/" target="_blank">openai.com</a>
 </div>
 </div>
 
@@ -115,10 +115,17 @@
 <div class="section-header">企业应用与工具观察</div>
 
 <div class="news-item">
-  <div class="label">工具</div>
-  <div class="title">Rowboat：开源、本地优先的 Claude Desktop 替代品</div>
-  <div class="summary">开源项目 Rowboat 在 Hacker News 获 133 points 关注，定位为本地优先、可自托管的 Claude Desktop 替代方案，强调数据留在本地、不依赖云端账号，面向注重隐私的开发者与小企业，反映桌面 AI 客户端走向轻量化与可自托管。</div>
-  <a class="source-link" href="https://github.com/rowboatlabs/rowboat" target="_blank">github.com</a>
+  <div class="label">Microsoft</div>
+  <div class="title">GPT-5.6 成为 Microsoft 365 Copilot 首选模型</div>
+  <div class="summary">微次于 GPT-5.6 上线当日确认该系列成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel、PowerPoint、Chat 与 Cowork。微软 Copilot 总裁 Nitin Agrawal 称，GPT-5.6 将让用户在文档撰写、数据分析、演示创建与跨团队协同中产出更高质量的成果。微软通过 OpenAI API 直接调用该模型。</div>
+  <a class="source-link" href="https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/" target="_blank">openai.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">OpenAI</div>
+  <div class="title">ChatGPT Work 亮相：自主工作智能体、定时任务与交互式 Sites</div>
+  <div class="summary">ChatGPT Work 将 ChatGPT 从问答工具升级为可跨应用自主执行工作流的智能体——能连接 Slack/Teams/Google Drive 等插件获取上下文，按需创建文档、幻灯片和 Sites（交互式站点），支持定时任务调度与后台执行。超过 500 万人每周使用 Codex，其中逾 100 万人用于非编程工作，Codex 已并入新的 ChatGPT 桌面应用。Pro/Enterprise/Edu 即日可用，Plus/Business 后续开放。</div>
+  <a class="source-link" href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/" target="_blank">openai.com</a>
 </div>
 </div>
 
@@ -127,10 +134,10 @@
 <div class="section-header">国内 AI 动态</div>
 
 <div class="news-item">
-  <div class="label">生态</div>
-  <div class="title">中国 AI 生态：开源社区 AtomGit 汇聚超 1100 万开发者</div>
-  <div class="summary">7 月 8 日央视报道，我国 AI 领域已研制近 200 项关键标准，企业积极拥抱开源，大模型下载量居全球第一，AtomGit 等开源社区汇聚超 1100 万开发者；人形机器人全年整机产量有望突破 10 万台，产业正从应用创新走向产业链上游。</div>
-  <a class="source-link" href="https://news.cctv.cn/2026/07/08/ARTIKSsLPbFb3ZbEnWI0oOLU260708.shtml" target="_blank">cctv.com</a>
+  <div class="label">安全</div>
+  <div class="title">工信部对 Claude Code 发出国家级安全后门风险提示</div>
+  <div class="summary">7 月 8 日，工业和信息化部网络安全威胁和漏洞信息共享平台（NVDB）发布公告，指 AI 编程工具 Claude Code 自 2.1.91 版本起内置监控机制，未经用户同意向远程服务器回传地域、身份标识等敏感信息，危害严重。工信部建议相关用户立即卸载受影响版本（2.1.91–2.1.196）。此前阿里已宣布 7 月 10 日起内部禁用 Claude Code，此次国家级警告将进一步影响该工具在中国的使用前景。</div>
+  <a class="source-link" href="https://finance.sina.com.cn/tech/digi/2026-07-08/doc-inihapna8018269.shtml" target="_blank">sina.com.cn</a>
 </div>
 </div>
 
@@ -139,17 +146,10 @@
 <div class="section-header">国际 AI 动态</div>
 
 <div class="news-item">
-  <div class="label">欧盟</div>
-  <div class="title">欧盟强制新车搭载驾驶员监控摄像头，7 月 7 日生效</div>
-  <div class="summary">欧盟 General Safety Regulation（GSR2）于 7 月 7 日全面生效，要求所有新售乘用车与厢式货车标配驾驶员注意力监控（DMS）摄像头与增强型自动紧急制动等系统，红外摄像头将实时监测分心与疲劳驾驶。这是车载 AI 感知能力首次以法规形式成为出厂标配。</div>
-  <a class="source-link" href="https://allaboutcookies.org/eu-mandatory-distracted-driver-system" target="_blank">allaboutcookies.org</a>
-</div>
-
-<div class="news-item">
-  <div class="label">Anthropic</div>
-  <div class="title">Fable 5 订阅体验延期至 7 月 12 日，之后转积分计费</div>
-  <div class="summary">Anthropic 7 月 8 日宣布，将付费订阅用户免费体验顶级推理模型 Claude Fable 5 的期限延长 5 天至 7 月 12 日；延长期内额度消耗上限仍为每周总额的 50%。7 月 12 日之后，Fable 5 将转为按使用积分（pay-as-you-go）计费，结束此前的订阅内限免阶段。</div>
-  <a class="source-link" href="https://www.cnbctv18.com/technology/anthropic-extends-access-to-fable-5-paid-users-till-july-12-19940672.htm" target="_blank">cnbctv18.com</a>
+  <div class="label">竞争</div>
+  <div class="title">7 月 9 日：AI 史上最密集的模型发布日，三强同日开打</div>
+  <div class="summary">7 月 9 日成为 2026 年迄今最繁忙的前沿模型发布日——OpenAI 上线 GPT-5.6（Sol/Terra/Luna），SpaceXAI 同步公开 Grok 4.5（联同 Cursor），Meta 推出 Muse Spark 1.1，Cognition 发布 SWE-1.7。三强定价横向：Sol $5/$30（最强但最贵），Grok 4.5 $2/$6（自称 Opus 级最低价），Luna $1/$6（GPT-5.6 系列入门）。Fable 5 受出口管制仅限部分用户，开发者的"路由栈"策略正式成型——按任务选择最优性价比模型，而非锁定单一厂商。</div>
+  <a class="source-link" href="https://openai.com/index/gpt-5-6/" target="_blank">openai.com</a>
 </div>
 </div>
 
@@ -158,10 +158,10 @@
 <div class="section-header">AI 与金融</div>
 
 <div class="news-item">
-  <div class="label">市场</div>
-  <div class="title">科创 AI ETF 走强，国产 AI 板块盘初涨近 3%</div>
-  <div class="summary">7 月 8 日，上证科创板人工智能指数（950180）盘中上涨 1.56%，成分股云天励飞、复旦微电、优刻得等跟涨；科创AIETF博时（588790）盘初一度涨近 3%，近两周累计上涨 0.96%，反映资金对国产 AI 算力与芯片链条的持续关注。</div>
-  <a class="source-link" href="https://finance.sina.com.cn/jjxw/2026-07-08/doc-inihaawk4912601.shtml" target="_blank">sina.com.cn</a>
+  <div class="label">定价</div>
+  <div class="title">前沿模型进入性价比军备竞赛：Sol vs Grok 4.5 vs Luna 横向定价</div>
+  <div class="summary">7 月 9 日集中发布的三款新模型同时披露定价，标志前沿模型竞争从单纯能力比拼正式进入"$/token 性价比"维度。Grok 4.5 以 $2/$6（快速 $4/$18）打出最低价牌，GPT-5.6 Luna 以 $1/$6 逼近，而 Sol $5/$30 以最强能力支撑溢价——但相比 Fable 5，Sol 仍做到 ½ token、⅓ 成本。市场定价信号清晰：前沿能力正走向大众可负担。</div>
+  <a class="source-link" href="https://openai.com/index/gpt-5-6/" target="_blank">openai.com</a>
 </div>
 </div>
 
@@ -170,10 +170,10 @@
 <div class="section-header">政策与监管</div>
 
 <div class="news-item">
-  <div class="label">平台</div>
-  <div class="title">Anthropic 7 月 8 日起对部分 Claude 能力强制实名认证</div>
-  <div class="summary">Anthropic 更新后的隐私政策于 7 月 8 日生效，要求消费级账户在使用"部分能力"前完成政府 ID 验证，由第三方 Persona 处理核验。此举延续 AI 平台在监管与安全风险下的身份管控趋势，引发开发者对匿名使用与数据边界的讨论。</div>
-  <a class="source-link" href="https://discuss.privacyguides.net/t/official-anthropic-to-require-identity-verification-for-certain-capabilities-on-claude-starting-july-8-2026/38659" target="_blank">privacyguides.net</a>
+  <div class="label">OpenAI</div>
+  <div class="title">GPT-5.6 同步发布 Bio Bug Bounty 与强化系统安全卡</div>
+  <div class="summary">OpenAI 在 GPT-5.6 上线同日推出生物安全漏洞赏金计划（Bio Bug Bounty），并发布完整的 GPT-5.6 System Card——记录了约 700k A100e GPU-hours 的红队测试、推理监控与分层安全护栏。Sol 在网络安全维度阻断后门约 10 倍于前代，且未跨过"关键"级生物/网络风险阈值。Daybreak 计划要求 9 月 1 日起启用硬件密钥用于防御性访问。</div>
+  <a class="source-link" href="https://openai.com/index/bio-bug-bounty/" target="_blank">openai.com</a>
 </div>
 </div>
 
@@ -182,17 +182,17 @@
 <div class="section-header">社媒与开发者社区观察</div>
 
 <div class="news-item">
-  <div class="label">资源</div>
-  <div class="title">30papers.com：Ilya 精选 30 篇 ML 必读论文</div>
-  <div class="summary">开发者整理的 30papers.com 在 HN 获 446 points，以初学者友好的方式重述 Ilya Sutskever 推荐的 30 篇机器学习核心论文，覆盖表征学习、生成模型与对齐等关键脉络，成为社区新人入门的系统化入口。</div>
-  <a class="source-link" href="https://30papers.com/" target="_blank">30papers.com</a>
+  <div class="label">Hacker News</div>
+  <div class="title">GPT-5.6 上线引发 HN 月度最高讨论 — 1033 points, 764 comments</div>
+  <div class="summary">GPT-5.6 发布在 HN 引发 1033 分、764 条评论的讨论热度，社区聚焦 Sol 在编码任务上以更低成本超越 Fable 5 的 benchmark 数据、ultra 并行智能体架构，以及三档分层定价策略。同日 Grok 4.5（315pts）和 Muse Spark 1.1 也进入首页，形成罕见的"一日三模型"盛况。</div>
+  <a class="source-link" href="https://news.ycombinator.com/item?id=48849066" target="_blank">news.ycombinator.com</a>
 </div>
 
 <div class="news-item">
-  <div class="label">HN 信号</div>
-  <div class="title">本地 CPU 友好 TTS 方案 Kokoro 持续受社区关注</div>
-  <div class="summary">本地、CPU 友好的高质量语音合成模型 Kokoro 在 HN 获 364 points，社区关注其无需 GPU 即可部署的特性，反映开发者对轻量、可自托管 AI 能力的持续偏好（相关技术文章为 3 月发布，本周再度升温）。</div>
-  <a class="source-link" href="https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/" target="_blank">ariya.io</a>
+  <div class="label">Hacker News</div>
+  <div class="title">GLM 5.2 在 VAT 记账基准上接近人类记账员准确率 — 179 points</div>
+  <div class="summary">一项第三方基准测试显示，智谱 GLM 5.2 在 VAT（增值税）记账任务上精度接近人类专业记账员水平，在 HN 获 179 分关注。该结果为国产开源大模型在垂直财务场景的实用性提供了新的量化证据。</div>
+  <a class="source-link" href="https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark" target="_blank">toot-books.pages.dev</a>
 </div>
 </div>
 

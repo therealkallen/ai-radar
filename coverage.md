@@ -72,7 +72,7 @@
 - NVIDIA 逼近 $200（intellectia.ai）
 - Tom Tunguz：AI 支出 2029 年盈亏平衡（tomtunguz.com）
 
-### 第 8 期 (index.html) — 已定稿（7.6–7.8 窗口内）
+### 第 8 期 (issue-008) — 已归档（7.6–7.8 窗口内）
 - 阿尔伯塔省政府用 Claude 排查修复安全漏洞（anthropic.com）
 - Meta Muse Image 图像生成模型（about.fb.com / techcrunch.com）
 - 2026 世界人工智能大会（WAIC）7.17–7.20 上海（cctv.com）
@@ -87,6 +87,22 @@
 - Anthropic 7.8 起对部分 Claude 能力强制实名认证（privacyguides.net）
 - 30papers.com Ilya 30 篇 ML 论文（30papers.com）
 - Kokoro 本地 TTS 社区热度（ariya.io）
+
+### 第 9 期 (index.html) — 已定稿（7.8–7.10 窗口内）
+- GPT-5.6 正式公开上线（Sol/Terra/Luna 三档，ultra 并行智能体，openai.com）— 第 8 期的后续
+- SpaceXAI × Cursor 发布 Grok 4.5 公开上线（eeo.com.cn / explainx.ai）
+- ChatGPT Work + GPT-Live：OpenAI 发布工作智能体与全双工语音（openai.com）
+- SWE-1.7：Cognition 基于 Kimi K2.7 的低成本前沿编码模型（cognition.com）
+- Muse Spark 1.1：Meta 发布智能体编码模型并开始收费（techcrunch.com）
+- OpenAI 审计发现 SWE-Bench Pro ~30% 任务缺陷，撤回推荐（openai.com）
+- GPT-5.6 成为 Microsoft 365 Copilot 首选模型（openai.com）
+- ChatGPT Work 详述（自主工作智能体、Scheduled Tasks、Sites，openai.com）
+- 工信部 NVDB 发布 Claude Code 安全后门风险提示（sina.com.cn）— 第 6 期阿里禁用的后续
+- 7 月 9 日：AI 史上最密集模型发布日，三强同日开打（openai.com / eeo.com.cn）
+- 前沿模型定价竞赛：Sol vs Grok 4.5 vs Luna 横向对比（openai.com）
+- GPT-5.6 系统卡 + Bio Bug Bounty（openai.com）
+- HN GPT-5.6 讨论 1033pts / 764 comments（hn）
+- GLM 5.2 VAT 记账基准接近人类准确率（toot-books.pages.dev）— 后续/新进展
 
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。

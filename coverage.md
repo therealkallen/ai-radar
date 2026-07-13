@@ -88,7 +88,7 @@
 - 30papers.com Ilya 30 篇 ML 论文（30papers.com）
 - Kokoro 本地 TTS 社区热度（ariya.io）
 
-### 第 9 期 (index.html) — 已定稿（7.8–7.10 窗口内）
+### 第 9 期 (issue-009) — 已归档（7.8–7.10 窗口内）
 - GPT-5.6 正式公开上线（Sol/Terra/Luna 三档，ultra 并行智能体，openai.com）— 第 8 期的后续
 - SpaceXAI × Cursor 发布 Grok 4.5 公开上线（eeo.com.cn / explainx.ai）
 - ChatGPT Work + GPT-Live：OpenAI 发布工作智能体与全双工语音（openai.com）
@@ -103,6 +103,33 @@
 - GPT-5.6 系统卡 + Bio Bug Bounty（openai.com）
 - HN GPT-5.6 讨论 1033pts / 764 comments（hn）
 - GLM 5.2 VAT 记账基准接近人类准确率（toot-books.pages.dev）— 后续/新进展
+
+### 第 10 期 (index.html) — 已定稿（7.10–7.13 窗口内）
+- Apple 正式起诉 OpenAI 窃取商业机密，400+ 前员工、硬件主管被点名（cnbc.com）
+- JADEPUFFER：全球首例全自主 AI 勒索软件攻击完整披露，Sysdig 报告持续引发讨论（sysdig.com）
+- Cursor 秘密开发通用 AI 智能体「Sand」，对标 ChatGPT Work / Claude Cowork（theinformation.com）
+- GPT-5.6 Sol 上线后需求爆满，OpenAI 临时取消所有使用上限（bleepingcomputer.com）— 第 9 期的后续
+- Claude Code vs OpenCode Token 开销实测：4.7x 冷启动差距（systima.ai）
+- Ploy 详述 GPT-5.6 Sol 生产迁移：2.2x 速度，27% 成本降低（ploy.ai）
+- Bun 11 天用 Claude Fable 5 从 Zig 重写为 Rust，$165K（bun.com）
+- npm jscrambler 8.14.0 供应链投毒，定向窃取 AI 工具配置（thehackernews.com）
+- CNBC：中国模型占美国企业 token 30–46%，GLM-5.2 80x 客户增长（cnbc.com）— GLM-5.2 后续
+- MiniMax $19 亿香港融资（bloomberg.com）
+- Z.ai 创始人唐杰「大浪已至」开源宣言（thenextweb.com）
+- 中国 AI 伴侣法规 7 月 15 日启动执法（scmp.com）
+- Anthropic 年化收入 $30B 正式超越 OpenAI，Fortune 确认（fortune.com）
+- Anthropic Fable 5 免费体验再延期至 7.19，Claude Code 周限额 +50%（bleepingcomputer.com）— 第 8/9 期后续
+- xAI Grok Build CLI 上传完整仓库含私钥至 Google Cloud（gist.github.com，HN 353pts）
+- Fidji Simo 卸任 OpenAI 二号职位（techcrunch.com）
+- PitchBook：H1 2026 美国 VC $4,127 亿，AI 占 86%（siliconangle.com）
+- SK Hynix 纳斯达克首日 +13%，市值破 $1T（forbes.com）
+- Helsing $18 亿 E 轮，估值 $180 亿（bloomberg.com）
+- 特朗普无解释取消 AI 行政令签署仪式，8/1 NSA/CISA 框架成唯一锚点（tech-reader.blog）
+- NHTSA 对 Robotaxi 发出最后通牒，7 月底前提交应急方案（techcrunch.com）
+- Nathan Lambert：「开源模型只剩 6 个月」，白宫将签限制开放权重行政令（interconnects.ai）
+- HN：为 AI 生成文章添加标记，688pts（news.ycombinator.com）
+- George Hotz「I Love LLMs, I Hate Hype」HN 热帖（geohot.github.io）
+- Mindwalk：编码智能体会话 3D 可视化工具，Show HN（github.com）
 
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。

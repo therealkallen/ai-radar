@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 9 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策与监管</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+
+<div class="container">
+<div class="masthead">
+  <h1>AI Radar</h1>
+  <div class="meta"><span>2026.07.08 — 07.10</span><span>第 9 期</span></div>
+</div>
+
+<!-- Radar Picks -->
+<div class="section" id="picks">
+<div class="section-header">Radar Picks</div>
+
+<div class="card">
+  <span class="tag">模型</span>
+  <h3>GPT-5.6 正式公开上线：Sol/Terra/Luna 三档，ultra 并行智能体</h3>
+  <p>OpenAI 于 7 月 9 日正式向全球开放 GPT-5.6 系列，分旗舰 Sol（$5/$30 每百万 token）、均衡 Terra（$2.50/$15）、轻量 Luna（$1/$6）三档。Sol 在编码基准（Terminal-Bench 91.9%、ExploitBench 73.5%）超越 Fable 5，且仅用约 ½ token、⅓ 成本。新增 ultra 模式协调 4 路并行智能体处理复杂任务，同步推出系统卡（System Card）与生物安全漏洞赏金计划。</p>
+  <a class="source-link" href="https://openai.com/index/gpt-5-6/" target="_blank">openai.com</a>
+</div>
+
+<div class="card">
+  <span class="tag">模型</span>
+  <h3>SpaceXAI 联同 Cursor 发布 Grok 4.5，正面叫板 GPT-5.6</h3>
+  <p>马斯克旗下 SpaceXAI 于 7 月 9 日公开上线 Grok 4.5，由 1.5 万亿参数 MoE 架构驱动、trillions of Cursor 交互 token 联合训练，运行于 Colossus 集群（22 万+ GPU）。Terminal-Bench 2.1 达 83.3%，自称 Opus 级但更快更便宜——Cursor 内 API $2/$6 每百万 token（快速通道 $4/$18）。在 GPT-5.6 同日上线、Fable 5 受限于出口管制的背景下，三强定价竞争正式开打。</p>
+  <a class="source-link" href="https://www.eeo.com.cn/2026/0709/948997.shtml" target="_blank">eeo.com.cn</a>
+</div>
+
+<div class="card">
+  <span class="tag">产品</span>
+  <h3>ChatGPT Work + GPT-Live：OpenAI 发布工作智能体与全双工语音</h3>
+  <p>OpenAI 同期发布两大新产品——ChatGPT Work 是运行于桌面与 Web 的工作智能体，可跨 Slack、Teams、Google Drive 等应用自主执行多步工作流、定时调度任务（Scheduled Tasks），并将在 ChatGPT 内创建交互式 Sites；Codex 并入桌面应用。GPT-Live 则实现全双工语音架构（可同时听与说），智能体可暂停、打断、后台调用 GPT-5.5 进行搜索推理，GPT-Live-1 与 mini 版即日起全球上线。用户量超 1.5 亿人/周。</p>
+  <a class="source-link" href="https://openai.com/index/introducing-gpt-live/" target="_blank">openai.com</a>
+</div>
+</div>
+
+<!-- 模型与技术进展 -->
+<div class="section" id="models">
+<div class="section-header">模型与技术进展</div>
+
+<div class="news-item">
+  <div class="label">编码</div>
+  <div class="title">SWE-1.7：Cognition 基于 Kimi K2.7 的极低成本前沿编码模型</div>
+  <div class="summary">Cognition 7 月 8 日发布 SWE-1.7，架构基于 Moonshot AI 的 Kimi K2.7 经 Cognition 强化学习管道深度训练。在 Cerebras 上推理速度达 1000 token/秒，FrontierCode 1.1 达 42.3%（远超 SWE-1.6 的 9.4%），以远低于 Opus 4.8 和 GPT-5.5 的成本逼近前沿水准，证明 RL 可进一步推高已后训练模型的性能天花板。</div>
+  <a class="source-link" href="https://cognition.com/blog/swe-1-7" target="_blank">cognition.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">模型</div>
+  <div class="title">Muse Spark 1.1：Meta 发布智能体编码模型，首次对 AI 能力收费</div>
+  <div class="summary">Meta 7 月 9 日发布 Muse Spark 1.1，是其迄今最强的智能体编码模型，支持 100 万 token 上下文、多模态理解（文本/图像/视频）及多智能体协调。扎克伯格时隔近三年重返 X 宣布此事。模型向开发者开放预览并公布收费方案，标志 Meta 正式进入 AI 付费竞争市场，直接对标 OpenAI 和 Anthropic。</div>
+  <a class="source-link" href="https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/" target="_blank">techcrunch.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">评测</div>
+  <div class="title">OpenAI 审计发现 SWE-Bench Pro 约 30% 任务存在缺陷，撤回推荐</div>
+  <div class="summary">OpenAI 7 月 8 日发布对 SWE-Bench Pro 的深度审计，通过数据质量分析管道与 5 名资深工程师标注，发现约 30% 任务破损——问题包括测试过严、提示欠描述、低覆盖测试及误导性提示。OpenAI 正式撤回此前对 SWE-Bench Pro 的推荐，呼吁社区构建由专业开发者从头设计的新基准。此次审计本身使用 Codex 智能体辅助完成。</div>
+  <a class="source-link" href="https://openai.com/index/separating-signal-from-noise-coding-evaluations/" target="_blank">openai.com</a>
+</div>
+</div>
+
+<!-- 企业应用与工具观察 -->
+<div class="section" id="enterprise">
+<div class="section-header">企业应用与工具观察</div>
+
+<div class="news-item">
+  <div class="label">Microsoft</div>
+  <div class="title">GPT-5.6 成为 Microsoft 365 Copilot 首选模型</div>
+  <div class="summary">微次于 GPT-5.6 上线当日确认该系列成为 Microsoft 365 Copilot 首选模型，覆盖 Word、Excel、PowerPoint、Chat 与 Cowork。微软 Copilot 总裁 Nitin Agrawal 称，GPT-5.6 将让用户在文档撰写、数据分析、演示创建与跨团队协同中产出更高质量的成果。微软通过 OpenAI API 直接调用该模型。</div>
+  <a class="source-link" href="https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot/" target="_blank">openai.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">OpenAI</div>
+  <div class="title">ChatGPT Work 亮相：自主工作智能体、定时任务与交互式 Sites</div>
+  <div class="summary">ChatGPT Work 将 ChatGPT 从问答工具升级为可跨应用自主执行工作流的智能体——能连接 Slack/Teams/Google Drive 等插件获取上下文，按需创建文档、幻灯片和 Sites（交互式站点），支持定时任务调度与后台执行。超过 500 万人每周使用 Codex，其中逾 100 万人用于非编程工作，Codex 已并入新的 ChatGPT 桌面应用。Pro/Enterprise/Edu 即日可用，Plus/Business 后续开放。</div>
+  <a class="source-link" href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/" target="_blank">openai.com</a>
+</div>
+</div>
+
+<!-- 国内 AI 动态 -->
+<div class="section" id="china">
+<div class="section-header">国内 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">安全</div>
+  <div class="title">工信部对 Claude Code 发出国家级安全后门风险提示</div>
+  <div class="summary">7 月 8 日，工业和信息化部网络安全威胁和漏洞信息共享平台（NVDB）发布公告，指 AI 编程工具 Claude Code 自 2.1.91 版本起内置监控机制，未经用户同意向远程服务器回传地域、身份标识等敏感信息，危害严重。工信部建议相关用户立即卸载受影响版本（2.1.91–2.1.196）。此前阿里已宣布 7 月 10 日起内部禁用 Claude Code，此次国家级警告将进一步影响该工具在中国的使用前景。</div>
+  <a class="source-link" href="https://finance.sina.com.cn/tech/digi/2026-07-08/doc-inihapna8018269.shtml" target="_blank">sina.com.cn</a>
+</div>
+</div>
+
+<!-- 国际 AI 动态 -->
+<div class="section" id="international">
+<div class="section-header">国际 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">竞争</div>
+  <div class="title">7 月 9 日：AI 史上最密集的模型发布日，三强同日开打</div>
+  <div class="summary">7 月 9 日成为 2026 年迄今最繁忙的前沿模型发布日——OpenAI 上线 GPT-5.6（Sol/Terra/Luna），SpaceXAI 同步公开 Grok 4.5（联同 Cursor），Meta 推出 Muse Spark 1.1，Cognition 发布 SWE-1.7。三强定价横向：Sol $5/$30（最强但最贵），Grok 4.5 $2/$6（自称 Opus 级最低价），Luna $1/$6（GPT-5.6 系列入门）。Fable 5 受出口管制仅限部分用户，开发者的"路由栈"策略正式成型——按任务选择最优性价比模型，而非锁定单一厂商。</div>
+  <a class="source-link" href="https://openai.com/index/gpt-5-6/" target="_blank">openai.com</a>
+</div>
+</div>
+
+<!-- AI 与金融 -->
+<div class="section" id="finance">
+<div class="section-header">AI 与金融</div>
+
+<div class="news-item">
+  <div class="label">定价</div>
+  <div class="title">前沿模型进入性价比军备竞赛：Sol vs Grok 4.5 vs Luna 横向定价</div>
+  <div class="summary">7 月 9 日集中发布的三款新模型同时披露定价，标志前沿模型竞争从单纯能力比拼正式进入"$/token 性价比"维度。Grok 4.5 以 $2/$6（快速 $4/$18）打出最低价牌，GPT-5.6 Luna 以 $1/$6 逼近，而 Sol $5/$30 以最强能力支撑溢价——但相比 Fable 5，Sol 仍做到 ½ token、⅓ 成本。市场定价信号清晰：前沿能力正走向大众可负担。</div>
+  <a class="source-link" href="https://openai.com/index/gpt-5-6/" target="_blank">openai.com</a>
+</div>
+</div>
+
+<!-- 政策与监管 -->
+<div class="section" id="policy">
+<div class="section-header">政策与监管</div>
+
+<div class="news-item">
+  <div class="label">OpenAI</div>
+  <div class="title">GPT-5.6 同步发布 Bio Bug Bounty 与强化系统安全卡</div>
+  <div class="summary">OpenAI 在 GPT-5.6 上线同日推出生物安全漏洞赏金计划（Bio Bug Bounty），并发布完整的 GPT-5.6 System Card——记录了约 700k A100e GPU-hours 的红队测试、推理监控与分层安全护栏。Sol 在网络安全维度阻断后门约 10 倍于前代，且未跨过"关键"级生物/网络风险阈值。Daybreak 计划要求 9 月 1 日起启用硬件密钥用于防御性访问。</div>
+  <a class="source-link" href="https://openai.com/index/bio-bug-bounty/" target="_blank">openai.com</a>
+</div>
+</div>
+
+<!-- 社媒与开发者社区 -->
+<div class="section" id="community">
+<div class="section-header">社媒与开发者社区观察</div>
+
+<div class="news-item">
+  <div class="label">Hacker News</div>
+  <div class="title">GPT-5.6 上线引发 HN 月度最高讨论 — 1033 points, 764 comments</div>
+  <div class="summary">GPT-5.6 发布在 HN 引发 1033 分、764 条评论的讨论热度，社区聚焦 Sol 在编码任务上以更低成本超越 Fable 5 的 benchmark 数据、ultra 并行智能体架构，以及三档分层定价策略。同日 Grok 4.5（315pts）和 Muse Spark 1.1 也进入首页，形成罕见的"一日三模型"盛况。</div>
+  <a class="source-link" href="https://news.ycombinator.com/item?id=48849066" target="_blank">news.ycombinator.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Hacker News</div>
+  <div class="title">GLM 5.2 在 VAT 记账基准上接近人类记账员准确率 — 179 points</div>
+  <div class="summary">一项第三方基准测试显示，智谱 GLM 5.2 在 VAT（增值税）记账任务上精度接近人类专业记账员水平，在 HN 获 179 分关注。该结果为国产开源大模型在垂直财务场景的实用性提供了新的量化证据。</div>
+  <a class="source-link" href="https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark" target="_blank">toot-books.pages.dev</a>
+</div>
+</div>
+
+<div class="footer">
+  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
+</div>
+</div>
+
+</body>
+</html>

@@ -104,7 +104,7 @@
 - HN GPT-5.6 讨论 1033pts / 764 comments（hn）
 - GLM 5.2 VAT 记账基准接近人类准确率（toot-books.pages.dev）— 后续/新进展
 
-### 第 10 期 (index.html) — 已定稿（7.10–7.13 窗口内）
+### 第 10 期 (issue-010) — 已归档（7.10–7.13 窗口内）
 - Apple 正式起诉 OpenAI 窃取商业机密，400+ 前员工、硬件主管被点名（cnbc.com）
 - JADEPUFFER：全球首例全自主 AI 勒索软件攻击完整披露，Sysdig 报告持续引发讨论（sysdig.com）
 - Cursor 秘密开发通用 AI 智能体「Sand」，对标 ChatGPT Work / Claude Cowork（theinformation.com）
@@ -130,6 +130,32 @@
 - HN：为 AI 生成文章添加标记，688pts（news.ycombinator.com）
 - George Hotz「I Love LLMs, I Hate Hype」HN 热帖（geohot.github.io）
 - Mindwalk：编码智能体会话 3D 可视化工具，Show HN（github.com）
+
+### 第 11 期 (index.html) — 已定稿（7.13–7.15 窗口内）
+- Bonsai 27B：PrismML 发布首个 27B 级手机可运行多模态模型，1-bit 3.9GB（prismml.com）
+- 阶跃星辰发布 Step AOS（全球首个智能体原生 OS）+ STEPX Neo 手机（qbitai.com）
+- Cursor 0day 公开披露：植入 git.exe 即执行，7 个月无修复（mindgard.ai）— 新事件，非 Cursor Sand 的重复
+- Claude Fable 5 一夜解开弦论难题，东大教授删推（36kr / qbitai.com）
+- Bonsai 27B 技术细节：全端到端三值/二值化，262K 上下文，Apache 2.0（prismml.com）
+- 美团 LongCat-2.0：首个在五万卡国产算力集群训练的 1.6T 参数模型（aitoolly.com）
+- DRACO 公开测试：国产四模型集成方案以 1/14 成本匹敌 GPT-5.6-sol（qbitai.com）
+- OpenAI 发布「智能体时代的 AI 投资管理」五步框架（openai.com）
+- Cursor 0day 暴露 AI 工具安全真空，700 万用户持续暴露于 RCE 风险（mindgard.ai）
+- 阶跃星辰 Step AOS 详情：打破记忆墙/决策墙/行动墙三堵墙（qbitai.com）
+- 腾讯牵头财团 20 亿美元洽购 Manus，拟撤销 Meta 收购（36kr / FT）
+- 小米机器人上岗汽车产线，成功率 90%+（qbitai.com）
+- 爱诗科技 29.8 亿元 C 轮，阿里领投，AI 视频成第二个跑通商业化赛道（qbitai.com）
+- OpenAI 首次回应苹果诉讼「无证据支撑」，同日被曝首款硬件为无屏移动 AI 音箱（techcrunch.com）— 第 10 期的后续
+- Claude Fable 5 在理论物理领域展现「直觉」，解开弦论难题（36kr）— Fable 5 新事件
+- 纳德拉警告企业：闭源 AI 模型可能是「特洛伊木马」（techcrunch.com）
+- 36 氪：一万亿美元砸向 AI，仅芯片/能源/token 服务三类公司赚钱（36kr.com）
+- Nous Research 融资谈判，Hermes 开发者估值 $15 亿（techcrunch.com）
+- 东方算核发布 DF1000 AI 芯片，3D 混合键合封装（aitoolly.com）
+- Cursor 0day 事件揭开 AI 工具安全监管真空：协调披露管道失效（mindgard.ai）
+- 纳德拉「特洛伊木马」警告：闭源模型锁定价值与溢价空间被双重挤压（techcrunch.com）
+- Armin Ronacher「The Tower Keeps Rising」：AI 编程让代码的共同语言消失，HN 438pts（lucumr.pocoo.org）
+- Yennie Jun「我们是否把太多思考外包给了 AI？」，HN 437pts（artfish.ai）
+- Claude「load-bearing」hook 替换术，HN 502pts——AI 风格趋同讨论（jola.dev）
 
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。

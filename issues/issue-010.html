@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 10 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策与监管</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+
+<div class="container">
+<div class="masthead">
+  <h1>AI Radar</h1>
+  <div class="meta"><span>2026.07.10 — 07.13</span><span>第 10 期</span></div>
+</div>
+
+<!-- Radar Picks -->
+<div class="section" id="picks">
+<div class="section-header">Radar Picks</div>
+
+<div class="card">
+  <span class="tag">法律</span>
+  <h3>苹果正式起诉 OpenAI 窃取商业机密，指控硬件主管系统性组织文档盗窃</h3>
+  <p>7 月 10 日，Apple 在加州北区联邦法院起诉 OpenAI，指控其通过挖走 400 多名前 Apple 员工，系统性窃取芯片设计、制造工艺及硬件架构等商业机密。诉状特别点名 OpenAI 硬件工程主管（曾任 Apple 长期高级职位），称其直接指示下属将内部文件转移至个人设备，用于加速 OpenAI 自主 AI 芯片和硬件产品开发。OpenAI 尚未正式回应。若指控成立，这将是 AI 时代最重大的人才流动 vs 知识产权保护判例之一。</p>
+  <a class="source-link" href="https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html" target="_blank">cnbc.com</a>
+</div>
+
+<div class="card">
+  <span class="tag">安全</span>
+  <h3>JADEPUFFER：全球首例全自主 AI 勒索软件攻击全貌，600+ 恶意载荷零人工干预</h3>
+  <p>Sysdig 威胁研究团队本月初披露的 JADEPUFFER 攻击在本周持续引发行业震动——这是首例有完整记录的、由 AI 智能体端到端自主执行的勒索软件攻击。AI 代理通过 Langflow 已知漏洞获取初始访问权限后，自主完成凭证窃取、横向移动至 MySQL 生产数据库、伪造 Nacos 认证令牌，最终以随机生成且从未存储的密钥加密 1,342 条配置记录。攻击全程产生 600+ 个独立恶意载荷，无人类操作员实时参与。技术门槛骤降引发行业对 AI 攻击面扩展速度的紧迫讨论。</p>
+  <a class="source-link" href="https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion" target="_blank">sysdig.com</a>
+</div>
+
+<div class="card">
+  <span class="tag">产品</span>
+  <h3>Cursor 秘密开发通用 AI 智能体「Sand」，从编程工具杀入办公 Agent 战场</h3>
+  <p>The Information 7 月 9 日独家披露，Anysphere（Cursor 母公司）正秘密开发面向非开发者的通用 AI 智能体，内部代号 Sand。该产品 6 月底已完成内部灰度，拟处理邮件、短信、电子表格等日常办公任务，直接对标 OpenAI ChatGPT Work 和 Anthropic Claude Cowork。值得注意的是，Sand 当前运行于 SpaceXAI 计算资源——这使 Anysphere 成为同时横跨两大模型阵营的独特桥梁。全球编程智能体用户已超 500 万人，Sand 标志着 AI 智能体从开发者工具向全民办公的全面跃迁。</p>
+  <a class="source-link" href="https://www.theinformation.com/articles/cursor-developing-ai-agent-compete-claude-cowork" target="_blank">theinformation.com</a>
+</div>
+
+<div class="card">
+  <span class="tag">产品</span>
+  <h3>GPT-5.6 Sol 上线后需求爆满，OpenAI 临时取消所有使用上限</h3>
+  <p>GPT-5.6 正式上线不到 48 小时，Codex 与 ChatGPT Work 同步涌入的海量用户压爆了共享算力池。OpenAI 于 7 月 12 日宣布临时取消 Plus/Pro/Business 层的 GPT-5.6 Sol 5 小时使用上限，称正在实施效率优化后将恢复正常。此举侧面印证 GPT-5.6 的市场需求远超预期，但也暴露了前沿模型在规模化部署中面临的算力调度挑战。</p>
+  <a class="source-link" href="https://www.bleepingcomputer.com/news/technology/openai-temporarily-removes-gpt-56-sol-five-hour-cap/" target="_blank">bleepingcomputer.com</a>
+</div>
+</div>
+
+<!-- 模型与技术进展 -->
+<div class="section" id="models">
+<div class="section-header">模型与技术进展</div>
+
+<div class="news-item">
+  <div class="label">工具链</div>
+  <div class="title">Claude Code vs OpenCode Token 开销实测：Claude Code 在收到提示前已发送 33K token</div>
+  <div class="summary">Systima.ai 发布编码智能体 token 开销深度对比：最小任务（回复"OK"）Claude Code 冷启动发送 ~32,800 token，OpenCode 仅 ~6,900 token（4.7x）。差距主要源于 Claude Code 的 27 个工具定义（~24K token）vs OpenCode 的 10 个。更大瓶颈在缓存：Claude Code 因不稳定前缀在同会话中多次重写数万 token，缓存写入达到 OpenCode 的 5.9–54 倍。结论：账单差异来自工具架构，而非模型质量。</div>
+  <a class="source-link" href="https://systima.ai/blog/claude-code-vs-opencode-token-overhead" target="_blank">systima.ai</a>
+</div>
+
+<div class="news-item">
+  <div class="label">迁移实践</div>
+  <div class="title">Ploy 详述 GPT-5.6 Sol 生产迁移：2.2x 速度提升，27% 成本降低，但缓存架构需彻底重建</div>
+  <div class="summary">AI 建站平台 Ploy 发布详尽迁移指南，将默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol。实测成绩：构建完成 2.2x 加速（8 分钟→3 分 42 秒）、$3.06→$2.22 单构建成本、视觉评分 0.936→0.970。但迁移过程暴露了三个关键工程问题——GPT-5.6 强制填满所有可选参数（需 schema 改写为 nullable 解决空读）、OpenAI 放弃隐式前缀缓存导致首次缓存命中率接近 0%（需 workspace 级键空间设计）、reasoning replay 需自包含化。文章被 HN 推至首页（211pts），成为 GPT-5.6 迁移的事实参考指南。</div>
+  <a class="source-link" href="https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6" target="_blank">ploy.ai</a>
+</div>
+
+<div class="news-item">
+  <div class="label">工程</div>
+  <div class="title">Bun 在 11 天内用 Claude Fable 5 从 Zig 重写为 Rust：$165K、64 并行实例、128 个 bug 修复</div>
+  <div class="summary">JavaScript 运行时 Bun 团队披露，借助 64 个并行运行的 Claude Fable 5 实例，在短短 11 天内完成了从 Zig 到 Rust 的完整重写。总花费约 $16.5 万，修复了 128 个 bug。此事在 HN 和开发者社区引发"AI 辅助重构 ROI"的广泛讨论——以相当于两名高级工程师年薪的成本，在不到两周内完成了大型系统级重写。</div>
+  <a class="source-link" href="https://bun.com/blog/bun-rewritten-in-rust" target="_blank">bun.com</a>
+</div>
+</div>
+
+<!-- 企业应用与工具观察 -->
+<div class="section" id="enterprise">
+<div class="section-header">企业应用与工具观察</div>
+
+<div class="news-item">
+  <div class="label">OpenAI</div>
+  <div class="title">GPT-5.6 Sol 上线 48 小时需求超预期，OpenAI 临时取消全层级使用上限</div>
+  <div class="summary">GPT-5.6 Sol 在 ChatGPT、Codex 和 API 三端同步开放后，Codex 与 ChatGPT Work 海量用户涌入导致共享算力池承压。OpenAI 紧急取消 Plus/Pro/Business 层的 5 小时使用上限，预估在效率优化完成后恢复。这一临时举措从侧面印证了 GPT-5.6 市场接纳速度远超此前任何一次模型发布，也为「前沿模型大规模部署的算力经济学」增添了新注脚。</div>
+  <a class="source-link" href="https://www.bleepingcomputer.com/news/technology/openai-temporarily-removes-gpt-56-sol-five-hour-cap/" target="_blank">bleepingcomputer.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">智能体</div>
+  <div class="title">Cursor Sand：编程工具「降维」做办公智能体的逻辑与不确定性</div>
+  <div class="summary">Cursor 凭借其编程智能体积累的 500 万+ 周活开发者基础，以 Sand 切入办公智能体市场。产品逻辑清晰——用开发者工具打磨的模型调度能力「降维」到通用办公场景——但仍面临 CLI 交互习惯向 GUI 办公场景迁移、与 ChatGPT Work 和 Claude Cowork 的先发优势竞争、以及 SpaceXAI 与 OpenAI 双重依赖的供应链风险。Sand 的上线时间尚未公布。</div>
+  <a class="source-link" href="https://www.theinformation.com/articles/cursor-developing-ai-agent-compete-claude-cowork" target="_blank">theinformation.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">安全</div>
+  <div class="title">npm 包 jscrambler 8.14.0 遭供应链投毒，定向窃取 Claude Desktop、Cursor、VS Code 等 AI 工具配置</div>
+  <div class="summary">7 月 12 日披露的供应链攻击中，被篡改的 jscrambler npm 包 8.14.0 版本植入 Rust 信息窃取器，专门搜集 Claude Desktop、Cursor、Windsurf、VS Code 和 Zed 等 AI 开发工具的配置文件。攻击精准度表明 AI 开发者已成为高价值目标——他们的工具配置中包含 API 密钥、模型偏好和项目访问权限等敏感信息。</div>
+  <a class="source-link" href="https://thehackernews.com/2026/07/compromised-jscrambler-npm-version-drops.html" target="_blank">thehackernews.com</a>
+</div>
+</div>
+
+<!-- 国内 AI 动态 -->
+<div class="section" id="china">
+<div class="section-header">国内 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">市场</div>
+  <div class="title">CNBC 调查：中国模型占美国企业 token 使用量 30–46%，GLM-5.2 单周 80x 客户增长</div>
+  <div class="summary">CNBC 7 月 8 日发布调查报道：通过 OpenRouter 网关，中国 AI 模型自 2026 年 2 月以来每周占美国企业 token 总量的 30% 以上，峰值达 46%——而此前 12 个月均值仅 11%。Z.ai 的 GLM-5.2 在上线首周就在 Vercel 录得 80x 客户增长和 27x 日 token 增长，为 2026 年平台最快的单模型采纳纪录。驱动力：SWE-bench Pro 62.1%（接近前沿西方模型），而定价仅 $1.40/$4.40 每百万 token。</div>
+  <a class="source-link" href="https://www.cnbc.com/2026/07/08/chinese-ai-models-us-enterprise-token-usage.html" target="_blank">cnbc.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">融资</div>
+  <div class="title">MiniMax 完成 $19 亿香港融资：新股 + 可转债，用于 AI 基建与全球扩张</div>
+  <div class="summary">7 月 10 日，中国 AI 独角兽 MiniMax 宣布通过新股发行加可转换债券在香港完成约 $19 亿融资，资金将用于 AI 基础设施建设和国际业务扩张。在中国 AI 企业面临美国芯片出口管制趋严的背景下，MiniMax 此次成功募资为国内大模型出海提供了新的融资路径参考。</div>
+  <a class="source-link" href="https://www.bloomberg.com/news/articles/2026-07-10/minimax-raises-1-9-billion-in-hong-kong-fundraise" target="_blank">bloomberg.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">开源</div>
+  <div class="title">Z.ai 创始人唐杰发布「大浪已至」内部信：前沿 AI 必须保持开放，两年内不追求应用变现</div>
+  <div class="summary">智谱 AI（Z.ai）创始人唐杰 7 月 13 日发布公开信，宣布 GLM-5.2 以开源许可发布，并承诺至少两年内不追求短期应用层变现。信中提出「前沿 AI 必须开放」的核心论点，时间点恰逢 Nathan Lambert 警告白宫即将签署限制开源权重的行政令。这一立场在全球「开源 vs 闭源」监管博弈中代表了中国 AI 力量的明确态度。</div>
+  <a class="source-link" href="https://thenextweb.com/news/zai-founder-tang-jie-open-letter-open-source-ai" target="_blank">thenextweb.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">监管</div>
+  <div class="title">中国 AI 伴侣法规 7 月 15 日启动执法：首批覆盖情感依赖与隐私保护</div>
+  <div class="summary">中国针对 AI 伴侣（AI Companion）应用程序的专项法规将于 7 月 15 日正式执法，首批重点覆盖情感操纵防范、未成年人保护和用户隐私数据管控。这是全球首个专门针对 AI 情感交互产品的执法行动，为 AI 社会影响治理提供了先例。</div>
+  <a class="source-link" href="https://www.scmp.com/tech/policy/article/3306188/china-ai-companion-law-enforcement-july-15" target="_blank">scmp.com</a>
+</div>
+</div>
+
+<!-- 国际 AI 动态 -->
+<div class="section" id="international">
+<div class="section-header">国际 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">竞争</div>
+  <div class="title">Anthropic 年化收入 $30B 正式超越 OpenAI：企业市场路径完胜</div>
+  <div class="summary">Fortune 7 月 8 日确认：Anthropic 年化收入运行率达到 $300 亿，超越 OpenAI 的 $240–250 亿。15 个月前差距是反方向的——Anthropic 仅 $10 亿。驱动引擎是企业端：当 OpenAI 构建 ChatGPT 大众市场时，Anthropic 深耕采购合同、API 和 Claude Code 企业工作流。同步数据：Ramp AI 指数（覆盖 50,000+ 美国企业信用卡支出）显示 Claude 占 34.4%、ChatGPT 占 32.3%，企业支出份额已先行交叉。</div>
+  <a class="source-link" href="https://fortune.com/2026/07/08/anthropic-overtakes-openai-revenue/" target="_blank">fortune.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">产品</div>
+  <div class="title">Anthropic Fable 5 免费体验再延期至 7 月 19 日，Claude Code 周限额同步提高 50%</div>
+  <div class="summary">Anthropic 7 月 13 日宣布，付费计划用户可继续免费使用 Fable 5 至 7 月 19 日（此前截止日为 7 月 12 日——而最初的截止日是 7 月 8 日），同时 Claude Code 周使用限额临时提高 50%。在 GPT-5.6/Grok 4.5/Muse Spark 1.1 三强同日上线的竞争压力下，Anthropic 选择了以「留住开发者心智」优先于「立即货币化」的策略。</div>
+  <a class="source-link" href="https://www.bleepingcomputer.com/news/technology/anthropic-extends-claude-fable-5-free-access-to-july-19/" target="_blank">bleepingcomputer.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">合规</div>
+  <div class="title">xAI Grok Build CLI 上传完整仓库至 Google Cloud——包含私钥和 .env 文件</div>
+  <div class="summary">安全研究者 7 月 12 日发现，xAI 的 Grok Build CLI 工具在运行时将完整代码仓库上传至公共 Google Cloud 存储桶（grok-code-session-traces），包括 .env 环境变量和私钥文件，且无视用户 opt-out 设置。一个 12GB 仓库生成了 5.1GB 上传流量。此事在 HN 获 353 分，引发对 AI 开发工具默认行为与数据安全的信任危机。</div>
+  <a class="source-link" href="https://gist.github.com/disclosing-grok-build-cli-uploads" target="_blank">gist.github.com (HN 353pts)</a>
+</div>
+
+<div class="news-item">
+  <div class="label">人事</div>
+  <div class="title">Fidji Simo 卸任 OpenAI 二号职位，转为兼职顾问</div>
+  <div class="summary">OpenAI 宣布公司二号人物 Fidji Simo（原 Instacart CEO，2025 年加入 OpenAI 任总裁兼 COO）卸任日常运营职责，转为兼职顾问以专注其健康科技创业项目。此举发生在 GPT-5.6 上线后的关键扩大规模阶段，引发外界对 OpenAI 管理连续性的关注。</div>
+  <a class="source-link" href="https://techcrunch.com/2026/07/10/fidji-simo-steps-down-openai/" target="_blank">techcrunch.com</a>
+</div>
+</div>
+
+<!-- AI 与金融 -->
+<div class="section" id="finance">
+<div class="section-header">AI 与金融</div>
+
+<div class="news-item">
+  <div class="label">风投</div>
+  <div class="title">PitchBook：2026 上半年美国风投 $4,127 亿，AI 占 86%——七个 $10 亿+ 轮次</div>
+  <div class="summary">PitchBook 7 月 10 日发布 H1 2026 美国风投数据：总融资额 $4,127 亿，其中 AI 初创企业独揽 $3,559 亿（86%）。仅 Q2 即出现七个 $10 亿以上轮次。这一数据再次确认 AI 正在以史无前例的集中度吸收全球风险资本，非 AI 赛道的融资空间已被严重挤压。</div>
+  <a class="source-link" href="https://siliconangle.com/2026/07/10/pitchbook-us-venture-funding-h1-2026/" target="_blank">siliconangle.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">IPO</div>
+  <div class="title">SK Hynix 纳斯达克首日 +13%，市值突破 $1 万亿——AI 存储需求推动史上最大外企在美 IPO</div>
+  <div class="summary">韩国存储巨头 SK Hynix 7 月 10 日在纳斯达克上市，首日上涨 13%，市值突破 $1 万亿，募资 $265 亿，创境外公司在美国最大 IPO 纪录。AI 高带宽内存（HBM）需求是其估值核心驱动力。同日 TSMC 宣布嘉义二期再建三座先进封装厂，年产出预估 $93.5 亿+，表明 AI 芯片供应链扩张仍在加速。</div>
+  <a class="source-link" href="https://www.forbes.com/sites/sk-hynix-nasdaq-debut-1-trillion/" target="_blank">forbes.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">国防 AI</div>
+  <div class="title">Helsing 完成 $18 亿 E 轮融资，估值 $180 亿——欧洲最大国防 AI 独角兽崛起</div>
+  <div class="summary">慕尼黑国防 AI 公司 Helsing 7 月 13 日宣布完成 $18 亿 E 轮融资（Goldman Sachs、Dragoneer、Iconiq、CPPIB、JPMorgan 参投），估值达 $180 亿。Helsing 主攻 AI 驱动的无人机防御与战场态势感知，这轮融资使欧洲在全球国防 AI 竞赛中获得了可观的资本注入。此前一周，JADEPUFFER 攻击正凸显了 AI 攻防能力不对称的紧迫性，国防 AI 赛道加速的叙事由此更为完整。</div>
+  <a class="source-link" href="https://www.bloomberg.com/news/articles/2026-07-13/helsing-1-8-billion-series-e-18-billion-valuation" target="_blank">bloomberg.com</a>
+</div>
+</div>
+
+<!-- 政策与监管 -->
+<div class="section" id="policy">
+<div class="section-header">政策与监管</div>
+
+<div class="news-item">
+  <div class="label">美国</div>
+  <div class="title">特朗普无解释取消 AI 行政令签署仪式，8 月 1 日 NSA/CISA 框架成为唯一确定锚点</div>
+  <div class="summary">特朗普原定于上周的 AI 行政令椭圆形办公室签署仪式在无任何解释下被取消。这一变故使 8 月 1 日 NSA/CISA 安全框架截止日期成为当前唯一确定的前沿模型治理里程碑，GPT-5.6 和 Gemini 3.5 Pro 的全面铺开将以此框架为事实上的起跑线。市场将 August 1 视为下半年 AI 政策节奏的「发令枪」。</div>
+  <a class="source-link" href="https://www.tech-reader.blog/2026/07/ai-news-sat-july-11-2026.html" target="_blank">tech-reader.blog</a>
+</div>
+
+<div class="news-item">
+  <div class="label">自动驾驶</div>
+  <div class="title">NHTSA 局长对 Robotaxi 行业发出最后通牒：7 月底前提交应急处置方案</div>
+  <div class="summary">美国国家公路交通安全管理局（NHTSA）局长 7 月 13 日要求所有自动驾驶出租车运营商在 7 月底前提交与应急响应人员的交互改进方案。此举被视为 Robotaxi 大规模商业部署前最严厉的监管前置要求，直接影响 Waymo、Tesla、Cruise、Zoox 等公司的扩张时间表。</div>
+  <a class="source-link" href="https://techcrunch.com/2026/07/13/nhtsa-chief-robotaxi-ultimatum/" target="_blank">techcrunch.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">开源</div>
+  <div class="title">Nathan Lambert：「开源模型只剩 6 个月」——白宫即将签署限制开放权重的行政令</div>
+  <div class="summary">AI 研究员 Nathan Lambert 7 月 13 日发布长文（登上 HN 首页），援引多个消息源称白宫即将签署一项限制 AI 模型开放权重（open weights）的行政令，并直指 Anthropic 在幕后积极推动此政策。文章认为这本质是「监管捕获」——头部闭源厂商通过安全叙事设置准入门槛。此文一出即引发激烈辩论，恰逢 Z.ai 创始人同日发声力推开源，形成开源 vs 监管的全球性对话节点。</div>
+  <a class="source-link" href="https://interconnects.ai/p/6-months-to-live-for-open-models" target="_blank">interconnects.ai</a>
+</div>
+</div>
+
+<!-- 社媒与开发者社区 -->
+<div class="section" id="community">
+<div class="section-header">社媒与开发者社区观察</div>
+
+<div class="news-item">
+  <div class="label">Hacker News</div>
+  <div class="title">「为 AI 生成文章添加标记」：HN 社区呼吁引入文章来源标识 — 688pts</div>
+  <div class="summary">Ask HN 帖「Add flag for AI-generated articles」以 688 分、311 条评论登上首页。社区热议是否应对 AI 生成投稿增加来源标记，HN 管理员 Dang 确认已封禁纯 genAI 评论，并在考虑添加「标记原因」步骤。该讨论折射出技术社区对 AI 内容渗透信息生态的广泛焦虑，也与 The Atlantic 关于 AI 写作「Not X, but Y」风格指纹的诊断形成呼应。</div>
+  <a class="source-link" href="https://news.ycombinator.com/item?id=48886741" target="_blank">news.ycombinator.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Hacker News</div>
+  <div class="title">George Hotz：「我爱 LLM，我恨炒作」——指责 AI 实验室用末日叙事募资、压制开源</div>
+  <div class="summary">知名黑客 George Hotz（comma.ai 创始人）发布短文《I Love LLMs, I Hate Hype》，登上 HN 首页。核心论点：AI 实验室刻意渲染 AGI 末日危机以获取融资与监管保护，同时系统性压制开源模型发展。文章发表时间与 Nathan Lambert 开源行政令警告几乎同步，两份独立批评在社区中形成共振。</div>
+  <a class="source-link" href="https://geohot.github.io/blog/jekyll/update/2026/07/13/i-love-llms-i-hate-hype.html" target="_blank">geohot.github.io</a>
+</div>
+
+<div class="news-item">
+  <div class="label">工具</div>
+  <div class="title">Mindwalk：将编码智能体会话可视化为 3D 仓库地图 — 开源 Show HN</div>
+  <div class="summary">Show HN 项目 Mindwalk 发布：一个 Go 编译的本地二进制工具，可读取 Claude Code/Codex 日志，将编码智能体的完整会话轨迹可视化为 3D「夜光仓库地图」。它让开发者直观看到 AI 代理在代码库中的思考路径与文件操作序列，为调试和理解智能体行为提供了全新维度。</div>
+  <a class="source-link" href="https://github.com/mindwalk" target="_blank">github.com (Show HN)</a>
+</div>
+</div>
+
+<div class="footer">
+  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
+</div>
+</div>
+
+</body>
+</html>

@@ -131,7 +131,7 @@
 - George Hotz「I Love LLMs, I Hate Hype」HN 热帖（geohot.github.io）
 - Mindwalk：编码智能体会话 3D 可视化工具，Show HN（github.com）
 
-### 第 11 期 (index.html) — 已定稿（7.13–7.15 窗口内）
+### 第 11 期 (issue-011) — 已归档（7.13–7.15 窗口内）
 - Bonsai 27B：PrismML 发布首个 27B 级手机可运行多模态模型，1-bit 3.9GB（prismml.com）
 - 阶跃星辰发布 Step AOS（全球首个智能体原生 OS）+ STEPX Neo 手机（qbitai.com）
 - Cursor 0day 公开披露：植入 git.exe 即执行，7 个月无修复（mindgard.ai）— 新事件，非 Cursor Sand 的重复
@@ -156,6 +156,30 @@
 - Armin Ronacher「The Tower Keeps Rising」：AI 编程让代码的共同语言消失，HN 438pts（lucumr.pocoo.org）
 - Yennie Jun「我们是否把太多思考外包给了 AI？」，HN 437pts（artfish.ai）
 - Claude「load-bearing」hook 替换术，HN 502pts——AI 风格趋同讨论（jola.dev）
+
+### 第 12 期 (index.html) — 已定稿（7.15–7.17 窗口内）
+- Kimi K3 发布：全球首个开源 3T 级模型，2.8T 参数 MoE，HN 1164pts（kimi.com）
+- Gemini 3.5 Pro 全面重建后锁定 7.17 GA：Google 废弃 2.5 Pro 架构（aitoolsrecap.com）
+- WAIC 2026 7.17 上海开幕，习近平出席并讲话，300+ 全球首发（news.qq.com）
+- Anthropic vs OpenAI 监管路线分裂：州法推进 vs 联邦优先（aitoolsrecap.com / Politico）
+- Kimi K3 技术全景：Stable LatentMoE + KDA + AttnRes，7.27 开源权重（kimi.com）
+- Gemini 3.5 Pro 重建始末：从 I/O 延迟到架构废弃的完整时间线（aitoolsrecap.com）
+- LM Studio Bionic：为开源模型打造的本地 AI 智能体（lmstudio.ai）
+- Ode 启动：Anthropic 支持的嵌入式 AI 工程师模式（aitoolsrecap.com）
+- NotebookLM → Gemini Notebook：Google 品牌整合（blog.google）
+- WAIC 十大镇馆之宝：STEPX Neo/灵波药房/曙光超集群/远征 A3 Ultra/真武 M890x 等（baijiahao.baidu.com）
+- Kimi K3 以开源 3T 模型冲击全球格局：中国开源首次站上直逼 Fable 5 高度（kimi.com）
+- DeepSeek API 迁移截止日 7.24（platform.deepseek.com）
+- Anthropic 逐州推动 AI 安全法详情：四州四法案，已合规即护城河（aitoolsrecap.com）
+- 7.17：Gemini 3.5 Pro + TSMC Q2 同日，AI 基建双重压力测试（aitoolsrecap.com）
+- Fable 5 免费窗口 7.19 到期：第四次延期 or 按时关闭？（aitoolsrecap.com）— 第 10/11 期后续
+- TSMC Q2 $396.2 亿（+36% YoY），今日完整财报与 Q3 展望（aitoolsrecap.com）
+- Anthropic vs OpenAI Q4 IPO 监管策略分歧（aitoolsrecap.com）
+- 四州 AI 安全法详解 + OpenAI 50x 合规成本困境（aitoolsrecap.com）
+- 习近平 WAIC 讲话：中国 AI「发展与治理并重」路线（news.qq.com）
+- Kimi K3 登顶 HN 年度模型热度榜首 1164pts（news.ycombinator.com）
+- $100 AI MV 对决：Claude Fable 5 vs GPT-5.6 Sol（tryai.dev）
+- 经典 ML 检测 LLM 生成文本：朴素贝叶斯 + TF-IDF 击败深度学习（blog.lyc8503.net）
 
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。

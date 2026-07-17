@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 11 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策与监管</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+
+<div class="container">
+<div class="masthead">
+  <h1>AI Radar</h1>
+  <div class="meta"><span>2026.07.13 — 07.15</span><span>第 11 期</span></div>
+</div>
+
+<!-- Radar Picks -->
+<div class="section" id="picks">
+<div class="section-header">Radar Picks</div>
+
+<div class="card">
+  <span class="tag">模型</span>
+  <h3>Bonsai 27B：首个 27B 级手机上运行的多模态模型，1-bit 仅 3.9GB</h3>
+  <p>PrismML（Caltech 团队，Khosla/Cerberus/Google/Samsung 投资）7 月 14 日发布 Bonsai 27B，基于 Qwen3.6 27B，是全球首个可在手机本地运行的 27B 级多模态模型。Ternary 版（5.9GB，1.71 有效比特/权重）保留全精度 95% 基准分；1-bit 版（3.9GB，1.125 比特/权重）保留 90%，可在 iPhone 17 Pro 上运行。数学和编码能力几无损失（91.7%–93.4%），工具调用保留率 66%–74%。Apache 2.0 开源。HN 535 分——「智能密度」范式正在将前沿能力推向边缘设备。</p>
+  <a class="source-link" href="https://prismml.com/news/bonsai-27b" target="_blank">prismml.com</a>
+</div>
+
+<div class="card">
+  <span class="tag">产品</span>
+  <h3>阶跃星辰发布 Step AOS：全球首个智能体原生操作系统 + STEPX Neo 手机</h3>
+  <p>7 月 13 日，阶跃星辰发布面向智能体时代的 AI 终端品牌 STEPX，同步推出全球首个智能体原生操作系统 Step AOS（Agentic-native OS）及首款大模型原生手机 STEPX Neo。Step AOS 针对传统 OS「三堵墙」做了架构级突破：打破沙箱割裂（记忆墙）、建立端云协同调度（决策墙）、赋予智能体系统级身份（行动墙）。STEPX Neo 是「模、软、硬三位一体」的终端落地方案。此举标志着中国 AI 厂商从模型层向操作系统层的纵深跃迁。</p>
+  <a class="source-link" href="https://www.qbitai.com/2026/07/449979.html" target="_blank">qbitai.com</a>
+</div>
+
+<div class="card">
+  <span class="tag">安全</span>
+  <h3>Cursor 0day 公开披露：植入 git.exe 即执行，7 个月无修复，Mindgard 选择完整公开</h3>
+  <p>安全公司 Mindgard 7 月 14 日公开披露 Cursor IDE 高危 0day 漏洞：打开包含恶意 git.exe 的仓库即可触发任意代码执行，无需点击、弹窗或用户交互，甚至会被反复触发。漏洞于 2025 年 12 月 15 日发现并报告，197+ 个版本后仍未修复。Mindgard 称 Cursor（700 万+ 用户、估值 $600 亿）的 CISO 曾回应但因自动化故障未能推进，此后所有渠道沉默。HN 321 分——该披露正在引发关于「AI 工具安全责任边界」的行业讨论。</p>
+  <a class="source-link" href="https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left" target="_blank">mindgard.ai</a>
+</div>
+
+<div class="card">
+  <span class="tag">研究</span>
+  <h3>Claude Fable 5 一夜解开半年的弦论难题，东大教授惊到删推</h3>
+  <p>研究量子场论与弦理论的东京大学教授立川裕二在推特公开表示，Claude Fable 5「似乎确实理解弦理论，并且也有直觉」——一个卡了他半年的弦论问题被 Fable 5 一夜解开。推文传播过广后教授紧急删除并解释「在意想不到的方向上传播得太广了」。此事被 36 氪等中文媒体广泛转载，定位为「对 AI 怀疑论的重重一击」——前沿模型在理论物理这一人类智力巅峰领域的表现，正在突破科研圈的认知边界。</p>
+  <a class="source-link" href="https://www.36kr.com/p/3895421511124611" target="_blank">36kr.com</a>
+</div>
+</div>
+
+<!-- 模型与技术进展 -->
+<div class="section" id="models">
+<div class="section-header">模型与技术进展</div>
+
+<div class="news-item">
+  <div class="label">压缩</div>
+  <div class="title">Bonsai 27B：智能密度范式将 27B 前沿能力压缩到手机内存</div>
+  <div class="summary">PrismML 的 Bonsai 27B 通过全端到端三值/二值化（覆盖 embedding、attention、MLP 和 LM head，无高精度逃生通道），在 262K token 上下文、支持视觉多模态 + 推测解码的条件下，将 27B 模型从 ~54GB（FP16）压缩至 5.9GB/3.9GB。1-bit 版智能密度达 0.53/GB——是全精度基线的 10x+，最佳常规低比特方案的 2.7x。在 M5 Max 上达 58–87 tok/s，端侧 Agent 闭环的成本已降为零。</div>
+  <a class="source-link" href="https://prismml.com/news/bonsai-27b" target="_blank">prismml.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">训练</div>
+  <div class="title">美团 LongCat-2.0：首个在五万卡国产算力集群训练的 1.6T 参数大模型</div>
+  <div class="summary">美团 7 月 14 日正式发布 LongCat-2.0，1.6T 总参数（~48B 稀疏激活），百万 token 上下文，专为 Agentic Coding 设计。关键突破是首次在 50,000 张国产 GPU 集群上完成万亿参数级训练，并同步开源国产卡推理代码。配套发布 WBench（首个交互式视频世界模型评测基准）和 VitaBench 2.0（长期动态智能体基准），形成「模型+评测」的完整开源栈。</div>
+  <a class="source-link" href="https://aitoolly.com/zh/ai-news/2026-07-14" target="_blank">aitoolly.com / 美团技术团队</a>
+</div>
+
+<div class="news-item">
+  <div class="label">评测</div>
+  <div class="title">DRACO 公开测试：国产四模型集成方案以 1/14 成本匹敌 GPT-5.6-sol</div>
+  <div class="summary">DRACO Brave Search 组公开评测中，GPT-5.6-sol 入榜得分 63.99，单任务成本 $1.71；由 DeepSeek、GLM、Kimi、Qwen 四模型并行提案再聚合的 OpenSquilla 0.5.0 方案得分 64.09，成本仅 $0.12——质量持平，成本为 GPT-5.6-sol 的 1/14、Fable 5 的 1/10。该结果指向一个实用路径：国产模型通过集成路由策略可在特定任务上实现与前沿闭源模型相当的性价比。</div>
+  <a class="source-link" href="https://www.qbitai.com/2026/07/449842.html" target="_blank">qbitai.com</a>
+</div>
+</div>
+
+<!-- 企业应用与工具观察 -->
+<div class="section" id="enterprise">
+<div class="section-header">企业应用与工具观察</div>
+
+<div class="news-item">
+  <div class="label">OpenAI</div>
+  <div class="title">OpenAI 发布「智能体时代的 AI 投资管理」框架：五个步骤从实验走向规模化</div>
+  <div class="summary">OpenAI 7 月 14 日发布企业 AI 投资管理指南，提出五步框架：① 建立用量与支出可视化（按用户/产品/模型）；② 以「每次可接受成果的成本」而非 token 单价评估模型效率；③ 在规模化前建立治理层（插件权限、操作审批、容量分配）；④ 以组合思维投资 AI：日常生产力 → 可重复工作流 → 战略性私有数据工作流；⑤ 用 Guaranteed Capacity / Scale Tier / Batch API 等分层匹配产能与需求。文章同时透露 GPT-5.6 相比 GPT-5.4 输出 token 减少 54%、任务时间缩短 57%。</div>
+  <a class="source-link" href="https://openai.com/index/managing-ai-investments-in-agentic-era/" target="_blank">openai.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">安全</div>
+  <div class="title">Cursor 0day 暴露 AI 开发者工具的安全真空：700 万用户持续暴露于 RCE 风险</div>
+  <div class="summary">Mindgard 的 Cursor 0day 披露揭示了一个更广的问题：AI 编码工具以「生产力」为由获取了代码库、终端、密钥和自治工作流的空前访问权限，但其安全响应机制远未跟上。报告时间线显示：2025 年 12 月发现 → HackerOne 初判「informative/out of scope」→ 被挑战后改为确认 → 之后 5 个月彻底沉默。Mindgard 警告：AI 产品的漏洞报告量激增，传统协调披露管道正被压垮。修复建议：企业用 AppLocker/EDR 阻止 workspace 路径执行 git.exe；消费者应在隔离 VM 中打开不受信仓库。</div>
+  <a class="source-link" href="https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left" target="_blank">mindgard.ai</a>
+</div>
+</div>
+
+<!-- 国内 AI 动态 -->
+<div class="section" id="china">
+<div class="section-header">国内 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">产品</div>
+  <div class="title">阶跃星辰发布 Step AOS + STEPX Neo，国内厂商率先抢占智能体 OS 赛道</div>
+  <div class="summary">阶跃星辰 STEPX 品牌首发的 Step AOS 是全球首个为智能体原生设计的操作系统——传统 OS 对 Agent 存在沙箱隔离（记忆墙）、缺乏端云调度（决策墙）和 Agent 无系统身份（行动墙）三大障碍，Step AOS 从架构层解决。同步发布的 STEPX Neo 手机及个人智能体「阶跃 Amoo」构成完整闭环。在 Google 尚未推出 Android 原生的 Agent 框架、Apple 仍在打磨 Siri AI 的窗口期，中国厂商在智能体 OS 这一基础设施层抢占了先发位置。</div>
+  <a class="source-link" href="https://www.qbitai.com/2026/07/449979.html" target="_blank">qbitai.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">并购</div>
+  <div class="title">腾讯牵头财团 20 亿美元洽购 Manus，拟撤销 Meta 收购</div>
+  <div class="summary">据英国《金融时报》7 月 10 日消息，腾讯正牵头包括真格基金、红杉中国在内的现有投资者财团，以约 20 亿美元估值洽购中国 AI 企业 Manus 的多数股权，意图撤销此前 Meta 对 Manus 的收购协议。腾讯将保留少数股东身份。在腾讯 AI 战略一直被认为「慢半拍」的背景下，此举被视为加速补齐 AI 基础能力拼图的关键一步，也为中国 AI 人才和技术的海外归属增添了新的博弈维度。</div>
+  <a class="source-link" href="https://www.36kr.com/p/3895368473378052" target="_blank">36kr.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">机器人</div>
+  <div class="title">马斯克「机器人进不了厂」话落，小米机器人已上岗汽车产线</div>
+  <div class="summary">小米 7 月 14 日披露机器人进厂「实习」最新进展：不到半年学会柔性工件长时作业，本季度新解锁中控台侧盖板排序和料箱折叠回收两个工站，成功率均超 90%。这一节点刚好踩在马斯克近期公开表示「机器人很难进工厂」之后，形成实际案例对判断的直接回应。文远知行同日披露 L2++ 系统已跑通德国不限速高速、法国环岛和日本右舵道路，中国 AI 在具身智能与自动驾驶两个方向的出海并行推进。</div>
+  <a class="source-link" href="https://www.qbitai.com/2026/07/449906.html" target="_blank">qbitai.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">融资</div>
+  <div class="title">爱诗科技完成 29.8 亿元 C 轮，阿里领投——AI 视频成为第二个跑通商业化的赛道</div>
+  <div class="summary">爱诗科技 7 月 14 日宣布 C 轮累计 29.8 亿元人民币，C+ 轮由阿里巴巴领投，跟投方包括 Lollapalooza Capital、常春藤资本、韩国未来资产、蓝色光标等十余家机构。旗下 PixVerse R1 是全球首个支持 1080P 分辨率的通用实时世界模型。量子位指出「AI 视频正在成为继 AI Coding 之后第二个跑通大规模商业化的 AI 赛道」。</div>
+  <a class="source-link" href="https://www.qbitai.com/2026/07/449836.html" target="_blank">qbitai.com</a>
+</div>
+</div>
+
+<!-- 国际 AI 动态 -->
+<div class="section" id="international">
+<div class="section-header">国际 AI 动态</div>
+
+<div class="news-item">
+  <div class="label">法律</div>
+  <div class="title">OpenAI 首次回应苹果诉讼：「无证据支撑」，同日被曝首款 AI 硬件为无屏移动音箱</div>
+  <div class="summary">OpenAI 7 月 14 日首次就苹果商业机密诉讼发表实质性声明：「我们认真对待这些指控，但未发现任何证据表明此诉状有依据。」此前仅笼统表示「对其他公司的商业机密没有兴趣」。同日，Bloomberg 披露 OpenAI 首款硬件设备将是无屏幕可移动智能音箱，定位为「具有人性的 AI 伴侣」，内置机械运动组件，由多名前 Apple 工程师参与设计。两则消息叠加，勾勒出 OpenAI 与 Apple 从合作伙伴到全栈竞争对手的急剧转变——硬件之争正在取代芯片之争成为下一战线。</div>
+  <a class="source-link" href="https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/" target="_blank">techcrunch.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">科研</div>
+  <div class="title">Claude Fable 5 解锁弦论难题：前沿 AI 在理论物理领域展现「直觉」</div>
+  <div class="summary">东京大学教授立川裕二公开表示，一个卡了半年的弦论研究问题被 Claude Fable 5 在一个晚上解开。他强调模型「似乎确实理解弦理论，有直觉」，因传播过广而紧急删推。事件引发的核心讨论不是「AI 能否做科研」，而是「AI 在理论物理这类人类智力巅峰领域是否正在形成超越检索的洞察力」——这个问题与研究员们正在经历的日常已高度吻合。</div>
+  <a class="source-link" href="https://www.36kr.com/p/3895421511124611" target="_blank">36kr.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">战略</div>
+  <div class="title">纳德拉警告企业：闭源 AI 模型可能是「特洛伊木马」</div>
+  <div class="summary">微软 CEO 萨提亚·纳德拉 7 月 13 日罕见发出警告，称企业应警惕闭源 AI 模型成为「特洛伊木马」——锁定效应、隐性成本和数据控制权丧失。这一表述来自微软自身深度绑定 OpenAI 的前提下，被市场解读为微妙信号：要么是为微软自研/开源模型铺路，要么反映了大客户对单一供应商依赖的真实焦虑。该评论与 OpenAI 同日发布的企业投资管理指南形成有趣的「合作伙伴间的观点张力」。</div>
+  <a class="source-link" href="https://techcrunch.com/2026/07/13/nadella-warns-enterprises-ai-trojan-horse/" target="_blank">techcrunch.com</a>
+</div>
+</div>
+
+<!-- AI 与金融 -->
+<div class="section" id="finance">
+<div class="section-header">AI 与金融</div>
+
+<div class="news-item">
+  <div class="label">基建</div>
+  <div class="title">36 氪：一万亿美元砸向 AI，真正赚到钱的只有芯片、能源和 token 服务</div>
+  <div class="summary">根据 2026 年资本开支指引，微软、亚马逊、Alphabet、Meta 四大云厂商的资本开支上限已飙至 $7,250 亿（同比 +77%），加上 Oracle、CoreWeave、Stargate 及各主权 AI 计划，全年 AI 基础设施投入突破 $1 万亿。但 36 氪分析指出利润高度集中在三类公司：芯片（NVIDIA、AMD、Broadcom）、能源（数据中心供电方）和 token 服务（API 供应商），大模型和应用层的大多数仍在烧钱阶段。</div>
+  <a class="source-link" href="https://www.36kr.com/p/3895407587018625" target="_blank">36kr.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">融资</div>
+  <div class="title">Nous Research 融资谈判：Hermes 智能体开发者估值达 $15 亿</div>
+  <div class="summary">Nous Research（Hermes 系列智能体模型开发者）正在洽谈 $7,500 万融资，估值 $15 亿，由 Robot Ventures 和 Union Square Ventures 领投。作为开源 AI 社区的核心力量，Nous 的估值反映了市场对「开源智能体基础设施」赛道的持续认可——尽管 Nathan Lambert 上周警告白宫即将限制开放权重。</div>
+  <a class="source-link" href="https://techcrunch.com/2026/07/13/nous-research-funding-1-5-billion-valuation/" target="_blank">techcrunch.com</a>
+</div>
+
+<div class="news-item">
+  <div class="label">芯片</div>
+  <div class="title">东方算核发布 DF1000 AI 芯片：3D 混合键合封装实现高带宽</div>
+  <div class="summary">中国 AI 芯片初创公司东方算核 7 月 13 日发布 DF1000，采用 3D 混合键合（hybrid bonding）先进封装技术实现高内存带宽，定位大模型推理场景。在中国企业面临美国芯片出口管制持续收紧的背景下，国产 AI 芯片的每一次架构突破都具有供应链自主化的战略意义。</div>
+  <a class="source-link" href="https://aitoolly.com/zh/ai-news/2026-07-14" target="_blank">aitoolly.com</a>
+</div>
+</div>
+
+<!-- 政策与监管 -->
+<div class="section" id="policy">
+<div class="section-header">政策与监管</div>
+
+<div class="news-item">
+  <div class="label">安全</div>
+  <div class="title">Cursor 0day 事件揭开 AI 工具安全监管真空：当「协调披露」管道失效</div>
+  <div class="summary">Mindgard 的 Cursor 0day 全披露事件之所以引发行业震动，不仅因为漏洞本身的高危性，更因为它暴露了当前 AI 工具安全生态的系统性问题：① 漏洞报告量因 AI 辅助发现而激增，传统 triage 管道崩溃；② AI 漏洞不属传统类别（非内存损坏、非注入），导致 bounty 平台分类困难；③ 高速增长期公司倾向于将安全排后。Cursor 案例中 HackerOne 初判「informative」即为症状。一个悬而未决的问题：谁对 AI 编码工具的安全性承担最终责任？</div>
+  <a class="source-link" href="https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left" target="_blank">mindgard.ai</a>
+</div>
+
+<div class="news-item">
+  <div class="label">言论</div>
+  <div class="title">纳德拉「特洛伊木马」警告：微软 CEO 罕见质疑闭源模型商业模式的可持续性</div>
+  <div class="summary">纳德拉的「特洛伊木马」警告虽未点名任何具体公司，但其语境——微软是 OpenAI 的最大投资者和独家云合作伙伴——使这一表态格外敏感。潜在信号：随着前沿模型推理成本骤降（GPT-5.6 价格再降）、开源模型性能逼近（如国产四模型集成方案），闭源 API 的锁定价值和溢价空间正在被双重挤压。微软可能正在为企业客户准备更灵活的「多模型路由」替代方案。</div>
+  <a class="source-link" href="https://techcrunch.com/2026/07/13/nadella-warns-enterprises-ai-trojan-horse/" target="_blank">techcrunch.com</a>
+</div>
+</div>
+
+<!-- 社媒与开发者社区 -->
+<div class="section" id="community">
+<div class="section-header">社媒与开发者社区观察</div>
+
+<div class="news-item">
+  <div class="label">Hacker News</div>
+  <div class="title">Armin Ronacher「The Tower Keeps Rising」：AI 编程正在让代码的「共同语言」消失 — 438pts</div>
+  <div class="summary">Flask 作者 Armin Ronacher 以巴别塔为隐喻撰文指出：AI 编程消除了「理解摩擦」——过去修改别人的存储层需要读代码、问问题、协调依赖，这个过程虽然慢但同步了所有人的理解。现在每个人都可以让 Agent 做任何修改而无需与他人沟通。「Agent 不会感到痛苦，只有人会。」最危险的信号：巴别塔故事中语言混乱后建筑就停了，但在 AI 辅助工程中，建筑可以在共同理解已崩溃后继续上升——没有立即的失败来提醒我们失去了什么。</div>
+  <a class="source-link" href="https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/" target="_blank">lucumr.pocoo.org</a>
+</div>
+
+<div class="news-item">
+  <div class="label">Hacker News</div>
+  <div class="title">「我们是否把太多思考外包给了 AI？」— Yennie Jun 长文引发 437 分热议</div>
+  <div class="summary">Google DeepMind 研究员 Yennie Jun 在 Artfish 发表长文，从 Ken Liu 科幻小说中的 AI 助理 Tilly、旧金山「麦克风男」全天录音给 Claude 做决策，到她自己旅行中拒绝先问 AI 而是先和妹妹推理的经历，系统反思了「思考外包」的阈值问题。核心追问：如果连「我想吃什么早餐、听什么音乐、爱上谁」都交给 AI 决定——那我们还知道自己真正想要什么吗？HN 412 条评论中，开发者社区罕见地展开了非技术性的人文反思。</div>
+  <a class="source-link" href="https://www.artfish.ai/p/offloading-thinking-to-ai" target="_blank">artfish.ai</a>
+</div>
+
+<div class="news-item">
+  <div class="label">工具</div>
+  <div class="title">「如何让 Claude 不再说 load-bearing」：用 MessageDisplay Hook 替换 AI 陈词滥调 — 502pts</div>
+  <div class="summary">一篇轻松但高度共鸣的帖子登上 HN 榜首：开发者 jola 展示了如何用 Claude Code 的 MessageDisplay hook 将「load-bearing seams」「honest take」「you're absolutely right」等 Claude 高频套话实时替换成「cooked」「spicy doodad」「I'm a complete clown」等荒诞表达。社区在 534 条评论中展开了关于「AI 风格趋同」的严肃讨论——与 The Atlantic 上周对 AI 写作「Not X, but Y」指纹的诊断形成呼应。一个附带的共鸣点：GitHub issue #53454 上关于这个问题的投诉已堆积数月。</div>
+  <a class="source-link" href="https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing" target="_blank">jola.dev</a>
+</div>
+</div>
+
+<div class="footer">
+  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
+</div>
+</div>
+
+</body>
+</html>

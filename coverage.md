@@ -181,6 +181,30 @@
 - $100 AI MV 对决：Claude Fable 5 vs GPT-5.6 Sol（tryai.dev）
 - 经典 ML 检测 LLM 生成文本：朴素贝叶斯 + TF-IDF 击败深度学习（blog.lyc8503.net）
 
+### 第 13 期 (index.html) — 已定稿（7.17–7.20 窗口内）
+- Gemini 3.5 Pro 三度跳票：7.17 GA 第三次落空，Google 探索 Gemini 3.6 Flash 作过渡（aitoolsrecap.com）— 第 12 期"锁定 7.17 GA"的后续
+- Fable 5 免费窗口 7.20 结束→转积分计费 $10/$50，无 Opus 5、无第四次延期（aitoolsrecap.com）— 第 10/11/12 期延期报道的后续
+- Grok Build 将 SSH 密钥/密码库上传至 GCS 公开桶，Musk 承诺清理（aitoolsrecap.com）— 第 12 期 7.12 Grok CLI 泄露的升级后续
+- OpenAI 收购 Ona/Gitpod 构建持久化 Codex 云端智能体，周活 500 万（aitoolsrecap.com）
+- Qwen 3.8 预览：2.4T 参数 MoE，号称"除 Fable 5 外最强"（iaipie.com）— 全新模型
+- Gemini 3.5 Pro 重建困境：递归工具调用死循环（aitoolsrecap.com）
+- Kimi K3 需求激增→Moonshot 暂停新订阅（twitter.com/kimi_moonshot）— 第 12 期"发布"的后续
+- Microsoft Project Perception：多模型安全审计工具对标 Mythos 5（aitoolsrecap.com）
+- Claude Code 改用 Rust 版 Bun 运行时（simonwillison.net）
+- WAIC 2026 闭幕：162 亿签约、57 个场景落地（iaipie.com）— 第 12 期"开幕"的后续
+- 国产芯片四小龙超节点，华为昇腾 950 部署 750+ 套（iaipie.com）
+- 上港 AITOS：AI 原生港口操作系统（iaipie.com）— 全新
+- 中国开源大模型累计下载破 100 亿次（iaipie.com）— 全新数据
+- Gemini 3.5 Pro 缺席"三大窗口"舆论（aitoolsrecap.com）
+- Fable 5 积分计费=商业化转向（aitoolsrecap.com）
+- TSMC Q2 +77.4%、追加 $100B 亚利桑那、HPC 占比 66%（aitoolsrecap.com）— 第 12 期"Q2 预告"的正式财报后续
+- Oracle 裁员 2–3 万以支持 Stargate（aitoolsrecap.com）— 全新
+- 研究：AI 建议更不准但更自信（thenextweb.com）— 全新
+- Sutton WAIC 演讲"经验时代"（iaipie.com）— 全新
+- Kimi K3 暂停订阅登 HN（news.ycombinator.com item 48969291）
+- OpenAI Codex 上下文 372K→272K（github.com/openai/codex）
+- AI 思维外包实证登 HN（thenextweb.com）
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

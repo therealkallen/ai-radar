@@ -205,6 +205,28 @@
 - OpenAI Codex 上下文 372K→272K（github.com/openai/codex）
 - AI 思维外包实证登 HN（thenextweb.com）
 
+### 第 14 期 (index.html) — 已定稿（7.20–7.22 窗口内）
+- Gemini 3.6 Flash 预览发布：3.5 Pro 三度跳票后的应急过渡（blog.google）— 第 13 期"探索 3.6 Flash 应急方案"的正式落地（后续/硬进展）
+- Qwen 3.8 正式版 + 开源权重落地：2.4T 国产开源模型正式入局（qwenlm.github.io）— 第 13 期"preview"的正式发布+开源（后续/硬进展）
+- Anthropic 推出 Opus 5：Fable 5 积分计费后的高端补齐（anthropic.com）— 第 13 期"无 Opus 5"后的正式发布（后续/硬进展，全新事件）
+- xAI 公布 Grok Build 事件报告：凭证桶已清、影响未确认（x.ai）— 第 13 期"未发布事件报告"的后续（后续/硬进展）
+- Gemini 3.6 Flash 规格：主动降级深度推理先抢速度（blog.google）
+- Qwen 3.8 开源实测：长上下文逼近 Fable 5、成本不足 5%（qwenlm.github.io）
+- Opus 5 规格：1M 上下文、工具可靠性提升、主攻长程 Agent（anthropic.com）
+- Codex 持久云智能体灰度上线：Ona 收购后首个产品落地（github.com/openai/codex）— 第 13 期"收购 Ona"的产品落地（后续）
+- 微软 Project Perception 进入私测：多模型扫描对标 Mythos 5（theinformation.com）— 第 13 期披露后的私测进展（后续）
+- Kimi K3 扩容重启企业订阅、7.27 开源承诺不变（twitter.com/kimi_moonshot）— 第 13 期"暂停订阅"的后续（后续/硬进展）
+- 智源 FlagEval 升级：新增长程 Agent 可靠性维度（iaipie.com）— 全新评测标准
+- Gemini 3.6 Flash + 苹果 Siri 采用预期升温（blog.google）— 第 13 期"苹果 Siri 用 Gemini"的后续
+- OpenAI 与 Oracle 扩大 Stargate 算力采购、Codex 持久化获专属集群（aitoolsrecap.com）— 第 13 期 Oracle 裁员+TSMC 后的新进展（后续）
+- TSMC 亚利桑那三厂动工（aitoolsrecap.com）— 第 13 期"再投 $100B"的动工落地（后续）
+- Stargate 锁定首座数据中心选址、软银追加出资（aitoolsrecap.com）— 全新事件
+- 国家数据局行业大模型落地指引（iaipie.com）— 全新监管标准
+- 欧盟 AI Act 高风险条款 8 月生效前合规冲刺（artificialintelligenceact.eu）— 全新监管
+- Opus 5 发布登 HN（news.ycombinator.com item 48979812）
+- Qwen 3.8 开源权重自托管刷屏 GitHub（github.com/QwenLM）
+- Codex 持久会话灰度引发"缩水上下文能否跑长任务"质疑（github.com/openai/codex）— 第 13 期"372K→272K"的延续讨论
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

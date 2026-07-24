@@ -227,6 +227,28 @@
 - Qwen 3.8 开源权重自托管刷屏 GitHub（github.com/QwenLM）
 - Codex 持久会话灰度引发"缩水上下文能否跑长任务"质疑（github.com/openai/codex）— 第 13 期"372K→272K"的延续讨论
 
+### 第 15 期 (index.html) — 已定稿（7.22–7.24 窗口内）
+- DeepSeek 7.24 API 迁移完成，自研新推理后端上线（platform.deepseek.com）— 第 12 期"迁移截止 7.24"的完成落地（后续/硬进展）
+- Kimi K3 技术报告发布 + 确认 7.27 开源权重登 HuggingFace（kimi.com）— 第 14 期"7.27 开源承诺"的硬进展（后续）
+- Gemini 3.6 Flash 转 GA 并集成 Vertex AI（blog.google）— 第 14 期"预览"的正式 GA（后续/硬进展）
+- 字节豆包 Doubao-Seed-1.5 发布，端侧多模态（volcengine.com）— 全新国产模型
+- DeepSeek 新推理后端技术细节：延迟降 40%（platform.deepseek.com）— 第 12 期迁移的后续
+- Kimi K3 技术报告要点：Stable LatentMoE + KDA（kimi.com）— 第 14 期后续
+- 豆包 1.5 端侧多模态架构（volcengine.com）— 全新
+- Codex 持久会话扩大灰度 + 外部状态存储绕开 272K（github.com/openai/codex）— 第 14 期灰度的扩展（后续）
+- 微软 Project Perception 接入 GitHub Copilot 私测（theinformation.com）— 第 14 期私测的进展（后续）
+- Kimi K3 开源前预热：技术报告 + HF 确认（huggingface.co）— 第 14 期后续
+- 国家算力网 AI 调度平台上线，统一编排国产超节点（iaipie.com）— 全新国产基建（呼应第 13 期芯片四小龙）
+- Gemini 3.6 Flash GA + 苹果 Siri 集成时间表（blog.google）— 第 14 期 Siri 后续
+- Meta 发布 Llama 4 系列，开源阵营再添主力（llama.com）— 全新国际开源模型
+- Anthropic 年化营收突破 $120 亿（theinformation.com）— 全新财务数据
+- Stargate 首座数据中心动工（aitoolsrecap.com）— 第 14 期选址后的动工（后续/硬进展）
+- 美国发布国家 AI 行动计划，前沿权重拟安全审查（whitehouse.gov）— 全新美国政策（对照第 14 期欧盟 AI Act）
+- 加州 AI 透明法生效，要求声明训练数据来源（leginfo.legislature.ca.gov）— 全新州法（呼应第 12/13 期逐州立法）
+- DeepSeek 迁移完成登 HN（news.ycombinator.com item 48985531）
+- Kimi K3 开源预热刷屏 HF（huggingface.co）
+- 豆包 1.5 端侧演示走红，端 vs 云 路线争论（volcengine.com）
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

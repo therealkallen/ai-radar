@@ -249,6 +249,28 @@
 - Kimi K3 开源预热刷屏 HF（huggingface.co）
 - 豆包 1.5 端侧演示走红，端 vs 云 路线争论（volcengine.com）
 
+### 第 16 期 (index.html) — 已定稿（7.24–7.27 窗口内，补 7.27 周一刊）
+- Kimi K3 2.8T 开源权重 7.27 正式放出（huggingface.co）— 第 14/15 期"7.27 开源承诺/技术报告"的兑现日（后续/硬进展，头条）
+- Google 给出 Gemini 3.5 Pro 新 GA 窗口 8 月初（blog.google）— 第 13/14 期"三度跳票/无时间表"后的明确窗口（后续/硬进展）
+- 智谱 AI 发布 GLM-5，长上下文 Agent（zhipuai.cn）— 全新国产模型
+- xAI Grok Build 修复后重新开放，默认禁用自动上传（x.ai）— 第 14 期事件报告后的修复闭环（后续/硬进展）
+- Kimi K3 权重实测：自托管成本与基准（huggingface.co）— 第 14/15 期后续
+- GLM-5 技术亮点（zhipuai.cn）— 全新
+- Gemini 3.5 Pro 双线定位解读（blog.google）— 第 14 期后续
+- Codex 持久化推至全量付费用户（github.com/openai/codex）— 第 15 期扩大灰度的全量（后续）
+- Claude 企业版上线团队知识库持久记忆（anthropic.com）— 全新 Anthropic 企业功能
+- 国产开源周：Kimi/Qwen/GLM 同周上新（huggingface.co）— 第 14/15 期后续合成
+- 国家数据局启动行业大模型合规抽查（iaipie.com）— 第 14 期指引、第 15 期算力网后的实操（后续/新动作）
+- Gemini 3.5 Pro 锁定 8 月初 GA（blog.google）— 第 13 期后续
+- Meta Llama 4 企业采用加速（llama.com）— 第 15 期发布的采用进展（后续）
+- Perplexity 完成 $10 亿融资估值 $180 亿（theinformation.com）— 全新财务事件
+- Oracle 确认 Stargate 首期算力 Q4 交付（aitoolsrecap.com）— 第 15 期动工后的交付时间表（后续）
+- 生成式AI内容标识细则落地（cac.gov.cn）— 全新国内监管
+- 英国 AI 安全所发布 Frontier 安全评测新基准（gov.uk）— 全新国际评测
+- Kimi K3 开源登 HN（news.ycombinator.com item 48991207）
+- 国产三开源横评刷屏 GitHub（github.com）
+- Gemini 3.5 Pro 新窗口社区讨论（blog.google）— 第 13 期后续
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

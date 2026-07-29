@@ -271,6 +271,28 @@
 - 国产三开源横评刷屏 GitHub（github.com）
 - Gemini 3.5 Pro 新窗口社区讨论（blog.google）— 第 13 期后续
 
+### 第 17 期 (index.html) — 已定稿（7.27–7.29 窗口内）
+- 月之暗面推 Kimi K3 企业 API + 私有部署（platform.moonshot.cn）— 第 16 期"开源权重"后的商业化双线（后续/硬进展）
+- 百度文心 5.0 发布（yiyan.baidu.com）— 全新国产模型
+- NVIDIA 发布 Rubin 架构下一代 AI 芯片（nvidianews.nvidia.com）— 全新芯片
+- OpenAI 推 GPT-5.6「深度研究」Agent 模式（openai.com）— 第 11/12 期 GPT-5.6 发布后的新功能（后续/新事件）
+- Kimi K3 企业 API 技术细节：私有部署与权重同源（platform.moonshot.cn）— 第 16 期后续
+- 文心 5.0 架构解析（yiyan.baidu.com）— 全新
+- NVIDIA Rubin 架构要点（nvidianews.nvidia.com）— 全新
+- Codex 持久化全量后首批反馈（github.com/openai/codex）— 第 16 期全量的用户反馈（后续）
+- Google 将 Gemini 3.6 Flash 推入 Workspace 全量（workspace.google.com）— 第 14/16 期 Gemini 的产品集成（后续/新事件）
+- Kimi K3 开源后国产生态升温（platform.moonshot.cn）— 第 16 期后续
+- 文心 5.0 发布（国内）（yiyan.baidu.com）— 全新
+- NVIDIA Rubin 国际动态（nvidianews.nvidia.com）— 全新
+- OpenAI 深度研究模式国际动态（openai.com）— 全新
+- 智谱 AI 完成新一轮融资，GLM-5 后估值跳升（theinformation.com）— 全新财务（第 16 期 GLM-5 发布后的融资）
+- 软银愿景基金募资新 AI 基金（reuters.com）— 全新（第 14/15/16 期 Stargate 链条后续）
+- 国家数据局合规抽查首批结果公示（iaipie.com）— 第 16 期抽查启动后的结果（后续）
+- 欧盟委员会发布 GPAI 模型合规指引（ec.europa.eu）— 第 14/16 期欧盟 AI Act 的配套（后续/新事件）
+- Kimi K3 企业 API 登 HN（news.ycombinator.com item 48996884）
+- NVIDIA Rubin 刷屏，社区测算 Stargate 换代（nvidianews.nvidia.com）
+- 文心 5.0 引发闭源壁垒争论（yiyan.baidu.com）
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

@@ -293,6 +293,28 @@
 - NVIDIA Rubin 刷屏，社区测算 Stargate 换代（nvidianews.nvidia.com）
 - 文心 5.0 引发闭源壁垒争论（yiyan.baidu.com）
 
+### 第 18 期 (index.html) — 已定稿（7.29–7.31 窗口内）
+- Google 确认 Gemini 3.5 Pro 8.1 GA（blog.google）— 第 13 期"三度跳票"、第 16/17 期"锁定 8 月初窗口"后的确认具体日期（后续/硬进展，头条）
+- xAI 发布 Grok 5，多模态 Agent（x.ai）— 全新 xAI 模型（Grok 4.5/CLI/Build 为旧实体，Grok 5 新）
+- 主要云厂商上线 NVIDIA Rubin 预订（nvidianews.nvidia.com）— 第 17 期 Rubin 发布后的云上线（后续）
+- Anthropic 完成新一轮融资，估值跳升（theinformation.com）— 全新财务（第 15 期营收破 $120 亿后的融资，不同事件）
+- Gemini 3.5 Pro GA 确认细节：递归工具调用缺陷修复（blog.google）— 第 13 期后续
+- Grok 5 技术亮点（x.ai）— 全新
+- Rubin 云上线细节（nvidianews.nvidia.com）— 第 17 期后续
+- Salesforce Agentforce 2.0 支持自托管开源模型（salesforce.com）— 全新企业产品
+- Claude 团队知识库企业采用升温（anthropic.com）— 第 16 期后续
+- Kimi K3 企业采用升温（platform.moonshot.cn）— 第 17 期后续
+- 华为发布昇腾 960（iaipie.com）— 全新国产芯片（第 13 期昇腾 950 为旧款，960 新）
+- Gemini 3.5 Pro 锁定 8.1 GA（blog.google）— 第 13 期后续
+- xAI Grok 5 发布（国际）（x.ai）— 全新
+- Anthropic 融资（theinformation.com）— 全新
+- 软银 Stargate 新基金首投落地（reuters.com）— 第 17 期软银新基金后的首投（后续）
+- 欧盟 AI Act 高风险条款 8.2 生效前夕（artificialintelligenceact.eu）— 第 14/16/17 期 EU AI Act 的生效节点（后续）
+- 全国信标委发布 AI 大模型评测国家标准（iaipie.com）— 全新国内标准（第 14 期 FlagEval/指引的补充）
+- Gemini 3.5 Pro 确认 GA 登 HN（news.ycombinator.com item 49002511）
+- Grok 5 发布安全讨论（x.ai）
+- Rubin 云上线 + 昇腾 960 社区讨论（nvidianews.nvidia.com）
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

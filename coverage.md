@@ -315,6 +315,28 @@
 - Grok 5 发布安全讨论（x.ai）
 - Rubin 云上线 + 昇腾 960 社区讨论（nvidianews.nvidia.com）
 
+### 第 19 期 (index.html) — 已定稿（7.31–8.3 窗口内）
+- Gemini 3.5 Pro 8.1 正式 GA（blog.google）— 第 13 期"三度跳票"、第 16/17 期"锁定窗口"、第 18 期"确认日期"后的实际 GA 落地（后续/硬进展，头条）
+- 欧盟 AI Act 高风险条款 8.2 正式生效（artificialintelligenceact.eu）— 第 14/16/17/18 期"8月生效/生效前夕/指引"后的实际生效日（后续/硬进展，头条）
+- OpenAI 发布 Sora 2，视频生成 Agent 化（openai.com）— 全新产品（视频生成）
+- CoreWeave 启动 IPO，AI 基建第一股（reuters.com）— 全新财务事件
+- Gemini 3.5 Pro GA 实测：质量追平 Opus 5（blog.google）— 第 13/18 期后续
+- Sora 2 技术亮点（openai.com）— 全新
+- Grok 5 首发实测（x.ai）— 第 18 期发布后的实测（后续）
+- Sora 2 企业版 API（openai.com）— 全新（跟随 Pick）
+- Google Workspace 集成 Gemini 3.5 Pro（workspace.google.com）— 第 17 期 Workspace+3.6 Flash 后的 Pro 接入（后续/新事件）
+- Kimi K3 企业采用升温（platform.moonshot.cn）— 第 17/18 期后续
+- Kimi K3 登顶国际开源基准，国产开源入全球前三（huggingface.co）— 第 16/17 期 K3 后的基准硬进展（后续/新数据）
+- Gemini 3.5 Pro GA（国际）（blog.google）— 第 13 期后续
+- Sora 2 发布（国际）（openai.com）— 全新
+- CoreWeave IPO（reuters.com）— 全新
+- Perplexity 推企业搜索 API（theinformation.com）— 第 16 期融资后的首款重磅产品（后续/新事件）
+- 欧盟 AI Act 8.2 生效（政策）（artificialintelligenceact.eu）— 第 14/16/17/18 期后续
+- G7 数字部长会议前沿 AI 治理共识（g7.org）— 全新国际治理
+- Gemini 3.5 Pro GA 实测登 HN（news.ycombinator.com item 49008233）
+- 欧盟 AI Act 生效首日社区讨论（artificialintelligenceact.eu）
+- Sora 2 引发 Agent 范式外溢讨论（openai.com）
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

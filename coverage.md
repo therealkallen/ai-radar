@@ -337,6 +337,33 @@
 - 欧盟 AI Act 生效首日社区讨论（artificialintelligenceact.eu）
 - Sora 2 引发 Agent 范式外溢讨论（openai.com）
 
+### 第 20 期 (index.html) — 已定稿（8.3–8.5 窗口内）
+- CoreWeave 正式挂牌纳斯达克，IPO 定价超预期首日大涨（reuters.com）— 第 19 期"递交招股书/启动IPO"的上市硬进展（后续/硬进展，头条）
+- 欧盟 AI Act 生效首周首批 GPAI 合规问询（artificialintelligenceact.eu）— 第 19 期"8.2生效"后的首批执法（后续/硬进展，头条）
+- Kimi K3-Vision 多模态开源，补齐视觉理解（huggingface.co）— 第 16/17/19 期 K3 后的能力扩展（全新能力，头条）
+- Gemini 3.5 Pro 上线百万上下文 API，长程 Agent 补位（blog.google）— 第 19 期 GA 后的新功能（后续/硬进展，头条）
+- Gemini 3.5 Pro 百万上下文实测（blog.google）— 第 19 期后续（实测硬数据）
+- Grok 5 多模态 Agent 实测登顶多项基准（x.ai）— 第 18/19 期 Grok 5 后续（实测硬数据）
+- DeepSeek 开源 V4 推理模型（github.com）— 全新国产模型（第 12/15 期迁移/后端的延续新发布）
+- Sora 2 入局催化视频生成赛道，可灵/即梦加速迭代（openai.com）— 第 19 期 Sora 2 发布后的竞品反应（新角度）
+- Cursor Sand 通用智能体公开测试（cursor.com）— 第 10 期"Sand 对标"的公开测试（后续/硬进展）
+- Claude 团队知识库企业采用升温，新增代码库检索（anthropic.com）— 第 16 期后续（新功能）
+- Kimi K3-Vision 多模态（huggingface.co）— 本期 Pick 延伸（国内视角）
+- 华为昇腾 960 进入主流云厂商供应（huawei.com）— 第 18 期 960 发布后的量产供应（后续/硬进展）
+- 文心 5.0 多模态升级（yiyan.baidu.com）— 第 17 期发布后的新功能（后续）
+- NVIDIA Rubin 云预订首周数据，Stargate 换代（nvidianews.nvidia.com）— 第 17/18 期 Rubin 后续（硬数据）
+- 苹果 Siri 集成 Gemini 进入内测（blog.google）— 第 14/15/16 期 Siri+Gemini 后续（硬进展）
+- OpenAI 首款硬件（无屏移动 AI 音箱）细节曝光（techcrunch.com）— 第 11 期后续（硬进展）
+- CoreWeave 首日大涨带动 AI 基建股重估（reuters.com）— 本期 Pick 的金融视角（后续）
+- xAI 完成新一轮巨额融资，估值跳升（theinformation.com）— 全新财务事件（Grok 5 第 18 期后的融资）
+- 腾讯完成收购 Manus（ft.com）— 第 11 期"洽购"的完成交割（后续/硬进展）
+- 欧盟 AI Act 首批执法细节：算力阈值与风险文档（artificialintelligenceact.eu）— 本期 Pick 细节（后续）
+- 美国前沿权重安全审查细则出台（whitehouse.gov）— 第 15 期"国家 AI 行动计划"后续（硬进展）
+- 生成式 AI 内容标识首张罚单（cac.gov.cn）— 第 16 期"标识细则落地"后的执法（后续/硬进展）
+- CoreWeave 上市登 HN，社区激辩重资产算力盈利（news.ycombinator.com item 49013907）— 本期 Pick 社区视角
+- Kimi K3-Vision 开源社区刷屏（huggingface.co）— 本期延伸
+- 开发者热议三家旗舰到齐后差异化（news.ycombinator.com item 49014022）— 全新社区讨论
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

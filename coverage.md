@@ -364,6 +364,33 @@
 - Kimi K3-Vision 开源社区刷屏（huggingface.co）— 本期延伸
 - 开发者热议三家旗舰到齐后差异化（news.ycombinator.com item 49014022）— 全新社区讨论
 
+### 第 21 期 (index.html) — 已定稿（8.5–8.7 窗口内）
+- Apple 正式上线 Siri+Gemini 3.5 Pro，数亿设备接入旗舰模型（blog.google）— 第 20 期"内测"的正式发布（后续/硬进展，头条）
+- DeepSeek V4 推理实测出炉，性价比碾压闭源（github.com）— 第 20 期 V4 开源的社区实测（后续/硬数据，头条）
+- NVIDIA Rubin 首批交付，AI 基建换代正式启动（nvidianews.nvidia.com）— 第 20 期"预订首周数据"的交付落地（后续/硬进展，头条）
+- 欧盟 AI Act 开出首批违规警告，从问询进入问责（artificialintelligenceact.eu）— 第 20 期"首批问询"的执法升级（后续/硬进展，头条）
+- DeepSeek V4 实测详情：长链推理逼近 GPT-5.6，成本不及 1/15（github.com）— 第 20 期 V4 后续（实测硬数据）
+- Kimi K3-Vision 基准评测，多模态对标闭源（huggingface.co）— 第 20 期 K3-Vision 发布后的独立评测（后续/硬数据）
+- Anthropic 推出 Opus 5 推理增强模式（anthropic.com）— 第 14 期 Opus 5 发布后的新功能（后续/新功能）
+- Cursor Sand 公测首周反馈，长任务可靠性成焦点（cursor.com）— 第 20 期公测后的首周反馈（后续）
+- Sora 2 企业采用升温，首批广告/影视工作室签约（techcrunch.com）— 第 19/20 期 Sora 2 后的企业落地（后续/新进展）
+- GitHub Copilot 新增 AI 代码审查模式（github.blog）— 全新产品功能
+- 昇腾 960 云实例首批客户实测，推理吞吐接近 A100（huawei.com）— 第 20 期上云后的实测硬数据（后续）
+- 智谱 GLM-5 推出企业版私有化方案，政务/金融首批部署（zhipuai.cn）— 第 16 期 GLM-5 发布后的企业版新动作（后续/新动作）
+- 国家数据局发布行业大模型合规部署操作指南（cac.gov.cn）— 第 16/17/20 期监管链后续（新文件）
+- Apple Siri+Gemini 正式上线（国际）（blog.google）— 第 20 期后续（国际视角）
+- NVIDIA Rubin 首批交付（国际）（nvidianews.nvidia.com）— 第 20 期后续
+- 英国 AISI 发布前沿模型安全评测年度报告（gov.uk）— 第 16 期 AISI 基准的年度报告（后续/新数据）
+- CoreWeave 上市首周走势（reuters.com）— 第 20 期上市后的首周盘整（后续/硬数据）
+- NVIDIA 预告 Rubin 财报，订单积压至 Q4 推动指引上调（reuters.com）— 全新金融事件（Rubin 第 20 期预订的财务映射）
+- 软银 AI 基金二期正式关闭，募集超预期（bloomberg.com）— 第 17/18/20 期软银基金后续（后续/硬进展）
+- 欧盟 AI Act 首批违规警告细节（artificialintelligenceact.eu）— 本期 Pick 细节（后续）
+- 网信办发布 AI 生成内容专项治理方案（cac.gov.cn）— 第 20 期首张罚单后的制度化（后续/执法升级）
+- 美国 AI 监管法案草案提交国会，拟建联邦安全框架（congress.gov）— 第 15/20 期美国政策的立法推进（后续/新进展）
+- Apple Siri+Gemini 上线登 HN（news.ycombinator.com item 49019544）— 本期 Pick 社区视角
+- DeepSeek V4 实测刷屏（github.com）— 本期延伸
+- 开发者社区掀起 Agent 自主性边界反思（news.ycombinator.com item 49019687）— 全新社区讨论
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

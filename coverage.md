@@ -391,6 +391,33 @@
 - DeepSeek V4 实测刷屏（github.com）— 本期延伸
 - 开发者社区掀起 Agent 自主性边界反思（news.ycombinator.com item 49019687）— 全新社区讨论
 
+### 第 22 期 (index.html) — 已定稿（8.7–8.10 窗口内）
+- Apple Siri+Gemini 首周末数据出炉：日活破亿，满意度超预期（blog.google）— 第 21 期"正式上线"后的首周末硬数据（后续/硬进展，头条）
+- 微软 Azure AI 全面上线 NVIDIA Rubin 集群，Stargate 换代加速（azure.microsoft.com）— 第 21 期"交付"后的云上线（后续/硬进展，头条）
+- 字节豆包发布 Doubao-Seed-2.0，端侧旗舰再升级（volcengine.com）— 第 15 期豆包 1.5 后的二代发布（全新发布，头条）
+- 美国 AI 安全法案通过参议院委员会投票（congress.gov）— 第 21 期"草案提交"后的立法推进（后续/硬进展，头条）
+- 豆包 2.0 技术架构：端侧速度翻倍，国产芯片全适配（volcengine.com）— 全新模型（本期 Pick 延伸，技术视角）
+- DeepSeek V4 多语言推理扩展评测（github.com）— 第 20/21 期 V4 后续（多语言硬数据）
+- GPT-5.6 推出多模态增量更新，补齐视觉推理（openai.com）— 第 9/11/12/17 期 GPT-5.6 后续（全新功能）
+- Cursor Sand 公测两周：付费转化超预期，企业版预览（cursor.com）— 第 20/21 期公测后续（硬数据）
+- Sora 2 企业工作室签约数翻倍（techcrunch.com）— 第 21 期签约的后续（硬数据）
+- GitHub Copilot 代码审查首周数据：修复采纳率近 60%（github.blog）— 第 21 期审查模式后续（硬数据）
+- 豆包 2.0 端侧布局：国产芯片全适配 + 应用生态绑定（volcengine.com）— 本期 Pick 延伸（国内视角）
+- 智谱 GLM-5 企业版金融落地：银行核心系统通过验证（zhipuai.cn）— 第 21 期"政务/金融首批"的进展（后续/硬进展）
+- 网信办 AI 专项治理首批核查结果公示（cac.gov.cn）— 第 21 期治理方案的核查落地（后续/硬数据）
+- 微软 Azure Rubin 集群上线（国际）（azure.microsoft.com）— 本期 Pick 延伸（国际视角）
+- Siri+Gemini 全球首周末数据（国际）（apple.com）— 本期 Pick 延伸
+- OpenAI CEO 出席参议院 AI 安全听证会（reuters.com）— 第 21 期法案草案后的听证事件（后续/新事件）
+- CoreWeave 上市第二周：分析师评级分化（reuters.com）— 第 20/21 期走势后续（新进展）
+- NVIDIA Q2 财报正式公布：Rubin 催化指引上调（nvidianews.nvidia.com）— 第 21 期预告的财报落地（后续/硬数据）
+- 软银 AI 基金二期首批投资组合披露（bloomberg.com）— 第 21 期基金关闭后的首份 portfolio（后续）
+- 欧盟 AI Act 被警告企业整改承诺（artificialintelligenceact.eu）— 第 21 期违规警告后续（后续/硬进展）
+- 美国 AI 安全法案委员会投票细节（congress.gov）— 本期 Pick 延伸
+- 英国 AISI 报告后 G7 推动统一评测互认（gov.uk）— 第 21 期 AISI 报告后续（后续）
+- Siri+Gemini 首周末破亿登 HN（news.ycombinator.com item 49025122）— 本期 Pick 社区视角
+- 豆包 2.0 引发「端侧 vs 云端」新一轮辩论（volcengine.com）— 本期延伸（第 15 期辩论的 2.0 版）
+- 开发者热议 AI 产业化三周年：从模型竞赛到交付竞赛（news.ycombinator.com item 49025310）— 全新社区反思
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

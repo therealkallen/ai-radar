@@ -418,6 +418,33 @@
 - 豆包 2.0 引发「端侧 vs 云端」新一轮辩论（volcengine.com）— 本期延伸（第 15 期辩论的 2.0 版）
 - 开发者热议 AI 产业化三周年：从模型竞赛到交付竞赛（news.ycombinator.com item 49025310）— 全新社区反思
 
+### 第 23 期 (index.html) — 已定稿（8.10–8.12 窗口内）
+- Siri+Gemini 第二周数据：周留存率强劲，搜索与创作主导（apple.com）— 第 22 期"首周末"的第二周硬数据（后续/硬进展，头条）
+- 美国 AI 安全法案提交参议院全院表决，两党罕见共识（congress.gov）— 第 22 期"委员会通过"的立法推进（后续/硬进展，头条）
+- NVIDIA Q2 后 AI 芯片板块创历史新高，Rubin 重塑半导体估值（bloomberg.com）— 第 22 期财报后的板块效应（后续/新事件，头条）
+- OpenAI 宣布 ChatGPT 接入 Sora 2，视觉 Agent 进入对话入口（openai.com）— 第 19/21/22 期 Sora 2 的产品整合（后续/全新产品，头条）
+- GPT-5.6 多模态更新首批实测，视觉推理对标 Gemini 3.5 Pro（openai.com）— 第 22 期更新后续（实测硬数据）
+- DeepSeek V4 微调生态爆发，社区 LoRA 繁盛（github.com）— 第 20/21/22 期 V4 后续（社区生态新角度）
+- Anthropic Opus 5 推理增强实测：多步 Agent 错误率下降显著（anthropic.com）— 第 21 期功能发布后续（实测硬数据）
+- Cursor Sand 企业版首批客户部署，私有 Agent 集群上线（cursor.com）— 第 22 期企业预览后续（部署硬进展）
+- ChatGPT 嵌入 Sora 2：视觉创作成为对话行为（openai.com）— 本期 Pick 延伸（企业视角）
+- 亚马逊 Bedrock 接入 DeepSeek V4，国产开源入国际云（aws.amazon.com）— 全新企业事件
+- 豆包 2.0 飞书/剪映内实测，端侧体验远超前代（volcengine.com）— 第 22 期发布后的应用内实测（后续）
+- GLM-5 银行核心验证引发多家金融机构私有化评估（zhipuai.cn）— 第 22 期核心验证后的连锁扩散（后续/硬进展）
+- AI 安全评测首批国标认证模型名单发布，Kimi/DeepSeek/GLM 入列（cac.gov.cn）— 第 18 期国标的首批认证（后续/硬进展）
+- Siri+Gemini 首周留存与场景分布（国际）（apple.com）— 本期 Pick 延伸（国际视角）
+- 美国 AI 法案全院表决前各方密集表态（reuters.com）— 本期 Pick 延伸（国际视角）
+- Google Gemini 3.5 Pro 接入 YouTube 创作者工具（blog.google）— 第 19–22 期 Gemini 产品化的新入口（后续/新事件）
+- CoreWeave 第三周：机构持仓首批披露，长线基金建仓（reuters.com）— 第 20/21/22 期走势后续（新进展）
+- NVIDIA Q2 后 AI 芯片板块新高（金融）（bloomberg.com）— 本期 Pick 延伸（金融视角）
+- Rubin 订单积压推动半导体供应链估值跳升（reuters.com）— 第 22 期财报的连锁反应（后续）
+- 美国 AI 法案全院表决日程确定（congress.gov）— 本期 Pick 延伸（细节）
+- 欧盟 AI Act 整改企业超半数提交达标文档（artificialintelligenceact.eu）— 第 22 期整改承诺后续（硬进展）
+- 中国 AI 评测国标首批认证：评测体系机构化执行（cac.gov.cn）— 本期国内延伸（政策视角）
+- Siri+Gemini 留存登 HN，社区称「留存比 benchmark 更有说服力」（news.ycombinator.com item 49030765）— 本期 Pick 社区视角
+- ChatGPT+Sora 2 引发「入口即 Agent」讨论（news.ycombinator.com item 49030901）— 本期 Pick 社区视角
+- 开发者共识：模型价值正从「能力」转移到「分发」（news.ycombinator.com item 49031055）— 全新社区反思
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

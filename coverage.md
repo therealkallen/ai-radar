@@ -445,6 +445,33 @@
 - ChatGPT+Sora 2 引发「入口即 Agent」讨论（news.ycombinator.com item 49030901）— 本期 Pick 社区视角
 - 开发者共识：模型价值正从「能力」转移到「分发」（news.ycombinator.com item 49031055）— 全新社区反思
 
+### 第 24 期 (index.html) — 已定稿（8.12–8.14 窗口内）
+- 美国 AI 安全法案参议院全院表决通过，联邦监管里程碑（congress.gov）— 第 21/22/23 期立法推进的通过落地（后续/硬进展，头条）
+- 欧盟 AI Act 开出首个正式罚单（artificialintelligenceact.eu）— 第 20/21/22/23 期执法链的罚单落地（后续/硬进展，头条）
+- 微软发布自研 MAI-2 模型，减少对 OpenAI 依赖（blogs.microsoft.com）— 全新事件（第 7 期 Frontier/第 13-15 期 Perception 后的自研模型）
+- ChatGPT+Sora 2 整合首日视频生成量爆发（openai.com）— 第 23 期整合后的首日硬数据（后续/硬进展，头条）
+- 微软 MAI-2 技术架构：企业级推理 + 编码，多模型路由补位（blogs.microsoft.com）— 全新（本期 Pick 延伸，技术视角）
+- Meta 发布 Llama 4 多模态变体（llama.com）— 第 15/16 期 Llama 4 后的多模态补齐（后续/新变体）
+- GPT-5.6 多模态实测：复杂图表推理领先（openai.com）— 第 22 期更新后续（实测硬数据）
+- ChatGPT+Sora 2 首日企业视频生成数据（techcrunch.com）— 本期 Pick 延伸（企业视角）
+- Cursor Sand 企业版部署规模扩大，走向多行业（cursor.com）— 第 23 期部署后续（扩展硬进展）
+- 字节飞书 AI 全面接入豆包 2.0（volcengine.com）— 第 23 期灰度后的全量落地（后续/硬进展）
+- 豆包 2.0 飞书全量接入，端侧走进千万级企业用户（volcengine.com）— 本期企业延伸（国内视角）
+- GLM-5 金融落地多点复制，券商/保险启动私有化（zhipuai.cn）— 第 22/23 期金融落地的扩散（后续）
+- 国标认证模型企业采用升温，成政企采购首选（cac.gov.cn）— 第 23 期认证名单的采购挂钩（后续/硬进展）
+- 美国 AI 法案参议院通过（国际）（reuters.com）— 本期 Pick 延伸
+- 微软 MAI-2 发布引国际关注（blogs.microsoft.com）— 本期 Pick 延伸（国际视角）
+- 欧盟首个罚单细节（国际）（artificialintelligenceact.eu）— 本期 Pick 延伸
+- CoreWeave 第四周：机构多空分歧加深，区间震荡（reuters.com）— 第 20/21/22/23 期走势后续（新进展）
+- 微软 MAI-2 引发云/模型格局重估（bloomberg.com）— 本期 Pick 的金融映射（全新金融事件）
+- Rubin 供应链估值持续走强，设备商订单能见度提升（reuters.com）— 第 23 期供应链后续（延续）
+- 美国 AI 法案通过细节与下一步（congress.gov）— 本期 Pick 延伸（细节）
+- 欧盟首个罚单：合规从义务变为商业变量（artificialintelligenceact.eu）— 本期 Pick 延伸（政策视角）
+- 中国 AI 评测国标执行细则出台，认证与采购挂钩（cac.gov.cn）— 第 23 期认证后的配套细则（后续/硬进展）
+- 美国 AI 法案通过登 HN（news.ycombinator.com item 49036521）— 本期 Pick 社区视角
+- 微软 MAI-2 引发「大厂自研 vs 依赖外部」讨论（news.ycombinator.com item 49036788）— 本期 Pick 社区视角
+- 开发者追问监管落地后 AI 创新何去何从（news.ycombinator.com item 49037002）— 全新社区反思
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

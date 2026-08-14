@@ -1,5 +1,7 @@
 # AI Radar 覆盖实体清单（去重参考）
 
+> ⚠️ **最高优先级规则（2026-08-14 起强制执行）**：生成任何一期前，**必须先联网检索该窗口的真实新闻**（WebSearch/WebFetch），再据此撰写内容。**禁止仅凭既有叙事自行编造新闻事件**。第 24 期曾因未联网检索而漏掉真实头条（Gemini 3.7 Flash、DeepSeek Harness、DeepSeek V4 Pro、Grok 4.6、Qwen3.8-2.4T），已重写纠正。此后每期均以「真实新闻」为准。
+
 > 用途：生成新一期前，先扫描本清单。以下实体已在往期报道过，**除非是明确的后续进展，否则不得再次作为独立新闻条目放入新一期**。
 > 规则：往期放过的实体 → 不放（除非后续）；同期内部同一实体只出现一次（Radar Picks 可作头条，专题只在一处展开）。
 
@@ -445,32 +447,32 @@
 - ChatGPT+Sora 2 引发「入口即 Agent」讨论（news.ycombinator.com item 49030901）— 本期 Pick 社区视角
 - 开发者共识：模型价值正从「能力」转移到「分发」（news.ycombinator.com item 49031055）— 全新社区反思
 
-### 第 24 期 (index.html) — 已定稿（8.12–8.14 窗口内）
-- 美国 AI 安全法案参议院全院表决通过，联邦监管里程碑（congress.gov）— 第 21/22/23 期立法推进的通过落地（后续/硬进展，头条）
-- 欧盟 AI Act 开出首个正式罚单（artificialintelligenceact.eu）— 第 20/21/22/23 期执法链的罚单落地（后续/硬进展，头条）
-- 微软发布自研 MAI-2 模型，减少对 OpenAI 依赖（blogs.microsoft.com）— 全新事件（第 7 期 Frontier/第 13-15 期 Perception 后的自研模型）
-- ChatGPT+Sora 2 整合首日视频生成量爆发（openai.com）— 第 23 期整合后的首日硬数据（后续/硬进展，头条）
-- 微软 MAI-2 技术架构：企业级推理 + 编码，多模型路由补位（blogs.microsoft.com）— 全新（本期 Pick 延伸，技术视角）
-- Meta 发布 Llama 4 多模态变体（llama.com）— 第 15/16 期 Llama 4 后的多模态补齐（后续/新变体）
-- GPT-5.6 多模态实测：复杂图表推理领先（openai.com）— 第 22 期更新后续（实测硬数据）
-- ChatGPT+Sora 2 首日企业视频生成数据（techcrunch.com）— 本期 Pick 延伸（企业视角）
-- Cursor Sand 企业版部署规模扩大，走向多行业（cursor.com）— 第 23 期部署后续（扩展硬进展）
-- 字节飞书 AI 全面接入豆包 2.0（volcengine.com）— 第 23 期灰度后的全量落地（后续/硬进展）
-- 豆包 2.0 飞书全量接入，端侧走进千万级企业用户（volcengine.com）— 本期企业延伸（国内视角）
-- GLM-5 金融落地多点复制，券商/保险启动私有化（zhipuai.cn）— 第 22/23 期金融落地的扩散（后续）
-- 国标认证模型企业采用升温，成政企采购首选（cac.gov.cn）— 第 23 期认证名单的采购挂钩（后续/硬进展）
-- 美国 AI 法案参议院通过（国际）（reuters.com）— 本期 Pick 延伸
-- 微软 MAI-2 发布引国际关注（blogs.microsoft.com）— 本期 Pick 延伸（国际视角）
-- 欧盟首个罚单细节（国际）（artificialintelligenceact.eu）— 本期 Pick 延伸
-- CoreWeave 第四周：机构多空分歧加深，区间震荡（reuters.com）— 第 20/21/22/23 期走势后续（新进展）
-- 微软 MAI-2 引发云/模型格局重估（bloomberg.com）— 本期 Pick 的金融映射（全新金融事件）
-- Rubin 供应链估值持续走强，设备商订单能见度提升（reuters.com）— 第 23 期供应链后续（延续）
-- 美国 AI 法案通过细节与下一步（congress.gov）— 本期 Pick 延伸（细节）
-- 欧盟首个罚单：合规从义务变为商业变量（artificialintelligenceact.eu）— 本期 Pick 延伸（政策视角）
-- 中国 AI 评测国标执行细则出台，认证与采购挂钩（cac.gov.cn）— 第 23 期认证后的配套细则（后续/硬进展）
-- 美国 AI 法案通过登 HN（news.ycombinator.com item 49036521）— 本期 Pick 社区视角
-- 微软 MAI-2 引发「大厂自研 vs 依赖外部」讨论（news.ycombinator.com item 49036788）— 本期 Pick 社区视角
-- 开发者追问监管落地后 AI 创新何去何从（news.ycombinator.com item 49037002）— 全新社区反思
+### 第 24 期 (index.html) — 已定稿（8.12–8.14 窗口内）· 已按真实新闻重写
+- DeepSeek Harness 开源：GitHub 史上最快涨星，Agent 框架「安卓时刻」（github.com）— 全新（头条）
+- DeepSeek V4 Pro 正式版静默上线：1.6T 参数、DeepSWE 12.8→62.7、价格仅 Fable 5 约 2%（platform.deepseek.com）— 全新（头条）
+- Google 发布 Gemini 3.7 Flash：三周迭代、价格砍半、DeepMind 换帅布林督战（blog.google）— 全新（头条）
+- 阿里开源 Qwen3.8-2.4T-A95B：首次开放 Max 级旗舰权重（qwenlm.github.io）— 全新（头条）
+- Gemini 3.7 Flash 规格：1M 上下文、可定制思考、接入 Gemini Spark（blog.google）— 全新
+- xAI 发布 Grok 4.6：后训练升级，长流程 Agent（x.ai）— 全新
+- Qwen3.8-2.4T 架构：混合注意力，Unsloth 量化至 397GB（qwenlm.github.io）— 全新
+- DeepSeek Harness 对标 Codex/Claude Code：一切皆插件、四种运行模式（github.com）— 全新
+- DeepSeek V4 Pro 峰谷定价与涨价预告（platform.deepseek.com）— 全新
+- Gemini 3.7 Flash 接入 Gemini Spark，160+ 国家（blog.google）— 全新
+- DeepSeek Harness 负责人崔添翼（前 Jane Street），黑色鲸鱼标识（github.com）— 全新
+- 阿里 Qwen3.8 许可证转向自定义 Qwen3.8-Max License（qwenlm.github.io）— 全新
+- DeepSeek V4 Pro 三档思考模式 low/high/max（platform.deepseek.com）— 全新
+- Google DeepMind 换帅 Koray Kavukcuoglu + 布林督战（blog.google）— 全新
+- xAI 并入 SpaceX 后首秀 Grok 4.6（x.ai）— 全新
+- 「疯狂星期四」：Google/DeepSeek/xAI/阿里 48 小时密集上新（weste.net）— 全新
+- DeepSeek 预告 API 涨价，峰谷定价重塑计价单位（platform.deepseek.com）— 全新
+- 价格战加速：Gemini 3.7 Flash 砍半、Grok 4.6 低价、DeepSeek 差两个数量级（weste.net）— 全新
+- 开源 Agent 框架的资本叙事：从「模型即产品」到「框架即生态」（github.com）— 全新
+- 欧盟 AI Act 进入执法期：Anthropic 与 OpenAI 面临高风险合规（yingzheng.com）— 真实监管背景
+- 开源 Agent 框架带来新监管议题：Agent 自主执行问责边界（github.com）— 全新
+- 中国生成式 AI 管理持续：内容标识与算法治理常态化（cac.gov.cn）— 真实监管背景
+- DeepSeek Harness 涨星刷屏，社区称「AI 的安卓时刻」（news.ycombinator.com）— 全新社区讨论
+- 社区热议 Harness vs Codex/Claude Code：「可替换性」成关键（github.com）— 全新社区讨论
+- 「Agent 是唯一战场」：48 小时密集发布背后的共识（weste.net）— 全新社区观察
 
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。

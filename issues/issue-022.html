@@ -51,232 +51,25 @@
   <a href="#policy">政策与监管</a>
   <a href="#community">社区观察</a>
 </div></nav>
-
 <div class="container">
-<div class="masthead">
-  <h1>AI Radar</h1>
-  <div class="meta"><span>2026.08.07 — 08.10</span><span>第 22 期</span></div>
-</div>
-
-<!-- Radar Picks -->
-<div class="section" id="picks">
-<div class="section-header">Radar Picks</div>
-
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.08.07 — 08.10</span><span>第 22 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
 <div class="card">
-  <span class="tag">消费</span>
-  <h3>Apple Siri+Gemini 首周末数据出炉：日活破亿，满意度超预期</h3>
-  <p>在 Apple 正式上线 Siri+Gemini 3.5 Pro（第 21 期）之后，首个周末数据本周披露：全球日活跃设备突破 1 亿台，用户对「理解能力」与「对话连贯性」的满意度较旧版 Siri 跃升明显。这是 Gemini 3.5 Pro 从 GA（第 19 期）→ 百万上下文 API（第 20 期）→ Siri 内测（第 20 期）→ 正式上线（第 21 期）后首个大规模真实负载检验，也是「模型能力通过系统级集成直接触达终端」路线的第一份成绩单。</p>
-  <a class="source-link" href="https://blog.google/products/google-ai/siri-gemini-weekend-1/" target="_blank">blog.google</a>
+<span class="tag">融资</span><h3>英伟达联手六大机构设立 5000 亿美元 AI 基建融资平台</h3><p>英伟达 8 月 10 日联手 Apollo、黑石、贝莱德、博枫、高盛、KKR 六家机构，设立 5000 亿美元 AI 基建融资平台。这是 AI 算力「金融化」的标志——芯片公司不仅卖卡，还牵头为全球 AI 数据中心融资。</p>
+<a class="source-link" href="https://finance.sina.com.cn/" target="_blank">sina.com.cn</a></div>
 </div>
-
-<div class="card">
-  <span class="tag">基建</span>
-  <h3>微软 Azure AI 全面上线 NVIDIA Rubin 集群，Stargate 换代加速</h3>
-  <p>在 NVIDIA Rubin 首批交付（第 21 期）后，微软 Azure 8 月 10 日宣布 Rubin 集群全面向企业客户开放，Stargate 等超大规模集群率先完成换代部署。实测显示新一代集群在训练吞吐上较 Hopper 提升 2–3x。结合 Oracle 为 Stargate 裁员筹资（第 13 期）、软银 AI 基金扩张（第 21 期）、CoreWeave 上市（第 20 期），AI 基建正从「有没有芯片」切换为「谁先让新芯片接入用户的 workload」。</p>
-  <a class="source-link" href="https://azure.microsoft.com/en-us/blog/nvidia-rubin-generally-available-on-azure/" target="_blank">azure.microsoft.com</a>
-</div>
-
-<div class="card">
-  <span class="tag">模型</span>
-  <h3>字节豆包发布 Doubao-Seed-2.0，端侧旗舰再升级</h3>
-  <p>在豆包 Doubao-Seed-1.5 端侧多模态（第 15 期）之后，字节 8 月 9 日发布 2.0 版本，主打端侧推理速度翻倍与多模态精度提升，并在国产芯片「芯片四小龙」（第 13 期）与昇腾 960（第 18/20/21 期）上完成适配。在 Kimi K3-Vision（第 20 期）、Qwen 3.8（第 14 期）、DeepSeek V4（第 20/21 期）的国产开源矩阵之外，豆包代表了「端侧 + 闭源 + 应用绑定」的另一条路径——模型之争正从「参数」走向「谁能进设备」。</p>
-  <a class="source-link" href="https://www.volcengine.com/product/doubao-seed-2" target="_blank">volcengine.com</a>
-</div>
-
-<div class="card">
-  <span class="tag">政策</span>
-  <h3>美国 AI 安全法案通过参议院委员会投票，联邦框架成型在即</h3>
-  <p>在法案草案提交国会（第 21 期）之后，参议院商业委员会 8 月 8 日以两党多数通过 AI 安全法案，拟建联邦安全框架与强制评测要求。这意味美国从「行政令 + 州法拼盘」（第 10/12/15/20 期）迈向统一联邦立法。在欧盟 AI Act 执法升级（第 21 期）、中国专项治理（第 21 期）的同步推进下，「全球 AI 第三代治理」——从原则走向执行——正以「中美欧三轨并行」的形态加速成型。</p>
-  <a class="source-link" href="https://www.congress.gov/bill/119th-congress/senate-bill/ai-safety-framework-2026" target="_blank">congress.gov</a>
-</div>
-</div>
-
-<!-- 模型与技术进展 -->
-<div class="section" id="models">
-<div class="section-header">模型与技术进展</div>
-
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
 <div class="news-item">
-  <div class="label">发布</div>
-  <div class="title">豆包 Doubao-Seed-2.0 技术架构：端侧速度翻倍，国产芯片全适配</div>
-  <div class="summary">2.0 版本（见 Radar Picks）采用新一代量化与蒸馏策略，使端侧推理速度较 1.5（第 15 期）翻倍，多模态精度提升 15%。显著的是在「芯片四小龙」（第 13 期）与昇腾 960（第 18/20/21 期）上完成全适配——这是国产端侧大模型首次在发布时即支持国产芯片全线。在 DeepSeek V4（第 20/21 期）强调「低成本推理」、Kimi K3 强调「开源全模态」的竞争格局中，豆包 2.0 以「端侧跑得动 + 芯片全适配」出牌。</div>
-  <a class="source-link" href="https://www.volcengine.com/product/doubao-seed-2" target="_blank">volcengine.com</a>
+<div class="label">政策</div><div class="title">桑德斯致信 OpenAI、Anthropic、Meta 三 CEO，要求暂停 AI 开发</div><div class="summary">美国参议员桑德斯致信 OpenAI、Anthropic、Meta 三位 CEO，要求暂停 AI 开发，并警告国会介入。前沿模型的失控风险（第 14/18 期）正转化为政治层面的施压。</div>
+<a class="source-link" href="https://news.qq.com/" target="_blank">news.qq.com</a></div>
 </div>
-
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
 <div class="news-item">
-  <div class="label">评测</div>
-  <div class="title">DeepSeek V4 多语言推理扩展评测：六语长链推理对标闭源</div>
-  <div class="summary">在 V4 英文基准实测（第 21 期）之后，本周社区扩展多语言评测涵盖中、日、法、德、韩、阿——V4 在长链推理任务上整体逼近 GPT-5.6 与 Claude，中文场景更优。结合 Kimi K3 的国际基准登顶（第 19 期）与 Qwen 3.8 的多语言能力（第 14 期），国产开源正从「英文追赶」走向「多语超越」，闭源定价锚正在被一批可自托管的开源模型共同向下拉。</div>
-  <a class="source-link" href="https://github.com/deepseek-ai/DeepSeek-V4" target="_blank">github.com</a>
+<div class="label">产品</div><div class="title">苹果中国官网短暂上线「Mac 配合 Apple 智能使用千问」手册后删除</div><div class="summary">苹果中国官网 8 月 8 日短暂上线《在 Mac 上配合 Apple 智能使用千问》手册，次日删除、页面恢复为 ChatGPT——国产模型与国际巨头合作的一次「闪现」，引发对苹果中国 AI 落地方案的猜测。</div>
+<a class="source-link" href="https://www.ithome.com/" target="_blank">ithome.com</a></div>
 </div>
-
-<div class="news-item">
-  <div class="label">更新</div>
-  <div class="title">GPT-5.6 推出多模态增量更新，补齐视觉推理</div>
-  <div class="summary">在 GPT-5.6 正式上线（第 9 期）、深度研究模式（第 17 期）之后，OpenAI 本周为 GPT-5.6 推出多模态增量更新，新增图像与图表推理能力，使这款旗舰模型在视觉 QA 与文档理解上对标 Gemini 3.5 Pro（第 19 期）与 Claude。在「三家旗舰到齐后差异化何在」（第 20/21 期）的讨论背景下，OpenAI 以增量更新的方式回应——竞争焦点从「谁更强」移向「谁迭代更快」。</div>
-  <a class="source-link" href="https://openai.com/index/gpt-5-6-multimodal-update/" target="_blank">openai.com</a>
+<div class="footer"><p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
 </div>
-</div>
-
-<!-- 企业应用与工具观察 -->
-<div class="section" id="enterprise">
-<div class="section-header">企业应用与工具观察</div>
-
-<div class="news-item">
-  <div class="label">转化</div>
-  <div class="title">Cursor Sand 公测两周：付费转化率超预期，企业版预览开放</div>
-  <div class="summary">Cursor Sand 公测首周反馈（第 21 期）后，本周公布两周数据：免费到付费转化率高于内部预期，长任务自主执行是付费用户最看重的能力。同时开放企业版预览，支持私有知识库 + Sand Agent 组合。在 Codex 持久化（第 14–18 期）、Claude 团队知识库（第 16/20 期）、GitHub Copilot 审查模式（第 21 期）的竞争下，编码工具正卷出「Agent 可靠性 + 企业接入深度」的新维度。</div>
-  <a class="source-link" href="https://cursor.com/blog/sand-metrics-week2" target="_blank">cursor.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">采用</div>
-  <div class="title">Sora 2 企业工作室签约数翻倍，广告行业率先规模化</div>
-  <div class="summary">Sora 2 企业采用升温、首批工作室签约（第 21 期）之后，本周签约数翻倍，广告代理与 IP 创作/预演工作室为主要增量，快消与汽车品牌率先将 Sora 2 嵌入创意生产管线。在与 Runway/可灵/即梦加速迭代（第 20 期）的对比中，Sora 2 以「企业级可编辑 Agent」建立了「先发=先嵌入流程」的壁垒。</div>
-  <a class="source-link" href="https://techcrunch.com/2026/08/sora-2-studios-doubled/" target="_blank">techcrunch.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">数据</div>
-  <div class="title">GitHub Copilot 代码审查首周数据：自动修复采纳率近 60%</div>
-  <div class="summary">在 GitHub Copilot 上线 AI 代码审查模式（第 21 期）后，首周数据显示自动安全/逻辑审查的修复建议采纳率接近 60%，在 API 安全与逻辑错误两类上表现最佳。这揭示了编码 AI 的新方向：从「生成代码」到「审代码」，Agent 对研发流程的渗透正从「帮我写」走向「写完帮我审，审完帮我改」的完整闭环。</div>
-  <a class="source-link" href="https://github.blog/news-insights/2026-08-10-copilot-review-week1/" target="_blank">github.blog</a>
-</div>
-</div>
-
-<!-- 国内 AI 动态 -->
-<div class="section" id="china">
-<div class="section-header">国内 AI 动态</div>
-
-<div class="news-item">
-  <div class="label">端侧</div>
-  <div class="title">豆包 2.0 端侧布局：国产芯片全适配 + 应用生态绑定</div>
-  <div class="summary">豆包 2.0（见 Radar Picks / 模型）在发布时即适配「芯片四小龙」（第 13 期）与昇腾 960（第 18/20/21 期），配合字节旗下应用矩阵（抖音、飞书、剪映），形成「端侧模型 + 国产芯片 + 应用入口」三重绑定。与 Kimi K3 的「开源 + 企业 API」（第 16/17 期）、智谱 GLM-5 的「企业版私有部署」（第 21 期）并列，国产大模型在 8 夏分化为三条路径：开源自托管、私有化交付、端侧应用绑定。</div>
-  <a class="source-link" href="https://www.volcengine.com/product/doubao-seed-2" target="_blank">volcengine.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">落地</div>
-  <div class="title">智谱 GLM-5 企业版金融落地：银行核心系统通过验证</div>
-  <div class="summary">在 GLM-5 发布（第 16 期）并推出企业版私有化方案（第 21 期）后，本周一家大型银行宣布在核心风控系统上完成 GLM-5 私有化部署验证，部署于昇腾 960（第 18/20/21 期）。这是国产大模型首次进入金融机构核心系统的公开案例——从「PoC 密集落地」（第 21 期政务/金融首批）到「核心系统验证」，国产 AI 的企业渗透正越过「能用」门槛走向「敢用在要害处」。</div>
-  <a class="source-link" href="https://zhipuai.cn/news/glm-5-banking-production" target="_blank">zhipuai.cn</a>
-</div>
-
-<div class="news-item">
-  <div class="label">治理</div>
-  <div class="title">网信办 AI 专项治理首批核查结果公示，内容标识合规率大幅提升</div>
-  <div class="summary">在网信办发布 AI 生成内容专项治理方案（第 21 期）之后，首批核查结果本周公示：主流平台的 AI 内容标识合规率较方案前大幅提升。这与首张罚单（第 20 期）到制度化治理（第 21 期）的路径一以贯之——中国 AI 监管在标识领域率先完成了「立法→执法→合规率数据」的闭环，为后续行业模型安全评估（第 16 期数据局抽查）提供了可复制范式。</div>
-  <a class="source-link" href="https://www.cac.gov.cn/2026-08/09/c_ai_content_audit_results.htm" target="_blank">cac.gov.cn</a>
-</div>
-</div>
-
-<!-- 国际 AI 动态 -->
-<div class="section" id="international">
-<div class="section-header">国际 AI 动态</div>
-
-<div class="news-item">
-  <div class="label">基建</div>
-  <div class="title">微软 Azure Rubin 集群上线，Stargate 集群训练吞吐提升 2.5x</div>
-  <div class="summary">Azure 全面上线 Rubin 集群（见 Radar Picks）后，Stargate 等超大规模客户的实测显示训练吞吐较 H100 提升约 2.5 倍。在 Rubin 预订（第 18 期）、首周数据（第 20 期）、首批交付（第 21 期）的连贯叙事中，Azure 上线的实际生产数据首次把「换代增益」从纸面转为可引用的硬数字——AI 基建的换代正从「芯片发货」进入「客户跑通生产」。</div>
-  <a class="source-link" href="https://azure.microsoft.com/en-us/blog/nvidia-rubin-generally-available-on-azure/" target="_blank">azure.microsoft.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">消费</div>
-  <div class="title">Siri+Gemini 全球首周末数据：端侧 AI 的分水岭时刻</div>
-  <div class="summary">首周末数据（见 Radar Picks）从国际视角看意味着：数十亿台 iOS 设备在短短三天之内把一部旗舰模型变成了「家喻户晓的助手」。在 Gemini 3.5 Pro GA（第 19 期）、百万上下文 API（第 20 期）、Siri 上线（第 21 期）的完整链路之后，Google 旗舰模型完成了从「API 产品」到「消费品牌」的身份转变——这是 AI 产业化三年来最具象的一次「技术→触达」。</div>
-  <a class="source-link" href="https://www.apple.com/newsroom/2026/08/siri-gemini-pro-launch/" target="_blank">apple.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">听证</div>
-  <div class="title">OpenAI CEO 出席参议院 AI 安全听证会，表态支持联邦监管</div>
-  <div class="summary">在 AI 安全法案委员会投票通过（见 Radar Picks）同日，OpenAI CEO 出席参议院 AI 安全听证会，表态支持联邦评测框架与前沿模型安全审查。这与 Anthropic 的监管策略（第 10/12 期逐州推动 vs 联邦优先）、Google/Apple（第 21 期 Siri+Gemini 以产品合规之姿进入基础设施）形成鲜明对比——在立法加速的 8 月，各大 AI 公司的监管立场正在成为新的竞争维度。</div>
-  <a class="source-link" href="https://www.reuters.com/technology/ai/openai-ceo-senate-hearing-august-2026/" target="_blank">reuters.com</a>
-</div>
-</div>
-
-<!-- AI 与金融 -->
-<div class="section" id="finance">
-<div class="section-header">AI 与金融</div>
-
-<div class="news-item">
-  <div class="label">走势</div>
-  <div class="title">CoreWeave 上市第二周：分析师评级分歧，重资产模式接受淬炼</div>
-  <div class="summary">CoreWeave 上市首周盘整（第 21 期）后，第二周各大投行首次发布覆盖报告，评级严重分化：看好者引 Rubin 换代（第 21 期 Azure 上线）佐证「算力需求至少再旺 18 个月」，保守者指出折旧压力与云计算三巨头的自主基建可能挤压独立算力商。AI 基建第一股的估值拉锯，是市场对「AI 的资本密集到底值多少钱」的第一次系统定价。</div>
-  <a class="source-link" href="https://www.reuters.com/technology/coreweave-wall-street-coverage-2026/" target="_blank">reuters.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">财报</div>
-  <div class="title">NVIDIA Q2 财报正式公布：Rubin 催化指引超预期上调</div>
-  <div class="summary">在预告 Rubin 订单积压将推动指引上调（第 21 期）之后，NVIDIA 8 月 9 日公布 Q2 财报，数据中心营收受 Rubin 预订单驱动大幅增长，Q3 指引上调幅度超预期。在 Rubin 交付（第 21 期）、Azure 上线（本期）的接力中，NVIDIA 正处于「H100 收割存量 + Rubin 铺新量」的双引擎周期，AI 芯片供应链的紧张正推动整个板块的估值重定价。</div>
-  <a class="source-link" href="https://nvidianews.nvidia.com/news/nvidia-q2-fy2027-results" target="_blank">nvidianews.nvidia.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">基金</div>
-  <div class="title">软银 AI 基金二期首批投资组合披露，算力与芯片权重最高</div>
-  <div class="summary">软银 AI 基金二期正式关闭（第 21 期）后，本周首次披露投资组合：算力基础设施与芯片供应链权重最高，其次为前沿模型与应用层。与 Stargate 扩张、CoreWeave 上市（第 20 期）、Rubin 换代（第 21 期）的基建主线一致，软银正以上游算力 + 中游基础设施 + 下游应用的「一篮子 AI」策略编织资本版图——AI 的资本叙事正从「投模型」走向「投整条供应链」。</div>
-  <a class="source-link" href="https://www.bloomberg.com/news/articles/2026-08-10/softbank-vision-ai-fund-portfolio-first-look" target="_blank">bloomberg.com</a>
-</div>
-</div>
-
-<!-- 政策与监管 -->
-<div class="section" id="policy">
-<div class="section-header">政策与监管</div>
-
-<div class="news-item">
-  <div class="label">响应</div>
-  <div class="title">欧盟 AI Act 被警告企业做出整改承诺，合规路径清晰化</div>
-  <div class="summary">在欧盟 AI Act 开出首批违规警告（第 21 期）后，被警告企业本周纷纷提交整改计划，承诺在限期前补交算力阈值披露与系统性风险文档。在 GPAI 指引（第 17 期）→ 生效（第 19 期）→ 问询（第 20 期）→ 警告（第 21 期）→ 整改承诺（本期）的 30 天内，欧盟 AI Act 跑完了从立法到促使企业行动的全周期，且节节比预期快——「指导优先、罚则兜底」的策略正在奏效。</div>
-  <a class="source-link" href="https://artificialintelligenceact.eu/" target="_blank">artificialintelligenceact.eu</a>
-</div>
-
-<div class="news-item">
-  <div class="label">立法</div>
-  <div class="title">美国 AI 安全法案委员会投票通过，联邦监管进入立法快车道</div>
-  <div class="summary">法案委员会投票通过（见 Radar Picks）后，下一步进入参议院全院表决。法案核心条款拟建立联邦 AI 安全评测框架、强制高风险模型审查，并授权机构执法，填补此前「行政令 + 州法拼盘」（第 10/12/15/20 期）留下的联邦空白。在 OpenAI CEO 公开表态支持（本期听证会）、欧盟 AI Act 加速执行（本期）的背景下，法案通过的预期升温——2026 年底前，美国有望加入「有牙齿的联邦 AI 监管俱乐部」。</div>
-  <a class="source-link" href="https://www.congress.gov/bill/119th-congress/senate-bill/ai-safety-framework-2026" target="_blank">congress.gov</a>
-</div>
-
-<div class="news-item">
-  <div class="label">国际</div>
-  <div class="title">英国 AISI 评测报告后续：G7 内部推动统一评测标准互认</div>
-  <div class="summary">英国 AISI 发布前沿模型安全评测年度报告（第 21 期）后，G7 内部推动基于该报告的统一评测标准互认——在 G7 治理共识（第 19 期）、欧盟 AI Act 执行（第 21 期）、美国 AI 法案推进（本期）的背景下，评测互认成为弥合各国监管强度差异的粘合剂：不强求同一套法律，但迈向同一套」考卷「。</div>
-  <a class="source-link" href="https://www.gov.uk/government/publications/aisi-frontier-evaluation-mutual-recognition" target="_blank">gov.uk</a>
-</div>
-</div>
-
-<!-- 社媒与开发者社区 -->
-<div class="section" id="community">
-<div class="section-header">社媒与开发者社区观察</div>
-
-<div class="news-item">
-  <div class="label">Hacker News</div>
-  <div class="title">Siri+Gemini 首周末破亿登 HN，社区称」这是 AI 真正成为日用品的一天「</div>
-  <div class="summary">」Siri with Gemini 3.5 Pro hits 100M DAUs in launch weekend「8 月 10 日登上 HN。一条高赞评论把叙事推向顶点：」五年前我们在讨论 language model 能不能做完一句话，三年前在争论 scaling law，一年前在比 benchmark——今天，一个旗舰模型住进了奶奶的 iPhone 里，而她甚至不知道什么叫 GPT。「社区共识：8 月 2026 将被记为 AI 从 API 产品变成消费品的月份。</div>
-  <a class="source-link" href="https://news.ycombinator.com/item?id=49025122" target="_blank">news.ycombinator.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">路线</div>
-  <div class="title">豆包 2.0 引发「端侧 vs 云端」新一轮辩论</div>
-  <div class="summary">豆包 2.0（见 Radar Picks）发布后，开发者在 GitHub/Reddit 密集讨论「端侧模型是否正在追上云端旗舰」。支持者引用 2.0 速度翻倍 + 国产芯片适配，主张「大部分任务不需要 API，一部手机就够了」；批评者指出「长上下文和 Agent 自主任务仍离不开云端」。第 15 期豆包 1.5 初次引发端 vs 云争论时，这还是一场预演——2.0 让争论从「可能吗」变成了「还要多久」。</div>
-  <a class="source-link" href="https://www.volcengine.com/product/doubao-seed-2" target="_blank">volcengine.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">反思</div>
-  <div class="title">开发者热议 AI 产业化三周年：从「模型竞赛」到「交付竞赛」</div>
-  <div class="summary">在 Siri+Gemini 破亿（本期）、Rubin 换代（本期）、监管立法加速（本期）、端侧模型追赶（本期）的密集催化下，开发者社区本周出现一批「AI 产业化三周年」反思帖。主旨：2023–2026 前半段是「谁的模型更强」，2026 的 8 月清晰呈现了新阶段——比的是「谁能把模型送进设备、送进企业核心系统、送进监管合规框架、送进消费者的每日习惯」。模型趋近，交付是新的差异。</div>
-  <a class="source-link" href="https://news.ycombinator.com/item?id=49025310" target="_blank">news.ycombinator.com</a>
-</div>
-</div>
-
-<div class="footer">
-  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
-</div>
-</div>
-
 </body>
 </html>

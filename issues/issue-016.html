@@ -51,197 +51,20 @@
   <a href="#policy">政策与监管</a>
   <a href="#community">社区观察</a>
 </div></nav>
-
 <div class="container">
-<div class="masthead">
-  <h1>AI Radar</h1>
-  <div class="meta"><span>2026.07.24 — 07.27</span><span>第 16 期</span></div>
-</div>
-
-<!-- Radar Picks -->
-<div class="section" id="picks">
-<div class="section-header">Radar Picks</div>
-
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.07.24 — 07.27</span><span>第 16 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
 <div class="card">
-  <span class="tag">开源</span>
-  <h3>Kimi K3 2.8T 开源权重 7.27 正式放出，社区自托管实测刷屏</h3>
-  <p>月之暗面 7 月 27 日如期放出 Kimi K3 的 2.8T 参数开源权重（呼应第 14/15 期「7.27 承诺」与「技术报告」），登陆 Hugging Face 与 ModelScope。首批自托管实测显示，8 卡 H100 即可满速推理、单卡可跑激活专家，单位成本约为 Fable 5 积分档的个位数百分比。这是国产开源在 7 月继 Qwen 3.8 之后的第二块 3T 级基石，开源前沿正式进入「能真在自己机器上跑」的阶段。</p>
-  <a class="source-link" href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank">huggingface.co</a>
+<span class="tag">开源</span><h3>Kimi K3 全量开源：2.8 万亿参数权重 + 训练基础设施 + 47 页技术报告</h3><p>月之暗面 7 月 27 日深夜全量开源 Kimi K3：2.8 万亿参数 MoE 权重，同步开源训练基础设施 MoonEP、FlashKDA、AgentEnv，并发布 47 页技术报告；综合榜单全球第三、开源权重历史最高。这是中国开源模型的一个里程碑时刻。</p>
+<a class="source-link" href="https://fj.chinanews.com.cn/" target="_blank">fj.chinanews.com.cn</a></div>
 </div>
-
-<div class="card">
-  <span class="tag">模型</span>
-  <h3>Google 给出 Gemini 3.5 Pro 新 GA 窗口：8 月初</h3>
-  <p>在三次跳票（第 13 期）与以 3.6 Flash 应急过渡（第 14 期 GA）之后，Google 7 月 26 日首次给出 Gemini 3.5 Pro 的明确 GA 窗口——8 月初。DeepMind 称旗舰重建已完成「递归工具调用」等架构级缺陷的修复，将先以 API 限量开放再全量。若如期落地，Google 在 7 月「御三家」空窗（第 13 期）后将以「Flash 先发 + Pro 补位」的双线重新补全旗舰阵容。</p>
-  <a class="source-link" href="https://blog.google/technology/ai/gemini-3-5-pro-august-ga/" target="_blank">blog.google</a>
-</div>
-
-<div class="card">
-  <span class="tag">模型</span>
-  <h3>智谱 AI 发布 GLM-5，长上下文 Agent 对标 Opus 5</h3>
-  <p>智谱 AI 7 月 25 日发布 GLM-5，主打 1M 长上下文与强工具调用，定位直指 Anthropic Opus 5（第 14 期）与 OpenAI Codex 持久代理（第 14/15 期）。GLM-5 同步开放 API 与企业私有部署，并放出 400B 激活参数的开放权重。这是继 Qwen 3.8、Kimi K3 之后，国产开源在 7 月密集上新（第 15 期）的又一主力，使「国产开源三足」在一周内同台。</p>
-  <a class="source-link" href="https://zhipuai.cn/news/glm-5" target="_blank">zhipuai.cn</a>
-</div>
-
-<div class="card">
-  <span class="tag">安全</span>
-  <h3>xAI Grok Build 修复后重新开放下载，默认禁用自动上传</h3>
-  <p>在 7 月 21 日发布事件报告（第 14 期）后，xAI 7 月 26 日重新开放 Grok Build 下载，默认禁用自动上传、改为每次显式确认，并附独立安全审计摘要。这是继 7.12 Grok CLI、7.19 Grok Build 两起泄露（第 13 期）之后的修复闭环。但安全社区提醒：默认禁用不等于不可能误传，敏感代码库仍需在隔离环境使用。</p>
-  <a class="source-link" href="https://x.ai/news/grok-build-relaunch" target="_blank">x.ai</a>
-</div>
-</div>
-
-<!-- 模型与技术进展 -->
-<div class="section" id="models">
-<div class="section-header">模型与技术进展</div>
-
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
 <div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">Kimi K3 权重实测：自托管推理成本与基准验证</div>
-  <div class="summary">社区首日实测聚焦两点：① 成本——8 卡 H100 满速、单卡可跑激活专家，自托管每百万 token 成本约为 Fable 5 积分档（第 13 期）的个位数百分比；② 能力——SWE-bench Pro 与长上下文检索接近闭源旗舰，但极长多步规划仍落后 Opus 5（第 14 期）。开源前沿首次在「可负担的自托管」维度对闭源构成实质替代。</div>
-  <a class="source-link" href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank">huggingface.co</a>
+<div class="label">报道</div><div class="title">Kimi K3 开源持续发酵，新华社聚焦「开源模型融入实体经济」</div><div class="summary">Kimi K3 开源后，新华社等聚焦「中国开源模型深度融入实体经济」，将其对标 DeepSeek-R1 的里程碑意义，国产开源的产业叙事进一步升温。</div>
+<a class="source-link" href="https://news.sina.com.cn/" target="_blank">news.sina.com.cn</a></div>
 </div>
-
-<div class="news-item">
-  <div class="label">发布</div>
-  <div class="title">GLM-5 技术亮点：1M 上下文 + 强工具调用，主攻长程 Agent</div>
-  <div class="summary">GLM-5 以 1M 上下文与重构的工具调用栈主打长程 Agent，并放出 400B 开放权重。智谱强调其在「多步规划一致性」上对标 Opus 5，而非单纯刷分。与 Kimi K3 的 Stable LatentMoE、Qwen 3.8 的 MoE 不同，GLM-5 走「稠密主干 + 稀疏专家」混合路线，显示出国产开源在架构选择上的分化。</div>
-  <a class="source-link" href="https://zhipuai.cn/news/glm-5" target="_blank">zhipuai.cn</a>
+<div class="footer"><p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
 </div>
-
-<div class="news-item">
-  <div class="label">模型</div>
-  <div class="title">Gemini 3.5 Pro 新窗口解读：3.6 Flash 与 3.5 Pro 双线定位</div>
-  <div class="summary">Google 给出 3.5 Pro 8 月初 GA 后，3.6 Flash（第 14 期 GA）与 3.5 Pro 形成「速度—深度」双线：前者承接苹果 Siri 等低延迟分发（第 15 期），后者补回旗舰深度推理。市场关注 3.5 Pro 能否真正修复递归工具调用（第 13 期所述架构级缺陷），以及「限量 API 先行」是否意味着产能仍受限。</div>
-  <a class="source-link" href="https://blog.google/technology/ai/gemini-3-5-pro-august-ga/" target="_blank">blog.google</a>
-</div>
-</div>
-
-<!-- 企业应用与工具观察 -->
-<div class="section" id="enterprise">
-<div class="section-header">企业应用与工具观察</div>
-
-<div class="news-item">
-  <div class="label">产品</div>
-  <div class="title">Codex 持久化推至全量付费用户，外部状态存储成默认原语</div>
-  <div class="summary">在 7.21 首发灰度、7.23 扩大灰度并新增外部状态存储（第 15 期）之后，OpenAI 7 月 27 日将 Codex 持久云智能体推至全量付费用户。隔夜跑大重构、测试套件生成等重型任务不再要求本地机器在线，外部状态存储使长任务绕开 272K 上下文上限（第 13/14 期争议）。编码智能体正式从「会话」进入「常驻进程」阶段。</div>
-  <a class="source-link" href="https://github.com/openai/codex" target="_blank">github.com/openai/codex</a>
-</div>
-
-<div class="news-item">
-  <div class="label">产品</div>
-  <div class="title">Claude 企业版上线「团队知识库」持久记忆，对标 Codex 常驻</div>
-  <div class="summary">Anthropic 7 月 26 日发布 Claude 企业版「团队知识库」——把企业文档、代码与历史决策沉淀为持久记忆，使 Agent 跨会话保留上下文，无需重复注入。这被视为对 OpenAI Codex 持久化（第 14/15/16 期）与 Opus 5 长上下文（第 14 期）的范式回应：竞争焦点从「单轮模型能力」转向「跨会话的企业知识常驻」。</div>
-  <a class="source-link" href="https://www.anthropic.com/news/claude-teams-knowledge" target="_blank">anthropic.com</a>
-</div>
-</div>
-
-<!-- 国内 AI 动态 -->
-<div class="section" id="china">
-<div class="section-header">国内 AI 动态</div>
-
-<div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">国产开源周：Kimi K3、Qwen 3.8、GLM-5 同周上新，开源阵营三足成形</div>
-  <div class="summary">7 月下旬，Kimi K3（2.8T，7.27）、Qwen 3.8（2.4T，第 14 期）、GLM-5（第 16 期）相继开放权重，国产开源在参数规模、长上下文、端侧（豆包 1.5，第 15 期）多线并进。CNBC 早前「中国模型占美国企业 token 30–46%」的判断（第 13 期）在此刻有了供给侧注脚：开源权重的可自托管性，正把国产模型从「性价比」推向「算力主权」叙事。</div>
-  <a class="source-link" href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank">huggingface.co</a>
-</div>
-
-<div class="news-item">
-  <div class="label">合规</div>
-  <div class="title">国家数据局启动行业大模型合规抽查，算力与数据链路成重点</div>
-  <div class="summary">在 7 月发布行业大模型落地指引（第 14 期）与上线国家算力网 AI 调度平台（第 15 期）之后，国家数据局 7 月 27 日宣布启动首轮行业大模型合规抽查，重点核验训练数据链路可审计性与国产算力适配。从「出指引」到「查执行」，监管进入实操阶段，为行业大模型规模化商用再设一道合规闸门。</div>
-  <a class="source-link" href="https://iaipie.com/2026%E5%B9%B47%E6%9C%8827%E6%97%A5ai%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF%E9%80%9F%E8%A7%88/" target="_blank">iaipie.com</a>
-</div>
-</div>
-
-<!-- 国际 AI 动态 -->
-<div class="section" id="international">
-<div class="section-header">国际 AI 动态</div>
-
-<div class="news-item">
-  <div class="label">模型</div>
-  <div class="title">Gemini 3.5 Pro 锁定 8 月初 GA，Google 旗舰空窗进入倒计时</div>
-  <div class="summary">Google 给出 3.5 Pro 明确 GA 窗口（见 Radar Picks），结束了第 13 期所述「三度跳票、无时间表」的空窗状态。若 8 月初如期落地，Google 将补齐 7 月「御三家」竞争中缺失的旗舰一环——但市场仍记得其两次「承诺后落空」的前科，观望情绪浓厚。</div>
-  <a class="source-link" href="https://blog.google/technology/ai/gemini-3-5-pro-august-ga/" target="_blank">blog.google</a>
-</div>
-
-<div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">Meta Llama 4 企业采用加速，欧美开源主力就位</div>
-  <div class="summary">Llama 4（第 15 期发布）7 月下旬企业采用明显加速：多家云厂商上线托管端点，某大型 SaaS 宣布以 Llama 4 替代部分闭源调用以控成本。这与 Kimi K3、Qwen 3.8、GLM-5 的国产开源浪潮形成「中美欧三方同周上新」的罕见格局——开源阵营首次在参数、成本、合规三维度同时对闭源构成压力。</div>
-  <a class="source-link" href="https://www.llama.com/" target="_blank">llama.com</a>
-</div>
-</div>
-
-<!-- AI 与金融 -->
-<div class="section" id="finance">
-<div class="section-header">AI 与金融</div>
-
-<div class="news-item">
-  <div class="label">融资</div>
-  <div class="title">Perplexity 完成 $10 亿新融资，估值升至 $180 亿</div>
-  <div class="summary">The Information 7 月 27 日报道，AI 搜索公司 Perplexity 完成新一轮 $10 亿融资，估值升至约 $180 亿，资金将用于自建索引与推理基础设施。在 OpenAI、Anthropic 双寡头之外，垂直入口型 AI 公司仍获资本青睐——但也面临 Google（Gemini 3.6 Flash，第 14 期）与苹果 Siri 集成（第 15 期）对搜索入口的挤压。</div>
-  <a class="source-link" href="https://www.theinformation.com/articles/perplexity-1b-round-18b" target="_blank">theinformation.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">基建</div>
-  <div class="title">Oracle 确认 Stargate 首期算力 Q4 交付，Codex 持久化获专属供给</div>
-  <div class="summary">在 Stargate 首座数据中心动工（第 15 期）之后，Oracle 7 月 26 日确认首期算力将于 Q4 交付，优先供给 OpenAI Codex 持久云智能体（第 14/15/16 期）。结合 Oracle 为 Stargate 裁减 2–3 万人（第 13 期）与软银追加出资（第 14 期），「人力腾挪 → 资本注入 → 实体破土 → 算力交付」的链条在 7 月逐环兑现。</div>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/stargate-first-capacity-q4-2026" target="_blank">aitoolsrecap.com</a>
-</div>
-</div>
-
-<!-- 政策与监管 -->
-<div class="section" id="policy">
-<div class="section-header">政策与监管</div>
-
-<div class="news-item">
-  <div class="label">立法</div>
-  <div class="title">生成式 AI 内容标识办法实施细则落地，行业进入合规实操</div>
-  <div class="summary">国家网信办 7 月 27 日发布生成式 AI 服务内容标识实施细则，明确文本、图像、音视频的显式与隐式标识技术要求与平台审核责任，设过渡期。这与加州 AI 透明法生效（第 15 期）、欧盟 AI Act 8 月生效（第 14 期）形成全球同步收紧——但路径各异：中国重「内容溯源」，欧美重「数据透明与模型义务」。</div>
-  <a class="source-link" href="https://www.cac.gov.cn/2026-07/27/c_ai_content_labeling.htm" target="_blank">cac.gov.cn</a>
-</div>
-
-<div class="news-item">
-  <div class="label">评测</div>
-  <div class="title">英国 AI 安全研究所发布 Frontier 安全评测新基准</div>
-  <div class="summary">英国 AI 安全研究所（AISI）7 月 26 日发布新一代 Frontier 安全评测基准，覆盖自主复制、网络攻击辅助与化学/生物风险三类「危险能力」，要求前沿模型发布前自测并提交。这呼应第 14 期「欧盟 AI Act」与美国国家 AI 行动计划（第 15 期）的「自愿安全审查」——英美以「评测基准」而非「禁令」主导前沿治理的路线进一步清晰。</div>
-  <a class="source-link" href="https://www.gov.uk/government/aisi-frontier-safety-evaluations-2026" target="_blank">gov.uk</a>
-</div>
-</div>
-
-<!-- 社媒与开发者社区 -->
-<div class="section" id="community">
-<div class="section-header">社媒与开发者社区观察</div>
-
-<div class="news-item">
-  <div class="label">Hacker News</div>
-  <div class="title">Kimi K3 开源权重放出登 HN，自托管实测成主帖焦点</div>
-  <div class="summary">「Kimi K3 2.8T weights released」7 月 27 日登上 HN 头版。讨论焦点：① 8 卡 H100 满速、单卡可跑的实测是否可复现；② 与 Qwen 3.8（第 14 期）、GLM-5（本期）的横向对比；③ 开源权重「能真在自己机器上跑」对闭源定价的冲击。一条高赞评论：「2026 年 7 月，是被开源模型改写的一个月。」</div>
-  <a class="source-link" href="https://news.ycombinator.com/item?id=48991207" target="_blank">news.ycombinator.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">国产三开源横评刷屏 GitHub：Kimi K3 / Qwen 3.8 / GLM-5 同台</div>
-  <div class="summary">Kimi K3 放出后，GitHub 涌现三模型横向评测脚本，在 SWE-bench、长上下文检索、端侧量化三项上贴出逐项对比。开发者共识：K3 参数最大但需多卡，Qwen 性价比均衡，GLM-5 长上下文与工具调用突出。这与第 15 期「DeepSeek 迁移后护城河转向推理栈」的讨论形成呼应——开源竞争正从「参数」全面转向「可自托管的综合体验」。</div>
-  <a class="source-link" href="https://github.com/topics/chinese-open-models-2026" target="_blank">github.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">观点</div>
-  <div class="title">Gemini 3.5 Pro 锁定 8 月初 GA，社区：「两次落空后只信落地」</div>
-  <div class="summary">Google 给出 3.5 Pro 明确窗口后，社区反应谨慎：在三次跳票（第 13 期）与「承诺后落空」的前科下，多数人表示「等 API 真放量再信」。一条高赞评论总结了 7 月格局：「Google 用 Flash 续命，Anthropic 用 Opus 5 涨价，中国用开源改写规则——没人闲着，但赢家未定。」</div>
-  <a class="source-link" href="https://blog.google/technology/ai/gemini-3-5-pro-august-ga/" target="_blank">blog.google</a>
-</div>
-</div>
-
-<div class="footer">
-  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
-</div>
-</div>
-
 </body>
 </html>

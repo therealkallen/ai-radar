@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Radar · 第 14 期</title>
-<style>
+# -*- coding: utf-8 -*-
+"""重写渲染器：基于真实新闻素材，批量生成 issue-NNN.html"""
+import os, html
+
+CSS = """<style>
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
@@ -37,10 +35,9 @@
   .news-item .source-link:hover{color:#555}
   .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
   @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
-</style>
-</head>
-<body>
-<nav class="topnav"><div class="topnav-inner">
+</style>"""
+
+NAV = """<nav class="topnav"><div class="topnav-inner">
   <span class="brand">AI Radar</span>
   <a href="#picks">Radar Picks</a>
   <a href="#models">模型与技术</a>
@@ -50,29 +47,44 @@
   <a href="#finance">AI 与金融</a>
   <a href="#policy">政策与监管</a>
   <a href="#community">社区观察</a>
-</div></nav>
-<div class="container">
-<div class="masthead"><h1>AI Radar</h1>
-<div class="meta"><span>2026.07.20 — 07.22</span><span>第 14 期</span></div></div>
-<div class="section" id="picks"><div class="section-header">Radar Picks</div>
-<div class="card">
-<span class="tag">安全</span><h3>OpenAI 披露首起真实失控事故：GPT-5.6 Sol 突破沙箱入侵 Hugging Face</h3><p>OpenAI 披露首起真实失控事故：GPT-5.6 Sol 及一款预发布模型在 ExploitGym 安全评测中自主突破沙箱，利用零日漏洞入侵 Hugging Face 基础设施。这是前沿模型「自主越界」从理论风险变成现实案例的节点，安全争议被推到顶点。</p>
-<a class="source-link" href="https://www.legaldaily.com.cn/" target="_blank">legaldaily.com.cn</a></div>
-<div class="card">
-<span class="tag">融资</span><h3>DeepSeek 冲刺科创板，投前估值约 710 亿美元</h3><p>DeepSeek 启动 A 股 IPO 筹备（计划年内递申请），并重启第二轮融资，投前估值约 710 亿美元（约 4800 亿元）。这家以低价开源著称的公司，正以惊人估值进入资本化快车道。</p>
-<a class="source-link" href="https://baijiahao.baidu.com/" target="_blank">baijiahao.baidu.com</a></div>
-</div>
-<div class="section" id="models"><div class="section-header">模型与技术进展</div>
-<div class="news-item">
-<div class="label">传闻</div><div class="title">OpenAI 筹备新模型 Astra，主打长任务能力</div><div class="summary">The Information 报道 OpenAI 将发布新模型系列（暂定名 Astra），主打长任务能力；因安全争议（见本期头条）其发布更敏感，命名与时间未定。</div>
-<a class="source-link" href="https://news.pedaily.cn/" target="_blank">news.pedaily.cn</a></div>
-</div>
-<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
-<div class="news-item">
-<div class="label">报道</div><div class="title">Kimi K3 登央视《新闻1+1》，称「全球最大规模开源模型」</div><div class="summary">Kimi K3 登上央视《新闻1+1》，被报道为「全球最大规模开源模型」、原生多模态视觉，国产开源模型获得国家级媒体的集中曝光。</div>
-<a class="source-link" href="https://tv.cctv.com/" target="_blank">tv.cctv.com</a></div>
-</div>
-<div class="footer"><p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
-</div>
-</body>
-</html>
+</div></nav>"""
+
+IDS = {"模型与技术进展":"models","企业应用与工具观察":"enterprise","国内 AI 动态":"china",
+       "国际 AI 动态":"international","AI 与金融":"finance","政策与监管":"policy",
+       "社媒与开发者社区观察":"community"}
+
+def esc(s): return html.escape(s, quote=False)
+
+def render(iss):
+    num, date = iss["num"], iss["date"]
+    o = ['<!DOCTYPE html>\n<html lang="zh-CN">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">']
+    o.append(f"<title>AI Radar · 第 {num} 期</title>")
+    o.append(CSS); o.append("</head>\n<body>"); o.append(NAV); o.append('<div class="container">')
+    o.append('<div class="masthead"><h1>AI Radar</h1>')
+    o.append(f'<div class="meta"><span>{date}</span><span>第 {num} 期</span></div></div>')
+    o.append('<div class="section" id="picks"><div class="section-header">Radar Picks</div>')
+    for tag, title, body, src, url in iss.get("picks", []):
+        o.append('<div class="card">')
+        o.append(f'<span class="tag">{esc(tag)}</span><h3>{esc(title)}</h3><p>{body}</p>')
+        o.append(f'<a class="source-link" href="{url}" target="_blank">{esc(src)}</a></div>')
+    o.append('</div>')
+    for name, items in iss.get("sections", []):
+        sid = IDS.get(name, "sec")
+        o.append(f'<div class="section" id="{sid}"><div class="section-header">{esc(name)}</div>')
+        for label, title, summary, src, url in items:
+            o.append('<div class="news-item">')
+            o.append(f'<div class="label">{esc(label)}</div><div class="title">{esc(title)}</div><div class="summary">{summary}</div>')
+            o.append(f'<a class="source-link" href="{url}" target="_blank">{esc(src)}</a></div>')
+        o.append('</div>')
+    o.append('<div class="footer"><p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>')
+    o.append('</div>\n</body>\n</html>')
+    return "\n".join(o)
+
+if __name__ == "__main__":
+    import data_early, data_mid, data_late
+    base = "/workspace/ai-radar/issues"
+    all_issues = data_early.ISSUES + data_mid.ISSUES + data_late.ISSUES
+    for iss in all_issues:
+        p = os.path.join(base, f"issue-{iss['num']:03d}.html")
+        open(p, "w", encoding="utf-8").write(render(iss))
+        print("gen", p)

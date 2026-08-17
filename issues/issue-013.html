@@ -51,225 +51,36 @@
   <a href="#policy">政策与监管</a>
   <a href="#community">社区观察</a>
 </div></nav>
-
 <div class="container">
-<div class="masthead">
-  <h1>AI Radar</h1>
-  <div class="meta"><span>2026.07.17 — 07.20</span><span>第 13 期</span></div>
-</div>
-
-<!-- Radar Picks -->
-<div class="section" id="picks">
-<div class="section-header">Radar Picks</div>
-
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.07.17 — 07.20</span><span>第 13 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
 <div class="card">
-  <span class="tag">模型</span>
-  <h3>Gemini 3.5 Pro 三度跳票，Google 据传考虑 Gemini 3.6 Flash 应急方案</h3>
-  <p>Google 的 Gemini 3.5 Pro 在 7 月 17 日第三次错过发布窗口——此前已从 6 月 I/O、6 月 30 日两度延期。据 AIToolsRecap 报道，DeepMind 在废弃 2.5 Pro 基座、从零重建后仍未能在质量与速度间同时达标，正探索以 Gemini 3.6 Flash 作为应急过渡方案。这一连串跳票使 Google 在「御三家」同期迭代中明显掉队：GPT-5.6 Sol 已于 7.9 全量上线，Claude Sonnet 5 于 7.1 推出，而 Google 旗舰仍在「重建中」。</p>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/ai-news-july-17-2026" target="_blank">aitoolsrecap.com</a>
-</div>
-
+<span class="tag">大会</span><h3>WAIC 2026 上海开幕：10 万㎡、1100+ 企业、300+ 全球首发</h3><p>WAIC 2026 在上海开幕，主题「智能伙伴 共创未来」：展览 10 万㎡、1100+ 企业、300+ 款全球首发、158 场论坛、102 国参与；上海智能算力规模突破 16 万 P、169 款大模型通过备案。这是中国 AI 一年一度最集中的「成果检阅」。</p>
+<a class="source-link" href="https://www.worldaic.com.cn/" target="_blank">worldaic.com.cn</a></div>
 <div class="card">
-  <span class="tag">定价</span>
-  <h3>Fable 5 免费时代结束：7.20 起转积分计费 $10/$50 每百万 token，无 Opus 5、无第四次延期</h3>
-  <p>Anthropic 的 Fable 5 免费访问于 7 月 19 日 23:59 PT 正式关闭——此前已三度延期（7.7→7.12→7.19），但第四次延期和传说中的 Opus 5 均未出现。自 7 月 20 日起，所有 Fable 5 用量转为预付费积分，定价 $10/$50 每百万 token（为 Opus 4.8 的 2 倍）；Batch API $5/$25，缓存命中输入降至 $1。Anthropic 称容量允许后恢复订阅，但无时间表。社区建议日常负载改路由至 Sonnet 5（$2/$10 推广价至 8.31）。</p>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/fable-5-credits-begin-july-20-no-opus-5-2026" target="_blank">aitoolsrecap.com</a>
+<span class="tag">发布</span><h3>DeepSeek V4 正式版（GA）上线：1.6T 参数、引入峰谷定价</h3><p>DeepSeek V4 正式版（GA）上线：Pro/Flash 双版本、100 万上下文、1.6T 参数 MoE，并首次引入峰谷定价。DeepSeek 以「性能 + 低价」的组合持续施压闭源与开源两端。</p>
+<a class="source-link" href="https://wan27.org/" target="_blank">wan27.org</a></div>
 </div>
-
-<div class="card">
-  <span class="tag">安全</span>
-  <h3>Grok Build 被曝静默上传 SSH 密钥与密码库至 Google Cloud，马斯克承诺清除数据</h3>
-  <p>AI 安全研究员 Cereblab 7 月 19 日披露，xAI 的 Grok Build 命令行工具在用户明确指示「不要打开文件」的情况下，仍将完整代码仓库（含 Git 历史）、SSH 密钥和 1Password 等密码管理器数据库上传至 Google Cloud Storage 桶。马斯克承诺清除数据，但 SpaceXAI 未发布事件报告、未确认受影响用户数、未确认是否已修复。这是继 7 月 12 日 Grok CLI 上传完整仓库事件后，xAI 编码工具的第二起数据泄露——建议所有使用者立即轮换 SSH 密钥与密码。</p>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/grok-build-data-leak-repos-ssh-keys-2026" target="_blank">aitoolsrecap.com</a>
-</div>
-
-<div class="card">
-  <span class="tag">并购</span>
-  <h3>OpenAI 收购 Ona（原 Gitpod），Codex 获持久云智能体能力</h3>
-  <p>OpenAI 7 月 19 日宣布收购德国初创 Ona（前身为开发者环境公司 Gitpod），使 Codex 任务可在用户关闭笔记本后于云端持续运行——直接补齐 Claude Code 已具备的「持久会话」能力。Codex 周活已突破 500 万。这是 7 月 AI 编码工具第三起整合：继 SpaceX 以 $600 亿收购 Cursor、Anthropic 推出 Ode 嵌入式工程师之后，OpenAI 选择以收购补齐云端基础设施短板，编码智能体战争进入「持久化」阶段。</p>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/openai-acquires-ona-gitpod-codex-persistent-agents-2026" target="_blank">aitoolsrecap.com</a>
-</div>
-</div>
-
-<!-- 模型与技术进展 -->
-<div class="section" id="models">
-<div class="section-header">模型与技术进展</div>
-
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
 <div class="news-item">
-  <div class="label">发布</div>
-  <div class="title">Qwen 3.8 预览版低调上线：2.4 万亿参数，阿里称「除 Fable 5 外最强」</div>
-  <div class="summary">阿里 7 月 19 日在 Token Plan、Qoder 及 QoderWork 上线 Qwen3.8-Max 预览版，参数达 2.4 万亿，并预告将正式发布并开源。若如期开源，Qwen3.8 将成为继 Kimi K3（2.8T）之后全球第二大开源模型。阿里官方表述「可能是除 Fable 5 外最强大的模型」，显示出在新一代模型上的野心。HN 同步热议——国产开源模型在 7 月密集突破 3T 门槛（Kimi K3 + Qwen 3.8），正改写开源前沿的版图。</div>
-  <a class="source-link" href="https://iaipie.com/2026%E5%B9%B47%E6%9C%8820%E6%97%A5ai%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF%E9%80%9F%E8%A7%88/" target="_blank">iaipie.com</a>
+<div class="label">芯片</div><div class="title">华为昇腾 Atlas 950 SuperPoD 超节点真机首展，获 SAIL 最高奖</div><div class="summary">华为在 WAIC 首展昇腾 Atlas 950 SuperPoD 超节点（业界最大 1024 卡规模），并获 SAIL 最高奖，国产算力的超大规模集群能力集中亮相。</div>
+<a class="source-link" href="https://www.ithome.com/" target="_blank">ithome.com</a></div>
 </div>
-
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
 <div class="news-item">
-  <div class="label">延期</div>
-  <div class="title">Gemini 3.5 Pro 重建困局：递归工具调用仍是未跨过的硬指标</div>
-  <div class="summary">AIToolsRecap 梳理的时间线显示，Gemini 3.5 Pro 的反复延期源于 Vertex AI 企业测试中三个「架构级」（非后训练可修）缺陷：递归工具调用断裂、复杂 SVG 场景生成失败、数学推理不足。Google 原指望 6 月 I/O 交付，Pichai 当场承诺「再给一个月」，但 6.30、7.17 两度落空。值得注意的反差：Gemini 3.1 Pro 在 Terminal-Bench 2.1 仅 70.7%，远低于引发政府审查的阈值，因此理论上不受出口管制——「可用性优势」正被「能力差距」抵消。</div>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/gemini-3-5-pro-july-17-launch-specs-pricing-2026" target="_blank">aitoolsrecap.com</a>
+<div class="label">运营</div><div class="title">月之暗面暂停 Kimi C 端新用户订阅，算力逼近承载极限</div><div class="summary">月之暗面公告：因算力逼近集群承载极限，即日起暂停 Kimi C 端新用户订阅——K3 发布带来的需求洪峰，反衬出算力供给的硬约束。</div>
+<a class="source-link" href="https://finance.sina.com.cn/" target="_blank">sina.com.cn</a></div>
 </div>
-
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
 <div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">Kimi K3 发布后需求爆满，Moonshot 暂停新用户订阅</div>
-  <div class="summary">Kimi K3（详见第 12 期）发布后需求远超预期，月之暗面 7 月 19 日宣布暂停新用户订阅以缓解算力压力——距发布仅 3 天。HN 上「Moonshot AI suspends new subscriptions due to Kimi K3 demand」引发对开源前沿模型算力经济性的讨论：开源权重虽承诺 7.27 放出，但托管 API 的算力成本仍是瓶颈。这也为「自托管 K3 以 $0 推理成本」的论点提供了现实注脚。</div>
-  <a class="source-link" href="https://twitter.com/kimi_moonshot/status/2078855608565207130" target="_blank">twitter.com/kimi_moonshot</a>
-</div>
-</div>
-
-<!-- 企业应用与工具观察 -->
-<div class="section" id="enterprise">
-<div class="section-header">企业应用与工具观察</div>
-
+<div class="label">IPO</div><div class="title">月之暗面冲刺港股 IPO，估值约 315 亿美元</div><div class="summary">月之暗面冲刺港股 IPO，估值约 315 亿美元，中金 + 高盛联席保荐，并启动 VIE 架构拆除，国产大模型头部公司的资本化进程提速。</div>
+<a class="source-link" href="https://baijiahao.baidu.com/" target="_blank">baijiahao.baidu.com</a></div>
 <div class="news-item">
-  <div class="label">并购</div>
-  <div class="title">OpenAI 收购 Ona：Codex 从「本地会话」走向「云端持久代理」</div>
-  <div class="summary">Ona 的云端开发环境基础设施将使 Codex 能在大重构、测试套件生成、文档整理等重型任务中「隔夜运行」而无需本地机器在线。此前 Claude Code 已支持持久会话，OpenAI 选择以收购而非自研补齐这一结构性短板。三起 7 月整合（SpaceX-Cursor、Anthropic-Ode、OpenAI-Ona）共同指向一个结论：编码智能体的竞争焦点已从「模型能力」转移到「持久化执行与交付」。</div>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/openai-acquires-ona-gitpod-codex-persistent-agents-2026" target="_blank">aitoolsrecap.com</a>
+<div class="label">股价</div><div class="title">Kimi K3 发布后，智谱股价单日大跌 28%</div><div class="summary">Kimi K3 发布后，智谱股价 7 月 17 日单日大跌 28%，市场担忧国产开源模型的参数竞赛挤压闭源厂商的估值空间。</div>
+<a class="source-link" href="https://xueqiu.com/" target="_blank">xueqiu.com</a></div>
 </div>
-
-<div class="news-item">
-  <div class="label">安全</div>
-  <div class="title">微软 Project Perception：多模型 AI 安全工具，对标 Mythos 5 且无出口管制</div>
-  <div class="summary">The Information 7 月 18 日披露，微软正发布内部代号 Project Perception 的 AI 安全产品，同时调用 Anthropic、OpenAI 和微软自研模型扫描、识别并修复企业漏洞，定位为更便宜的 Mythos 5 替代。其核心优势：① 不受美国政府对 Mythos 的出口管制约束，可在欧洲等 Anthropic 受限市场部署；② 依托 Azure 已覆盖 90%+ 财富 500 强的基建，无需赢得独立采购流程。多模型架构同时把两家实验室锁定为「依赖伙伴」而非竞争者。</div>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/microsoft-project-perception-ai-security-mythos-alternative-2026" target="_blank">aitoolsrecap.com</a>
+<div class="footer"><p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
 </div>
-
-<div class="news-item">
-  <div class="label">工程</div>
-  <div class="title">Claude Code 底层换用 Rust 版 Bun，呼应社区「11 天重写」实践</div>
-  <div class="summary">Simon Willison 7 月 19 日注意到，Claude Code 现已改用 Rust 实现的 Bun 运行时。这与此前 Bun 团队用 Claude Fable 5 在 11 天内从 Zig 重写为 Rust（详见第 10 期）形成闭环——AI 辅助的系统级重写正从「炫技」进入生产工具链。社区讨论聚焦于：当 AI 编码工具的运行时本身也由 AI 生成，其可维护性与安全边界该如何审计。</div>
-  <a class="source-link" href="https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/" target="_blank">simonwillison.net</a>
-</div>
-</div>
-
-<!-- 国内 AI 动态 -->
-<div class="section" id="china">
-<div class="section-header">国内 AI 动态</div>
-
-<div class="news-item">
-  <div class="label">大会</div>
-  <div class="title">WAIC 2026 闭幕：162 亿意向合作、57 个产业场景落地，AI 进入「交付元年」</div>
-  <div class="summary">7 月 20 日，为期四天的 WAIC 2026 在上海落幕：1100+ 企业、3000+ 展品、300+ 全球首发、展览面积首破 10 万平米，累计达成 162 亿元意向合作，80 余家投资机构对接，57 个核心产业场景落地。闭幕论坛发布五大里程碑：WAIC Academic 学术平台落地、国产算力规模化商用、原生智能终端与量产人形机器人集中亮相、AI 治理评测工具矩阵成型、青年科创扶持体系落地。业界共识：今年模型发布减少、Agent 演示增多，竞争从「单项能力」转向「系统交付」。</div>
-  <a class="source-link" href="https://iaipie.com/2026%E5%B9%B47%E6%9C%8820%E6%97%A5ai%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF%E9%80%9F%E8%A7%88/" target="_blank">iaipie.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">算力</div>
-  <div class="title">国产 AI 芯片「四小龙」齐推超节点，华为昇腾 950 已商用 750+ 套</div>
-  <div class="summary">WAIC 期间，壁仞、摩尔线程、燧原、沐曦四家国产 AI 芯片企业集中发布超节点方案——通过高速互联将数百至上千颗芯片整合为统一计算系统，是支撑万亿参数模型的关键底座。华为透露昇腾 950 SuperPoD 超节点已商用落地 750+ 套，依托自研灵衢 2.0 全光互联协议最大支持 8192 张昇腾 950DT 直连。国产算力正从「单卡替代」迈向「系统级替代」。</div>
-  <a class="source-link" href="https://iaipie.com/2026%E5%B9%B47%E6%9C%8820%E6%97%A5ai%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF%E9%80%9F%E8%A7%88/" target="_blank">iaipie.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">行业</div>
-  <div class="title">上港集团发布 AITOS：全国首个 AI 原生产码头操作系统</div>
-  <div class="summary">上港集团在 WAIC 发布涵盖底层数据到执行应用的 AI 产品体系，核心是支持自然语言指令的 AI 原生产码头操作系统 AITOS，推动港口从「自动运转」迈向「自主决策」，能力贯穿装卸、调度、物流、安全全链条。这是 AI 从工业辅助工具升级为「操作系统级底座」的标志性案例。同期多款行业大模型集中亮相——华电「御能」、国投雅砻江、国家管网工业世界模型、中国石油 3000 亿参数昆仑大模型。</div>
-  <a class="source-link" href="https://iaipie.com/2026%E5%B9%B47%E6%9C%8820%E6%97%A5ai%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF%E9%80%9F%E8%A7%88/" target="_blank">iaipie.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">中国开源大模型累计下载破 100 亿次居全球首位，Qwen 3.8 预览版同期上线</div>
-  <div class="summary">WAIC 期间披露，中国开源大模型累计下载量突破 100 亿次，居全球第一。这一数据与 Qwen 3.8（2.4T）、Kimi K3（2.8T）的密集发布相互印证——国产开源模型正以「参数规模 + 开放权重」双轮，在全球开发者生态中快速建立心智。图灵奖得主、强化学习之父萨顿在 WAIC 呼吁行业从「数据时代」迈向「经验时代」，介绍「机器人幼儿园」项目，主张让机器人通过长期物理试错积累经验。</div>
-  <a class="source-link" href="https://iaipie.com/2026%E5%B9%B47%E6%9C%8820%E6%97%A5ai%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF%E9%80%9F%E8%A7%88/" target="_blank">iaipie.com</a>
-</div>
-</div>
-
-<!-- 国际 AI 动态 -->
-<div class="section" id="international">
-<div class="section-header">国际 AI 动态</div>
-
-<div class="news-item">
-  <div class="label">模型</div>
-  <div class="title">Gemini 3.5 Pro 缺席「御三家」同期窗口，Google 旗舰空窗拉长</div>
-  <div class="summary">在 GPT-5.6（7.9）、Claude Sonnet 5（7.1）已全量上线的背景下，Gemini 3.5 Pro 的第三次跳票使 Google 在 7 月模型竞赛中实质出局。市场关注两个变量：① 应急方案 Gemini 3.6 Flash 能否在能力不缩水的前提下先发；② 苹果已确认新版 Siri 将采用 Gemini（而非 ChatGPT），若 3.5 Pro 持续缺席，Google 的分发优势将无从兑现。DeepMind 人才外流（4 名资深研究员 6 月转投 Anthropic，含 AlphaFold 得主 John Jumper）也为重建前景蒙上阴影。</div>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/ai-news-july-17-2026" target="_blank">aitoolsrecap.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">定价</div>
-  <div class="title">Fable 5 转积分计费：Anthropic 从「留开发者」转向「货币化」的拐点</div>
-  <div class="summary">Fable 5 免费窗口的终结标志着 Anthropic 战略拐点的落地——在 GPT-5.6、Grok 4.5、Sonnet 5 的多重竞争下，其选择结束长达两周的「免费留客」而非继续第四次延期。新定价 $10/$50 使 Fable 5 成为主流模型中单位成本最高者，逼使用户在「需 Fable 5 的 80.4% SWE-bench Pro 精度」与「Sonnet 5 的 $2/$10 性价比」间做路由决策。Opus 5 仍可能在 7.31 前出现，将直接改变积分成本计算。</div>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/fable-5-credits-begin-july-20-no-opus-5-2026" target="_blank">aitoolsrecap.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">安全</div>
-  <div class="title">Grok Build 数据泄露升级：xAI 编码工具两周内第二起，且更严重</div>
-  <div class="summary">7 月 12 日 Grok CLI 上传完整仓库事件后，7 月 19 日 Grok Build 被曝上传 SSH 密钥与密码管理器数据库——泄露范围从「代码」升级到「凭证」。两起事件叠加，使 xAI 编码工具的数据安全记录成为行业焦点。监管行业用户（金融、医疗、国防）可能触发强制数据泄露通知义务，无论 SpaceXAI 是否响应。社区建议：在 SpaceXAI 发布含修复确认的事件报告前，不要在敏感代码库上使用 Grok Build。</div>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/grok-build-data-leak-repos-ssh-keys-2026" target="_blank">aitoolsrecap.com</a>
-</div>
-</div>
-
-<!-- AI 与金融 -->
-<div class="section" id="finance">
-<div class="section-header">AI 与金融</div>
-
-<div class="news-item">
-  <div class="label">芯片</div>
-  <div class="title">TSMC Q2 净利 +77.4% 再创纪录，追加 $100B 亚利桑那，HPC 占营收 66%</div>
-  <div class="summary">台积电 7 月 17 日发布完整 Q2 财报：净利同比 +77.4%，上调全年营收指引至 40%+ 增长，并宣布再投 $100B 扩建亚利桑那厂。HPC（AI 芯片）已占季度营收 66%。这是继 SK Hynix 纳斯达克 +13% 之后，AI 基建「需求侧」的又一硬数据。但市场也关注：在 Oracle 裁员筹资、各大厂资本开支飙升的背景下，AI 芯片需求的可持续性是否会被供给扩张反噬。</div>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/ai-news-july-17-2026" target="_blank">aitoolsrecap.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">基建</div>
-  <div class="title">Oracle 裁 2–3 万人（约 18%）资助 Stargate，AI 繁荣的「人力换算力」逻辑显性化</div>
-  <div class="summary">Oracle 7 月 18 日披露将裁减 2–3 万岗位（最高 18%  workforce），目的地是 $500B 的 Stargate 算力基建合作（与 OpenAI、SoftBank）。Oracle 盈利且云营收创纪录，故属战略资本再配置而非救急。这与此前 TSMC +77%、SK Hynix +13% 共同构成 7 月「基建故事」的三段式：需求爆发 → 资本涌入 → 人力成本被腾挪。科技公司「盈利创纪录却以 AI 为由大规模裁员」的机制被空前清晰地呈现。</div>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/oracle-layoffs-ai-infrastructure-stargate-2026" target="_blank">aitoolsrecap.com</a>
-</div>
-</div>
-
-<!-- 政策与监管 -->
-<div class="section" id="policy">
-<div class="section-header">政策与监管</div>
-
-<div class="news-item">
-  <div class="label">研究</div>
-  <div class="title">研究：AI 建议让人「更自信但更不准确」，批判思维被抑制</div>
-  <div class="summary">TheNextWeb 7 月 19 日报道的一项研究发现，使用 AI 建议的被试在任务中产出错误答案的概率更高，却对自己的答案更有信心——即「准确性下降、自信度上升」的反常组合。这与第 11 期 Yennie Jun「思考外包」的讨论形成实证呼应：当 AI 接管中间推理步骤，人类不仅可能失去能力，还可能失去对自身错误的感知。研究对「AI 辅助决策」在教育、医疗、司法等高风险场景的应用提出警示。</div>
-  <a class="source-link" href="https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study" target="_blank">thenextweb.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">治理</div>
-  <div class="title">图灵奖得主萨顿 WAIC 呼吁「经验时代」：八年过度依赖人类数据令人失望</div>
-  <div class="summary">2024 年图灵奖得主、强化学习之父 Richard Sutton 在 WAIC 期间坦言对过去八年 AI 过度聚焦人类数据感到失望，主张「从经验中学习」将主导未来，并介绍让机器人通过长期物理试错积累经验的「机器人幼儿园」项目。其演讲主题「通往真正 AI 的漫长道路」与 WAIC 主调「发展与治理并重」形成呼应——在模型能力竞赛之外，强调具身经验与持续学习才是通向通用智能的路径。</div>
-  <a class="source-link" href="https://iaipie.com/2026%E5%B9%B47%E6%9C%8820%E6%97%A5ai%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF%E9%80%9F%E8%A7%88/" target="_blank">iaipie.com</a>
-</div>
-</div>
-
-<!-- 社媒与开发者社区 -->
-<div class="section" id="community">
-<div class="section-header">社媒与开发者社区观察</div>
-
-<div class="news-item">
-  <div class="label">Hacker News</div>
-  <div class="title">Kimi K3 需求爆满暂停订阅，社区热议开源前沿模型的算力天花板</div>
-  <div class="summary">「Moonshot AI suspends new subscriptions due to Kimi K3 demand」7 月 19 日登上 HN。讨论焦点：① 开源 3T 模型的自托管虽理论 $0 推理成本，但托管 API 的算力瓶颈真实存在；② 月之暗面若不能在 7.27 开源权重前扩容，可能错失发布热度窗口；③ 这与 CNBC「中国模型占美国企业 token 30–46%」的判断叠加，凸显国产开源模型的供需失衡。一条高赞评论：「开源权重的承诺，正在被算力现实检验。」</div>
-  <a class="source-link" href="https://news.ycombinator.com/item?id=48969291" target="_blank">news.ycombinator.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">工具</div>
-  <div class="title">OpenAI 将 Codex 上下文从 372K 缩减至 272K，社区质疑「无声降级」</div>
-  <div class="summary">OpenAI 7 月 19 日在 Codex 仓库合并一项改动，将模型上下文上限从 372K 降至 272K。在收购 Ona 强化「持久云智能体」的同一周，这一缩减引发社区对「能力是否满足持久长任务」的质疑——若云端代理要隔夜跑大重构，272K 上下文是否够用成为现实问题。有开发者指出：上下文缩减可能与成本优化有关，但缺乏公开说明损害了信任。</div>
-  <a class="source-link" href="https://github.com/openai/codex/pull/33972/files" target="_blank">github.com/openai/codex</a>
-</div>
-
-<div class="news-item">
-  <div class="label">观点</div>
-  <div class="title">「AI 让思考外包」获得实证：研究登上 HN，与社区反思形成闭环</div>
-  <div class="summary">TheNextWeb 关于「AI 建议降低准确性却提升自信」的研究 7 月 19 日登上 HN，与第 11 期 Armin Ronacher「The Tower Keeps Rising」、Yennie Jun「思考外包」形成连续三周的社区反思脉络。一条高赞评论总结：「我们以为 AI 是自行车（放大人类能力），结果它更像拐杖（替代人类判断）——而拐杖用久了，腿会萎。」这波讨论从「幽默吐槽」走向「实证担忧」。</div>
-  <a class="source-link" href="https://thenextweb.com/news/ai-advice-suppresses-critical-thinking-wrong-answers-study" target="_blank">thenextweb.com</a>
-</div>
-</div>
-
-<div class="footer">
-  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
-</div>
-</div>
-
 </body>
 </html>

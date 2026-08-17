@@ -51,155 +51,41 @@
   <a href="#policy">政策与监管</a>
   <a href="#community">社区观察</a>
 </div></nav>
-
 <div class="container">
-<div class="masthead">
-  <h1>AI Radar</h1>
-  <div class="meta"><span>2026.07.06 — 07.08</span><span>第 8 期</span></div>
-</div>
-
-<!-- Radar Picks -->
-<div class="section" id="picks">
-<div class="section-header">Radar Picks</div>
-
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.07.06 — 07.08</span><span>第 8 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
 <div class="card">
-  <span class="tag">安全</span>
-  <h3>阿尔伯塔省政府用 Claude 排查并修复政府系统安全漏洞</h3>
-  <p>加拿大阿尔伯塔省技术部自 2025 年起用 Claude Code（Opus + Sonnet）扫描政府代码库，约 50 个 Agent 并行工作，20 小时内审查 4.66 亿行代码、识别传统工具遗漏的漏洞并自动生成修复。团队还构建红/蓝队 Agent，对每个应用按约 95 项安全控制持续审查，并将技术白皮书公开供其他政府参考。</p>
-  <a class="source-link" href="https://www.anthropic.com/news/alberta-government-claude-cybersecurity" target="_blank">anthropic.com</a>
-</div>
-
+<span class="tag">发布</span><h3>OpenAI 发布 GPT-5.6 三模型矩阵，Sol 因安全能力受限开放</h3><p>OpenAI 发布 GPT-5.6 三模型矩阵：Sol（旗舰，Terminal-Bench 2.1 得 91.9%）、Terra（输入 $2.5/百万 token）、Luna（输入 $1）。其中 Sol 因网络安全能力过强，被限制仅向可信伙伴开放——「能力越强越要限流」成为前沿模型的新常态。</p>
+<a class="source-link" href="https://iaipie.com/" target="_blank">iaipie.com</a></div>
 <div class="card">
-  <span class="tag">产品</span>
-  <h3>Meta 推出 Muse Image 图像生成模型</h3>
-  <p>Meta Superintelligence Labs 于 7 月 7 日发布图像生成模型 Muse Image（内部代号 Mango），通过 Meta AI 应用、Instagram Stories 与 WhatsApp 免费开放，支持预设提示词、提示词编辑与自定义广告，Muse Video 已在开发中。其"用公开资料照片生成 AI 图像"的默认开启功能引发隐私争议。</p>
-  <a class="source-link" href="https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/" target="_blank">about.fb.com</a>
+<span class="tag">开源</span><h3>美团开源 LongCat-2.0：1.6 万亿参数，首个全程零英伟达万亿模型</h3><p>美团开源 LongCat-2.0：1.6 万亿参数 MoE，激活约 480 亿/Token，是首个在 5 万卡国产算力上全程训练、零英伟达的万亿级模型。这标志着国产算力闭环在超大规模训练上跑通了完整链路。</p>
+<a class="source-link" href="https://iaipie.com/" target="_blank">iaipie.com</a></div>
 </div>
-
-<div class="card">
-  <span class="tag">事件</span>
-  <h3>2026 世界人工智能大会 7 月 17 日至 20 日将在上海举办</h3>
-  <p>2026 世界人工智能大会暨人工智能全球治理高级别会议定于 7 月 17—20 日在上海举行。7 月 7 日新闻发布会介绍，我国 AI 核心产业持续壮大，"人工智能+制造"深入落地，生态不断优化，大模型、智能体、AI 芯片加速迭代，会议将聚焦产业落地与全球治理协同。</p>
-  <a class="source-link" href="https://news.cctv.cn/2026/07/08/ARTIKSsLPbFb3ZbEnWI0oOLU260708.shtml" target="_blank">cctv.com</a>
-</div>
-
-<div class="card">
-  <span class="tag">模型</span>
-  <h3>OpenAI 确认 GPT-5.6 将于 7 月 9 日（周四）公开上线</h3>
-  <p>OpenAI 于 7 月 8 日确认，GPT-5.6 系列（旗舰 Sol、均衡 Terra、轻量 Luna）将于 7 月 9 日（周四）面向公众开放。该系列 6 月 26 日已开启有限预览，公开上线意味着三档模型向更广泛的用户与开发者开放，延续本轮前沿模型的公开可用化节奏。</p>
-  <a class="source-link" href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">openai.com</a>
-</div>
-</div>
-
-<!-- 模型与技术进展 -->
-<div class="section" id="models">
-<div class="section-header">模型与技术进展</div>
-
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
 <div class="news-item">
-  <div class="label">基准</div>
-  <div class="title">SovereignPA-Bench：评估"用户拥有"个人智能体的主权与边界</div>
-  <div class="summary">7 月 7 日发布的 SovereignPA-Bench 是一个可执行基准，针对用户自有的个人智能体，在意图演化、平台中介、隐私边界与同意约束下评估其"主权性"——即智能体能在多大程度上代表用户、抵抗平台操纵。实验显示当前智能体在完全主权场景下表现有限。</div>
-  <a class="source-link" href="https://arxiv.org/abs/2607.05363" target="_blank">arxiv.org</a>
+<div class="label">集成</div><div class="title">Kimi K2.7 Code 接入 GitHub Copilot</div><div class="summary">月之暗面 Kimi K2.7 Code 接入 GitHub Copilot，成为 Copilot 历史上首个开源模型（由 Azure 托管），国产开源模型首次进入微软开发者工具链。</div>
+<a class="source-link" href="https://iaipie.com/" target="_blank">iaipie.com</a></div>
 </div>
-
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
 <div class="news-item">
-  <div class="label">安全</div>
-  <div class="title">AI 在 Cloudflare 加密库 Circl 中发现了多处漏洞</div>
-  <div class="summary">zksecurity 团队发布系列研究，记录使用 AI 辅助审查 Cloudflare 开源加密库 Circl 的过程，AI 在代码中发现多处此前未被注意的漏洞与隐患，展示大模型在密码学代码审计中的实际能力边界与价值。</div>
-  <a class="source-link" href="https://blog.zksecurity.xyz/posts/circl-bugs/" target="_blank">zksecurity.xyz</a>
+<div class="label">监管</div><div class="title">美国商务部批准 GPT-5.6 全面部署</div><div class="summary">美国商务部批准 GPT-5.6 全面部署，解除限量预览限制，为次日全量上线铺路——前沿模型的「发布—审批—开放」监管链路进一步成型。</div>
+<a class="source-link" href="https://baijiahao.baidu.com/" target="_blank">baijiahao.baidu.com</a></div>
 </div>
-</div>
-
-<!-- 企业应用与工具观察 -->
-<div class="section" id="enterprise">
-<div class="section-header">企业应用与工具观察</div>
-
+<div class="section" id="policy"><div class="section-header">政策与监管</div>
 <div class="news-item">
-  <div class="label">工具</div>
-  <div class="title">Rowboat：开源、本地优先的 Claude Desktop 替代品</div>
-  <div class="summary">开源项目 Rowboat 在 Hacker News 获 133 points 关注，定位为本地优先、可自托管的 Claude Desktop 替代方案，强调数据留在本地、不依赖云端账号，面向注重隐私的开发者与小企业，反映桌面 AI 客户端走向轻量化与可自托管。</div>
-  <a class="source-link" href="https://github.com/rowboatlabs/rowboat" target="_blank">github.com</a>
+<div class="label">风险</div><div class="title">工信部 NVDB 发布 Claude Code 后门风险提示</div><div class="summary">工信部 NVDB 发布 Claude Code 后门风险提示，指其 2.1.91–2.1.196 版本私自回传用户地域/身份信息，定级「危害严重」，引发对海外 AI 开发工具数据合规的关注。</div>
+<a class="source-link" href="https://iaipie.com/" target="_blank">iaipie.com</a></div>
 </div>
-</div>
-
-<!-- 国内 AI 动态 -->
-<div class="section" id="china">
-<div class="section-header">国内 AI 动态</div>
-
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
 <div class="news-item">
-  <div class="label">生态</div>
-  <div class="title">中国 AI 生态：开源社区 AtomGit 汇聚超 1100 万开发者</div>
-  <div class="summary">7 月 8 日央视报道，我国 AI 领域已研制近 200 项关键标准，企业积极拥抱开源，大模型下载量居全球第一，AtomGit 等开源社区汇聚超 1100 万开发者；人形机器人全年整机产量有望突破 10 万台，产业正从应用创新走向产业链上游。</div>
-  <a class="source-link" href="https://news.cctv.cn/2026/07/08/ARTIKSsLPbFb3ZbEnWI0oOLU260708.shtml" target="_blank">cctv.com</a>
-</div>
-</div>
-
-<!-- 国际 AI 动态 -->
-<div class="section" id="international">
-<div class="section-header">国际 AI 动态</div>
-
+<div class="label">IPO</div><div class="title">Momenta 港股上市，市值破 700 亿港元</div><div class="summary">Momenta 港股上市（06880.HK），定价 295.6 港元，首日涨超 6%，市值破 700 亿港元，发行约 8.65 亿美元，成为「物理 AI 第一股」的落地样本。</div>
+<a class="source-link" href="https://iaipie.com/" target="_blank">iaipie.com</a></div>
 <div class="news-item">
-  <div class="label">欧盟</div>
-  <div class="title">欧盟强制新车搭载驾驶员监控摄像头，7 月 7 日生效</div>
-  <div class="summary">欧盟 General Safety Regulation（GSR2）于 7 月 7 日全面生效，要求所有新售乘用车与厢式货车标配驾驶员注意力监控（DMS）摄像头与增强型自动紧急制动等系统，红外摄像头将实时监测分心与疲劳驾驶。这是车载 AI 感知能力首次以法规形式成为出厂标配。</div>
-  <a class="source-link" href="https://allaboutcookies.org/eu-mandatory-distracted-driver-system" target="_blank">allaboutcookies.org</a>
+<div class="label">定价</div><div class="title">DeepSeek 公布 V4 定价细则，首创峰谷机制</div><div class="summary">DeepSeek 公布 V4 定价细则（7 月 15 日全量上线），首创峰谷机制，低谷输入低至 0.5 元/百万 token，用价格杠杆引导错峰使用。</div>
+<a class="source-link" href="https://iaipie.com/" target="_blank">iaipie.com</a></div>
 </div>
-
-<div class="news-item">
-  <div class="label">Anthropic</div>
-  <div class="title">Fable 5 订阅体验延期至 7 月 12 日，之后转积分计费</div>
-  <div class="summary">Anthropic 7 月 8 日宣布，将付费订阅用户免费体验顶级推理模型 Claude Fable 5 的期限延长 5 天至 7 月 12 日；延长期内额度消耗上限仍为每周总额的 50%。7 月 12 日之后，Fable 5 将转为按使用积分（pay-as-you-go）计费，结束此前的订阅内限免阶段。</div>
-  <a class="source-link" href="https://www.cnbctv18.com/technology/anthropic-extends-access-to-fable-5-paid-users-till-july-12-19940672.htm" target="_blank">cnbctv18.com</a>
+<div class="footer"><p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
 </div>
-</div>
-
-<!-- AI 与金融 -->
-<div class="section" id="finance">
-<div class="section-header">AI 与金融</div>
-
-<div class="news-item">
-  <div class="label">市场</div>
-  <div class="title">科创 AI ETF 走强，国产 AI 板块盘初涨近 3%</div>
-  <div class="summary">7 月 8 日，上证科创板人工智能指数（950180）盘中上涨 1.56%，成分股云天励飞、复旦微电、优刻得等跟涨；科创AIETF博时（588790）盘初一度涨近 3%，近两周累计上涨 0.96%，反映资金对国产 AI 算力与芯片链条的持续关注。</div>
-  <a class="source-link" href="https://finance.sina.com.cn/jjxw/2026-07-08/doc-inihaawk4912601.shtml" target="_blank">sina.com.cn</a>
-</div>
-</div>
-
-<!-- 政策与监管 -->
-<div class="section" id="policy">
-<div class="section-header">政策与监管</div>
-
-<div class="news-item">
-  <div class="label">平台</div>
-  <div class="title">Anthropic 7 月 8 日起对部分 Claude 能力强制实名认证</div>
-  <div class="summary">Anthropic 更新后的隐私政策于 7 月 8 日生效，要求消费级账户在使用"部分能力"前完成政府 ID 验证，由第三方 Persona 处理核验。此举延续 AI 平台在监管与安全风险下的身份管控趋势，引发开发者对匿名使用与数据边界的讨论。</div>
-  <a class="source-link" href="https://discuss.privacyguides.net/t/official-anthropic-to-require-identity-verification-for-certain-capabilities-on-claude-starting-july-8-2026/38659" target="_blank">privacyguides.net</a>
-</div>
-</div>
-
-<!-- 社媒与开发者社区 -->
-<div class="section" id="community">
-<div class="section-header">社媒与开发者社区观察</div>
-
-<div class="news-item">
-  <div class="label">资源</div>
-  <div class="title">30papers.com：Ilya 精选 30 篇 ML 必读论文</div>
-  <div class="summary">开发者整理的 30papers.com 在 HN 获 446 points，以初学者友好的方式重述 Ilya Sutskever 推荐的 30 篇机器学习核心论文，覆盖表征学习、生成模型与对齐等关键脉络，成为社区新人入门的系统化入口。</div>
-  <a class="source-link" href="https://30papers.com/" target="_blank">30papers.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">HN 信号</div>
-  <div class="title">本地 CPU 友好 TTS 方案 Kokoro 持续受社区关注</div>
-  <div class="summary">本地、CPU 友好的高质量语音合成模型 Kokoro 在 HN 获 364 points，社区关注其无需 GPU 即可部署的特性，反映开发者对轻量、可自托管 AI 能力的持续偏好（相关技术文章为 3 月发布，本周再度升温）。</div>
-  <a class="source-link" href="https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/" target="_blank">ariya.io</a>
-</div>
-</div>
-
-<div class="footer">
-  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
-</div>
-</div>
-
 </body>
 </html>

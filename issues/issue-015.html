@@ -51,197 +51,25 @@
   <a href="#policy">政策与监管</a>
   <a href="#community">社区观察</a>
 </div></nav>
-
 <div class="container">
-<div class="masthead">
-  <h1>AI Radar</h1>
-  <div class="meta"><span>2026.07.22 — 07.24</span><span>第 15 期</span></div>
-</div>
-
-<!-- Radar Picks -->
-<div class="section" id="picks">
-<div class="section-header">Radar Picks</div>
-
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.07.22 — 07.24</span><span>第 15 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
 <div class="card">
-  <span class="tag">迁移</span>
-  <h3>DeepSeek 7.24 API 迁移完成，自研新推理后端全量上线</h3>
-  <p>DeepSeek 7 月 24 日如期完成 API 迁移（截止日见第 12 期），弃用旧推理栈、切换至自研新后端，官方称长上下文与函数调用延迟下降约 40%。迁移期内的「模型暂不可用以灰度切换」提示已解除，企业用户需确认 SDK 版本。这是国产开源模型从「权重开放」走向「推理服务自研」的标志性一步。</p>
-  <a class="source-link" href="https://platform.deepseek.com/" target="_blank">platform.deepseek.com</a>
+<span class="tag">合作</span><h3>Anthropic 与 AMD 合作：Claude 一个周末完成 MI355 芯片适配</h3><p>AMD Advancing AI 2026 大会披露，Claude 模型在一个周末内自动完成 Instinct MI355 芯片与 ROCm 平台适配调优。这展示了「模型自主适配新硬件」的能力，也意味着 AMD 在 AI 芯片竞争中获得了 Anthropic 的关键背书。</p>
+<a class="source-link" href="https://k.sina.com.cn/" target="_blank">sina.com.cn</a></div>
 </div>
-
-<div class="card">
-  <span class="tag">开源</span>
-  <h3>Kimi K3 技术报告发布，确认 7.27 开源权重登 Hugging Face</h3>
-  <p>月之暗面 7 月 23 日发布 Kimi K3 技术报告，披露其 Stable LatentMoE + KDA 分布式训练与 AttnRes 注意力残差的全部细节，并确认 2.8T 参数开源权重将于 7.27 如期发布至 Hugging Face。报告同时给出 7.27 前的最后一组基准：SWE-bench Pro 与长上下文检索均逼近 Fable 5。开源前沿的「参数规模竞赛」进入兑现周。</p>
-  <a class="source-link" href="https://kimi.com/blog/kimi-k3-technical-report" target="_blank">kimi.com</a>
-</div>
-
-<div class="card">
-  <span class="tag">模型</span>
-  <h3>Gemini 3.6 Flash 结束预览转 GA，集成 Vertex AI</h3>
-  <p>Google 7 月 23 日将 Gemini 3.6 Flash 从预览推至正式可用（GA），并接入 Vertex AI 与 Gemini API 默认通道——这是第 14 期「应急过渡预览」的正式落地。GA 版在预览基础上修复了首批实测的速率限制，并开放批量推理。至此 Google 在 7 月「御三家」空窗后，以一款「可用但不旗舰」的 Flash 重新回到牌桌。</p>
-  <a class="source-link" href="https://blog.google/technology/ai/gemini-3-6-flash-ga/" target="_blank">blog.google</a>
-</div>
-
-<div class="card">
-  <span class="tag">模型</span>
-  <h3>字节豆包 Doubao-Seed-1.5 发布，主打端侧多模态实时视觉</h3>
-  <p>字节跳动 7 月 23 日发布豆包大模型 Doubao-Seed-1.5，以 4B 激活参数的 MoE 在手机端跑通实时视觉理解，主打「端侧多模态」而非盲目堆参数。其与即梦、扣子的产品联动显示字节正把多模态能力下沉到 C 端 App。这是继 Qwen 3.8、Kimi K3 之后，国产大模型在 7 月密集发布的又一主力选手，但路线明显不同——不追 3T，而追端侧可用。</p>
-  <a class="source-link" href="https://volcengine.com/docs/ark/doubao-seed-1-5" target="_blank">volcengine.com</a>
-</div>
-</div>
-
-<!-- 模型与技术进展 -->
-<div class="section" id="models">
-<div class="section-header">模型与技术进展</div>
-
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
 <div class="news-item">
-  <div class="label">架构</div>
-  <div class="title">DeepSeek 新推理后端：从 MoE 蒸馏转向自研架构，延迟降 40%</div>
-  <div class="summary">技术文档显示，DeepSeek 新后端并非简单升级，而是将早期 MoE 蒸馏路径替换为自研的稀疏注意力 + 流水线并行方案，使长上下文与工具调用延迟显著下降。迁移完成后，其 API 在同等吞吐下单位成本进一步下探，对刚转积分计费的 Fable 5 与刚发布的 Opus 5（第 14 期）构成性价比压力。</div>
-  <a class="source-link" href="https://platform.deepseek.com/" target="_blank">platform.deepseek.com</a>
+<div class="label">预告</div><div class="title">Anthropic 预告 Claude Opus 5，开源阵营同步上新</div><div class="summary">Anthropic 预告 Claude Opus 5；同期 Upstage 开源 Agentic 模型 Solar Open 2、微软开源 Mage-Flow，开源生态持续活跃。</div>
+<a class="source-link" href="https://www.bilibili.com/" target="_blank">bilibili.com</a></div>
 </div>
-
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
 <div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">Kimi K3 技术报告要点：Stable LatentMoE + KDA 训练全披露</div>
-  <div class="summary">报告首次公开 K3 的训练配方：以 Stable LatentMoE 稳定专家路由、KDA（知识蒸馏注意力）缓解专家坍缩、AttnRes 保留长程残差。月之暗面强调 2.8T 参数中仅部分专家在前向激活，因此实际推理成本可控。结合第 14 期「重启企业订阅」，K3 正以「开放权重 + 可控算力」双线回应 Qwen 3.8 的开源竞争。</div>
-  <a class="source-link" href="https://kimi.com/blog/kimi-k3-technical-report" target="_blank">kimi.com</a>
+<div class="label">发布</div><div class="title">芯位学科大模型 V2.0 发布，主打「从通用到专业」</div><div class="summary">芯位科技发布教育垂类大模型 V2.0，主打「从通用回答走向专业解答」，大模型在教育垂直场景的落地进一步细化。</div>
+<a class="source-link" href="https://www.jiemian.com/" target="_blank">jiemian.com</a></div>
 </div>
-
-<div class="news-item">
-  <div class="label">端侧</div>
-  <div class="title">豆包 1.5 端侧多模态：4B 激活参数跑通手机实时视觉</div>
-  <div class="summary">豆包 1.5 的核心卖点是「在端侧跑通实时视觉理解」——4B 激活参数的 MoE 配合量化与 NPU 调度，可在主流旗舰手机上以近实时帧率做视觉问答与屏幕理解。这与 Qwen 3.8、Kimi K3 的「云端超大模型」路线形成互补：前者争参数与基准，豆包争落地与隐私。端侧多模态被认为是下一个 C 端 Agent 入口。</div>
-  <a class="source-link" href="https://volcengine.com/docs/ark/doubao-seed-1-5" target="_blank">volcengine.com</a>
+<div class="footer"><p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
 </div>
-</div>
-
-<!-- 企业应用与工具观察 -->
-<div class="section" id="enterprise">
-<div class="section-header">企业应用与工具观察</div>
-
-<div class="news-item">
-  <div class="label">产品</div>
-  <div class="title">Codex 持久会话扩大灰度，新增「外部状态存储」绕开 272K 上下文</div>
-  <div class="summary">在 7.21 首发灰度（第 14 期）后，OpenAI 7 月 23 日扩大 Codex 持久云智能体灰度范围，并新增「外部状态存储」原语——把长任务的中间状态落到对象存储而非上下文窗口，直接回应第 14 期社区对「272K 上下文能否跑隔夜大重构」的质疑。代理拆子任务 + 外部状态，使持久会话不再受单一上下文上限约束。</div>
-  <a class="source-link" href="https://github.com/openai/codex" target="_blank">github.com/openai/codex</a>
-</div>
-
-<div class="news-item">
-  <div class="label">安全</div>
-  <div class="title">微软 Project Perception 接入 GitHub Copilot 私测，漏洞自动修复进 IDE</div>
-  <div class="summary">第 14 期披露的微软 Project Perception 7 月 23 日进入 GitHub Copilot 私测：开发者可在 IDE 内一键触发多模型安全扫描，结果直接以 PR 形式回写。其「不受 Mythos 5 出口管制约束」的定位，使其在欧洲等 Anthropic 受限市场具备合规优势。多模型审计正从独立产品走向编码工作流的默认一层。</div>
-  <a class="source-link" href="https://www.theinformation.com/articles/microsoft-project-perception-copilot" target="_blank">theinformation.com</a>
-</div>
-</div>
-
-<!-- 国内 AI 动态 -->
-<div class="section" id="china">
-<div class="section-header">国内 AI 动态</div>
-
-<div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">Kimi K3 开源前最后预热：技术报告 + Hugging Face 确认</div>
-  <div class="summary">月之暗面 7 月 23 日的动作把 K3 推向「开源兑现周」：技术报告披露训练细节，Hugging Face 仓库已建待发布。在 Qwen 3.8 正式开源（第 14 期）之后，K3 的 7.27 开放权重将成为国产 3T 级开源模型的第二块基石。社区关注点已从「参数多大」转向「权重能否真自托管、推理成本几何」。</div>
-  <a class="source-link" href="https://huggingface.co/moonshotai" target="_blank">huggingface.co</a>
-</div>
-
-<div class="news-item">
-  <div class="label">基建</div>
-  <div class="title">国家算力网「东数西算」AI 调度平台上线，统一编排国产超节点</div>
-  <div class="summary">7 月 24 日，国家算力网 AI 调度平台正式上线，可跨区域统一编排华为昇腾、壁仞等国产超节点（呼应第 13 期「国产芯片四小龙超节点」），按任务优先级动态调度算力。这是第 14 期「国家数据局行业大模型落地指引」之后的配套基建——把「国产算力系统级替代」从单厂方案升级为国家级调度能力。</div>
-  <a class="source-link" href="https://iaipie.com/2026%E5%B9%B47%E6%9C%8824%E6%97%A5ai%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF%E9%80%9F%E8%A7%88/" target="_blank">iaipie.com</a>
-</div>
-</div>
-
-<!-- 国际 AI 动态 -->
-<div class="section" id="international">
-<div class="section-header">国际 AI 动态</div>
-
-<div class="news-item">
-  <div class="label">分发</div>
-  <div class="title">Gemini 3.6 Flash GA，苹果 Siri 集成时间表同步浮出</div>
-  <div class="summary">3.6 Flash 转 GA（见 Radar Picks）后，结合第 14 期「苹果已确认新版 Siri 采用 Gemini」，市场传出 Siri 集成将于今秋随系统更新落地的时间表。Google 以一款「低延迟 Flash」而非旗舰 3.5 Pro 兑现分发合约，折射出第 13/14 期所述「3.5 Pro 反复跳票、空窗拉长」的现实后果——分发优势只能靠「先发可用」勉强维持。</div>
-  <a class="source-link" href="https://blog.google/technology/ai/gemini-3-6-flash-ga/" target="_blank">blog.google</a>
-</div>
-
-<div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">Meta 发布 Llama 4 系列，开源阵营再添欧美主力</div>
-  <div class="summary">Meta 7 月 23 日发布 Llama 4 系列（含 8B/70B/405B 三档），以原生多模态与更长上下文加入开源前沿竞争——与 Qwen 3.8、Kimi K3 形成「中美开源三足」。Llama 4 强调可商用授权与本地部署，直接对标刚转积分计费的 Fable 5 的性价比区间。开源阵营在 7 月罕见地同时迎来中美欧三方主力更新。</div>
-  <a class="source-link" href="https://www.llama.com/" target="_blank">llama.com</a>
-</div>
-</div>
-
-<!-- AI 与金融 -->
-<div class="section" id="finance">
-<div class="section-header">AI 与金融</div>
-
-<div class="news-item">
-  <div class="label">财报</div>
-  <div class="title">Anthropic 年化营收据报突破 $120 亿，Opus 5 + Fable 5 积分双驱动</div>
-  <div class="summary">The Information 7 月 24 日报道，Anthropic 年化营收已突破 120 亿美元，较年初接近翻倍，主要由 Opus 5（第 14 期发布）的高端需求与 Fable 5 转积分计费（第 13 期）的货币化共同驱动。在「先免费留客、后积分货币化」的路径跑通后，Anthropic 的商业化曲线被重新定价——尽管 Opus 5 的高定价也引发第 14 期社区对「用价格筛选用户」的讨论。</div>
-  <a class="source-link" href="https://www.theinformation.com/articles/anthropic-arit-120b" target="_blank">theinformation.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">基建</div>
-  <div class="title">Stargate 首座数据中心动工，软银出资节奏加速</div>
-  <div class="summary">在第 14 期「锁定德州首座选址、软银追加出资」之后，Stargate 7 月 24 日举行动工仪式，首期算力将优先供给 OpenAI Codex 持久云智能体（第 14/15 期企业应用）。结合 Oracle 为 Stargate 裁减 2–3 万人（第 13 期）与 TSMC 亚利桑那三厂动工（第 14 期），7 月「基建故事」从资本承诺走向实体破土，AI 重资产底色愈发清晰。</div>
-  <a class="source-link" href="https://aitoolsrecap.com/Blog/stargate-first-datacenter-groundbreaking-2026" target="_blank">aitoolsrecap.com</a>
-</div>
-</div>
-
-<!-- 政策与监管 -->
-<div class="section" id="policy">
-<div class="section-header">政策与监管</div>
-
-<div class="news-item">
-  <div class="label">政策</div>
-  <div class="title">美国发布国家 AI 行动计划，前沿模型权重拟接受安全审查</div>
-  <div class="summary">白宫 7 月 24 日发布国家 AI 行动计划，核心包括：扩大本土算力与能源供给、对发布前的前沿模型权重实施自愿安全审查、并放宽开源权重出口限制以对冲盟友管制。这与第 14 期「欧盟 AI Act 高风险条款 8 月生效」形成大西洋两岸对照——美方重「竞争力 + 自愿审查」，欧方重「合规义务」，路线分歧延续第 12/13 期所述「监管分裂」。</div>
-  <a class="source-link" href="https://www.whitehouse.gov/ai/" target="_blank">whitehouse.gov</a>
-</div>
-
-<div class="news-item">
-  <div class="label">立法</div>
-  <div class="title">加州 AI 透明法正式生效，要求模型声明训练数据来源</div>
-  <div class="summary">加州 AI 透明法 7 月 23 日正式生效，要求面向公众的 AI 系统以机器可读方式声明训练数据来源并提供内容溯源标识。这与第 12/13 期「Anthropic 逐州推动 AI 安全法」的脉络一致，但更聚焦「数据透明 + 内容标识」而非模型能力管制。在欧盟 AI Act 生效前夕，加州以州法先行，进一步坐实美国「逐州立法」的现实路径。</div>
-  <a class="source-link" href="https://leginfo.legislature.ca.gov/" target="_blank">leginfo.legislature.ca.gov</a>
-</div>
-</div>
-
-<!-- 社媒与开发者社区 -->
-<div class="section" id="community">
-<div class="section-header">社媒与开发者社区观察</div>
-
-<div class="news-item">
-  <div class="label">Hacker News</div>
-  <div class="title">DeepSeek 迁移完成登 HN，社区实测长上下文延迟改善</div>
-  <div class="summary">「DeepSeek completes API migration, new inference backend」7 月 24 日登上 HN。讨论焦点：① 新后端长上下文延迟是否真降 40%；② 迁移后自托管权重与 API 行为是否一致；③ 在 Qwen 3.8、Kimi K3 相继开源的当口，DeepSeek 的「推理服务自研」路线意味着什么。高赞评论：「国产模型的护城河，正在从权重转移到推理栈。」</div>
-  <a class="source-link" href="https://news.ycombinator.com/item?id=48985531" target="_blank">news.ycombinator.com</a>
-</div>
-
-<div class="news-item">
-  <div class="label">开源</div>
-  <div class="title">Kimi K3 开源预热刷屏，社区押注 7.27 自托管推理成本</div>
-  <div class="summary">Kimi K3 技术报告与 Hugging Face 待发布仓库引发开发者预热：普遍认为 2.8T 权重虽大，但专家激活稀疏使单卡可跑推理，8 卡即可满速。这与第 14 期「Qwen 3.8 自托管刷屏 GitHub」形成连续两周的「国产开源自托管」热潮，把竞争焦点从「谁参数大」推向「谁真能在自己机器上跑起来、跑得便宜」。</div>
-  <a class="source-link" href="https://huggingface.co/moonshotai" target="_blank">huggingface.co</a>
-</div>
-
-<div class="news-item">
-  <div class="label">端侧</div>
-  <div class="title">豆包 1.5 端侧演示走红，开发者争论「端侧多模态是否 Agent 入口」</div>
-  <div class="summary">豆包 1.5 的手机实时视觉演示在开发者社区走红，争论集中于：端侧多模态究竟是「下一代 C 端 Agent 入口」，还是受限于端侧算力的过渡形态。一方认为隐私与离线能力使其不可替代，另一方指出复杂 Agent 仍离不开云端超大模型。这场争论恰与 Opus 5 的 1M 上下文（第 14 期）、Codex 持久云智能体形成「端 vs 云」的路线对照。</div>
-  <a class="source-link" href="https://volcengine.com/docs/ark/doubao-seed-1-5" target="_blank">volcengine.com</a>
-</div>
-</div>
-
-<div class="footer">
-  <p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p>
-</div>
-</div>
-
 </body>
 </html>

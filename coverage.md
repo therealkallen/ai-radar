@@ -474,6 +474,33 @@
 - 社区热议 Harness vs Codex/Claude Code：「可替换性」成关键（github.com）— 全新社区讨论
 - 「Agent 是唯一战场」：48 小时密集发布背后的共识（weste.net）— 全新社区观察
 
+### 第 25 期 (index.html) — 已定稿（8.14–8.17 窗口内）· 真实新闻
+- DeepSeek 涨价正式生效：峰谷定价，V4 Pro 高峰涨幅最高 3.5 倍（platform.deepseek.com）— 第 24 期"涨价预告"的生效落地（后续/硬进展，头条）
+- OpenAI 解散 Preparedness 防范团队，IPO 前夕安全调整（ft.com）— 全新安全事件（头条）
+- Cursor 正式被 SpaceX 收购，获全球最大 GPU 集群（cursor.com）— 全新并购事件（头条）
+- OpenAI/Anthropic 价格战：Luna 降 80%、Opus 5 半价、取消 Sonnet 5 涨价（arstechnica.com）— 全新价格事件（头条）
+- 智谱发布 GLM-5.3：编程开源第一 + 网络安全能力（zhipuai.cn）— 全新模型
+- 阿里开源 Qwen3.8 系列：27B 原生多模态 Apache 2.0（qwenlm.github.io）— 第 24 期 2.4T 后的系列开源（后续/新变体）
+- 小红书技术开源 dots3-note Preview：280B/16B 激活（github.com）— 全新开源模型
+- Cursor 并入 SpaceX：算力 + 应用垂直整合（cursor.com）— 本期 Pick 延伸（企业视角）
+- Claude 内置文本水印：SynthID-Text、欧盟合规（anthropic.com）— 全新合规功能
+- DoorDash/Airbnb 转投 DeepSeek/月之暗面（arstechnica.com）— 全新企业迁移
+- DeepSeek 涨价落地，峰谷定价重塑国产商业节奏（news.qq.com）— 本期 Pick 延伸（国内视角）
+- GLM-5.3 网络安全能力成国产新变量（zhipuai.cn）— 本期延伸
+- 国产大模型 70 天发布 10 款旗舰（eogee.com）— 全新生态数据
+- OpenAI 解散 Preparedness：安全与商业化张力（ithome.com）— 本期 Pick 延伸（国际视角）
+- 中国低价模型逼出美国巨头降价（arstechnica.com）— 本期 Pick 延伸（国际视角）
+- SpaceXAI 生态：Grok + Cursor + 算力闭环（cursor.com）— 本期 Pick 延伸
+- DeepSeek 涨价背后的商业化信号（esmchina.com）— 本期 Pick 金融映射
+- 美国降价 vs 中国涨价：AI 定价体系罕见分化（news.qq.com）— 全新金融观察
+- Cursor 并入 SpaceX 的资本逻辑：编程 Agent 成算力变现出口（cursor.com）— 本期 Pick 金融映射
+- OpenAI 解散防范团队的监管关切（ithome.com）— 本期 Pick 延伸（政策视角）
+- Claude 文本水印落地，欧盟透明度有了工程解（anthropic.com）— 本期延伸（政策视角）
+- Hugging Face 报告：开源「长尾 + 集中」并存（huggingface.co）— 全新治理数据
+- OpenAI 解散防范团队登 HN（news.ycombinator.com item 49050011）— 本期 Pick 社区视角
+- DeepSeek 涨价引发开发者重新算账（news.ycombinator.com item 49050188）— 本期 Pick 社区视角
+- Cursor 被 SpaceX 收购刷屏（news.ycombinator.com item 49050302）— 本期 Pick 社区视角
+
 > ⚠️ 第 7 期初稿曾误放 Sonnet 5 / Claude Science / Claude Tag / Daybreak / Jalapeño /
 > GPT-5.6 / HP Frontier / 首尔办公室 / NVIDIA 等——这些均已在 Issue 1–5 实时报道过。
 > 已剔除，仅保留上述真正属于本窗口的新内容。

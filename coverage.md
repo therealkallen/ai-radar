@@ -174,6 +174,24 @@
 - OpenAI × CodeAI 推 AI 素养（Hour of AI、免费一年课程）
 - 法国政府拟雇主权 AI（Mistral）排除 OpenAI
 
+### 第 28 期（8.22–8.24）
+- Stripe 以超 70 亿美元收购 OpenRouter（AI 模型路由平台）
+- 英伟达 60 亿美元授权 Poolside + 10 亿投资（Nemotron 开放权重阵营）
+- Anthropic IPO 估值冲 2 万亿美元（筹资逾 150 亿债务，CFO 列「AI 抵制」为风险）
+- 智谱 GLM-5.3 挖出 1097 个中高危漏洞后推迟开源发布
+- DeepSeek V4-Flash-Vision-Exp 首个官方视觉 API（8/21）
+- OpenAI GPT-5.6 三档（Sol/Terra/Luna）正式 GA
+- Google Gemma 开放模型累计下载破 10 亿
+- OpenAI ChatGPT 广告扩至 31 个欧洲市场（8/24 起）
+- Cloudflare Kitesurf 代理优先浏览器 + x402 稳定币支付协议
+- Hugging Face《开放模型现状 2026 夏季》：中国领跑开源基座
+- Anthropic 挖来 ex-Google TPU 负责人 Amir Salek；Broadcom 筹划 600 亿 AI 芯片债务
+- OpenAI GPT-5.6 Sol API 再降 >20%（输入 $5→$4、输出 $30→$20）
+- Nvidia AI 服务器 2027 起涨价 15%（DRAM 短缺）
+- OpenAI 反转支持加州 SB 53 前沿模型训练期监控法案
+- 荷兰对 Uber 开 €8.25 亿 GDPR 罚单（算法自动停司机）
+- DeepSeek Harness vs OpenAI Codex Harness：8 天涌现 2600+ 插件仓库
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

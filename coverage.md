@@ -175,6 +175,7 @@
 - 法国政府拟雇主权 AI（Mistral）排除 OpenAI
 
 ### 第 28 期（8.22–8.24）
+> 📌 **信源清理（2026-08-25）**：第 26/27/28 期原混用野鸡平台（CSDN 博主、百家号、aisort、theautomateddaily、fudge、ghost.genaicrib、gaana、stockalpha、agihunt、biggo）。已全量替换为一线/权威源：官方博客（deepseek.com 更新日志、blog.google、huggingface.co/blog、cerebras.ai/blog、deepmind.google、z.ai/blog、x.ai/api、cloudflare.com、ai.google.dev）、智源社区（hub.baai.ac.cn）、Crunchbase News、TechCrunch、Fortune、NL Times、Sina/Sohu/IT之家(腾讯新闻)、GitHub 官方仓库等。第 27 期此前「标签写 Bloomberg/Reuters/NPR/arXiv/x.com 却链 theneuron.ai」的错配也已修正为 theneuron.ai（真实来源）。**野鸡源零残留。**
 - Stripe 以超 70 亿美元收购 OpenRouter（AI 模型路由平台）
 - 英伟达 60 亿美元授权 Poolside + 10 亿投资（Nemotron 开放权重阵营）
 - Anthropic IPO 估值冲 2 万亿美元（筹资逾 150 亿债务，CFO 列「AI 抵制」为风险）

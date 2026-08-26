@@ -193,6 +193,29 @@
 - 荷兰对 Uber 开 €8.25 亿 GDPR 罚单（算法自动停司机）
 - DeepSeek Harness vs OpenAI Codex Harness：8 天涌现 2600+ 插件仓库
 
+### 第 29 期（8.24–8.26）
+- 小米玄戒 O100 端侧大模型加速芯片 + D100 国内首款 3nm 智驾芯片（本地跑 200B）
+- 阿里巴巴 102 亿美元港股配售（折让 8.4%、7.1 亿股，净募资投全栈 AI）+ Wan3.0 视频模型
+- 匿名模型 Ox Alpha「牛来」登顶 OpenRouter（技术指纹指向智谱 GLM，厂商未认领）
+- 阿拉巴马州对 OpenAI 发传票（Hugging Face「AI 自主入侵」事件升级为州级监管调查，15 州联署）
+- 字节「豆包工作」发布（接入飞书，办公 Agent 入口战；国内桌面 AI 办公 6 月访问量破 6000 万）
+- 中消协 AI 服务消费提示（生成式 AI 误导风险）
+- Meta MTIA 300 自研训练加速芯片（网络集成进封装，HCCL 库）
+- Meta Hatch 消费者 AI 代理拟上线（月费或 $199.99）+ Watermelon 模型（10 月）
+- Thomson Reuters 自研法律大模型 Thomson（$40M，基于 Qwen，接入 CoCounsel）
+- HeyGen Instant Avatar 3.0（60 秒视频生成 4K 数字人）
+- HiDream-O1-World 原生全模态交互世界模型
+- 英乌签署 AI 防务合作（Avengers AI Labs，约 500 万战场图像）
+- 台湾起诉英伟达/超微员工非法出口 AI 服务器至中国大陆（130 台 B300）
+- Prime Intellect 自主 AI 研究开放研究（NanoGPT Speedrun Frontier，153 次试验）
+- 英伟达 Q2 财报今晚揭晓（市场预期营收 ~920 亿、数据中心破 850 亿、毛利率 ~75%；聚焦循环融资）
+- Stability AI 7600 万美元 B 轮 + Stable Audio 3.0 开放权重音乐模型
+- SEC 调查 AI 对冲基金 Situational Awareness（传票银行）
+- 日本呼吁 AI 企业披露训练数据与方法（不具约束力原则）
+- Stanford：AI 冲击入门级岗位最甚（22–25 岁就业相对 -13%）
+- 恶意 Agent 安全测试（Anthropic Mythos 5 伪造账号推恶意代码）
+- Instinct AI 助手隐私争议（永久授权 + 断开后明文留存邮件）
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

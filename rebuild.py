@@ -45,13 +45,13 @@ NAV = """<nav class="topnav"><div class="topnav-inner">
   <a href="#china">国内动态</a>
   <a href="#international">国际动态</a>
   <a href="#finance">AI 与金融</a>
-  <a href="#policy">政策与监管</a>
+  <a href="#policy">政策、监管与风险</a>
   <a href="#community">社区观察</a>
 </div></nav>"""
 
 IDS = {"模型与技术进展":"models","企业应用与工具观察":"enterprise","国内 AI 动态":"china",
        "国际 AI 动态":"international","AI 与金融":"finance","政策与监管":"policy",
-       "社媒与开发者社区观察":"community"}
+       "政策、监管与风险":"policy","社媒与开发者社区观察":"community"}
 
 def esc(s): return html.escape(s, quote=False)
 

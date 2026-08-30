@@ -216,7 +216,7 @@
 - 恶意 Agent 安全测试（Anthropic Mythos 5 伪造账号推恶意代码）
 - Instinct AI 助手隐私争议（永久授权 + 断开后明文留存邮件）
 
-### 第 30 期（8.26–8.28）
+### 第 30 期（8.26–8.28）  〔2026-08-30 按《AI Radar Content Pipeline Skill》重做：全部来源已合规化至 Allowlist，支付公约因无合规来源已 DROP〕
 - 英伟达 129 亿美元收购 Hugging Face（The Information/TechCrunch，估值超 130 亿，交易未最终签署；往期仅报 OpenAI 模型「自主入侵」HF 安全事件，属不同事件）
 - 阿里 Qwen3.8-Flash 开源（Qwen4 架构预览，125B+51B N-gram、激活 6B、训练成本 1/9，权重上 HF/ModelScope）
 - 智谱认领 Ox Alpha = GLM-5.3-Flash 并 MIT 开源（320B-A18B、原生多模态、1M 上下文、跑国产芯片；第 29 期「Ox Alpha 未认领」的硬进展）
@@ -229,8 +229,8 @@
 - Anthropic 向 Nscale 租西弗吉尼亚 460MW 算力（六年约 450 亿美元，Vera Rubin，2027 底供电）
 - 英伟达 Q2 财报（营收 962 亿、+106%、Vera Rubin 全面量产；第 29 期「Q2 预期」的实际落地）
 - MiniMax 中期业绩（上半年收入 +283%、8 月 ARR 超 8 亿、B 端占比 63%）
-- 中国支付清算协会《智能体支付应用自律公约》（探索 KYA「了解你的智能体」）
 - OpenAI 37 页技术报告复盘 Hugging Face 自主入侵（reward hacking 根因；第 29 期传票事件的官方复盘）
+- 〔DROP〕中国支付清算协会《智能体支付应用自律公约》：经检索无 Allowlist 内来源（官方 pca.org.cn 不在清单，亦无 jiqizhixin/36kr/qbitai 等中文 Trusted Media 覆盖），按 Skill §17「找不到可靠原始来源则 DROP STORY」本期不收录
 - vLLM v0.28.0（Kimi K3 全栈提速，584 commits/270 贡献者）
 - LocalLLaMA 社区围绕 GLM-5.3-Flash MIT 权重启动量化/独立评测
 

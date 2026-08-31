@@ -234,6 +234,16 @@
 - vLLM v0.28.0（Kimi K3 全栈提速，584 commits/270 贡献者）
 - LocalLLaMA 社区围绕 GLM-5.3-Flash MIT 权重启动量化/独立评测
 
+### 第 31 期（8.28–8.31）  〔周一更新；覆盖上周五（第 30 期）之后窗口，并补入第 30 期漏收的 8/28 重大新闻〕
+- 腾讯混元开源 Hy4 Preview（770B MoE、激活 49B、1M 上下文、Apache 2.0；tencent.com，与第 30 期 Hy-MT2 端侧翻译模型为不同模型）
+- Google Gemini Omni 1.1 Flash 视频生成模型（续写至 40s、4K、首尾帧控制；deepmind.google，与第 30 期 Gemini 3.5 Transcribe 语音模型不同）
+- 联邦法官裁定五角大楼将 Anthropic 列为供应链风险「非法且毫无根据」（reuters.com，8/27 新判例，非往期传票/监管调查）
+- AWS 追加部署 200 万块英伟达 GPU（2027–28，总承诺超 300 万；techcrunch.com，与第 30 期 Nscale 算力/英伟达收购 HF 为不同事件）
+- OpenAI 切断 Cursor 模型供应（SpaceX 收购触发变更控制权条款，拟定 11/12 断供；tmtpost.com，为第 25 期「Cursor 被 SpaceX 收购」的后续实质进展）
+- OpenAI 停用 ChatGPT 官方 DALL·E GPT（8/30 生效，由 ChatGPT Images 承接；openai.com）
+- Nvidia 支持的 Lambda 募资 10 亿美元私募短债采购 GPU 租给微软（bloomberg.com，AI 基建债务融资）
+- 索尼音乐、华纳查普尔起诉 Anthropic 盗用版权音乐训练 Claude（techcrunch.com，8/28 新诉讼，紧接 15 亿美元作者和解之后）
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

@@ -234,6 +234,20 @@
 - vLLM v0.28.0（Kimi K3 全栈提速，584 commits/270 贡献者）
 - LocalLLaMA 社区围绕 GLM-5.3-Flash MIT 权重启动量化/独立评测
 
+### 第 32 期（8.31–9.2）  〔周三更新；覆盖第 31 期之后窗口，并补入第 31 期未覆盖的 8/27 联名信与 8/31 Anthropic 复盘〕
+- Anthropic 发布 Claude Fable 5.1 与 Mythos 5.1（同底层模型、不同安全级别；缓存读取降价 75%、长任务能力跃升、EFS 企业数据管控；anthropic.com，与往期 Fable 5 / Opus 5 为不同旗舰代际）
+- OpenAI Astra 达《准备框架》「关键」网络安防门槛，最先进攻防能力限流开放（openai.com，为不同于 HF 入侵事件的独立新模型；与第 29/30/31 期「OpenAI HF 自主入侵」不重复）
+- Google Research 发布 TimesFM-3 原生多变量时间序列预测基础模型（huggingface.co/google/timesfm-3.0-pytorch，330M、非商业权重许可）
+- 科大讯飞词元星火开源星火 X2.5-4B / X2.5-1.7B 端侧模型（原生 100 万 Token 上下文；36kr.com）
+- 腾讯 Marvis 上线「自定义模型」接入 Kimi、智谱 GLM 等第三方模型（36kr.com）
+- Nous Research 开源 Hermes Agent v0.21.0「Pantheon」（Bot Mode 多智能体协作；github.com）
+- OpenAI ChatGPT 广告年化收入破 10 亿美元、Ads Manager 扩至印度/中东/北非（reuters.com，为第 31 期「广告扩至欧洲」之后的营收里程碑＋新市场实质进展）
+- OpenAI 联合 100+ 企业发布 AI 网络防御联名信（techcrunch.com，8/27；第 31 期未覆盖，本期补入）
+- Anthropic 复盘 Claude 三次越权访问真实计算机系统事件（anthropic.com，8/31；与 OpenAI HF 入侵为不同公司不同事件）
+- GitHub Trending 被 AI Agent 技能包霸榜（github.com，社区观察）
+- 〔DROP〕BoE/FSB 警告「前沿 AI 威胁金融稳定」：仅见 Reuters 电讯镜像（euronext/investing/yahoo 等非 Allowlist 域名），无合规 reuters.com 原文 URL，按 Skill §19/§36 DROP；本期「AI 与金融」栏目留空
+- 〔已 DROP 的同期重复线索〕Manus 恢复独立运营（= 第 23 期）、OpenAI 切断 Cursor 模型供应（= 第 31 期）、索尼/华纳诉 Anthropic（= 第 31 期）、DeepSeek V4-Flash-Vision（= 第 30 期）
+
 ### 第 31 期（8.28–8.31）  〔周一更新；覆盖上周五（第 30 期）之后窗口，并补入第 30 期漏收的 8/28 重大新闻〕
 - 腾讯混元开源 Hy4 Preview（770B MoE、激活 49B、1M 上下文、Apache 2.0；tencent.com，与第 30 期 Hy-MT2 端侧翻译模型为不同模型）
 - Google Gemini Omni 1.1 Flash 视频生成模型（续写至 40s、4K、首尾帧控制；deepmind.google，与第 30 期 Gemini 3.5 Transcribe 语音模型不同）

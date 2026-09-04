@@ -234,6 +234,34 @@
 - vLLM v0.28.0（Kimi K3 全栈提速，584 commits/270 贡献者）
 - LocalLLaMA 社区围绕 GLM-5.3-Flash MIT 权重启动量化/独立评测
 
+### 第 33 期（9.2–9.4）  〔周五更新；覆盖第 32 期之后窗口。全部条目来源均落在 Allowlist 内，并逐条读取官方/权威原文正文后撰写〕
+- 英伟达正式宣布 129.303 亿美元收购 Hugging Face（blogs.nvidia.com，9/3 官宣并签署最终协议；1800 万开发者/300 万模型/50 万数据集/100 万应用/20 万+ 公司，承诺保持开放平台；为第 30 期「深度谈判、未最终签署」的硬进展）
+- OpenAI 正式发布 GPT-6 Astra（techcrunch.com，9/3；Daybreak 客户优先、一周内覆盖付费档与 API；编码/计算机使用基准高于 Sol 与 Fable；不透明循环推理削弱思维链可监测性引发争议；为第 32 期「达 Critical 门槛、限流开放」的硬进展）
+- 谷歌发布 Gemini 3.8 Flash 与 3.8 Flash Cyber（blog.google，9/2；推广期 $0.75/$3.75 至 2026 年底、2027 年起 $1.50/$7.50；CWE-Bench pass@1 47.2%；Cyber 版经 Fairwind 计划限受审核防御方）
+- Google DeepMind 发布 WeatherNext 3 气象模型（blog.google，9/3；小时级更新、关键地表变量 5 公里分辨率、较上代约清晰 5 倍；上线搜索/Gemini/地图/Maps Platform/Earth Engine）
+- OpenAI ChatGPT for Healthcare 接入 Epic 电子病历 + Healthcare Public Data 插件（openai.com，9/2；只读不回写；九大官方数据源；UCSF Health 试点；4363 次医师评分中 99.1% 判安全）
+- Anthropic 开源电商智能体蓝图 commerce-agents（github.com，9/2；Apache 2.0；购物代理＋商家代理、零售/旅游/电信/票务四示例；写入操作均设人工审批）
+- 阿里云 Qwen3.8-Max 升级至 0902 快照（aliyun.com，9/2 公告、9/5 10:00 生效；编码/协作智能体/视觉理解增强，延续 100 万上下文，计费不变）
+- 腾讯 WorkBuddy 开放平台上线（36kr.com，9/2 深圳生态发布会；首批超百家伙伴、9 款联名硬件、30 余个行业应用、开放技能/专家/连接器）
+- ChatGPT、Claude、Grok 9/3 同日集体宕机（theverge.com；OpenAI 状态页记录 ChatGPT/Codex 错误率升高，Anthropic 称基础设施问题，Grok 网页与移动端中断；无证据表明同源）
+- 月之暗面保密递交港交所 A1、Pre-IPO 估值约 500 亿美元（36kr.com，9/3；公司回应不予置评；ARR 从 3 月初超 1 亿增至 6 月中旬超 3 亿美元，API 收入占七成以上）
+- 美国司法部首次就 AI 版权案表态支持 OpenAI（theverge.com，brief 9/1 提交、9/2 报道；主张训练属合理使用，仅具咨询性质；纽约时报回应）
+- 欧盟委员会依《数字服务法》将 ChatGPT 指定为超大型在线搜索引擎、Reddit 与 Roblox 为超大型在线平台（digital-strategy.ec.europa.eu，8/31；4500 万月活门槛，2027 年 1 月前履行系统性风险评估等义务）
+- Hacker News：Gemini 3.8 Flash 发布帖 1143 分/654 评论居本窗口首位，讨论聚焦六周三款 Flash 的迭代节奏与基准落差（news.ycombinator.com）
+- Hacker News：「三大模型为何同时宕机」提问帖 328 分/524 评论，社区聚焦共享云基础设施单点故障与企业侧容灾（news.ycombinator.com）
+- 〔DROP〕Meta Muse Spark 1.3（9/2）：无 ai.meta.com 官方原文，亦无中文 Trusted Media 覆盖（仅 techtimes.com/百度百科/门户转载）→ Skill §17
+- 〔DROP〕腾讯开源混元 Hy4 preview（9/3）：与第 31 期同一事件，无新硬进展 → 重复
+- 〔DROP〕智谱 GLM-5.3-Flash 原生多模态（9/3）：与第 30 期同一模型无硬进展 → 重复；阿里 Qwen3.8-Flash-Next 同理（对照第 30 期 Qwen3.8-Flash）→ 重复
+- 〔DROP〕Cursor Self-Hosted Machines（9/2）：cursor.com 不在 Allowlist → Skill §17
+- 〔DROP〕World Labs Atlas（9/1）：worldlabs.ai 不在 Allowlist 且无 trusted media 原报道 → Skill §17
+- 〔DROP〕Google Workspace AI 设计工具 Pics：blog.google 目标页 404，未找到官方原文 → Skill §17
+- 〔DROP〕开源项目关闭外部 PR / Vercel 软件工厂：canonical 仅见 Latent Space 转述（oo.news、aibreakingwire 等聚合域），无 vercel.com 官方原文 → Skill §17
+- 〔DROP〕中央网信办「清朗·整治 AI 应用乱象」第二阶段（9/3）：原文在 paper.people.com.cn（不在 Allowlist），未找到 cac.gov.cn 同源公告 → Skill §17
+- 〔DROP〕Anthropic × Lambda 350 亿美元云协议：未见合规 reuters.com 原文 URL（多为镜像/转载域），与第 32 期 BoE/FSB 同样处理 → Skill §19/§36
+- 〔DROP〕燧原科技科创板申购（9/2）：仅见 21 财经/新浪/证券时报，未定位到 36kr/jiqizhixin/tmtpost 原文 → Skill §17
+- 〔DROP〕AI Token 价格指数跌至 97 美分（CNBC 9/1 报道）：未检索到可直接引用的 cnbc.com 原文 URL（仅见 qz.com 与转载）→ Skill §17
+- 〔DROP〕小鹏机器人 9 亿美元融资：事件发生于 8/24，超出本窗口 → 时间窗不符
+
 ### 第 32 期（8.31–9.2）  〔周三更新；覆盖第 31 期之后窗口，并补入第 31 期未覆盖的 8/27 联名信与 8/31 Anthropic 复盘〕
 - Anthropic 发布 Claude Fable 5.1 与 Mythos 5.1（同底层模型、不同安全级别；缓存读取降价 75%、长任务能力跃升、EFS 企业数据管控；anthropic.com，与往期 Fable 5 / Opus 5 为不同旗舰代际）
 - OpenAI Astra 达《准备框架》「关键」网络安防门槛，最先进攻防能力限流开放（openai.com，为不同于 HF 入侵事件的独立新模型；与第 29/30/31 期「OpenAI HF 自主入侵」不重复）

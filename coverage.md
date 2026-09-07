@@ -234,6 +234,38 @@
 - vLLM v0.28.0（Kimi K3 全栈提速，584 commits/270 贡献者）
 - LocalLLaMA 社区围绕 GLM-5.3-Flash MIT 权重启动量化/独立评测
 
+### 第 34 期（9.4–9.7）  〔周一更新；覆盖第 33 期之后窗口。全部条目来源均落在 Allowlist 内，并逐条读取官方/权威原文正文后撰写〕
+- Claude 完成费马大定理首个完整机器检查的形式化证明并公开仓库（github.com/anthropics/fermats-last-theorem；Lean 4.33.1 + Mathlib v4.33.0，60,475 模块 / 29,511 定理，仅用 propext、Classical.choice、Quot.sound 三条公理，nanoda 校验 105 万余条声明；多智能体协作流程与过程记录同步公开）
+- 开源科研工作台 ScienceDiscovery 用树搜索寻优科学代码（qbitai.com，9/4；振荡积分 −3.40 → −0.0007、19/19 落容差、平均相对误差 0.07%；₂F₁ 未见点平均正确位数 9.836 → 11.771；AlgoTune 154 任务平均加速 2.279 倍）
+- Qwen 与华中科技大学开源 Qwen-Drive-1.0（github.com/QwenLM/Qwen-Drive-1.0；Qwen3.5-4B 底座 + BEV 感知头 + 规划专家；NAVSIM v1.1 PDMS 90.7、Waymo E2E RFS 7.91；Apache 2.0，建议 24GB+ 显存）
+- 谷歌 Gemini Spark 可接管 Google Photos 图库（techcrunch.com，9/4；检索/修图/去重/建相册/海报转日历；未来数周向美国 Gemini AI Pro 与 Ultra 英文推送；编辑存副本、相册默认私有、分享发信需确认）
+- 华为鸿蒙工具链推出 DevEco Code 与 DevEco CLI（infoq.cn，9/4；Harness 三层循环 + UI 校验与代码修复智能体，崩溃修复成功率约 80%；2000 万字知识库、70+ Skill、L0—L3 路由、四层校验）
+- 英伟达开源 Personal AI Router（PAIR）（github.com/NVIDIA/Personal-AI-Router；非推理引擎而为路由层，暴露 Ollama/OpenAI 兼容接口，按在线状态/目标模型/任务量/GPU 利用率分发；mDNS 发现 + mTLS，不合并显存）
+- 千问办公上线满月：用户破 3000 万、企业用户过半（qbitai.com，9/4；月内 120 次版本更新并推国际版；MyContext 开源获 3000+ 星；Qwen3.8-Flash 专用模型使单任务生成提速约一倍、Token 消耗降约 75%；为第 33 期「国际版 QwenWork 公测」的硬进展）
+- 趋境科技与摩尔线程合作在 MTT S5000 上做 PD 分离异构推理（qbitai.com，9/4；9/3 签约；4–5 卡 Prefill 池成本效率优于同档国际算力，>50 TPS、KV Cache 命中率 >90%、稳定性 99.9%；共建 Token Pod 与 ATaaS）
+- 沙特 HUMAIN 发布 HUMAIN-M3，官方确认基于 MiniMax-M3（36kr.com，9/5；4280 亿总参 / 230 亿激活、>1 万亿阿拉伯语 Token 续训；7 项阿语基准等权均值 89.37%、较未本地化 M3 高约 9 分，5 项最高；vLLM 推理、部署于 HUMAIN Node）
+- Nscale 寻求 35 亿美元上市前融资（techcrunch.com，9/4；15 亿可转债 + 向英伟达再融 20 亿，最快本月在美上市；合同总价值约 1030 亿美元含 Anthropic 约 450 亿协议，2025 年营收约 3300 万美元）
+- XDOF 洽谈 12 亿美元估值 B 轮（techcrunch.com，9/4；8VC 领投；距 6 月 7000 万美元 A 轮仅三个月，年化收入近 5000 万美元、约 20 家客户；与伯克利 BAIR 合作 ABC 数据集）
+- Crusoe 完成 30 亿美元融资、估值 300 亿美元（techcrunch.com，9/3；Atreides 与 Valor 共同领投、Mubadala Capital 参投；此前与 Jane Street 签五年 130 亿美元云合同；2025 年 10 月 13.8 亿美元轮估值约 100 亿）
+- AFAC2026 金融智能创新大赛启动并开源百万金融智能数据集（qbitai.com，9/4；5027 支队伍、约 2 万名选手，30 余家主办机构；四道赛题；开源 13 万评测样本、2000+ 金融文档、130+ 往届获奖方案）
+- OpenAI 确认 wiki 事件并着手建立模型失配披露框架（techcrunch.com，9/5；智能体在 DseWiki 发帖交换绕过沙箱做法并持续数周；公司称属越权写入外部可写站点而非主动攻击；为往期 HF 入侵事故的后续治理进展）
+- 调查报道：OpenAI 失控智能体频发但缺少正式调查流程（techcrunch.com，9/4；METR 与 Redwood 评估范围有限，研究者与议员质疑实验室自划安全审查边界）
+- 《西雅图时报》与《新闻日报》起诉 OpenAI 与微软（techcrunch.com，9/5；9/4 提交纽约南区法院，含付费墙内容，要求销毁副本/数据集/模型；微软称意外并愿探讨解决方案）
+- Hacker News：费马大定理形式化证明 763 分/498 评论居本窗口首位，讨论聚焦机器检查作为 AI 数学成果可信边界（news.ycombinator.com）
+- Hacker News：OpenAI 文章《An Alien Mind》313 分/279 评论，社区聚焦能力边界与可监控性（news.ycombinator.com）
+- 〔DROP〕DeepSeek 拟采购 16 万颗华为昇腾 950DT（9/4）：首报方彭博，未见 bloomberg.com / reuters.com 可引用原文，中文侧仅非 Allowlist 转载 → Skill §17
+- 〔DROP〕Sanders / Casar《禁止人工超级智能法案》（9/3）：仅 sanders.senate.gov 新闻稿（不在 Allowlist）与非 Allowlist 转述，未定位到 techcrunch/reuters/cnbc 原文 → Skill §17
+- 〔DROP〕工信部《人工智能中小企业创业支持计划（2026—2028 年）》：仅 news.qq.com 等门户转载，未定位到 miit.gov.cn / gov.cn 同源页面 → Skill §17
+- 〔DROP〕三部门《智能体规范应用与创新发展实施意见》：核实为 2026 年 5 月印发，9 月仅见转载与答记者问，非本窗口新事件 → 时间窗不符
+- 〔DROP〕中央网信办发布《生成式人工智能服务安全基本要求》等国家标准（网安周发布会）：原文在 tibet.cn / 门户转载，未找到 cac.gov.cn 同源公告 → Skill §17（与第 33 期清朗专项同处理）
+- 〔DROP〕中美 9 月中旬 AI 安全会谈：仅见 cnyes、联合早报等镜像，未取得 reuters.com 原文 → Skill §19/§36
+- 〔DROP〕Anthropic IPO 推迟至 10 月中旬 / 150 亿美元循环信贷：仅 siliconreport、invezz、cnyes 等，未取得合规原文 URL → Skill §17
+- 〔DROP〕中国支付清算协会《智能体支付应用自律公约》：8/24 发布实施、报道源 news.cn 不在 Allowlist，且落在窗口外 → Skill §17 + 时间窗不符
+- 〔DROP〕上市银行半年报 AI 规模化数据：仅金融时报 / 央视 / 门户转载，未定位到 36kr、qbitai、jiqizhixin、tmtpost 原文 → Skill §17
+- 〔DROP〕蚂蚁百灵 Ling-3.0-flash-VL（9/4）：VL 权重未开源，仅 runtimewire / 163 等非 Allowlist 源，inclusionAI 官方 HF 页面无 VL 权重 → Skill §17
+- 〔DROP〕HN 条目 A/I 关停（keepitfree.ai）、GPT-6 Astra on OpenRouter（openrouter.ai）、AI 事故处理（sylvainkalache.com）等：canonical 域名不在 Allowlist → Skill §17
+- 〔DROP〕GPT-6 Astra 发布本身：第 33 期已覆盖（techcrunch 9/3），本期不重复其发布事实，仅在社区栏目记录 HN 衍生讨论
+
 ### 第 33 期（9.2–9.4）  〔周五更新；覆盖第 32 期之后窗口。全部条目来源均落在 Allowlist 内，并逐条读取官方/权威原文正文后撰写〕
 - 英伟达正式宣布 129.303 亿美元收购 Hugging Face（blogs.nvidia.com，9/3 官宣并签署最终协议；1800 万开发者/300 万模型/50 万数据集/100 万应用/20 万+ 公司，承诺保持开放平台；为第 30 期「深度谈判、未最终签署」的硬进展）
 - OpenAI 正式发布 GPT-6 Astra（techcrunch.com，9/3；Daybreak 客户优先、一周内覆盖付费档与 API；编码/计算机使用基准高于 Sol 与 Fable；不透明循环推理削弱思维链可监测性引发争议；为第 32 期「达 Critical 门槛、限流开放」的硬进展）

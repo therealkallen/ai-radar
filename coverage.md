@@ -234,6 +234,36 @@
 - vLLM v0.28.0（Kimi K3 全栈提速，584 commits/270 贡献者）
 - LocalLLaMA 社区围绕 GLM-5.3-Flash MIT 权重启动量化/独立评测
 
+### 第 35 期（9.7–9.9）  〔周三更新；覆盖第 34 期（9/7 上午发布）之后窗口。全部条目来源均落在 Allowlist 内，并逐条读取官方/权威原文正文后撰写〕
+- OpenAI 公布纳维-斯托克斯千禧年难题的证明（openai.com，9/8；多组智能体并行约 88 小时后于 9/5 得解，GPT-6 Astra 用约 17 小时完成 Lean 形式化与验证；全部尝试 490 万条消息 / 约 3000 亿输出 token，该问题占 270 万条消息 / 约 1300 亿 token；不申领百万美元奖金。与第 34 期「Claude 费马大定理形式化证明」为不同问题，属独立事件）
+- Meta 在美国推出个人智能体 Muse（ai.meta.com，9/8；Muse App / muse.ai / WhatsApp 入口；专用虚拟机常驻后台执行；敏感操作需确认、结账用一次性卡号、对话不进广告系统；免费 + 20/100 美元两档订阅。与第 34 期「Gemini Spark 接管 Photos」为不同公司不同产品）
+- Mistral 完成 30 亿欧元 D 轮、投后估值超 210 亿欧元（techcrunch.com，9/8；三星电子领投，EQT 管理的 Scaleup Europe Fund 与 PSG Equity 共同领投；称欧洲科技公司最大股权融资；2030 年欧洲 1GW 算力目标、覆盖 20 国）
+- 最高人民法院发布《关于依法审理涉人工智能纠纷案件的意见》（court.gov.cn，9/7 新闻发布会；5 部分 24 条，首部最高审判机构涉 AI 裁判规则文件；AI 换脸拟声侵害人格权益、训练数据合理使用已公开个人信息、自动驾驶等场景归责）
+- 智象未来发布具身世界模型 HiDream-O1-Embodied（qbitai.com，9/7；RoboColiseum 扰动适应子榜 0.692 分登顶；打通图像/视频/3D/动作模态）
+- Mostik 用 4B 端侧 Qwen-3.5 + 云端 753B GLM-5.2 刷 ARC-AGI 3（qbitai.com，9/7；补齐约 50% 性能差距、准确率 +25%、难题子集提升 2 倍；技术细节待赛后公开）
+- Google DeepMind 推出 AlphaGenome Atlas（blog.google，9/8；预计算约 90 亿个单核苷酸变异的调控影响，约 1PB 数据集；AVI 评分合并编码区与非编码区预测）
+- 谷歌云与埃森哲成立 Accenture Gemini Enterprise Business Group（techcrunch.com，9/8；培训至多 1000 名 FDE，组织隶属埃森哲）
+- 国内首份《中国办公 Agent 用户行为不完全报告》发布（qbitai.com，9/7；基于 LobsterAI 真实数据；北京居首，Top5 城市约 27%，海外 12.75%；前 20% 用户消耗 87.4% 算力、前 5% 占 53.5% token；付费/免费倍数 6.2/5.2/3.0）
+- 千问办公推出「多人工作台」（qbitai.com，9/7；最多百人协作，含角色权限、云端数据库、管理后台、在线发布；为第 33/34 期千问办公系列的硬进展）
+- 王云鹤创办的基元律动发布 NeoHorse-1（qbitai.com，9/8；4B/9B 两版，无问芯穹供算力，清华北大参与算法；10 项评测中后训练 4B 达到/略超 9B 基础模型）
+- 深度智控完成数亿元 B+ 轮（qbitai.com，9/8；宁德时代领投，Aramco Ventures 等跟投；两个月内三轮融资）
+- 中科类脑完成数亿元 B+ 轮（qbitai.com，9/7；中车资本领投，银杏谷/水木/启迪跟投）
+- Cognition 完成 20 亿美元融资、估值 480 亿美元（techcrunch.com，9/8；a16z、Accel、Founders Fund、General Catalyst、Avenir 领投；ARR 4.92 亿 → 9 亿美元；The Information：今年现金消耗或达 8 亿美元）
+- NextEra 获美国能源部 19 亿美元贷款重启 Duane Arnold 核电站（techcrunch.com，9/8；谷歌拟在附近建最多六座数据中心；2029 年重启）
+- AFAC2026 金融智能创新大赛进入总决赛（qbitai.com，9/8；5000+ 队伍、近 2 万选手，三方评委路演评审；为第 34 期「AFAC 启动 + 数据集开源」的后续阶段）
+- 黑客盗用 Claude 订阅用户 token 额度（techcrunch.com，9/8；被入侵会话密钥签发未授权 Claude Code OAuth 令牌；账户支持不提供逐项用量明细）
+- 纳维-斯托克斯成果的优先权争议（techcrunch.com，9/8；NYU Buckmaster 与 Anthropic Alpöge 的声明 vs OpenAI 公告：OpenAI 承认 9/1 启动、称未接触对方工作但无法排除去标识化数据影响）
+- HN：Buckmaster 声明 PDF 1217 分 / 532 评论、OpenAI 公告页 1088 分 / 947 评论、Meta Muse 274 分 / 264 评论
+- 〔DROP〕高通与亚马逊最高 600 亿美元芯片采购 + 2500 万股认股权证（9/8）：细节仅见 8-K 与 hothardware / tipranks 等非 Allowlist 源，未定位到 techcrunch.com / reuters.com / cnbc.com 原文 → Skill §17
+- 〔DROP〕重庆获工信部批复建设国家人工智能产业创新应用先导区（9/8）：仅见央广网、重庆日报与门户转载，无 miit.gov.cn 同源公告，亦无 Allowlist 中文媒体报道 → Skill §17
+- 〔DROP〕工信部《人工智能应用服务商培育专项行动》通知：印发时间为 8/31，落在第 34 期窗口内，非本期新事件 → 时间窗不符
+- 〔DROP〕OpenAI CFO 在高盛会议称企业业务年化营收 7 月环比 +32%（9/8）：未取得 openai.com 或 Allowlist 媒体原文
+- 〔DROP〕Anthropic 招股说明书推迟至 9 月底：仅见 Reuters 内容的二手转述，无合规 reuters.com 原文 URL → Skill §19/§36
+- 〔DROP〕OpenAI 首席科学家 Pachocki 关于推理模型风险的表态：仅见媒体转述，未定位到 openai.com 原文页面
+- 〔DROP〕苹果 9/9 秋季发布会：核心为消费硬件，TechCrunch 相关页面为观看指南，非可核实的 AI 事件
+- 〔DROP〕GOSIM Shenzhen 议程、WAIC CONNECT MALAYSIA 首日、B 站 AI 创造公开赛收官、GPT-6 Sol 内测曝光等：会议/活动类或信息增量有限，按重要性取舍
+- 〔DROP〕HN 条目 Kimi K3 本地推理（github.com/argonautlabsai/deltafin）、Qwen3.8 量化基准（quesma.com，域名不在 Allowlist）、i-have-adhd（github.com）等：社区栏目容量所限择要收录三条
+
 ### 第 34 期（9.4–9.7）  〔周一更新；覆盖第 33 期之后窗口。全部条目来源均落在 Allowlist 内，并逐条读取官方/权威原文正文后撰写〕
 - Claude 完成费马大定理首个完整机器检查的形式化证明并公开仓库（github.com/anthropics/fermats-last-theorem；Lean 4.33.1 + Mathlib v4.33.0，60,475 模块 / 29,511 定理，仅用 propext、Classical.choice、Quot.sound 三条公理，nanoda 校验 105 万余条声明；多智能体协作流程与过程记录同步公开）
 - 开源科研工作台 ScienceDiscovery 用树搜索寻优科学代码（qbitai.com，9/4；振荡积分 −3.40 → −0.0007、19/19 落容差、平均相对误差 0.07%；₂F₁ 未见点平均正确位数 9.836 → 11.771；AlgoTune 154 任务平均加速 2.279 倍）

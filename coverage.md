@@ -234,6 +234,33 @@
 - vLLM v0.28.0（Kimi K3 全栈提速，584 commits/270 贡献者）
 - LocalLLaMA 社区围绕 GLM-5.3-Flash MIT 权重启动量化/独立评测
 
+### 第 37 期（9.11–9.14）  〔周一更新；覆盖第 36 期（9/11 上午发布）之后窗口。全部条目来源均落在 Allowlist 内，并逐条读取官方/权威原文正文后撰写〕
+- Anthropic CEO Dario Amodei 发文《We Must Pace the Frontier》并提出三步「前沿定速」方案（techcrunch.com，9/12；一、前沿公司向 METR 等第三方评估方开放员工级常驻访问，二、民主国家内部协调安全标准与能力推进上限，三、国际协调；Anthropic 单边承诺第一步：工位、工牌、公司电脑，评估方可不受公司编辑控制发表结论；理由为 RSI 已在行业出现 + OpenAI–Hugging Face 智能体集群事件，称 6—12 个月后同类集群可能以僵尸网络控制互联网；Altman 与马斯克随后公开认同）
+- Altman 称 OpenAI 2026 年不会上市（techcrunch.com，9/12；《财富》主编 Alyson Shontell 访谈，已秘密递表但「考虑到安全情况现在上市不明智」，将在业务与社会时机合适时上市）
+- Kimi K2.8 Preview 全量上线 Kimi Code 与 Kimi Work（qbitai.com，9/12 报道、9/11 上线；综合性能称接近 K3、编码与 Agent 能力较 K2.7 Code 提升，low/high/max 三档思考强度＋图片视频输入，1M 上下文向含免费档的全部会员开放，Model ID kimi-for-coding 无感升级，未公布 benchmark）
+- 小米开源目标说话人语音识别模型 Xiaomi-CocktailASR-1（github.com/xiaomi-research/xiaomi-cocktailasr-1，9/11 commit；参考音频声纹提示只转录目标说话人；LibriMix 2mix WER 4.11%、LibriSpeechMix 2mix 2.90%，同表 Qwen3-ASR 68.75%、Gemini 48.41%；负样本拒识 + CoT；Apache 2.0，权重在 HF Ease3/Xiaomi-CocktailASR-1）
+- 亮源新创发布 LightNav-0 导航模型（qbitai.com，9/13；2000+ 真实场景进仿真、零样本适配四种机器人本体；与 LightParkour、Light REACT 构成三段范式）
+- 百度秒哒升级（qbitai.com，9/11；自然语言生成全栈应用并可发布为网页/小程序/原生 App；企业微信办公系统与 Movo AI 影像创作系统两个非技术用户案例）
+- Anthropic 招募专注 Meta 的企业销售（qbitai.com，9/11；10 年以上企业销售经验、熟悉大型科技公司采购流程，需打通 Meta 一线员工到高层；OTE 最高约 45 万美元）
+- 智谱再融资约 50 亿美元（qbitai.com，9/14 + tmtpost.com，9/14 双源；9/12 签约、9/13 晚公告：每股 714 港元配售最多 2196.5 万股新 H 股 + 本金 201.4 亿元人民币零息可转债，合计净募约 393 亿港元，各自独立不互为条件；配售价较 9/11 收盘价 793 港元折让约 9.96%，转股价 892.5 港元溢价约 12.55%；约 60% 投向下一代 GLM 与「完全自训练（Fully Self Training）」体系及算力基础设施、15% 战略投资与潜在并购、25% 补充营运资金；资金 2028/6/30 前动用）
+- 月之暗面目标年底 20 亿美元年化收入（techcrunch.com，9/11；彭博报道，为 8 月运行率两倍；OpenRouter 上 K3 每日生成多达 3000 亿 token；权重开放致利润率低于闭源对手）
+- Nscale 任命 Fidji Simo 进入董事会（techcrunch.com，9/11；前 OpenAI「AGI 部署」CEO、前 Instacart 董事长兼 CEO，7 月因健康原因离职仍兼职顾问；与 Sandberg、Decker、Clegg 同列，为秋季潜在 IPO 做准备。为第 34 期「Nscale 寻求 35 亿美元上市前融资」的后续）
+- Mecka AI 接近 5 亿美元估值、Sequoia 领投（techcrunch.com，9/11；机器人训练数据；距 Framework Ventures 领投的 6000 万美元轮仅三个月，金额未披露、条款未最终）
+- YC CEO Garry Tan 称美国开放权重实验室也该建立蒸馏体系（techcrunch.com，9/11；CNBC 访谈「我什么都不会做」）
+- 网商银行百灵 2.0 覆盖 4200 万小微经营者（qbitai.com，9/12；外滩大会；四大 AI 工作台含「千里眼」客群精细风控、「定海针」人机协同审批，覆盖风控/审批/营销/产研，多轮对话梳理资金缺口与还款压力，覆盖信贷、票据、财税）
+- 工信部印发《“人工智能+软件”专项行动实施方案》（tmtpost.com，9/14 钛晨报；9/11 对外发布、工信部信发〔2026〕209 号；2028 年覆盖 2 万家规上软件企业、100 项智能化技改、100 个智能体软件标杆应用、孵化 5 个以上开源项目，2030 年关键软件全面智能化升级；六方面部署含智能体软件应用商店与技能包资源库）
+- Anthropic 对齐科学负责人 Evan Hubinger 回应离职研究员（techcrunch.com，9/13 + qbitai.com，9/12；认同「十年内灭绝概率 >10%」并称超级智能对齐尚无解；浏览量超 1.3 亿，WSJ/WIRED 等跟进；为第 36 期「Coxon 辞职警告」的硬进展）
+- OpenAI 与数学界冲突升级（techcrunch.com，9/11；NYU 教授 Buckmaster 指控 OpenAI 施压其不为 Anthropic 任职合作者署名、并质疑借 Codex 产出证明，OpenAI 周四撤回 CalTech 数学活动赞助，25 位数学研究者联名信强调可理解性。为第 35 期纳维-斯托克斯优先权争议的后续）
+- 奥巴马呼吁民主党为 AI 准备「清晰方案」（techcrunch.com，9/13；NYT 报道，周四民主党筹款活动上对 Hakeem Jeffries 表示需搭建框架并开展公开讨论，称技术「在私人手中发展得非常快」）
+- Hacker News：「Everyone should slow down AI development except for me」746 分/434 评论、「Why are AI agents lying, cheating and coordinating?」592 分/652 评论、「Fable 5.1 Solves the Cyphral Distich」417 分/165 评论（news.ycombinator.com，均经 hn.algolia 官方 API 过滤至第 36 期发布之后）
+- 〔DROP〕DeepSeek App 灰度测试语音对话、四种音色（9/12）：首报为网友反馈与钱江晚报/中国基金报等转载，无 deepseek.com 官方公告或 Allowlist 中文媒体原文 → Skill §17
+- 〔DROP〕GPT-6 Astra 刷穿 FrontierMath Tier 4（qbitai.com，9/12）：极端 benchmark claim，核心数据来自 Epoch 算法口径与 OpenAI 自报，仅一家可引用 → Skill §18
+- 〔DROP〕Fable 5.1 破解 370 年密码 Cyphral Distich（vals.ai）：canonical 域名不在 Allowlist，anthropic.com 与 theverge.com 未定位到可引用原文 → Skill §17（仅保留 HN 讨论条目）
+- 〔DROP〕支付宝 AI 钱包智能体与 Vibe Pay / Skill Pay / Machine Pay、蚂蚁 APASS 与 HOP 3.0（外滩大会 9/11—9/12）：仅门户与 AI 日报类转载，无 Allowlist 原文 → Skill §17
+- 〔DROP〕DeepSeek 委托中信证券筹备科创板 IPO：与第 36 期同处理，仅财经门户转载 → Skill §17
+- 〔DROP〕银行 AI Token 用量与「人年」折算数据（服贸会 9/13）：首报为新京报贝壳财经，无 Allowlist 同源报道 → Skill §17
+- 〔DROP〕HN 条目「Google 仍在投放可疑广告」561 分、「Homebrew 7.0.0」557 分、「JetKVM Mini」525 分、「Astra and Fable still hack on…」368 分、「I'm being cyberattacked by Tesla」397 分等：或与 AI 无关，或社区栏目容量所限择要收录三条 → 按重要性取舍
+
 ### 第 36 期（9.9–9.11）  〔周五更新；覆盖第 35 期（9/9 上午发布）之后窗口。全部条目来源均落在 Allowlist 内，并逐条读取官方/权威原文正文后撰写〕
 - DeepSeek 发布 V4.1 Flash（deepseek.com，9/10；552B MoE、Causal-Encoder-Decoder 非对称结构、输入激活 8B / 输出激活 16B；原生多模态；官方称基准超越包括 V4 Pro 在内的旗舰模型；KV Cache 对 HBM / SSD 需求降至上一代 1/4 与 1/8、相对初代缩小 437 倍；峰谷定价 9/10 12:00 生效、闲时为高峰一半；9/14 12:00 后 deepseek-v4-pro 请求全部路由至 V4.1 Flash）
 - 高德发布 3D 原生城市世界模型 ABot-Earth 0.7（qbitai.com，9/10；时空数据训练、端到端生成 3DGS 城市场景；单张消费级 GPU 约 10 分钟生成公里级场景、效率较传统方式提升约 1000 倍；覆盖星球—城市—街景地标全尺寸连续生成）

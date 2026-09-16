@@ -402,6 +402,32 @@
 - Nvidia 支持的 Lambda 募资 10 亿美元私募短债采购 GPU 租给微软（bloomberg.com，AI 基建债务融资）
 - 索尼音乐、华纳查普尔起诉 Anthropic 盗用版权音乐训练 Claude（techcrunch.com，8/28 新诉讼，紧接 15 亿美元作者和解之后）
 
+### 第 38 期（9.14–9.16）  〔周三更新；覆盖第 37 期（9/14 上午发布）之后窗口。全部条目最终来源均落在 Allowlist 内，并逐条取回官方/权威原文正文核对〕
+- 《人工智能安全治理框架 3.0》发布（cac.gov.cn，9/14；2026 年国家网络安全宣传周开幕式，网安标委在国家网信办指导下编制；承接 2024/2025 年 1.0、2.0；五项原则 + 内生/应用/衍生三类安全风险；正文含模型算法研发、应用建设部署、运行管理、访问使用四类指引；附件含风险分级原则、智能体风险管理框架、可信人工智能基本准则）
+- Google 发布 Gemini 3.8 Live 与 3.8 Live Extended Thinking（blog.google，9/15 17:00Z；官方称「迄今最先进的实时对话模型」；前者主打规模化与成本效率、近实时视觉理解、97 种语言自动识别并可断句切换；后者边说边做后台多步推理与工具调用；文本/图像/音频/视频输入，文本或音频输出；SynthID 水印；同步进入 Gemini API、AI Studio、Search Live、Gemini App 与 Workspace 的 Docs/Gmail/Keep）
+- Google 开发者侧：Gemini Live API 与 Agora、Fishjam、LangChain、LiveKit、Pipecat、Vercel、Vision Agents 集成（blog.google，9/15 17:00Z；Salesforce、Genspark、Lumeris 为企业首发伙伴）
+- macOS 27 Golden Gate 上线新 Siri（techcrunch.com，9/14；任意界面调用 Siri 读屏问答/总结/改写；Visual Intelligence 经 Command+Shift+6 框选提问；Spotlight 支持限定应用文件动作剪贴板搜索并可运行快捷指令；Safari 页面变化追踪与按主题整理标签页；Apple Silicon Mac）
+- Anthropic 发布 Claude for Financial Advisors（claude.com 官方博客，9/14；Future Proof 大会；新增 11 家连接器 Addepar/贝莱德/嘉信/Envestnet/iCapital/Orion/SS&C Black Diamond/Wealthbox/Wealth.com/先锋领航/Zocks；八项工作内容含 Advisor onboarding、另类投资简报、合规与 AI 政策（按 SEC Marketing Rule 筛查）、遗产税务简报、组合再平衡审查、会后记录、会前准备、潜在客户受理；投资建议与合规判定仍须人工复核；面向企业版并带审计日志）
+- OpenAI 收购 Glass Imaging（techcrunch.com，9/14；WSJ 首报；超 3 亿美元，较去年约 1 亿美元估值翻约三倍；2019 年创立于加州洛斯阿尔托斯、累计融资约 3000 万美元；创始人 Ziv Attar、Tom Bishop 曾任苹果人像模式团队负责人；GlassAI 在按下快门瞬间从原始数据重建图像；OpenAI 未回应置评）
+- OpenAI 称与 Anthropic、谷歌围绕 AI 安全的接触已持续数周（techcrunch.com，9/15 15:47Z；Chris Lehane 在华盛顿对记者表态；称三家协调安全事务不需要反垄断豁免，回应 Amodei 的窄口径豁免提议；The Information 报道三家讨论自行设立模型测试与审计标准机构；Hassabis 7 月曾呼吁美国设立类似监管机构）
+- OpenAI 表态支持 FRONTIER Act（techcrunch.com，9/15；支持要求顶级前沿实验室允许「独立验证组织」进入评估的条款；同期白宫方面与 AI 顾问 David Sacks 反对降速，称会令中国在竞争中占先）
+- 豆包手机助手消费者版发布（tmtpost.com，9/15；首搭努比亚 NaviX Ultra 于 9/16 开售；语音与带指纹鉴权的 AI 实体键唤醒；屏幕问答、本地相册/短信/便签检索、接入飞书妙记；GUI 智能体以 Beta 开放并推出 SAEP 屏幕自动化操作声明协议、30 天公示；钛媒体对比一代 GUI 模拟点击被主流应用集体封禁、二代改为协议路线，微信目前仅开放语音消息与音视频通话等部分能力）
+- DeepSeek 首位 CFO 落定（36kr.com，9/14 报道、ZAKER 转载 9/15；高瓴创投合伙人严文韬在高瓴内部启动离职流程，1991 年生、复旦毕业，腾讯投资/H Capital/高瓴履历，主导或参与字节、智谱、MiniMax、小红书等投资；DeepSeek 自 2025 年初挂出 CFO 招聘；距媒体报道其选定中信证券筹备科创板上市约五天；6 月完成超 500 亿元首轮外部融资）
+- 智谱 50 亿美元融资后续投向明细（36kr.com，9/15；约六成净额约 235 亿港元投下一代 GLM 与「完全自训练」体系，覆盖自动化训练数据、任务环境、长程推理、国产芯片适配；已落地全部采用国产芯片的 1GW 级智算中心；完成收购中科加禾；上半年收入 9.54 亿元同比增 399.7%，开放平台与 API 占 86.5%，单位 Token 推理成本较年初降约 80%，MaaS 毛利率 24.6%，经调整净亏损约 19.64 亿元）
+- 无问芯穹联合清华、上交开源具身端侧推理引擎 APXInf（qbitai.com；支持 RTX 4090/Jetson Orin/Jetson Thor；覆盖模型开发—效果验证—本体部署链路；称 Pi 0.5 同级别最优；面向小 batch、低延迟与持续实时交互优化）
+- Hacker News：苹果 iOS 27/iPadOS 27/macOS 27 发布帖 700 分/827 评论居本窗口首位；Ruby on Rails 核心成员复盘 RubyGems 缓存漏洞 506 分/413 评论；Andon Labs 发布 Pion「自主运营任意公司」智能体 481 分/585 评论（news.ycombinator.com，均经 hn.algolia 官方 API 按 created_at 过滤）
+- 〔DROP〕Anthropic 选定纳斯达克 IPO / 拟募资至多 1000 亿美元 / 英伟达洽谈 100 亿美元基石投资（9/13—9/14）：仅有 FT、Reuters、Business Insider 的二手转述，未取回可核对的 reuters.com 或 ft.com 原文 URL → Skill §19/§36
+- 〔DROP〕Anthropic 连续第二季调整后营业利润为正、毛利率超 80%、Q2 营收 115 亿美元（FT 9/14）：同上无 Allowlist 原文 → §19
+- 〔DROP〕Factory AI 2 亿美元融资、估值 50 亿美元（Reuters 9/15）：reuters.com 在沙箱内不可达，仅第三手聚合站转述，URL 无法逐字核实 → §36
+- 〔DROP〕OpenAI 新一轮融资估值约 1.2 万亿美元、年化营收破 400 亿美元（9/15）：出处为早报转述，无 Reuters/CNBC/The Information 可核对原文 → §18/§19
+- 〔DROP〕马斯克在 All-In 峰会提议巨头发布前交叉测试（9/15）：仅见早报与日报类转述，无 Allowlist 原文 → §17
+- 〔DROP〕OpenAI 开放 GPT-Live-1 语音模型 API（9/14）：首报为 X 帖子，openai.com 页面未能取回 → §17
+- 〔DROP〕DeepSeek-V4.1-Flash 进入 Agent Arena 开源第 3、每任务约 0.07 美元（9/14）：榜单数据来自 X 账号 @arena 与 AI 日报类转述，属 benchmark claim 且无第二家 Allowlist 源 → §18
+- 〔DROP〕三星 2.31 亿美元参投荷兰 AI 芯片公司 Euclyd（CNBC 9/15）：未取回可逐字核对的 cnbc.com 原文 URL → §17
+- 〔DROP〕Gemini app for Windows（blog.google）：datePublished 2026-09-10，超出本窗口 → 时间窗不符
+- 〔DROP〕讯兔科技超 3 亿元 B 轮（qbitai）：页面日期落在第 37 期窗口内、未构成新进展 → 时间窗不符
+- 〔DROP〕苹果 Siri 可替换为 Claude/ChatGPT 的私有 Model Delegation API（9/14）：原始发现来自开发者社交账号，其余全为搬运转载 → §17
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

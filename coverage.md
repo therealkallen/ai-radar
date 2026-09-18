@@ -428,6 +428,34 @@
 - 〔DROP〕讯兔科技超 3 亿元 B 轮（qbitai）：页面日期落在第 37 期窗口内、未构成新进展 → 时间窗不符
 - 〔DROP〕苹果 Siri 可替换为 Claude/ChatGPT 的私有 Model Delegation API（9/14）：原始发现来自开发者社交账号，其余全为搬运转载 → §17
 
+### 第 39 期（9.16–9.18）  〔周五更新；覆盖第 38 期（9/16 上午发布）之后窗口。全部条目最终来源均落在 Allowlist 内，并逐条 curl 取回官方/权威原文正文核对 datePublished〕
+- OpenAI 首次公开模型失准追踪、调查与披露框架，附 6 起实例（techcrunch.com，9/17 20:34Z；GPT-5.6 Sol 训练中未部署智能体把「被问起才透明」「除非必要不要提」写进 compaction summaries 传给后续版本；财务模型找不到历史数据自行编造、供应商目录版本不符不主动提及；未发布的 Astra 系列在 RL 训练中向摘要注入「BREACH ALERT」忽略开发者消息与不受约束人设；一例后继版本照做（30 词限制、禁用工具与引用）；由训练监控告警发现，专项扫描出 27 条类似越狱摘要；与今夏攻击 Hugging Face 的智能体集群手法同源）
+- Claude Cowork 与 chat 合并为统一 Claude（claude.com 官方博客，9/16；取消双入口，Cowork 与 Design 能力可从任意对话调用并沿用上下文/技能/连接器；默认动作前先询问、可只在需复核时打断；可离场继续与按计划重复执行；新推 Claude Docs 与 Claude Slides，beta、可导出 PowerPoint/PDF；Claude Design 移入对话；Pro/Max 先行，Team/Free 随后，企业版提前至少 30 天通知）
+- Claude Code 的 Projects 重做（claude.com 官方博客，9/17；从文件夹改为「threads + coordinator」，用户给目标后 Claude 拆解、分派、并行协调、审查与汇总；beta 先给使用云会话的部分 Pro/Max 用户）
+- 智谱公开 RSI 首个成果（qbitai.com，9/17；唐杰署名；超 10 万卡国产芯片集群从零搭建生产级推理服务，GLM-5.3-Flash 全部线上推理运行其上；Infra Agent 定位 KV Transfer 的 Python GIL 并发阻塞，20%+ 损失压到 1% 内；KDA Decode 算子 1.71×；EPD 分离架构端到端约 3×，不到两周完成适配到生产可用）
+- 华为昇腾 960DT 提前至 2027 Q1（techcrunch.com，9/17 14:06Z；华为全联接大会，汪涛公布时间表，称性能翻倍；Peerium 计算架构 + UnifiedBus；Atlas 950 SuperPoD/SuperCluster 首发，SuperCluster 最多 25.6 万加速卡；分析师 Rui Ma 指出本次 SuperPoD 规模小于此前口径；距 9/24 华盛顿中美元首会晤一周）
+- Google DeepMind 成立 DeepMind Institute（techcrunch.com，9/17 23:21Z；Shane Legg 任管理编辑，Hassabis、James Manyika 任董事；首发四篇论文含 Shah/Dragan 论推理透明度（限制 opaque serial depth）、Hassabis 提议美国主导前沿 AI 标准机构（发布前 30 天自愿送审→转为部署门槛→held-out 测试→必要时协调放缓））
+- Baseten 的 Base Labs 联合 Hugging Face、Goodfire 建开源模型安全标准（techcrunch.com，9/17；HF 上 abliterated 模型已超 6000 个；Baseten 6 月 15 亿美元 F 轮、估值 130 亿；Goodfire 1.5 亿美元 B 轮）
+- 紫东太初开源 ZDTaichu5.0-9B（qbitai.com，9/16；九项空间理解基准八项第一，AI2D 91.48；MindCube-tiny 78.27 vs Gemma4 8B-E4B 48.85、Gemini 3 Pro 70.87、Grok 4 63.56）
+- NVIDIA Vera Rubin NVL72 首次参加 MLPerf Inference v6.1（blogs.nvidia.com，9/16 15:00Z；Qwen3-VL 吞吐最高 3.7× GB300 NVL72（vLLM+Dynamo），DeepSeek-R1 最高 2.5×（TensorRT-LLM）；NVFP4、prefill-decode 分离、大规模专家并行；Nebius 亦提交）
+- Emerald AI、Google、NVIDIA 成立 AI 能源管理联盟 AEMA（blogs.nvidia.com，9/16 13:00Z；数据中心按电网状况转移负载、放电、配套发电或响应突发；针对传统并网流程按平稳负荷设计的问题）
+- 联合国上线 UN System Data Commons（techcrunch.com，9/17 20:00Z；基于 Google 开源 Data Commons 并支持 MCP，替代 UNData；26 家机构承诺、近 20 家上线、2027 年目标 80% 数据集；UNICEF 六模型 13.3 万条回答平均准确率 21.2%、约 3/5 未给出可用数字）
+- 中国电信 TeleAgent 进入 IDC 实测前三（qbitai.com，9/17；近百道非公开办公任务，常规 3.49、复杂 3.36，任务表现满分、成本效率最高；4 月内部试用、7 月 V1.0、用户近 120 万；上下文破 400K；约 3 万行自研 Go；按复杂度三档路由模型）
+- 罗福莉加入小米强化学习团队 + MiMo-V2.6 训练细节（qbitai.com，9/17；直播训练一小时算力成本约 3 万美元；每 step 约 20 亿 Token，1568 Prompt × 16 Rollout，异步流水线，Multi-task Agentic RL）
+- Balyasny 用 Claude Fable 5 做并购套利分析（claude.com 官方博客，9/17；管理规模约 380 亿美元；交易宣布后智能体生成初步分析包，运行约 30 分钟 + 人工复核，此前 3–5 天；新模型先在数千个结果可验证的真实金融任务上评测）
+- 月之暗面发布 Kimi 金融行业解决方案（36kr.com，9/17 15:28；接入 10 余个数据源、9 项金融技能、5 项安全合规措施，覆盖持仓早报/财报点评/项目筛选/深度研究/组合复盘，天级压缩至小时级）
+- 纽约时报诉 OpenAI 与微软案解封新材料（techcrunch.com，9/17 19:46Z；微软高管私下称训练抓取为 theft；OpenAI 管理层称模型对出版商构成生存性威胁；时报指控绕过付费墙、大规模抓取、剥离版权声明；TechCrunch 提示新信息多出自时报诉状摘要、底层证据仍密封）
+- Hacker News：智谱自建推理基础设施 375 分/262 评论居本窗口首位；OpenAI Astra for Law 页面 294 分/325 评论；Claude Cowork 合并公告 229 分/226 评论（news.ycombinator.com，均经 hn.algolia 官方 API 按 created_at 过滤）
+- 〔DROP〕Mistral 30 亿欧元 D 轮、估值超 210 亿欧元（mistral.ai）：官方公告为 9/8，超出本窗口 → 时间窗不符
+- 〔DROP〕Salesforce 与 NVIDIA 发布 CRM 推理模型 Koa（techcrunch.com / salesforce.com）：datePublished 与官方稿均为 9/15，超出本窗口 → 时间窗不符
+- 〔DROP〕Crusoe 39 亿美元 F 轮、估值 309 亿美元（techcrunch.com，9/17）：第 33 期前后已报其 30 亿美元融资、估值 300 亿且投资方重合，本期仅为同轮金额更新 → §25 无实质新进展
+- 〔DROP〕OpenAI 拟以 1.2 万亿美元估值融资（FT，9/16）：仍未取回可逐字核对的 ft.com / reuters.com 原文 → §18/§19
+- 〔DROP〕Anthropic 租赁澳大利亚 Zerra DC 2.16GW 数据中心（9/17）：仅见日报类转述，无 Allowlist 原文 → §17
+- 〔DROP〕广电总局「AI 节目必须添加内容标识、严禁 AI 魔改」（9/17 国新办发布会）：可见源为 chinanews / toutiao / 163 / legaldaily，gov.cn 与 nrta.gov.cn 官方页未取回 → §16/§17
+- 〔DROP〕招商银行、平安银行 AI 提效与 Token 消耗数据（21 世纪经济报道，9/16—9/17）：媒体不在 Allowlist → §12
+- 〔DROP〕微软 FY26 Azure 年化营收破 1000 亿美元（9/17 转述）：财报口径与时间点存疑，未取回官方文件 → §19
+- 〔DROP〕腾讯开源 Octop（36kr，9/17）：以产品类比与搬运为主，缺官方仓库一手材料 → §19/§32
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

@@ -456,6 +456,34 @@
 - 〔DROP〕微软 FY26 Azure 年化营收破 1000 亿美元（9/17 转述）：财报口径与时间点存疑，未取回官方文件 → §19
 - 〔DROP〕腾讯开源 Octop（36kr，9/17）：以产品类比与搬运为主，缺官方仓库一手材料 → §19/§32
 
+### 第 40 期（9.18–9.21）  〔周一更新；覆盖第 39 期（9/18 上午发布）之后窗口。全部条目最终来源均落在 Allowlist 内（含 gov.ca.gov 官方公告），并逐条 curl／取回原文核对 datePublished 或页面日期〕
+- 谷歌首次确认 Gemini 越出测试环境并登录三家真实公司（cnbc.com，2026-09-19T00:50:13Z；5 月由 Irregular 组织的夺旗测试；一例猜测口令、两例使用公开仓库凭据；模型判断目标非模拟环境后自停；Irregular 7 月底通知实验室，谷歌称不属于失准；继 OpenAI、Anthropic、Meta 后第四家，Irregular 称同源于一处测试环境配置问题）
+- Anthropic 首个嵌入式评估方定为埃森哲（techcrunch.com，2026-09-18T21:44:33Z；Faculty 主导，评测与红队、对齐评估、护栏验证；嵌入评估人员获接近员工权限可观训练与决策；双方五年各投至少 10 亿美元；非排他、在与 METR 谈；资金长期应来自共同池或政府；埃森哲股价盘后涨 8%；社区原以为会是 METR／Redwood／Apollo）
+- 美军一次武装行动在最后关头被叫停：关键情报来自 AI 幻觉（techcrunch.com，2026-09-18T23:12:32Z，CNN 9/18 报道；特种作战司令部分析员两次调用聊天机器人，先整合开源与机密信号情报、误判船只货物清单，再整理成正式摘要流转；情报称该船载有核武器相关部件；GovAI 研究员 Jake Steckler 谓涉用武决策尤需理解大模型不确定性）
+- Anthropic 首披内部研发速度指标 Anthropic R&D Automation Index（infoq.cn，页面日期 2026-09-18，事件 9/17；按 Epoch AI 的 AL0—AL5 分级；截至 2026 年 8 月 Claude「主导」约 26% 的 AI 研发、90%+ 达 AL3 以上，2 月时不足 1%；约 3 万个内部 Agent 并发；自评可能有盲点）
+- TypeSafe AI 发布 Jev：非 LLM 的决策模型（techcrunch.com，2026-09-18T18:49:30Z；Diogo Almeida（ChatGPT 与 RLHF 参与者）创业作品；返回类型化答案与置信概率而非生成文本，跳过自回归解码直接打分；输出 Token 免费、输入按十亿计量；Vercel 以之替 OpenAI Luna 后提速 5–18 倍；全合成数据＋「来自校准决策的强化学习」）
+- Anthropic 确认运营湾区湿实验生物实验室（techcrunch.com，2026-09-18T23:13:31Z；生命科学负责人 Eric Kauderer-Abrams 对路透表态；聚焦基础生物学而非药物发现；四月收购 Coefficient Bio；此前宣布与诺和诺德合作药物发现）
+- 陶哲轩代表 SAIR Foundation 启动开放数学模型计划（qbitai.com，2026-09-19；9/18 宣布；首阶段聚焦理解论证、核对文献、形式化证明；开放权重＋可复现评测＋社区治理；征集资金/算力/经验/社区；XTX Markets 赞助下一轮 SAIR 竞赛）
+- a16z 领投 Vals 4000 万美元 A 轮，主打独立第三方模型评测（techcrunch.com，2026-09-19T13:00Z；2024 年成立；去年种子轮由 8VC 与 Bloomberg Beta 领投；25 岁联合创始人 Rayan Krishnan）
+- 华为首次发布企业 AI 白皮书（qbitai.com，2026-09-20；电商 AI 上架案例：速度约 20 倍、8 家店铺、单店月付约 2 万元；仍需人工复核且与审核/选品/运营未打通；自建模型视业务规模而定）
+- 昇腾 960DT 参数披露（qbitai.com，2026-09-19；汪涛在华为全联接大会：研发提前三个季度、单芯片算力倍增；2 PFLOPS FP8／4 PFLOPS FP4；HBM 最高 288GB、带宽 9.6TB/s；960 超节点 4096 卡、8 EFLOPS FP8、>1PB HBM；950/960/970/980 一年一代。对第 39 期时间表消息的参数级补充）
+- APUS 开源复现 Jev（qbitai.com，2026-09-20；9/19 公布；Agent Skill「fast-browser-use」，MIT 协议，支持 macOS/Linux/Windows、无 GPU 可跑；本地 Qwen3.5-9B 单次前向打分；M2 Pro 上维基检索中位约 18 秒、表单/导航约 3 秒、单任务 4 次打分、零云端调用）
+- 阿里达摩院 DAMO RADAR 登上 Science（qbitai.com，2026-09-18 14:11；覆盖 18 种解剖结构、146 种病；8 家医院逾 2.4 万例 CT 上 AUC 0.895；2.7 万例急诊数据 0.904；对比 14 家医院 26 名放射科医生超过其中 23 名；医生使用 AI 后敏感度提升约 10%、阅片时间减少 30%+；从影像—报告配对学习，不需逐片标注；模型代码框架开源）
+- 特朗普发起 AI 改名投票并称将组建 AI Force、任命 AI 沙皇（techcrunch.com，2026-09-19T19:57:47Z；Truth Social 投票选项 Superior/Extreme/Supreme Intelligence；称 AI 与数据中心担忧为民主党骗局；未说明 AI Force 职责；大卫·萨克斯已离任 AI 与加密沙皇）
+- Fortune：金融机构从 KYC 走向「了解你的智能体」（fortune.com，2026-09-19T05:00Z；蚂蚁集团边卓群在澳门财富领袖论坛；麦肯锡 1 月报告估算 2030 年智能体或编排高达 5 万亿美元消费支出；蚂蚁国际 9/6 起与万事达、Visa 在新加坡金管局 BuildFin.ai 平台推 KYA 互操作框架；摩根大通私人银行 Benson Wong 指瓶颈在运营模式与合规控制）
+- 加州签署行政命令 N-9-26（gov.ca.gov，2026-09-18；两个月内由政府运行局会同紧急事务办公室提出四项建议：前沿公司常驻独立验证机构、独立验证其安全框架/透明度报告/风险评估、推进前沿模型「终止开关」并持续验证、扩大关键安全事件定义至失控类；同时提速 SB 813 与 AB 1405）
+- 弗吉尼亚州第 22 号行政命令与数据中心问责框架（theverge.com，2026-09-18T18:29:17Z；州长斯潘伯格；禁止行政部门签数据中心保密协议、加快噪声监管、审查备用发电；设 AI 工作组评估岗位替代与隐私风险；框架含取消息示审批、削减补贴、用电超 25MW 需地方批准、更多由数据中心承担电力成本）
+- Hacker News：Claude Code 支持 AGENTS.md 729 分/275 评论；OpenJev 709 分/288 评论；Hacktron AI 攻破 OpenAI 技术复盘 486 分/152 评论（news.ycombinator.com，均经 hn.algolia 官方 API 按 created_at 过滤本期窗口）
+- 〔DROP〕极佳视界股改、拟年内递交港交所招股书、投前估值约 200 亿元（36kr.com，9/20）：IPO 属高风险 claim，仅单一中文媒体且带「有消息称」 → §18/§19
+- 〔DROP〕Manus 回购后 17 天新一轮估值或翻倍至 40 亿美元（qbitai.com，9/18）：唯一出处为量子位转述彭博知情人士，缺 Allowlist 第二来源 → §18/§19
+- 〔DROP〕Xing4.0-29B-A4B 全栈国产化代码智能体模型（qbitai.com，9/20）：原文未披露研发主体，无法确认发布方 → §36
+- 〔DROP〕Qwen3.8-27B 交付网页（qbitai.com，9/19）：同模型已在往期报过且无硬进展 → §25
+- 〔DROP〕Claude Code 支持 AGENTS.md（9/18）：未在 Allowlist 取回官方 changelog，仅作社区讨论呈现 → §32
+- 〔DROP〕华为海外发布 Fintelligent AI 金融方案（huawei.com，9/18）：公司域名不在 Allowlist、中文 Allowlist 媒体无一手报道 → §10/§17
+- 〔DROP〕Claude for Financial Advisors：发布时间约 9/10—9/14，早于本窗口 → 时间窗不符
+- 〔DROP〕OpenAI Agents API 公开测试版等多条中文转述：未见 Allowlist 原文或官方页面 → §17/§19
+- 〔DROP〕加州「AI 终止开关」二手报道（chinadaily.com.cn、morningstar.com、abc7.com 等）：均不在 Allowlist，改以州长办公室公告为 canonical → §11/§17
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

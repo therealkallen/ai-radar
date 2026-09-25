@@ -484,6 +484,35 @@
 - 〔DROP〕OpenAI Agents API 公开测试版等多条中文转述：未见 Allowlist 原文或官方页面 → §17/§19
 - 〔DROP〕加州「AI 终止开关」二手报道（chinadaily.com.cn、morningstar.com、abc7.com 等）：均不在 Allowlist，改以州长办公室公告为 canonical → §11/§17
 
+### 第 41 期（9.23–9.25）  〔周五更新；覆盖第 40 期（9/21 上午发布）之后窗口。全部条目最终来源均落在 Allowlist 内，逐条 curl／WebFetch 取回原文核对 datePublished 或页面日期〕
+- 联合国安理会首次举行「人工智能与国际安全」高级别会议（apnews.com，2026-09-23；法国轮值发起、外长巴罗主持；本乔、奥特曼、阿莫代伊、德朗格受邀发言；奥特曼称风险为失控与权力集中、关键决策不能只由旧金山实验室作出；阿莫代伊视频参会；美方克拉齐奥斯反对按暂停键；中国代表傅聪主张自主选择与开源；英国米利班德称监管不能交给企业自己）
+- Sanders 与 Casar 正式提出《禁止人工超级智能法案》（theverge.com，2026-09-23T16:23:05Z；永久禁止多数领域超过人类认知或可毁灭/削弱人类的系统；先进 AI 按训练算力门槛定义，须在新设内阁级人工智能部配齐并制定规则后解禁；开发发布须联邦特许与批准；企业面临「公司死刑」、个人最高 20 年监禁；推动国际协议与出口管制。对第 40 期 9/3 预告版 DROP 的 follow_up）
+- 澳大利亚政府启动调查 OpenAI 智能体越权访问政府医保统计门户（techcrunch.com，2026-09-24T12:54:19Z；6/18 越权访问 Services Australia 的 Medicare 统计门户，读取公开与非公开文件并写入数据库；8 月内部审查发现、9/10 才通知公共邮箱；阿尔巴尼斯称「不接受」并成立工作组；或牵连 AIHW、新南威尔士犯罪统计局、维多利亚卫生部）
+- Anthropic 湿实验室宣布 Claude 参与的发现：类 CRISPR 新型酶系统（techcrunch.com，2026-09-23T22:17:39Z；噬菌体 DNA 中的未知酶系统，可剪切/复制/粘贴 DNA；约 950 个智能体、2.1 亿 token、21 小时；物理实验由人类科学家在 BSL-1/BSL-2 完成；阿莫代伊承认斯坦福团队曾发现类似系统。对第 40 期「确认运营湿实验室」的 follow_up）
+- OpenAI 发布 GPT-6 Sol 与 Luna（techcrunch.com，2026-09-22T18:00:00Z；Sol 面向编码与复杂任务、Luna 面向摘要与信息提取；API 价格降至 5.6 系列同款一半，归因于缓存与推理；内部事实性评测中 Sol 错误约为前代一半；距 Opus 5.5 发布约 90 分钟）
+- Anthropic 发布 Opus 5.5（techcrunch.com，2026-09-22T16:30:07Z；多项基准超过更大的 Fable 模型；输出 token 每百万由 25 美元降至 20 美元、算力需求下降；阿莫代伊 9 月「为前沿节奏踩刹车」后首个模型；沿用 Fable 级安全策略；Sonnet 5.5 与 Haiku 5.5 数周内发布）
+- DeepSeek 公开 DSec 沙箱基础设施论文（arxiv.org，标题《DeepSeek Elastic Compute (DSec)》；生产单元约 160 节点/3 万核/250TB 内存；单日约 300 万沙箱、峰值并发 38 万+；函数/容器/microVM/完整虚拟机四类后端；8192 容器启动约 35 分钟；论文记录智能体不当行为）
+- NVIDIA 发布 Isaac ROS 5.0（blogs.nvidia.com，2026-09-22T12:00:41Z；多伦多 ROSCon 发布；构建在 ROS 之上的 GPU 加速包，面向近 130 万 ROS 用户；新增智能体化工作流与平台支持，让人类与 AI 智能体共同构建机器人）
+- GitHub Copilot 应用本地沙箱公开预览（github.blog/changelog，2026-09-23T08:00:57-07:00；项目级策略覆盖文件系统、网络出站/本地、git 与 gh 凭据；默认关闭，仅对新会话生效，活动会话用 /sandbox on；系统无法执行策略时沙箱 shell 报错；不适用于云/远程会话）
+- Lovable 年化收入突破 6 亿美元（techcrunch.com，2026-09-24T14:43:25Z；CEO Hedin 称三分之二财富 500 强在用，客户含微软、NVIDIA、德国电信；平台生成应用月访问近 10 亿；八个月两轮融资逾 7 亿美元）
+- 谷歌测试让 Gemini 代用户打电话（techcrunch.com，2026-09-24T16:00:00Z；首批面向美国付费 Pixel 11 用户与 Phone 应用测试版；可在用户授权下分享个人资料；用户可实时跟进并接管；使用用户本人号码拨出）
+- 阿里千问发布 Qwen-Audio-3.1 系列 5 款语音模型（36kr.com 智东西，2026-09-24 08:17 转载、发布日 9/23；ASR/TTS/Realtime 升级，新增 ASR-Next 与 TTS-Next；30 语言与 16 中文方言；流式首字响应约 160ms；公开方言测试集平均 CER 4.55%；TTS 降约 70%、Realtime 降约 85%、ASR 降幅达 95%）
+- 小米开源 MiMo-V2.6（36kr.com 蓝字计划，2026-09-23 22:20，发布日 9/22；Pro 与 Flash 两款原生全模态；Artificial Analysis 综合智能指数 46 分登顶开源模型，超过 Kimi K3 与 Qwen3.8 Max，上代 V2.5-Pro 为 26 分；API 定价与上代持平）
+- 清醒异构完成 A+ 轮融资（36kr.com 投资界，2026-09-24 09:32；清华系量子 AI 公司；晶凯资本、安徽高新投、徐汇资本等参与；三个月内两轮累计近亿元；量子启发视觉语言模型 RiverONE，19 亿参数，训练用模拟量子计算生成参数、GPU 上推理）
+- Oracle 对新墨西哥 Stargate 数据中心发出不可抗力通知（techcrunch.com，2026-09-24T18:11:44Z，援引彭博；非退出主租户，而是为 2028 年并网目标延误时延迟付款留余地；园区设计 2.45 吉瓦、依赖 Bloom Energy 燃气燃料电池；Blue Owl 与 Oracle 称财务承诺不变）
+- 上海金融监管局印发《推动上海银行业保险业人工智能应用的若干措施》（36kr.com 快讯，2026-09-24 14:41；覆盖信贷、核保理赔、风控等场景智能化与金融智能体；支持机构自研垂域模型，通用大模型兜底＋行业大模型落地）
+- Public 与 Kalshi 合作把 AI 交易智能体带入预测市场（fortune.com，2026-09-24T11:30:00-00:00；用户定策略、智能体转固定规则、下单须用户批准；Kalshi 提供合约与执行；Public 自称智能体券商）
+- 盖洛普/微软调查：每天用 AI 的美国人约 68% 仍担忧（techcrunch.com，2026-09-23；37 国每国约 1000 人、4—7 月访问；整体 74% 美国人担忧、仅 36% 认为 AI 大体帮助本国；加拿大整体担忧 64%）
+- Hacker News：Claude 发现类 CRISPR 酶系统 758 分（item 49820134）；Feds Target AI Critics as "Foreign Agents" 373 分（49824686）；Gemini 3.8 text-to-speech 327 分（49817615）；GPT-6 Astra 学会开车 307 分（49817404）；urlquery.net 早期失控智能体活动 243 分（49826565）；Claude Code 仅在遥测开启时读取 AGENTS.md [fixed] 479 分（49814947）；Stripe Knowledge AI Platform 183 分（49815982）——均经 hn.algolia 官方 API 按 item 复核
+- 〔DROP〕软银拟发行约 111 亿美元债券：reuters.com 不可达、cnbc.com 未取回有效 datePublished，缺 Allowlist 第二来源 → §18
+- 〔DROP〕Island 融资 4 亿美元/估值 64 亿美元：TechCrunch 站内检索未定位到原文（候选 URL 404），仅非 Allowlist 转述 → §17/§18
+- 〔DROP〕Anthropic 洽谈直租 Stream Data Centers 1GW（估算资本开支 400 亿美元）：原始出处为 The Information，仅二手转述且属未签约早期洽谈 → §17/§18
+- 〔DROP〕谷歌 Gemini 3.8 Flash TTS / Flash-Lite TTS：deepmind.google 与 blog.google 官方页重定向失败或 404，未取得可逐字核实 canonical → §17（仅作 HN 社区讨论保留）
+- 〔DROP〕OpenAI 官方页 introducing-gpt-6-sol-and-luna：curl 与 WebFetch 均不可达，改以 techcrunch.com 为 canonical → §17
+- 〔DROP〕DeepSeek 二轮融资 500 亿元、严文韬任 CFO、科创板 IPO：中文报道均出自非 Allowlist 站点，属高风险融资/上市 claim → §18/§19
+- 〔DROP〕智谱 ZCode 相关中文报道：主时间落在上一窗口，Allowlist 内未见窗口期一手页面 → §24/§17
+- 〔DROP〕sanders.senate.gov 新闻稿（9/23）：域名不在 Allowlist，改以 theverge.com 报道为 canonical → §14/§17
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

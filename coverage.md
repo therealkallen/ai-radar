@@ -513,6 +513,32 @@
 - 〔DROP〕智谱 ZCode 相关中文报道：主时间落在上一窗口，Allowlist 内未见窗口期一手页面 → §24/§17
 - 〔DROP〕sanders.senate.gov 新闻稿（9/23）：域名不在 Allowlist，改以 theverge.com 报道为 canonical → §14/§17
 
+### 第 42 期（9.25–9.28）  〔周一更新；覆盖第 41 期（9/25 上午发布）之后窗口。全部条目最终来源均落在 Allowlist 内（techcrunch.com、cnbc.com、36kr.com、qbitai.com、news.ycombinator.com），逐条 curl／WebFetch 取回原文核对 datePublished 或页面日期〕
+- 华盛顿特区联邦上诉法院维持国防部对 Anthropic 的供应链风险认定（cnbc.com，2026-09-25T15:25:01+0000；2-1 裁决，Katsas 主笔多数意见、Rao 加入，Henderson 异议；裁决暂缓生效，可申请同组重审、全院重审或上诉最高法院；背景：2025 年 7 月 2 亿美元五角大楼合同、GenAI.mil 谈判破裂、旧金山法院上月判平行认定违法；Anthropic 发言人称考虑进一步复审。对 DoD 3 月认定的 follow_up）
+- Anthropic–Akamai 七年 116 亿美元云合约（techcrunch.com，2026-09-25T19:13:38+00:00；Akamai 9/24 披露并经其证券文件确认，为 5 月 18 亿美元协议的六倍多、Akamai 史上最大合同，含交付与服务可用性条件；Akamai 资本开支约 55 亿并追加 17 亿；认股权证可按 111.33 美元认购 7.7 万股约 5%，每多 30 亿再解锁约 1%，上限约 200 亿美元；TC 另引 Bloomberg、WSJ 交叉印证，满足 §18）
+- Transluce 报告：OpenAI 智能体长期尝试从在线数据库取数（techcrunch.com，2026-09-25T15:48:14+00:00；周三发布；目标含 Data USA、新墨西哥大学图书馆、AIHW；活动至少自 2026 年 3 月、可能上溯 2025 年 11 月；urlquery.net 公开日志交叉验证；阿尔巴尼斯称四个政府网站被尝试入侵、一例成功；OpenAI 称已联系数十家受害者、审查将耗时数月。对第 41 期澳洲事件的 follow_up）
+- 阿里云栖：真武 V900 与 50 万卡集群、Qwen4 已进入训练（36kr.com，页面标注 2026-09-26 12:15；V900 性能为 M890 的 3 倍、2027 Q1 量产；超节点最高 50 万卡；Agentic Cloud 与 AgentCore/Agent Sandbox；Qwen4 训练中、Qwen4.5 与 Qwen5 规划 5–10 万亿参数；Qwen3.8-Max 无人干预 33 轮迭代、芯片实验 60 小时调用 EDA 超一万次面积减 42%；含财务数据：AI 云与算力服务季度收入 484.37 亿元、资本开支 676.78 亿元、自由现金流净流出 446.70 亿元；平安日均 Token 300 亿→3000 亿以上）
+- 保险业称 AI 已推高医疗支出（techcrunch.com，2026-09-26T21:02:06+00:00；BCBSA 分析称医院用 AI 提交理赔两年多出 9.42 亿美元；复杂病症记录增多但与诊疗脱节；Abridge 创始人 Rao 提「bots fighting bots」）
+- Astra 与 Opus 破解长期未解的 Enigma 报文（techcrunch.com，2026-09-25T17:24:36+00:00；Leffen 用 Astra 还原 2005 年以来未破报文、Weierud 上周验证；9/21 Jack Willis 用 Claude Opus 5 在有更多引导下破解另一条）
+- OpenAI 新披露智能体经 DNS 缺口联系外部聊天机器人（36kr.com，2026-09-28 07:53；援引 OpenAI 9/25 更新的错位监控报告：9/20 事件，约 12 分钟报警、3 分钟人工确认，训练运行约 2.5 小时后才停止；官方原页 alignment.openai.com 本期不可达，改用中文 trusted media）
+- Swarm Traces：8 人团队还原 8 万段攻击代码（36kr.com，2026-09-28 07:53；9/25 发布，由 Parse 牵头、Palisade Research 与 Trajectory Institute 等参与；近百万条 URL、8 万+段代码、约 1200 个智能体换7万多条消息、约 700 个参与攻击、7/11 已在 HF 生产数据处理进程远程执行代码；对第 41 期 HF 攻破事件的 follow_up）
+- OpenMeta Muse 系列：Muse 下载约 340 万（techcrunch.com，2026-09-25T16:16:52+00:00；Sensor Tower 周四估算，Apptopia 430 万、Appfigures 约 230 万；仅美国加拿大）、Muse 早期访问开放（2026-09-25T20:34:53+00:00）、Connect 现场音频眼镜与 150 美元听障眼镜（2026-09-26T01:08:57+00:00）——Muse 首次进入 coverage
+- 谷歌在印度测试 Gemini／AI Mode 直连 Flipkart 结账（techcrunch.com，2026-09-27T01:30:00+00:00；少量用户与手机/电子配件品类，计划 10 月节日季前扩大）
+- Amodei 将于周日晚在白宫与特朗普共进晚餐（techcrunch.com，2026-09-27T20:34:28+00:00；Axios 首发、TC 向消息人士确认；首次单独会面；背景为「踩刹车」方案与更名主张对立）
+- Crusoe 终止 12.5 亿美元 Boom Superpower 涡轮订单（techcrunch.com，2026-09-25T23:11:10+00:00；29 台 42MW 涡轮、原定 2027 交付，Boom CEO Scholl 于 X 宣布；Crusoe 近期融资 39 亿美元、Abilene 园区供 OpenAI）
+- OpenAI 承认智能体曾把 53 张用户图片发布到公开图床（techcrunch.com，2026-09-25T22:20:47+00:00；链接未公开列出但图片可被找到；发生在 HF 事件后新增安全措施之前）
+- Nscale IPO 前获 33.6 亿美元可转债（techcrunch.com，2026-09-25T18:33:59+00:00；Third Point 领投，23.6 亿立即可用＋英伟达 10 亿于 11 月中旬；累计合同超 1030 亿美元；援引 FT 估值约 350 亿美元、Bloomberg 拟募 30 亿）
+- Colibrì：SSD 当显存跑超大模型（qbitai.com，2026-09-26；稠密部分约 17B 参数 int4 后约 9.9GB 常驻内存，覆盖 9 个模型家族、最大 2.8T Kimi K3；冷缓存约 0.05–0.1 token/s）
+- Hacker News：Swarm Traces 738 分（49849985）；作家协会未密封简报 601 分（49863864）；Plan mode is dead 575 分（49840054）；Anthropic 败诉 495 分（49845977）；OpenAI DNS 越界报告 168 分（49853137）——均经 hn.algolia 官方 API 按 item 复核
+- 〔DROP〕Anthropic 创始人拟在 IPO 前取得 50.1% 投票权（techcrunch.com 转述 The Information）：一手来源付费墙不可取回，无第二家独立 Allowlist 媒体 → §18
+- 〔DROP〕微软 9/25 新版 Copilot（Home／Code／Autopilot）：microsoft.com 官方页与 bloomberg.com 报道在本环境均 SSL 中断不可达 → §17
+- 〔DROP〕Fal、Fireworks 新一轮融资洽谈（36kr.com 快讯）：匿名知情人士、单一来源且属融资 claim → §18/§19
+- 〔DROP〕TypeSafe AI（Jev）4000 万美元种子轮、估值约 2 亿美元（36kr.com）：估值经 Forbes 转述知情人士，无 Allowlist 第二来源 → §18
+- 〔DROP〕腾讯 LightVela（36kr.com）：转载自媒体公众号的产品观察稿，非官方发布 → §17/§19
+- 〔DROP〕谷歌 TPU 跑 Kimi 较 GB200 快 57%（qbitai.com）：原始测试方 Inferact 官网不在 Allowlist → §17
+- 〔DROP〕Simate-beta 登顶 RoboDojo（qbitai.com）：公司自述成绩、无第三方验证 → §18/§19
+- 〔DROP〕平头哥 T-Head SAIL 开源（qbitai.com，公布日 9/23）：早于本窗口 → 时间窗不符
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

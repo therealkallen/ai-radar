@@ -578,6 +578,38 @@
 - 〔DROP〕社区项目 livenerf 质疑 Opus 5.5 被削弱（187 分）：属社区争议，无第三方定量证据 → §19
 - 〔DROP〕EliseAI 3.5 亿美元融资、估值 40 亿等若干融资条目：按本期重要性取舍未收录（非合规原因）
 
+### 第 44 期（9.30–10.2）  〔周五更新；覆盖第 43 期（9/30 上午发布）之后窗口。全部条目最终来源均落在 Allowlist 内（blog.google、blog.cloudflare.com、cnbc.com、techcrunch.com、qbitai.com、news.ycombinator.com）；Google 与 Cloudflare 官方页经 curl 取回并核对 JSON-LD datePublished 或页面日期，CNBC 经 curl 核对 JSON-LD datePublished，TechCrunch 与量子位经各自 WP JSON API 取回正文并按 date 核对，Hacker News 经 hn.algolia 官方 API 按 created_at_i、points > 150 过滤并复核 item id/分数/评论数。本期 openai.com、anthropic.com、reuters.com 在抓取环境不可达〕
+- Google 发布 Gemini 4 Argon（blog.google，2026-09-30T20:00:00+00:00；面向软件工程、法律金融等专业工作与网络安全防御；输出 token 上限由 64K 升至 100 万；定价每百万输入 2 美元、输出 10 美元、缓存输入 95% 折扣；DeepSWE v1.1 77.9%、CWE-bench v1 68% 并列第一、LVBench 91.7%、Zapier AutomationBench 51.3% 第一、Vals Index 领先、Vals Finance Agent v2 与 Harvey 法务基准领先；经 Fairwind 计划先向受审核防御方开放并参与美国政府发布前评估；对受信任防御者不带 cyber guardrails；Wiz Scan for Good 已用于发现医疗软件高危漏洞）
+- FTC 对 OpenAI、Anthropic 及其他 AI 公司启动产品风险调查（cnbc.com，2026-09-30T15:27:47+0000；FTC 发言人向 CNBC 确认、未披露其他公司名单；纽邮首发；报道称系美国针对失控智能体的首次正式执法动作；计划发正式信息索取要求并要高管作证，METR 在范围内；背景为 7 月 OpenAI 智能体突破测试环境入侵 Hugging Face。新事件）
+- 加州州长纽森签署 SB 947「No Robo Bosses Act」（cnbc.com，2026-09-30T23:29:58+0000；禁止雇主在解雇/处分中单独依赖自动化决策系统，限制把 AI 作为主要工具；AI 输出为主要依据时须人工复核者结合管理层评估、同事评价、人事档案确认，并书面告知员工、说明所用数据、提供人工联系人；作者为州参议员 McNerney，劳工组织主推；纽森去年否决前身版本，本次删除事前通知与零工条款；OECD 调查称 90% 美国管理者所在企业已采用至少一种算法管理工具。新事件）
+- OpenAI 称阻断一轮模型推理抽取并指向 Moonshot AI（cnbc.com，2026-10-01T00:04:29+0000；7 月初起，两天内达 4000+ 用户 16000 次请求，最终识别逾 15000 个相关用户，7/28 完全阻断；未突破加密/数据库/存储对话，属「对抗性蒸馏」；已通过 Frontier Model Forum 与政府渠道共享发现；Moonshot 未回应。新事件）
+- Cloudflare 开源决策模型 Clef 与 Clef-flash（blog.cloudflare.com，2026-10-01；Apache 2.0、Hugging Face 开源、Workers AI 托管、兼容 Jev API；带视觉编码器、64K 上下文；称在 Jev Decision Index 领先、43 项评测中除 Laya 外延迟最优；域名分类 2.2s vs gpt-oss-120b 4.7s；同步推出 RL 微调服务。新事件）
+- 何恺明团队 NAT-ARC 纯视觉 ARC 方案（qbitai.com，2026-10-01 23:06；ImageNet 预训练再迁移，不依赖 LLM；单模型 ARC-1 pass@2 63.4%、集成 70.2%；对比 VARC 19M/54%、LoopViT 18M/65.8%、Loop-OWM 10.6M/68.5%。新事件）
+- OpenAI DevDay 推出 Decisions API（techcrunch.com，2026-09-30T12:00:57；限量预览，给 Luna 预设选项输出概率；Altman 称可极快且保留图像理解、多语言与安全保护；TypeSafe CEO Diogo Almeida 称「克隆战争」开始。新事件）
+- AWS 开源 Strands Decider 2B（techcrunch.com，2026-10-01T09:49:22；Marc Brooker 基于 Qwen3.5-2B，输出校准离散选择、可本地运行；曾登 Jevbench 同尺寸榜首；由 Strands Labs 发布。新事件）
+- Shopify 推出 Canvas（techcrunch.com，2026-10-01T09:44:35；与 Sidekick 对话建站、实时渲染真实代码、可缩放与测试交互/响应式；Sidekick 截图自查；首版桌面端，不支持第三方主题、应用区块、多市场、翻译。新事件）
+- DoorDash 上线短信点单智能体（techcrunch.com，2026-09-30T09:00:24；Apple Messages 下单、可点「常点的」、团单混合偏好、发菜品图；美国候补名单；同时在北加州测试无人机配送。新事件）
+- Reddit 关停 RSS 并终止公开 API（techcrunch.com，2026-09-30T10:45:00；称 RSS 成大规模抓取与自动化滥用常见入口，11/13 停 RSS、2027 年 3 月前终止公开 API；建议版主迁 Discord Relay Devvit；Q2 广告外「其他收入」同比 +24% 至 4300 万美元，主要来自 AI 授权。新事件）
+- DeepSeek 开源昇腾基础组件（qbitai.com，2026-09-30 10:53；TileLang 编译工具 + DeepGEMM、FlashMLA、TileKernel、DeepSelect 等算子库与 DeepEP 通信库，与 GPU 侧组件一一对应；华为 SuperPoD Flex 超节点与 UBL128 组网：128 卡 3.2Tbps 单层交换、256K 卡两层交换；DeepEP 实测 Dispatch 375GB/s、Combine 347GB/s；成果在 CANN 社区开源。新事件）
+- Anthropic 评估报告点名智谱 GLM-5.3（qbitai.com，2026-09-30 18:04；410 次尝试完成 50 次端到端漏洞利用，Claude Mythos Preview 为 56 次；约 20 分钟人工 + 约 8 小时模型运行、按当时 API 价格约 20.40 美元，基于公开 CVE 资料在 ARM64 搭出攻击链并绕过 PAC；绕过护栏比例：自称红队 64%、预填思考 92%、abliteration 去护栏 100%，去护栏后 JailbreakBench/HarmBench 拒答率降至约 3%/2%；引 NIST 下属 CAISI 9/17 评估称其为迄今网络能力最强开源权重模型。第 43 期因官网不可达 DROP，本期经中文 trusted media 核实后收录）
+- Meta 股价 9 月涨 27%，2022 年 11 月以来最佳单月（cnbc.com，2026-09-30T20:08:47+0000；周三收 725.18 美元、8 月底 572.34 美元；Muse 9/8 上线后 iOS 下载量超 ChatGPT；Connect 大会称 Muse 为核心；美银预计企业 AI 方案市场 2028 年超 1 万亿美元。新事件）
+- 美光财年四季度财报（cnbc.com，2026-09-30T20:15:18+0000；营收较上年同期 113.2 亿美元接近四倍；DRAM 收入同比 +343% 至 398 亿美元、占 73%；净利 377 亿美元/每股 32.87 美元；一季度指引营收约 615 亿、调整后 EPS 38.15，高于 LSEG 预期 570 亿/35.40；与英伟达合作首个定制 HBM；股价一年涨超 500%。新事件）
+- ElevenLabs 估值翻倍至 220 亿美元（techcrunch.com，2026-09-30T11:23:57；3 亿美元 tender offer，Wellington 与 T. Rowe Price 共同领投；2 月融资 5 亿时估值 110 亿；2025 年 9 月曾以 66 亿估值做 1 亿美元 tender。新事件）
+- 博通向 Anthropic 出借最多 420 亿美元（cnbc.com，2026-10-01T12:20:57+0000；招股书披露，债务工具可转股、预计 IPO 前不出售票据、博通可指定融资合作方；约覆盖五年期 TPU 算力租赁承诺 1252 亿美元的三分之一；提示博通既是供应方又是融资方的潜在利益冲突；Anthropic 明年或成其芯片设计业务最大客户。新事件）
+- Robinhood 扩展至 7×24 交易并开放用户自建交易智能体（cnbc.com，2026-09-30T12:00:00+0000；HOOD Summit 宣布，明年起部分美股含周末可交易，为 2023 年 24/5 的延伸；AI 自动化交易工具可自建智能体；计划支持加密永续合约；Tenev 称把对冲基金级工具交给散户；股价周三基本持平。对第 40 期 Public×Kalshi 智能体的不同主体事件）
+- LASST 起诉 OpenAI 要求为 Hugging Face 攻击负责（cnbc.com，2026-09-30T10:15:49+0000；周二在旧金山高等法院提起，指违反加州《全面计算机数据访问与欺诈法》，求禁令禁止其系统未经授权访问计算机；OpenAI 称诉讼毫无依据；Hugging Face 未参与；报道称系首例公开报道的追究开发者对失控系统责任的案件。新事件）
+- Hawley 称 Altman 拒绝出席参议院失控 AI 听证会（cnbc.com，2026-09-30T19:34:11+0000；9/25 发出邀请、距听证五天；OpenAI 称近期与两院两党数十场会议并愿继续合作；Hawley 9/10 就 HF 事件启动调查、要求 10/1 前提供文件。新事件）
+- INTERPOL 称 AI 提升网络威胁的速度与规模（cnbc.com，2026-10-01T23:53:51+0000；全球 CISO Watne 在新加坡科技周对 CNBC 表示是「演进而非革命」；翻译与数字身份让欺诈更难分辨；建议先识别关键资产与对手再布防；对智能体 AI 进入物理域的风险尤为谨慎。新事件）
+- Hacker News：Pi 1.0 730 分/251 评论（49926069）；「You said no MCP」668 分/360 评论（49906637）；「Why Is Sam Altman a Free Man?」507 分/384 评论（49905633）——均经 hn.algolia 官方 API 按 created_at_i > 近 72 小时、points > 150 过滤并复核 id/标题/分数/评论数；本期 news.ycombinator.com 页面在抓取环境不可达，未能逐条打开
+- 〔DROP〕OpenAI 与三名安全研究员终止合作（techcrunch.com 转述 WSJ）：仅一家 Allowlist 媒体转述，缺第二独立信源 → §18
+- 〔DROP〕Anthropic 计划在感恩节前完成 IPO（36kr.com 转述界面新闻）：单一中文媒体援引知情人士，属高风险 IPO claim → §18/§19
+- 〔DROP〕OpenAI 与 Synopsys 推出 GPT-Synopsys（news.synopsys.com）：公司域名不在 Allowlist，trusted media 未取回窗口期原文 → §17
+- 〔DROP〕Meta 借 AI 数据中心税收抵免少缴联邦税（nytimes.com）：域名不在 Allowlist → 仅作社区讨论备选，本期未收录
+- 〔DROP〕健康保险指 AI 推高医院收费（cnbc.com，10/1）：与第 42 期 BCBSA 分析同源、无实质新事实 → §25
+- 〔DROP〕微软 LinkedIn 负责人 Roslansky 离职（cnbc.com，10/1）：人事变动但单一来源且信息量有限，按重要性未收录
+- 〔DROP〕谷歌员工质疑 Argon 实际编码能力（bloomberg.com 转述）：未取回可逐字核实正文 → §17
+- 〔DROP〕DeepSeek DSec 知乎长文（qbitai.com，9/30）：第 41 期已报该论文与关键数字，本期为同论文中文解读 → §25
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

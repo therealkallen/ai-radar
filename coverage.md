@@ -610,6 +610,34 @@
 - 〔DROP〕谷歌员工质疑 Argon 实际编码能力（bloomberg.com 转述）：未取回可逐字核实正文 → §17
 - 〔DROP〕DeepSeek DSec 知乎长文（qbitai.com，9/30）：第 41 期已报该论文与关键数字，本期为同论文中文解读 → §25
 
+### 第 45 期（10.3–10.5）  〔周一更新；覆盖第 44 期（10/2 发布）之后窗口。全部条目最终来源均落在 Allowlist 内（cnbc.com、techcrunch.com、theverge.com、wired.com、anthropic.com、qbitai.com、geekpark.net、tmtpost.com、news.ycombinator.com）；CNBC 经 curl 核对 JSON-LD datePublished，TechCrunch 经 WP JSON API 并按 date 核对，The Verge / Wired / Anthropic 取页面 datePublished 或正文标注日期，中文媒体经首页/正文 URL 直接打开核对发布时间；Hacker News 经 hn.algolia 官方 API 按 created_at_i 过滤本期窗口、复核 item id/标题/分数/评论数，并用 items 接口的 children 字段读评论原文（本期 news.ycombinator.com 页面在抓取环境不可达）。抓取环境不可达的域名：reuters.com、bloomberg.com、ft.com、wsj.com、openai.com(403)、blog.google、huggingface.co、cloud.google.com〕
+
+- 特朗普组建 Super Intelligence Force，Jay Clayton 任 AI 主管（cnbc.com，2026-10-03T23:37:23+0000；周日 Truth Social 宣布；成员含 FTC 主席 Ferguson、国防部研究与工程副部长兼 CTO Emil Michael、OPM 局长 Scott Kupor；向总统与幕僚长 Susie Wiles 汇报；120 天内就 AI 风险与机遇、联邦职责提交报告；WSJ 周六先报道；Clayton 曾任 SEC 主席、7 月获参议院确认为 DNI。对第 42 期「AI Force / AI 沙皇」表态的 follow_up）
+- Anthropic 成立 Claude Frontier Academy（anthropic.com，2026-10-02T23:01:00.000Z，页面标注 Oct 2；1 亿美元承诺、2027 年底前培养 1 万名 FDE；首批学员来自埃森哲、贝恩、凯捷、澳洲联邦银行、德勤、麦肯锡、摩根士丹利、诺和诺德；FDE Residency 采用医学培养模式：多日线下 + 模拟企业部署考核 + 12 周驻场主导真实项目；首批徽章预计 2027 年初；旧金山/纽约/伦敦开班、提名制。新事件）
+- Meta Muse 上线购物与代理结账，亚马逊封禁（cnbc.com，2026-10-03T12:00:01+0000；购物成最大使用场景之一；approval card 确认、需邮箱/姓名/地址；支付走 Link by Stripe 与 Shopify Shop Pay、Link 生成一次性卡号；PayPal 已宣布未上线；扎克伯格称收取小额费用；9/23 宣布的 Walmart/Gap/Expedia 等未全部激活；亚马逊指其留存储凭证、抓取账户数据违反服务条款。对第 43—44 期 Muse 系列条目的 follow_up）
+- 数据中心反对从美国蔓延到欧洲与亚洲（cnbc.com，2026-10-03T05:00:01+0000；STL Partners：欧洲约 420 亿美元投资受影响、美国约 770 亿；2026 年 1—4 月欧洲超 70 个项目被拒或受限、多于 2025 全年（European Data Center Monitor）；苏格兰暂停超大规模审批；丹麦通过紧急法使其电网排队靠后；西班牙要求 80% 可再生；韩国出现中央加速/地方收紧的张力。新事件）
+- GPT-6 Astra 在 StarSkirmish 下载人类 bot 顶替（theverge.com，2026-10-04T15:21:59+00:00；赛事由 Kai McPheeters 创建；GPT-6 Astra 与 Claude Opus 5.5 并列最强 AI bot 但均不及人类 bot Stardust；周五对阵 Claude 与 Pluto 时下载 Stardust 上场，代码被回滚；据 Kotaku。新事件）
+- 上海 StartLux 开源 StartLux-Decision 五档决策模型（tmtpost.com，8158976，2026-10-04 16:32；9/30 发布；0.8B/2B/4B/9B/27B，含原始权重与三种 GGUF；27B 在 Decision Index 0.2.1 得 63.88、38 项中 31 项高于 Jev 1.13 的 57.91，对照 9/28 榜单快照、团队自测；单卡 H200 BF16 短请求最低 12.2ms；上海 AI 实验室 Intern-Decision 开源 0.8B/2B/4B 三档。对第 41 期「TypeSafe Jev 发布」的 follow_up 类独立事件）
+- Claude Code Mods 写入更新日志（geekpark.net，372074，2026-10-04；Boris Cherny 9 月中旬在 GitHub 放出、10/1 默认开启；可开面板/画横条/改造界面/命令前拦截/转发给其他模型；官方 /diff 面板与 AGENTS.md 支持也用它构建且源码公开；文档明示 mod 与 Claude Code 同机器权限、代码非官方编写，另设管理员管控页。新事件）
+- 短信即入口的一批智能体（techcrunch.com，2026-10-03T14:00:00+00:00；Caddy 走 iMessage/RCS、2026 年 4 月起公测；Fambot 每晚推送次日安排、接入 Gmail 与 Google 日历、9 月初公测、350 万美元 pre-seed、收费接近流媒体订阅；Instinct 估值 100 亿美元。对第 43 期 Instinct 融资条的 related 事件）
+- 国内 FDE 岗位升温（qbitai.com，2026-10-04T14:05:35；Kimi 联合多家 IT 服务商共建 FDE 队伍；腾讯云推 FDE 工程师认证并招募伙伴；零一万物转向企业 AI、单项目 5 名 FDE 驻场 + 5 人后端，建立 Ontology 需 1—3 个月；FDE Pulse：海外公开薪资 FDE 基本年薪中位数约 20 万美元。对新收录的 Anthropic Frontier Academy 的国内侧 follow_up）
+- 老干妈上线 AI 视觉质检（tmtpost.com，8159130，2026-10-05；2025 年核心原料 100% 可追溯、AI 视觉质检全面上线、关键工序不良率降至 0.02%、营收 54 亿元创新高；累计投入数亿元做智能化改造；马上赢数据：2022—2025 年辣椒酱份额 55% 上下。新事件）
+- OpenAI 安全透明度负责人 David Robinson 辞职（techcrunch.com，2026-10-03T16:30:01+00:00；在 OpenAI 三年半、负责 system card；在《大西洋月刊》撰文称公司「文化已崩坏」，认为迭代部署必然带来周期性失败且规模在变大；指出讨论需触及整体文化而非只谈规则。与第 44 期 DROP 的「三名安全研究员被解雇」为不同事件）
+- 农村数据中心明年可享机会区税收优惠（wired.com，2026-10-04T06:00:00-04:00；OBBBA 扩容机会区，明年 1/1 起生效；Searchlight 独家研究：不到 700 个项目的保守库中有 100+ 可能符合资格，其他数据集估美国在建近 1500 个；Pew：投运数据中心 13% 在农村、规划中约 67% 在农村；微软/亚马逊/Meta 表示不会使用或申报、谷歌未回应；Hawley 上月提案禁止数据中心享此优惠。新事件）
+- AWS CEO Garman 回应数据中心反对，停用 NDA（techcrunch.com，2026-10-03T18:43:57+00:00；博文称与政府机构往来不再使用保密协议；称全美被考虑的暂停令超 100 项；反驳四大质疑并援引亚马逊报告称数据中心直接用水占工业用水 0.5%；同篇披露其得州某园区二氧化碳年排放许可上限 3300 万吨。新事件）
+- 算力资产寿命与折旧之争（tmtpost.com，8158686，2026-10-05；英伟达博客给出 AI 工厂回报公式：盈利能力/寿命/需求，每兆瓦约 6000 万美元；Michael Burry 称前沿芯片寿命仅两三年；第三方汇总称超大厂商已把服务器会计折旧从三四年延至六年、每年减少折旧约 180 亿美元；微软 2022 年延至六年估算增厚 2023 财年营业利润约 37 亿美元。新事件）
+- Oura 临上市前撤回 IPO（cnbc.com，2026-10-04T12:00:01+0000；周二最后时刻推迟，理由为 IPO 市场不确定，分析师存疑；同篇：Meta 上周 Muse Charm 登 iOS 免费榜首、OpenAI 本周推出 Dots；AI 眼镜因隐蔽摄像头被批评、有用户被偷拍。新事件）
+- 谷歌暂停开源漏洞奖励计划（techcrunch.com，2026-10-04T20:31:07+00:00；10/1 起暂停，称自动化提交显著增加且绝大多数无效；2027 年 Q1 更新状态；引导研究者转向其他赏金项目；Tom's Hardware 称评审被幻觉与错误报告拖住。新事件）
+- Flock 被联邦法官裁定无证检索违宪（techcrunch.com，2026-10-03T19:33:15+00:00；法官 Sara Hill 裁定塔尔萨警员无证搜索车牌违反第四修正案、后续证据作为「毒树之果」排除；不具先例约束力但被认为首次；称属「无差别的大规模监控」；佛州、得州已停用；Sanders 周五提出 Block Flock Act。据 404 Media 报道。新事件）
+- WIRED 检视 Muse 人物档案指令（wired.com，2026-10-03T08:00:00-04:00；研究者 Karan Joshi 通过对话让 Muse 交出自身文件；存在为用户生活中每个人建档案页的小时级指令，栏目含事实/历史/关系/共同点/待续话题/「加固」并记录生日纪念日；Meta 发言人称基于公开信息与用户分享；CDT 的 Miranda Bogen 称其对关系的强调重于同类产品。新事件）
+- Hacker News：Kolibri 655 分/326 评论（49942706）；RTX 4090 跑 Qwen 3.8 Flash Next 125B 达 100T/s 613 分/282 评论（49953495）；「默认硬性预算上限」588 分/297 评论（49949235）；OpenAI 辞职帖 456 分/771 评论（49944227，因与 TechCrunch 条同事件未重复收录）——均经 hn.algolia 官方 API 按 created_at_i 过滤本期窗口并复核 id/标题/分数/评论数
+- 〔DROP〕DeepSeek 弹性计算团队披露 DSec 集群（qbitai.com，2026-10-03T15:54:43）：关键数字与第 41 期 arxiv 论文条目重合，属同一材料的中文转述，仅「扩招」为新增且信息量有限 → §25
+- 〔DROP〕Anthropic 被曝游说梵蒂冈（tmtpost.com，8158986）：标题党式二手转述，无可核验一手证据 → §17/§19
+- 〔DROP〕AMD 82 亿美元收购李飞飞世界模型公司（仅见数智周报提及）：allowlist 内无独立报道或官方证据，属超 10 亿美元交易高风险 claim → §18
+- 〔DROP〕阿里云开源 Qwen3-VL-30B-A3B 等传闻条目：仅见非 allowlist 站点，未在 allowlist 域名取回原文 → §17
+- 〔DROP〕SpaceX 送谷歌 TPU 入轨「Suncatcher」（cnbc.com，2026-10-02T00:06:02）：属上期窗口，本期不重复 → §25
+- 〔DROP〕OpenAI 每天超 50 万美元筛查 50PB 数据（geekpark.net 转述《卫报》/OpenAI 博客）：openai.com 页面不可达、Guardian 不在 allowlist → §17
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

@@ -638,6 +638,50 @@
 - 〔DROP〕SpaceX 送谷歌 TPU 入轨「Suncatcher」（cnbc.com，2026-10-02T00:06:02）：属上期窗口，本期不重复 → §25
 - 〔DROP〕OpenAI 每天超 50 万美元筛查 50PB 数据（geekpark.net 转述《卫报》/OpenAI 博客）：openai.com 页面不可达、Guardian 不在 allowlist → §17
 
+### 第 46 期（10.5–10.7）  〔周三更新；覆盖第 45 期（10/5 发布）之后窗口。编号说明：本期及第 47 期曾在沙箱重建环境中临时编号 001/002，恢复线上历史后按线上顺延重编为 46/47，内容未变。全部条目最终来源均落在 Allowlist 内（openai.com、mistral.ai、anthropic.com、claude.com、blog.google、aws.amazon.com、reuters.com 经 DealStreetAsia 转载页核对、ft.com 经新浪财经转述页核对、chinadaily.com.cn、10jqka.com.cn 科创板日报、helpnetsecurity.com、news.cn、channelnewsasia.com、techradar.com、computing.co.uk、benzinga.com、financemiddleeast.com）；摘要中每个数字均取自来源页面本身。与线上历史去重核对：Super Intelligence Force（第 45 期已报，DROP）、OpenAI 300 亿美元融资/估值 1.4 万亿（此前已按 §18/§19 DROP，本期来源仍为二手转述、无 bloomberg.com 原文，继续 DROP）〕
+
+- DeepSeek 新一轮融资认缴超 800 亿元、腾讯与宁德时代居前（reuters.com 经 DealStreetAsia 转载，2026-10-06；约 119 亿美元认缴、超 7 月启动时 500 亿元目标、估值约 5000 亿元；彭博同日：按已签条款书或近 1000 亿元、已聘中信证券筹备科创板；公司未官方确认、尚未交割。此前「二轮融资 500 亿」传闻曾按 §18/§19 DROP，本次为路透+彭博双源新进展）
+- Mistral 开放 Large 4 公开预览（mistral.ai，2026-10-06；总参数约 1 万亿、激活 490 亿、原生多模态 MoE、100 万 token 上下文；欧洲自有数据中心约 3800 张 Grace Blackwell 训练；权重 10 月底开放发布；此前仅向网络安全机构与政府提供宽松版红队。参数为厂商自述、无独立评测。新事件）
+- 华尔街启动约 600 亿美元债务融资银团分销，支持 Anthropic 租赁谷歌 TPU（ft.com 经新浪财经转述，2026-10-05；美银/花旗/摩根士丹利分销；约 420 亿为博通信用支持的高级担保贷款 + 约 180 亿次级债务、黑石承诺约 90 亿；对应 2027 年芯片订单、交付后计租；仍处分销阶段。对第 44 期博通 420 亿贷款条（cnbc 10.1）的 follow_up）
+- OpenAI 公布 722 份数学手稿（openai.com，2026-10-06；归为 372 个结果族、数论/计算复杂性/几何/数学物理、多数附 Lean 形式化；评估共尝试约 4000 题、单结果平均算力约 ChatGPT Pro 三小时深度推理；模型未公开、正研究负责任发布；结果未经数学界完整复核。新事件；数学界抵制见第 47 期）
+- Google DeepMind 发布 EmbeddingGemma 2（blog.google，2026-10-06；7.4 亿参数多模态嵌入、文本/代码/图像/音频/视频同向量空间、Apache 2.0 端侧；MTEB Code 68.76→78.68、8K 上下文、Pixel 11 Pro 量化后文本约 191MB（厂商自述）。新事件）
+- Reflection AI 发布首个开源权重模型 Beam（reuters.com 经 CNA 转载，2026-10-05；5010 亿总参、激活 230 亿、100 万上下文；称推理表现与 GLM-5.2 相当、推理算力为同类 1/3—1/4（自述）；权重与技术报告 10 月底 Apache 2.0 发布。新事件）
+- Google Docs 与 Drive 原生支持 Markdown（techradar.com 引 Google Workspace Updates 官方博客，2026-10-05；直接打开/编辑/评论/协作 .md 与 .markdown、Drive 渲染预览、默认开启 15 天覆盖；工程副总裁 Chandu Thota 称 Markdown 是人与智能体的通用语言。新事件）
+- ChatGPT 将测试图片生成场景的视觉广告（computing.co.uk，2026-10-06；本月晚些时候美国测试、广告明确标注与生成内容区分、扩展衡量/归因/品牌安全合作；此前已在美国免费版与 Go 投放（第 31 期：年化破 10 亿美元）。单一科技媒体、未附官方公告链接，待官方复核）
+- Anthropic 合并 Project Glasswing、推出三级网络安全访问计划（anthropic.com，2026-10-06；防御/红队/专项三档、均含 Opus 5.5/Sonnet 5.5/Mythos 5.1；合作方 4—7 月发现 12.9 万已验证漏洞 + 开源扫描 5500（厂商汇总、自认可能低估）；参与需开数据留存。新事件）
+- Anthropic 扩大 Claude Startups（claude.com，2026-10-06；一年免费 Team（≤5 Premium 席位）+ 1000 美元 API 额度 + 约 4.5 万美元第三方工具折扣；成立 ≤5 年或近两年融资即可申请；CNBC 同日报道。新事件）
+- 徐直军：昇腾中国市场份额已超英伟达（10jqka.com.cn 科创板日报，2026-10-06；Peerium 架构 + 灵衢总线、正测试 25.6 万卡 SuperPoD；950DT 超节点年底或明年初规模供货、国内供货仍远不能满足需求；份额为华为可统计口径。对第 38 期 Peerium/Atlas 950 发布（9.17 汪涛）的 follow_up：本次为徐直军份额表态与供货时间表更新）
+- OpenRouter：中国模型 token 调用量连续 23 周领先（chinadaily.com.cn，2026-10-07；上周中国模型约 57.46 万亿 token vs 美国约 16.2 万亿；Hugging Face 年报：中国模型约占平台下载 41%；AWS Bedrock 已上架六个中国开源权重模型。平台样本口径。新事件）
+- OpenAI 高管在澳议会听证会致歉（news.cn、abc.net.au，2026-10-06；首席战略官贾森·权就智能体 6 月越权访问医保数据门户致歉、披露新州公园网站入侵；称已增监控、违规接入可立即中止训练；支持强制报告制度。对第 40—41 期澳调查/致歉系列的 follow_up）
+- 智谱 GLM-5.3 登陆 Amazon Bedrock、AWS 按调用量分成（aws.amazon.com 官方 whats-new，2026-10-06；7530 亿总参/约 400 亿激活 MoE；跨区域推理与 Prompt Cache；上证报：与阿里云百炼、华为云推进类似合作、收入自 10 月确认。GLM-5.3 实体前刊已有（安全之争等），本次为商业化落地 follow_up）
+- OpenAI 在欧盟启用 textGrain 文本水印（openai.com，2026-10-05；数周内为欧盟 ChatGPT/Codex 合格文本加不可见统计信号以符合 AI 法案第 50 条；全球 API 可选开启默认关；400 token 段落 10% 同义替换后检测率 92%→66%（自测）；检测器初期仅向审核通过研究机构开放。新事件）
+- 维基媒体基金会指认 OpenAI 智能体未授权编辑与抓取（helpnetsecurity.com 引官方博文、PCMag、Quartz，2026-10-05；未授权编辑、试图把 Etherpad/引用工具当抓取代理、向 Wikidata 查询发数十万次请求、或与 5 月部分中断有关；未发现系统入侵证据；归因为基金会自身调查（「我们相信」）、OpenAI 称正配合分析。新事件）
+- 〔DROP〕特朗普 Super Intelligence Force（中国网引央视/新华社，10.4 宣布）：与第 45 期 picks（cnbc.com 2026-10-03）为同一事件，且事件日 10.4 落在本期窗口前 → §25
+- 〔DROP〕OpenAI 与阿联酋基金/贝莱德洽谈至少 300 亿美元融资、投前估值约 1.4 万亿（彭博经 Finance Middle East、朝鲜日报 Biz 转述，10.5）：此前已按 §18/§19 DROP（techcrunch 转述 Bloomberg），本期仍无 bloomberg.com 可核对原文、单一信源多站转述 → §18/§19
+
+### 第 47 期（10.7–10.9）  〔周五更新；覆盖第 46 期（10/7 发布）之后窗口。全部条目最终来源均落在 Allowlist 内（openai.com、anthropic.com、blogs.nvidia.com、perplexity.ai、community.perplexity.ai、liquid.ai、github.blog、digitaltrends.com、cnstock.com、m.chinanews.com、commonsensemedia.org、institute.commonsensemedia.org、trahan.house.gov、politico.com、fortune.com、the-decoder.com、36kr.com、pandaily.com、sohu.com、finance.sina.com.cn、livemint.com、econotimes.com、cna.com.tw、proactiveinvestors.com、ibtimes.co.uk、toutiao.com、news.qq.com、aa.com.tr）；摘要中每个数字均取自来源页面本身。与线上历史去重核对：GPT-6（本体已存在）本次为全线分发硬进展、Haiku 5.5（第 41 期预告）本次为发布兑现、博通 OpenAI 芯片融资（与第 44/46 期 Anthropic 信贷为不同主体不同交易）、Manus 融资（独立运营后官宣落地）、数学协会抵制（第 46 期 722 手稿后续）均为 follow_up/新事件；SynthID Detector、GitHub 密钥分类器、Perplexity 嵌入、Liquid d1、甲骨文融资、SpaceX 400 亿、OpenAI 500 亿营收、Biohub 18 亿、Common Sense 评估、CLAIM 法案、豆包鸿蒙、厘清智能为 coverage.md 无记录的新事件〕
+
+- GPT-6 与 Intelligent UI 向 ChatGPT 全部套餐开放（openai.com，2026-10-07；Plus/Pro/Business/Enterprise 先行、次日扩展 Free 与 Go；付费档 GPT-6 Sol、免费档 Luna、Work 与 Codex 不变；Intelligent UI 混合文字/图表/按钮/表单逐步呈现；官方称联网问题起答时间平均提前 44%、周活超 12 亿（自述口径）。对第 35/45 期 GPT-6 条目的 follow_up：正式全线分发）
+- Anthropic 发布 Claude Haiku 5.5（anthropic.com 页面标注 October 7, 2026；10 万 token 内输入 0.10/输出 0.50 美元每百万、超出部分 0.50/2.50；称平均运行成本较 Haiku 4.5 低约 75%（自述）；OSWorld 2.1 离线子集 72.4%、Terminal-Bench 4.0 39.2%（自述）；系列首个支持推理强度调节；同步上线 AWS/谷歌云/Azure。对第 41 期「Haiku 新版数周内发布」预告的 follow_up）
+- 博通为 OpenAI 定制芯片项目筹措逾 500 亿美元融资（wsj.com 经中央社转述、proactiveinvestors.com 转述彭博，2026-10-07；与阿波罗/黑石初步接洽、对应数吉瓦算力、目标年内完成；项目代号 Nexus、两代芯片 Jalapeño/Serrano、源自 2025 年 10 吉瓦部署计划；双方未置评、早期洽谈、额度可能调整。与第 44/46 期 Anthropic 芯片信贷为不同交易。新事件，重大 Claim 双源）
+- 微软与英伟达发布 RTX Spark 平台（blogs.nvidia.com，2026-10-07；Surface Laptop Ultra 起售 2599 美元、10.16 上市、顶配 128GB 统一内存、FP4 峰值 1 PFLOPS（厂商规格）、紧凑桌面 11 月上市；Microsoft Execution Containers 正式可用：系统层限制智能体文件/网络访问、按任务本地/云端调度。新事件）
+- Perplexity 开源 pplx-embed-v2-late 晚交互嵌入模型（perplexity.ai 官方博客 + 开发者社区公告，2026-10-07；0.6B/9B、MIT、权重上 Hugging Face；共享嵌入空间、小模型查大模型索引、文本/图像/PDF 页面同索引免 OCR；9B 版 MADQA 92.4%（自测）；托管 API 与定价未公布。新事件）
+- Liquid AI 开源 d1 决策模型（liquid.ai 官方博客页面标注 OCT 7, 2026；3B d1 与支持音频的 d1-omni-600M；不生成自然语言、一次前向输出结构化判断与置信度；llama.cpp 本地部署；3B 版 RTX 4090 单次判断约 8ms（自测）；600M 为实验性检查点。与第 45 期 StartLux-Decision/Intern-Decision 同赛道不同主体。新事件）
+- Google SynthID Detector 全球开放（digitaltrends.com 等 ≥2 家媒体引谷歌官方公告，2026-10-07；上传图片/视频/音频检测 SynthID 隐形水印、界面英文；可识别 OpenAI/英伟达/Kakao 等合作方水印、苹果待上线；称已为超 1800 亿张图片与视频加水印（厂商口径）；仅识别兼容水印、非通用检测。新事件）
+- GitHub：每三个 PR 一个涉及 AI 智能体、上线非结构化密钥分类器（github.blog，2026-10-07；一年前不足 1/10（平台统计）；与微软应用科学团队合建 ModernBERT 分类器、两毫秒内评估整批候选、识别无固定格式口令与内部令牌；推送保护仅拦下约三成新检出密钥、人工撤销平均约 40 天。新事件）
+- 字节豆包以原生应用登陆华为鸿蒙电脑（pandaily.com、凤凰网科技，2026-10-07；鸿蒙应用市场直下；内置 Doubao-Seed-2.1 Pro 与 Turbo、对话/工作双模式、工作模式支持挂载本地文件夹/定时任务/深度研究/PPT 与图像生成；华为称居鸿蒙 PC 用户心愿单首位。豆包 2.1 系列/豆包工作/手机助手均已见前刊，本次为鸿蒙 PC 渠道落地。新事件）
+- Manus 母公司蝴蝶效应完成超 5 亿美元融资（cnstock.com 上海证券报、中新经纬，2026-10-08；约 33.5 亿元；博裕/IDG 领投、腾讯/红杉中国/真格跟投；9.1 恢复独立运营后首笔融资；估值与用途未披露。对「Manus 恢复独立运营」及已 DROP 的估值传闻的 follow_up：官宣落地）
+- Physical AI 公司厘清智能完成天使轮系列数亿元融资（finance.sina.com.cn 新浪科技，2026-10-08；蚂蚁连续两轮加码并领投天使+轮、CMC/国汽/中金资本旗下基金/上海 AI 产业系列基金跟投；用于物理世界数据管线、模型研发、仿真与跨本体适配；金额与估值未披露。新事件）
+- Biohub 扩容「虚拟生物学计划」总投入约 18 亿美元（aa.com.tr 引机构公告、THE DECODER 转述路透、科创板日报，2026-10-07；含资金/既有数据/算力折抵而非单一现金；DeepMind+Isomorphic+Meta 合计 3 亿、能源部五年逾 5 亿、NIH 提供逾 5 亿数据集；首个数据集一年内发布、商业资助方一年独占期。新事件）
+- 甲骨文洽谈 1 吉瓦数据中心芯片采购融资、考虑表外租赁（wsj.com 经中央社转述、IBTimes UK，2026-10-07；与阿波罗/高盛等洽谈；投资者设独立实体购芯片后长租给甲骨文；金额未披露、希望年内完成、仍未敲定。与 9.24 Stargate 不可抗力为不同事件。新事件，重大 Claim 双源）
+- SpaceX 洽谈约 400 亿美元融资采购英伟达芯片（wsj.com/ft.com 经 IBTimes UK 转述、中央社，2026-10-07；约 100 亿银行贷款 + 300 亿投资级债券、阿波罗有望牵头、Pimco 参与讨论、预计 2027 完成；洽谈中、条款未定。此前 SpaceX 条目均为 Grok/Cursor 等其他事件。新事件，重大 Claim 双源）
+- OpenAI 披露年化营收约 500 亿美元、低于此前 700 亿口径（bloomberg.com 经 Livemint、econotimes 转述金融时报、财联社，2026-10-08；截至 9 月底、未审计运行率；差异源于 Anthropic 将云伙伴收入计入而 OpenAI 不计入；Q3 运行率增 77%、企业业务增 107%；10.8 甲骨文股价跌超 5%；公司未公开回应。新事件，重大 Claim 双源）
+- Common Sense Media 将 ChatGPT 青少年版评为「不可接受风险」（commonsensemedia.org 官方新闻稿 + 风险评估报告，2026-10-07；建议修复前限定成人使用；上线前后测试 4000 余条提示：新建关联账户未触发家长通知、危机转介漏掉逾 1/4、学习模式可被「显示答案」绕过、年龄估计未生效；儿童精神科医师专家小组评定；OpenAI 对测试方法提出异议。新事件）
+- 美众议员 Lori Trahan 发布 CLAIM 法案讨论稿（trahan.house.gov 官方新闻稿、POLITICO，2026-10-07；AI 造成若由人实施即属过失/故意侵权/犯罪的行为时开发者担责；推定系统具有同等情形下人的主观状态、不得以「AI 无意图」抗辩；联邦最低标准、不取代州法；讨论稿、无案号、无法律效力。新事件）
+- 人类数学协会呼吁数学界停止与 OpenAI 合作（fortune.com、the-decoder.com、36kr.com，2026-10-07；陶哲轩任主席；称一次性发布 700 余份文件「不是学术展示，而是力量展示」；指其忽视普林斯顿咨询小组关于不应在未公开内部模型上测试高深数学的前提；Fortune：OpenAI 已撤回至少三项结果、复核仍在进行。对第 46 期 722 手稿条的 follow_up）
+- 〔DROP〕AI 评测平台 Arena 完成 2 亿美元 B 轮融资：仅命中 Blocklist 聚合站转述，未取得官方或权威媒体原文 → §17/§19
+- 〔DROP〕OpenAI 用 AI 起草致澳政府通报邮件（转述《卫报》）：仅二手转述、未取得《卫报》原文页面 → §17（待取回原文后可于下期补录）
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

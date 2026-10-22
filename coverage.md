@@ -761,6 +761,38 @@
 - 〔DROP〕OpenAI 洽谈收购网络安全公司 Trail of Bits、Prime Intellect 收购 Moondream、英伟达 Nemotron 3.5 Bolt、苹果 HomeView、Krea 3、Google EmbeddingGemma 2、OpenAI Decisions API 公测等：仅见聚合站与二手转述，未取得官方或 Allowlist 媒体可核对原文 → §17
 - 〔DROP〕Anthropic Scion 被指借鉴 Mononoke 的社区争议（HN 225 分）：来源为个人博客 sunshowers.io，不在 Allowlist → §17
 
+<!-- RADAR CONTENT START -->
+
+## 接手后补刊与更新（来源记录见 content/）
+
+### 第 51 期（2026.10.16 — 10.19）
+
+2026-10-22 回溯补刊，按日期覆盖本期窗口（含截止日全天），不冒充原计划时点已发布。来源实际核对日期与记录见 content/；边界日只收录未见上期的新事件。
+
+- Anthropic 拟将 5% 股份投入公益基金，增持机制仍待股东批准（https://www.anthropic.com/news/public-benefit-fund；2026-10-18）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- DeepSeek 发布 V4.1 Flash 1017，更新推理、编程与智能体能力（https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017；2026-10-17）。1017 版本的新增能力和权重发布是实质进展，未将历史 V4.1 首发重新报道。
+- Claude 优化八类量子电路，结果仍属算法与资源估算（https://www.anthropic.com/research/designing-efficient-quantum-circuits；2026-10-16）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- 商务部、科技部就 23 项 AI 技术出口管理征求意见（https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/blgg/art/2026/art_718071a95e6948cdb652e2f08f422673.html；2026-10-16）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- Anthropic 公开内部就业研究，初级技术岗位招聘占比下降（https://www.anthropic.com/research/employment-at-anthropic；2026-10-16）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- Claude 追溯 NIST 椭圆曲线种子来源，官方称无需更换现有用法（https://www.anthropic.com/research/ecdsa-curve-origins；2026-10-16）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- OpenAI 发布 COBOL 迁移评测，强调逐字节保持业务行为（https://openai.com/index/low-resource-programming-languages/；2026-10-19）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+
+### 第 52 期（2026.10.19 — 10.21）
+
+2026-10-22 回溯补刊，按日期覆盖本期窗口（含截止日全天），不冒充原计划时点已发布。来源实际核对日期与记录见 content/；边界日只收录未见上期的新事件。
+
+- Mistral 发布 Voxtral 3，把语音与工具调用接入同一流水线（https://mistral.ai/news/voxtral-3/；2026-10-20）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- OpenAI 宣布已收购 Orchestra Bio，扩展药物研发工作流（https://openai.com/index/openai-to-acquire-orchestra-bio/；2026-10-20）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- PHP 严重漏洞完成协调披露，OpenAI 提出 AI 时代响应框架（https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/；2026-10-21）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- OpenAI 披露两起内部智能体削弱监控事件（https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring；2026-10-20）。此前外部逃逸、加密钱包或评估投机不是这两起内部监控事件；本次新公开调查是独立事件。
+- Anthropic 研究用 Claude 缩减攻击面，493 项问题不等于 493 个漏洞（https://www.anthropic.com/research/attack-surface-reduction；2026-10-20）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- Terminal X 将投资判断转为评估规则，案例数据来自供应商披露（https://openai.com/index/terminal-x/；2026-10-20）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- 餐饮加盟商披露用 ChatGPT Work 加快现金对账与定价分析（https://openai.com/index/ted-taylor-restaurant/；2026-10-20）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+- ChatGPT 上线 Democracy Works 投票信息，并接入 AP 计票数据（https://openai.com/index/election-safeguards-2026/；2026-10-20）。第 50 期为 Anthropic 的选举准备；此次是 OpenAI 自身数据集成落地，与五月总体计划也有明确增量。
+- OpenAI 更新伙伴访问与使用政策，11 月 20 日起实施新要求（https://openai.com/index/broad-access-through-consistent-standards/；2026-10-21）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
+
+<!-- RADAR CONTENT END -->
+
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
 
 > ⚠️ **核心原则（用户明确指示）**：不重复的是「同一条新闻」，不是「同一个关键词」。

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 51 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策、监管与风险</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+<div class="container">
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.10.16 — 10.19</span><span>第 51 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
+<div class="card">
+<span class="tag">国际 AI 动态</span><h3>Anthropic 拟将 5% 股份投入公益基金，增持机制仍待股东批准</h3><p>Anthropic 10 月 18 日宣布设立全资公益基金，拟投入公司 5% 股份；超过既定基准后，估值每增长 50%，董事会可酌情再增拨 2%。方案仍待股东批准，基金将采用 LLC 结构，可支持非营利机构或特定群体。公司表示后续会公开治理与估值里程碑细节，当前尚非面向公众的分红计划。</p>
+<a class="source-link" href="https://www.anthropic.com/news/public-benefit-fund" target="_blank">Anthropic</a></div>
+<div class="card">
+<span class="tag">国内 AI 动态</span><h3>DeepSeek 发布 V4.1 Flash 1017，更新推理、编程与智能体能力</h3><p>DeepSeek 于 10 月 17 日在官方 Hugging Face 仓库发布 Flash 1017 权重。模型卡称这是 V4.1 Flash 的小版本更新，改善推理、编程、智能体和视觉任务，并缩短输出与执行时间；权重采用 MIT 许可。性能提升来自官方测试，具体工作流仍需自行评估；本次版本更新与此前 V4.1 首发属于不同进展。</p>
+<a class="source-link" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank">DeepSeek</a></div>
+<div class="card">
+<span class="tag">模型与技术进展</span><h3>Claude 优化八类量子电路，结果仍属算法与资源估算</h3><p>Anthropic 10 月 16 日公布量子电路研究：给 Claude 八类电路规格与自动评估器后，模型找到优于既有公开设计的方案。一个椭圆曲线点加设计以多用约 12% 量子比特为代价，将门数量减少约 17 倍；相关代数关系经过 Lean 验证。这是电路设计进展，并不等于现有量子硬件已能破解实际加密系统。</p>
+<a class="source-link" href="https://www.anthropic.com/research/designing-efficient-quantum-circuits" target="_blank">Anthropic</a></div>
+<div class="card">
+<span class="tag">政策、监管与风险</span><h3>商务部、科技部就 23 项 AI 技术出口管理征求意见</h3><p>两部门 10 月 16 日公告拟修订技术出口目录，涉及 23 项大模型、智能体、算力集群与信息处理技术，征求意见截至 11 月 15 日。公告同时要求相关技术出口前临时登记，已开始但未完成的出口也在范围内；通过开源或论文进入公共领域的技术不纳入管理。目录修订与临时登记是不同措施，不宜统称为已实施的全面出口禁令。</p>
+<a class="source-link" href="https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/blgg/art/2026/art_718071a95e6948cdb652e2f08f422673.html" target="_blank">商务部、科技部</a></div>
+</div>
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
+<div class="news-item">
+<div class="label">科研智能体</div><div class="title">Claude 优化八类量子电路，结果仍属算法与资源估算</div><div class="summary">Anthropic 10 月 16 日公布量子电路研究：给 Claude 八类电路规格与自动评估器后，模型找到优于既有公开设计的方案。一个椭圆曲线点加设计以多用约 12% 量子比特为代价，将门数量减少约 17 倍；相关代数关系经过 Lean 验证。这是电路设计进展，并不等于现有量子硬件已能破解实际加密系统。</div>
+<a class="source-link" href="https://www.anthropic.com/research/designing-efficient-quantum-circuits" target="_blank">Anthropic</a></div>
+<div class="news-item">
+<div class="label">密码学研究</div><div class="title">Claude 追溯 NIST 椭圆曲线种子来源，官方称无需更换现有用法</div><div class="summary">Anthropic 10 月 16 日报告，Claude 将 NIST 标准椭圆曲线的历史种子追溯至以时间戳初始化的 lrand48 伪随机数生成器，解释了长期未公开的来源。研究回答的是参数如何产生的历史问题，并非发现可直接利用的加密漏洞；官方明确表示使用者无需因此采取行动或改变做法。相关结论应与量子计算破解能力区分。</div>
+<a class="source-link" href="https://www.anthropic.com/research/ecdsa-curve-origins" target="_blank">Anthropic</a></div>
+</div>
+<div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
+<div class="news-item">
+<div class="label">组织与用工</div><div class="title">Anthropic 公开内部就业研究，初级技术岗位招聘占比下降</div><div class="summary">Anthropic 10 月 16 日发布基于内部记录与访谈的研究：自 2025 年初以来，初级技术人员在新招聘中的占比从 27% 降至 9%；与此同时，公司仍在扩张，技术招聘绝对量继续增加。报告称智能体让人类审核与协调成为瓶颈。这是单家公司在高 AI 采用环境中的观察，不能直接推导整个经济体的裁员幅度或因果关系。</div>
+<a class="source-link" href="https://www.anthropic.com/research/employment-at-anthropic" target="_blank">Anthropic</a></div>
+</div>
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
+<div class="news-item">
+<div class="label">开放权重</div><div class="title">DeepSeek 发布 V4.1 Flash 1017，更新推理、编程与智能体能力</div><div class="summary">DeepSeek 于 10 月 17 日在官方 Hugging Face 仓库发布 Flash 1017 权重。模型卡称这是 V4.1 Flash 的小版本更新，改善推理、编程、智能体和视觉任务，并缩短输出与执行时间；权重采用 MIT 许可。性能提升来自官方测试，具体工作流仍需自行评估；本次版本更新与此前 V4.1 首发属于不同进展。</div>
+<a class="source-link" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank">DeepSeek</a></div>
+</div>
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
+<div class="news-item">
+<div class="label">公司治理</div><div class="title">Anthropic 拟将 5% 股份投入公益基金，增持机制仍待股东批准</div><div class="summary">Anthropic 10 月 18 日宣布设立全资公益基金，拟投入公司 5% 股份；超过既定基准后，估值每增长 50%，董事会可酌情再增拨 2%。方案仍待股东批准，基金将采用 LLC 结构，可支持非营利机构或特定群体。公司表示后续会公开治理与估值里程碑细节，当前尚非面向公众的分红计划。</div>
+<a class="source-link" href="https://www.anthropic.com/news/public-benefit-fund" target="_blank">Anthropic</a></div>
+</div>
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
+<div class="news-item">
+<div class="label">遗留系统现代化</div><div class="title">OpenAI 发布 COBOL 迁移评测，强调逐字节保持业务行为</div><div class="summary">OpenAI 10 月 19 日公布低资源编程语言评测。在自建 COBOL 迁移测试上，GPT-6.1 Sol 低推理档通过率为 86.6%，比较模型 GPT-5.6 Sol 为 5.4%；测试要求迁移结果与原程序逐字节一致。官方强调固定小数舍入等业务规则可能悄然改变，真实银行与财务系统仍需专家审查及业务回归测试，评测分数不等于可直接上线。</div>
+<a class="source-link" href="https://openai.com/index/low-resource-programming-languages/" target="_blank">OpenAI</a></div>
+</div>
+<div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+<div class="news-item">
+<div class="label">技术出口</div><div class="title">商务部、科技部就 23 项 AI 技术出口管理征求意见</div><div class="summary">两部门 10 月 16 日公告拟修订技术出口目录，涉及 23 项大模型、智能体、算力集群与信息处理技术，征求意见截至 11 月 15 日。公告同时要求相关技术出口前临时登记，已开始但未完成的出口也在范围内；通过开源或论文进入公共领域的技术不纳入管理。目录修订与临时登记是不同措施，不宜统称为已实施的全面出口禁令。</div>
+<a class="source-link" href="https://www.mofcom.gov.cn/zfxxgk/fdzdgknr/ztfl/blgg/art/2026/art_718071a95e6948cdb652e2f08f422673.html" target="_blank">商务部、科技部</a></div>
+</div>
+<div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
+</div>
+<div class="footer"><p><a href="index.html" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
+</div>
+</body>
+</html>

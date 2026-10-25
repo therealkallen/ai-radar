@@ -1,5 +1,6 @@
 """Read public Pages from a networked runner, comparing exact committed bytes."""
 import hashlib
+from http.client import HTTPException
 import json
 from pathlib import Path
 import sys
@@ -38,7 +39,7 @@ def verify(root=ROOT, read=fetch, attempts=6, delay=10, sleep=time.sleep):
                 actual = read(url)
                 pages.append({'url': url, 'matches_committed_html': actual == body,
                               'sha256': hashlib.sha256(actual).hexdigest()})
-            except (OSError, ValueError) as error:
+            except (OSError, ValueError, HTTPException) as error:
                 pages.append({'url': url, 'matches_committed_html': False, 'error': str(error)})
         report = {'verified': all(p['matches_committed_html'] for p in pages),
                   'attempt': attempt, 'pages': pages}

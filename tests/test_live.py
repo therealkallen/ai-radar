@@ -1,4 +1,5 @@
 import importlib.util
+from http.client import IncompleteRead
 import json
 from pathlib import Path
 import tempfile
@@ -58,3 +59,14 @@ class LiveTests(unittest.TestCase):
         (self.root / 'content/issue-053.json').unlink()
         with self.assertRaises(ValueError):
             live.expected_pages(self.root)
+
+    def test_truncated_http_response_is_reported_and_retried(self):
+        calls = []
+        def read(url):
+            calls.append(url)
+            if len(calls) <= 3:
+                raise IncompleteRead(b'partial', 100)
+            return url.removeprefix(live.BASE).encode()
+        report = live.verify(self.root, read, attempts=2, sleep=lambda _: None)
+        self.assertTrue(report['verified'])
+        self.assertEqual(report['attempt'], 2)

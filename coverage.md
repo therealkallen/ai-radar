@@ -779,8 +779,9 @@
 
 ### 第 52 期（2026.10.19 — 10.21）
 
-2026-10-22 回溯补刊，按日期覆盖本期窗口（含截止日全天），不冒充原计划时点已发布。来源实际核对日期与记录见 content/；边界日只收录未见上期的新事件。
+2026-10-22 回溯补刊，按日期覆盖本期窗口（含截止日全天），不冒充原计划时点已发布。来源实际核对日期与记录见 content/；边界日只收录未见上期的新事件。 2026-10-25补核国内专项来源，增补遗漏事件，保留原期号与出版窗口。
 
+- DeepSeek 开源 DeepInfer 离线推理核心，支持英伟达与昇腾硬件（https://github.com/deepseek-ai/DeepInfer/blob/774ce244b87cc0eb8d4b94ab9f5de2ab22049f01/README.md；2026-10-20）。逐项查阅完整 coverage.md 与51–53期：第51期为Flash1017模型权重；本条为10/20新公开的推理框架及离线核心，不重复旧模型发布或早期DSpark加速项目。
 - Mistral 发布 Voxtral 3，把语音与工具调用接入同一流水线（https://mistral.ai/news/voxtral-3/；2026-10-20）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
 - OpenAI 宣布已收购 Orchestra Bio，扩展药物研发工作流（https://openai.com/index/openai-to-acquire-orchestra-bio/；2026-10-20）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
 - PHP 严重漏洞完成协调披露，OpenAI 提出 AI 时代响应框架（https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/；2026-10-21）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
@@ -793,8 +794,9 @@
 
 ### 第 53 期（2026.10.21 — 10.23）
 
-2026-10-25 回溯补刊，覆盖 10/21–10/23（含截止日全天）；不冒充周五上午已完成。来源实际核对时间见 content/。社区内容标明观点性质，不使用补刊后的票数推断当日热度。
+2026-10-25 回溯补刊，覆盖 10/21–10/23（含截止日全天）；不冒充周五上午已完成。来源实际核对时间见 content/。社区内容标明观点性质，不使用补刊后的票数推断当日热度。 2026-10-25补核国内专项来源，增补遗漏事件，保留原期号与出版窗口。
 
+- 科大讯飞发布星火 X2.6，配套端侧模型与企业智能体工具（https://edu.iflytek.com/about-us/news/company-news/2923.html；2026-10-23）。逐项查阅完整coverage.md与51–53期，旧稿为星火X2.5及其端侧版本；本条核对10/22 X2.6新版本与1024发布活动。不重复转载成两个独立事件，不把广告自测数字当独立结论。
 - Anthropic 与 Theorem 将 Claude 用于开源软件的机器码级证明（https://www.anthropic.com/research/formal-verification；2026-10-22）。第 52 期报道的是攻击面缩减；本条为 10/22 新发布的机器码级形式化证明成果，不重复旧漏洞数量。
 - Decisions API 正式可用，面向分类、路由与评分等有限答案任务（https://openai.com/index/decisions-api/；2026-10-22）。第 50 期台账仅将 Decisions 公测候选因来源不足 DROP；本条核对 10/22 官方 GA 公告，属于新发布阶段。
 - Uber 将 ChatGPT Work 从千人试点扩展至全体员工（https://openai.com/index/uber-chatgpt-work-rollout/；2026-10-22）。台账旧 Uber 项为荷兰 GDPR 罚单；本条是企业内部 Work 推广，主体相关但事件与阶段不同。

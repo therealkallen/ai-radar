@@ -2,13 +2,62 @@
   "num": 52,
   "period_start": "2026-10-19",
   "period_end": "2026-10-21",
-  "window_note": "2026-10-22 回溯补刊，按日期覆盖本期窗口（含截止日全天），不冒充原计划时点已发布。来源实际核对日期与记录见 content/；边界日只收录未见上期的新事件。",
+  "window_note": "2026-10-22 回溯补刊，按日期覆盖本期窗口（含截止日全天），不冒充原计划时点已发布。来源实际核对日期与记录见 content/；边界日只收录未见上期的新事件。 2026-10-25补核国内专项来源，增补遗漏事件，保留原期号与出版窗口。",
   "editorial_review": {
     "source_first": true,
     "semantic_dedup": true,
-    "notes": "逐项打开官方来源后撰写；对照 coverage.md 第 1–50 期及两期候选比较主体、行为、阶段与实质进展。未用关键词命中作为去重结论；空栏目不凑数。"
+    "notes": "逐项打开官方来源后撰写；对照 coverage.md 第 1–50 期及两期候选比较主体、行为、阶段与实质进展。未用关键词命中作为去重结论；空栏目不凑数。 10/25国内专项纠偏：已核对DeepInfer官方提交及文档、XingChen官方仓库时间线、量子位国内发布稿、讯飞官方公告；在原出版窗口内补入有日期和原文证据的遗漏。Xing Intent代码最早10/17公开，不把10/22转载日冒充首次开源日；Kimi发布日期/域名对应证据仍不足，不强行补入。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://github.com/deepseek-ai/DeepInfer/blob/774ce244b87cc0eb8d4b94ab9f5de2ab22049f01/README.md",
+        "https://github.com/deepseek-ai/DeepInfer/commit/d585e6542c0571176272d703f03c4807ae901284"
+      ],
+      "notes": "回溯补核，新增条目见source_record；其他候选排除理由见本期editorial_review.notes。此处记录实际核对的本期入选原文，不声称完整覆盖国内市场。"
+    }
   },
   "stories": [
+    {
+      "story_id": "deepseek-deepinfer-open-source-20261020",
+      "event_id": "deepseek-deepinfer-open-source-20261020",
+      "primary_category": "国内 AI 动态",
+      "label": "推理基础设施",
+      "title": "DeepSeek 开源 DeepInfer 离线推理核心，支持英伟达与昇腾硬件",
+      "summary": "DeepSeek 10月20日公开 DeepInfer 推理框架的离线核心，支持 DeepSeek V4.1 Flash，面向英伟达 SM100 GPU 与华为昇腾950 NPU，提供结构化输出、确定性采样等能力。此次按 Apache 2.0 开放的范围不包含完整在线服务所需的 KV Cache 系统、分离式部署与负载均衡；不能等同于开源整套生产服务。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "dedup_notes": "逐项查阅完整 coverage.md 与51–53期：第51期为Flash1017模型权重；本条为10/20新公开的推理框架及离线核心，不重复旧模型发布或早期DSpark加速项目。",
+      "sources": [
+        {
+          "source_url": "https://github.com/deepseek-ai/DeepInfer/blob/774ce244b87cc0eb8d4b94ab9f5de2ab22049f01/README.md",
+          "canonical_url": "https://github.com/deepseek-ai/DeepInfer/blob/774ce244b87cc0eb8d4b94ab9f5de2ab22049f01/README.md",
+          "source_name": "DeepSeek",
+          "source_domain": "github.com",
+          "source_tier": "primary",
+          "raw_title": "DeepInfer",
+          "published_at": "2026-10-20",
+          "retrieved_at": "2026-10-25T22:20:02+08:00",
+          "evidence_type": "opened_primary_page",
+          "raw_excerpt": "offline inference core",
+          "evidence_notes": "通过GitHub连接器打开该固定提交的README及Q&A：核对支持模型、SM100/昇腾950、Apache 2.0，以及明确未开放的完整在线服务组件。日期由同一官方仓库初始提交核对；未采用厂商生产吞吐量与成本自报数字。",
+          "opened_and_verified": true
+        },
+        {
+          "source_url": "https://github.com/deepseek-ai/DeepInfer/commit/d585e6542c0571176272d703f03c4807ae901284",
+          "canonical_url": "https://github.com/deepseek-ai/DeepInfer/commit/d585e6542c0571176272d703f03c4807ae901284",
+          "source_name": "DeepSeek",
+          "source_domain": "github.com",
+          "source_tier": "primary",
+          "raw_title": "initial commit",
+          "published_at": "2026-10-20",
+          "retrieved_at": "2026-10-25T22:20:02+08:00",
+          "evidence_type": "opened_official_commit",
+          "raw_excerpt": "initial commit",
+          "evidence_notes": "通过GitHub连接器读取提交元数据：无父提交，author与committer均为2026-10-20T04:09:42Z；固定README版本也在10/20，不将10/25检索日写成发布日期。",
+          "opened_and_verified": true
+        }
+      ]
+    },
     {
       "story_id": "mistral-voxtral3-release-20261020",
       "event_id": "mistral-voxtral3-release",

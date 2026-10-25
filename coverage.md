@@ -791,6 +791,18 @@
 - ChatGPT 上线 Democracy Works 投票信息，并接入 AP 计票数据（https://openai.com/index/election-safeguards-2026/；2026-10-20）。第 50 期为 Anthropic 的选举准备；此次是 OpenAI 自身数据集成落地，与五月总体计划也有明确增量。
 - OpenAI 更新伙伴访问与使用政策，11 月 20 日起实施新要求（https://openai.com/index/broad-access-through-consistent-standards/；2026-10-21）。对照第 1–50 期 coverage.md 与本期候选，属于未收录的新事件。
 
+### 第 53 期（2026.10.21 — 10.23）
+
+2026-10-25 回溯补刊，覆盖 10/21–10/23（含截止日全天）；不冒充周五上午已完成。来源实际核对时间见 content/。社区内容标明观点性质，不使用补刊后的票数推断当日热度。
+
+- Anthropic 与 Theorem 将 Claude 用于开源软件的机器码级证明（https://www.anthropic.com/research/formal-verification；2026-10-22）。第 52 期报道的是攻击面缩减；本条为 10/22 新发布的机器码级形式化证明成果，不重复旧漏洞数量。
+- Decisions API 正式可用，面向分类、路由与评分等有限答案任务（https://openai.com/index/decisions-api/；2026-10-22）。第 50 期台账仅将 Decisions 公测候选因来源不足 DROP；本条核对 10/22 官方 GA 公告，属于新发布阶段。
+- Uber 将 ChatGPT Work 从千人试点扩展至全体员工（https://openai.com/index/uber-chatgpt-work-rollout/；2026-10-22）。台账旧 Uber 项为荷兰 GDPR 罚单；本条是企业内部 Work 推广，主体相关但事件与阶段不同。
+- Anthropic 将 Agent Skills 标准捐赠给 AAIF（https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation；2026-10-22）。对照完整 coverage：本条为标准治理权捐赠，不重复早期技能功能发布。
+- Hugging Face 与 Farsight 联合文章聚焦金融机构内部部署（https://huggingface.co/blog/Farsight-AI/hf-and-farsight；2026-10-22）。第 52 期为 TerminalX 与餐饮财务案例；本条新增金融机构内部开放模型的部署治理方案。
+- OpenAI 披露前沿训练环境加固，强调隔离与持续红队测试（https://openai.com/index/securing-our-frontier-model-training-environment/；2026-10-23）。第 52 期为 monitor 研究及伙伴使用政策；本条为新披露的训练环境 containment 方案，未重复旧事件作新事故。
+- Ask HN 讨论：模型能力为什么不能直接等同于经营一家企业（https://news.ycombinator.com/item?id=50200997；2026-10-23）。新社区讨论，未见于第 1–52 期台账；与模型发布新闻分开标注观点性质。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

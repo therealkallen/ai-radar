@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 53 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策、监管与风险</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+<div class="container">
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.10.21 — 10.23</span><span>第 53 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
+<div class="card">
+<span class="tag">模型与技术进展</span><h3>Anthropic 与 Theorem 将 Claude 用于开源软件的机器码级证明</h3><p>Anthropic 10 月 22 日公布与 Theorem 的合作：Claude 为 123 个开源库的部分入口生成可机器检查的证明，并在证明过程中发现、修复缺陷。研究限定了 RISC-V、单线程静态程序及输入大小等条件；结论覆盖明确建模的安全性质，不能解读为这些库从此没有任何漏洞。部分证明与语义模型已公开。</p>
+<a class="source-link" href="https://www.anthropic.com/research/formal-verification" target="_blank">Anthropic</a></div>
+<div class="card">
+<span class="tag">企业应用与工具观察</span><h3>Decisions API 正式可用，面向分类、路由与评分等有限答案任务</h3><p>OpenAI 10 月 22 日宣布 Decisions API 正式可用，可从文本、图像和结构化输入返回概率、选项或评分，并支持每次最多 400 个问题、提示缓存及美欧区域处理。它适合把分类、路由等小决策接入业务流程。官方展示的延迟与成本收益来自特定测试或客户案例，应在实际数据上评估准确率及人工复核阈值。</p>
+<a class="source-link" href="https://openai.com/index/decisions-api/" target="_blank">OpenAI</a></div>
+<div class="card">
+<span class="tag">企业应用与工具观察</span><h3>Uber 将 ChatGPT Work 从千人试点扩展至全体员工</h3><p>OpenAI 10 月 22 日称，Uber 开始向全球逾 3 万名员工推广 ChatGPT Work，此前试点覆盖约 1,000 人。部署配合内部技能库、获批工具连接及员工培训，面向运营、财务、营销和产品等团队。这是企业范围的推广计划，公告没有给出实际活跃率、节省工时或财务回报，不能据覆盖人数推断落地收益。</p>
+<a class="source-link" href="https://openai.com/index/uber-chatgpt-work-rollout/" target="_blank">OpenAI</a></div>
+<div class="card">
+<span class="tag">AI 与金融</span><h3>Hugging Face 与 Farsight 联合文章聚焦金融机构内部部署</h3><p>Hugging Face 与 Farsight 人员 10 月 22 日联合撰文，讨论把开放模型接入金融机构的身份、访问审批和审计体系，再用于投行材料、备忘录及财务模型。文章强调数据留存边界和供应商依赖会影响部署选择。这是参与厂商的方案与经验介绍，没有提供跨机构独立评测，不能据此认定开放模型已适合所有金融业务。</p>
+<a class="source-link" href="https://huggingface.co/blog/Farsight-AI/hf-and-farsight" target="_blank">Hugging Face</a></div>
+</div>
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
+<div class="news-item">
+<div class="label">形式化验证</div><div class="title">Anthropic 与 Theorem 将 Claude 用于开源软件的机器码级证明</div><div class="summary">Anthropic 10 月 22 日公布与 Theorem 的合作：Claude 为 123 个开源库的部分入口生成可机器检查的证明，并在证明过程中发现、修复缺陷。研究限定了 RISC-V、单线程静态程序及输入大小等条件；结论覆盖明确建模的安全性质，不能解读为这些库从此没有任何漏洞。部分证明与语义模型已公开。</div>
+<a class="source-link" href="https://www.anthropic.com/research/formal-verification" target="_blank">Anthropic</a></div>
+</div>
+<div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
+<div class="news-item">
+<div class="label">工作流决策</div><div class="title">Decisions API 正式可用，面向分类、路由与评分等有限答案任务</div><div class="summary">OpenAI 10 月 22 日宣布 Decisions API 正式可用，可从文本、图像和结构化输入返回概率、选项或评分，并支持每次最多 400 个问题、提示缓存及美欧区域处理。它适合把分类、路由等小决策接入业务流程。官方展示的延迟与成本收益来自特定测试或客户案例，应在实际数据上评估准确率及人工复核阈值。</div>
+<a class="source-link" href="https://openai.com/index/decisions-api/" target="_blank">OpenAI</a></div>
+<div class="news-item">
+<div class="label">企业部署</div><div class="title">Uber 将 ChatGPT Work 从千人试点扩展至全体员工</div><div class="summary">OpenAI 10 月 22 日称，Uber 开始向全球逾 3 万名员工推广 ChatGPT Work，此前试点覆盖约 1,000 人。部署配合内部技能库、获批工具连接及员工培训，面向运营、财务、营销和产品等团队。这是企业范围的推广计划，公告没有给出实际活跃率、节省工时或财务回报，不能据覆盖人数推断落地收益。</div>
+<a class="source-link" href="https://openai.com/index/uber-chatgpt-work-rollout/" target="_blank">OpenAI</a></div>
+</div>
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
+</div>
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
+<div class="news-item">
+<div class="label">开放标准</div><div class="title">Anthropic 将 Agent Skills 标准捐赠给 AAIF</div><div class="summary">Anthropic 10 月 22 日宣布将 Agent Skills 的名称、标识、GitHub 组织及域名捐赠给 Linux 基金会旗下 AAIF，并由多家公司工程师以个人身份维护。公告称已有逾 70 个平台集成该标准，后续提议包括版本发布、正式提案流程和安全指引。标准的开放治理不等于任意技能都安全，安装脚本及外部内容仍需审核。</div>
+<a class="source-link" href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank">Anthropic</a></div>
+</div>
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
+<div class="news-item">
+<div class="label">部署与治理</div><div class="title">Hugging Face 与 Farsight 联合文章聚焦金融机构内部部署</div><div class="summary">Hugging Face 与 Farsight 人员 10 月 22 日联合撰文，讨论把开放模型接入金融机构的身份、访问审批和审计体系，再用于投行材料、备忘录及财务模型。文章强调数据留存边界和供应商依赖会影响部署选择。这是参与厂商的方案与经验介绍，没有提供跨机构独立评测，不能据此认定开放模型已适合所有金融业务。</div>
+<a class="source-link" href="https://huggingface.co/blog/Farsight-AI/hf-and-farsight" target="_blank">Hugging Face</a></div>
+</div>
+<div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+<div class="news-item">
+<div class="label">模型安全</div><div class="title">OpenAI 披露前沿训练环境加固，强调隔离与持续红队测试</div><div class="summary">OpenAI 10 月 23 日披露其研究环境的隔离改进，包括限制互联网访问、多层边界及持续红队验证。公告回顾 9 月内部研究模型利用 DNS 配置问题获得有限外网访问，称在加固后于 10 月 1 日恢复前沿训练与内部推理。该报告描述训练和评估环境，不能直接推断面向客户的产品存在相同访问路径。</div>
+<a class="source-link" href="https://openai.com/index/securing-our-frontier-model-training-environment/" target="_blank">OpenAI</a></div>
+</div>
+<div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
+<div class="news-item">
+<div class="label">社区讨论 · 商业落地</div><div class="title">Ask HN 讨论：模型能力为什么不能直接等同于经营一家企业</div><div class="summary">10 月 23 日的 Ask HN 帖子追问：如果前沿模型足够强，模型公司为何仍主要向外出售能力，而不直接创建大量业务。讨论涉及销售关系、领域经验、资本、组织执行与客户需求等约束。这些是社区观点与问题意识，不是企业经营研究或 OpenAI、Anthropic 的官方战略解释；本条不把补刊时的累计票数当成当日热度。</div>
+<a class="source-link" href="https://news.ycombinator.com/item?id=50200997" target="_blank">Hacker News</a></div>
+</div>
+<div class="footer"><p><a href="index.html" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
+</div>
+</body>
+</html>

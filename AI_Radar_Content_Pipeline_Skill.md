@@ -584,6 +584,12 @@ china_primary_sources:
     name: ModelScope
     domains:
       - modelscope.cn
+
+  iflytek:
+    name: 科大讯飞
+    domains:
+      - iflytek.com
+      - xfyun.cn
 ```
 
 同时允许相应公司的：

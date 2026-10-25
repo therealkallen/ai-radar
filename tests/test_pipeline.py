@@ -137,6 +137,39 @@ class PipelineTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Major claim"):
             generate.validate_issue(self.issue, AS_OF)
 
+    def test_domestic_review_required_for_future_issues_even_when_empty(self):
+        issue = copy.deepcopy(self.issue)
+        issue["num"] = 54
+        issue["stories"] = [s for s in issue["stories"] if s["primary_category"] != "国内 AI 动态"]
+        with self.assertRaisesRegex(ValueError, "Domestic source review"):
+            generate.validate_issue(issue, AS_OF)
+        review = {"checked_sources": [], "notes": "Checked official announcements"}
+        issue["editorial_review"]["domestic_review"] = review
+        with self.assertRaisesRegex(ValueError, "checked domestic sources"):
+            generate.validate_issue(issue, AS_OF)
+        review["checked_sources"] = ["https://www.deepseek.com/"]
+        with self.assertRaisesRegex(ValueError, "empty_reason"):
+            generate.validate_issue(issue, AS_OF)
+        review["empty_reason"] = "All candidates predate the issue window or repeat previous coverage."
+        generate.validate_issue(issue, AS_OF)
+        del review["empty_reason"]
+        issue["stories"][0]["primary_category"] = "国内 AI 动态"
+        generate.validate_issue(issue, AS_OF)
+
+    def test_iflytek_identity_is_limited_to_official_domains(self):
+        source = copy.deepcopy(self.issue["stories"][0]["sources"][0])
+        source.update(source_name="科大讯飞", source_tier="primary")
+        for host, accepted in (("edu.iflytek.com", True), ("maas.xfyun.cn", True),
+                               ("iflytek.com.example.org", False), ("notiflytek.com", False)):
+            with self.subTest(host=host):
+                source.update(source_domain=host, source_url=f"https://{host}/news",
+                              canonical_url=f"https://{host}/news")
+                if accepted:
+                    generate.validate_source(source, date(2026, 10, 16), date(2026, 10, 19))
+                else:
+                    with self.assertRaisesRegex(ValueError, "allowlisted"):
+                        generate.validate_source(source, date(2026, 10, 16), date(2026, 10, 19))
+
     def test_duplicate_story_is_rejected_but_followup_allowed(self):
         issue52 = json.loads((self.root / "content/issue-052.json").read_text(encoding="utf-8"))
         issue52["stories"][0]["story_id"] = self.issue["stories"][0]["story_id"]

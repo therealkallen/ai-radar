@@ -36,6 +36,7 @@ PRIMARY = {
     "腾讯": ("hunyuan.tencent.com", "tencent.com"),
     "百度": ("baidu.com", "cloud.baidu.com"),
     "字节跳动": ("seed.bytedance.com", "volcengine.com"),
+    "科大讯飞": ("iflytek.com", "xfyun.cn"),
     "ModelScope": ("modelscope.cn",), "arXiv": ("arxiv.org",),
     "OpenReview": ("openreview.net",),
     "European Commission": ("digital-strategy.ec.europa.eu", "ec.europa.eu"),
@@ -147,6 +148,16 @@ def validate_issue(issue, as_of):
             outlets = {MEDIA[s["source_name"]] for s in sources if s["source_tier"] == "trusted_media"}
             require(official or len(outlets) >= 2, "Major claim lacks official or two independent sources")
     require(any(s["radar_pick"] for s in stories), "Select Radar Picks from canonical stories")
+    if issue["num"] >= 54:
+        domestic = review.get("domestic_review")
+        require(isinstance(domestic, dict), "Domestic source review required")
+        checked = domestic.get("checked_sources")
+        require(isinstance(checked, list) and checked and
+                all(isinstance(s, str) and s.strip() for s in checked),
+                "Record checked domestic sources")
+        text_field(domestic, "notes")
+        if not any(s["primary_category"] == "国内 AI 动态" for s in stories):
+            text_field(domestic, "empty_reason")
 
 
 def next_date(day):

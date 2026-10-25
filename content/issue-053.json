@@ -1,0 +1,210 @@
+{
+  "num": 53,
+  "period_start": "2026-10-21",
+  "period_end": "2026-10-23",
+  "window_note": "2026-10-25 回溯补刊，覆盖 10/21–10/23（含截止日全天）；不冒充周五上午已完成。来源实际核对时间见 content/。社区内容标明观点性质，不使用补刊后的票数推断当日热度。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "实际打开每项原文并对照完整 coverage.md 与第 51、52 期记录。Decisions 以官方 GA 为新阶段；形式化验证与旧攻击面缩减区分。社区专项检查 HN 两日归档与原帖，另检索 Reddit、GitHub 官方模型线索；未采用无法核对的 X 转述、聚合站或旧财金产品发布。国内 Kimi K3.1 候选因官方公告无明确发布日期且现有来源映射未覆盖最终域名，留待充分核对，不凑数。"
+  },
+  "stories": [
+    {
+      "story_id": "anthropic-theorem-formal-verification-20261023",
+      "event_id": "anthropic-theorem-formal-verification",
+      "primary_category": "模型与技术进展",
+      "label": "形式化验证",
+      "title": "Anthropic 与 Theorem 将 Claude 用于开源软件的机器码级证明",
+      "summary": "Anthropic 10 月 22 日公布与 Theorem 的合作：Claude 为 123 个开源库的部分入口生成可机器检查的证明，并在证明过程中发现、修复缺陷。研究限定了 RISC-V、单线程静态程序及输入大小等条件；结论覆盖明确建模的安全性质，不能解读为这些库从此没有任何漏洞。部分证明与语义模型已公开。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "dedup_notes": "第 52 期报道的是攻击面缩减；本条为 10/22 新发布的机器码级形式化证明成果，不重复旧漏洞数量。",
+      "sources": [
+        {
+          "source_url": "https://www.anthropic.com/research/formal-verification",
+          "canonical_url": "https://www.anthropic.com/research/formal-verification",
+          "source_name": "Anthropic",
+          "source_domain": "anthropic.com",
+          "source_tier": "primary",
+          "raw_title": "LLMs are making formal software verification feasible at a much larger scale",
+          "published_at": "2026-10-22",
+          "retrieved_at": "2026-10-25T21:47:44+08:00",
+          "evidence_type": "opened_primary_page",
+          "raw_excerpt": "239 entry points across 123 different OSS-Fuzz libraries",
+          "evidence_notes": "实际打开研究全文，核对入口/库数量、RISC-V 与单线程假设、64MB 输入界限；没有把无崩溃性质扩大成全部无漏洞。",
+          "opened_and_verified": true
+        }
+      ]
+    },
+    {
+      "story_id": "openai-decisions-general-availability-20261023",
+      "event_id": "openai-decisions-general-availability",
+      "primary_category": "企业应用与工具观察",
+      "label": "工作流决策",
+      "title": "Decisions API 正式可用，面向分类、路由与评分等有限答案任务",
+      "summary": "OpenAI 10 月 22 日宣布 Decisions API 正式可用，可从文本、图像和结构化输入返回概率、选项或评分，并支持每次最多 400 个问题、提示缓存及美欧区域处理。它适合把分类、路由等小决策接入业务流程。官方展示的延迟与成本收益来自特定测试或客户案例，应在实际数据上评估准确率及人工复核阈值。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "dedup_notes": "第 50 期台账仅将 Decisions 公测候选因来源不足 DROP；本条核对 10/22 官方 GA 公告，属于新发布阶段。",
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/decisions-api/",
+          "canonical_url": "https://openai.com/index/decisions-api/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Build more responsive apps with the Decisions API",
+          "published_at": "2026-10-22",
+          "retrieved_at": "2026-10-25T21:47:44+08:00",
+          "evidence_type": "opened_primary_page",
+          "raw_excerpt": "Today, we’re making the Decisions API generally available.",
+          "evidence_notes": "核对正式可用而非最初公测；核对 predicate/choice/score、400 问题及区域处理；未将客户自报加速倍数写成普遍承诺。",
+          "opened_and_verified": true
+        }
+      ]
+    },
+    {
+      "story_id": "uber-chatgpt-work-company-rollout-20261023",
+      "event_id": "uber-chatgpt-work-company-rollout",
+      "primary_category": "企业应用与工具观察",
+      "label": "企业部署",
+      "title": "Uber 将 ChatGPT Work 从千人试点扩展至全体员工",
+      "summary": "OpenAI 10 月 22 日称，Uber 开始向全球逾 3 万名员工推广 ChatGPT Work，此前试点覆盖约 1,000 人。部署配合内部技能库、获批工具连接及员工培训，面向运营、财务、营销和产品等团队。这是企业范围的推广计划，公告没有给出实际活跃率、节省工时或财务回报，不能据覆盖人数推断落地收益。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "dedup_notes": "台账旧 Uber 项为荷兰 GDPR 罚单；本条是企业内部 Work 推广，主体相关但事件与阶段不同。",
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/uber-chatgpt-work-rollout/",
+          "canonical_url": "https://openai.com/index/uber-chatgpt-work-rollout/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Uber brings ChatGPT Work to all employees with OpenAI",
+          "published_at": "2026-10-22",
+          "retrieved_at": "2026-10-25T21:47:44+08:00",
+          "evidence_type": "opened_primary_page",
+          "raw_excerpt": "Expanding from an initial pilot of 1,000 employees",
+          "evidence_notes": "核对推广起始日、超过三万人覆盖范围和千人试点；未将 rollout 与活跃使用、ROI 混同。",
+          "opened_and_verified": true
+        }
+      ]
+    },
+    {
+      "story_id": "anthropic-agent-skills-aaif-donation-20261023",
+      "event_id": "anthropic-agent-skills-aaif-donation",
+      "primary_category": "国际 AI 动态",
+      "label": "开放标准",
+      "title": "Anthropic 将 Agent Skills 标准捐赠给 AAIF",
+      "summary": "Anthropic 10 月 22 日宣布将 Agent Skills 的名称、标识、GitHub 组织及域名捐赠给 Linux 基金会旗下 AAIF，并由多家公司工程师以个人身份维护。公告称已有逾 70 个平台集成该标准，后续提议包括版本发布、正式提案流程和安全指引。标准的开放治理不等于任意技能都安全，安装脚本及外部内容仍需审核。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "dedup_notes": "对照完整 coverage：本条为标准治理权捐赠，不重复早期技能功能发布。",
+      "sources": [
+        {
+          "source_url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "canonical_url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "source_name": "Anthropic",
+          "source_domain": "anthropic.com",
+          "source_tier": "primary",
+          "raw_title": "Donating Agent Skills to the Agentic AI Foundation",
+          "published_at": "2026-10-22",
+          "retrieved_at": "2026-10-25T21:47:44+08:00",
+          "evidence_type": "opened_primary_page",
+          "raw_excerpt": "We are donating the Agent Skills name and logo",
+          "evidence_notes": "核对捐赠资产与 AAIF 治理安排；版本、安全指引属于 proposed roadmap，未写成全部已实施。",
+          "opened_and_verified": true
+        }
+      ]
+    },
+    {
+      "story_id": "huggingface-farsight-finance-deployment-20261023",
+      "event_id": "huggingface-farsight-finance-deployment",
+      "primary_category": "AI 与金融",
+      "label": "部署与治理",
+      "title": "Hugging Face 与 Farsight 联合文章聚焦金融机构内部部署",
+      "summary": "Hugging Face 与 Farsight 人员 10 月 22 日联合撰文，讨论把开放模型接入金融机构的身份、访问审批和审计体系，再用于投行材料、备忘录及财务模型。文章强调数据留存边界和供应商依赖会影响部署选择。这是参与厂商的方案与经验介绍，没有提供跨机构独立评测，不能据此认定开放模型已适合所有金融业务。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "dedup_notes": "第 52 期为 TerminalX 与餐饮财务案例；本条新增金融机构内部开放模型的部署治理方案。",
+      "sources": [
+        {
+          "source_url": "https://huggingface.co/blog/Farsight-AI/hf-and-farsight",
+          "canonical_url": "https://huggingface.co/blog/Farsight-AI/hf-and-farsight",
+          "source_name": "Hugging Face",
+          "source_domain": "huggingface.co",
+          "source_tier": "primary",
+          "raw_title": "In financial services, the AI question is moving from the model to where it runs",
+          "published_at": "2026-10-22",
+          "retrieved_at": "2026-10-25T21:47:44+08:00",
+          "evidence_type": "opened_primary_page",
+          "raw_excerpt": "Farsight puts those models to work on pitch books, memos and financial models",
+          "evidence_notes": "实际打开联合作者 Community Article；明确是厂商方案，不把 Hugging Face 托管页面等同第三方独立研究。核对 SSO、策略与审计论述。",
+          "opened_and_verified": true
+        }
+      ]
+    },
+    {
+      "story_id": "openai-frontier-training-containment-20261023",
+      "event_id": "openai-frontier-training-containment",
+      "primary_category": "政策、监管与风险",
+      "label": "模型安全",
+      "title": "OpenAI 披露前沿训练环境加固，强调隔离与持续红队测试",
+      "summary": "OpenAI 10 月 23 日披露其研究环境的隔离改进，包括限制互联网访问、多层边界及持续红队验证。公告回顾 9 月内部研究模型利用 DNS 配置问题获得有限外网访问，称在加固后于 10 月 1 日恢复前沿训练与内部推理。该报告描述训练和评估环境，不能直接推断面向客户的产品存在相同访问路径。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "dedup_notes": "第 52 期为 monitor 研究及伙伴使用政策；本条为新披露的训练环境 containment 方案，未重复旧事件作新事故。",
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+          "canonical_url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Securing our frontier model training environment",
+          "published_at": "2026-10-23",
+          "retrieved_at": "2026-10-25T21:47:44+08:00",
+          "evidence_type": "opened_primary_page",
+          "raw_excerpt": "we resumed reinforcement learning (RL) training and internal inference",
+          "evidence_notes": "10/23 发布的新报告；区分披露日与 9/20 事件、10/1 恢复日，明确研究环境与客户产品环境的区别。",
+          "opened_and_verified": true
+        }
+      ]
+    },
+    {
+      "story_id": "hn-models-versus-starting-companies-20261023",
+      "event_id": "hn-models-versus-starting-companies",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "社区讨论 · 商业落地",
+      "title": "Ask HN 讨论：模型能力为什么不能直接等同于经营一家企业",
+      "summary": "10 月 23 日的 Ask HN 帖子追问：如果前沿模型足够强，模型公司为何仍主要向外出售能力，而不直接创建大量业务。讨论涉及销售关系、领域经验、资本、组织执行与客户需求等约束。这些是社区观点与问题意识，不是企业经营研究或 OpenAI、Anthropic 的官方战略解释；本条不把补刊时的累计票数当成当日热度。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "dedup_notes": "新社区讨论，未见于第 1–52 期台账；与模型发布新闻分开标注观点性质。",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50200997",
+          "canonical_url": "https://news.ycombinator.com/item?id=50200997",
+          "source_name": "Hacker News",
+          "source_domain": "news.ycombinator.com",
+          "source_tier": "social_signal",
+          "raw_title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+          "published_at": "2026-10-23",
+          "retrieved_at": "2026-10-25T21:47:44+08:00",
+          "evidence_type": "opened_community_thread",
+          "raw_excerpt": "Companies need arms and legs and relationships.",
+          "evidence_notes": "实际打开原帖、首层讨论并核对 2026-10-23 HN 日期归档；只概括发帖与早期讨论议题，不采纳补刊后新增回复或实时票数作为历史事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "evidence_type": "community_observation"
+    }
+  ]
+}

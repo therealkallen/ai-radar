@@ -27,6 +27,28 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Check source records and generated pages
         run: python generate.py check
+      - name: Record editor workspace revision
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: python -c "import json,os,pathlib; pathlib.Path('radar-source.json').write_text(json.dumps({'sha':os.environ['GITHUB_SHA']}), encoding='utf-8')"
+      - name: Export offline editor workspace
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-editor-workspace
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            radar-source.json
+            generate.py
+            rebuild.py
+            README.md
+            AI_Radar_Content_Pipeline_Skill.md
+            coverage.md
+            index.html
+            content/*.json
+            issues/*.html
+            tests/*.py
+            scripts/*.py
       - name: Report missed publications
         if: github.event_name == 'schedule'
         run: python generate.py plan --require-current

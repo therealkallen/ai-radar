@@ -561,6 +561,7 @@ china_primary_sources:
     domains:
       - moonshot.cn
       - platform.moonshot.cn
+      - kimi.com
 
   tencent:
     name: 腾讯 / 混元

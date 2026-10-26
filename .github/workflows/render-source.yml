@@ -1,0 +1,32 @@
+name: Radar source PR renderer
+on:
+  workflow_run:
+    workflows: ['Radar validation and freshness']
+    types: [completed]
+permissions:
+  contents: read
+concurrency:
+  group: radar-source-render-${{ github.event.workflow_run.head_branch }}
+  cancel-in-progress: false
+jobs:
+  render:
+    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.head_repository.full_name == github.repository && startsWith(github.event.workflow_run.head_branch, 'radar/issue-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: read
+      actions: write
+    steps:
+      # Never check out or execute the PR head. Only its single JSON is read.
+      - uses: actions/checkout@v4
+        with:
+          ref: refs/heads/main
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate source, render with main code, and dispatch final CI
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/render_source_pr.py

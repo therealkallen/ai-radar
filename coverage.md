@@ -805,6 +805,16 @@
 - OpenAI 披露前沿训练环境加固，强调隔离与持续红队测试（https://openai.com/index/securing-our-frontier-model-training-environment/；2026-10-23）。第 52 期为 monitor 研究及伙伴使用政策；本条为新披露的训练环境 containment 方案，未重复旧事件作新事故。
 - Ask HN 讨论：模型能力为什么不能直接等同于经营一家企业（https://news.ycombinator.com/item?id=50200997；2026-10-23）。新社区讨论，未见于第 1–52 期台账；与模型发布新闻分开标注观点性质。
 
+### 第 54 期（2026.10.23 — 10.26）
+
+2026-10-26晚间补刊，核实至当晚实际取回时间；覆盖10/23–10/26，不冒充09:30已完成。边界日仅收录53期未刊新事件，原文日期与取回时间见content/。
+
+- Anthropic 确认提交 S-1，拟以 ANT 代码在纳斯达克上市（https://www.anthropic.com/news/s1-sec；2026-10-26）。完整台账此前包含媒体财务披露及上市筹备报道；本条以10/26官方S-1申报公告为实质新增，不重复旧财务数字，不声称首次筹备IPO。
+- Kimi K3.1 Pro 上线产品与 API，完整权重计划 11 月 4 日前发布（https://www.kimi.com/en/blog/kimi-k3-1-pro；2026-10-24）。51–53期未刊K3.1，53期仅记录候选排除。现以官方研究索引日期和moonshot.cn身份链补足证据，属于本期真实新增。
+- Qwen Code 0.26.1 强化工作区恢复，修复群聊会话隔离（https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1；2026-10-24）。完整台账及51–53无此稳定版本；不是旧Qwen模型或CLI首次发布的重复报道。
+- OpenAI 公开 Habitat 存储扩展细节：多租户隔离与全球缓存（https://openai.com/index/scaling-storage-one-billion-users-part-two/；2026-10-23）。完整coverage未收录本篇；53期安全训练环境隔离是不同系统和事件，不与存储工程混同。
+- HN 讨论模型降价：竞争、推理效率与可持续性各有解释（https://news.ycombinator.com/item?id=50236102；2026-10-26）。53期为模型能力与运营公司差异的AskHN；本条讨论API定价原因，主题与原帖均不同。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

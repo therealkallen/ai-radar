@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 54 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策、监管与风险</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+<div class="container">
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.10.23 — 10.26</span><span>第 54 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
+<div class="card">
+<span class="tag">AI 与金融</span><h3>Anthropic 确认提交 S-1，拟以 ANT 代码在纳斯达克上市</h3><p>Anthropic 10月26日宣布已向美国SEC提交与拟议IPO有关的S-1注册声明，计划以ANT为股票代码在纳斯达克全球精选市场挂牌。公司明确表示发行股数和价格区间尚未确定，注册声明也尚未生效。本次是申报状态的官方确认，不能解读为IPO获批或已完成，更不能沿用旧传闻中的估值和募资金额。</p>
+<a class="source-link" href="https://www.anthropic.com/news/s1-sec" target="_blank">Anthropic</a></div>
+<div class="card">
+<span class="tag">国内 AI 动态</span><h3>Kimi K3.1 Pro 上线产品与 API，完整权重计划 11 月 4 日前发布</h3><p>月之暗面10月24日公布Kimi K3.1 Pro，面向长程编程、3D创作与金融研究，提供百万token上下文及Highspeed版本。官方说明模型已进入Kimi、Kimi Work、Kimi Code和API；完整权重计划11月4日前发布，当前不能写成已开放下载。企业版管理员可启用新模型，首发默认关闭，需结合组织实际任务评估。</p>
+<a class="source-link" href="https://www.kimi.com/en/blog/kimi-k3-1-pro" target="_blank">Moonshot AI</a></div>
+<div class="card">
+<span class="tag">企业应用与工具观察</span><h3>Qwen Code 0.26.1 强化工作区恢复，修复群聊会话隔离</h3><p>Qwen官方仓库10月24日发布Qwen Code 0.26.1稳定版，列出托管会话的空闲时手动上下文压缩、恢复状态提示、检查点历史和会话生命周期界面等更新。发布说明还将群聊线程范围下的会话隔离修复标成不兼容变更。它关注持续工作区的可恢复性，团队升级时应核对原有群聊隔离与会话配置，不应将nightly特性混入稳定版。</p>
+<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1" target="_blank">Qwen</a></div>
+</div>
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
+<div class="news-item">
+<div class="label">基础设施工程</div><div class="title">OpenAI 公开 Habitat 存储扩展细节：多租户隔离与全球缓存</div><div class="summary">OpenAI 10月23日发布Habitat存储工程系列第二篇，介绍Azure Cosmos DB从多租户到单租户、再回到可迁移多租户的取舍。文章重点包括热点租户限流、服务质量控制、区域缓存、变更数据捕获和Rust代理优化。它提供的是现有系统的工程实践，不是新模型发布；其中延迟与规模数据是公司自身环境的测量，不能直接套用到其他企业。</div>
+<a class="source-link" href="https://openai.com/index/scaling-storage-one-billion-users-part-two/" target="_blank">OpenAI</a></div>
+</div>
+<div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
+<div class="news-item">
+<div class="label">编码智能体</div><div class="title">Qwen Code 0.26.1 强化工作区恢复，修复群聊会话隔离</div><div class="summary">Qwen官方仓库10月24日发布Qwen Code 0.26.1稳定版，列出托管会话的空闲时手动上下文压缩、恢复状态提示、检查点历史和会话生命周期界面等更新。发布说明还将群聊线程范围下的会话隔离修复标成不兼容变更。它关注持续工作区的可恢复性，团队升级时应核对原有群聊隔离与会话配置，不应将nightly特性混入稳定版。</div>
+<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1" target="_blank">Qwen</a></div>
+</div>
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
+<div class="news-item">
+<div class="label">国产旗舰模型</div><div class="title">Kimi K3.1 Pro 上线产品与 API，完整权重计划 11 月 4 日前发布</div><div class="summary">月之暗面10月24日公布Kimi K3.1 Pro，面向长程编程、3D创作与金融研究，提供百万token上下文及Highspeed版本。官方说明模型已进入Kimi、Kimi Work、Kimi Code和API；完整权重计划11月4日前发布，当前不能写成已开放下载。企业版管理员可启用新模型，首发默认关闭，需结合组织实际任务评估。</div>
+<a class="source-link" href="https://www.kimi.com/en/blog/kimi-k3-1-pro" target="_blank">Moonshot AI</a></div>
+</div>
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
+</div>
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
+<div class="news-item">
+<div class="label">IPO申报</div><div class="title">Anthropic 确认提交 S-1，拟以 ANT 代码在纳斯达克上市</div><div class="summary">Anthropic 10月26日宣布已向美国SEC提交与拟议IPO有关的S-1注册声明，计划以ANT为股票代码在纳斯达克全球精选市场挂牌。公司明确表示发行股数和价格区间尚未确定，注册声明也尚未生效。本次是申报状态的官方确认，不能解读为IPO获批或已完成，更不能沿用旧传闻中的估值和募资金额。</div>
+<a class="source-link" href="https://www.anthropic.com/news/s1-sec" target="_blank">Anthropic</a></div>
+</div>
+<div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+</div>
+<div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
+<div class="news-item">
+<div class="label">社区观点</div><div class="title">HN 讨论模型降价：竞争、推理效率与可持续性各有解释</div><div class="summary">10月26日的Hacker News帖子围绕模型降价展开讨论：部分评论归因于开源模型竞争，另一些提出推理优化、缓存和算力利用率等解释，也有人质疑定价能否持续。它反映开发者对调用成本的关注，不能据此断言厂商真实利润、补贴规模或监管动机。本期未采用实时票数，也没有把帖子标题中的降幅写成已核实的统一调价。</div>
+<a class="source-link" href="https://news.ycombinator.com/item?id=50236102" target="_blank">Hacker News</a></div>
+</div>
+<div class="footer"><p><a href="index.html" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
+</div>
+</body>
+</html>

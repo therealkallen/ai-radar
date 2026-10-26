@@ -32,7 +32,7 @@ PRIMARY = {
              "github.com/QwenLM/", "huggingface.co/Qwen/"),
     "DeepSeek": ("deepseek.com", "huggingface.co/deepseek-ai/", "github.com/deepseek-ai/"),
     "智谱 AI": ("zhipuai.cn", "z.ai", "github.com/zai-org/", "huggingface.co/zai-org/"),
-    "Moonshot AI": ("moonshot.cn", "github.com/MoonshotAI/", "huggingface.co/moonshotai/"),
+    "Moonshot AI": ("moonshot.cn", "kimi.com", "github.com/MoonshotAI/", "huggingface.co/moonshotai/"),
     "腾讯": ("hunyuan.tencent.com", "tencent.com"),
     "百度": ("baidu.com", "cloud.baidu.com"),
     "字节跳动": ("seed.bytedance.com", "volcengine.com"),

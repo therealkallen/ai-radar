@@ -26,6 +26,10 @@ python generate.py plan --require-current        # 漏刊时退出码为 1
 
 ## 自动化
 
+云端编辑默认只提交一个JSON：从最新main创建 `radar/issue-NNN` 分支，通过GitHub连接器 `create_file` 直接新增 `content/issue-NNN.json` 并开PR。`Radar source PR renderer` 在首轮PR校验完成后，使用main代码构建、测试并将4个生成文件写回该PR；再显式触发现有validation工作流。必须等待**最终PR head SHA**对应的校验成功，再按用户授权合并并核验Pages。首轮因缺生成文件失败仅是中间态，不能据此宣称永久失败或直接合并JSON。完整流程及失败恢复见 [.github/radar-editor.md](.github/radar-editor.md)。
+
+构建作业仅接受仓库所有者在同仓新分支提交的单一新增素材文件；拒绝fork、代码修改、历史覆盖和head竞态，不执行PR代码。用户已批准该作业写内容分支和调度校验所需的临时GITHUB_TOKEN权限；不需要PAT或模型API key，不自动合并main。ChatGPT Python下载artifact和搬运生成页面已退出发刊必经路径。
+
 - `.github/workflows/validate.yml` 在 PR 和 main 更新时运行回归测试与生成一致性校验；每周一三五 10:30（UTC+8）检查漏刊。它**不生成新闻**，运行失败是需要处理的真实信号。
 - 新闻研究与编辑应使用云端定时任务，指令见 [.github/radar-editor.md](.github/radar-editor.md)，建议周一三五 09:30，Asia/Singapore。需要联网工具、GitHub 连接器以及可执行 Python 的云端环境。每期提交 PR，合并后由现有 Pages 部署更新站点。
 - **2026-10-25 状态：** 用户已在网页端保存并恢复云端任务，手动无缺刊试跑返回第53期已上线且未重复生成内容或PR。下一次实际新刊的云端采编与发布仍需验证；不要将无更新试跑等同于完整发刊成功。

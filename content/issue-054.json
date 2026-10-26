@@ -1,0 +1,195 @@
+{
+  "num": 54,
+  "period_start": "2026-10-23",
+  "period_end": "2026-10-26",
+  "window_note": "2026-10-26晚间补刊，核实至当晚实际取回时间；覆盖10/23–10/26，不冒充09:30已完成。边界日仅收录53期未刊新事件，原文日期与取回时间见content/。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "逐条实际打开原文或HN官方API，对照完整coverage并核对51–53。排除：EdgeRock10/26报道的开源能力10/7已公开，10/23仅文档更新；WorkBuddy企微官方集成指南10/14已更新；微软医疗研究官网为10/22；Meta Muse Spark Open为10/15。PAYATHON媒体页为厂商转载，且支付宝官网Changelog标活动中心9/22已上线。特赞企业世界模型报道虽有顶部署名，但末尾注明获授权刊载，未找到官方首发，删除。智谱多模态论文arXiv:2610.21459为10/15，不以10/26转载日重刊。政策/监管栏未选入缺少本期日期或原文证据的候选，不复制Kimi同一事件填栏。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://www.kimi.com/blog/",
+        "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+        "https://api-docs.deepseek.com/updates/",
+        "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1",
+        "https://cloud.tencent.com/document/product/1831/139455",
+        "https://www.qbitai.com/",
+        "https://github.com/rockmatrix-ai/EdgeRock/commits/main",
+        "site:seed.bytedance.com 本期日期检索",
+        "site:hunyuan.tencent.com 本期日期检索",
+        "site:minimax.io/news 本期日期检索",
+        "site:z.ai/blog 本期日期检索",
+        "site:iflytek.com 2026.10.26检索",
+        "site:36kr.com 智谱/本期日期检索"
+      ],
+      "notes": "入选Kimi官方10/24与Qwen官方稳定release；Qwen归企业工具，不再复制到国内栏。DeepSeek公开更新仍为10/17；腾讯集成旧闻排除。智谱/讯飞本期积分促销不凑条数；字节/混元/MiniMax检索未取得本期可核实重大新增。智谱论文arXiv元数据已核对10/15，不在本期。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "Hacker News原帖50236102与官方API",
+        "Reddit LocalLLaMA本期Kimi/open-weight讨论检索",
+        "X Kimi本期检索",
+        "QwenLM/qwen-code官方release及关联Issues/PR线索"
+      ],
+      "notes": "HN直接网页访问失败后使用官方API。Reddit/X搜索中未采用未打开原帖或混入旧月份的转述；Qwen release作为官方产品条目，未重复包装成社区观点。"
+    }
+  },
+  "stories": [
+    {
+      "story_id": "anthropic-official-s1-filing-20261026",
+      "event_id": "anthropic-official-s1-filing-20261026",
+      "primary_category": "AI 与金融",
+      "label": "IPO申报",
+      "title": "Anthropic 确认提交 S-1，拟以 ANT 代码在纳斯达克上市",
+      "summary": "Anthropic 10月26日宣布已向美国SEC提交与拟议IPO有关的S-1注册声明，计划以ANT为股票代码在纳斯达克全球精选市场挂牌。公司明确表示发行股数和价格区间尚未确定，注册声明也尚未生效。本次是申报状态的官方确认，不能解读为IPO获批或已完成，更不能沿用旧传闻中的估值和募资金额。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.anthropic.com/news/s1-sec",
+          "canonical_url": "https://www.anthropic.com/news/s1-sec",
+          "source_name": "Anthropic",
+          "source_domain": "anthropic.com",
+          "source_tier": "primary",
+          "raw_title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+          "published_at": "2026-10-26",
+          "retrieved_at": "2026-10-26T22:52:48+08:00",
+          "raw_excerpt": "filed a registration statement on Form S-1",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开官网公告，核对日期、ANT、拟议发行、股数/价格未定及声明尚未生效。未加入股价、估值、募集金额或确定上市日期。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整台账此前包含媒体财务披露及上市筹备报道；本条以10/26官方S-1申报公告为实质新增，不重复旧财务数字，不声称首次筹备IPO。"
+    },
+    {
+      "story_id": "kimi-k31-pro-available-20261024",
+      "event_id": "kimi-k31-pro-available-20261024",
+      "primary_category": "国内 AI 动态",
+      "label": "国产旗舰模型",
+      "title": "Kimi K3.1 Pro 上线产品与 API，完整权重计划 11 月 4 日前发布",
+      "summary": "月之暗面10月24日公布Kimi K3.1 Pro，面向长程编程、3D创作与金融研究，提供百万token上下文及Highspeed版本。官方说明模型已进入Kimi、Kimi Work、Kimi Code和API；完整权重计划11月4日前发布，当前不能写成已开放下载。企业版管理员可启用新模型，首发默认关闭，需结合组织实际任务评估。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+          "canonical_url": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+          "source_name": "Moonshot AI",
+          "source_domain": "kimi.com",
+          "source_tier": "primary",
+          "raw_title": "Introducing Kimi K3.1 Pro",
+          "published_at": "2026-10-24",
+          "retrieved_at": "2026-10-26T22:52:48+08:00",
+          "raw_excerpt": "Full model weights will be released by Nov 4, 2026.",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开官方技术博客，核对上下文、产品/API可用、企业默认关闭与权重未来时间。moonshot.cn直链kimi.com，反向公司链接相符；发布日期由同站研究索引核对。",
+          "opened_and_verified": true
+        },
+        {
+          "source_url": "https://www.kimi.com/blog/",
+          "canonical_url": "https://www.kimi.com/blog/",
+          "source_name": "Moonshot AI",
+          "source_domain": "kimi.com",
+          "source_tier": "primary",
+          "raw_title": "Kimi 研究博客",
+          "published_at": "2026-10-24",
+          "retrieved_at": "2026-10-26T22:52:48+08:00",
+          "raw_excerpt": "Kimi K3.1 Pro",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开索引，该条明确标注2026-10-24；不是以10/26媒体实测日期冒充模型发布日期。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "51–53期未刊K3.1，53期仅记录候选排除。现以官方研究索引日期和moonshot.cn身份链补足证据，属于本期真实新增。"
+    },
+    {
+      "story_id": "qwen-code-0261-stable-20261024",
+      "event_id": "qwen-code-0261-stable-20261024",
+      "primary_category": "企业应用与工具观察",
+      "label": "编码智能体",
+      "title": "Qwen Code 0.26.1 强化工作区恢复，修复群聊会话隔离",
+      "summary": "Qwen官方仓库10月24日发布Qwen Code 0.26.1稳定版，列出托管会话的空闲时手动上下文压缩、恢复状态提示、检查点历史和会话生命周期界面等更新。发布说明还将群聊线程范围下的会话隔离修复标成不兼容变更。它关注持续工作区的可恢复性，团队升级时应核对原有群聊隔离与会话配置，不应将nightly特性混入稳定版。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1",
+          "canonical_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1",
+          "source_name": "Qwen",
+          "source_domain": "github.com",
+          "source_tier": "primary",
+          "raw_title": "v0.26.1",
+          "published_at": "2026-10-24",
+          "retrieved_at": "2026-10-26T22:52:48+08:00",
+          "raw_excerpt": "Managed Workspace recovery now waits for durable settlement",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "通过连接器实际打开官方release，published_at=2026-10-24T15:47:58Z，prerelease=false。仅采用Complete Change List中的恢复、压缩、生命周期和群聊隔离项目；未混入10/25 nightly实验性共享loop。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整台账及51–53无此稳定版本；不是旧Qwen模型或CLI首次发布的重复报道。"
+    },
+    {
+      "story_id": "openai-habitat-storage-part2-20261023",
+      "event_id": "openai-habitat-storage-part2-20261023",
+      "primary_category": "模型与技术进展",
+      "label": "基础设施工程",
+      "title": "OpenAI 公开 Habitat 存储扩展细节：多租户隔离与全球缓存",
+      "summary": "OpenAI 10月23日发布Habitat存储工程系列第二篇，介绍Azure Cosmos DB从多租户到单租户、再回到可迁移多租户的取舍。文章重点包括热点租户限流、服务质量控制、区域缓存、变更数据捕获和Rust代理优化。它提供的是现有系统的工程实践，不是新模型发布；其中延迟与规模数据是公司自身环境的测量，不能直接套用到其他企业。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/scaling-storage-one-billion-users-part-two/",
+          "canonical_url": "https://openai.com/index/scaling-storage-one-billion-users-part-two/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+          "published_at": "2026-10-23",
+          "retrieved_at": "2026-10-26T22:52:48+08:00",
+          "raw_excerpt": "multi-tenancy by default, with data movement capability",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开10/23工程原文，核对多租户演进、hot key/QoS、缓存/CDC/Rust。未使用标题用户数作为付费用户数，也未把内部p50收益宣传为通用承诺。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整coverage未收录本篇；53期安全训练环境隔离是不同系统和事件，不与存储工程混同。"
+    },
+    {
+      "story_id": "hn-llm-price-explanations-20261026",
+      "event_id": "hn-llm-price-explanations-20261026",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "社区观点",
+      "title": "HN 讨论模型降价：竞争、推理效率与可持续性各有解释",
+      "summary": "10月26日的Hacker News帖子围绕模型降价展开讨论：部分评论归因于开源模型竞争，另一些提出推理优化、缓存和算力利用率等解释，也有人质疑定价能否持续。它反映开发者对调用成本的关注，不能据此断言厂商真实利润、补贴规模或监管动机。本期未采用实时票数，也没有把帖子标题中的降幅写成已核实的统一调价。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50236102",
+          "canonical_url": "https://news.ycombinator.com/item?id=50236102",
+          "source_name": "Hacker News",
+          "source_domain": "news.ycombinator.com",
+          "source_tier": "social_signal",
+          "raw_title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+          "published_at": "2026-10-26",
+          "retrieved_at": "2026-10-26T22:52:48+08:00",
+          "raw_excerpt": "Competition drives prices down.",
+          "evidence_type": "opened_community_thread_via_official_api",
+          "evidence_notes": "网页工具未能读取原帖，改用HN官方Firebase API读取50236102及8条一级评论。原帖unix1792962691=10/26 05:11:31+08；引述竞争/优化/可持续性的评论均在本次22点后取回前发表，不使用后续观点或当前分数。没有把DeepInfer收入/GPU估算当经营披露。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "53期为模型能力与运营公司差异的AskHN；本条讨论API定价原因，主题与原帖均不同。",
+      "evidence_type": "community_observation"
+    }
+  ]
+}

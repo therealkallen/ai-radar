@@ -815,6 +815,18 @@
 - OpenAI 公开 Habitat 存储扩展细节：多租户隔离与全球缓存（https://openai.com/index/scaling-storage-one-billion-users-part-two/；2026-10-23）。完整coverage未收录本篇；53期安全训练环境隔离是不同系统和事件，不与存储工程混同。
 - HN 讨论模型降价：竞争、推理效率与可持续性各有解释（https://news.ycombinator.com/item?id=50236102；2026-10-26）。53期为模型能力与运营公司差异的AskHN；本条讨论API定价原因，主题与原帖均不同。
 
+### 第 55 期（2026.10.26 — 10.28）
+
+2026-10-30回溯补刊，覆盖10/26–10/28已发生且可核实的新事件；不冒充10/28上午已发布。边界日仅补入54期未刊事件，来源日期与本次真实取回时间分别记录。
+
+- GPT‑6.1 Terra 上线 Work、Codex 与 API，侧重视觉和计算机操作（https://openai.com/index/introducing-gpt-6-1-terra/；2026-10-26）。完整台账有5.6 Terra、6.1 Sol及Astra，未刊6.1 Terra；54期遗漏本次10/26发布，补入后续窗口边界而非重复旧型号。
+- Genie 4 加入原生音频与对话，先向可信测试者开放预览（https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/；2026-10-27）。完整coverage及51–54没有Genie4；与旧世界模型和其他厂商视频生成不同，为新型号研究预览。
+- 百度开源 Unlimited OCR 2，强化超长文档和跨页结构解析（https://cloud.baidu.com/support/news?action=detail&id=3290；2026-10-27）。第1期为首代Unlimited OCR；本条明确10/27第二代的新架构/跨页解析进展，为follow_up，不重复首代开源。
+- OpenAI 与 Oracle 扩大合作，拟在 ChatGPT 中连接财务与采购流程（https://openai.com/index/oracle-apps-in-chatgpt/；2026-10-27）。历史Oracle条目为Stargate延误及芯片融资；此次是10/27新应用层合作和财务数据工作流，不是同阶段算力事件。
+- Anthropic 扩大 GSA 合作，折扣延伸至州及地方政府（https://www.anthropic.com/news/expanding-partnership-gsa；2026-10-27）。对照完整台账的既有政府合作与Claude for Government，新增是10/27跨产品及州地方采购折扣，不重复9/30产品GA。
+- Kimi Code Desktop 1.2.0 修复长对话缓存与内置浏览器问题（https://www.kimi.com/code/docs/en/kimi-code-desktop/changelog.html；2026-10-28）。54期是K3.1模型及权重计划；此次客户端1.2.0修复是独立产品进展，没有重复模型参数或发布。
+- DSH 社区作者分享 WSL 执行插件，明确沙箱仍有边界（https://github.com/deepseek-ai/deepseek-harness/discussions/11251；2026-10-28）。完整coverage及51–54未有本插件分享；与官方模型或推理框架发布不同，作为社区实践单独标记。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

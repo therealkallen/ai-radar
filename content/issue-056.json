@@ -1,0 +1,185 @@
+{
+  "num": 56,
+  "period_start": "2026-10-28",
+  "period_end": "2026-10-30",
+  "window_note": "2026-10-30上午完成采编，覆盖10/28–10/30本次取回前可验证的新进展；边界日补入55期未刊条目，不纳入未来消息。日期保留原站标注，Google美国10/28公告对应北京时间10/29凌晨的发布窗口。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "逐项先打开原文或通过GitHub连接器读取官方完整release，再对照完整coverage、51–54及刚合入55期语义去重。Carbon为新型号受限开放，非Argon再次上架；Qwen0.26.4与DSH alpha2为明确版本增量，不重复首发。金融专项检索官方OpenAI/Anthropic/Microsoft与Reuters线索，Barclays为10/1旧公告、ChatGPT个人财务为9月旧功能，不包装成本期新产品；税务工具可验证性讨论仅放社区，不升级成已核实评测结论。Tencent Hy4/Buddy One找到候选，但官方ADP、智东西和36氪详情无法取回正文，不能仅按snippet写入。元器停止新建虽10/29生效，原公告10/8且无本期独立新增来源，暂不重刊。保持版式和旧期，不凑栏目数。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4",
+        "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-alpha.2",
+        "https://api-docs.deepseek.com/updates/",
+        "https://www.kimi.com/code/docs/en/kimi-code-desktop/changelog.html",
+        "https://autoclaw.z.ai/blog/news/",
+        "site:z.ai/blog OR site:zhipuai.cn 2026-10-29 OR 2026-10-30",
+        "site:seed.bytedance.com 2026-10-29 OR 2026-10-30",
+        "site:minimax.io/news OR site:iflytek.com 2026-10-29 OR 2026-10-30",
+        "site:kimi.com/blog OR site:cloud.baidu.com 2026-10-29 OR 2026-10-30",
+        "https://adp.tencent.com/zh/blog/tencent-cloud-adp-business-agent-ecosystem-2026（访问失败）",
+        "https://zhidx.com/p/605433.html（访问失败）",
+        "https://www.36kr.com/newsflashes/4046338568459398（访问失败）",
+        "https://www.36kr.com/newsflashes/4046361399399557（访问失败）",
+        "https://www.qbitai.com/2026/10/506227.html（访问失败）",
+        "site:jiqizhixin.com 2026/10/28"
+      ],
+      "notes": "Qwen官方稳定release 0.26.4于10/29发布，非同日nightly；国内栏采用其独立工作树与可交互视图增量。DeepSeek官方仓库alpha2归企业工具，明确预发行与最低Node版本。Kimi1.2.0和百度OCR2已入55期，不重刊；DeepSeek模型更新页仍10/17。智谱检索只取得旧研究/促销；Seed/讯飞/MiniMax未取得本窗口可核实原文，MiniMax导航NEW不作为日期。腾讯候选找到但多次详情取回失败，记录未采用，不声称国内无新闻。Kimi10/29视频转3D教程不是本期新品证据。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "https://news.ycombinator.com/front?day=2026-10-28",
+        "https://news.ycombinator.com/item?id=50275626",
+        "https://news.ycombinator.com/item?id=50276792",
+        "site:x.com Gemini 4 Carbon 2026",
+        "site:reddit.com/r/LocalLLaMA Gemini 4 Carbon",
+        "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-alpha.2"
+      ],
+      "notes": "实际打开HN 10/28归档及税务原帖，讨论与评论在本次取回前；不把今天票数冒充10/28热度，不复述未独立核实的报税金额和法律解释。Carbon社区帖已打开，但为避免与模型正文重复本期仅选税务工作流讨论。X未找到可核对原帖，Reddit命中多为更早泄露/猜测，不据此写发布或能力结论。GitHub发布采用官方产品来源，不冒充社区观点。"
+    }
+  },
+  "stories": [
+    {
+      "story_id": "gemini4-carbon-controlled-rollout-20261028",
+      "event_id": "gemini4-carbon-controlled-rollout-20261028",
+      "primary_category": "模型与技术进展",
+      "label": "前沿模型",
+      "title": "Google 公布 Gemini 4 Carbon，先向部分网络防御伙伴开放",
+      "summary": "Google公布Gemini 4 Carbon，强调长程软件工程及漏洞发现、验证和修补能力。官方表示先向部分网络防御人员开放，并通过Fairwind逐步扩展可信伙伴，普通开发者、企业和消费者仍待后续推出。公布的首发价为每百万输入2美元、输出10美元；评测与内部使用结果属厂商口径，不能据此认定所有用户现已可调用。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+          "source_name": "Google",
+          "source_domain": "blog.google",
+          "source_tier": "primary",
+          "raw_title": "Gemini 4 Carbon: our next frontier model",
+          "published_at": "2026-10-28",
+          "retrieved_at": "2026-10-30T01:30:04Z",
+          "raw_excerpt": "make Carbon available to a subset of cyber defenders",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "通过DeepMind官方模型页直链打开Google博客并再开无追踪参数原文。核对10/28、受限伙伴、后续开放、首发价格及期后4/20美元价格脚注；未采用0%攻击成功等推广断言。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "历史台账是Argon公开与上架，55期是Genie4世界模型；本条Carbon为新型号及受限推出阶段，未把Argon重写成新发布。"
+    },
+    {
+      "story_id": "qwen-code-0264-stable-20261029",
+      "event_id": "qwen-code-0264-stable-20261029",
+      "primary_category": "国内 AI 动态",
+      "label": "编码智能体",
+      "title": "Qwen Code 0.26.4 增加独立工作树，改进交互视图与 PR 核验",
+      "summary": "Qwen官方仓库10月29日发布0.26.4稳定版，为托管主会话加入独立Git工作树，并让生成式界面以可交互视图呈现。PR核验报告开始记录模型、CLI和技能版本，另修复离线恢复与部分配置静默丢失问题。团队可据此检查会话隔离和报告可追溯性；同日nightly后续功能不应混入稳定版说明。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4",
+          "canonical_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4",
+          "source_name": "Qwen",
+          "source_domain": "github.com",
+          "source_tier": "primary",
+          "raw_title": "Release v0.26.4",
+          "published_at": "2026-10-29",
+          "retrieved_at": "2026-10-30T01:30:04Z",
+          "raw_excerpt": "add independent worktrees for main sessions",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "通过GitHub连接器实际读取完整release对象，published_at=2026-10-29T14:29:11Z，prerelease=false。核对15745/15831/15838和fix条目；不采用夜间版15856默认启用或未发布模型别名作为新品。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "54期是0.26.1恢复和群聊隔离；本条0.26.4新增独立worktree、交互视图及报告版本记录，属于明确版本后续。"
+    },
+    {
+      "story_id": "deepseek-harness-022-alpha2-20261028",
+      "event_id": "deepseek-harness-022-alpha2-20261028",
+      "primary_category": "企业应用与工具观察",
+      "label": "预发行工具",
+      "title": "DeepSeek Harness alpha2 加入工作树实验，要求 Node.js 24.9",
+      "summary": "DeepSeek Harness发布0.2.2-alpha.2预发行版，新增实验性变更请求与独立Git工作树，支持第三方插件更新失败后尝试回退，并加强会话恢复与权限状态处理。最低Node.js版本提高到24.9，自定义插件与部分接口需要迁移。它仍是alpha版，更新日志中的功能和修复不等于经过本刊生产环境验证，升级前应核对兼容性。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-alpha.2",
+          "canonical_url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-alpha.2",
+          "source_name": "DeepSeek",
+          "source_domain": "github.com",
+          "source_tier": "primary",
+          "raw_title": "v0.2.2-alpha.2",
+          "published_at": "2026-10-28",
+          "retrieved_at": "2026-10-30T01:30:04Z",
+          "raw_excerpt": "DSH 的最低 Node.js 版本提高至 24.9",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "通过GitHub连接器实际读取官方仓库release完整中英文正文，published_at=2026-10-28T02:50:54Z，prerelease=true；核对worktree实验、插件回退、权限状态修复及迁移事项。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "历史台账有Harness首发与插件生态，55期是第三方WSL插件讨论；本条是官方0.2.2-alpha.2具体版本增量，非同一事件，未包装成稳定版。"
+    },
+    {
+      "story_id": "openai-modelspec-five-values-20261029",
+      "event_id": "openai-modelspec-five-values-20261029",
+      "primary_category": "政策、监管与风险",
+      "label": "模型行为规范",
+      "title": "OpenAI 更新 Model Spec，以五项价值组织模型行为准则",
+      "summary": "OpenAI 10月29日更新公开Model Spec，以忠于人类意图、减少伤害、诚实透明、人的自主性和关怀五项价值组织准则，并补充上下文、监督和自主性指引，调整默认行为与部分风格要求。这是公司对模型目标行为的规范说明及持续训练方向，不是法律监管文件，也不表示所有线上模型已完整实现新版规范。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/updated-model-spec/",
+          "canonical_url": "https://openai.com/index/updated-model-spec/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "An updated Model Spec for more capable and beneficial AI",
+          "published_at": "2026-10-29",
+          "retrieved_at": "2026-10-30T01:30:04Z",
+          "raw_excerpt": "five underlying values",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开10/29官方公告，核对五项价值、上下文/监督/agency、默认行为与退休风格指导；不将公告或未来训练方向写成已经完成的所有生产行为改变。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整coverage没有此次10/29 ModelSpec修订；不同于52期伙伴访问政策、选举保障或安全事故报告，为公司模型行为治理新版本。"
+    },
+    {
+      "story_id": "hn-dayjob-tax-verification-discussion-20261028",
+      "event_id": "hn-dayjob-tax-verification-discussion-20261028",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "税务工作流观察",
+      "title": "HN 讨论 AI 税务工具：规则追溯与人工复核仍是关注点",
+      "summary": "围绕Dayjob税务任务评测的HN讨论中，有开发者介绍把税表流程写成可追溯规则并交叉校验，也有用户分享AI查错有用、复杂税务计算或解释仍会出错的体验。它提示财务自动化需要区分计算、规则解释和最终复核；这些是社区自述，不能推导为模型已能独立报税，也不构成对特定税务处理的确认。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50275626",
+          "canonical_url": "https://news.ycombinator.com/item?id=50275626",
+          "source_name": "Hacker News",
+          "source_domain": "news.ycombinator.com",
+          "source_tier": "social_signal",
+          "raw_title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+          "published_at": "2026-10-28",
+          "retrieved_at": "2026-10-30T01:30:04Z",
+          "raw_excerpt": "It's not a formalization of the tax code itself",
+          "evidence_type": "opened_community_thread",
+          "evidence_notes": "从HN官方10/28归档点击实际原帖；读取规则形式化、交叉校验与复杂报税用户反馈，日期以官方归档日为依据。未将上游基准的胜负结果作为事实，不引用具体税率、退款金额、当前分数或法律主张。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整coverage与51–55没有该税务讨论；不是旧财务产品重发，与53期企业经营观点及54期定价讨论为不同主题。",
+      "evidence_type": "community_observation"
+    }
+  ]
+}

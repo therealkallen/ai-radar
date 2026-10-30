@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Radar · 第 55 期</title>
+<title>AI Radar · 第 56 期</title>
 <style>
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -53,55 +53,46 @@
 </div></nav>
 <div class="container">
 <div class="masthead"><h1>AI Radar</h1>
-<div class="meta"><span>2026.10.26 — 10.28</span><span>第 55 期</span></div></div>
+<div class="meta"><span>2026.10.28 — 10.30</span><span>第 56 期</span></div></div>
 <div class="section" id="picks"><div class="section-header">Radar Picks</div>
 <div class="card">
-<span class="tag">模型与技术进展</span><h3>GPT‑6.1 Terra 上线 Work、Codex 与 API，侧重视觉和计算机操作</h3><p>OpenAI发布GPT‑6.1 Terra，面向视觉推理、计算机操作与写作，并在Work、Codex及API推出。官方标准API价为每百万输入token 1美元、缓存输入0.05美元、输出5美元。它为高频自动化提供新的成本选项；能力比较来自公司评测，复杂编程仍需按具体任务验证，不能把单项成绩视为全面替代旗舰模型。</p>
-<a class="source-link" href="https://openai.com/index/introducing-gpt-6-1-terra/" target="_blank">OpenAI</a></div>
+<span class="tag">模型与技术进展</span><h3>Google 公布 Gemini 4 Carbon，先向部分网络防御伙伴开放</h3><p>Google公布Gemini 4 Carbon，强调长程软件工程及漏洞发现、验证和修补能力。官方表示先向部分网络防御人员开放，并通过Fairwind逐步扩展可信伙伴，普通开发者、企业和消费者仍待后续推出。公布的首发价为每百万输入2美元、输出10美元；评测与内部使用结果属厂商口径，不能据此认定所有用户现已可调用。</p>
+<a class="source-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank">Google</a></div>
 <div class="card">
-<span class="tag">模型与技术进展</span><h3>Genie 4 加入原生音频与对话，先向可信测试者开放预览</h3><p>Google DeepMind公布Genie 4，将环境音、音乐和交互对话与实时世界生成结合，支持用自然语言改变场景。当前阶段是可信测试者研究预览，Ultra订阅及部分开发者入口仍在后续计划中。官方承认物体持久性、复杂物理和长时一致性仍有局限，不应把演示等同于稳定的通用仿真系统。</p>
-<a class="source-link" href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" target="_blank">Google</a></div>
+<span class="tag">国内 AI 动态</span><h3>Qwen Code 0.26.4 增加独立工作树，改进交互视图与 PR 核验</h3><p>Qwen官方仓库10月29日发布0.26.4稳定版，为托管主会话加入独立Git工作树，并让生成式界面以可交互视图呈现。PR核验报告开始记录模型、CLI和技能版本，另修复离线恢复与部分配置静默丢失问题。团队可据此检查会话隔离和报告可追溯性；同日nightly后续功能不应混入稳定版说明。</p>
+<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4" target="_blank">Qwen</a></div>
 <div class="card">
-<span class="tag">国内 AI 动态</span><h3>百度开源 Unlimited OCR 2，强化超长文档和跨页结构解析</h3><p>百度10月27日宣布开源Unlimited OCR 2，并公开代码和模型权重入口。新版使用稀疏参考滑窗注意力与连续解码，强调跨页表格、段落及版面结构解析，生产级文档解析同时开放公测。“Unlimited”是产品名称；千页解析及基准领先属于官方自测，部署效果仍受文档质量、硬件和任务配置影响。</p>
-<a class="source-link" href="https://cloud.baidu.com/support/news?action=detail&id=3290" target="_blank">百度</a></div>
-<div class="card">
-<span class="tag">AI 与金融</span><h3>OpenAI 与 Oracle 扩大合作，拟在 ChatGPT 中连接财务与采购流程</h3><p>OpenAI与Oracle宣布扩大应用层合作。Oracle正在开发AI Workspace，拟让员工在ChatGPT中联查财务、采购与计划数据，处理成本分析和月结准备，并遵循组织权限与审批。美国客户已可经Oracle Marketplace采购OpenAI服务；应用集成仍应与已可采购的服务区分，不能把规划场景写成已全面上线。</p>
-<a class="source-link" href="https://openai.com/index/oracle-apps-in-chatgpt/" target="_blank">OpenAI</a></div>
+<span class="tag">政策、监管与风险</span><h3>OpenAI 更新 Model Spec，以五项价值组织模型行为准则</h3><p>OpenAI 10月29日更新公开Model Spec，以忠于人类意图、减少伤害、诚实透明、人的自主性和关怀五项价值组织准则，并补充上下文、监督和自主性指引，调整默认行为与部分风格要求。这是公司对模型目标行为的规范说明及持续训练方向，不是法律监管文件，也不表示所有线上模型已完整实现新版规范。</p>
+<a class="source-link" href="https://openai.com/index/updated-model-spec/" target="_blank">OpenAI</a></div>
 </div>
 <div class="section" id="models"><div class="section-header">模型与技术进展</div>
 <div class="news-item">
-<div class="label">高效计算机操作</div><div class="title">GPT‑6.1 Terra 上线 Work、Codex 与 API，侧重视觉和计算机操作</div><div class="summary">OpenAI发布GPT‑6.1 Terra，面向视觉推理、计算机操作与写作，并在Work、Codex及API推出。官方标准API价为每百万输入token 1美元、缓存输入0.05美元、输出5美元。它为高频自动化提供新的成本选项；能力比较来自公司评测，复杂编程仍需按具体任务验证，不能把单项成绩视为全面替代旗舰模型。</div>
-<a class="source-link" href="https://openai.com/index/introducing-gpt-6-1-terra/" target="_blank">OpenAI</a></div>
-<div class="news-item">
-<div class="label">交互世界模型</div><div class="title">Genie 4 加入原生音频与对话，先向可信测试者开放预览</div><div class="summary">Google DeepMind公布Genie 4，将环境音、音乐和交互对话与实时世界生成结合，支持用自然语言改变场景。当前阶段是可信测试者研究预览，Ultra订阅及部分开发者入口仍在后续计划中。官方承认物体持久性、复杂物理和长时一致性仍有局限，不应把演示等同于稳定的通用仿真系统。</div>
-<a class="source-link" href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/" target="_blank">Google</a></div>
+<div class="label">前沿模型</div><div class="title">Google 公布 Gemini 4 Carbon，先向部分网络防御伙伴开放</div><div class="summary">Google公布Gemini 4 Carbon，强调长程软件工程及漏洞发现、验证和修补能力。官方表示先向部分网络防御人员开放，并通过Fairwind逐步扩展可信伙伴，普通开发者、企业和消费者仍待后续推出。公布的首发价为每百万输入2美元、输出10美元；评测与内部使用结果属厂商口径，不能据此认定所有用户现已可调用。</div>
+<a class="source-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank">Google</a></div>
 </div>
 <div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
 <div class="news-item">
-<div class="label">桌面编码工具</div><div class="title">Kimi Code Desktop 1.2.0 修复长对话缓存与内置浏览器问题</div><div class="summary">Kimi官方更新日志列出10月28日Desktop 1.2.0：新增防休眠设置、归档会话删除与粘贴图片自动提及，并改进引导消息状态和文件树。修复项包括空会话Swarm不可用、长对话自动压缩时历史缓存失效，以及内置浏览器崩溃和点击异常。这是桌面客户端更新，与K3.1模型发布及CLI功能应分开判断。</div>
-<a class="source-link" href="https://www.kimi.com/code/docs/en/kimi-code-desktop/changelog.html" target="_blank">Moonshot AI</a></div>
+<div class="label">预发行工具</div><div class="title">DeepSeek Harness alpha2 加入工作树实验，要求 Node.js 24.9</div><div class="summary">DeepSeek Harness发布0.2.2-alpha.2预发行版，新增实验性变更请求与独立Git工作树，支持第三方插件更新失败后尝试回退，并加强会话恢复与权限状态处理。最低Node.js版本提高到24.9，自定义插件与部分接口需要迁移。它仍是alpha版，更新日志中的功能和修复不等于经过本刊生产环境验证，升级前应核对兼容性。</div>
+<a class="source-link" href="https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-alpha.2" target="_blank">DeepSeek</a></div>
 </div>
 <div class="section" id="china"><div class="section-header">国内 AI 动态</div>
 <div class="news-item">
-<div class="label">长文档解析</div><div class="title">百度开源 Unlimited OCR 2，强化超长文档和跨页结构解析</div><div class="summary">百度10月27日宣布开源Unlimited OCR 2，并公开代码和模型权重入口。新版使用稀疏参考滑窗注意力与连续解码，强调跨页表格、段落及版面结构解析，生产级文档解析同时开放公测。“Unlimited”是产品名称；千页解析及基准领先属于官方自测，部署效果仍受文档质量、硬件和任务配置影响。</div>
-<a class="source-link" href="https://cloud.baidu.com/support/news?action=detail&id=3290" target="_blank">百度</a></div>
+<div class="label">编码智能体</div><div class="title">Qwen Code 0.26.4 增加独立工作树，改进交互视图与 PR 核验</div><div class="summary">Qwen官方仓库10月29日发布0.26.4稳定版，为托管主会话加入独立Git工作树，并让生成式界面以可交互视图呈现。PR核验报告开始记录模型、CLI和技能版本，另修复离线恢复与部分配置静默丢失问题。团队可据此检查会话隔离和报告可追溯性；同日nightly后续功能不应混入稳定版说明。</div>
+<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4" target="_blank">Qwen</a></div>
 </div>
 <div class="section" id="international"><div class="section-header">国际 AI 动态</div>
-<div class="news-item">
-<div class="label">政府采购</div><div class="title">Anthropic 扩大 GSA 合作，折扣延伸至州及地方政府</div><div class="summary">Anthropic公布新的GSA协议，为Claude Enterprise、Claude for Government及API提供40%折扣，并扩展至州、地方、部落和属地政府。直接采购已适用，经云厂商采购的折扣计划未来数月推出，另有实施支持计划。相关节省和使用量为公司口径；本次是采购范围变化，不代表所有产品已取得相同安全认证。</div>
-<a class="source-link" href="https://www.anthropic.com/news/expanding-partnership-gsa" target="_blank">Anthropic</a></div>
 </div>
 <div class="section" id="finance"><div class="section-header">AI 与金融</div>
-<div class="news-item">
-<div class="label">财务工作流</div><div class="title">OpenAI 与 Oracle 扩大合作，拟在 ChatGPT 中连接财务与采购流程</div><div class="summary">OpenAI与Oracle宣布扩大应用层合作。Oracle正在开发AI Workspace，拟让员工在ChatGPT中联查财务、采购与计划数据，处理成本分析和月结准备，并遵循组织权限与审批。美国客户已可经Oracle Marketplace采购OpenAI服务；应用集成仍应与已可采购的服务区分，不能把规划场景写成已全面上线。</div>
-<a class="source-link" href="https://openai.com/index/oracle-apps-in-chatgpt/" target="_blank">OpenAI</a></div>
 </div>
 <div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+<div class="news-item">
+<div class="label">模型行为规范</div><div class="title">OpenAI 更新 Model Spec，以五项价值组织模型行为准则</div><div class="summary">OpenAI 10月29日更新公开Model Spec，以忠于人类意图、减少伤害、诚实透明、人的自主性和关怀五项价值组织准则，并补充上下文、监督和自主性指引，调整默认行为与部分风格要求。这是公司对模型目标行为的规范说明及持续训练方向，不是法律监管文件，也不表示所有线上模型已完整实现新版规范。</div>
+<a class="source-link" href="https://openai.com/index/updated-model-spec/" target="_blank">OpenAI</a></div>
 </div>
 <div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
 <div class="news-item">
-<div class="label">社区实践</div><div class="title">DSH 社区作者分享 WSL 执行插件，明确沙箱仍有边界</div><div class="summary">DeepSeek Harness社区10月28日出现WSL插件分享。作者介绍让命令、文件和终端进入Linux发行版，并称以bubblewrap限制执行；同时明确WSL互操作仍有逃逸边界，约束状态标为partial。这反映开发者对工具链和隔离环境的探索，不是DeepSeek官方安全保证，也未独立验证作者的兼容性测试。</div>
-<a class="source-link" href="https://github.com/deepseek-ai/deepseek-harness/discussions/11251" target="_blank">GitHub Community</a></div>
+<div class="label">税务工作流观察</div><div class="title">HN 讨论 AI 税务工具：规则追溯与人工复核仍是关注点</div><div class="summary">围绕Dayjob税务任务评测的HN讨论中，有开发者介绍把税表流程写成可追溯规则并交叉校验，也有用户分享AI查错有用、复杂税务计算或解释仍会出错的体验。它提示财务自动化需要区分计算、规则解释和最终复核；这些是社区自述，不能推导为模型已能独立报税，也不构成对特定税务处理的确认。</div>
+<a class="source-link" href="https://news.ycombinator.com/item?id=50275626" target="_blank">Hacker News</a></div>
 </div>
 <div class="footer"><p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
 </div>

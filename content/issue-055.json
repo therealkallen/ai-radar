@@ -1,0 +1,253 @@
+{
+  "num": 55,
+  "period_start": "2026-10-26",
+  "period_end": "2026-10-28",
+  "window_note": "2026-10-30回溯补刊，覆盖10/26–10/28已发生且可核实的新事件；不冒充10/28上午已发布。边界日仅补入54期未刊事件，来源日期与本次真实取回时间分别记录。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "先检索并实际打开官网、发布说明和社区原帖，再逐项对照完整coverage.md及51–54期做事件语义比较。Terra为10/26遗漏的新型号，非旧5.6 Terra；百度为OCR2迭代，非第1期首代发布；Oracle为应用/财务集成，非算力融资。未将Genie预览写成全面开放，未将厂商测试和案例写成独立验证。金融专项采用Oracle财务/采购/月结工作流，且明确仍在开发。政策栏未取日期或原文不足的候选。国内媒体检索涉及量子位、机器之心、36氪及智东西；推广稿与旧闻不凑数。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://cloud.baidu.com/support/news?action=detail&id=3290",
+        "https://www.kimi.com/code/docs/en/kimi-code-desktop/changelog.html",
+        "https://api-docs.deepseek.com/updates/",
+        "site:qwenlm.github.io October 27 2026",
+        "site:z.ai/blog October 2026",
+        "https://autoclaw.z.ai/blog/news/",
+        "site:hunyuan.tencent.com 2026年10月27日 OR 2026年10月28日",
+        "site:seed.bytedance.com 2026年10月27日 OR 2026年10月28日",
+        "https://www.minimax.io/news",
+        "site:iflytek.com 2026年10月27日 OR 2026年10月28日",
+        "site:qbitai.com 2026-10-28",
+        "site:jiqizhixin.com 2026/10/28",
+        "site:36kr.com 2026年10月27日 AI",
+        "site:zhidx.com 10月28日 2026 AI"
+      ],
+      "notes": "入选百度10/27官方OCR2公告；Kimi 10/28桌面版1.2.0归企业工具，不重复填栏。DeepSeek更新页最新10/17，已报；智谱检索命中10/23促销和9/17研究，不是本期新模型；Qwen本次未取得新发布日期明确的官方重大条目。混元Hy-Memory为10/16，Seed对齐部门为10/14旧闻；讯飞检索混入2023年1024活动，排除。MiniMax新闻页仅取回导航，未将NEW标签当本期日期。蚂蚁Ling-1019的10/28推广稿线索不能用报道日替代发布日，未采用。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "https://news.ycombinator.com/item?id=50261319",
+        "https://hacker-news.firebaseio.com/v0/item/50261319.json（访问失败）",
+        "https://www.reddit.com/r/LocalLLaMA/comments/1xgopmj/debunking_coheres_claim_of_qwen_38_flash_next/",
+        "site:x.com Genie 4 2026",
+        "https://github.com/deepseek-ai/deepseek-harness/discussions/11251"
+      ],
+      "notes": "HN原帖已打开，但未取得评论精确时间，官方API不可达，未将补刊后的评论或票数放入55期。Reddit原帖已打开，但相对时间与搜索日期存在差异，不采用安全指控。X检索未取得可核对原帖。GitHub讨论明确10/28且原文可读，采用作者插件说明为社区实践观察，不背书安全性。"
+    }
+  },
+  "stories": [
+    {
+      "story_id": "gpt-61-terra-release-20261026",
+      "event_id": "gpt-61-terra-release-20261026",
+      "primary_category": "模型与技术进展",
+      "label": "高效计算机操作",
+      "title": "GPT‑6.1 Terra 上线 Work、Codex 与 API，侧重视觉和计算机操作",
+      "summary": "OpenAI发布GPT‑6.1 Terra，面向视觉推理、计算机操作与写作，并在Work、Codex及API推出。官方标准API价为每百万输入token 1美元、缓存输入0.05美元、输出5美元。它为高频自动化提供新的成本选项；能力比较来自公司评测，复杂编程仍需按具体任务验证，不能把单项成绩视为全面替代旗舰模型。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+          "canonical_url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Introducing GPT-6.1 Terra",
+          "published_at": "2026-10-26",
+          "retrieved_at": "2026-10-30T09:21:04+08:00",
+          "raw_excerpt": "Standard API pricing is $1 per million input tokens",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "已实际打开官方正文核对价格、可用产品及厂商评测口径；日期另由官方release notes 10/26条目确认。",
+          "opened_and_verified": true
+        },
+        {
+          "source_url": "https://openai.com/products/release-notes/",
+          "canonical_url": "https://openai.com/products/release-notes/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Release Notes",
+          "published_at": "2026-10-26",
+          "retrieved_at": "2026-10-30T09:21:04+08:00",
+          "raw_excerpt": "GPT-6.1 Terra in ChatGPT Work, Codex, and the API",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开10/26条目确认日期和Work/Codex/API范围；不将Work模型写成普通Chat可用。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整台账有5.6 Terra、6.1 Sol及Astra，未刊6.1 Terra；54期遗漏本次10/26发布，补入后续窗口边界而非重复旧型号。"
+    },
+    {
+      "story_id": "google-genie4-research-preview-20261027",
+      "event_id": "google-genie4-research-preview-20261027",
+      "primary_category": "模型与技术进展",
+      "label": "交互世界模型",
+      "title": "Genie 4 加入原生音频与对话，先向可信测试者开放预览",
+      "summary": "Google DeepMind公布Genie 4，将环境音、音乐和交互对话与实时世界生成结合，支持用自然语言改变场景。当前阶段是可信测试者研究预览，Ultra订阅及部分开发者入口仍在后续计划中。官方承认物体持久性、复杂物理和长时一致性仍有局限，不应把演示等同于稳定的通用仿真系统。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "canonical_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "source_name": "Google",
+          "source_domain": "deepmind.google",
+          "source_tier": "primary",
+          "raw_title": "Genie 4: A new generation of world simulation",
+          "published_at": "2026-10-27",
+          "retrieved_at": "2026-10-30T09:21:04+08:00",
+          "raw_excerpt": "research preview for trusted testers",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开原文核对10/27、原生音频、自然语言控制及预览阶段；完整检索内容与官方模型页均列明物体持久性和长期一致性局限，未采用营销领先表述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整coverage及51–54没有Genie4；与旧世界模型和其他厂商视频生成不同，为新型号研究预览。"
+    },
+    {
+      "story_id": "baidu-unlimited-ocr2-open-20261027",
+      "event_id": "baidu-unlimited-ocr2-open-20261027",
+      "primary_category": "国内 AI 动态",
+      "label": "长文档解析",
+      "title": "百度开源 Unlimited OCR 2，强化超长文档和跨页结构解析",
+      "summary": "百度10月27日宣布开源Unlimited OCR 2，并公开代码和模型权重入口。新版使用稀疏参考滑窗注意力与连续解码，强调跨页表格、段落及版面结构解析，生产级文档解析同时开放公测。“Unlimited”是产品名称；千页解析及基准领先属于官方自测，部署效果仍受文档质量、硬件和任务配置影响。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://cloud.baidu.com/support/news?action=detail&id=3290",
+          "canonical_url": "https://cloud.baidu.com/support/news?action=detail&id=3290",
+          "source_name": "百度",
+          "source_domain": "cloud.baidu.com",
+          "source_tier": "primary",
+          "raw_title": "〖开放公测〗文心 Unlimited OCR 2 开源发布，超长文档解析迎来“页数自由”",
+          "published_at": "2026-10-27",
+          "retrieved_at": "2026-10-30T09:21:04+08:00",
+          "raw_excerpt": "百度正式发布并开源文心 Unlimited OCR 2",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开百度云公告，日期10/27 09:58，核对SR-SWA、跨页表格/段落、代码/权重链接与生产级公测；不采用全球首次、无限资源或榜单领先断言。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "第1期为首代Unlimited OCR；本条明确10/27第二代的新架构/跨页解析进展，为follow_up，不重复首代开源。"
+    },
+    {
+      "story_id": "oracle-openai-apps-finance-workspace-20261027",
+      "event_id": "oracle-openai-apps-finance-workspace-20261027",
+      "primary_category": "AI 与金融",
+      "label": "财务工作流",
+      "title": "OpenAI 与 Oracle 扩大合作，拟在 ChatGPT 中连接财务与采购流程",
+      "summary": "OpenAI与Oracle宣布扩大应用层合作。Oracle正在开发AI Workspace，拟让员工在ChatGPT中联查财务、采购与计划数据，处理成本分析和月结准备，并遵循组织权限与审批。美国客户已可经Oracle Marketplace采购OpenAI服务；应用集成仍应与已可采购的服务区分，不能把规划场景写成已全面上线。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/oracle-apps-in-chatgpt/",
+          "canonical_url": "https://openai.com/index/oracle-apps-in-chatgpt/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+          "published_at": "2026-10-27",
+          "retrieved_at": "2026-10-30T09:21:04+08:00",
+          "raw_excerpt": "Oracle is developing Oracle AI Workspace",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开10/27官方公告，核对developing、财务/采购/月结示例与美国Marketplace可采购范围；未把intended experience当GA，未引用客户效率数字。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "历史Oracle条目为Stargate延误及芯片融资；此次是10/27新应用层合作和财务数据工作流，不是同阶段算力事件。"
+    },
+    {
+      "story_id": "anthropic-gsa-all-government-discount-20261027",
+      "event_id": "anthropic-gsa-all-government-discount-20261027",
+      "primary_category": "国际 AI 动态",
+      "label": "政府采购",
+      "title": "Anthropic 扩大 GSA 合作，折扣延伸至州及地方政府",
+      "summary": "Anthropic公布新的GSA协议，为Claude Enterprise、Claude for Government及API提供40%折扣，并扩展至州、地方、部落和属地政府。直接采购已适用，经云厂商采购的折扣计划未来数月推出，另有实施支持计划。相关节省和使用量为公司口径；本次是采购范围变化，不代表所有产品已取得相同安全认证。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+          "canonical_url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+          "source_name": "Anthropic",
+          "source_domain": "anthropic.com",
+          "source_tier": "primary",
+          "raw_title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "published_at": "2026-10-27",
+          "retrieved_at": "2026-10-30T09:21:04+08:00",
+          "raw_excerpt": "The discount also extends to state, local, tribal and territorial governments.",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开10/27公告核对40%及产品、政府层级、直接/云采购时序；没有将Enterprise待FedRAMP Moderate认证写成已获授权，不采用10亿美元估算。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照完整台账的既有政府合作与Claude for Government，新增是10/27跨产品及州地方采购折扣，不重复9/30产品GA。"
+    },
+    {
+      "story_id": "kimi-code-desktop-120-20261028",
+      "event_id": "kimi-code-desktop-120-20261028",
+      "primary_category": "企业应用与工具观察",
+      "label": "桌面编码工具",
+      "title": "Kimi Code Desktop 1.2.0 修复长对话缓存与内置浏览器问题",
+      "summary": "Kimi官方更新日志列出10月28日Desktop 1.2.0：新增防休眠设置、归档会话删除与粘贴图片自动提及，并改进引导消息状态和文件树。修复项包括空会话Swarm不可用、长对话自动压缩时历史缓存失效，以及内置浏览器崩溃和点击异常。这是桌面客户端更新，与K3.1模型发布及CLI功能应分开判断。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.kimi.com/code/docs/en/kimi-code-desktop/changelog.html",
+          "canonical_url": "https://www.kimi.com/code/docs/en/kimi-code-desktop/changelog.html",
+          "source_name": "Moonshot AI",
+          "source_domain": "kimi.com",
+          "source_tier": "primary",
+          "raw_title": "Changelog | Kimi Code Docs",
+          "published_at": "2026-10-28",
+          "retrieved_at": "2026-10-30T09:21:04+08:00",
+          "raw_excerpt": "1.2.0 (2026-10-28)",
+          "evidence_type": "opened_primary_page",
+          "evidence_notes": "实际打开1.2.0节，逐项核对Features/Polish/Bug Fixes；不把页面后面的初始发布或CLI功能归入本版新增。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "54期是K3.1模型及权重计划；此次客户端1.2.0修复是独立产品进展，没有重复模型参数或发布。"
+    },
+    {
+      "story_id": "dsh-community-wsl-sandbox-plugin-20261028",
+      "event_id": "dsh-community-wsl-sandbox-plugin-20261028",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "社区实践",
+      "title": "DSH 社区作者分享 WSL 执行插件，明确沙箱仍有边界",
+      "summary": "DeepSeek Harness社区10月28日出现WSL插件分享。作者介绍让命令、文件和终端进入Linux发行版，并称以bubblewrap限制执行；同时明确WSL互操作仍有逃逸边界，约束状态标为partial。这反映开发者对工具链和隔离环境的探索，不是DeepSeek官方安全保证，也未独立验证作者的兼容性测试。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.com/deepseek-ai/deepseek-harness/discussions/11251",
+          "canonical_url": "https://github.com/deepseek-ai/deepseek-harness/discussions/11251",
+          "source_name": "GitHub Community",
+          "source_domain": "github.com",
+          "source_tier": "social_signal",
+          "raw_title": "dsh-plugin-wsl-env — run a DSH session against a WSL distro, with the sandbox moved inside the distro",
+          "published_at": "2026-10-28",
+          "retrieved_at": "2026-10-30T09:21:04+08:00",
+          "raw_excerpt": "enforcement honestly reported as partial",
+          "evidence_type": "opened_community_thread",
+          "evidence_notes": "实际打开讨论原帖，显示Oct28，作者Big-Dao；内容系作者自述，明确interop escape及partial，未运行安装命令，未把六发行版测试当独立验证。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整coverage及51–54未有本插件分享；与官方模型或推理框架发布不同，作为社区实践单独标记。",
+      "evidence_type": "community_observation"
+    }
+  ]
+}

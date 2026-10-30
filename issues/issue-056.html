@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 56 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策、监管与风险</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+<div class="container">
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.10.28 — 10.30</span><span>第 56 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
+<div class="card">
+<span class="tag">模型与技术进展</span><h3>Google 公布 Gemini 4 Carbon，先向部分网络防御伙伴开放</h3><p>Google公布Gemini 4 Carbon，强调长程软件工程及漏洞发现、验证和修补能力。官方表示先向部分网络防御人员开放，并通过Fairwind逐步扩展可信伙伴，普通开发者、企业和消费者仍待后续推出。公布的首发价为每百万输入2美元、输出10美元；评测与内部使用结果属厂商口径，不能据此认定所有用户现已可调用。</p>
+<a class="source-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank">Google</a></div>
+<div class="card">
+<span class="tag">国内 AI 动态</span><h3>Qwen Code 0.26.4 增加独立工作树，改进交互视图与 PR 核验</h3><p>Qwen官方仓库10月29日发布0.26.4稳定版，为托管主会话加入独立Git工作树，并让生成式界面以可交互视图呈现。PR核验报告开始记录模型、CLI和技能版本，另修复离线恢复与部分配置静默丢失问题。团队可据此检查会话隔离和报告可追溯性；同日nightly后续功能不应混入稳定版说明。</p>
+<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4" target="_blank">Qwen</a></div>
+<div class="card">
+<span class="tag">政策、监管与风险</span><h3>OpenAI 更新 Model Spec，以五项价值组织模型行为准则</h3><p>OpenAI 10月29日更新公开Model Spec，以忠于人类意图、减少伤害、诚实透明、人的自主性和关怀五项价值组织准则，并补充上下文、监督和自主性指引，调整默认行为与部分风格要求。这是公司对模型目标行为的规范说明及持续训练方向，不是法律监管文件，也不表示所有线上模型已完整实现新版规范。</p>
+<a class="source-link" href="https://openai.com/index/updated-model-spec/" target="_blank">OpenAI</a></div>
+</div>
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
+<div class="news-item">
+<div class="label">前沿模型</div><div class="title">Google 公布 Gemini 4 Carbon，先向部分网络防御伙伴开放</div><div class="summary">Google公布Gemini 4 Carbon，强调长程软件工程及漏洞发现、验证和修补能力。官方表示先向部分网络防御人员开放，并通过Fairwind逐步扩展可信伙伴，普通开发者、企业和消费者仍待后续推出。公布的首发价为每百万输入2美元、输出10美元；评测与内部使用结果属厂商口径，不能据此认定所有用户现已可调用。</div>
+<a class="source-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank">Google</a></div>
+</div>
+<div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
+<div class="news-item">
+<div class="label">预发行工具</div><div class="title">DeepSeek Harness alpha2 加入工作树实验，要求 Node.js 24.9</div><div class="summary">DeepSeek Harness发布0.2.2-alpha.2预发行版，新增实验性变更请求与独立Git工作树，支持第三方插件更新失败后尝试回退，并加强会话恢复与权限状态处理。最低Node.js版本提高到24.9，自定义插件与部分接口需要迁移。它仍是alpha版，更新日志中的功能和修复不等于经过本刊生产环境验证，升级前应核对兼容性。</div>
+<a class="source-link" href="https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-alpha.2" target="_blank">DeepSeek</a></div>
+</div>
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
+<div class="news-item">
+<div class="label">编码智能体</div><div class="title">Qwen Code 0.26.4 增加独立工作树，改进交互视图与 PR 核验</div><div class="summary">Qwen官方仓库10月29日发布0.26.4稳定版，为托管主会话加入独立Git工作树，并让生成式界面以可交互视图呈现。PR核验报告开始记录模型、CLI和技能版本，另修复离线恢复与部分配置静默丢失问题。团队可据此检查会话隔离和报告可追溯性；同日nightly后续功能不应混入稳定版说明。</div>
+<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4" target="_blank">Qwen</a></div>
+</div>
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
+</div>
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
+</div>
+<div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+<div class="news-item">
+<div class="label">模型行为规范</div><div class="title">OpenAI 更新 Model Spec，以五项价值组织模型行为准则</div><div class="summary">OpenAI 10月29日更新公开Model Spec，以忠于人类意图、减少伤害、诚实透明、人的自主性和关怀五项价值组织准则，并补充上下文、监督和自主性指引，调整默认行为与部分风格要求。这是公司对模型目标行为的规范说明及持续训练方向，不是法律监管文件，也不表示所有线上模型已完整实现新版规范。</div>
+<a class="source-link" href="https://openai.com/index/updated-model-spec/" target="_blank">OpenAI</a></div>
+</div>
+<div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
+<div class="news-item">
+<div class="label">税务工作流观察</div><div class="title">HN 讨论 AI 税务工具：规则追溯与人工复核仍是关注点</div><div class="summary">围绕Dayjob税务任务评测的HN讨论中，有开发者介绍把税表流程写成可追溯规则并交叉校验，也有用户分享AI查错有用、复杂税务计算或解释仍会出错的体验。它提示财务自动化需要区分计算、规则解释和最终复核；这些是社区自述，不能推导为模型已能独立报税，也不构成对特定税务处理的确认。</div>
+<a class="source-link" href="https://news.ycombinator.com/item?id=50275626" target="_blank">Hacker News</a></div>
+</div>
+<div class="footer"><p><a href="index.html" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
+</div>
+</body>
+</html>

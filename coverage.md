@@ -827,6 +827,16 @@
 - Kimi Code Desktop 1.2.0 修复长对话缓存与内置浏览器问题（https://www.kimi.com/code/docs/en/kimi-code-desktop/changelog.html；2026-10-28）。54期是K3.1模型及权重计划；此次客户端1.2.0修复是独立产品进展，没有重复模型参数或发布。
 - DSH 社区作者分享 WSL 执行插件，明确沙箱仍有边界（https://github.com/deepseek-ai/deepseek-harness/discussions/11251；2026-10-28）。完整coverage及51–54未有本插件分享；与官方模型或推理框架发布不同，作为社区实践单独标记。
 
+### 第 56 期（2026.10.28 — 10.30）
+
+2026-10-30上午完成采编，覆盖10/28–10/30本次取回前可验证的新进展；边界日补入55期未刊条目，不纳入未来消息。日期保留原站标注，Google美国10/28公告对应北京时间10/29凌晨的发布窗口。
+
+- Google 公布 Gemini 4 Carbon，先向部分网络防御伙伴开放（https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/；2026-10-28）。历史台账是Argon公开与上架，55期是Genie4世界模型；本条Carbon为新型号及受限推出阶段，未把Argon重写成新发布。
+- Qwen Code 0.26.4 增加独立工作树，改进交互视图与 PR 核验（https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4；2026-10-29）。54期是0.26.1恢复和群聊隔离；本条0.26.4新增独立worktree、交互视图及报告版本记录，属于明确版本后续。
+- DeepSeek Harness alpha2 加入工作树实验，要求 Node.js 24.9（https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-alpha.2；2026-10-28）。历史台账有Harness首发与插件生态，55期是第三方WSL插件讨论；本条是官方0.2.2-alpha.2具体版本增量，非同一事件，未包装成稳定版。
+- OpenAI 更新 Model Spec，以五项价值组织模型行为准则（https://openai.com/index/updated-model-spec/；2026-10-29）。完整coverage没有此次10/29 ModelSpec修订；不同于52期伙伴访问政策、选举保障或安全事故报告，为公司模型行为治理新版本。
+- HN 讨论 AI 税务工具：规则追溯与人工复核仍是关注点（https://news.ycombinator.com/item?id=50275626；2026-10-28）。完整coverage与51–55没有该税务讨论；不是旧财务产品重发，与53期企业经营观点及54期定价讨论为不同主题。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

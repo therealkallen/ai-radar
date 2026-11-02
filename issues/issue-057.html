@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 57 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策、监管与风险</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+<div class="container">
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.10.30 — 11.02</span><span>第 57 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
+<div class="card">
+<span class="tag">国内 AI 动态</span><h3>Qwen Code 0.26.5 稳定版默认启用交互式界面，并给 PR 自动修复设置重试上限</h3><p>Qwen官方11月1日发布0.26.5稳定版，默认启用Generated UI，允许将交互卡片中的取值带入后续对话；同时为PR自动修复加入最多三轮推送的重试预算，失败后交回人工处理。版本还扩展Managed环境的SQL历史查询及Web Shell操作。与10月29日0.26.4的工作树功能不同，这次重点是交互和可控自动化，功能效果仍以官方更新日志为准。</p>
+<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5" target="_blank">Qwen</a></div>
+<div class="card">
+<span class="tag">企业应用与工具观察</span><h3>腾讯谈 WorkBuddy 企业落地：FDE、数据权限与投入回报是商业化关键</h3><p>36氪11月1日刊出对腾讯汤道生等人的原创采访。腾讯称WorkBuddy将继续采用多模型接入，企业场景需要服务端数据权限约束、使用可观测性和实施伙伴；大客户依靠FDE深入业务流程，中小客户更多依靠生态伙伴。汤道生强调收费首先要支撑持续服务，团队不以单一收入目标倒逼增长；这反映的是企业AI实施与成本治理策略，而非已验证的客户ROI。</p>
+<a class="source-link" href="https://eu.36kr.com/zh/p/4051138782860421" target="_blank">36氪</a></div>
+<div class="card">
+<span class="tag">企业应用与工具观察</span><h3>富士康称正与 OpenAI 商谈新合作，细节仍待确认</h3><p>路透10月30日报道，富士康董事长刘扬伟在鸿海科技日表示，当天已与OpenAI首席执行官会面，双方正在推进新的合作，待细节确定后才会公布。潜在合作建立在2025年数据中心机柜和组件设计协议之上；富士康同时介绍休斯敦AI服务器产能及得州工厂内部人形机器人试用。报道未披露新合同金额或签约时间，不能将洽谈写成交易完成。</p>
+<a class="source-link" href="https://www.reuters.com/world/china/foxconn-working-new-tie-up-with-openai-says-there-is-no-ai-bubble-2026-10-30/" target="_blank">Reuters</a></div>
+<div class="card">
+<span class="tag">国内 AI 动态</span><h3>路透聚焦中国机器人竞争重心：从动作硬件转向通用智能与训练数据</h3><p>路透11月2日北京电采访多家中国具身智能企业，指出行业竞争正从机器人运动能力转向跨任务学习、数据采集与工业部署。报道援引IT桔子数据称2026年上半年中国具身智能融资935亿元、322笔；受访企业介绍工厂及药房试用，同时承认仿真与现实差距、芯片供给和跨场景可靠性仍是障碍。这是一篇产业调查分析，不是某款新模型正式发布。</p>
+<a class="source-link" href="https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
+</div>
+<div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
+<div class="news-item">
+<div class="label">企业智能体落地</div><div class="title">腾讯谈 WorkBuddy 企业落地：FDE、数据权限与投入回报是商业化关键</div><div class="summary">36氪11月1日刊出对腾讯汤道生等人的原创采访。腾讯称WorkBuddy将继续采用多模型接入，企业场景需要服务端数据权限约束、使用可观测性和实施伙伴；大客户依靠FDE深入业务流程，中小客户更多依靠生态伙伴。汤道生强调收费首先要支撑持续服务，团队不以单一收入目标倒逼增长；这反映的是企业AI实施与成本治理策略，而非已验证的客户ROI。</div>
+<a class="source-link" href="https://eu.36kr.com/zh/p/4051138782860421" target="_blank">36氪</a></div>
+<div class="news-item">
+<div class="label">AI基础设施合作</div><div class="title">富士康称正与 OpenAI 商谈新合作，细节仍待确认</div><div class="summary">路透10月30日报道，富士康董事长刘扬伟在鸿海科技日表示，当天已与OpenAI首席执行官会面，双方正在推进新的合作，待细节确定后才会公布。潜在合作建立在2025年数据中心机柜和组件设计协议之上；富士康同时介绍休斯敦AI服务器产能及得州工厂内部人形机器人试用。报道未披露新合同金额或签约时间，不能将洽谈写成交易完成。</div>
+<a class="source-link" href="https://www.reuters.com/world/china/foxconn-working-new-tie-up-with-openai-says-there-is-no-ai-bubble-2026-10-30/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
+<div class="news-item">
+<div class="label">编码智能体</div><div class="title">Qwen Code 0.26.5 稳定版默认启用交互式界面，并给 PR 自动修复设置重试上限</div><div class="summary">Qwen官方11月1日发布0.26.5稳定版，默认启用Generated UI，允许将交互卡片中的取值带入后续对话；同时为PR自动修复加入最多三轮推送的重试预算，失败后交回人工处理。版本还扩展Managed环境的SQL历史查询及Web Shell操作。与10月29日0.26.4的工作树功能不同，这次重点是交互和可控自动化，功能效果仍以官方更新日志为准。</div>
+<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5" target="_blank">Qwen</a></div>
+<div class="news-item">
+<div class="label">具身智能产业</div><div class="title">路透聚焦中国机器人竞争重心：从动作硬件转向通用智能与训练数据</div><div class="summary">路透11月2日北京电采访多家中国具身智能企业，指出行业竞争正从机器人运动能力转向跨任务学习、数据采集与工业部署。报道援引IT桔子数据称2026年上半年中国具身智能融资935亿元、322笔；受访企业介绍工厂及药房试用，同时承认仿真与现实差距、芯片供给和跨场景可靠性仍是障碍。这是一篇产业调查分析，不是某款新模型正式发布。</div>
+<a class="source-link" href="https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
+</div>
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
+<div class="news-item">
+<div class="label">资本开支与市场</div><div class="title">AI 资本开支回报受质疑，10月30日科技股与半导体板块大跌</div><div class="summary">路透10月30日收盘报道指出，投资者对AI建设持续消耗现金、回报周期不明的担忧加剧，当日纳斯达克指数下跌2.86%，费城半导体指数跌逾7%；英特尔跌28.6%，Alphabet此前因巨额AI投入拖累现金流也承压。油价与地缘局势等因素同时影响市场，不能把全部跌幅简单归因于AI。这是当日金融市场反应，不是对未来AI需求的确定预测。</div>
+<a class="source-link" href="https://www.reuters.com/legal/transactional/global-markets-global-markets-2026-10-30/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+</div>
+<div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
+<div class="news-item">
+<div class="label">开发者观点 · 本地模型</div><div class="title">HN 围绕开源模型协作与量化争论：基准分数能否代表真实编码体验</div><div class="summary">10月31日Hacker News围绕Memdoor多模型编码项目展开讨论。有开发者重视开放权重与本地部署的可持续性，也有人分享量化后在真实代码任务中更易出现错误、模型参数规模和评测榜单不足以替代实测。帖子标题声称的基准胜负未由本刊独立复现；这些是开发者观点和个人使用体验，不是厂商发布或普遍性能结论。</div>
+<a class="source-link" href="https://news.ycombinator.com/item?id=50320995" target="_blank">Hacker News</a></div>
+<div class="news-item">
+<div class="label">社区作品 · Linux客户端</div><div class="title">DeepSeek Harness 社区开发者展示 Linux 原生客户端，早期用户反馈仍需验证</div><div class="summary">10月31日DeepSeek Harness官方仓库的GitHub讨论中，第三方开发者展示基于Tauri、Rust和WebKitGTK的Linux桌面客户端，提供AppImage、deb和rpm等分发形式。后续回复有人报告初步运行顺畅，也有人认为现有Web版已经足够。项目由社区成员维护，性能、兼容性和安全性均未经过本刊独立测试，不能写成DeepSeek官方发布。</div>
+<a class="source-link" href="https://github.com/deepseek-ai/deepseek-harness/discussions/11628" target="_blank">GitHub Community</a></div>
+</div>
+<div class="footer"><p><a href="index.html" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
+</div>
+</body>
+</html>

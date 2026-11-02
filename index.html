@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Radar · 第 56 期</title>
+<title>AI Radar · 第 57 期</title>
 <style>
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -53,46 +53,55 @@
 </div></nav>
 <div class="container">
 <div class="masthead"><h1>AI Radar</h1>
-<div class="meta"><span>2026.10.28 — 10.30</span><span>第 56 期</span></div></div>
+<div class="meta"><span>2026.10.30 — 11.02</span><span>第 57 期</span></div></div>
 <div class="section" id="picks"><div class="section-header">Radar Picks</div>
 <div class="card">
-<span class="tag">模型与技术进展</span><h3>Google 公布 Gemini 4 Carbon，先向部分网络防御伙伴开放</h3><p>Google公布Gemini 4 Carbon，强调长程软件工程及漏洞发现、验证和修补能力。官方表示先向部分网络防御人员开放，并通过Fairwind逐步扩展可信伙伴，普通开发者、企业和消费者仍待后续推出。公布的首发价为每百万输入2美元、输出10美元；评测与内部使用结果属厂商口径，不能据此认定所有用户现已可调用。</p>
-<a class="source-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank">Google</a></div>
+<span class="tag">国内 AI 动态</span><h3>Qwen Code 0.26.5 稳定版默认启用交互式界面，并给 PR 自动修复设置重试上限</h3><p>Qwen官方11月1日发布0.26.5稳定版，默认启用Generated UI，允许将交互卡片中的取值带入后续对话；同时为PR自动修复加入最多三轮推送的重试预算，失败后交回人工处理。版本还扩展Managed环境的SQL历史查询及Web Shell操作。与10月29日0.26.4的工作树功能不同，这次重点是交互和可控自动化，功能效果仍以官方更新日志为准。</p>
+<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5" target="_blank">Qwen</a></div>
 <div class="card">
-<span class="tag">国内 AI 动态</span><h3>Qwen Code 0.26.4 增加独立工作树，改进交互视图与 PR 核验</h3><p>Qwen官方仓库10月29日发布0.26.4稳定版，为托管主会话加入独立Git工作树，并让生成式界面以可交互视图呈现。PR核验报告开始记录模型、CLI和技能版本，另修复离线恢复与部分配置静默丢失问题。团队可据此检查会话隔离和报告可追溯性；同日nightly后续功能不应混入稳定版说明。</p>
-<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4" target="_blank">Qwen</a></div>
+<span class="tag">企业应用与工具观察</span><h3>腾讯谈 WorkBuddy 企业落地：FDE、数据权限与投入回报是商业化关键</h3><p>36氪11月1日刊出对腾讯汤道生等人的原创采访。腾讯称WorkBuddy将继续采用多模型接入，企业场景需要服务端数据权限约束、使用可观测性和实施伙伴；大客户依靠FDE深入业务流程，中小客户更多依靠生态伙伴。汤道生强调收费首先要支撑持续服务，团队不以单一收入目标倒逼增长；这反映的是企业AI实施与成本治理策略，而非已验证的客户ROI。</p>
+<a class="source-link" href="https://eu.36kr.com/zh/p/4051138782860421" target="_blank">36氪</a></div>
 <div class="card">
-<span class="tag">政策、监管与风险</span><h3>OpenAI 更新 Model Spec，以五项价值组织模型行为准则</h3><p>OpenAI 10月29日更新公开Model Spec，以忠于人类意图、减少伤害、诚实透明、人的自主性和关怀五项价值组织准则，并补充上下文、监督和自主性指引，调整默认行为与部分风格要求。这是公司对模型目标行为的规范说明及持续训练方向，不是法律监管文件，也不表示所有线上模型已完整实现新版规范。</p>
-<a class="source-link" href="https://openai.com/index/updated-model-spec/" target="_blank">OpenAI</a></div>
+<span class="tag">企业应用与工具观察</span><h3>富士康称正与 OpenAI 商谈新合作，细节仍待确认</h3><p>路透10月30日报道，富士康董事长刘扬伟在鸿海科技日表示，当天已与OpenAI首席执行官会面，双方正在推进新的合作，待细节确定后才会公布。潜在合作建立在2025年数据中心机柜和组件设计协议之上；富士康同时介绍休斯敦AI服务器产能及得州工厂内部人形机器人试用。报道未披露新合同金额或签约时间，不能将洽谈写成交易完成。</p>
+<a class="source-link" href="https://www.reuters.com/world/china/foxconn-working-new-tie-up-with-openai-says-there-is-no-ai-bubble-2026-10-30/" target="_blank">Reuters</a></div>
+<div class="card">
+<span class="tag">国内 AI 动态</span><h3>路透聚焦中国机器人竞争重心：从动作硬件转向通用智能与训练数据</h3><p>路透11月2日北京电采访多家中国具身智能企业，指出行业竞争正从机器人运动能力转向跨任务学习、数据采集与工业部署。报道援引IT桔子数据称2026年上半年中国具身智能融资935亿元、322笔；受访企业介绍工厂及药房试用，同时承认仿真与现实差距、芯片供给和跨场景可靠性仍是障碍。这是一篇产业调查分析，不是某款新模型正式发布。</p>
+<a class="source-link" href="https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/" target="_blank">Reuters</a></div>
 </div>
 <div class="section" id="models"><div class="section-header">模型与技术进展</div>
-<div class="news-item">
-<div class="label">前沿模型</div><div class="title">Google 公布 Gemini 4 Carbon，先向部分网络防御伙伴开放</div><div class="summary">Google公布Gemini 4 Carbon，强调长程软件工程及漏洞发现、验证和修补能力。官方表示先向部分网络防御人员开放，并通过Fairwind逐步扩展可信伙伴，普通开发者、企业和消费者仍待后续推出。公布的首发价为每百万输入2美元、输出10美元；评测与内部使用结果属厂商口径，不能据此认定所有用户现已可调用。</div>
-<a class="source-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank">Google</a></div>
 </div>
 <div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
 <div class="news-item">
-<div class="label">预发行工具</div><div class="title">DeepSeek Harness alpha2 加入工作树实验，要求 Node.js 24.9</div><div class="summary">DeepSeek Harness发布0.2.2-alpha.2预发行版，新增实验性变更请求与独立Git工作树，支持第三方插件更新失败后尝试回退，并加强会话恢复与权限状态处理。最低Node.js版本提高到24.9，自定义插件与部分接口需要迁移。它仍是alpha版，更新日志中的功能和修复不等于经过本刊生产环境验证，升级前应核对兼容性。</div>
-<a class="source-link" href="https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.2-alpha.2" target="_blank">DeepSeek</a></div>
+<div class="label">企业智能体落地</div><div class="title">腾讯谈 WorkBuddy 企业落地：FDE、数据权限与投入回报是商业化关键</div><div class="summary">36氪11月1日刊出对腾讯汤道生等人的原创采访。腾讯称WorkBuddy将继续采用多模型接入，企业场景需要服务端数据权限约束、使用可观测性和实施伙伴；大客户依靠FDE深入业务流程，中小客户更多依靠生态伙伴。汤道生强调收费首先要支撑持续服务，团队不以单一收入目标倒逼增长；这反映的是企业AI实施与成本治理策略，而非已验证的客户ROI。</div>
+<a class="source-link" href="https://eu.36kr.com/zh/p/4051138782860421" target="_blank">36氪</a></div>
+<div class="news-item">
+<div class="label">AI基础设施合作</div><div class="title">富士康称正与 OpenAI 商谈新合作，细节仍待确认</div><div class="summary">路透10月30日报道，富士康董事长刘扬伟在鸿海科技日表示，当天已与OpenAI首席执行官会面，双方正在推进新的合作，待细节确定后才会公布。潜在合作建立在2025年数据中心机柜和组件设计协议之上；富士康同时介绍休斯敦AI服务器产能及得州工厂内部人形机器人试用。报道未披露新合同金额或签约时间，不能将洽谈写成交易完成。</div>
+<a class="source-link" href="https://www.reuters.com/world/china/foxconn-working-new-tie-up-with-openai-says-there-is-no-ai-bubble-2026-10-30/" target="_blank">Reuters</a></div>
 </div>
 <div class="section" id="china"><div class="section-header">国内 AI 动态</div>
 <div class="news-item">
-<div class="label">编码智能体</div><div class="title">Qwen Code 0.26.4 增加独立工作树，改进交互视图与 PR 核验</div><div class="summary">Qwen官方仓库10月29日发布0.26.4稳定版，为托管主会话加入独立Git工作树，并让生成式界面以可交互视图呈现。PR核验报告开始记录模型、CLI和技能版本，另修复离线恢复与部分配置静默丢失问题。团队可据此检查会话隔离和报告可追溯性；同日nightly后续功能不应混入稳定版说明。</div>
-<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4" target="_blank">Qwen</a></div>
+<div class="label">编码智能体</div><div class="title">Qwen Code 0.26.5 稳定版默认启用交互式界面，并给 PR 自动修复设置重试上限</div><div class="summary">Qwen官方11月1日发布0.26.5稳定版，默认启用Generated UI，允许将交互卡片中的取值带入后续对话；同时为PR自动修复加入最多三轮推送的重试预算，失败后交回人工处理。版本还扩展Managed环境的SQL历史查询及Web Shell操作。与10月29日0.26.4的工作树功能不同，这次重点是交互和可控自动化，功能效果仍以官方更新日志为准。</div>
+<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5" target="_blank">Qwen</a></div>
+<div class="news-item">
+<div class="label">具身智能产业</div><div class="title">路透聚焦中国机器人竞争重心：从动作硬件转向通用智能与训练数据</div><div class="summary">路透11月2日北京电采访多家中国具身智能企业，指出行业竞争正从机器人运动能力转向跨任务学习、数据采集与工业部署。报道援引IT桔子数据称2026年上半年中国具身智能融资935亿元、322笔；受访企业介绍工厂及药房试用，同时承认仿真与现实差距、芯片供给和跨场景可靠性仍是障碍。这是一篇产业调查分析，不是某款新模型正式发布。</div>
+<a class="source-link" href="https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/" target="_blank">Reuters</a></div>
 </div>
 <div class="section" id="international"><div class="section-header">国际 AI 动态</div>
 </div>
 <div class="section" id="finance"><div class="section-header">AI 与金融</div>
+<div class="news-item">
+<div class="label">资本开支与市场</div><div class="title">AI 资本开支回报受质疑，10月30日科技股与半导体板块大跌</div><div class="summary">路透10月30日收盘报道指出，投资者对AI建设持续消耗现金、回报周期不明的担忧加剧，当日纳斯达克指数下跌2.86%，费城半导体指数跌逾7%；英特尔跌28.6%，Alphabet此前因巨额AI投入拖累现金流也承压。油价与地缘局势等因素同时影响市场，不能把全部跌幅简单归因于AI。这是当日金融市场反应，不是对未来AI需求的确定预测。</div>
+<a class="source-link" href="https://www.reuters.com/legal/transactional/global-markets-global-markets-2026-10-30/" target="_blank">Reuters</a></div>
 </div>
 <div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
-<div class="news-item">
-<div class="label">模型行为规范</div><div class="title">OpenAI 更新 Model Spec，以五项价值组织模型行为准则</div><div class="summary">OpenAI 10月29日更新公开Model Spec，以忠于人类意图、减少伤害、诚实透明、人的自主性和关怀五项价值组织准则，并补充上下文、监督和自主性指引，调整默认行为与部分风格要求。这是公司对模型目标行为的规范说明及持续训练方向，不是法律监管文件，也不表示所有线上模型已完整实现新版规范。</div>
-<a class="source-link" href="https://openai.com/index/updated-model-spec/" target="_blank">OpenAI</a></div>
 </div>
 <div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
 <div class="news-item">
-<div class="label">税务工作流观察</div><div class="title">HN 讨论 AI 税务工具：规则追溯与人工复核仍是关注点</div><div class="summary">围绕Dayjob税务任务评测的HN讨论中，有开发者介绍把税表流程写成可追溯规则并交叉校验，也有用户分享AI查错有用、复杂税务计算或解释仍会出错的体验。它提示财务自动化需要区分计算、规则解释和最终复核；这些是社区自述，不能推导为模型已能独立报税，也不构成对特定税务处理的确认。</div>
-<a class="source-link" href="https://news.ycombinator.com/item?id=50275626" target="_blank">Hacker News</a></div>
+<div class="label">开发者观点 · 本地模型</div><div class="title">HN 围绕开源模型协作与量化争论：基准分数能否代表真实编码体验</div><div class="summary">10月31日Hacker News围绕Memdoor多模型编码项目展开讨论。有开发者重视开放权重与本地部署的可持续性，也有人分享量化后在真实代码任务中更易出现错误、模型参数规模和评测榜单不足以替代实测。帖子标题声称的基准胜负未由本刊独立复现；这些是开发者观点和个人使用体验，不是厂商发布或普遍性能结论。</div>
+<a class="source-link" href="https://news.ycombinator.com/item?id=50320995" target="_blank">Hacker News</a></div>
+<div class="news-item">
+<div class="label">社区作品 · Linux客户端</div><div class="title">DeepSeek Harness 社区开发者展示 Linux 原生客户端，早期用户反馈仍需验证</div><div class="summary">10月31日DeepSeek Harness官方仓库的GitHub讨论中，第三方开发者展示基于Tauri、Rust和WebKitGTK的Linux桌面客户端，提供AppImage、deb和rpm等分发形式。后续回复有人报告初步运行顺畅，也有人认为现有Web版已经足够。项目由社区成员维护，性能、兼容性和安全性均未经过本刊独立测试，不能写成DeepSeek官方发布。</div>
+<a class="source-link" href="https://github.com/deepseek-ai/deepseek-harness/discussions/11628" target="_blank">GitHub Community</a></div>
 </div>
 <div class="footer"><p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
 </div>

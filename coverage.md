@@ -839,7 +839,7 @@
 
 ### 第 57 期（2026.10.30 — 11.02）
 
-本期按Asia/Singapore 2026-11-02 09:30出版窗口编写，覆盖10月30日第56期截稿之后至11月2日09:30前可核验的新进展。10月30日边界只选前一期截稿后发生或此前未刊的事件；路透11月1日23:08 UTC稿件在北京时间11月2日07:08发布。原文发布时间与实际核验时间分别记录，未把后续评论数或转发日期当成原始发布日。
+本期按Asia/Singapore 2026-11-02 09:30出版窗口编写，覆盖10月30日第56期截稿之后至11月2日09:30前可核验的新进展。10月30日边界只选前一期截稿后发生或此前未刊的事件；路透11月1日23:08 UTC稿件在北京时间11月2日07:08发布。原文发布时间与实际核验时间分别记录，未把后续评论数或转发日期当成原始发布日。 2026-11-02补充修订：保留原窗口与原7条，新增12条经原文核对的遗漏，共19个独立事件；补充核验时间按实际UTC记录，未来发布/生效均标预告。
 
 - Qwen Code 0.26.5 稳定版默认启用交互式界面，并给 PR 自动修复设置重试上限（https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5；2026-11-01）。第56期报道0.26.4独立工作树及PR核验，本条为11/1发布的后续稳定版，新增默认交互卡片与自动修复重试上限，不重复0.26.4。
 - 腾讯谈 WorkBuddy 企业落地：FDE、数据权限与投入回报是商业化关键（https://eu.36kr.com/zh/p/4051138782860421；2026-11-01）。此前台账含WorkBuddy平台、Kimi模型接入和企业微信联动；本条是11/1采访新增的交付分工、权限边界和商业可持续性解释，不重复旧平台发布。
@@ -848,6 +848,18 @@
 - AI 资本开支回报受质疑，10月30日科技股与半导体板块大跌（https://www.reuters.com/legal/transactional/global-markets-global-markets-2026-10-30/；2026-10-30）。历史报道AI融资与资本开支担忧，但本条是10/30新交易日具体收盘表现与现金流风险重新定价，时间和数据均为实质新增。
 - HN 围绕开源模型协作与量化争论：基准分数能否代表真实编码体验（https://news.ycombinator.com/item?id=50320995；2026-10-31）。第56期HN是税务工具规则复核讨论，本条为10/31本地模型、量化和基准可信度争议，事件和主题不同。
 - DeepSeek Harness 社区开发者展示 Linux 原生客户端，早期用户反馈仍需验证（https://github.com/deepseek-ai/deepseek-harness/discussions/11628；2026-10-31）。第55期DSH社区为WSL执行插件，第56期为官方Harness alpha2；本条是10/31第三方Linux客户端展示，非同一产品版本或新闻。
+- SageMaker 实时推理支持 GPU 分区，小模型可共享一张加速卡（https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning/；2026-10-30）。完整台账无本次实时端点MIG分区；与一般模型上架、优化不同，为资源隔离能力新增。
+- Bedrock 为 GovCloud 中的 OpenAI 模型补齐原生 API 与跨区域推理（https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/；2026-10-30）。台账未有本次GovCloud运行时和路由；与Daybreak受限模型准入为不同能力变化。
+- SAP 详解智能体运行时治理：统一网关与人工合规复核（https://news.sap.com/2026/10/sap-teched-shows-how-to-lead-with-ai-governance/；2026-10-30）。台账未收录本周TechEd治理方案；依据10/30专项解读保留运行时约束和人工复核，不按组件拆条。
+- 苹果明确国行 Apple 智能时间表：11 月 4 日测试，12 月随 iOS 27.3 推出（https://www.geekpark.net/news/373238；2026-10-31）。此前审批/合作是背景；10/31新增具体测试与正式版时间及首批功能边界，完整台账无此次安排。
+- 联想天禧 AI 4.5 扩展到 PC，支持手机发起、电脑接力执行任务（https://zhidx.com/news/43271.html；2026-10-30）。台账无天禧4.5本次PC扩展，保留新增端与接力执行；不拆分会议、知识库、主机充数。
+- Claude 最高档改名 Ultra，已验证账户取消五小时用量上限（https://www.zhidx.com/p/606194.html；2026-10-31）。此前平台/模型与IPO不含10/31套餐名称和已验证Ultra五小时限制调整，为独立产品政策变化。
+- OpenAI Daybreak Red 扩展至 GovCloud 东部，仍须核验防御用途（https://aws.amazon.com/about-aws/whats-new/2026/10/openai-daybreak-red-govcloud-east/；2026-10-30）。早期Daybreak/Blue不等于本次Red新增GovCloud East；与通用5.6 API公告分别涉及受限模型准入和一般运行时能力。
+- OpenAI 明确 12 月起 ChatGPT 与 Codex 共享额度，Instant 聊天除外（https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits；2026-11-01）。此前Work/Codex共享额度不等于ChatGPT主体纳入；本次新增12月计划与Instant例外。原刊因日期不清未选，本次补足更新日证据。
+- 英国监管机构联合提示：金融与支付智能体仍须遵守现有法规（https://www.gov.uk/government/publications/agentic-ai-and-consumers；2026-10-30）。台账无10/30四机构联合声明；聚焦FCA及金融/支付义务，与Meta个案反垄断立案不同。
+- OpenAI 支持跨厂商的训练偏好信号，计划未来数月实施（https://openai.com/index/helping-websites-express-ai-training-preferences/；2026-10-30）。台账内Model Spec及版权立场不含本次网站共通信号，为新的控制承诺。
+- OpenAI 收紧暴力相关回答与青少年武器信息，承诺半年安全报告（https://openai.com/index/community-safety-report-and-new-protections-for-teens/；2026-10-30）。既有青少年争议、家长控制与Model Spec不等于本次新暴力信息边界/半年报告承诺；同一公告合为一条。
+- 英国 CMA 对 Meta 商业条款立案，审查内容用于 AI 是否构成不公平条件（https://www.gov.uk/government/news/cma-opens-investigation-into-metas-commercial-terms--2；2026-10-30）。旧平台政策争议不等于此次10/30英国CA98正式立案，亦不同于DRCF一般声明和网站训练偏好信号。
 
 <!-- RADAR CONTENT END -->
 

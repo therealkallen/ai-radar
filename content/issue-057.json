@@ -2,11 +2,11 @@
   "num": 57,
   "period_start": "2026-10-30",
   "period_end": "2026-11-02",
-  "window_note": "本期按Asia/Singapore 2026-11-02 09:30出版窗口编写，覆盖10月30日第56期截稿之后至11月2日09:30前可核验的新进展。10月30日边界只选前一期截稿后发生或此前未刊的事件；路透11月1日23:08 UTC稿件在北京时间11月2日07:08发布。原文发布时间与实际核验时间分别记录，未把后续评论数或转发日期当成原始发布日。",
+  "window_note": "本期按Asia/Singapore 2026-11-02 09:30出版窗口编写，覆盖10月30日第56期截稿之后至11月2日09:30前可核验的新进展。10月30日边界只选前一期截稿后发生或此前未刊的事件；路透11月1日23:08 UTC稿件在北京时间11月2日07:08发布。原文发布时间与实际核验时间分别记录，未把后续评论数或转发日期当成原始发布日。 2026-11-02补充修订：保留原窗口与原7条，新增12条经原文核对的遗漏，共19个独立事件；补充核验时间按实际UTC记录，未来发布/生效均标预告。",
   "editorial_review": {
     "source_first": true,
     "semantic_dedup": true,
-    "notes": "先检索本期真实新闻，逐条实际打开Reuters原文、36氪原创采访、Qwen官方GitHub稳定release、HN原帖与DeepSeek官方仓库内的社区讨论，再对照完整coverage.md和第51–56期去重。富士康与OpenAI为正在商谈的后续合作，绝非已签约；中国具身智能为Reuters新采访分析，融资统计注明数据提供方而非已审计事实；腾讯WorkBuddy重点是11/1新采访披露的权限、FDE与ROI实施细节，10/29 Buddy One发布只作背景；Qwen 0.26.5是11/1稳定版，区别56期0.26.4。金融条目为10/30美股收盘的AI资本开支市场反应，未把市场因果解释当单一确定原因。Reuters关于Meta与傅利叶合作的10/31转述明确无法独立核实，故排除。OpenAI与Codex额度合并帮助中心虽可访问但原始发布日期未能在官方页核实，未冒充本期已正式上线；其他旧消息、营销转述和缺原文候选均不纳入。新闻不凑数，未改动历史、版式或来源白名单。",
+    "notes": "2026-11-02补充采编修订。原稿7条不足以反映本窗口事件；本次重新对照完整coverage.md和第51–56期，分别复核技术、国内、国际、企业、金融、政策、社区七栏。保留原7条及原证据，补入12条，共19个独立事件；Radar Picks仅引用其中5条，不计入新闻总数。新增逐条实际打开官方或原创报道。苹果时间表由两个独立媒体原稿并对照官方核验；联想、Claude按媒体归因，不冒充实测。OpenAI训练偏好、青少年保护、Meta立案、DRCF联合声明是独立公告。三条AWS分别是GPU资源隔离、通用推理运行时、受限安全模型准入，非同一release拆条。ChatGPT/Codex为12月预告，以官方当前更新相对时间换算UTC日期并确认11/1已被报道，不声称首次发文日。SAP为10/30本周TechEd治理解读，未冒充全部同日首发。未改来源映射、生成器、工作流、版式或历史期刊。",
     "domestic_review": {
       "checked_sources": [
         "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5",
@@ -25,9 +25,13 @@
         "site:jiqizhixin.com 2026-11-01 人工智能",
         "site:qbitai.com/2026/11/01 AI 智能体",
         "site:36kr.com/p/ 2026-11-01 人工智能",
-        "site:zhidx.com 2026/11/01 智能体"
+        "site:zhidx.com 2026/11/01 智能体",
+        "https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/",
+        "https://www.geekpark.net/news/373238",
+        "https://www.zhidx.com/p/606181.html",
+        "https://zhidx.com/news/43271.html"
       ],
-      "notes": "逐项搜索DeepSeek、阿里Qwen、智谱、Kimi、腾讯、百度、字节Seed、MiniMax、讯飞官方来源及机器之心、量子位、36氪、智东西国内媒体。确认Qwen官方v0.26.5于11/1 03:22:50 UTC发布且prerelease=false，Generated UI默认开启、PR自动修复重试预算为新版本增量。腾讯11/1原创采访提供企业FDE、权限治理、成本及效果衡量新细节，未将10/29发布会转载日期改写。Reuters中国具身智能采访11/1 23:08 UTC刊发，属于新行业研究/报道。DeepSeek Harness的Linux客户端是社区作品，只归社区栏；智谱ZCode10/30更新无可核对的独立产品细节；Kimi此前K3.1与客户端更新、百度OCR2已入前期；Seed、MiniMax、讯飞本窗口未取得满足时间与原文要求的新发布，未虚构新品。"
+      "notes": "逐项搜索DeepSeek、阿里Qwen、智谱、Kimi、腾讯、百度、字节Seed、MiniMax、讯飞官方来源及机器之心、量子位、36氪、智东西国内媒体。确认Qwen官方v0.26.5于11/1 03:22:50 UTC发布且prerelease=false，Generated UI默认开启、PR自动修复重试预算为新版本增量。腾讯11/1原创采访提供企业FDE、权限治理、成本及效果衡量新细节，未将10/29发布会转载日期改写。Reuters中国具身智能采访11/1 23:08 UTC刊发，属于新行业研究/报道。DeepSeek Harness的Linux客户端是社区作品，只归社区栏；智谱ZCode10/30更新无可核对的独立产品细节；Kimi此前K3.1与客户端更新、百度OCR2已入前期；Seed、MiniMax、讯飞本窗口未取得满足时间与原文要求的新发布，未虚构新品。 补充复核确认原稿漏掉的苹果10/31国行时间表与联想10/30 PC端及跨设备接力能力。苹果官方已打开，刊载两家独立媒体原稿，不伪标来源。"
     },
     "community_review": {
       "checked_sources": [
@@ -42,6 +46,245 @@
         "site:reddit.com/r/ClaudeAI/comments/ October 31 2026 agent"
       ],
       "notes": "实际打开HN10/31与11/1历史榜、HN #50320995原帖及评论、DeepSeek Harness GitHub Discussion #11628和Qwen Issue #16026。HN仅概述开发者对开源权重、量化效果与本地模型长期可用性的不同观点，不引用当前票数推断10/31热度，不将Memdoor标题中的基准胜负当独立事实。GitHub原帖10/31、回复10/31至11/1，Linux客户端为第三方作者自述及用户反馈，非DeepSeek官方发布。Qwen DNS pinning issue明确尚无可复现攻击演示，故未写成确认漏洞。X未取得可核对原帖，Reddit结果主要为2025旧帖或10月较早内容，未充数。"
+    },
+    "coverage_review": {
+      "revision_at": "2026-11-02T06:23:47+00:00",
+      "initial_story_count": 7,
+      "final_story_count": 19,
+      "scope": "10/30上一期截稿后或此前未刊至11/2 09:30 UTC+8；常规七栏分别检索，官方索引和可靠媒体独立二次发现候选，对照完整台账。记录实际扫描范围，不声称互联网穷尽。",
+      "sections": [
+        {
+          "category": "国内 AI 动态",
+          "included_count": 4,
+          "included_event_ids": [
+            "qwen-code-0265-stable-generated-ui-pr-budget-20261101",
+            "china-embodied-ai-robot-brains-reuters-focus-20261102",
+            "apple-intelligence-china-qwen-beta-timetable-20261031",
+            "lenovo-tianxi-ai45-pc-cross-device-20261030"
+          ]
+        },
+        {
+          "category": "企业应用与工具观察",
+          "included_count": 3,
+          "included_event_ids": [
+            "tencent-workbuddy-fde-roi-permissions-interview-20261101",
+            "foxconn-openai-new-hardware-collaboration-talks-20261030",
+            "sap-teched-ai-governance-runtime-human-review-20261030"
+          ]
+        },
+        {
+          "category": "AI 与金融",
+          "included_count": 2,
+          "included_event_ids": [
+            "ai-capex-cash-burn-tech-market-selloff-20261030",
+            "drcf-agentic-ai-financial-payments-responsibility-20261030"
+          ]
+        },
+        {
+          "category": "社媒与开发者社区观察",
+          "included_count": 2,
+          "included_event_ids": [
+            "hn-memdoor-local-open-model-quantization-debate-20261031",
+            "github-deepseek-harness-linux-community-client-20261031"
+          ]
+        },
+        {
+          "category": "模型与技术进展",
+          "included_count": 2,
+          "included_event_ids": [
+            "sagemaker-inference-gpu-mig-partitioning-20261030",
+            "bedrock-openai-runtime-govcloud-cross-region-20261030"
+          ]
+        },
+        {
+          "category": "国际 AI 动态",
+          "included_count": 3,
+          "included_event_ids": [
+            "claude-ultra-verified-five-hour-limit-change-20261031",
+            "daybreak-red-bedrock-govcloud-east-access-20261030",
+            "chatgpt-codex-december-shared-allowance-guidance-20261101"
+          ]
+        },
+        {
+          "category": "政策、监管与风险",
+          "included_count": 3,
+          "included_event_ids": [
+            "openai-robots-common-training-preferences-signal-20261030",
+            "openai-teen-weapons-limits-community-safety-report-20261030",
+            "cma-meta-ai-commercial-terms-investigation-20261030"
+          ]
+        }
+      ],
+      "checked_indexes_and_queries": [
+        "https://openai.com/news/",
+        "site:anthropic.com/news October 30 2026",
+        "site:blog.google October 30 2026 AI",
+        "site:blogs.microsoft.com October 30 2026 AI",
+        "site:ai.meta.com October 30 2026",
+        "https://aws.amazon.com/about-aws/whats-new/",
+        "site:mistral.ai/news October 30 2026",
+        "site:blogs.nvidia.com October 30 2026 AI",
+        "site:news.sap.com 2026/10 AI governance",
+        "site:salesforce.com October 30 2026 AI",
+        "AI fintech banking payments October 30 2026",
+        "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5",
+        "https://github.com/deepseek-ai",
+        "https://github.com/deepseek-ai/deepseek-harness/discussions/11628",
+        "https://eu.36kr.com/zh/p/4051138782860421",
+        "https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/",
+        "site:api-docs.deepseek.com/updates/ 2026-10-31 OR 2026-11",
+        "site:kimi.com/blog/ 2026-10-31 OR 2026-11-01",
+        "site:z.ai/blog 2026-10-31 OR 2026-11-01",
+        "site:cloud.baidu.com 2026-10-31 AI OCR",
+        "site:adp.tencent.com/zh/blog/ 2026-10-31 OR 2026-11-01",
+        "site:seed.bytedance.com/en/blog/ 2026-10-31 OR 2026-11-01",
+        "site:iflytek.com 2026-10-31 大模型",
+        "site:minimax.io/news 2026-11-01",
+        "site:jiqizhixin.com 2026-11-01 人工智能",
+        "site:qbitai.com/2026/11/01 AI 智能体",
+        "site:36kr.com/p/ 2026-11-01 人工智能",
+        "site:zhidx.com 2026/11/01 智能体",
+        "https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/",
+        "https://www.geekpark.net/news/373238",
+        "https://www.zhidx.com/p/606181.html",
+        "https://zhidx.com/news/43271.html",
+        "https://news.ycombinator.com/front?day=2026-10-31",
+        "https://news.ycombinator.com/front?day=2026-11-01",
+        "https://news.ycombinator.com/item?id=50320995",
+        "https://github.com/deepseek-ai/deepseek-harness/discussions/11628",
+        "https://github.com/QwenLM/qwen-code/issues/16026",
+        "site:x.com Qwen Code Nov 1 2026",
+        "site:x.com Foxconn OpenAI Oct 30 2026",
+        "site:reddit.com/r/LocalLLaMA/comments/ November 1 2026 Qwen",
+        "site:reddit.com/r/ClaudeAI/comments/ October 31 2026 agent"
+      ],
+      "second_pass": {
+        "completed": true,
+        "notes": "从OpenAI新闻索引、AWS公告、CMA新闻及DRCF附件、SAP官方专项文、极客公园和智东西原稿发现原稿未选事件。重点复核原为空的技术/国际/政策，以及只有股市内容的金融栏，新增金融/支付责任声明。全部新增逐条日期、原文及语义去重；不按栏目配额。"
+      },
+      "candidates": [
+        {
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning/",
+          "decision": "include",
+          "event_id": "sagemaker-inference-gpu-mig-partitioning-20261030",
+          "reason": "完整台账无本次实时端点MIG分区；与一般模型上架、优化不同，为资源隔离能力新增。"
+        },
+        {
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/",
+          "decision": "include",
+          "event_id": "bedrock-openai-runtime-govcloud-cross-region-20261030",
+          "reason": "台账未有本次GovCloud运行时和路由；与Daybreak受限模型准入为不同能力变化。"
+        },
+        {
+          "url": "https://news.sap.com/2026/10/sap-teched-shows-how-to-lead-with-ai-governance/",
+          "decision": "include",
+          "event_id": "sap-teched-ai-governance-runtime-human-review-20261030",
+          "reason": "台账未收录本周TechEd治理方案；依据10/30专项解读保留运行时约束和人工复核，不按组件拆条。"
+        },
+        {
+          "url": "https://www.geekpark.net/news/373238",
+          "decision": "include",
+          "event_id": "apple-intelligence-china-qwen-beta-timetable-20261031",
+          "reason": "此前审批/合作是背景；10/31新增具体测试与正式版时间及首批功能边界，完整台账无此次安排。"
+        },
+        {
+          "url": "https://zhidx.com/news/43271.html",
+          "decision": "include",
+          "event_id": "lenovo-tianxi-ai45-pc-cross-device-20261030",
+          "reason": "台账无天禧4.5本次PC扩展，保留新增端与接力执行；不拆分会议、知识库、主机充数。"
+        },
+        {
+          "url": "https://www.zhidx.com/p/606194.html",
+          "decision": "include",
+          "event_id": "claude-ultra-verified-five-hour-limit-change-20261031",
+          "reason": "此前平台/模型与IPO不含10/31套餐名称和已验证Ultra五小时限制调整，为独立产品政策变化。"
+        },
+        {
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-daybreak-red-govcloud-east/",
+          "decision": "include",
+          "event_id": "daybreak-red-bedrock-govcloud-east-access-20261030",
+          "reason": "早期Daybreak/Blue不等于本次Red新增GovCloud East；与通用5.6 API公告分别涉及受限模型准入和一般运行时能力。"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+          "decision": "include",
+          "event_id": "chatgpt-codex-december-shared-allowance-guidance-20261101",
+          "reason": "此前Work/Codex共享额度不等于ChatGPT主体纳入；本次新增12月计划与Instant例外。原刊因日期不清未选，本次补足更新日证据。"
+        },
+        {
+          "url": "https://www.gov.uk/government/publications/agentic-ai-and-consumers",
+          "decision": "include",
+          "event_id": "drcf-agentic-ai-financial-payments-responsibility-20261030",
+          "reason": "台账无10/30四机构联合声明；聚焦FCA及金融/支付义务，与Meta个案反垄断立案不同。"
+        },
+        {
+          "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+          "decision": "include",
+          "event_id": "openai-robots-common-training-preferences-signal-20261030",
+          "reason": "台账内Model Spec及版权立场不含本次网站共通信号，为新的控制承诺。"
+        },
+        {
+          "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
+          "decision": "include",
+          "event_id": "openai-teen-weapons-limits-community-safety-report-20261030",
+          "reason": "既有青少年争议、家长控制与Model Spec不等于本次新暴力信息边界/半年报告承诺；同一公告合为一条。"
+        },
+        {
+          "url": "https://www.gov.uk/government/news/cma-opens-investigation-into-metas-commercial-terms--2",
+          "decision": "include",
+          "event_id": "cma-meta-ai-commercial-terms-investigation-20261030",
+          "reason": "旧平台政策争议不等于此次10/30英国CA98正式立案，亦不同于DRCF一般声明和网站训练偏好信号。"
+        },
+        {
+          "url": "https://mistral.ai/news/",
+          "decision": "exclude",
+          "reason": "Le Chonk权重官方标10/29，预览10/6；不能按聚合报道日期挪成10/30新事件。"
+        },
+        {
+          "url": "https://arxiv.org/abs/2610.25736",
+          "decision": "exclude",
+          "reason": "CEL96机器人论文初发10/19、更新10/21；10/30媒体介绍未提供新技术版本，不冒充新论文。"
+        },
+        {
+          "url": "https://fintechnews.sg/140014/ai/aspire-ai-accounting-aspirebooks/",
+          "decision": "hold",
+          "reason": "已实际打开10/30原始行业报道，确有会计/对账关联；当前来源映射未包含该媒体/公司，未找到允许来源独立原稿，不伪标其他来源。"
+        },
+        {
+          "url": "https://www.salesforce.com/eu/blog/executive-briefing-the-ai-advantage-in-fintech-payments/",
+          "decision": "exclude",
+          "reason": "已打开10/30厂商观点文，回顾10/15活动；无可验证本窗口新产品/业务增量，不用通用营销填栏。"
+        },
+        {
+          "url": "https://blog.google/security/influence-operations-bulletin-q3-2026/",
+          "decision": "exclude",
+          "reason": "检索为季度平台处置通报，未核到与本刊AI直接相关新事实，不只因Google品牌加入。"
+        },
+        {
+          "url": "https://www.reuters.com/",
+          "decision": "exclude",
+          "reason": "Meta/傅利叶合作转述未独立核实；多篇10/30 AI资本开支市场稿合并为原有一条，不重复计数。"
+        }
+      ],
+      "failed_sources": [
+        {
+          "url": "https://www.36kr.com/newsflashes/4049121165556227",
+          "alternative": "Apple官方、极客公园和智东西原创均已成功打开。"
+        },
+        {
+          "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+          "alternative": "改用两家成功打开的原创中文报道并对照官方。"
+        },
+        {
+          "url": "https://www.gov.uk/government/news/cma-opens-investigation-into-metas-commercial-terms",
+          "alternative": "跳转机构页后沿新闻列表取得--2正确原文。"
+        }
+      ]
+    },
+    "low_count_review": {
+      "trigger": "原稿仅7条，技术/国际/政策三栏为空",
+      "second_pass_completed": true,
+      "result": "补足12条确实遗漏的独立事件，总数19。少于12是复核触发条件，不是必须凑数。"
     }
   },
   "stories": [
@@ -80,7 +323,7 @@
       "label": "企业智能体落地",
       "title": "腾讯谈 WorkBuddy 企业落地：FDE、数据权限与投入回报是商业化关键",
       "summary": "36氪11月1日刊出对腾讯汤道生等人的原创采访。腾讯称WorkBuddy将继续采用多模型接入，企业场景需要服务端数据权限约束、使用可观测性和实施伙伴；大客户依靠FDE深入业务流程，中小客户更多依靠生态伙伴。汤道生强调收费首先要支撑持续服务，团队不以单一收入目标倒逼增长；这反映的是企业AI实施与成本治理策略，而非已验证的客户ROI。",
-      "radar_pick": true,
+      "radar_pick": false,
       "major_claim": false,
       "verified": true,
       "sources": [
@@ -108,7 +351,7 @@
       "label": "AI基础设施合作",
       "title": "富士康称正与 OpenAI 商谈新合作，细节仍待确认",
       "summary": "路透10月30日报道，富士康董事长刘扬伟在鸿海科技日表示，当天已与OpenAI首席执行官会面，双方正在推进新的合作，待细节确定后才会公布。潜在合作建立在2025年数据中心机柜和组件设计协议之上；富士康同时介绍休斯敦AI服务器产能及得州工厂内部人形机器人试用。报道未披露新合同金额或签约时间，不能将洽谈写成交易完成。",
-      "radar_pick": true,
+      "radar_pick": false,
       "major_claim": false,
       "verified": true,
       "sources": [
@@ -136,7 +379,7 @@
       "label": "具身智能产业",
       "title": "路透聚焦中国机器人竞争重心：从动作硬件转向通用智能与训练数据",
       "summary": "路透11月2日北京电采访多家中国具身智能企业，指出行业竞争正从机器人运动能力转向跨任务学习、数据采集与工业部署。报道援引IT桔子数据称2026年上半年中国具身智能融资935亿元、322笔；受访企业介绍工厂及药房试用，同时承认仿真与现实差距、芯片供给和跨场景可靠性仍是障碍。这是一篇产业调查分析，不是某款新模型正式发布。",
-      "radar_pick": true,
+      "radar_pick": false,
       "major_claim": false,
       "verified": true,
       "sources": [
@@ -242,6 +485,356 @@
         }
       ],
       "dedup_notes": "第55期DSH社区为WSL执行插件，第56期为官方Harness alpha2；本条是10/31第三方Linux客户端展示，非同一产品版本或新闻。"
+    },
+    {
+      "story_id": "sagemaker-inference-gpu-mig-partitioning-20261030",
+      "event_id": "sagemaker-inference-gpu-mig-partitioning-20261030",
+      "primary_category": "模型与技术进展",
+      "label": "推理资源利用",
+      "title": "SageMaker 实时推理支持 GPU 分区，小模型可共享一张加速卡",
+      "summary": "AWS 10月30日宣布，SageMaker实时端点可借助NVIDIA MIG将GPU划成最多七个独立分区，分别承载小型模型、向量模型、重排器或分类器。分区隔离显存与算力，应用仍按模型名称调用。首批支持指定实例与区域，包括新加坡；官方没有给出通用降本比例。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning/",
+          "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning/",
+          "source_name": "AWS",
+          "source_domain": "aws.amazon.com",
+          "source_tier": "primary",
+          "raw_title": "Amazon SageMaker AI inference now supports GPU partitioning for real-time endpoints",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_primary_announcement",
+          "raw_excerpt": "as many as seven isolated partitions",
+          "evidence_notes": "实际打开10/30官方公告，核对MIG、最多七分区和P4d/P5/G7/G7e及七区域清单。不是新GPU或新模型。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整台账无本次实时端点MIG分区；与一般模型上架、优化不同，为资源隔离能力新增。"
+    },
+    {
+      "story_id": "bedrock-openai-runtime-govcloud-cross-region-20261030",
+      "event_id": "bedrock-openai-runtime-govcloud-cross-region-20261030",
+      "primary_category": "模型与技术进展",
+      "label": "受监管云推理",
+      "title": "Bedrock 为 GovCloud 中的 OpenAI 模型补齐原生 API 与跨区域推理",
+      "summary": "AWS 10月30日为GovCloud中的GPT-5.6 Terra与Luna增加bedrock-runtime接入，支持Responses、Converse和Chat Completions。请求可在两个美国GovCloud区域间路由，并接入调用日志、CloudWatch指标及按模型计费归集。此次变化是部署与运维能力扩展，不是GPT-6.1新模型发布。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/",
+          "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/",
+          "source_name": "AWS",
+          "source_domain": "aws.amazon.com",
+          "source_tier": "primary",
+          "raw_title": "Amazon Bedrock expands API support and introduces Cross-Region Inferencing for OpenAI models in AWS GovCloud (US)",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_primary_announcement",
+          "raw_excerpt": "supports the OpenAI GPT-5.6 models (Terra and Luna)",
+          "evidence_notes": "实际打开10/30公告，核对5.6型号、三类API、GovCloud双区域与日志计费集成；不混同Daybreak准入公告。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "台账未有本次GovCloud运行时和路由；与Daybreak受限模型准入为不同能力变化。"
+    },
+    {
+      "story_id": "sap-teched-ai-governance-runtime-human-review-20261030",
+      "event_id": "sap-teched-ai-governance-runtime-human-review-20261030",
+      "primary_category": "企业应用与工具观察",
+      "label": "智能体治理",
+      "title": "SAP 详解智能体运行时治理：统一网关与人工合规复核",
+      "summary": "SAP 10月30日详解本周TechEd公布的治理方案：Enterprise AI Gateway统一认证、策略执行、路由及审计；LeanIX为智能体提供架构资料前先经人工批准；AI Governance Assistant检查资料缺漏与高风险分类，输出供法务复核的草稿。辅助评估不等于自动取得合规认证。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://news.sap.com/2026/10/sap-teched-shows-how-to-lead-with-ai-governance/",
+          "canonical_url": "https://news.sap.com/2026/10/sap-teched-shows-how-to-lead-with-ai-governance/",
+          "source_name": "SAP",
+          "source_domain": "news.sap.com",
+          "source_tier": "primary",
+          "raw_title": "SAP Shows How to Lead with AI Governance at SAP TechEd",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_primary_announcement",
+          "raw_excerpt": "all outputs from the AI Governance Assistant appear as drafts",
+          "evidence_notes": "实际打开Dominik Rose署名10/30专项文章，核对运行时MCP/API/A2A/LLM治理与人工批准；TechEd较早举行，不声称全是10/30首次上线。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "台账未收录本周TechEd治理方案；依据10/30专项解读保留运行时约束和人工复核，不按组件拆条。"
+    },
+    {
+      "story_id": "apple-intelligence-china-qwen-beta-timetable-20261031",
+      "event_id": "apple-intelligence-china-qwen-beta-timetable-20261031",
+      "primary_category": "国内 AI 动态",
+      "label": "系统级 AI 落地",
+      "title": "苹果明确国行 Apple 智能时间表：11 月 4 日测试，12 月随 iOS 27.3 推出",
+      "summary": "苹果10月31日公布，首批Apple智能功能将于11月4日随iOS开发者测试版在中国开放测试，计划12月正式推出。千问接入Siri、写作工具与视觉智能，发送资料前需征得用户同意。首批先面向支持的iPhone；本次不含Siri AI及WWDC 2026公布的下一代功能。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.geekpark.net/news/373238",
+          "canonical_url": "https://www.geekpark.net/news/373238",
+          "source_name": "极客公园",
+          "source_domain": "geekpark.net",
+          "source_tier": "trusted_media",
+          "raw_title": "国行 Apple 智能官网正式上线：千问接入，11 月推送",
+          "published_at": "2026-10-31",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_original_report",
+          "raw_excerpt": "11 月 4 日起",
+          "evidence_notes": "实际打开10/31作者拉风的极客原创文章；另实际打开Apple官方https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/和智东西李水青原创交叉核对时间与功能范围。",
+          "opened_and_verified": true
+        },
+        {
+          "source_url": "https://www.zhidx.com/p/606181.html",
+          "canonical_url": "https://www.zhidx.com/p/606181.html",
+          "source_name": "智东西",
+          "source_domain": "zhidx.com",
+          "source_tier": "trusted_media",
+          "raw_title": "国行苹果智能倒计时4天开测！阿里官宣，千问全面接入",
+          "published_at": "2026-10-31",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_original_report",
+          "raw_excerpt": "11月4日起",
+          "evidence_notes": "实际打开李水青10/31原创报道，核对阿里官方公告截图、千问系统集成和资料发送前同意；与极客公园为不同编辑部，不将36氪转载爱范儿计为独立来源。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "此前审批/合作是背景；10/31新增具体测试与正式版时间及首批功能边界，完整台账无此次安排。"
+    },
+    {
+      "story_id": "lenovo-tianxi-ai45-pc-cross-device-20261030",
+      "event_id": "lenovo-tianxi-ai45-pc-cross-device-20261030",
+      "primary_category": "国内 AI 动态",
+      "label": "跨设备智能体",
+      "title": "联想天禧 AI 4.5 扩展到 PC，支持手机发起、电脑接力执行任务",
+      "summary": "据智东西10月30日报道，联想天禧AI 4.5在AI PC端发布，加入应用连接器与技能，并重做会议记录和知识库。用户可从手机或平板调用电脑执行复杂任务，支持三端语音交互。AI主机还提供云端与本地模型自动选择；这些是产品方介绍的能力，实际可靠性仍待用户验证。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://zhidx.com/news/43271.html",
+          "canonical_url": "https://zhidx.com/news/43271.html",
+          "source_name": "智东西",
+          "source_domain": "zhidx.com",
+          "source_tier": "trusted_media",
+          "raw_title": "联想天禧AI 4.5发布，三大场景打造“职场超能搭档”",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_original_report",
+          "raw_excerpt": "联想天禧AI 4.5 AIPC端正式发布",
+          "evidence_notes": "实际打开10/30快讯全文；手机/平板端此前已有，不写成三端同日首发；未把供稿宣传当实测结果。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "台账无天禧4.5本次PC扩展，保留新增端与接力执行；不拆分会议、知识库、主机充数。"
+    },
+    {
+      "story_id": "claude-ultra-verified-five-hour-limit-change-20261031",
+      "event_id": "claude-ultra-verified-five-hour-limit-change-20261031",
+      "primary_category": "国际 AI 动态",
+      "label": "订阅权益调整",
+      "title": "Claude 最高档改名 Ultra，已验证账户取消五小时用量上限",
+      "summary": "据智东西10月31日报道，Anthropic将Max 5x更名为Max、Max 20x更名为Ultra，月费仍为100与200美元。大多数现有Ultra用户可取消五小时用量上限，新账户验证完成前仍有临时限制。Pro和Max保留五小时限制；这不等于所有套餐或所有维度都无限使用。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.zhidx.com/p/606194.html",
+          "canonical_url": "https://www.zhidx.com/p/606194.html",
+          "source_name": "智东西",
+          "source_domain": "zhidx.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Claude官宣取消5小时限额！ChatGPT负责人：最好宣布28天重置期",
+          "published_at": "2026-10-31",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_original_report",
+          "raw_excerpt": "新账户在验证完成前仍保留临时使用时长限制",
+          "evidence_notes": "实际打开10/31编译报道，核对公告截图、价格及验证条件；原始X链接未独立取得，按媒体归因，不引用网友猜测和IPO段落。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "此前平台/模型与IPO不含10/31套餐名称和已验证Ultra五小时限制调整，为独立产品政策变化。"
+    },
+    {
+      "story_id": "daybreak-red-bedrock-govcloud-east-access-20261030",
+      "event_id": "daybreak-red-bedrock-govcloud-east-access-20261030",
+      "primary_category": "国际 AI 动态",
+      "label": "安全模型受限开放",
+      "title": "OpenAI Daybreak Red 扩展至 GovCloud 东部，仍须核验防御用途",
+      "summary": "AWS 10月30日宣布，Daybreak Red的GPT-5.6 Cyber可向符合条件的客户在GovCloud美东使用，服务授权漏洞研究、复现和防御。客户须先通过OpenAI准入，再由AWS团队启用，并接受身份核验、监测和访问控制。这是特定模型的受限部署扩展，不是向所有用户开放。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-daybreak-red-govcloud-east/",
+          "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-daybreak-red-govcloud-east/",
+          "source_name": "AWS",
+          "source_domain": "aws.amazon.com",
+          "source_tier": "primary",
+          "raw_title": "Daybreak Red from OpenAI now available to eligible customers on Amazon Bedrock in AWS GovCloud (US-East)",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_primary_announcement",
+          "raw_excerpt": "Access to the model requires enrollment in Daybreak access",
+          "evidence_notes": "实际打开10/30公告，核对GPT-5.6 Cyber、GovCloud East与Ohio、先OpenAI批准再AWS启用，不写无需审核。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "早期Daybreak/Blue不等于本次Red新增GovCloud East；与通用5.6 API公告分别涉及受限模型准入和一般运行时能力。"
+    },
+    {
+      "story_id": "chatgpt-codex-december-shared-allowance-guidance-20261101",
+      "event_id": "chatgpt-codex-december-shared-allowance-guidance-20261101",
+      "primary_category": "国际 AI 动态",
+      "label": "用量规则预告",
+      "title": "OpenAI 明确 12 月起 ChatGPT 与 Codex 共享额度，Instant 聊天除外",
+      "summary": "OpenAI帮助中心明确，12月起Plus、Pro和Business的ChatGPT与Codex将共用按token计量的额度，Instant聊天不计入。用户可在设置中查看合并用量及重置时间，用尽后可等待、升级或购买适用的credits。文档尚未给出各套餐token总量及具体切换日，当前不能当成已经全面生效。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+          "canonical_url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+          "source_name": "OpenAI",
+          "source_domain": "help.openai.com",
+          "source_tier": "primary",
+          "raw_title": "Understanding ChatGPT and Codex usage limits",
+          "published_at": "2026-11-01",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_primary_announcement",
+          "raw_excerpt": "Instant chat will not draw from your usage.",
+          "evidence_notes": "实际打开官方全文。11/2 06:23Z附近读取显示Updated: 9 hours ago，对应UTC11/1晚间；published_at记录此可核对更新UTC日期，非首次发布日。实际打开11/1机器之心署名的36氪分发稿已引述相同预告，确认早间截稿前存在；不将转载计为独立证据，不纳入设备限制和具体模型猜测。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "此前Work/Codex共享额度不等于ChatGPT主体纳入；本次新增12月计划与Instant例外。原刊因日期不清未选，本次补足更新日证据。"
+    },
+    {
+      "story_id": "drcf-agentic-ai-financial-payments-responsibility-20261030",
+      "event_id": "drcf-agentic-ai-financial-payments-responsibility-20261030",
+      "primary_category": "AI 与金融",
+      "label": "智能体支付责任",
+      "title": "英国监管机构联合提示：金融与支付智能体仍须遵守现有法规",
+      "summary": "英国CMA、FCA、ICO与Ofcom于10月30日联合声明，个人AI智能体同样适用金融服务、支付、消费者和数据保护规则，组织责任不会因智能体自主行动而减少。部署方应明确授权、资料使用、商业利益、出错责任及救济渠道。声明倡导提前沟通测试，没有颁布新的统一支付牌照。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.gov.uk/government/publications/agentic-ai-and-consumers",
+          "canonical_url": "https://www.gov.uk/government/publications/agentic-ai-and-consumers",
+          "source_name": "UK Government",
+          "source_domain": "gov.uk",
+          "source_tier": "primary",
+          "raw_title": "Agentic AI and consumers — 30 October update: DRCF joint statement",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_primary_announcement",
+          "raw_excerpt": "DRCF joint statement on agentic AI published.",
+          "evidence_notes": "实际打开GOV.UK更新记录及其链接的10/30 DRCF三页联合声明PDFhttps://www.drcf.org.uk/siteassets/drcf/pdf-files/drcf-joint-statement-protecting-people-and-businesses-in-and-agentic-economy2.pdf?v=427414，核对支付/金融法规、授权与问责。GOV.UK页面初发3/9，published_at是10/30新增声明的明确更新日，不将旧报告冒充新发。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "台账无10/30四机构联合声明；聚焦FCA及金融/支付义务，与Meta个案反垄断立案不同。"
+    },
+    {
+      "story_id": "openai-robots-common-training-preferences-signal-20261030",
+      "event_id": "openai-robots-common-training-preferences-signal-20261030",
+      "primary_category": "政策、监管与风险",
+      "label": "训练资料选择权",
+      "title": "OpenAI 支持跨厂商的训练偏好信号，计划未来数月实施",
+      "summary": "OpenAI 10月30日宣布，将尊重网站在robots.txt中表达基础生成式AI训练偏好的共同信号，减少站长逐个维护爬虫规则的负担。这是自愿参与、承接IETF讨论中的机制，预计未来数月实施；现有爬虫控制继续适用，不能写成已生效的全球强制标准。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+          "canonical_url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Making it easier for websites to express AI training preferences",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_primary_announcement",
+          "raw_excerpt": "We aim to implement the signal in the coming months",
+          "evidence_notes": "实际打开10/30全文，核对自愿机制、基础训练范围和既有控制保留；IETF讨论仍在进行，不推断追溯删除或全面阻断搜索。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "台账内Model Spec及版权立场不含本次网站共通信号，为新的控制承诺。"
+    },
+    {
+      "story_id": "openai-teen-weapons-limits-community-safety-report-20261030",
+      "event_id": "openai-teen-weapons-limits-community-safety-report-20261030",
+      "primary_category": "政策、监管与风险",
+      "label": "未成年人保护",
+      "title": "OpenAI 收紧暴力相关回答与青少年武器信息，承诺半年安全报告",
+      "summary": "OpenAI 10月30日宣布，将减少对历史群体袭击的可操作细节回答，并进一步限制未成年人可获得的武器和安防信息。措施未来数周逐步推出，自动结束危险对话等干预仍在完善。公司承诺2027年初发布首份覆盖2026下半年的社区安全报告，之后每半年更新。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
+          "canonical_url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Community safety report and new protections for teens",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_primary_announcement",
+          "raw_excerpt": "The safeguards detailed here will begin rolling out in the next few weeks",
+          "evidence_notes": "实际打开10/30全文，区分所有用户与teen额外限制；报告未发布，自动中断/父母通知仍开发中，未引用执法转介效果宣传。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "既有青少年争议、家长控制与Model Spec不等于本次新暴力信息边界/半年报告承诺；同一公告合为一条。"
+    },
+    {
+      "story_id": "cma-meta-ai-commercial-terms-investigation-20261030",
+      "event_id": "cma-meta-ai-commercial-terms-investigation-20261030",
+      "primary_category": "政策、监管与风险",
+      "label": "反垄断调查",
+      "title": "英国 CMA 对 Meta 商业条款立案，审查内容用于 AI 是否构成不公平条件",
+      "summary": "英国CMA 10月30日依据竞争法调查Meta商业条款，关注依赖其服务的出版商是否被迫接受内容用于AI等产品。条款已延期并暂停，监管方尚未认定违法，将收集Meta与第三方证据。对Meta One订阅及外链收费的问询属于另一事项，不在此次立案范围内。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.gov.uk/government/news/cma-opens-investigation-into-metas-commercial-terms--2",
+          "canonical_url": "https://www.gov.uk/government/news/cma-opens-investigation-into-metas-commercial-terms--2",
+          "source_name": "UK Government",
+          "source_domain": "gov.uk",
+          "source_tier": "primary",
+          "raw_title": "CMA opens investigation into Meta’s commercial terms",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T06:23:47+00:00",
+          "evidence_type": "opened_primary_announcement",
+          "raw_excerpt": "no decision has yet been made on whether Meta has broken the law",
+          "evidence_notes": "实际打开10/30官方新闻稿与CA98案件页，核对调查启动、10/28暂停条款与未认定违法；原无--2路径失效，已沿机构新闻列表找到正确canonical。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "旧平台政策争议不等于此次10/30英国CA98正式立案，亦不同于DRCF一般声明和网站训练偏好信号。"
     }
   ]
 }

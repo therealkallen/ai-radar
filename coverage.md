@@ -837,6 +837,18 @@
 - OpenAI 更新 Model Spec，以五项价值组织模型行为准则（https://openai.com/index/updated-model-spec/；2026-10-29）。完整coverage没有此次10/29 ModelSpec修订；不同于52期伙伴访问政策、选举保障或安全事故报告，为公司模型行为治理新版本。
 - HN 讨论 AI 税务工具：规则追溯与人工复核仍是关注点（https://news.ycombinator.com/item?id=50275626；2026-10-28）。完整coverage与51–55没有该税务讨论；不是旧财务产品重发，与53期企业经营观点及54期定价讨论为不同主题。
 
+### 第 57 期（2026.10.30 — 11.02）
+
+本期按Asia/Singapore 2026-11-02 09:30出版窗口编写，覆盖10月30日第56期截稿之后至11月2日09:30前可核验的新进展。10月30日边界只选前一期截稿后发生或此前未刊的事件；路透11月1日23:08 UTC稿件在北京时间11月2日07:08发布。原文发布时间与实际核验时间分别记录，未把后续评论数或转发日期当成原始发布日。
+
+- Qwen Code 0.26.5 稳定版默认启用交互式界面，并给 PR 自动修复设置重试上限（https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5；2026-11-01）。第56期报道0.26.4独立工作树及PR核验，本条为11/1发布的后续稳定版，新增默认交互卡片与自动修复重试上限，不重复0.26.4。
+- 腾讯谈 WorkBuddy 企业落地：FDE、数据权限与投入回报是商业化关键（https://eu.36kr.com/zh/p/4051138782860421；2026-11-01）。此前台账含WorkBuddy平台、Kimi模型接入和企业微信联动；本条是11/1采访新增的交付分工、权限边界和商业可持续性解释，不重复旧平台发布。
+- 富士康称正与 OpenAI 商谈新合作，细节仍待确认（https://www.reuters.com/world/china/foxconn-working-new-tie-up-with-openai-says-there-is-no-ai-bubble-2026-10-30/；2026-10-30）。完整coverage未见富士康与OpenAI本次10/30新洽谈；2025旧协议只作背景，新增为10/30会面及合作推进阶段，不声称已签约。
+- 路透聚焦中国机器人竞争重心：从动作硬件转向通用智能与训练数据（https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/；2026-11-01）。历史有机器人出货、单个模型/合作和工厂试用，本条为11/2新发表的多企业采访与产业趋势分析，新增融资样本及部署瓶颈，不重复旧产品发布。
+- AI 资本开支回报受质疑，10月30日科技股与半导体板块大跌（https://www.reuters.com/legal/transactional/global-markets-global-markets-2026-10-30/；2026-10-30）。历史报道AI融资与资本开支担忧，但本条是10/30新交易日具体收盘表现与现金流风险重新定价，时间和数据均为实质新增。
+- HN 围绕开源模型协作与量化争论：基准分数能否代表真实编码体验（https://news.ycombinator.com/item?id=50320995；2026-10-31）。第56期HN是税务工具规则复核讨论，本条为10/31本地模型、量化和基准可信度争议，事件和主题不同。
+- DeepSeek Harness 社区开发者展示 Linux 原生客户端，早期用户反馈仍需验证（https://github.com/deepseek-ai/deepseek-harness/discussions/11628；2026-10-31）。第55期DSH社区为WSL执行插件，第56期为官方Harness alpha2；本条是10/31第三方Linux客户端展示，非同一产品版本或新闻。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

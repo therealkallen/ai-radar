@@ -1,0 +1,247 @@
+{
+  "num": 57,
+  "period_start": "2026-10-30",
+  "period_end": "2026-11-02",
+  "window_note": "本期按Asia/Singapore 2026-11-02 09:30出版窗口编写，覆盖10月30日第56期截稿之后至11月2日09:30前可核验的新进展。10月30日边界只选前一期截稿后发生或此前未刊的事件；路透11月1日23:08 UTC稿件在北京时间11月2日07:08发布。原文发布时间与实际核验时间分别记录，未把后续评论数或转发日期当成原始发布日。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "先检索本期真实新闻，逐条实际打开Reuters原文、36氪原创采访、Qwen官方GitHub稳定release、HN原帖与DeepSeek官方仓库内的社区讨论，再对照完整coverage.md和第51–56期去重。富士康与OpenAI为正在商谈的后续合作，绝非已签约；中国具身智能为Reuters新采访分析，融资统计注明数据提供方而非已审计事实；腾讯WorkBuddy重点是11/1新采访披露的权限、FDE与ROI实施细节，10/29 Buddy One发布只作背景；Qwen 0.26.5是11/1稳定版，区别56期0.26.4。金融条目为10/30美股收盘的AI资本开支市场反应，未把市场因果解释当单一确定原因。Reuters关于Meta与傅利叶合作的10/31转述明确无法独立核实，故排除。OpenAI与Codex额度合并帮助中心虽可访问但原始发布日期未能在官方页核实，未冒充本期已正式上线；其他旧消息、营销转述和缺原文候选均不纳入。新闻不凑数，未改动历史、版式或来源白名单。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5",
+        "https://github.com/deepseek-ai",
+        "https://github.com/deepseek-ai/deepseek-harness/discussions/11628",
+        "https://eu.36kr.com/zh/p/4051138782860421",
+        "https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/",
+        "site:api-docs.deepseek.com/updates/ 2026-10-31 OR 2026-11",
+        "site:kimi.com/blog/ 2026-10-31 OR 2026-11-01",
+        "site:z.ai/blog 2026-10-31 OR 2026-11-01",
+        "site:cloud.baidu.com 2026-10-31 AI OCR",
+        "site:adp.tencent.com/zh/blog/ 2026-10-31 OR 2026-11-01",
+        "site:seed.bytedance.com/en/blog/ 2026-10-31 OR 2026-11-01",
+        "site:iflytek.com 2026-10-31 大模型",
+        "site:minimax.io/news 2026-11-01",
+        "site:jiqizhixin.com 2026-11-01 人工智能",
+        "site:qbitai.com/2026/11/01 AI 智能体",
+        "site:36kr.com/p/ 2026-11-01 人工智能",
+        "site:zhidx.com 2026/11/01 智能体"
+      ],
+      "notes": "逐项搜索DeepSeek、阿里Qwen、智谱、Kimi、腾讯、百度、字节Seed、MiniMax、讯飞官方来源及机器之心、量子位、36氪、智东西国内媒体。确认Qwen官方v0.26.5于11/1 03:22:50 UTC发布且prerelease=false，Generated UI默认开启、PR自动修复重试预算为新版本增量。腾讯11/1原创采访提供企业FDE、权限治理、成本及效果衡量新细节，未将10/29发布会转载日期改写。Reuters中国具身智能采访11/1 23:08 UTC刊发，属于新行业研究/报道。DeepSeek Harness的Linux客户端是社区作品，只归社区栏；智谱ZCode10/30更新无可核对的独立产品细节；Kimi此前K3.1与客户端更新、百度OCR2已入前期；Seed、MiniMax、讯飞本窗口未取得满足时间与原文要求的新发布，未虚构新品。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "https://news.ycombinator.com/front?day=2026-10-31",
+        "https://news.ycombinator.com/front?day=2026-11-01",
+        "https://news.ycombinator.com/item?id=50320995",
+        "https://github.com/deepseek-ai/deepseek-harness/discussions/11628",
+        "https://github.com/QwenLM/qwen-code/issues/16026",
+        "site:x.com Qwen Code Nov 1 2026",
+        "site:x.com Foxconn OpenAI Oct 30 2026",
+        "site:reddit.com/r/LocalLLaMA/comments/ November 1 2026 Qwen",
+        "site:reddit.com/r/ClaudeAI/comments/ October 31 2026 agent"
+      ],
+      "notes": "实际打开HN10/31与11/1历史榜、HN #50320995原帖及评论、DeepSeek Harness GitHub Discussion #11628和Qwen Issue #16026。HN仅概述开发者对开源权重、量化效果与本地模型长期可用性的不同观点，不引用当前票数推断10/31热度，不将Memdoor标题中的基准胜负当独立事实。GitHub原帖10/31、回复10/31至11/1，Linux客户端为第三方作者自述及用户反馈，非DeepSeek官方发布。Qwen DNS pinning issue明确尚无可复现攻击演示，故未写成确认漏洞。X未取得可核对原帖，Reddit结果主要为2025旧帖或10月较早内容，未充数。"
+    }
+  },
+  "stories": [
+    {
+      "story_id": "qwen-code-0265-stable-generated-ui-pr-budget-20261101",
+      "event_id": "qwen-code-0265-stable-generated-ui-pr-budget-20261101",
+      "primary_category": "国内 AI 动态",
+      "label": "编码智能体",
+      "title": "Qwen Code 0.26.5 稳定版默认启用交互式界面，并给 PR 自动修复设置重试上限",
+      "summary": "Qwen官方11月1日发布0.26.5稳定版，默认启用Generated UI，允许将交互卡片中的取值带入后续对话；同时为PR自动修复加入最多三轮推送的重试预算，失败后交回人工处理。版本还扩展Managed环境的SQL历史查询及Web Shell操作。与10月29日0.26.4的工作树功能不同，这次重点是交互和可控自动化，功能效果仍以官方更新日志为准。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5",
+          "canonical_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5",
+          "source_name": "Qwen",
+          "source_domain": "github.com",
+          "source_tier": "primary",
+          "raw_title": "Release v0.26.5",
+          "published_at": "2026-11-01",
+          "retrieved_at": "2026-11-02T09:30:00+08:00",
+          "evidence_type": "opened_primary_release",
+          "raw_excerpt": "Enables Generated UI by default",
+          "evidence_notes": "实际打开GitHub官方release页，并经GitHub API核对published_at=2026-11-01T03:22:50Z、prerelease=false；核对#15856交互卡片和#15985三轮重试预算。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "第56期报道0.26.4独立工作树及PR核验，本条为11/1发布的后续稳定版，新增默认交互卡片与自动修复重试上限，不重复0.26.4。"
+    },
+    {
+      "story_id": "tencent-workbuddy-fde-roi-permissions-interview-20261101",
+      "event_id": "tencent-workbuddy-fde-roi-permissions-interview-20261101",
+      "primary_category": "企业应用与工具观察",
+      "label": "企业智能体落地",
+      "title": "腾讯谈 WorkBuddy 企业落地：FDE、数据权限与投入回报是商业化关键",
+      "summary": "36氪11月1日刊出对腾讯汤道生等人的原创采访。腾讯称WorkBuddy将继续采用多模型接入，企业场景需要服务端数据权限约束、使用可观测性和实施伙伴；大客户依靠FDE深入业务流程，中小客户更多依靠生态伙伴。汤道生强调收费首先要支撑持续服务，团队不以单一收入目标倒逼增长；这反映的是企业AI实施与成本治理策略，而非已验证的客户ROI。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://eu.36kr.com/zh/p/4051138782860421",
+          "canonical_url": "https://eu.36kr.com/zh/p/4051138782860421",
+          "source_name": "36氪",
+          "source_domain": "eu.36kr.com",
+          "source_tier": "trusted_media",
+          "raw_title": "汤道生谈WorkBuddy商业化：不靠收入数字催团队",
+          "published_at": "2026-11-01",
+          "retrieved_at": "2026-11-02T09:30:00+08:00",
+          "evidence_type": "opened_original_interview",
+          "raw_excerpt": "他们也需要商业模式，他们也不能免费干活。",
+          "evidence_notes": "实际打开李炤锋11/1 20:00原创采访全文，核对汤道生、刘毅关于FDE、权限、模型路由、商业化和ROI的直接发言。10/29 Buddy One发布仅作背景，未冒充11/1新产品。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "此前台账含WorkBuddy平台、Kimi模型接入和企业微信联动；本条是11/1采访新增的交付分工、权限边界和商业可持续性解释，不重复旧平台发布。"
+    },
+    {
+      "story_id": "foxconn-openai-new-hardware-collaboration-talks-20261030",
+      "event_id": "foxconn-openai-new-hardware-collaboration-talks-20261030",
+      "primary_category": "企业应用与工具观察",
+      "label": "AI基础设施合作",
+      "title": "富士康称正与 OpenAI 商谈新合作，细节仍待确认",
+      "summary": "路透10月30日报道，富士康董事长刘扬伟在鸿海科技日表示，当天已与OpenAI首席执行官会面，双方正在推进新的合作，待细节确定后才会公布。潜在合作建立在2025年数据中心机柜和组件设计协议之上；富士康同时介绍休斯敦AI服务器产能及得州工厂内部人形机器人试用。报道未披露新合同金额或签约时间，不能将洽谈写成交易完成。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/china/foxconn-working-new-tie-up-with-openai-says-there-is-no-ai-bubble-2026-10-30/",
+          "canonical_url": "https://www.reuters.com/world/china/foxconn-working-new-tie-up-with-openai-says-there-is-no-ai-bubble-2026-10-30/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Foxconn working on a new tie-up with OpenAI, says there is no AI bubble",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T09:30:00+08:00",
+          "evidence_type": "opened_original_report",
+          "raw_excerpt": "there would be an announcement once details were confirmed",
+          "evidence_notes": "实际打开Reuters 2026-10-30 08:38 UTC原文，核对董事长现场表态、2025既有协议及休斯敦机器人部署；原文明确新合作细节未确定。发布时间为10/30 16:38 UTC+8，在56期早间截稿之后。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整coverage未见富士康与OpenAI本次10/30新洽谈；2025旧协议只作背景，新增为10/30会面及合作推进阶段，不声称已签约。"
+    },
+    {
+      "story_id": "china-embodied-ai-robot-brains-reuters-focus-20261102",
+      "event_id": "china-embodied-ai-robot-brains-reuters-focus-20261102",
+      "primary_category": "国内 AI 动态",
+      "label": "具身智能产业",
+      "title": "路透聚焦中国机器人竞争重心：从动作硬件转向通用智能与训练数据",
+      "summary": "路透11月2日北京电采访多家中国具身智能企业，指出行业竞争正从机器人运动能力转向跨任务学习、数据采集与工业部署。报道援引IT桔子数据称2026年上半年中国具身智能融资935亿元、322笔；受访企业介绍工厂及药房试用，同时承认仿真与现实差距、芯片供给和跨场景可靠性仍是障碍。这是一篇产业调查分析，不是某款新模型正式发布。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/",
+          "canonical_url": "https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Focus: China's robot makers have mastered the moves. Now comes the race for brains",
+          "published_at": "2026-11-01",
+          "retrieved_at": "2026-11-02T09:30:00+08:00",
+          "evidence_type": "opened_original_report",
+          "raw_excerpt": "raised 93.5 billion yuan ($13 billion) across 322 deals",
+          "evidence_notes": "实际打开Reuters全文；页头2026-11-01 23:08 UTC（北京时间11/2 07:08），正文北京11月2日电。融资数据为IT桔子统计，机器人成功率为企业自报，均非独立验收。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "历史有机器人出货、单个模型/合作和工厂试用，本条为11/2新发表的多企业采访与产业趋势分析，新增融资样本及部署瓶颈，不重复旧产品发布。"
+    },
+    {
+      "story_id": "ai-capex-cash-burn-tech-market-selloff-20261030",
+      "event_id": "ai-capex-cash-burn-tech-market-selloff-20261030",
+      "primary_category": "AI 与金融",
+      "label": "资本开支与市场",
+      "title": "AI 资本开支回报受质疑，10月30日科技股与半导体板块大跌",
+      "summary": "路透10月30日收盘报道指出，投资者对AI建设持续消耗现金、回报周期不明的担忧加剧，当日纳斯达克指数下跌2.86%，费城半导体指数跌逾7%；英特尔跌28.6%，Alphabet此前因巨额AI投入拖累现金流也承压。油价与地缘局势等因素同时影响市场，不能把全部跌幅简单归因于AI。这是当日金融市场反应，不是对未来AI需求的确定预测。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/legal/transactional/global-markets-global-markets-2026-10-30/",
+          "canonical_url": "https://www.reuters.com/legal/transactional/global-markets-global-markets-2026-10-30/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Stocks fall on AI cash burn worries while bonds rally with oil",
+          "published_at": "2026-10-30",
+          "retrieved_at": "2026-11-02T09:30:00+08:00",
+          "evidence_type": "opened_original_report",
+          "raw_excerpt": "Nasdaq Composite fell 747.73 points, or 2.86%",
+          "evidence_notes": "实际打开Reuters全文，原始时间10/30 02:45 UTC、10/31更新；报道为10/30美股收盘后综合稿，核对纳指-2.86%、半导体指数跌逾7%、英特尔-28.6%与其他宏观因素。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "历史报道AI融资与资本开支担忧，但本条是10/30新交易日具体收盘表现与现金流风险重新定价，时间和数据均为实质新增。"
+    },
+    {
+      "story_id": "hn-memdoor-local-open-model-quantization-debate-20261031",
+      "event_id": "hn-memdoor-local-open-model-quantization-debate-20261031",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "开发者观点 · 本地模型",
+      "title": "HN 围绕开源模型协作与量化争论：基准分数能否代表真实编码体验",
+      "summary": "10月31日Hacker News围绕Memdoor多模型编码项目展开讨论。有开发者重视开放权重与本地部署的可持续性，也有人分享量化后在真实代码任务中更易出现错误、模型参数规模和评测榜单不足以替代实测。帖子标题声称的基准胜负未由本刊独立复现；这些是开发者观点和个人使用体验，不是厂商发布或普遍性能结论。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "evidence_type": "community_observation",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50320995",
+          "canonical_url": "https://news.ycombinator.com/item?id=50320995",
+          "source_name": "Hacker News",
+          "source_domain": "news.ycombinator.com",
+          "source_tier": "social_signal",
+          "raw_title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+          "published_at": "2026-10-31",
+          "retrieved_at": "2026-11-02T09:30:00+08:00",
+          "evidence_type": "opened_community_thread",
+          "raw_excerpt": "For coding, the local models are already good enough for a vast amount of use cases",
+          "evidence_notes": "实际从HN 10/31历史榜打开原帖和多条评论；只记录发布日已出现或本期截稿前可见的开发者观点，不用当前投票数证明历史热度，不采信未经独立复现的benchmark结果。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "第56期HN是税务工具规则复核讨论，本条为10/31本地模型、量化和基准可信度争议，事件和主题不同。"
+    },
+    {
+      "story_id": "github-deepseek-harness-linux-community-client-20261031",
+      "event_id": "github-deepseek-harness-linux-community-client-20261031",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "社区作品 · Linux客户端",
+      "title": "DeepSeek Harness 社区开发者展示 Linux 原生客户端，早期用户反馈仍需验证",
+      "summary": "10月31日DeepSeek Harness官方仓库的GitHub讨论中，第三方开发者展示基于Tauri、Rust和WebKitGTK的Linux桌面客户端，提供AppImage、deb和rpm等分发形式。后续回复有人报告初步运行顺畅，也有人认为现有Web版已经足够。项目由社区成员维护，性能、兼容性和安全性均未经过本刊独立测试，不能写成DeepSeek官方发布。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "evidence_type": "community_observation",
+      "sources": [
+        {
+          "source_url": "https://github.com/deepseek-ai/deepseek-harness/discussions/11628",
+          "canonical_url": "https://github.com/deepseek-ai/deepseek-harness/discussions/11628",
+          "source_name": "GitHub Community",
+          "source_domain": "github.com",
+          "source_tier": "social_signal",
+          "raw_title": "[Showcase] Native Linux desktop client for DeepSeek Harness (AppImage / deb / rpm) | Linux 原生桌面客户端",
+          "published_at": "2026-10-31",
+          "retrieved_at": "2026-11-02T09:30:00+08:00",
+          "evidence_type": "opened_community_thread",
+          "raw_excerpt": "基于 Tauri v2、Rust 和 WebKit2GTK 的原生 Linux 桌面客户端",
+          "evidence_notes": "实际打开GitHub Discussion #11628，原帖10/31，回复10/31至11/1；原作者自述轻量及分发方式，用户评论仅作主观体验。未把第三方仓库当作DeepSeek官方产品。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "第55期DSH社区为WSL执行插件，第56期为官方Harness alpha2；本条是10/31第三方Linux客户端展示，非同一产品版本或新闻。"
+    }
+  ]
+}

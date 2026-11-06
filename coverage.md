@@ -882,6 +882,27 @@
 - HN 讨论直接改权重的宣传边界：纠正推理循环是否等于全面变强（https://news.ycombinator.com/item?id=50351111；2026-11-03）。独立研究传播讨论，未与模型发布重复计数。
 - HN 用户质疑 Postman 的 AI 插件安装与 API 数据授权体验（https://news.ycombinator.com/item?id=50354960；2026-11-03）。独立工具授权争议，非一般AI隐私旧讨论。
 
+### 第 59 期（2026.11.04 — 11.06）
+
+11月6日应刊补发，按Asia/Singapore 11月4日09:30至11月6日09:30窗口选材；无确切小时的11/4公告保守归本期。11/6实际采编核验，检索时间不冒充原始发布日期；报告更新、权重公开与首次模型发布明确区分。
+
+- OpenAI 发布 GPT‑6 Cyber，定向开放给核验后的防御团队（https://openai.com/index/introducing-gpt-6-cyber/；2026-11-05）。新模型及本次Linux研究合并，区别57期Daybreak GovCloud部署和58期FlashProve。
+- Images 2.6 发布，增加 GIF 创作与两种生成档位（https://openai.com/index/introducing-images-2-6/；2026-11-04）。完整台账无Images2.6，此为新版本，不拆GIF和两档模型凑数。
+- Anthropic 披露 Claude 协助解析原核生物 vault 颗粒结构（https://www.anthropic.com/research/investigating-vault-particles-with-claude；2026-11-04）。新的具体科学合作成果，与既有通用科研能力或安全论文不同。
+- OpenAI 签约收购 Pierre，计划深化 Codex 的代码协作能力（https://openai.com/index/openai-to-acquire-pierre/；2026-11-04）。区别58期Pando内部Git架构，本次为外部公司收购协议。
+- AWS 详解 Quick 智能审批：自动放行仍受权限与审计约束（https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/；2026-11-04）。台账未包含本次审批执行与审计机制；明确为既有功能后续技术披露，不重报10/28首发。
+- Kimi Hosted Agents 正式发布，提供托管运行与企业控制（https://www.kimi.com/news/kimi-hosted-agents；2026-11-05）。10/24旧模型博客提过托管方向，本次为11/5独立正式发布及运行治理细节；与模型权重开放分开。
+- 腾讯发布混元 Hy4 正式版，完整权重仍待开放（https://www.tencent.com/zh-cn/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/；2026-11-04）。区别旧预览版、Buddy One和企业访谈，本次只记正式版增量；权重承诺不当落地。
+- Kimi K3.1 Pro 权重已可下载，模型发布承诺进入兑现阶段（https://huggingface.co/moonshotai/Kimi-K3.1-Pro；2026-11-04）。54期只有模型上线与11/4前权重计划，本次增量为可下载文件，不再次报道首次发布。
+- 百度开放 ERNIE 5.5 Flash Base，供开发者自行后训练（https://ernie.baidu.com/zh/release/ernie-5-5-flash-base/；2026-11-05）。区别旧ERNIE5.1和OCR发布，本次新开放5.5 Flash Base，不把未来后训练模型写成已发布。
+- Google 发布 Gemini Omni 1.2 Flash，最长片段扩至 15 秒（https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/；2026-11-05）。新1.2版本能力及定价，非旧版视频模型或Suncatcher旧公告。
+- AP 报道 METR 评估：Anthropic 部分研发任务迭代加速（https://apnews.com/article/anthropic-metr-ai-claude-acceleration-9cf8c590ffc1abdb489179bdccc69c23；2026-11-05）。独立外部研发速度评估，与Anthropic本期具体科学合作或模型发布不重复。
+- Reuters：OCC 首次给银行检查人员发布 AI 使用指引（https://www.reuters.com/business/finance/us-bank-regulator-issues-first-ever-ai-guidance-examiners-2026-11-04/；2026-11-04）。区别58期ECB金融稳定风险，本次是美国银行检查框架。
+- 印度网络犯罪机构提醒金融企业防范 AI 辅助攻击（https://www.reuters.com/legal/government/india-cybercrime-agency-warns-financial-firms-ai-attacks-2026-11-04/；2026-11-04）。本期新增印度金融机构风险通报，不重复OCC监督指导或模型攻防能力。
+- OpenAI 更新安全研究任务中的隐性低投入行为报告（https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/；2026-11-04）。完整台账未收录，本次以新的公开更新为事件，非旧2025年奖励黑客论文。
+- HN 开发者交流 AI 工作流：订阅、模型与代理编排如何取舍（https://news.ycombinator.com/item?id=50366117；2026-11-04）。独立工作流征集，不复用模型发布、权重验证或权限争议条目。
+- HN 讨论 MCP 教程：协议细节如何变成易懂的示例（https://news.ycombinator.com/item?id=50379249；2026-11-05）。独立教学设计讨论，与既有MCP连接器发布和工具授权问题不同。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

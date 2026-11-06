@@ -1,0 +1,677 @@
+{
+  "num": 58,
+  "period_start": "2026-11-02",
+  "period_end": "2026-11-04",
+  "window_note": "补发11月4日应刊，按Asia/Singapore 11月2日09:30至11月4日09:30窗口选材。只采用截止前已公开且未入完整台账的新事件；仅标11月4日且无可核实小时的公告保守留给第59期。实际原文核验在11月6日进行，取回时间不冒充出版时间。Kimi游戏方案官方列表标11/3，部分媒体报11/2，采用官方来源日期；旧页面的新更新明确记录更新依据。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "本次接手从main d2387b3重新确认两期缺刊与无开放PR，立即开展研究。完成七栏第一轮与官方索引/可靠媒体独立查漏，16个独立事件、5个精选引用；逐条打开原文，按完整coverage及57期排查重复。技术数据归因厂商，交易区分协议与交割，学校控制区分现有功能与未来计划。两条Reuters原URL初读失败，改用检索返回的新闻引用成功打开原始全文；未凭snippet写新闻。金融已单独查银行/支付/会计/保险，采用当前可打开的ECB风险与峰会融资原稿，排除超窗或无法打开的业务条目。源JSON提交renderer构建，后续须等最终head CI与对应Pages真实核验。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://api-docs.deepseek.com/updates/",
+        "https://www.kimi.com/news/",
+        "https://www.kimi.com/news/kimi-game-solutions",
+        "site:qwenlm.github.io OR site:github.com/QwenLM/ 2026-11-03",
+        "site:z.ai/blog 2026 November",
+        "https://hy.tencent.com/research/hyra2",
+        "https://seed.bytedance.com/zh/",
+        "site:minimax.io/news November 2026",
+        "site:iflytek.com 2026-11-03 大模型",
+        "site:cloud.baidu.com 2026-11-03 AI",
+        "https://zhidx.com/p/606610.html"
+      ],
+      "notes": "专项检索DeepSeek、Qwen、智谱、Kimi、腾讯、百度、字节、MiniMax、讯飞及中文媒体。DeepSeek官方最新明确发布仍为10/17；Kimi方案官方列表为11/3，保留；墨芯11/3原创访谈含新增部署成本信息。Hyra2官方研究页正文无法读取且外部所列原文日期有11/1/11/2差异，未用转载替代；腾讯Hy4正式版11/4晚间留59期。MiniMax状态页只是分钟级错误，不为填条数入刊；百度部分11/3文档更新时间未证明重大新增，未冒充模型发布。Seed索引为既有较早发布；未虚构Qwen4/GLM5.5等新品。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "https://news.ycombinator.com/front?day=2026-11-03",
+        "https://news.ycombinator.com/item?id=50351111",
+        "https://news.ycombinator.com/item?id=50354960",
+        "site:x.com 2026 Nov 3 Kimi Hyra",
+        "site:reddit.com/r/LocalLLaMA November 3 2026",
+        "https://github.com/openai/codex/issues/59181",
+        "https://github.com/openai/codex/issues/59019"
+      ],
+      "notes": "实际打开HN历史榜与两原帖，仅记录截止窗口已有讨论议题、不引用现时分数和日期不清后续评论。X/Reddit检索多为镜像/旧帖；GitHub检索出现零散环境报错，不据单帖宣布产品普遍故障。只以两条HN议题作社区观察。"
+    },
+    "coverage_review": {
+      "reviewed_at": "2026-11-06T03:55:50+00:00",
+      "scope": "七栏分别筛选；第二轮从OpenAI/Anthropic/Kimi/微软/AWS官方索引与可靠原创媒体及Reuters新闻引用发现漏项，完整台账去重。",
+      "sections": [
+        {
+          "category": "模型与技术进展",
+          "count": 3,
+          "candidate_urls": [
+            "https://www.anthropic.com/research/provable-inference",
+            "https://openai.com/index/lifeval/",
+            "https://openai.com/index/scaling-git-at-openai/"
+          ]
+        },
+        {
+          "category": "企业应用与工具观察",
+          "count": 4,
+          "candidate_urls": [
+            "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+            "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta/",
+            "https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-ai-agents-linux-windows-11/",
+            "https://news.microsoft.com/source/2026/11/02/lumen-and-microsoft-expand-collaboration-to-co-sell-enterprise-ai-ready-networks/"
+          ]
+        },
+        {
+          "category": "国内 AI 动态",
+          "count": 2,
+          "candidate_urls": [
+            "https://www.kimi.com/news/kimi-game-solutions",
+            "https://zhidx.com/p/606610.html"
+          ]
+        },
+        {
+          "category": "国际 AI 动态",
+          "count": 1,
+          "candidate_urls": [
+            "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer/"
+          ]
+        },
+        {
+          "category": "AI 与金融",
+          "count": 2,
+          "candidate_urls": [
+            "https://www.reuters.com/business/finance/ecb-flags-ai-valuations-bond-stress-fund-losses-main-risks-2026-11-02/",
+            "https://www.reuters.com/business/finance/blackstone-president-says-more-tech-sector-fundraising-ahead-keep-up-with-ai-2026-11-03/"
+          ]
+        },
+        {
+          "category": "政策、监管与风险",
+          "count": 2,
+          "candidate_urls": [
+            "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/",
+            "https://red.anthropic.com/2026/cvd/about/"
+          ]
+        },
+        {
+          "category": "社媒与开发者社区观察",
+          "count": 2,
+          "candidate_urls": [
+            "https://news.ycombinator.com/item?id=50351111",
+            "https://news.ycombinator.com/item?id=50354960"
+          ]
+        }
+      ],
+      "second_pass": {
+        "completed": true,
+        "notes": "查漏增加CVD统计更正、Kimi游戏方案、墨芯部署采访、ECB和香港峰会；排除仅重复57期共享额度、苹果时间表、Daybreak GovCloud，以及11/4晚间新公告。国际/金融等1条或较少栏目已重新搜索。"
+      },
+      "candidates": [
+        {
+          "url": "https://www.anthropic.com/research/provable-inference",
+          "decision": "include",
+          "reason": "不同于旧形式化软件验证文章，本次新发推理来源证明原型。"
+        },
+        {
+          "url": "https://openai.com/index/lifeval/",
+          "decision": "include",
+          "reason": "完整台账无LifeVal；与旧经济任务或一般agent评测不同。"
+        },
+        {
+          "url": "https://openai.com/index/scaling-git-at-openai/",
+          "decision": "include",
+          "reason": "不同于后续Pierre收购；本条为内部Git架构及并发能力披露。"
+        },
+        {
+          "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+          "decision": "include",
+          "reason": "本窗口新增物理工程研究合作，旧富士康洽谈与此不同。"
+        },
+        {
+          "url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta/",
+          "decision": "include",
+          "reason": "Cresta为本次独立交易，非其他Salesforce收购的重复。"
+        },
+        {
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-ai-agents-linux-windows-11/",
+          "decision": "include",
+          "reason": "旧模型API与推理分区不含此次桌面OS支持。"
+        },
+        {
+          "url": "https://news.microsoft.com/source/2026/11/02/lumen-and-microsoft-expand-collaboration-to-co-sell-enterprise-ai-ready-networks/",
+          "decision": "include",
+          "reason": "本次新增联合销售与联网规划，非财报或模型合作复述。"
+        },
+        {
+          "url": "https://www.kimi.com/news/kimi-game-solutions",
+          "decision": "include",
+          "reason": "新增游戏生产流程和专业工具方案，区别10/24模型与此前一般客户端发布。"
+        },
+        {
+          "url": "https://zhidx.com/p/606610.html",
+          "decision": "include",
+          "reason": "台账无本次采访；采用新的部署与成本解释，不重复旧芯片规格。"
+        },
+        {
+          "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer/",
+          "decision": "include",
+          "reason": "本次独立高管任命，完整台账未收录。"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/ecb-flags-ai-valuations-bond-stress-fund-losses-main-risks-2026-11-02/",
+          "decision": "include",
+          "reason": "不同于57期美国股市收盘跌幅；新增ECB金融稳定与基金传导风险表态。"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/blackstone-president-says-more-tech-sector-fundraising-ahead-keep-up-with-ai-2026-11-03/",
+          "decision": "include",
+          "reason": "本次11/3金融峰会信贷与融资讨论，区别旧市场收盘和ECB监管表态。"
+        },
+        {
+          "url": "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/",
+          "decision": "include",
+          "reason": "新增学校管理员控制与产品试点，不重复一般Gemini更新。"
+        },
+        {
+          "url": "https://red.anthropic.com/2026/cvd/about/",
+          "decision": "include",
+          "reason": "新11/2口径修正，与旧漏洞发现总数或模型攻防能力不重复。"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50351111",
+          "decision": "include",
+          "reason": "独立研究传播讨论，未与模型发布重复计数。"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50354960",
+          "decision": "include",
+          "reason": "独立工具授权争议，非一般AI隐私旧讨论。"
+        },
+        {
+          "url": "https://www.cac.gov.cn/wxzw/qinglang/A093711index_1.htm",
+          "decision": "exclude",
+          "reason": "清朗第二阶段实际为9月旧公告，索引日期不代表新发布。"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/29/microsoft-copilot-for-finance-purpose-built-for-the-way-finance-teams-work/",
+          "decision": "exclude",
+          "reason": "10/29旧金融产品，不能挪到11/2窗口。"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-02/goldman-restricts-traders-and-bankers-from-using-some-ai-tools",
+          "decision": "hold",
+          "reason": "已尝试原URL与无www版本均未能打开；不凭摘要编写。"
+        },
+        {
+          "url": "https://www.hunton.com/insights/legal/major-banks-move-to-block-or-limit-customer-directed-ai-agents",
+          "decision": "exclude",
+          "reason": "检索显示回顾10/13至20的既有银行措施，不当11/3首次事件。"
+        },
+        {
+          "url": "https://hy.tencent.com/research/hyra2",
+          "decision": "hold",
+          "reason": "已打开但工具无正文，日期亦有差异，暂不把复制稿当原文。"
+        },
+        {
+          "url": "https://cloud.baidu.com/doc/MIAODA/s/qmw0f3ap6",
+          "decision": "hold",
+          "reason": "检索到11/3更新时间，未逐项确定本窗口新增，未用日期猜测新发布。"
+        }
+      ],
+      "failed_sources": [
+        {
+          "url": "https://www.reuters.com/business/finance/ecb-flags-ai-valuations-bond-stress-fund-losses-main-risks-2026-11-02/",
+          "alternative": "通过新闻引用再次open已取得Reuters原文，核到151–173行主体与日期。"
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story_id": "flashprove-20261102",
+      "event_id": "flashprove-20261102",
+      "primary_category": "模型与技术进展",
+      "label": "可验证推理",
+      "title": "Anthropic 发布 FlashProve：用密码学证明回答来自指定模型",
+      "summary": "Anthropic 11月2日发布FlashProve研究原型，允许服务商证明输出来自约定权重而不公开权重。其量化MoE实验在单张H100上约每秒证明110个token，但GPU开销仍约为普通推理的70–95倍。它证明计算来源，不保证回答正确；快速代码与形式化协议的一致性仍有限制。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.anthropic.com/research/provable-inference",
+          "canonical_url": "https://www.anthropic.com/research/provable-inference",
+          "source_name": "Anthropic",
+          "source_domain": "anthropic.com",
+          "source_tier": "primary",
+          "raw_title": "Progress on provable inference for large language models",
+          "published_at": "2026-11-02",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "This release is a research prototype",
+          "evidence_notes": "已打开官方11/2日期、实验设定与Limitations，比较的是量化整数模型的greedy计算，不将原型写成通用生产级认证。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "不同于旧形式化软件验证文章，本次新发推理来源证明原型。"
+    },
+    {
+      "story_id": "lifeval-20261102",
+      "event_id": "lifeval-20261102",
+      "primary_category": "模型与技术进展",
+      "label": "生活任务评测",
+      "title": "OpenAI 推出 LifeVal，将日常办事纳入智能体评测",
+      "summary": "OpenAI 11月2日介绍LifeVal，依据时间使用研究与3995名受访者调查，评估照护、教育、家庭事务、预算和公共服务等任务。它强调能否完成多步骤工作，而不只回答知识题。页面结果属于厂商评测，不能据此推断日常任务普遍可靠，关键决定仍需用户审阅。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/lifeval/",
+          "canonical_url": "https://openai.com/index/lifeval/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "LifeVal",
+          "published_at": "2026-11-02",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Measuring AI progress on the tasks that matter in everyday life.",
+          "evidence_notes": "已打开官方正文，核对调查人数、任务领域与厂商结果性质，未把演示中的单任务百分比泛化为真实成功率。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整台账无LifeVal；与旧经济任务或一般agent评测不同。"
+    },
+    {
+      "story_id": "pando-git-scale-20261102",
+      "event_id": "pando-git-scale-20261102",
+      "primary_category": "模型与技术进展",
+      "label": "智能体工程基础",
+      "title": "OpenAI 披露 Pando：为大量并行编码任务重建 Git 后端",
+      "summary": "OpenAI 11月2日披露内部Git后端Pando，在保留Git协议及客户端兼容的同时，扩展并发推送和读取吞吐。公司称其已承载内部单体仓库，中位推送延迟约改善五倍，每日传输接近一PB。这是内部工程经验，不代表Pando已作为公共产品开放。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/scaling-git-at-openai/",
+          "canonical_url": "https://openai.com/index/scaling-git-at-openai/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Scaling Git at OpenAI",
+          "published_at": "2026-11-02",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Pando now powers all development in OpenAI’s monorepo.",
+          "evidence_notes": "已打开官方日期与Pando架构说明，性能数字均归因公司生产环境观察，不推断第三方可使用。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "不同于后续Pierre收购；本条为内部Git架构及并发能力披露。"
+    },
+    {
+      "story_id": "physical-engineering-20261103",
+      "event_id": "physical-engineering-20261103",
+      "primary_category": "企业应用与工具观察",
+      "label": "工程设计",
+      "title": "OpenAI 将 Codex 用于 CAD、电子设计与仿真，并与马自达开展研究",
+      "summary": "OpenAI 11月3日介绍模型辅助外壳、PCB、固件与工程仿真的探索，并宣布与马自达研究空气动力学及碰撞安全。其演示原型仍需多轮制造审查，模型对公差和装配限制的处理尚不稳定。工作重点是工程师验证后的迭代效率，不是无人审核即可量产。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+          "canonical_url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Accelerating engineering for the physical world",
+          "published_at": "2026-11-03",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Getting the device ready for manufacturing still required several rounds of review and iteration.",
+          "evidence_notes": "已打开完整研究公告，核对Mazda/CGR合作、原型制造约束与人工审核，不将内部新模型BenchCAD分数写成已发布新模型。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "本窗口新增物理工程研究合作，旧富士康洽谈与此不同。"
+    },
+    {
+      "story_id": "salesforce-cresta-agreement-20261102",
+      "event_id": "salesforce-cresta-agreement-20261102",
+      "primary_category": "企业应用与工具观察",
+      "label": "语音客服并购",
+      "title": "Salesforce 签署收购 Cresta 的协议，拟连接语音智能体与 Service Cloud",
+      "summary": "Salesforce 11月2日宣布签署收购Cresta的最终协议，计划将语音智能体、实时坐席辅导及对话分析与Service Cloud结合。公司表示交易完成后仍将支持客户现有的呼叫中心和电话平台。公告描述的是已签协议及整合方向，不能写成交易已交割或产品已全面整合。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta/",
+          "canonical_url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta/",
+          "source_name": "Salesforce",
+          "source_domain": "salesforce.com",
+          "source_tier": "primary",
+          "raw_title": "Salesforce Signs Definitive Agreement to Acquire Cresta",
+          "published_at": "2026-11-02",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "signed a definitive agreement to acquire Cresta",
+          "evidence_notes": "实际打开官方11/2公告及交易后条件表述；不捏造价格、交割日期或已实现收入。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "Cresta为本次独立交易，非其他Salesforce收购的重复。"
+    },
+    {
+      "story_id": "workspaces-linux-win11-agents-20261103",
+      "event_id": "workspaces-linux-win11-agents-20261103",
+      "primary_category": "企业应用与工具观察",
+      "label": "智能体运行环境",
+      "title": "AWS WorkSpaces 为 AI 智能体增加 Linux 与 Windows 11 桌面",
+      "summary": "AWS 11月3日宣布，面向AI智能体的WorkSpaces除Windows Server外，增加Linux与Windows 11桌面。智能体可在现有开发或企业应用环境中运行构建、测试和操作任务，沿用网络隔离、IAM访问及组织合规边界。Linux具备root权限，仍需按任务配置相应治理。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-ai-agents-linux-windows-11/",
+          "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-ai-agents-linux-windows-11/",
+          "source_name": "AWS",
+          "source_domain": "aws.amazon.com",
+          "source_tier": "primary",
+          "raw_title": "Amazon WorkSpaces for AI agents now supports Linux and Windows 11 cloud desktops",
+          "published_at": "2026-11-03",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "now supports Linux and Windows 11 cloud desktops",
+          "evidence_notes": "实际打开11/3What’s New，核对新增OS与root/IAM/隔离条件；不写成无约束通用自主电脑。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "旧模型API与推理分区不含此次桌面OS支持。"
+    },
+    {
+      "story_id": "lumen-microsoft-cosell-20261102",
+      "event_id": "lumen-microsoft-cosell-20261102",
+      "primary_category": "企业应用与工具观察",
+      "label": "混合云网络",
+      "title": "微软与 Lumen 扩大联合销售，将企业网络改造纳入 AI 规划",
+      "summary": "微软与Lumen 11月2日宣布扩大联合销售，帮助企业连接Azure、私有数据中心、办公地点及合作伙伴环境。双方计划更早协调网络、安全与AI应用架构，并逐步扩展Marketplace中的能力。公告包含后续规划，不能把所有网络产品描述为已在Azure上线。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://news.microsoft.com/source/2026/11/02/lumen-and-microsoft-expand-collaboration-to-co-sell-enterprise-ai-ready-networks/",
+          "canonical_url": "https://news.microsoft.com/source/2026/11/02/lumen-and-microsoft-expand-collaboration-to-co-sell-enterprise-ai-ready-networks/",
+          "source_name": "Microsoft",
+          "source_domain": "news.microsoft.com",
+          "source_tier": "primary",
+          "raw_title": "Lumen and Microsoft expand collaboration to co-sell enterprise AI-ready networks",
+          "published_at": "2026-11-02",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "an expanded co-selling collaboration",
+          "evidence_notes": "已打开微软Source正式公告，区分现有Alkira采购选项与未来Lumen能力上架计划。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "本次新增联合销售与联网规划，非财报或模型合作复述。"
+    },
+    {
+      "story_id": "kimi-game-tools-20261103",
+      "event_id": "kimi-game-tools-20261103",
+      "primary_category": "国内 AI 动态",
+      "label": "游戏开发工作流",
+      "title": "Kimi 发布游戏开发方案，连接 Unity、虚幻引擎与 Blender",
+      "summary": "Kimi官方新闻页11月3日发布游戏开发与创意工作方案，将模型、Kimi Code和Kimi Work接入专业工具。方案强调修改现有工程、运行测试并交付可编辑文件及操作记录；与团结引擎的演示包含持续开发与验证。演示效果属于厂商展示，正式项目仍需团队审核。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.kimi.com/news/kimi-game-solutions",
+          "canonical_url": "https://www.kimi.com/news/kimi-game-solutions",
+          "source_name": "Moonshot AI",
+          "source_domain": "kimi.com",
+          "source_tier": "primary",
+          "raw_title": "Kimi 发布游戏开发与创意工作解决方案",
+          "published_at": "2026-11-03",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "交付可继续编辑的文件和清晰的操作记录",
+          "evidence_notes": "已打开官方全文及https://www.kimi.com/news/列表；列表标11/3，部分媒体报11/2，published_at采用官网列表日期并保留差异，不把旧K3.1型号发布重发。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "新增游戏生产流程和专业工具方案，区别10/24模型与此前一般客户端发布。"
+    },
+    {
+      "story_id": "moffett-sparse-deployment-interview-20261103",
+      "event_id": "moffett-sparse-deployment-interview-20261103",
+      "primary_category": "国内 AI 动态",
+      "label": "国产推理算力",
+      "title": "墨芯谈稀疏推理落地：成本需连同部署、能耗和适配一起计算",
+      "summary": "智东西11月3日刊出对墨芯高管的访谈，讨论稀疏计算在千卡集群与行业模型适配中的进展。受访者认为客户更关注总推理成本、交付确定性和迁移负担，而非单一芯片指标；报道还介绍遥感模型合作测试。部署及收益陈述来自公司和合作案例，不能泛化为所有模型的降本结果。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://zhidx.com/p/606610.html",
+          "canonical_url": "https://zhidx.com/p/606610.html",
+          "source_name": "智东西",
+          "source_domain": "zhidx.com",
+          "source_tier": "trusted_media",
+          "raw_title": "5个月近20亿，国内稀疏计算“领头羊”墨芯又融资了",
+          "published_at": "2026-11-03",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_original_report",
+          "raw_excerpt": "与墨芯市场部副总裁郭威俊展开了一场深入对谈",
+          "evidence_notes": "已打开陈骏达11/3原创采访，采用原始访谈的商业化/适配内容；未将单一媒体融资金额做重大确定claim，未引用MLPerf第一等未经二次核验排名。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "台账无本次采访；采用新的部署与成本解释，不重复旧芯片规格。"
+    },
+    {
+      "story_id": "jill-hazelbaker-openai-20261103",
+      "event_id": "jill-hazelbaker-openai-20261103",
+      "primary_category": "国际 AI 动态",
+      "label": "公司治理",
+      "title": "OpenAI 任命 Jill Hazelbaker 为首席企业事务官",
+      "summary": "OpenAI 11月3日宣布Jill Hazelbaker将加入公司，负责全球沟通与企业定位。她此前在Uber担任总裁及首席企业事务官。此次任命显示公司扩充对外沟通与机构关系团队；公告没有披露上市时间表，不能据此推断IPO已经获批。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer/",
+          "canonical_url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+          "published_at": "2026-11-03",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "leading the company’s global communications and corporate positioning",
+          "evidence_notes": "已打开11/3官方人事公告；只报道职务、职责和公开履历，不加IPO猜测。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "本次独立高管任命，完整台账未收录。"
+    },
+    {
+      "story_id": "ecb-ai-stability-20261102",
+      "event_id": "ecb-ai-stability-20261102",
+      "primary_category": "AI 与金融",
+      "label": "金融稳定",
+      "title": "欧洲央行将 AI 估值与基金风险列为金融稳定关注点",
+      "summary": "路透11月2日报道，欧洲央行副行长将AI股票高估值、债券压力及非银行金融机构潜在损失列为主要稳定风险，指出欧洲基金也持有相关敞口。完整金融稳定评估拟于11月18日发布；这是风险提示，不是认定危机已经发生。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/finance/ecb-flags-ai-valuations-bond-stress-fund-losses-main-risks-2026-11-02/",
+          "canonical_url": "https://www.reuters.com/business/finance/ecb-flags-ai-valuations-bond-stress-fund-losses-main-risks-2026-11-02/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "ECB flags AI valuations, bond stress and fund losses as main risks",
+          "published_at": "2026-11-02",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_original_report",
+          "raw_excerpt": "main risks to financial stability",
+          "evidence_notes": "直接URL失败后通过检索返回的新闻引用成功打开Reuters原文，核对11/2 10:46UTC、副行长表态及11/18未来报告，非仅用搜索摘要。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "不同于57期美国股市收盘跌幅；新增ECB金融稳定与基金传导风险表态。"
+    },
+    {
+      "story_id": "hk-ai-credit-financing-20261103",
+      "event_id": "hk-ai-credit-financing-20261103",
+      "primary_category": "AI 与金融",
+      "label": "AI 融资风险",
+      "title": "香港金融峰会讨论 AI 融资：资金需求扩大，也需防范技术与信用风险",
+      "summary": "路透11月3日报道，黑石与多家金融机构负责人在香港讨论AI融资，认为数据中心、电力和算力仍需多种资本支持，同时提醒技术过时及估值风险。相关交易机会与预测属于与会者判断，不等于所有项目已获融资或未来回报得到保证。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/finance/blackstone-president-says-more-tech-sector-fundraising-ahead-keep-up-with-ai-2026-11-03/",
+          "canonical_url": "https://www.reuters.com/business/finance/blackstone-president-says-more-tech-sector-fundraising-ahead-keep-up-with-ai-2026-11-03/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Big-ticket tech deals need to keep pace with AI boom but risks remain high, financial leaders say",
+          "published_at": "2026-11-03",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_original_report",
+          "raw_excerpt": "the industry’s strong growth could create volatility",
+          "evidence_notes": "已通过新闻引用实际打开Reuters原文，核对峰会、资本形式与风险讨论；不把PIMCO预测10万亿当已完成金额，避免复写旧交易金额。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "本次11/3金融峰会信贷与融资讨论，区别旧市场收盘和ECB监管表态。"
+    },
+    {
+      "story_id": "google-school-controls-guided-learning-20261103",
+      "event_id": "google-school-controls-guided-learning-20261103",
+      "primary_category": "政策、监管与风险",
+      "label": "学校 AI 控制",
+      "title": "谷歌计划将学校 AI 与搜索改为显式启用，并扩展引导式学习",
+      "summary": "谷歌11月3日宣布，Classroom中的Guided Learning全球可用，搜索版将在本月于部分美国学校试点。公司还计划将K-12学生账户的Gemini、Gemini Notebook、Classroom AI及搜索设为管理员明确启用前关闭，细则未来数月告知学校；这并非当天对所有学生立即断网。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/",
+          "canonical_url": "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/",
+          "source_name": "Google",
+          "source_domain": "blog.google",
+          "source_tier": "primary",
+          "raw_title": "Designing responsible AI for learning",
+          "published_at": "2026-11-03",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "until school administrators explicitly turn them on",
+          "evidence_notes": "实际打开官方日期及Developing products/Enhancing school controls，区分现有Classroom、未来试点、未来管理员控制，不按宣传标题误写已全面实施。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "新增学校管理员控制与产品试点，不重复一般Gemini更新。"
+    },
+    {
+      "story_id": "anthropic-cvd-count-correction-20261102",
+      "event_id": "anthropic-cvd-count-correction-20261102",
+      "primary_category": "政策、监管与风险",
+      "label": "安全披露透明度",
+      "title": "Anthropic 修订漏洞仪表盘统计，剔除重复及部分撤回发现",
+      "summary": "Anthropic 11月2日更新漏洞披露仪表盘说明，称部分已报告发现实际上互相重复，另有撤回项不再计入，因此三类累计总量低于10月快照。账本保留承诺哈希及更正痕迹，并区分模型、外部审查和维护者评级。数字下降是口径更正，不能误解成已报告漏洞自动修复。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://red.anthropic.com/2026/cvd/about/",
+          "canonical_url": "https://red.anthropic.com/2026/cvd/about/",
+          "source_name": "Anthropic",
+          "source_domain": "red.anthropic.com",
+          "source_tier": "primary",
+          "raw_title": "About this dashboard",
+          "published_at": "2026-11-02",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "We found that many reported findings were duplicates",
+          "evidence_notes": "已打开官方更新历史，快照明确11/2 19:30UTC；published_at为此次明确更新日，非最初仪表盘发布日期。核对重复/撤回和审查评级定义。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "新11/2口径修正，与旧漏洞发现总数或模型攻防能力不重复。"
+    },
+    {
+      "story_id": "hn-weight-editing-claims-discussion-20261103",
+      "event_id": "hn-weight-editing-claims-discussion-20261103",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "研究传播争议",
+      "title": "HN 讨论直接改权重的宣传边界：纠正推理循环是否等于全面变强",
+      "summary": "11月3日HN历史榜收录了对“Astra直接改进Qwen权重”说法的质疑。讨论重点是减少推理循环、特定实验改善与整体数学能力提升之间的区别，以及副作用和评测范围。这里记录社区对研究表述的争论，不将任一方评论升级成已复现实验结论。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50351111",
+          "canonical_url": "https://news.ycombinator.com/item?id=50351111",
+          "source_name": "Hacker News",
+          "source_domain": "news.ycombinator.com",
+          "source_tier": "social_signal",
+          "raw_title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+          "published_at": "2026-11-03",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_community_thread",
+          "raw_excerpt": "post is misleading",
+          "evidence_notes": "已打开原帖与11/3历史榜核对主题归属；不引用取回时票数代表当日热度，不纳入无法核清截止时间的后续具体回复。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "独立研究传播讨论，未与模型发布重复计数。",
+      "evidence_type": "community_observation"
+    },
+    {
+      "story_id": "hn-postman-ai-consent-discussion-20261103",
+      "event_id": "hn-postman-ai-consent-discussion-20261103",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "开发工具信任",
+      "title": "HN 用户质疑 Postman 的 AI 插件安装与 API 数据授权体验",
+      "summary": "11月3日HN出现关于Postman自动安装AI插件及API数据分享设置的讨论。开发者关注AI功能是否默认开启、授权是否足够清晰，以及如何控制工作区数据外发。帖子标题包含用户指控，本条仅记录反馈与争议，不认定已经发生数据泄露或证实所有版本行为。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50354960",
+          "canonical_url": "https://news.ycombinator.com/item?id=50354960",
+          "source_name": "Hacker News",
+          "source_domain": "news.ycombinator.com",
+          "source_tier": "social_signal",
+          "raw_title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+          "published_at": "2026-11-03",
+          "retrieved_at": "2026-11-06T03:55:50+00:00",
+          "evidence_type": "opened_community_thread",
+          "raw_excerpt": "attempts to share all API data",
+          "evidence_notes": "已打开原帖及11/3历史榜；仅采用议题与用户主张，不照抄指控为确认漏洞，不使用补刊后评论或现时热度。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "独立工具授权争议，非一般AI隐私旧讨论。",
+      "evidence_type": "community_observation"
+    }
+  ]
+}

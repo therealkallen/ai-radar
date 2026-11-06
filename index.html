@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Radar · 第 57 期</title>
+<title>AI Radar · 第 58 期</title>
 <style>
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -53,94 +53,85 @@
 </div></nav>
 <div class="container">
 <div class="masthead"><h1>AI Radar</h1>
-<div class="meta"><span>2026.10.30 — 11.02</span><span>第 57 期</span></div></div>
+<div class="meta"><span>2026.11.02 — 11.04</span><span>第 58 期</span></div></div>
 <div class="section" id="picks"><div class="section-header">Radar Picks</div>
 <div class="card">
-<span class="tag">国内 AI 动态</span><h3>Qwen Code 0.26.5 稳定版默认启用交互式界面，并给 PR 自动修复设置重试上限</h3><p>Qwen官方11月1日发布0.26.5稳定版，默认启用Generated UI，允许将交互卡片中的取值带入后续对话；同时为PR自动修复加入最多三轮推送的重试预算，失败后交回人工处理。版本还扩展Managed环境的SQL历史查询及Web Shell操作。与10月29日0.26.4的工作树功能不同，这次重点是交互和可控自动化，功能效果仍以官方更新日志为准。</p>
-<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5" target="_blank">Qwen</a></div>
+<span class="tag">模型与技术进展</span><h3>Anthropic 发布 FlashProve：用密码学证明回答来自指定模型</h3><p>Anthropic 11月2日发布FlashProve研究原型，允许服务商证明输出来自约定权重而不公开权重。其量化MoE实验在单张H100上约每秒证明110个token，但GPU开销仍约为普通推理的70–95倍。它证明计算来源，不保证回答正确；快速代码与形式化协议的一致性仍有限制。</p>
+<a class="source-link" href="https://www.anthropic.com/research/provable-inference" target="_blank">Anthropic</a></div>
 <div class="card">
-<span class="tag">模型与技术进展</span><h3>SageMaker 实时推理支持 GPU 分区，小模型可共享一张加速卡</h3><p>AWS 10月30日宣布，SageMaker实时端点可借助NVIDIA MIG将GPU划成最多七个独立分区，分别承载小型模型、向量模型、重排器或分类器。分区隔离显存与算力，应用仍按模型名称调用。首批支持指定实例与区域，包括新加坡；官方没有给出通用降本比例。</p>
-<a class="source-link" href="https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning/" target="_blank">AWS</a></div>
+<span class="tag">模型与技术进展</span><h3>OpenAI 推出 LifeVal，将日常办事纳入智能体评测</h3><p>OpenAI 11月2日介绍LifeVal，依据时间使用研究与3995名受访者调查，评估照护、教育、家庭事务、预算和公共服务等任务。它强调能否完成多步骤工作，而不只回答知识题。页面结果属于厂商评测，不能据此推断日常任务普遍可靠，关键决定仍需用户审阅。</p>
+<a class="source-link" href="https://openai.com/index/lifeval/" target="_blank">OpenAI</a></div>
 <div class="card">
-<span class="tag">国内 AI 动态</span><h3>苹果明确国行 Apple 智能时间表：11 月 4 日测试，12 月随 iOS 27.3 推出</h3><p>苹果10月31日公布，首批Apple智能功能将于11月4日随iOS开发者测试版在中国开放测试，计划12月正式推出。千问接入Siri、写作工具与视觉智能，发送资料前需征得用户同意。首批先面向支持的iPhone；本次不含Siri AI及WWDC 2026公布的下一代功能。</p>
-<a class="source-link" href="https://www.geekpark.net/news/373238" target="_blank">极客公园</a></div>
+<span class="tag">企业应用与工具观察</span><h3>OpenAI 将 Codex 用于 CAD、电子设计与仿真，并与马自达开展研究</h3><p>OpenAI 11月3日介绍模型辅助外壳、PCB、固件与工程仿真的探索，并宣布与马自达研究空气动力学及碰撞安全。其演示原型仍需多轮制造审查，模型对公差和装配限制的处理尚不稳定。工作重点是工程师验证后的迭代效率，不是无人审核即可量产。</p>
+<a class="source-link" href="https://openai.com/index/accelerating-engineering-for-the-physical-world/" target="_blank">OpenAI</a></div>
 <div class="card">
-<span class="tag">国际 AI 动态</span><h3>OpenAI 明确 12 月起 ChatGPT 与 Codex 共享额度，Instant 聊天除外</h3><p>OpenAI帮助中心明确，12月起Plus、Pro和Business的ChatGPT与Codex将共用按token计量的额度，Instant聊天不计入。用户可在设置中查看合并用量及重置时间，用尽后可等待、升级或购买适用的credits。文档尚未给出各套餐token总量及具体切换日，当前不能当成已经全面生效。</p>
-<a class="source-link" href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" target="_blank">OpenAI</a></div>
+<span class="tag">企业应用与工具观察</span><h3>Salesforce 签署收购 Cresta 的协议，拟连接语音智能体与 Service Cloud</h3><p>Salesforce 11月2日宣布签署收购Cresta的最终协议，计划将语音智能体、实时坐席辅导及对话分析与Service Cloud结合。公司表示交易完成后仍将支持客户现有的呼叫中心和电话平台。公告描述的是已签协议及整合方向，不能写成交易已交割或产品已全面整合。</p>
+<a class="source-link" href="https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta/" target="_blank">Salesforce</a></div>
 <div class="card">
-<span class="tag">政策、监管与风险</span><h3>OpenAI 支持跨厂商的训练偏好信号，计划未来数月实施</h3><p>OpenAI 10月30日宣布，将尊重网站在robots.txt中表达基础生成式AI训练偏好的共同信号，减少站长逐个维护爬虫规则的负担。这是自愿参与、承接IETF讨论中的机制，预计未来数月实施；现有爬虫控制继续适用，不能写成已生效的全球强制标准。</p>
-<a class="source-link" href="https://openai.com/index/helping-websites-express-ai-training-preferences/" target="_blank">OpenAI</a></div>
+<span class="tag">国内 AI 动态</span><h3>Kimi 发布游戏开发方案，连接 Unity、虚幻引擎与 Blender</h3><p>Kimi官方新闻页11月3日发布游戏开发与创意工作方案，将模型、Kimi Code和Kimi Work接入专业工具。方案强调修改现有工程、运行测试并交付可编辑文件及操作记录；与团结引擎的演示包含持续开发与验证。演示效果属于厂商展示，正式项目仍需团队审核。</p>
+<a class="source-link" href="https://www.kimi.com/news/kimi-game-solutions" target="_blank">Moonshot AI</a></div>
 </div>
 <div class="section" id="models"><div class="section-header">模型与技术进展</div>
 <div class="news-item">
-<div class="label">推理资源利用</div><div class="title">SageMaker 实时推理支持 GPU 分区，小模型可共享一张加速卡</div><div class="summary">AWS 10月30日宣布，SageMaker实时端点可借助NVIDIA MIG将GPU划成最多七个独立分区，分别承载小型模型、向量模型、重排器或分类器。分区隔离显存与算力，应用仍按模型名称调用。首批支持指定实例与区域，包括新加坡；官方没有给出通用降本比例。</div>
-<a class="source-link" href="https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning/" target="_blank">AWS</a></div>
+<div class="label">可验证推理</div><div class="title">Anthropic 发布 FlashProve：用密码学证明回答来自指定模型</div><div class="summary">Anthropic 11月2日发布FlashProve研究原型，允许服务商证明输出来自约定权重而不公开权重。其量化MoE实验在单张H100上约每秒证明110个token，但GPU开销仍约为普通推理的70–95倍。它证明计算来源，不保证回答正确；快速代码与形式化协议的一致性仍有限制。</div>
+<a class="source-link" href="https://www.anthropic.com/research/provable-inference" target="_blank">Anthropic</a></div>
 <div class="news-item">
-<div class="label">受监管云推理</div><div class="title">Bedrock 为 GovCloud 中的 OpenAI 模型补齐原生 API 与跨区域推理</div><div class="summary">AWS 10月30日为GovCloud中的GPT-5.6 Terra与Luna增加bedrock-runtime接入，支持Responses、Converse和Chat Completions。请求可在两个美国GovCloud区域间路由，并接入调用日志、CloudWatch指标及按模型计费归集。此次变化是部署与运维能力扩展，不是GPT-6.1新模型发布。</div>
-<a class="source-link" href="https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/" target="_blank">AWS</a></div>
+<div class="label">生活任务评测</div><div class="title">OpenAI 推出 LifeVal，将日常办事纳入智能体评测</div><div class="summary">OpenAI 11月2日介绍LifeVal，依据时间使用研究与3995名受访者调查，评估照护、教育、家庭事务、预算和公共服务等任务。它强调能否完成多步骤工作，而不只回答知识题。页面结果属于厂商评测，不能据此推断日常任务普遍可靠，关键决定仍需用户审阅。</div>
+<a class="source-link" href="https://openai.com/index/lifeval/" target="_blank">OpenAI</a></div>
+<div class="news-item">
+<div class="label">智能体工程基础</div><div class="title">OpenAI 披露 Pando：为大量并行编码任务重建 Git 后端</div><div class="summary">OpenAI 11月2日披露内部Git后端Pando，在保留Git协议及客户端兼容的同时，扩展并发推送和读取吞吐。公司称其已承载内部单体仓库，中位推送延迟约改善五倍，每日传输接近一PB。这是内部工程经验，不代表Pando已作为公共产品开放。</div>
+<a class="source-link" href="https://openai.com/index/scaling-git-at-openai/" target="_blank">OpenAI</a></div>
 </div>
 <div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
 <div class="news-item">
-<div class="label">企业智能体落地</div><div class="title">腾讯谈 WorkBuddy 企业落地：FDE、数据权限与投入回报是商业化关键</div><div class="summary">36氪11月1日刊出对腾讯汤道生等人的原创采访。腾讯称WorkBuddy将继续采用多模型接入，企业场景需要服务端数据权限约束、使用可观测性和实施伙伴；大客户依靠FDE深入业务流程，中小客户更多依靠生态伙伴。汤道生强调收费首先要支撑持续服务，团队不以单一收入目标倒逼增长；这反映的是企业AI实施与成本治理策略，而非已验证的客户ROI。</div>
-<a class="source-link" href="https://eu.36kr.com/zh/p/4051138782860421" target="_blank">36氪</a></div>
+<div class="label">工程设计</div><div class="title">OpenAI 将 Codex 用于 CAD、电子设计与仿真，并与马自达开展研究</div><div class="summary">OpenAI 11月3日介绍模型辅助外壳、PCB、固件与工程仿真的探索，并宣布与马自达研究空气动力学及碰撞安全。其演示原型仍需多轮制造审查，模型对公差和装配限制的处理尚不稳定。工作重点是工程师验证后的迭代效率，不是无人审核即可量产。</div>
+<a class="source-link" href="https://openai.com/index/accelerating-engineering-for-the-physical-world/" target="_blank">OpenAI</a></div>
 <div class="news-item">
-<div class="label">AI基础设施合作</div><div class="title">富士康称正与 OpenAI 商谈新合作，细节仍待确认</div><div class="summary">路透10月30日报道，富士康董事长刘扬伟在鸿海科技日表示，当天已与OpenAI首席执行官会面，双方正在推进新的合作，待细节确定后才会公布。潜在合作建立在2025年数据中心机柜和组件设计协议之上；富士康同时介绍休斯敦AI服务器产能及得州工厂内部人形机器人试用。报道未披露新合同金额或签约时间，不能将洽谈写成交易完成。</div>
-<a class="source-link" href="https://www.reuters.com/world/china/foxconn-working-new-tie-up-with-openai-says-there-is-no-ai-bubble-2026-10-30/" target="_blank">Reuters</a></div>
+<div class="label">语音客服并购</div><div class="title">Salesforce 签署收购 Cresta 的协议，拟连接语音智能体与 Service Cloud</div><div class="summary">Salesforce 11月2日宣布签署收购Cresta的最终协议，计划将语音智能体、实时坐席辅导及对话分析与Service Cloud结合。公司表示交易完成后仍将支持客户现有的呼叫中心和电话平台。公告描述的是已签协议及整合方向，不能写成交易已交割或产品已全面整合。</div>
+<a class="source-link" href="https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta/" target="_blank">Salesforce</a></div>
 <div class="news-item">
-<div class="label">智能体治理</div><div class="title">SAP 详解智能体运行时治理：统一网关与人工合规复核</div><div class="summary">SAP 10月30日详解本周TechEd公布的治理方案：Enterprise AI Gateway统一认证、策略执行、路由及审计；LeanIX为智能体提供架构资料前先经人工批准；AI Governance Assistant检查资料缺漏与高风险分类，输出供法务复核的草稿。辅助评估不等于自动取得合规认证。</div>
-<a class="source-link" href="https://news.sap.com/2026/10/sap-teched-shows-how-to-lead-with-ai-governance/" target="_blank">SAP</a></div>
+<div class="label">智能体运行环境</div><div class="title">AWS WorkSpaces 为 AI 智能体增加 Linux 与 Windows 11 桌面</div><div class="summary">AWS 11月3日宣布，面向AI智能体的WorkSpaces除Windows Server外，增加Linux与Windows 11桌面。智能体可在现有开发或企业应用环境中运行构建、测试和操作任务，沿用网络隔离、IAM访问及组织合规边界。Linux具备root权限，仍需按任务配置相应治理。</div>
+<a class="source-link" href="https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-ai-agents-linux-windows-11/" target="_blank">AWS</a></div>
+<div class="news-item">
+<div class="label">混合云网络</div><div class="title">微软与 Lumen 扩大联合销售，将企业网络改造纳入 AI 规划</div><div class="summary">微软与Lumen 11月2日宣布扩大联合销售，帮助企业连接Azure、私有数据中心、办公地点及合作伙伴环境。双方计划更早协调网络、安全与AI应用架构，并逐步扩展Marketplace中的能力。公告包含后续规划，不能把所有网络产品描述为已在Azure上线。</div>
+<a class="source-link" href="https://news.microsoft.com/source/2026/11/02/lumen-and-microsoft-expand-collaboration-to-co-sell-enterprise-ai-ready-networks/" target="_blank">Microsoft</a></div>
 </div>
 <div class="section" id="china"><div class="section-header">国内 AI 动态</div>
 <div class="news-item">
-<div class="label">编码智能体</div><div class="title">Qwen Code 0.26.5 稳定版默认启用交互式界面，并给 PR 自动修复设置重试上限</div><div class="summary">Qwen官方11月1日发布0.26.5稳定版，默认启用Generated UI，允许将交互卡片中的取值带入后续对话；同时为PR自动修复加入最多三轮推送的重试预算，失败后交回人工处理。版本还扩展Managed环境的SQL历史查询及Web Shell操作。与10月29日0.26.4的工作树功能不同，这次重点是交互和可控自动化，功能效果仍以官方更新日志为准。</div>
-<a class="source-link" href="https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5" target="_blank">Qwen</a></div>
+<div class="label">游戏开发工作流</div><div class="title">Kimi 发布游戏开发方案，连接 Unity、虚幻引擎与 Blender</div><div class="summary">Kimi官方新闻页11月3日发布游戏开发与创意工作方案，将模型、Kimi Code和Kimi Work接入专业工具。方案强调修改现有工程、运行测试并交付可编辑文件及操作记录；与团结引擎的演示包含持续开发与验证。演示效果属于厂商展示，正式项目仍需团队审核。</div>
+<a class="source-link" href="https://www.kimi.com/news/kimi-game-solutions" target="_blank">Moonshot AI</a></div>
 <div class="news-item">
-<div class="label">具身智能产业</div><div class="title">路透聚焦中国机器人竞争重心：从动作硬件转向通用智能与训练数据</div><div class="summary">路透11月2日北京电采访多家中国具身智能企业，指出行业竞争正从机器人运动能力转向跨任务学习、数据采集与工业部署。报道援引IT桔子数据称2026年上半年中国具身智能融资935亿元、322笔；受访企业介绍工厂及药房试用，同时承认仿真与现实差距、芯片供给和跨场景可靠性仍是障碍。这是一篇产业调查分析，不是某款新模型正式发布。</div>
-<a class="source-link" href="https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/" target="_blank">Reuters</a></div>
-<div class="news-item">
-<div class="label">系统级 AI 落地</div><div class="title">苹果明确国行 Apple 智能时间表：11 月 4 日测试，12 月随 iOS 27.3 推出</div><div class="summary">苹果10月31日公布，首批Apple智能功能将于11月4日随iOS开发者测试版在中国开放测试，计划12月正式推出。千问接入Siri、写作工具与视觉智能，发送资料前需征得用户同意。首批先面向支持的iPhone；本次不含Siri AI及WWDC 2026公布的下一代功能。</div>
-<a class="source-link" href="https://www.geekpark.net/news/373238" target="_blank">极客公园</a></div>
-<div class="news-item">
-<div class="label">跨设备智能体</div><div class="title">联想天禧 AI 4.5 扩展到 PC，支持手机发起、电脑接力执行任务</div><div class="summary">据智东西10月30日报道，联想天禧AI 4.5在AI PC端发布，加入应用连接器与技能，并重做会议记录和知识库。用户可从手机或平板调用电脑执行复杂任务，支持三端语音交互。AI主机还提供云端与本地模型自动选择；这些是产品方介绍的能力，实际可靠性仍待用户验证。</div>
-<a class="source-link" href="https://zhidx.com/news/43271.html" target="_blank">智东西</a></div>
+<div class="label">国产推理算力</div><div class="title">墨芯谈稀疏推理落地：成本需连同部署、能耗和适配一起计算</div><div class="summary">智东西11月3日刊出对墨芯高管的访谈，讨论稀疏计算在千卡集群与行业模型适配中的进展。受访者认为客户更关注总推理成本、交付确定性和迁移负担，而非单一芯片指标；报道还介绍遥感模型合作测试。部署及收益陈述来自公司和合作案例，不能泛化为所有模型的降本结果。</div>
+<a class="source-link" href="https://zhidx.com/p/606610.html" target="_blank">智东西</a></div>
 </div>
 <div class="section" id="international"><div class="section-header">国际 AI 动态</div>
 <div class="news-item">
-<div class="label">订阅权益调整</div><div class="title">Claude 最高档改名 Ultra，已验证账户取消五小时用量上限</div><div class="summary">据智东西10月31日报道，Anthropic将Max 5x更名为Max、Max 20x更名为Ultra，月费仍为100与200美元。大多数现有Ultra用户可取消五小时用量上限，新账户验证完成前仍有临时限制。Pro和Max保留五小时限制；这不等于所有套餐或所有维度都无限使用。</div>
-<a class="source-link" href="https://www.zhidx.com/p/606194.html" target="_blank">智东西</a></div>
-<div class="news-item">
-<div class="label">安全模型受限开放</div><div class="title">OpenAI Daybreak Red 扩展至 GovCloud 东部，仍须核验防御用途</div><div class="summary">AWS 10月30日宣布，Daybreak Red的GPT-5.6 Cyber可向符合条件的客户在GovCloud美东使用，服务授权漏洞研究、复现和防御。客户须先通过OpenAI准入，再由AWS团队启用，并接受身份核验、监测和访问控制。这是特定模型的受限部署扩展，不是向所有用户开放。</div>
-<a class="source-link" href="https://aws.amazon.com/about-aws/whats-new/2026/10/openai-daybreak-red-govcloud-east/" target="_blank">AWS</a></div>
-<div class="news-item">
-<div class="label">用量规则预告</div><div class="title">OpenAI 明确 12 月起 ChatGPT 与 Codex 共享额度，Instant 聊天除外</div><div class="summary">OpenAI帮助中心明确，12月起Plus、Pro和Business的ChatGPT与Codex将共用按token计量的额度，Instant聊天不计入。用户可在设置中查看合并用量及重置时间，用尽后可等待、升级或购买适用的credits。文档尚未给出各套餐token总量及具体切换日，当前不能当成已经全面生效。</div>
-<a class="source-link" href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" target="_blank">OpenAI</a></div>
+<div class="label">公司治理</div><div class="title">OpenAI 任命 Jill Hazelbaker 为首席企业事务官</div><div class="summary">OpenAI 11月3日宣布Jill Hazelbaker将加入公司，负责全球沟通与企业定位。她此前在Uber担任总裁及首席企业事务官。此次任命显示公司扩充对外沟通与机构关系团队；公告没有披露上市时间表，不能据此推断IPO已经获批。</div>
+<a class="source-link" href="https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer/" target="_blank">OpenAI</a></div>
 </div>
 <div class="section" id="finance"><div class="section-header">AI 与金融</div>
 <div class="news-item">
-<div class="label">资本开支与市场</div><div class="title">AI 资本开支回报受质疑，10月30日科技股与半导体板块大跌</div><div class="summary">路透10月30日收盘报道指出，投资者对AI建设持续消耗现金、回报周期不明的担忧加剧，当日纳斯达克指数下跌2.86%，费城半导体指数跌逾7%；英特尔跌28.6%，Alphabet此前因巨额AI投入拖累现金流也承压。油价与地缘局势等因素同时影响市场，不能把全部跌幅简单归因于AI。这是当日金融市场反应，不是对未来AI需求的确定预测。</div>
-<a class="source-link" href="https://www.reuters.com/legal/transactional/global-markets-global-markets-2026-10-30/" target="_blank">Reuters</a></div>
+<div class="label">金融稳定</div><div class="title">欧洲央行将 AI 估值与基金风险列为金融稳定关注点</div><div class="summary">路透11月2日报道，欧洲央行副行长将AI股票高估值、债券压力及非银行金融机构潜在损失列为主要稳定风险，指出欧洲基金也持有相关敞口。完整金融稳定评估拟于11月18日发布；这是风险提示，不是认定危机已经发生。</div>
+<a class="source-link" href="https://www.reuters.com/business/finance/ecb-flags-ai-valuations-bond-stress-fund-losses-main-risks-2026-11-02/" target="_blank">Reuters</a></div>
 <div class="news-item">
-<div class="label">智能体支付责任</div><div class="title">英国监管机构联合提示：金融与支付智能体仍须遵守现有法规</div><div class="summary">英国CMA、FCA、ICO与Ofcom于10月30日联合声明，个人AI智能体同样适用金融服务、支付、消费者和数据保护规则，组织责任不会因智能体自主行动而减少。部署方应明确授权、资料使用、商业利益、出错责任及救济渠道。声明倡导提前沟通测试，没有颁布新的统一支付牌照。</div>
-<a class="source-link" href="https://www.gov.uk/government/publications/agentic-ai-and-consumers" target="_blank">UK Government</a></div>
+<div class="label">AI 融资风险</div><div class="title">香港金融峰会讨论 AI 融资：资金需求扩大，也需防范技术与信用风险</div><div class="summary">路透11月3日报道，黑石与多家金融机构负责人在香港讨论AI融资，认为数据中心、电力和算力仍需多种资本支持，同时提醒技术过时及估值风险。相关交易机会与预测属于与会者判断，不等于所有项目已获融资或未来回报得到保证。</div>
+<a class="source-link" href="https://www.reuters.com/business/finance/blackstone-president-says-more-tech-sector-fundraising-ahead-keep-up-with-ai-2026-11-03/" target="_blank">Reuters</a></div>
 </div>
 <div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
 <div class="news-item">
-<div class="label">训练资料选择权</div><div class="title">OpenAI 支持跨厂商的训练偏好信号，计划未来数月实施</div><div class="summary">OpenAI 10月30日宣布，将尊重网站在robots.txt中表达基础生成式AI训练偏好的共同信号，减少站长逐个维护爬虫规则的负担。这是自愿参与、承接IETF讨论中的机制，预计未来数月实施；现有爬虫控制继续适用，不能写成已生效的全球强制标准。</div>
-<a class="source-link" href="https://openai.com/index/helping-websites-express-ai-training-preferences/" target="_blank">OpenAI</a></div>
+<div class="label">学校 AI 控制</div><div class="title">谷歌计划将学校 AI 与搜索改为显式启用，并扩展引导式学习</div><div class="summary">谷歌11月3日宣布，Classroom中的Guided Learning全球可用，搜索版将在本月于部分美国学校试点。公司还计划将K-12学生账户的Gemini、Gemini Notebook、Classroom AI及搜索设为管理员明确启用前关闭，细则未来数月告知学校；这并非当天对所有学生立即断网。</div>
+<a class="source-link" href="https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/" target="_blank">Google</a></div>
 <div class="news-item">
-<div class="label">未成年人保护</div><div class="title">OpenAI 收紧暴力相关回答与青少年武器信息，承诺半年安全报告</div><div class="summary">OpenAI 10月30日宣布，将减少对历史群体袭击的可操作细节回答，并进一步限制未成年人可获得的武器和安防信息。措施未来数周逐步推出，自动结束危险对话等干预仍在完善。公司承诺2027年初发布首份覆盖2026下半年的社区安全报告，之后每半年更新。</div>
-<a class="source-link" href="https://openai.com/index/community-safety-report-and-new-protections-for-teens/" target="_blank">OpenAI</a></div>
-<div class="news-item">
-<div class="label">反垄断调查</div><div class="title">英国 CMA 对 Meta 商业条款立案，审查内容用于 AI 是否构成不公平条件</div><div class="summary">英国CMA 10月30日依据竞争法调查Meta商业条款，关注依赖其服务的出版商是否被迫接受内容用于AI等产品。条款已延期并暂停，监管方尚未认定违法，将收集Meta与第三方证据。对Meta One订阅及外链收费的问询属于另一事项，不在此次立案范围内。</div>
-<a class="source-link" href="https://www.gov.uk/government/news/cma-opens-investigation-into-metas-commercial-terms--2" target="_blank">UK Government</a></div>
+<div class="label">安全披露透明度</div><div class="title">Anthropic 修订漏洞仪表盘统计，剔除重复及部分撤回发现</div><div class="summary">Anthropic 11月2日更新漏洞披露仪表盘说明，称部分已报告发现实际上互相重复，另有撤回项不再计入，因此三类累计总量低于10月快照。账本保留承诺哈希及更正痕迹，并区分模型、外部审查和维护者评级。数字下降是口径更正，不能误解成已报告漏洞自动修复。</div>
+<a class="source-link" href="https://red.anthropic.com/2026/cvd/about/" target="_blank">Anthropic</a></div>
 </div>
 <div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
 <div class="news-item">
-<div class="label">开发者观点 · 本地模型</div><div class="title">HN 围绕开源模型协作与量化争论：基准分数能否代表真实编码体验</div><div class="summary">10月31日Hacker News围绕Memdoor多模型编码项目展开讨论。有开发者重视开放权重与本地部署的可持续性，也有人分享量化后在真实代码任务中更易出现错误、模型参数规模和评测榜单不足以替代实测。帖子标题声称的基准胜负未由本刊独立复现；这些是开发者观点和个人使用体验，不是厂商发布或普遍性能结论。</div>
-<a class="source-link" href="https://news.ycombinator.com/item?id=50320995" target="_blank">Hacker News</a></div>
+<div class="label">研究传播争议</div><div class="title">HN 讨论直接改权重的宣传边界：纠正推理循环是否等于全面变强</div><div class="summary">11月3日HN历史榜收录了对“Astra直接改进Qwen权重”说法的质疑。讨论重点是减少推理循环、特定实验改善与整体数学能力提升之间的区别，以及副作用和评测范围。这里记录社区对研究表述的争论，不将任一方评论升级成已复现实验结论。</div>
+<a class="source-link" href="https://news.ycombinator.com/item?id=50351111" target="_blank">Hacker News</a></div>
 <div class="news-item">
-<div class="label">社区作品 · Linux客户端</div><div class="title">DeepSeek Harness 社区开发者展示 Linux 原生客户端，早期用户反馈仍需验证</div><div class="summary">10月31日DeepSeek Harness官方仓库的GitHub讨论中，第三方开发者展示基于Tauri、Rust和WebKitGTK的Linux桌面客户端，提供AppImage、deb和rpm等分发形式。后续回复有人报告初步运行顺畅，也有人认为现有Web版已经足够。项目由社区成员维护，性能、兼容性和安全性均未经过本刊独立测试，不能写成DeepSeek官方发布。</div>
-<a class="source-link" href="https://github.com/deepseek-ai/deepseek-harness/discussions/11628" target="_blank">GitHub Community</a></div>
+<div class="label">开发工具信任</div><div class="title">HN 用户质疑 Postman 的 AI 插件安装与 API 数据授权体验</div><div class="summary">11月3日HN出现关于Postman自动安装AI插件及API数据分享设置的讨论。开发者关注AI功能是否默认开启、授权是否足够清晰，以及如何控制工作区数据外发。帖子标题包含用户指控，本条仅记录反馈与争议，不认定已经发生数据泄露或证实所有版本行为。</div>
+<a class="source-link" href="https://news.ycombinator.com/item?id=50354960" target="_blank">Hacker News</a></div>
 </div>
 <div class="footer"><p><a href="issues/" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
 </div>

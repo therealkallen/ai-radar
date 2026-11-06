@@ -861,6 +861,27 @@
 - OpenAI 收紧暴力相关回答与青少年武器信息，承诺半年安全报告（https://openai.com/index/community-safety-report-and-new-protections-for-teens/；2026-10-30）。既有青少年争议、家长控制与Model Spec不等于本次新暴力信息边界/半年报告承诺；同一公告合为一条。
 - 英国 CMA 对 Meta 商业条款立案，审查内容用于 AI 是否构成不公平条件（https://www.gov.uk/government/news/cma-opens-investigation-into-metas-commercial-terms--2；2026-10-30）。旧平台政策争议不等于此次10/30英国CA98正式立案，亦不同于DRCF一般声明和网站训练偏好信号。
 
+### 第 58 期（2026.11.02 — 11.04）
+
+补发11月4日应刊，按Asia/Singapore 11月2日09:30至11月4日09:30窗口选材。只采用截止前已公开且未入完整台账的新事件；仅标11月4日且无可核实小时的公告保守留给第59期。实际原文核验在11月6日进行，取回时间不冒充出版时间。Kimi游戏方案官方列表标11/3，部分媒体报11/2，采用官方来源日期；旧页面的新更新明确记录更新依据。
+
+- Anthropic 发布 FlashProve：用密码学证明回答来自指定模型（https://www.anthropic.com/research/provable-inference；2026-11-02）。不同于旧形式化软件验证文章，本次新发推理来源证明原型。
+- OpenAI 推出 LifeVal，将日常办事纳入智能体评测（https://openai.com/index/lifeval/；2026-11-02）。完整台账无LifeVal；与旧经济任务或一般agent评测不同。
+- OpenAI 披露 Pando：为大量并行编码任务重建 Git 后端（https://openai.com/index/scaling-git-at-openai/；2026-11-02）。不同于后续Pierre收购；本条为内部Git架构及并发能力披露。
+- OpenAI 将 Codex 用于 CAD、电子设计与仿真，并与马自达开展研究（https://openai.com/index/accelerating-engineering-for-the-physical-world/；2026-11-03）。本窗口新增物理工程研究合作，旧富士康洽谈与此不同。
+- Salesforce 签署收购 Cresta 的协议，拟连接语音智能体与 Service Cloud（https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta/；2026-11-02）。Cresta为本次独立交易，非其他Salesforce收购的重复。
+- AWS WorkSpaces 为 AI 智能体增加 Linux 与 Windows 11 桌面（https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-ai-agents-linux-windows-11/；2026-11-03）。旧模型API与推理分区不含此次桌面OS支持。
+- 微软与 Lumen 扩大联合销售，将企业网络改造纳入 AI 规划（https://news.microsoft.com/source/2026/11/02/lumen-and-microsoft-expand-collaboration-to-co-sell-enterprise-ai-ready-networks/；2026-11-02）。本次新增联合销售与联网规划，非财报或模型合作复述。
+- Kimi 发布游戏开发方案，连接 Unity、虚幻引擎与 Blender（https://www.kimi.com/news/kimi-game-solutions；2026-11-03）。新增游戏生产流程和专业工具方案，区别10/24模型与此前一般客户端发布。
+- 墨芯谈稀疏推理落地：成本需连同部署、能耗和适配一起计算（https://zhidx.com/p/606610.html；2026-11-03）。台账无本次采访；采用新的部署与成本解释，不重复旧芯片规格。
+- OpenAI 任命 Jill Hazelbaker 为首席企业事务官（https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer/；2026-11-03）。本次独立高管任命，完整台账未收录。
+- 欧洲央行将 AI 估值与基金风险列为金融稳定关注点（https://www.reuters.com/business/finance/ecb-flags-ai-valuations-bond-stress-fund-losses-main-risks-2026-11-02/；2026-11-02）。不同于57期美国股市收盘跌幅；新增ECB金融稳定与基金传导风险表态。
+- 香港金融峰会讨论 AI 融资：资金需求扩大，也需防范技术与信用风险（https://www.reuters.com/business/finance/blackstone-president-says-more-tech-sector-fundraising-ahead-keep-up-with-ai-2026-11-03/；2026-11-03）。本次11/3金融峰会信贷与融资讨论，区别旧市场收盘和ECB监管表态。
+- 谷歌计划将学校 AI 与搜索改为显式启用，并扩展引导式学习（https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/；2026-11-03）。新增学校管理员控制与产品试点，不重复一般Gemini更新。
+- Anthropic 修订漏洞仪表盘统计，剔除重复及部分撤回发现（https://red.anthropic.com/2026/cvd/about/；2026-11-02）。新11/2口径修正，与旧漏洞发现总数或模型攻防能力不重复。
+- HN 讨论直接改权重的宣传边界：纠正推理循环是否等于全面变强（https://news.ycombinator.com/item?id=50351111；2026-11-03）。独立研究传播讨论，未与模型发布重复计数。
+- HN 用户质疑 Postman 的 AI 插件安装与 API 数据授权体验（https://news.ycombinator.com/item?id=50354960；2026-11-03）。独立工具授权争议，非一般AI隐私旧讨论。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

@@ -1,0 +1,722 @@
+{
+  "num": 60,
+  "period_start": "2026-11-06",
+  "period_end": "2026-11-09",
+  "window_note": "11月9日周一应刊补发，窗口为Asia/Singapore 11月6日09:30至11月9日09:30，覆盖整个周末。当天09:27自动任务提前返回，11:30后接手采编；来源取回时间与出版时间分别记录。只有日期而无小时的11/6公告保守归本期；11/9 Reuters采访00:29UTC早于截稿。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "实际从main f26884f重新读取规范、完整coverage、最新59期与归档；确认60期缺失且无开放PR。完成七栏第一轮和官方索引/国内原创媒体/历史社区榜的独立第二轮，筛选16个独立事件、5个精选引用。逐条打开原文，记录日期、状态和去重依据。用户点名的黄仁勋事件采用两份NVIDIA官方声明，区分承认不忠、独立调查与未证实情报指控；同一事件不在社区重刊。BMO有真实新案例但当前来源映射未覆盖其官方域名，不伪标为别家；大额融资缺直接官方或两家独立证据未刊。没有改代码、来源白名单、版式或旧期。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://api-docs.deepseek.com/updates/",
+        "https://qwenlm.github.io/qwen-code-docs/en/blog/quickstart/",
+        "https://autoclaw.z.ai/blog/news/",
+        "site:kimi.com/news 2026年11月6日",
+        "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/",
+        "https://www.qbitai.com/2026/11/507967.html",
+        "https://www.jiqizhixin.com/industry",
+        "https://www.36kr.com/p/4057656248685701",
+        "site:seed.bytedance.com OR site:volcengine.com 2026-11-06",
+        "site:iflytek.com 2026-11-06",
+        "site:infoq.cn MiniMax 闫俊杰 2026 11",
+        "https://www.tmtpost.com/8197537.html",
+        "https://ernie.baidu.com/zh/research/"
+      ],
+      "notes": "分别检索DeepSeek、Qwen、智谱、Kimi、腾讯、百度、字节、MiniMax、讯飞，并交叉查机器之心、量子位、36氪和智东西。采用Kimi Bedrock新托管阶段与易博图新原创技术采访。DeepSeek最新模型公告仍10/17；11/5 Harness进展早于本窗口。腾讯扩容原公告11/5、百度Base11/5、部分Meta Muse媒体称11/6凌晨，不以11/6–7转载挪入本期。AutoClaw11/6为签到额度营销，没有实质新能力。MiniMax访谈线索多为字母AI转载，未取得允许来源的独立原稿或明确新发布证据；不把旧讯飞1024发布会重报。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "https://news.ycombinator.com/front?day=2026-11-07",
+        "https://news.ycombinator.com/front?day=2026-11-08",
+        "https://news.ycombinator.com/item?id=50410107",
+        "https://news.ycombinator.com/item?id=50411467",
+        "site:x.com AI November 7 2026 agents memory",
+        "site:reddit.com/r/LocalLLaMA November 07 2026",
+        "https://github.com/openai/codex/issues/60106",
+        "https://github.com/openai/codex/issues/60109"
+      ],
+      "notes": "11/7历史榜429后打开11/8榜和两原帖，核对同期时间及早期讨论；不冒充两榜均成功。Pi文章本身9/21，明确只记本窗口新社区讨论。X/Reddit检索未取得足够可靠且非重复的新原帖；GitHub是个别客户端问题，不能升级成普遍故障。选择两条独立议题，不以黄仁勋事件再占一条。"
+    },
+    "coverage_review": {
+      "reviewed_at": "2026-11-09T03:36:45+00:00",
+      "scope": "第一轮按七栏搜索；第二轮从OpenAI/Anthropic官方研究与新闻索引、AWS whats-new、GitHub changelog、机器之心和36氪原创、HN历史榜发现增量，并对国际和金融单条栏目重新查漏。",
+      "sections": [
+        {
+          "category": "模型与技术进展",
+          "count": 3,
+          "candidate_urls": [
+            "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+            "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs",
+            "https://huggingface.co/blog/open-asr-leaderboard-liva"
+          ]
+        },
+        {
+          "category": "企业应用与工具观察",
+          "count": 4,
+          "candidate_urls": [
+            "https://www.anthropic.com/research/components-of-agent-memory",
+            "https://www.salesforce.com/customer-stories/bombardier/agentic-sales-engineering/",
+            "https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/",
+            "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/"
+          ]
+        },
+        {
+          "category": "国内 AI 动态",
+          "count": 2,
+          "candidate_urls": [
+            "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/",
+            "https://www.36kr.com/p/4057656248685701"
+          ]
+        },
+        {
+          "category": "国际 AI 动态",
+          "count": 1,
+          "candidate_urls": [
+            "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
+          ]
+        },
+        {
+          "category": "AI 与金融",
+          "count": 1,
+          "candidate_urls": [
+            "https://www.reuters.com/world/asia-pacific/rbas-hunter-says-ai-has-yet-deliver-productivity-boost-trigger-job-losses-2026-11-08/"
+          ]
+        },
+        {
+          "category": "政策、监管与风险",
+          "count": 3,
+          "candidate_urls": [
+            "https://openai.com/index/partnering-with-hacktron/",
+            "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/",
+            "https://www.reuters.com/world/trump-says-ai-risks-can-be-managed-signals-openness-guardrails-2026-11-09/"
+          ]
+        },
+        {
+          "category": "社媒与开发者社区观察",
+          "count": 2,
+          "candidate_urls": [
+            "https://news.ycombinator.com/item?id=50410107",
+            "https://news.ycombinator.com/item?id=50411467"
+          ]
+        }
+      ],
+      "second_pass": {
+        "completed": true,
+        "notes": "新增核验庞巴迪Clara、ASR口音测试、MediaConvert原生字幕、Copilot管理与指标、澳洲央行讲话及09:30前的特朗普采访。继续查银行、保险、支付、会计/审计：BMO11/6官方案例已读但需单独来源映射审查；Claude个人金融与OCC实际11/5及11/4，均不挪刊。国际再查Alphabet持股和Anthropic发电机交易，缺重大claim所需充分证据不刊；NVIDIA重大进展有双官方直接证据保留。16条足以成稿，未以次要补丁或同稿拆分填数。"
+      },
+      "candidates": [
+        {
+          "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+          "decision": "include",
+          "reason": "完整台账无该基准；区别58期LifeVal日常任务和59期vault结构研究，未拆实验领域凑数。"
+        },
+        {
+          "url": "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs",
+          "decision": "include",
+          "reason": "本次新公开具体实验，与其他模型安全报告和通用评测不同；交易与协作来自同一项目，合并一条。"
+        },
+        {
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+          "decision": "include",
+          "reason": "台账已有其他ASR模型，此为不同的11/6评测数据扩充；不以同一语音关键词判重。"
+        },
+        {
+          "url": "https://www.anthropic.com/research/components-of-agent-memory",
+          "decision": "include",
+          "reason": "独立工程研究披露，区别59期科学合作和旧长程任务框架；不按四层记忆拆成多个事件。"
+        },
+        {
+          "url": "https://www.salesforce.com/customer-stories/bombardier/agentic-sales-engineering/",
+          "decision": "include",
+          "reason": "台账无Clara案例；与58期Salesforce收购Cresta是不同主体和事件。同日其他庞巴迪案例不另拆计数。"
+        },
+        {
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/",
+          "decision": "include",
+          "reason": "新的原生工作流集成，区别旧语音模型和普通MediaConvert扩区。"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/",
+          "decision": "include",
+          "reason": "完整台账无本次API归因/管理与Chat指标新增；同日Copilot治理和指标合并一条，不用周报或修复再计数。"
+        },
+        {
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/",
+          "decision": "include",
+          "reason": "54期为模型/API、59期为权重公开，本次为Bedrock商用托管阶段的新进展。"
+        },
+        {
+          "url": "https://www.36kr.com/p/4057656248685701",
+          "decision": "include",
+          "reason": "台账无易博图此采访，与58期墨芯推理部署、57期具身行业采访不同，取新主体和技术实践而非重复泛论。"
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+          "decision": "include",
+          "reason": "旧10月报道和国会来函为背景，本次实质新增为11/8本人承认与董事会独立调查，合并单一事件且不再放社区重复计数。"
+        },
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/rbas-hunter-says-ai-has-yet-deliver-productivity-boost-trigger-job-losses-2026-11-08/",
+          "decision": "include",
+          "reason": "区别58期ECB、59期OCC检查框架，本次为澳洲央行新增生产率和金融稳定评估，不以股票日涨跌代替金融研究。"
+        },
+        {
+          "url": "https://openai.com/index/partnering-with-hacktron/",
+          "decision": "include",
+          "reason": "完整台账9月有Hacktron安全复盘，本次是11/6新官方合作协议和模型准入；与59期GPT-6 Cyber模型发布不同。"
+        },
+        {
+          "url": "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/",
+          "decision": "include",
+          "reason": "本次具体议程采访，与59期OCC金融检查指引、旧州法，以及本期特朗普采访立场不同。"
+        },
+        {
+          "url": "https://www.reuters.com/world/trump-says-ai-risks-can-be-managed-signals-openness-guardrails-2026-11-09/",
+          "decision": "include",
+          "reason": "不同主体的新采访立场，与11/6民主党拟议立法互相关联但不重复。"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50410107",
+          "decision": "include",
+          "reason": "台账无该讨论，区别59期通用工作流征集，本条集中在具体替代工具引出的界面和供应商依赖取舍。"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=50411467",
+          "decision": "include",
+          "reason": "与Anthropic记忆工程研究相关但不同：此条是独立作者与社区对跨框架互操作和来源治理的争论，不复述厂商评测结果。"
+        },
+        {
+          "url": "https://ai.bmo.com/our-stories/bmo-applies-agentic-ai-to-make-credit-card-transaction-resolution-faster-and-simpler/",
+          "decision": "hold",
+          "reason": "实际打开11/6官方信用卡客服案例，当前生成器没有BMO名称/域名映射，不伪标其他主源；未擅改需单独批准的来源白名单。20–30%与40%为目标而非已实测结果。"
+        },
+        {
+          "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+          "decision": "exclude",
+          "reason": "原公告11/5，属于前一期窗口；不因11/6转载移入当前期。"
+        },
+        {
+          "url": "https://www.reuters.com/business/openai-kicks-off-charm-offensive-change-voters-view-data-centers-2026-11-05/",
+          "decision": "exclude",
+          "reason": "已实际打开原文，首次发布11/5，11/6只是更新，未发现独立新增事实足以移刊。"
+        },
+        {
+          "url": "https://www.qbitai.com/2026/11/507967.html",
+          "decision": "exclude",
+          "reason": "原URL超时，替代原公告日期11/5；不以11/6媒体日期重报腾讯扩容。"
+        },
+        {
+          "url": "https://www.reuters.com/business/energy/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-2026-11-08/",
+          "decision": "hold",
+          "reason": "Reuters原文已打开但明确转述FT且未核实；不是两个独立来源，未取得官方或独立双源确认大额交易。"
+        },
+        {
+          "url": "https://www.reuters.com/business/alphabet-discloses-548-million-worth-qualcomm-stake-2026-11-06/",
+          "decision": "hold",
+          "reason": "Reuters原文已打开，描述第三季度持仓披露；CNBC robots拒绝，未将金额重大交易靠单原稿编入或称11/6新买入。"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+          "decision": "exclude",
+          "reason": "实际打开官方原文为11/5；11/8 HN上榜不改变产品发布日期。"
+        },
+        {
+          "url": "https://autoclaw.z.ai/blog/news/",
+          "decision": "exclude",
+          "reason": "已打开官方索引，11/6新项只是11/9–15签到送额度，非重要功能进展。"
+        },
+        {
+          "url": "https://www.jiqizhixin.com/articles/2026-11-06-6",
+          "decision": "exclude",
+          "reason": "ModelEvo2.0详情只返回登录壳，索引属机构供稿，未使用摘要冒充独立正文。"
+        },
+        {
+          "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
+          "decision": "exclude",
+          "reason": "已打开11/6原文，为科研建模方法论文章；本期优先具体新实验/评测，未包装为模型产品首发。"
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story_id": "biobasicsbench-20261106",
+      "event_id": "biobasicsbench-20261106",
+      "primary_category": "模型与技术进展",
+      "label": "实验室评测",
+      "title": "OpenAI 发布 BioBasicsBench，检验 AI 能否读懂日常实验数据",
+      "summary": "OpenAI与Ligo 11月6日发布BioBasicsBench，以100项任务考察原始实验图像、仪器数据、错误识别及证据不足时的判断。GPT‑6 Astra在xhigh设置下获得66.7%的可得评分，高于GPT‑5.6 Sol的43.8%。这是厂商报告的评分项均值，不是实验成功率；图像解释和对照检查仍有明显改进空间。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+          "canonical_url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Measuring how AI agents handle everyday wet-lab science",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "BioBasicsBench has 100 tasks",
+          "evidence_notes": "已打开11/6官方原文及任务、评分和结果表。66.7%/43.8%为mean reward和同一xhigh设置，不称正确完成全部实验的比例。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整台账无该基准；区别58期LifeVal日常任务和59期vault结构研究，未拆实验领域凑数。"
+    },
+    {
+      "story_id": "project-eve-20261106",
+      "event_id": "project-eve-20261106",
+      "primary_category": "模型与技术进展",
+      "label": "多代理实验",
+      "title": "Project EVE：Claude 能协作游戏任务，却难识别被指令破坏的队友",
+      "summary": "Anthropic 11月6日披露Project EVE：Claude在EVE市场回放中依靠买卖价差获利，但预测价格方向表现较弱；在另一款游戏里，代理能分工协作，却很少识别被研究者明确指令暗中破坏任务的队友。实验提示团队需要独立核验关键报告，不能把模拟收益当真实投资业绩，也不能据此断言模型会自发破坏任务。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs",
+          "canonical_url": "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs",
+          "source_name": "Anthropic",
+          "source_domain": "anthropic.com",
+          "source_tier": "primary",
+          "raw_title": "Project EVE: Claude plays MMORPGs",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "not whether they have an inclination to sabotage on their own",
+          "evidence_notes": "已读官方11/6全文，实验实际于4–7月进行。交易为历史订单模拟，不能反映市场对代理的反应；破坏行为为指定角色实验，不是自主产生的动机。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "本次新公开具体实验，与其他模型安全报告和通用评测不同；交易与协作来自同一项目，合并一条。"
+    },
+    {
+      "story_id": "open-asr-accents-20261106",
+      "event_id": "open-asr-accents-20261106",
+      "primary_category": "模型与技术进展",
+      "label": "语音评测",
+      "title": "Open ASR Leaderboard 增加埃及与尼日利亚英语私有测试集",
+      "summary": "Hugging Face 11月6日宣布与Liva AI合作，为Open ASR Leaderboard加入埃及和尼日利亚英语的自然对话私有数据，并扩充口音分组展示。新增数据用于改善语音识别评测的代表性、减少针对公开测试集优化的空间；它是评测集扩展，不等于发布了新识别模型，也不能替代企业自己的业务语料测试。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+          "canonical_url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+          "source_name": "Hugging Face",
+          "source_domain": "huggingface.co",
+          "source_tier": "primary",
+          "raw_title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "two new accents: Egyptian",
+          "evidence_notes": "已打开HF主博客日期、作者及表格；新增两类英语口音而非宣布埃及语模型。保留私有测试数据和分组变化，不引用榜单现时排名。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "台账已有其他ASR模型，此为不同的11/6评测数据扩充；不以同一语音关键词判重。"
+    },
+    {
+      "story_id": "anthropic-agent-memory-20261106",
+      "event_id": "anthropic-agent-memory-20261106",
+      "primary_category": "企业应用与工具观察",
+      "label": "代理记忆",
+      "title": "Anthropic 公开代理记忆实验：回看原始记录以纠错、整理知识",
+      "summary": "Anthropic 11月6日介绍代理记忆的分层设计：会话记录、记忆笔记、知识组织和预先加载的上下文，闲时再回看记录，纠正错误或整理成互相链接的wiki。其文档问答实验中，wiki与搜索结合比单独wiki更有效。这是工程研究披露，改善的是外部记忆管理，不是修改模型权重，也不是新的无限记忆产品承诺。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.anthropic.com/research/components-of-agent-memory",
+          "canonical_url": "https://www.anthropic.com/research/components-of-agent-memory",
+          "source_name": "Anthropic",
+          "source_domain": "anthropic.com",
+          "source_tier": "primary",
+          "raw_title": "The components of agent memory",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Dreaming can correct mistakes in memory.",
+          "evidence_notes": "已读11/6原文、记忆定义、CL-Bench、宝可梦及Stainless文档问答结果。明确外部文件记忆与权重学习/上下文压缩不同，不把单次示例推广为可靠性保证。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "独立工程研究披露，区别59期科学合作和旧长程任务框架；不按四层记忆拆成多个事件。"
+    },
+    {
+      "story_id": "bombardier-clara-20261106",
+      "event_id": "bombardier-clara-20261106",
+      "primary_category": "企业应用与工具观察",
+      "label": "企业案例",
+      "title": "庞巴迪披露 Clara 销售代理：检索规格，并调用专业接口算航程",
+      "summary": "Salesforce 11月6日披露庞巴迪的Clara销售工程代理：从获准技术文档检索并提供引用，将客户问题转为结构化输入，再调用机场限制、飞机性能等专业接口计算航程并展示地图，保存假设和迭代记录。价值在于把检索、计算与CRM串成流程；厂商给出的速度和准确率数据尚不能视为独立评测。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.salesforce.com/customer-stories/bombardier/agentic-sales-engineering/",
+          "canonical_url": "https://www.salesforce.com/customer-stories/bombardier/agentic-sales-engineering/",
+          "source_name": "Salesforce",
+          "source_domain": "salesforce.com",
+          "source_tier": "primary",
+          "raw_title": "Bombardier gives every seller an on-demand engineer with Agentforce",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Clara documents its assumptions",
+          "evidence_notes": "实际打开11/6客户案例全文，重点核对RAG、Apex编排、外部性能API和保存假设。没有把生成式模型写成独立计算器或航空安全认证工具，不采用宣传数字作独立结论。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "台账无Clara案例；与58期Salesforce收购Cresta是不同主体和事件。同日其他庞巴迪案例不另拆计数。"
+    },
+    {
+      "story_id": "mediaconvert-smart-subtitles-20261106",
+      "event_id": "mediaconvert-smart-subtitles-20261106",
+      "primary_category": "企业应用与工具观察",
+      "label": "媒体工作流",
+      "title": "AWS 将 AI 字幕生成接入 MediaConvert 转码流程",
+      "summary": "AWS 11月6日将Elemental Inference Smart Subtitles原生接入MediaConvert，让点播视频在转码和打包流程中直接生成字幕，支持独立字幕文件和烧录输出。首批覆盖英语等六种语言，支持用自定义词典改善专名和术语识别；公告未列中文，企业仍需按语言、地区可用性及实际素材质量评估。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/",
+          "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/",
+          "source_name": "AWS",
+          "source_domain": "aws.amazon.com",
+          "source_tier": "primary",
+          "raw_title": "AWS Elemental MediaConvert adds a native integration with AWS Elemental Inference Smart Subtitles",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "native support for six languages",
+          "evidence_notes": "已打开官方11/6正文206–209行。六语种为英法德意葡西，不补写中文；可用区域是Elemental Inference所在区域，不写所有AWS区域。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "新的原生工作流集成，区别旧语音模型和普通MediaConvert扩区。"
+    },
+    {
+      "story_id": "copilot-review-governance-20261106",
+      "event_id": "copilot-review-governance-20261106",
+      "primary_category": "企业应用与工具观察",
+      "label": "开发治理",
+      "title": "GitHub 扩展 Copilot 审查 API，并补充代理使用指标",
+      "summary": "GitHub 11月6日扩展Copilot代码审查管理：可通过API调整企业、组织和仓库设置，识别AI审查输出，并查看评论所报告的技能、MCP及自定义指令来源。使用面板也加入Chat和VS Code Agents窗口数据。两类更新方便管理与追踪，但活跃度不等于生产率，新指标也不改变原有采用阶段定义。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/",
+          "canonical_url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Copilot code review: API management and review overview updates",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "explicit attribution fields",
+          "evidence_notes": "已打开11/6审查原文与同日impact dashboard公告；企业策略不可被下级覆盖，部分管理端点不支持GitHub Apps/细粒度PAT。新usage字段是功能参与度，不等于采用分层或效率变化。",
+          "opened_and_verified": true
+        },
+        {
+          "source_url": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage/",
+          "canonical_url": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Copilot impact dashboard adds chat and VS Code agent usage",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Adoption phases are unchanged",
+          "evidence_notes": "已打开原文，新增chat和vscode_agent至28日企业/组织报告；参与度并不计入采用阶段，不以使用量等同效果。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整台账无本次API归因/管理与Chat指标新增；同日Copilot治理和指标合并一条，不用周报或修复再计数。"
+    },
+    {
+      "story_id": "kimi-bedrock-20261106",
+      "event_id": "kimi-bedrock-20261106",
+      "primary_category": "国内 AI 动态",
+      "label": "模型落地",
+      "title": "Kimi K3.1 Pro Highspeed 登陆 Amazon Bedrock",
+      "summary": "AWS 11月6日宣布Kimi K3.1 Pro Highspeed在Amazon Bedrock可用，面向编程、文档处理等代理任务，提供显式提示词缓存，并通过跨区域推理接入。此次新增是云端托管和采购路径；K3.1的首次发布、完整权重开放已在前期报道，不能把这次上架再次写成新模型或开源首发。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/",
+          "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/",
+          "source_name": "AWS",
+          "source_domain": "aws.amazon.com",
+          "source_tier": "primary",
+          "raw_title": "Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "available on Amazon Bedrock",
+          "evidence_notes": "已打开AWS11/6原文203–209行；核对Highspeed、显式缓存与cross-Region inference，不把所有区域推理当成数据固定本地处理。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "54期为模型/API、59期为权重公开，本次为Bedrock商用托管阶段的新进展。"
+    },
+    {
+      "story_id": "eabot-physical-ai-interview-20261106",
+      "event_id": "eabot-physical-ai-interview-20261106",
+      "primary_category": "国内 AI 动态",
+      "label": "具身落地",
+      "title": "易博图 CTO 访谈：重卡物理 AI 要同时解决决策延迟与数据闭环",
+      "summary": "36氪11月6日采访易博图CTO李伟，介绍以通用多模态和世界模型支持重卡驾驶、用真实车队运营反哺训练的路线。其“双快”方案试图缩短高层判断与实时规划之间的速度差，商业化先由自营车队验证运营流程。这是公司技术路线与实践的采访披露，尚不能推出已实现全面无人化或稳定盈利。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.36kr.com/p/4057656248685701",
+          "canonical_url": "https://www.36kr.com/p/4057656248685701",
+          "source_name": "36氪",
+          "source_domain": "36kr.com",
+          "source_tier": "trusted_media",
+          "raw_title": "36氪首发丨重载物理AI公司成立一年内融资近4亿，核心成员来自华为、理想，已运营车辆超百台",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_original_reporting",
+          "raw_excerpt": "以下为硬氪与易博图CTO李伟交流节选",
+          "evidence_notes": "已打开11/6 10:23乔钰杰原创全文及CTO问答。仅取新增技术与运营采访，不刊融资金额/投资方：融资目前只有一家独立可信原稿，未满足重大claim额外验证。未把零接管测试当全车队无安全员商业运营。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "台账无易博图此采访，与58期墨芯推理部署、57期具身行业采访不同，取新主体和技术实践而非重复泛论。"
+    },
+    {
+      "story_id": "nvidia-board-huang-20261108",
+      "event_id": "nvidia-board-huang-20261108",
+      "primary_category": "国际 AI 动态",
+      "label": "公司治理",
+      "title": "黄仁勋承认婚外情，英伟达董事会启动独立调查",
+      "summary": "英伟达11月8日公布黄仁勋致员工信，他承认对妻子不忠并道歉。同日董事会宣布独立调查，审查他是否成为外国情报活动目标，由独立董事及外部律师监督。董事会称目前没有理由认为美国国家安全或公司机密已受损，并表示信任现任领导团队；调查仍待结论，相关情报指控尚不能视为已被证实。",
+      "radar_pick": true,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+          "canonical_url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+          "source_name": "NVIDIA",
+          "source_domain": "nvidianews.nvidia.com",
+          "source_tier": "primary",
+          "raw_title": "Statement from NVIDIA Board of Directors",
+          "published_at": "2026-11-08",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "initiating an independent investigation",
+          "evidence_notes": "已打开董事会11/8声明及同日CEO原始员工信；Reuters原稿用于背景交叉核对。只确认承认不忠和独立调查，董事会的无受损证据立场需归因，不将涉嫌间谍身份、机密外泄或CEO更换写成已证实。",
+          "opened_and_verified": true
+        },
+        {
+          "source_url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+          "canonical_url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+          "source_name": "NVIDIA",
+          "source_domain": "nvidianews.nvidia.com",
+          "source_tier": "primary",
+          "raw_title": "A Message to Our Company",
+          "published_at": "2026-11-08",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "I was unfaithful to my wife.",
+          "evidence_notes": "实际打开NVIDIA原始员工信11/8全文，承认不忠和道歉为本人直接陈述；不推断与具体人士的关系或情报指控属实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "旧10月报道和国会来函为背景，本次实质新增为11/8本人承认与董事会独立调查，合并单一事件且不再放社区重复计数。"
+    },
+    {
+      "story_id": "rba-ai-productivity-stability-20261108",
+      "event_id": "rba-ai-productivity-stability-20261108",
+      "primary_category": "AI 与金融",
+      "label": "金融稳定",
+      "title": "澳洲联储官员提示：AI 投资需求先行，生产率与回报仍待验证",
+      "summary": "Reuters 11月8日报道，澳洲联储官员Hunter表示，目前证据尚不足以认定AI已显著提高生产率或大规模影响就业，而数据中心投资正增加需求压力。她也提醒，若AI投资回报低于预期，资产价格可能急剧重估并带来金融稳定风险。这是央行官员的阶段性判断，不是AI长期经济效果的定论。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/asia-pacific/rbas-hunter-says-ai-has-yet-deliver-productivity-boost-trigger-job-losses-2026-11-08/",
+          "canonical_url": "https://www.reuters.com/world/asia-pacific/rbas-hunter-says-ai-has-yet-deliver-productivity-boost-trigger-job-losses-2026-11-08/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "RBA's Hunter says AI has yet to deliver productivity boost, trigger job losses",
+          "published_at": "2026-11-08",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_original_reporting",
+          "raw_excerpt": "limited evidence",
+          "evidence_notes": "已通过新闻引用实际打开Reuters11/8 22:42UTC原文，包括需求、就业与资产重估段；二次直接URL失败不抹去首次已读取证据。不采用未经原文支持的特定银行部署结论。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "区别58期ECB、59期OCC检查框架，本次为澳洲央行新增生产率和金融稳定评估，不以股票日涨跌代替金融研究。"
+    },
+    {
+      "story_id": "openai-hacktron-partnership-20261106",
+      "event_id": "openai-hacktron-partnership-20261106",
+      "primary_category": "政策、监管与风险",
+      "label": "安全协作",
+      "title": "OpenAI 与 Hacktron 合作，重点测试第三方服务连接边界",
+      "summary": "OpenAI 11月6日宣布与Hacktron合作，由双方工程师和安全研究人员共同选择高优先级区域，重点检查OpenAI系统与第三方服务的交互，并扩大其通过Daybreak Red使用前沿模型的权限。此次是针对自身系统的联合防御研究安排，未公布新的漏洞总数，也不是向所有用户开放受限安全模型。",
+      "radar_pick": false,
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/partnering-with-hacktron/",
+          "canonical_url": "https://openai.com/index/partnering-with-hacktron/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "interact with third-party services",
+          "evidence_notes": "实际打开官方11/6全文，核对共同选范围、第三方交互和定向准入；既有赏金漏洞和Cathedral合作只作背景。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "完整台账9月有Hacktron安全复盘，本次是11/6新官方合作协议和模型准入；与59期GPT-6 Cyber模型发布不同。"
+    },
+    {
+      "story_id": "us-democrats-ai-plans-20261106",
+      "event_id": "us-democrats-ai-plans-20261106",
+      "primary_category": "政策、监管与风险",
+      "label": "立法动向",
+      "title": "Reuters：美国民主党拟推动 AI 测试、责任与数据中心电费法案",
+      "summary": "Reuters 11月6日报道，美国民主党议员及相关人士计划在次年掌控国会后，推动先进AI独立测试、产品损害责任及数据中心电力成本等法案。报道描述的是立法方向与筹备，尚不是已经通过的法律；白宫态度及国会程序仍将影响其推进。对企业而言，需要跟踪具体文本及适用范围。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/",
+          "canonical_url": "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Democrats planning flood of AI bills when they take control of Congress",
+          "published_at": "2026-11-06",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_original_reporting",
+          "raw_excerpt": "plan on introducing bills",
+          "evidence_notes": "已通过新新闻检索引用打开Reuters11/6 11:05UTC原文；只有计划，不声称新法规已生效，也不自行补充合规义务。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "本次具体议程采访，与59期OCC金融检查指引、旧州法，以及本期特朗普采访立场不同。"
+    },
+    {
+      "story_id": "trump-ai-guardrails-20261109",
+      "event_id": "trump-ai-guardrails-20261109",
+      "primary_category": "政策、监管与风险",
+      "label": "政策表态",
+      "title": "特朗普称不排斥 AI 护栏，具体监管措施仍未明确",
+      "summary": "Reuters 11月9日00:29 UTC报道，特朗普在CBS采访中表示AI风险可以管理，不排斥设置护栏，也对与民主党合作持开放态度，同时强调不希望监管削弱美国竞争地位。该表态发生在本期截稿前，但尚未给出措施层级或法律文本，不能据此判断联邦AI监管已经转向或新规则即将生效。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/trump-says-ai-risks-can-be-managed-signals-openness-guardrails-2026-11-09/",
+          "canonical_url": "https://www.reuters.com/world/trump-says-ai-risks-can-be-managed-signals-openness-guardrails-2026-11-09/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Trump says AI risks can be managed, signals openness to guardrails",
+          "published_at": "2026-11-09",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_original_reporting",
+          "raw_excerpt": "doesn't mind guardrails",
+          "evidence_notes": "已打开Reuters原文并核对11/9 00:29UTC，即新加坡08:29早于09:30截稿；只报道明确引语和不确定性，不把竞选/采访表态当正式法规。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "不同主体的新采访立场，与11/6民主党拟议立法互相关联但不重复。"
+    },
+    {
+      "story_id": "hn-pi-workflow-discussion-20261107",
+      "event_id": "hn-pi-workflow-discussion-20261107",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "工具取舍",
+      "title": "HN 围绕 Pi 讨论：终端、桌面与多模型工作流各有取舍",
+      "summary": "HN围绕“Goodbye Claude, hello Pi”展开讨论，参与者比较终端与桌面界面、多项目会话管理，以及切换模型供应商的便利性。有人重视可定制性，也有人更需要桌面的图片展示和会话组织。这是个人经验和工具取舍，不能当成普遍迁移趋势、市场份额变化或哪款工具性能更强的证明。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "evidence_type": "community_observation",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50410107",
+          "canonical_url": "https://news.ycombinator.com/item?id=50410107",
+          "source_name": "Hacker News",
+          "source_domain": "news.ycombinator.com",
+          "source_tier": "social_signal",
+          "raw_title": "Goodbye Claude, hello Pi",
+          "published_at": "2026-11-07",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_community_thread",
+          "raw_excerpt": "I'm using ChatGPT/Claude desktop.",
+          "evidence_notes": "已打开HN原帖并读取早期bottlepalm等讨论，11/8历史榜与同期归档确认新讨论窗口。被转发的caleb.software文章原日期为9/21，不冒充本期新产品发布；本条事件是11/7–8社区讨论，不引用现时分数或截稿后的回复。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "台账无该讨论，区别59期通用工作流征集，本条集中在具体替代工具引出的界面和供应商依赖取舍。"
+    },
+    {
+      "story_id": "hn-agent-memory-portability-20261108",
+      "event_id": "hn-agent-memory-portability-20261108",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "记忆标准讨论",
+      "title": "HN 讨论代理记忆互通：格式、来源与过期信息该怎样处理",
+      "summary": "HN围绕代理记忆是否需要类似OpenTelemetry的共同规范展开讨论。参与者争论重点应放在文本格式本身，还是记忆归属、来源、关联及失效检查；也有人指出，跨模型长期使用会影响表示方式选择。这仍是社区提议与争论，不能写成已有正式标准或行业已经达成共识。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "evidence_type": "community_observation",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50411467",
+          "canonical_url": "https://news.ycombinator.com/item?id=50411467",
+          "source_name": "Hacker News",
+          "source_domain": "news.ycombinator.com",
+          "source_tier": "social_signal",
+          "raw_title": "Agent memory needs its OpenTelemetry moment",
+          "published_at": "2026-11-08",
+          "retrieved_at": "2026-11-09T03:36:45+00:00",
+          "evidence_type": "opened_community_thread",
+          "raw_excerpt": "what does this memory belong to",
+          "evidence_notes": "已打开HN原帖、11/8历史榜及早期armchairhacker/bee_rider/wongarsu评论。原文章11/7，HN讨论11/8；采用截至截稿的早期意见，不引用后来票数、回复或把提议当已采纳规范。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "与Anthropic记忆工程研究相关但不同：此条是独立作者与社区对跨框架互操作和来源治理的争论，不复述厂商评测结果。"
+    }
+  ]
+}

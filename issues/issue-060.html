@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 60 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策、监管与风险</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+<div class="container">
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.11.06 — 11.09</span><span>第 60 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
+<div class="card">
+<span class="tag">模型与技术进展</span><h3>OpenAI 发布 BioBasicsBench，检验 AI 能否读懂日常实验数据</h3><p>OpenAI与Ligo 11月6日发布BioBasicsBench，以100项任务考察原始实验图像、仪器数据、错误识别及证据不足时的判断。GPT‑6 Astra在xhigh设置下获得66.7%的可得评分，高于GPT‑5.6 Sol的43.8%。这是厂商报告的评分项均值，不是实验成功率；图像解释和对照检查仍有明显改进空间。</p>
+<a class="source-link" href="https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/" target="_blank">OpenAI</a></div>
+<div class="card">
+<span class="tag">企业应用与工具观察</span><h3>Anthropic 公开代理记忆实验：回看原始记录以纠错、整理知识</h3><p>Anthropic 11月6日介绍代理记忆的分层设计：会话记录、记忆笔记、知识组织和预先加载的上下文，闲时再回看记录，纠正错误或整理成互相链接的wiki。其文档问答实验中，wiki与搜索结合比单独wiki更有效。这是工程研究披露，改善的是外部记忆管理，不是修改模型权重，也不是新的无限记忆产品承诺。</p>
+<a class="source-link" href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank">Anthropic</a></div>
+<div class="card">
+<span class="tag">企业应用与工具观察</span><h3>庞巴迪披露 Clara 销售代理：检索规格，并调用专业接口算航程</h3><p>Salesforce 11月6日披露庞巴迪的Clara销售工程代理：从获准技术文档检索并提供引用，将客户问题转为结构化输入，再调用机场限制、飞机性能等专业接口计算航程并展示地图，保存假设和迭代记录。价值在于把检索、计算与CRM串成流程；厂商给出的速度和准确率数据尚不能视为独立评测。</p>
+<a class="source-link" href="https://www.salesforce.com/customer-stories/bombardier/agentic-sales-engineering/" target="_blank">Salesforce</a></div>
+<div class="card">
+<span class="tag">国内 AI 动态</span><h3>Kimi K3.1 Pro Highspeed 登陆 Amazon Bedrock</h3><p>AWS 11月6日宣布Kimi K3.1 Pro Highspeed在Amazon Bedrock可用，面向编程、文档处理等代理任务，提供显式提示词缓存，并通过跨区域推理接入。此次新增是云端托管和采购路径；K3.1的首次发布、完整权重开放已在前期报道，不能把这次上架再次写成新模型或开源首发。</p>
+<a class="source-link" href="https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/" target="_blank">AWS</a></div>
+<div class="card">
+<span class="tag">国际 AI 动态</span><h3>黄仁勋承认婚外情，英伟达董事会启动独立调查</h3><p>英伟达11月8日公布黄仁勋致员工信，他承认对妻子不忠并道歉。同日董事会宣布独立调查，审查他是否成为外国情报活动目标，由独立董事及外部律师监督。董事会称目前没有理由认为美国国家安全或公司机密已受损，并表示信任现任领导团队；调查仍待结论，相关情报指控尚不能视为已被证实。</p>
+<a class="source-link" href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors" target="_blank">NVIDIA</a></div>
+</div>
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
+<div class="news-item">
+<div class="label">实验室评测</div><div class="title">OpenAI 发布 BioBasicsBench，检验 AI 能否读懂日常实验数据</div><div class="summary">OpenAI与Ligo 11月6日发布BioBasicsBench，以100项任务考察原始实验图像、仪器数据、错误识别及证据不足时的判断。GPT‑6 Astra在xhigh设置下获得66.7%的可得评分，高于GPT‑5.6 Sol的43.8%。这是厂商报告的评分项均值，不是实验成功率；图像解释和对照检查仍有明显改进空间。</div>
+<a class="source-link" href="https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/" target="_blank">OpenAI</a></div>
+<div class="news-item">
+<div class="label">多代理实验</div><div class="title">Project EVE：Claude 能协作游戏任务，却难识别被指令破坏的队友</div><div class="summary">Anthropic 11月6日披露Project EVE：Claude在EVE市场回放中依靠买卖价差获利，但预测价格方向表现较弱；在另一款游戏里，代理能分工协作，却很少识别被研究者明确指令暗中破坏任务的队友。实验提示团队需要独立核验关键报告，不能把模拟收益当真实投资业绩，也不能据此断言模型会自发破坏任务。</div>
+<a class="source-link" href="https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs" target="_blank">Anthropic</a></div>
+<div class="news-item">
+<div class="label">语音评测</div><div class="title">Open ASR Leaderboard 增加埃及与尼日利亚英语私有测试集</div><div class="summary">Hugging Face 11月6日宣布与Liva AI合作，为Open ASR Leaderboard加入埃及和尼日利亚英语的自然对话私有数据，并扩充口音分组展示。新增数据用于改善语音识别评测的代表性、减少针对公开测试集优化的空间；它是评测集扩展，不等于发布了新识别模型，也不能替代企业自己的业务语料测试。</div>
+<a class="source-link" href="https://huggingface.co/blog/open-asr-leaderboard-liva" target="_blank">Hugging Face</a></div>
+</div>
+<div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
+<div class="news-item">
+<div class="label">代理记忆</div><div class="title">Anthropic 公开代理记忆实验：回看原始记录以纠错、整理知识</div><div class="summary">Anthropic 11月6日介绍代理记忆的分层设计：会话记录、记忆笔记、知识组织和预先加载的上下文，闲时再回看记录，纠正错误或整理成互相链接的wiki。其文档问答实验中，wiki与搜索结合比单独wiki更有效。这是工程研究披露，改善的是外部记忆管理，不是修改模型权重，也不是新的无限记忆产品承诺。</div>
+<a class="source-link" href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank">Anthropic</a></div>
+<div class="news-item">
+<div class="label">企业案例</div><div class="title">庞巴迪披露 Clara 销售代理：检索规格，并调用专业接口算航程</div><div class="summary">Salesforce 11月6日披露庞巴迪的Clara销售工程代理：从获准技术文档检索并提供引用，将客户问题转为结构化输入，再调用机场限制、飞机性能等专业接口计算航程并展示地图，保存假设和迭代记录。价值在于把检索、计算与CRM串成流程；厂商给出的速度和准确率数据尚不能视为独立评测。</div>
+<a class="source-link" href="https://www.salesforce.com/customer-stories/bombardier/agentic-sales-engineering/" target="_blank">Salesforce</a></div>
+<div class="news-item">
+<div class="label">媒体工作流</div><div class="title">AWS 将 AI 字幕生成接入 MediaConvert 转码流程</div><div class="summary">AWS 11月6日将Elemental Inference Smart Subtitles原生接入MediaConvert，让点播视频在转码和打包流程中直接生成字幕，支持独立字幕文件和烧录输出。首批覆盖英语等六种语言，支持用自定义词典改善专名和术语识别；公告未列中文，企业仍需按语言、地区可用性及实际素材质量评估。</div>
+<a class="source-link" href="https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/" target="_blank">AWS</a></div>
+<div class="news-item">
+<div class="label">开发治理</div><div class="title">GitHub 扩展 Copilot 审查 API，并补充代理使用指标</div><div class="summary">GitHub 11月6日扩展Copilot代码审查管理：可通过API调整企业、组织和仓库设置，识别AI审查输出，并查看评论所报告的技能、MCP及自定义指令来源。使用面板也加入Chat和VS Code Agents窗口数据。两类更新方便管理与追踪，但活跃度不等于生产率，新指标也不改变原有采用阶段定义。</div>
+<a class="source-link" href="https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/" target="_blank">GitHub</a></div>
+</div>
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
+<div class="news-item">
+<div class="label">模型落地</div><div class="title">Kimi K3.1 Pro Highspeed 登陆 Amazon Bedrock</div><div class="summary">AWS 11月6日宣布Kimi K3.1 Pro Highspeed在Amazon Bedrock可用，面向编程、文档处理等代理任务，提供显式提示词缓存，并通过跨区域推理接入。此次新增是云端托管和采购路径；K3.1的首次发布、完整权重开放已在前期报道，不能把这次上架再次写成新模型或开源首发。</div>
+<a class="source-link" href="https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/" target="_blank">AWS</a></div>
+<div class="news-item">
+<div class="label">具身落地</div><div class="title">易博图 CTO 访谈：重卡物理 AI 要同时解决决策延迟与数据闭环</div><div class="summary">36氪11月6日采访易博图CTO李伟，介绍以通用多模态和世界模型支持重卡驾驶、用真实车队运营反哺训练的路线。其“双快”方案试图缩短高层判断与实时规划之间的速度差，商业化先由自营车队验证运营流程。这是公司技术路线与实践的采访披露，尚不能推出已实现全面无人化或稳定盈利。</div>
+<a class="source-link" href="https://www.36kr.com/p/4057656248685701" target="_blank">36氪</a></div>
+</div>
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
+<div class="news-item">
+<div class="label">公司治理</div><div class="title">黄仁勋承认婚外情，英伟达董事会启动独立调查</div><div class="summary">英伟达11月8日公布黄仁勋致员工信，他承认对妻子不忠并道歉。同日董事会宣布独立调查，审查他是否成为外国情报活动目标，由独立董事及外部律师监督。董事会称目前没有理由认为美国国家安全或公司机密已受损，并表示信任现任领导团队；调查仍待结论，相关情报指控尚不能视为已被证实。</div>
+<a class="source-link" href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors" target="_blank">NVIDIA</a></div>
+</div>
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
+<div class="news-item">
+<div class="label">金融稳定</div><div class="title">澳洲联储官员提示：AI 投资需求先行，生产率与回报仍待验证</div><div class="summary">Reuters 11月8日报道，澳洲联储官员Hunter表示，目前证据尚不足以认定AI已显著提高生产率或大规模影响就业，而数据中心投资正增加需求压力。她也提醒，若AI投资回报低于预期，资产价格可能急剧重估并带来金融稳定风险。这是央行官员的阶段性判断，不是AI长期经济效果的定论。</div>
+<a class="source-link" href="https://www.reuters.com/world/asia-pacific/rbas-hunter-says-ai-has-yet-deliver-productivity-boost-trigger-job-losses-2026-11-08/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+<div class="news-item">
+<div class="label">安全协作</div><div class="title">OpenAI 与 Hacktron 合作，重点测试第三方服务连接边界</div><div class="summary">OpenAI 11月6日宣布与Hacktron合作，由双方工程师和安全研究人员共同选择高优先级区域，重点检查OpenAI系统与第三方服务的交互，并扩大其通过Daybreak Red使用前沿模型的权限。此次是针对自身系统的联合防御研究安排，未公布新的漏洞总数，也不是向所有用户开放受限安全模型。</div>
+<a class="source-link" href="https://openai.com/index/partnering-with-hacktron/" target="_blank">OpenAI</a></div>
+<div class="news-item">
+<div class="label">立法动向</div><div class="title">Reuters：美国民主党拟推动 AI 测试、责任与数据中心电费法案</div><div class="summary">Reuters 11月6日报道，美国民主党议员及相关人士计划在次年掌控国会后，推动先进AI独立测试、产品损害责任及数据中心电力成本等法案。报道描述的是立法方向与筹备，尚不是已经通过的法律；白宫态度及国会程序仍将影响其推进。对企业而言，需要跟踪具体文本及适用范围。</div>
+<a class="source-link" href="https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">政策表态</div><div class="title">特朗普称不排斥 AI 护栏，具体监管措施仍未明确</div><div class="summary">Reuters 11月9日00:29 UTC报道，特朗普在CBS采访中表示AI风险可以管理，不排斥设置护栏，也对与民主党合作持开放态度，同时强调不希望监管削弱美国竞争地位。该表态发生在本期截稿前，但尚未给出措施层级或法律文本，不能据此判断联邦AI监管已经转向或新规则即将生效。</div>
+<a class="source-link" href="https://www.reuters.com/world/trump-says-ai-risks-can-be-managed-signals-openness-guardrails-2026-11-09/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
+<div class="news-item">
+<div class="label">工具取舍</div><div class="title">HN 围绕 Pi 讨论：终端、桌面与多模型工作流各有取舍</div><div class="summary">HN围绕“Goodbye Claude, hello Pi”展开讨论，参与者比较终端与桌面界面、多项目会话管理，以及切换模型供应商的便利性。有人重视可定制性，也有人更需要桌面的图片展示和会话组织。这是个人经验和工具取舍，不能当成普遍迁移趋势、市场份额变化或哪款工具性能更强的证明。</div>
+<a class="source-link" href="https://news.ycombinator.com/item?id=50410107" target="_blank">Hacker News</a></div>
+<div class="news-item">
+<div class="label">记忆标准讨论</div><div class="title">HN 讨论代理记忆互通：格式、来源与过期信息该怎样处理</div><div class="summary">HN围绕代理记忆是否需要类似OpenTelemetry的共同规范展开讨论。参与者争论重点应放在文本格式本身，还是记忆归属、来源、关联及失效检查；也有人指出，跨模型长期使用会影响表示方式选择。这仍是社区提议与争论，不能写成已有正式标准或行业已经达成共识。</div>
+<a class="source-link" href="https://news.ycombinator.com/item?id=50411467" target="_blank">Hacker News</a></div>
+</div>
+<div class="footer"><p><a href="index.html" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
+</div>
+</body>
+</html>

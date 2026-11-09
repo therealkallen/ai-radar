@@ -903,6 +903,27 @@
 - HN 开发者交流 AI 工作流：订阅、模型与代理编排如何取舍（https://news.ycombinator.com/item?id=50366117；2026-11-04）。独立工作流征集，不复用模型发布、权重验证或权限争议条目。
 - HN 讨论 MCP 教程：协议细节如何变成易懂的示例（https://news.ycombinator.com/item?id=50379249；2026-11-05）。独立教学设计讨论，与既有MCP连接器发布和工具授权问题不同。
 
+### 第 60 期（2026.11.06 — 11.09）
+
+11月9日周一应刊补发，窗口为Asia/Singapore 11月6日09:30至11月9日09:30，覆盖整个周末。当天09:27自动任务提前返回，11:30后接手采编；来源取回时间与出版时间分别记录。只有日期而无小时的11/6公告保守归本期；11/9 Reuters采访00:29UTC早于截稿。
+
+- OpenAI 发布 BioBasicsBench，检验 AI 能否读懂日常实验数据（https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/；2026-11-06）。完整台账无该基准；区别58期LifeVal日常任务和59期vault结构研究，未拆实验领域凑数。
+- Project EVE：Claude 能协作游戏任务，却难识别被指令破坏的队友（https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs；2026-11-06）。本次新公开具体实验，与其他模型安全报告和通用评测不同；交易与协作来自同一项目，合并一条。
+- Open ASR Leaderboard 增加埃及与尼日利亚英语私有测试集（https://huggingface.co/blog/open-asr-leaderboard-liva；2026-11-06）。台账已有其他ASR模型，此为不同的11/6评测数据扩充；不以同一语音关键词判重。
+- Anthropic 公开代理记忆实验：回看原始记录以纠错、整理知识（https://www.anthropic.com/research/components-of-agent-memory；2026-11-06）。独立工程研究披露，区别59期科学合作和旧长程任务框架；不按四层记忆拆成多个事件。
+- 庞巴迪披露 Clara 销售代理：检索规格，并调用专业接口算航程（https://www.salesforce.com/customer-stories/bombardier/agentic-sales-engineering/；2026-11-06）。台账无Clara案例；与58期Salesforce收购Cresta是不同主体和事件。同日其他庞巴迪案例不另拆计数。
+- AWS 将 AI 字幕生成接入 MediaConvert 转码流程（https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/；2026-11-06）。新的原生工作流集成，区别旧语音模型和普通MediaConvert扩区。
+- GitHub 扩展 Copilot 审查 API，并补充代理使用指标（https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/；2026-11-06）。完整台账无本次API归因/管理与Chat指标新增；同日Copilot治理和指标合并一条，不用周报或修复再计数。
+- Kimi K3.1 Pro Highspeed 登陆 Amazon Bedrock（https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/；2026-11-06）。54期为模型/API、59期为权重公开，本次为Bedrock商用托管阶段的新进展。
+- 易博图 CTO 访谈：重卡物理 AI 要同时解决决策延迟与数据闭环（https://www.36kr.com/p/4057656248685701；2026-11-06）。台账无易博图此采访，与58期墨芯推理部署、57期具身行业采访不同，取新主体和技术实践而非重复泛论。
+- 黄仁勋承认婚外情，英伟达董事会启动独立调查（https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors；2026-11-08）。旧10月报道和国会来函为背景，本次实质新增为11/8本人承认与董事会独立调查，合并单一事件且不再放社区重复计数。
+- 澳洲联储官员提示：AI 投资需求先行，生产率与回报仍待验证（https://www.reuters.com/world/asia-pacific/rbas-hunter-says-ai-has-yet-deliver-productivity-boost-trigger-job-losses-2026-11-08/；2026-11-08）。区别58期ECB、59期OCC检查框架，本次为澳洲央行新增生产率和金融稳定评估，不以股票日涨跌代替金融研究。
+- OpenAI 与 Hacktron 合作，重点测试第三方服务连接边界（https://openai.com/index/partnering-with-hacktron/；2026-11-06）。完整台账9月有Hacktron安全复盘，本次是11/6新官方合作协议和模型准入；与59期GPT-6 Cyber模型发布不同。
+- Reuters：美国民主党拟推动 AI 测试、责任与数据中心电费法案（https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/；2026-11-06）。本次具体议程采访，与59期OCC金融检查指引、旧州法，以及本期特朗普采访立场不同。
+- 特朗普称不排斥 AI 护栏，具体监管措施仍未明确（https://www.reuters.com/world/trump-says-ai-risks-can-be-managed-signals-openness-guardrails-2026-11-09/；2026-11-09）。不同主体的新采访立场，与11/6民主党拟议立法互相关联但不重复。
+- HN 围绕 Pi 讨论：终端、桌面与多模型工作流各有取舍（https://news.ycombinator.com/item?id=50410107；2026-11-07）。台账无该讨论，区别59期通用工作流征集，本条集中在具体替代工具引出的界面和供应商依赖取舍。
+- HN 讨论代理记忆互通：格式、来源与过期信息该怎样处理（https://news.ycombinator.com/item?id=50411467；2026-11-08）。与Anthropic记忆工程研究相关但不同：此条是独立作者与社区对跨框架互操作和来源治理的争论，不复述厂商评测结果。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

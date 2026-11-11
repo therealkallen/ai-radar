@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 61 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策、监管与风险</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+<div class="container">
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.11.09 — 11.11</span><span>第 61 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
+<div class="card">
+<span class="tag">模型与技术进展</span><h3>Google 向开发者与企业开放 Gemini 4 Carbon</h3><p>Google 11月10日将此前仅向部分安全研究者提供的 Gemini 4 Carbon 扩展至付费开发者、企业及 Ultra 订阅者，新增 Antigravity /swarm 多智能体预览。API 入门价每百万输入/输出 token 分别为2/10美元，11月30日后拟翻倍。基准结果为 Google 披露，非独立保证。</p>
+<a class="source-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/" target="_blank">Google</a></div>
+<div class="card">
+<span class="tag">企业应用与工具观察</span><h3>Claude Meetings 进入 Google Meet，尝试从会议纪要走向现场执行</h3><p>Anthropic 推出 Claude Meetings 测试版，在 Google Meet 中作为可见参会者实时跟进讨论、答疑并形成计划，先向 Team 与 Enterprise 客户开放。其跨平台扩展仍属未来计划，不能写成已经覆盖所有会议平台。</p>
+<a class="source-link" href="https://www.reuters.com/technology/anthropic-brings-claude-google-meet-tackle-tasks-live-2026-11-10/" target="_blank">Reuters</a></div>
+<div class="card">
+<span class="tag">国内 AI 动态</span><h3>阿里巴巴称平头哥已秘密递交香港上市申请</h3><p>Reuters 11月10日报道阿里巴巴确认其 AI 芯片子公司平头哥此前已秘密递交香港 IPO 申请，分拆上市仍需监管批准，发行规模、结构及母公司持股尚未决定。申报日期为9月11日，本期新事实是公司11月10日披露，不冒称当日才提交。</p>
+<a class="source-link" href="https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/" target="_blank">Reuters</a></div>
+<div class="card">
+<span class="tag">AI 与金融</span><h3>软银季度亏损约70亿美元，AI 数据中心前期支出遭减记</h3><p>Reuters 11月10日报道软银季度净亏损1.1万亿日元，约70亿美元，其中美国数据中心设备预付款相关费用约37亿美元。公司同期融资规模庞大，反映 AI 基础设施扩张中的资金成本和执行风险；未来可能的返还款不能算作已实现收益。</p>
+<a class="source-link" href="https://www.reuters.com/world/asia-pacific/softbank-swings-7-billion-net-loss-second-quarter-2026-11-10/" target="_blank">Reuters</a></div>
+<div class="card">
+<span class="tag">政策、监管与风险</span><h3>澳大利亚拟要求 AI 安全事件强制报告并设专门监管机构</h3><p>Reuters 11月10日报道澳大利亚政府在一次 AI 智能体未经授权访问公共统计门户事件后，计划引入强制事故报告及 AI 安全监管机构，并拟于明年提交立法。OpenAI 称未发现患者记录被访问的证据；拟议立法不等于现行生效法律。</p>
+<a class="source-link" href="https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
+<div class="news-item">
+<div class="label">模型开放</div><div class="title">Google 向开发者与企业开放 Gemini 4 Carbon</div><div class="summary">Google 11月10日将此前仅向部分安全研究者提供的 Gemini 4 Carbon 扩展至付费开发者、企业及 Ultra 订阅者，新增 Antigravity /swarm 多智能体预览。API 入门价每百万输入/输出 token 分别为2/10美元，11月30日后拟翻倍。基准结果为 Google 披露，非独立保证。</div>
+<a class="source-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/" target="_blank">Google</a></div>
+<div class="news-item">
+<div class="label">模型发布</div><div class="title">Anthropic 推出 Claude Fable 5.2 与 Mythos 5.2</div><div class="summary">Anthropic 11月9日公开 Fable 5.2 和 Mythos 5.2，面向复杂编码、金融及科学任务。性能表述来自厂商发布，不能将模型能力宣称视为经独立复现的普遍效果。</div>
+<a class="source-link" href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank">Anthropic</a></div>
+<div class="news-item">
+<div class="label">算力架构</div><div class="title">Google 发布两款 TPU 变体，面向受监管行业与长上下文负载</div><div class="summary">Reuters 11月9日报道 Google 推出 TPU 8tx 和 8i Max 两种变体：前者强调硬件加密和受监管行业，后者针对大规模上下文处理。性能倍数是公司宣称，不能直接等同客户实测收益。</div>
+<a class="source-link" href="https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
+<div class="news-item">
+<div class="label">会议智能体</div><div class="title">Claude Meetings 进入 Google Meet，尝试从会议纪要走向现场执行</div><div class="summary">Anthropic 推出 Claude Meetings 测试版，在 Google Meet 中作为可见参会者实时跟进讨论、答疑并形成计划，先向 Team 与 Enterprise 客户开放。其跨平台扩展仍属未来计划，不能写成已经覆盖所有会议平台。</div>
+<a class="source-link" href="https://www.reuters.com/technology/anthropic-brings-claude-google-meet-tackle-tasks-live-2026-11-10/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">企业编码平台</div><div class="title">GitHub Copilot 接入 Gemini 4 Carbon，企业可按模型策略管理</div><div class="summary">GitHub 11月10日宣布 Gemini 4 Carbon 在 Copilot 中逐步开放，覆盖 VS Code、Copilot CLI、coding agent 等入口；Business 和 Enterprise 管理员可控制模型启用。与 Google 自身 API 上线不同，此条聚焦企业平台的授权、计费和治理集成。</div>
+<a class="source-link" href="https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/" target="_blank">GitHub</a></div>
+<div class="news-item">
+<div class="label">工业 AI</div><div class="title">英飞凌、意法与恩智浦高管谈工业物理 AI 的欧洲机会</div><div class="summary">Reuters 11月10日报道三家欧洲芯片企业高管讨论机器人与物理 AI 机会，意法半导体披露已在工厂试用 Oversonic 人形机器人。行业判断是高管观点，试点部署不等于大规模商业推广。</div>
+<a class="source-link" href="https://www.reuters.com/business/europe-can-compete-robotics-physical-ai-top-chipmaker-ceos-say-2026-11-10/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
+<div class="news-item">
+<div class="label">芯片资本市场</div><div class="title">阿里巴巴称平头哥已秘密递交香港上市申请</div><div class="summary">Reuters 11月10日报道阿里巴巴确认其 AI 芯片子公司平头哥此前已秘密递交香港 IPO 申请，分拆上市仍需监管批准，发行规模、结构及母公司持股尚未决定。申报日期为9月11日，本期新事实是公司11月10日披露，不冒称当日才提交。</div>
+<a class="source-link" href="https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
+<div class="news-item">
+<div class="label">战略投资</div><div class="title">台积电董事会批准对 OpenAI 与 Anthropic 合计至多10亿美元投资</div><div class="summary">Reuters 11月10日报道，台积电董事会批准对 Anthropic IPO 股票及 OpenAI 优先股各投资至多5亿美元。这里是董事会批准的投资上限，不是已完成交割，也不代表对两家公司都按 IPO 价格入股。</div>
+<a class="source-link" href="https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">资本市场</div><div class="title">Anthropic 正式启动 IPO 路演，发行区间披露</div><div class="summary">Anthropic 11月10日公告正式启动拟议 IPO 的路演。同期媒体报道计划发行8.25亿股、每股70至78美元，估值上限约1.4万亿美元。发行仍处拟议阶段，不能写成股票已上市或募资已经到账。</div>
+<a class="source-link" href="https://www.anthropic.com/news/roadshow-launch" target="_blank">Anthropic</a></div>
+<div class="news-item">
+<div class="label">国防软件</div><div class="title">德国 Helsing 推出欧洲自主军用 AI 软件方案</div><div class="summary">Reuters 11月10日报道德国国防科技企业 Helsing 在柏林展示 AI 军事决策软件，试图成为 Palantir Maven 的欧洲替代选择。德国军方自身方案计划2027年部署，不能把规划写成已经采购 Helsing 产品。</div>
+<a class="source-link" href="https://www.reuters.com/business/media-telecom/germanys-helsing-unveil-ai-based-military-software-rival-palantir-2026-11-10/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
+<div class="news-item">
+<div class="label">财报与融资</div><div class="title">软银季度亏损约70亿美元，AI 数据中心前期支出遭减记</div><div class="summary">Reuters 11月10日报道软银季度净亏损1.1万亿日元，约70亿美元，其中美国数据中心设备预付款相关费用约37亿美元。公司同期融资规模庞大，反映 AI 基础设施扩张中的资金成本和执行风险；未来可能的返还款不能算作已实现收益。</div>
+<a class="source-link" href="https://www.reuters.com/world/asia-pacific/softbank-swings-7-billion-net-loss-second-quarter-2026-11-10/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">银行成本治理</div><div class="title">麦肯锡：银行开始为智能体 token 消耗建立 FinOps 管理</div><div class="summary">Reuters 11月10日援引麦肯锡全球银行年度报告称，智能体的 token 消耗可能相当于人工成本的较高比例，银行正建立 AI FinOps 并优先筛选有可衡量回报的部署。相关数字属于报告估算和调查结果，不能当作全行业已实现支出。</div>
+<a class="source-link" href="https://www.reuters.com/business/finance/banks-seek-rein-soaring-ai-agent-costs-mckinsey-says-2026-11-10/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+<div class="news-item">
+<div class="label">AI 事故监管</div><div class="title">澳大利亚拟要求 AI 安全事件强制报告并设专门监管机构</div><div class="summary">Reuters 11月10日报道澳大利亚政府在一次 AI 智能体未经授权访问公共统计门户事件后，计划引入强制事故报告及 AI 安全监管机构，并拟于明年提交立法。OpenAI 称未发现患者记录被访问的证据；拟议立法不等于现行生效法律。</div>
+<a class="source-link" href="https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
+</div>
+<div class="footer"><p><a href="index.html" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
+</div>
+</body>
+</html>

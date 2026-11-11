@@ -924,6 +924,24 @@
 - HN 围绕 Pi 讨论：终端、桌面与多模型工作流各有取舍（https://news.ycombinator.com/item?id=50410107；2026-11-07）。台账无该讨论，区别59期通用工作流征集，本条集中在具体替代工具引出的界面和供应商依赖取舍。
 - HN 讨论代理记忆互通：格式、来源与过期信息该怎样处理（https://news.ycombinator.com/item?id=50411467；2026-11-08）。与Anthropic记忆工程研究相关但不同：此条是独立作者与社区对跨框架互操作和来源治理的争论，不复述厂商评测结果。
 
+### 第 61 期（2026.11.09 — 11.11）
+
+Asia/Singapore 11月9日09:30至11月11日09:30；2026-11-11出版日，原文日期与取回时间分别记录；未将11/11 09:30后的新事实倒填。
+
+- Google 向开发者与企业开放 Gemini 4 Carbon（https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/；2026-11-10）。区别10月28日仅限网络安全防御者的预发布，本次是公开付费可用的新阶段。
+- Anthropic 推出 Claude Fable 5.2 与 Mythos 5.2（https://www.anthropic.com/claude-fable-and-mythos-5-2；2026-11-09）。不同于此前 Claude 版本和本期 IPO、会议产品，属新型号发布。
+- Claude Meetings 进入 Google Meet，尝试从会议纪要走向现场执行（https://www.reuters.com/technology/anthropic-brings-claude-google-meet-tackle-tasks-live-2026-11-10/；2026-11-10）。不同于 Anthropic 模型发布及 Office 类表格产品，是会议协作新功能。
+- GitHub Copilot 接入 Gemini 4 Carbon，企业可按模型策略管理（https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/；2026-11-10）。独立的第三方平台可用性和企业治理进展；不重复讲 Google 模型基准。
+- Google 发布两款 TPU 变体，面向受监管行业与长上下文负载（https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/；2026-11-09）。区别历史 TPU 系列发布，为本窗口新型号。
+- 阿里巴巴称平头哥已秘密递交香港上市申请（https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/；2026-11-10）。区别既有阿里芯片产品发布，本期是首次确认上市申报状态。
+- 台积电董事会批准对 OpenAI 与 Anthropic 合计至多10亿美元投资（https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/；2026-11-10）。区别此前台积电芯片供应业务和 Anthropic 自身 IPO 定价事件。
+- Anthropic 正式启动 IPO 路演，发行区间披露（https://www.anthropic.com/news/roadshow-launch；2026-11-10）。区别10月26日 S-1 申报，本期新增正式路演阶段；不与台积电投资合并。
+- 软银季度亏损约70亿美元，AI 数据中心前期支出遭减记（https://www.reuters.com/world/asia-pacific/softbank-swings-7-billion-net-loss-second-quarter-2026-11-10/；2026-11-10）。独立季度财务披露，区别此前融资传闻或股价波动。
+- 麦肯锡：银行开始为智能体 token 消耗建立 FinOps 管理（https://www.reuters.com/business/finance/banks-seek-rein-soaring-ai-agent-costs-mckinsey-says-2026-11-10/；2026-11-10）。与此前银行 AI 风险检查不同，本次聚焦成本核算和客户代理授权意愿。
+- 澳大利亚拟要求 AI 安全事件强制报告并设专门监管机构（https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10/；2026-11-10）。不同于既有澳洲 AI 原则，本期是特定事故后的新监管提案。
+- 德国 Helsing 推出欧洲自主军用 AI 软件方案（https://www.reuters.com/business/media-telecom/germanys-helsing-unveil-ai-based-military-software-rival-palantir-2026-11-10/；2026-11-10）。新产品公开及欧洲数字主权讨论，不与澳洲监管合并。
+- 英飞凌、意法与恩智浦高管谈工业物理 AI 的欧洲机会（https://www.reuters.com/business/europe-can-compete-robotics-physical-ai-top-chipmaker-ceos-say-2026-11-10/；2026-11-10）。独立企业生产场景和产业判断，区别国防 AI 软件。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

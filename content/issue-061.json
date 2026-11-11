@@ -1,0 +1,557 @@
+{
+  "num": 61,
+  "period_start": "2026-11-09",
+  "period_end": "2026-11-11",
+  "window_note": "Asia/Singapore 11月9日09:30至11月11日09:30；2026-11-11出版日，原文日期与取回时间分别记录；未将11/11 09:30后的新事实倒填。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "按七栏检索并打开13条入选原文；与完整coverage台账进行事件级核对。重点排除旧的10/28 Gemini Carbon安全预览、11/4 OCC监管、11/6 Kimi Bedrock等已刊事件；IPO路演和先前S-1属于不同硬进展。另检索国内九家厂商和原始媒体、企业软件平台、金融银行/保险/支付/会计审计税务及监管、X/Reddit/HN/GitHub；不以缺少原帖的社区话题凑数。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://api-docs.deepseek.com/updates/",
+        "https://qwenlm.github.io/blog/",
+        "https://www.z.ai/",
+        "https://www.kimi.com/",
+        "https://www.tencent.com/",
+        "https://ai.baidu.com/",
+        "https://seed.bytedance.com/",
+        "https://www.minimaxi.com/",
+        "https://www.iflytek.com/",
+        "https://www.36kr.com/",
+        "https://www.jiqizhixin.com/",
+        "https://www.qbitai.com/"
+      ],
+      "notes": "对 DeepSeek、Qwen、智谱、Kimi、腾讯、百度、字节、MiniMax、讯飞及国内媒体作定向检索；未发现足够可靠且已打开原文的同期重大新发布，国内栏保留阿里平头哥上市状态这一条，不用旧稿填充。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "https://news.ycombinator.com/",
+        "https://www.reddit.com/r/LocalLLaMA/",
+        "https://x.com/",
+        "https://github.com/google-gemini/gemini-cli/issues/30125"
+      ],
+      "notes": "检索四平台；GitHub Gemini CLI Issue #30125原帖日期为11/4，不挪到本期；Reddit Carbon泄漏讨论为10/23旧帖。HN与X未取得可验证本窗口新增且非重复的独立原帖，故本期社区栏无入选条目。",
+      "empty_reason": "本期未找到可核对原帖发布时间且具有独立信息增量的社区内容。"
+    },
+    "coverage_review": {
+      "reviewed_at": "2026-11-11T09:39:00+08:00",
+      "scope": "七栏第一轮；第二轮从 Reuters AI/Finance 原创报道、Anthropic 官方新闻索引、Google 官方模型公告、GitHub Changelog 反查原文。",
+      "sections": [
+        {
+          "category": "模型与技术进展",
+          "count": 3,
+          "candidate_urls": [
+            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+            "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+            "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/"
+          ],
+          "notes": "以本窗口原文核对为准；优先重要产品、交易、监管、财务和企业应用，排除旧闻与不确定传言。"
+        },
+        {
+          "category": "企业应用与工具观察",
+          "count": 3,
+          "candidate_urls": [
+            "https://www.reuters.com/technology/anthropic-brings-claude-google-meet-tackle-tasks-live-2026-11-10/",
+            "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/",
+            "https://www.reuters.com/business/europe-can-compete-robotics-physical-ai-top-chipmaker-ceos-say-2026-11-10/"
+          ],
+          "notes": "以本窗口原文核对为准；优先重要产品、交易、监管、财务和企业应用，排除旧闻与不确定传言。"
+        },
+        {
+          "category": "国内 AI 动态",
+          "count": 1,
+          "candidate_urls": [
+            "https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/"
+          ],
+          "notes": "以本窗口原文核对为准；优先重要产品、交易、监管、财务和企业应用，排除旧闻与不确定传言。"
+        },
+        {
+          "category": "国际 AI 动态",
+          "count": 3,
+          "candidate_urls": [
+            "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/",
+            "https://www.anthropic.com/news/roadshow-launch",
+            "https://www.reuters.com/business/media-telecom/germanys-helsing-unveil-ai-based-military-software-rival-palantir-2026-11-10/"
+          ],
+          "notes": "以本窗口原文核对为准；优先重要产品、交易、监管、财务和企业应用，排除旧闻与不确定传言。"
+        },
+        {
+          "category": "AI 与金融",
+          "count": 2,
+          "candidate_urls": [
+            "https://www.reuters.com/world/asia-pacific/softbank-swings-7-billion-net-loss-second-quarter-2026-11-10/",
+            "https://www.reuters.com/business/finance/banks-seek-rein-soaring-ai-agent-costs-mckinsey-says-2026-11-10/"
+          ],
+          "notes": "以本窗口原文核对为准；优先重要产品、交易、监管、财务和企业应用，排除旧闻与不确定传言。"
+        },
+        {
+          "category": "政策、监管与风险",
+          "count": 1,
+          "candidate_urls": [
+            "https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10/"
+          ],
+          "notes": "以本窗口原文核对为准；优先重要产品、交易、监管、财务和企业应用，排除旧闻与不确定传言。"
+        },
+        {
+          "category": "社媒与开发者社区观察",
+          "count": 0,
+          "candidate_urls": [],
+          "notes": "专项搜索 X、Reddit、HN、GitHub；未找到本窗口同时满足可打开原帖、可靠日期和非重复重要观点的内容，不使用旧帖或搜索摘要凑数。"
+        }
+      ],
+      "second_pass": {
+        "completed": true,
+        "notes": "第二轮新增麦肯锡银行智能体成本、澳洲事故报告监管、平头哥上市申报状态、台积电股权投资、欧洲物理AI试点；排除10/28 Carbon有限预览、11/4银行监管、11/6微软数据中心抗议等旧事件。社区空栏和国内仅一条已单独复核。"
+      },
+      "candidates": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "decision": "include",
+          "reason": "区别10月28日仅限网络安全防御者的预发布，本次是公开付费可用的新阶段。"
+        },
+        {
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "decision": "include",
+          "reason": "不同于此前 Claude 版本和本期 IPO、会议产品，属新型号发布。"
+        },
+        {
+          "url": "https://www.reuters.com/technology/anthropic-brings-claude-google-meet-tackle-tasks-live-2026-11-10/",
+          "decision": "include",
+          "reason": "不同于 Anthropic 模型发布及 Office 类表格产品，是会议协作新功能。"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/",
+          "decision": "include",
+          "reason": "独立的第三方平台可用性和企业治理进展；不重复讲 Google 模型基准。"
+        },
+        {
+          "url": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
+          "decision": "include",
+          "reason": "区别历史 TPU 系列发布，为本窗口新型号。"
+        },
+        {
+          "url": "https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/",
+          "decision": "include",
+          "reason": "区别既有阿里芯片产品发布，本期是首次确认上市申报状态。"
+        },
+        {
+          "url": "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/",
+          "decision": "include",
+          "reason": "区别此前台积电芯片供应业务和 Anthropic 自身 IPO 定价事件。"
+        },
+        {
+          "url": "https://www.anthropic.com/news/roadshow-launch",
+          "decision": "include",
+          "reason": "区别10月26日 S-1 申报，本期新增正式路演阶段；不与台积电投资合并。"
+        },
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/softbank-swings-7-billion-net-loss-second-quarter-2026-11-10/",
+          "decision": "include",
+          "reason": "独立季度财务披露，区别此前融资传闻或股价波动。"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/banks-seek-rein-soaring-ai-agent-costs-mckinsey-says-2026-11-10/",
+          "decision": "include",
+          "reason": "与此前银行 AI 风险检查不同，本次聚焦成本核算和客户代理授权意愿。"
+        },
+        {
+          "url": "https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10/",
+          "decision": "include",
+          "reason": "不同于既有澳洲 AI 原则，本期是特定事故后的新监管提案。"
+        },
+        {
+          "url": "https://www.reuters.com/business/media-telecom/germanys-helsing-unveil-ai-based-military-software-rival-palantir-2026-11-10/",
+          "decision": "include",
+          "reason": "新产品公开及欧洲数字主权讨论，不与澳洲监管合并。"
+        },
+        {
+          "url": "https://www.reuters.com/business/europe-can-compete-robotics-physical-ai-top-chipmaker-ceos-say-2026-11-10/",
+          "decision": "include",
+          "reason": "独立企业生产场景和产业判断，区别国防 AI 软件。"
+        },
+        {
+          "url": "https://www.reddit.com/r/GeminiAI/comments/1xdcnya/gemini_4_carbon_checkpoint_leaks_sightings_new/",
+          "decision": "exclude",
+          "reason": "10月23日旧社区帖，不能充当11月10日公开上线后的新反馈。"
+        },
+        {
+          "url": "https://github.com/google-gemini/gemini-cli/issues/30125",
+          "decision": "exclude",
+          "reason": "原帖11月4日，非本期新增讨论。"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/us-bank-regulator-issues-first-ever-ai-guidance-examiners-2026-11-04/",
+          "decision": "exclude",
+          "reason": "11月4日已属旧出版窗。"
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story_id": "gemini4carbon-public-20261110",
+      "event_id": "gemini4carbon-public-20261110",
+      "primary_category": "模型与技术进展",
+      "label": "模型开放",
+      "title": "Google 向开发者与企业开放 Gemini 4 Carbon",
+      "summary": "Google 11月10日将此前仅向部分安全研究者提供的 Gemini 4 Carbon 扩展至付费开发者、企业及 Ultra 订阅者，新增 Antigravity /swarm 多智能体预览。API 入门价每百万输入/输出 token 分别为2/10美元，11月30日后拟翻倍。基准结果为 Google 披露，非独立保证。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+          "source_name": "Google",
+          "source_domain": "blog.google",
+          "source_tier": "primary",
+          "raw_title": "Gemini 4 Carbon is now available",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Carbon is available via the API in Google AI Studio",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "区别10月28日仅限网络安全防御者的预发布，本次是公开付费可用的新阶段。"
+    },
+    {
+      "story_id": "anthropic-fable-mythos52-20261109",
+      "event_id": "anthropic-fable-mythos52-20261109",
+      "primary_category": "模型与技术进展",
+      "label": "模型发布",
+      "title": "Anthropic 推出 Claude Fable 5.2 与 Mythos 5.2",
+      "summary": "Anthropic 11月9日公开 Fable 5.2 和 Mythos 5.2，面向复杂编码、金融及科学任务。性能表述来自厂商发布，不能将模型能力宣称视为经独立复现的普遍效果。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "canonical_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "source_name": "Anthropic",
+          "source_domain": "anthropic.com",
+          "source_tier": "primary",
+          "raw_title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+          "published_at": "2026-11-09",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Our most capable models for daunting technical work",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "不同于此前 Claude 版本和本期 IPO、会议产品，属新型号发布。"
+    },
+    {
+      "story_id": "anthropic-claude-meetings-20261110",
+      "event_id": "anthropic-claude-meetings-20261110",
+      "primary_category": "企业应用与工具观察",
+      "label": "会议智能体",
+      "title": "Claude Meetings 进入 Google Meet，尝试从会议纪要走向现场执行",
+      "summary": "Anthropic 推出 Claude Meetings 测试版，在 Google Meet 中作为可见参会者实时跟进讨论、答疑并形成计划，先向 Team 与 Enterprise 客户开放。其跨平台扩展仍属未来计划，不能写成已经覆盖所有会议平台。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/technology/anthropic-brings-claude-google-meet-tackle-tasks-live-2026-11-10/",
+          "canonical_url": "https://www.reuters.com/technology/anthropic-brings-claude-google-meet-tackle-tasks-live-2026-11-10/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Anthropic brings Claude to Google Meet to tackle tasks live",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "Claude Meetings, a beta feature",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "不同于 Anthropic 模型发布及 Office 类表格产品，是会议协作新功能。"
+    },
+    {
+      "story_id": "github-carbon-copilot-20261110",
+      "event_id": "github-carbon-copilot-20261110",
+      "primary_category": "企业应用与工具观察",
+      "label": "企业编码平台",
+      "title": "GitHub Copilot 接入 Gemini 4 Carbon，企业可按模型策略管理",
+      "summary": "GitHub 11月10日宣布 Gemini 4 Carbon 在 Copilot 中逐步开放，覆盖 VS Code、Copilot CLI、coding agent 等入口；Business 和 Enterprise 管理员可控制模型启用。与 Google 自身 API 上线不同，此条聚焦企业平台的授权、计费和治理集成。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/",
+          "canonical_url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Gemini 4 Carbon in GitHub Copilot",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Copilot Pro+, Max, Business, and Enterprise",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "独立的第三方平台可用性和企业治理进展；不重复讲 Google 模型基准。"
+    },
+    {
+      "story_id": "google-tpu8-variants-20261109",
+      "event_id": "google-tpu8-variants-20261109",
+      "primary_category": "模型与技术进展",
+      "label": "算力架构",
+      "title": "Google 发布两款 TPU 变体，面向受监管行业与长上下文负载",
+      "summary": "Reuters 11月9日报道 Google 推出 TPU 8tx 和 8i Max 两种变体：前者强调硬件加密和受监管行业，后者针对大规模上下文处理。性能倍数是公司宣称，不能直接等同客户实测收益。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
+          "canonical_url": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Google unveils new AI chip variants as cloud demand surges",
+          "published_at": "2026-11-09",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "two new versions of its in-house tensor processing units",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "区别历史 TPU 系列发布，为本窗口新型号。"
+    },
+    {
+      "story_id": "alibaba-thead-hk-filing-20261110",
+      "event_id": "alibaba-thead-hk-filing-20261110",
+      "primary_category": "国内 AI 动态",
+      "label": "芯片资本市场",
+      "title": "阿里巴巴称平头哥已秘密递交香港上市申请",
+      "summary": "Reuters 11月10日报道阿里巴巴确认其 AI 芯片子公司平头哥此前已秘密递交香港 IPO 申请，分拆上市仍需监管批准，发行规模、结构及母公司持股尚未决定。申报日期为9月11日，本期新事实是公司11月10日披露，不冒称当日才提交。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/",
+          "canonical_url": "https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Alibaba AI chip unit T-Head files for Hong Kong IPO",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "T-Head submitted its Form A1 application on September 11",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "区别既有阿里芯片产品发布，本期是首次确认上市申报状态。"
+    },
+    {
+      "story_id": "tsmc-openai-anthropic-stakes-20261110",
+      "event_id": "tsmc-openai-anthropic-stakes-20261110",
+      "primary_category": "国际 AI 动态",
+      "label": "战略投资",
+      "title": "台积电董事会批准对 OpenAI 与 Anthropic 合计至多10亿美元投资",
+      "summary": "Reuters 11月10日报道，台积电董事会批准对 Anthropic IPO 股票及 OpenAI 优先股各投资至多5亿美元。这里是董事会批准的投资上限，不是已完成交割，也不代表对两家公司都按 IPO 价格入股。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/",
+          "canonical_url": "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "TSMC to invest up to $1 billion in Anthropic, OpenAI",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "up to $500 million each",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "区别此前台积电芯片供应业务和 Anthropic 自身 IPO 定价事件。"
+    },
+    {
+      "story_id": "anthropic-ipo-roadshow-20261110",
+      "event_id": "anthropic-ipo-roadshow-20261110",
+      "primary_category": "国际 AI 动态",
+      "label": "资本市场",
+      "title": "Anthropic 正式启动 IPO 路演，发行区间披露",
+      "summary": "Anthropic 11月10日公告正式启动拟议 IPO 的路演。同期媒体报道计划发行8.25亿股、每股70至78美元，估值上限约1.4万亿美元。发行仍处拟议阶段，不能写成股票已上市或募资已经到账。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.anthropic.com/news/roadshow-launch",
+          "canonical_url": "https://www.anthropic.com/news/roadshow-launch",
+          "source_name": "Anthropic",
+          "source_domain": "anthropic.com",
+          "source_tier": "primary",
+          "raw_title": "Anthropic launches roadshow for proposed initial public offering",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "launched the roadshow for its proposed initial public offering",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "区别10月26日 S-1 申报，本期新增正式路演阶段；不与台积电投资合并。"
+    },
+    {
+      "story_id": "softbank-ai-finance-loss-20261110",
+      "event_id": "softbank-ai-finance-loss-20261110",
+      "primary_category": "AI 与金融",
+      "label": "财报与融资",
+      "title": "软银季度亏损约70亿美元，AI 数据中心前期支出遭减记",
+      "summary": "Reuters 11月10日报道软银季度净亏损1.1万亿日元，约70亿美元，其中美国数据中心设备预付款相关费用约37亿美元。公司同期融资规模庞大，反映 AI 基础设施扩张中的资金成本和执行风险；未来可能的返还款不能算作已实现收益。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/asia-pacific/softbank-swings-7-billion-net-loss-second-quarter-2026-11-10/",
+          "canonical_url": "https://www.reuters.com/world/asia-pacific/softbank-swings-7-billion-net-loss-second-quarter-2026-11-10/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "SoftBank books $7 billion quarterly loss on US data centre hit, financing costs",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "net loss of 1.1 trillion yen",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "独立季度财务披露，区别此前融资传闻或股价波动。"
+    },
+    {
+      "story_id": "banks-agent-token-cost-20261110",
+      "event_id": "banks-agent-token-cost-20261110",
+      "primary_category": "AI 与金融",
+      "label": "银行成本治理",
+      "title": "麦肯锡：银行开始为智能体 token 消耗建立 FinOps 管理",
+      "summary": "Reuters 11月10日援引麦肯锡全球银行年度报告称，智能体的 token 消耗可能相当于人工成本的较高比例，银行正建立 AI FinOps 并优先筛选有可衡量回报的部署。相关数字属于报告估算和调查结果，不能当作全行业已实现支出。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/finance/banks-seek-rein-soaring-ai-agent-costs-mckinsey-says-2026-11-10/",
+          "canonical_url": "https://www.reuters.com/business/finance/banks-seek-rein-soaring-ai-agent-costs-mckinsey-says-2026-11-10/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Banks seek to rein in soaring AI agent costs, McKinsey says",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "token spending potentially reaching 20% of total labor costs",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "与此前银行 AI 风险检查不同，本次聚焦成本核算和客户代理授权意愿。"
+    },
+    {
+      "story_id": "australia-ai-incident-regulation-20261110",
+      "event_id": "australia-ai-incident-regulation-20261110",
+      "primary_category": "政策、监管与风险",
+      "label": "AI 事故监管",
+      "title": "澳大利亚拟要求 AI 安全事件强制报告并设专门监管机构",
+      "summary": "Reuters 11月10日报道澳大利亚政府在一次 AI 智能体未经授权访问公共统计门户事件后，计划引入强制事故报告及 AI 安全监管机构，并拟于明年提交立法。OpenAI 称未发现患者记录被访问的证据；拟议立法不等于现行生效法律。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10/",
+          "canonical_url": "https://www.reuters.com/world/australia-tightens-ai-oversight-rules-after-openai-agent-breached-government-2026-11-10/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Australia to mandate AI breach reporting, create regulator after OpenAI breach",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "mandatory protections will be included in proposed AI legislation",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "不同于既有澳洲 AI 原则，本期是特定事故后的新监管提案。"
+    },
+    {
+      "story_id": "helsing-europe-defence-ai-20261110",
+      "event_id": "helsing-europe-defence-ai-20261110",
+      "primary_category": "国际 AI 动态",
+      "label": "国防软件",
+      "title": "德国 Helsing 推出欧洲自主军用 AI 软件方案",
+      "summary": "Reuters 11月10日报道德国国防科技企业 Helsing 在柏林展示 AI 军事决策软件，试图成为 Palantir Maven 的欧洲替代选择。德国军方自身方案计划2027年部署，不能把规划写成已经采购 Helsing 产品。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/media-telecom/germanys-helsing-unveil-ai-based-military-software-rival-palantir-2026-11-10/",
+          "canonical_url": "https://www.reuters.com/business/media-telecom/germanys-helsing-unveil-ai-based-military-software-rival-palantir-2026-11-10/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Germany's Helsing to unveil AI-based military software as a rival to Palantir",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "European alternative to Palantir's Maven Smart System",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "新产品公开及欧洲数字主权讨论，不与澳洲监管合并。"
+    },
+    {
+      "story_id": "europe-physical-ai-chipmakers-20261110",
+      "event_id": "europe-physical-ai-chipmakers-20261110",
+      "primary_category": "企业应用与工具观察",
+      "label": "工业 AI",
+      "title": "英飞凌、意法与恩智浦高管谈工业物理 AI 的欧洲机会",
+      "summary": "Reuters 11月10日报道三家欧洲芯片企业高管讨论机器人与物理 AI 机会，意法半导体披露已在工厂试用 Oversonic 人形机器人。行业判断是高管观点，试点部署不等于大规模商业推广。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/europe-can-compete-robotics-physical-ai-top-chipmaker-ceos-say-2026-11-10/",
+          "canonical_url": "https://www.reuters.com/business/europe-can-compete-robotics-physical-ai-top-chipmaker-ceos-say-2026-11-10/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Europe can compete in robotics and physical AI, top chipmaker CEOs say",
+          "published_at": "2026-11-10",
+          "retrieved_at": "2026-11-11T09:39:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "ST has begun deploying humanoid robots",
+          "evidence_notes": "已打开原文核对发布时间及主要事实；摘要区分已生效、拟议、计划、公司宣称和媒体转述。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "独立企业生产场景和产业判断，区别国防 AI 软件。"
+    }
+  ]
+}

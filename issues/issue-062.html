@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 62 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策、监管与风险</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+<div class="container">
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.11.11 — 11.13</span><span>第 62 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
+<div class="card">
+<span class="tag">模型与技术进展</span><h3>Gemini 4 Hydrogen 面向开发者与企业发布</h3><p>Google 11月12日发布 Gemini 4 Hydrogen，定位于快速编码与智能体工作流，覆盖 AI Studio、Gemini API、企业及消费端。官方披露可配置四档思考强度，并强调与 Carbon、Argon 配合使用；其基准分数属于厂商发布口径，不是独立实测。</p>
+<a class="source-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank">Google</a></div>
+<div class="card">
+<span class="tag">国际 AI 动态</span><h3>黄仁勋辞任英伟达 CEO，Colette Kress 暂代</h3><p>路透社11月12日报道，黄仁勋在私人关系丑闻与芯片出口争议持续发酵后辞去英伟达首席执行官职务，并将退出董事会。公司指定 CFO Colette Kress 暂任 CEO，Harvey Jones 出任董事长；关于相关人士涉嫌情报活动的指控尚未经司法认定，不能写成定论。</p>
+<a class="source-link" href="https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/" target="_blank">Reuters</a></div>
+<div class="card">
+<span class="tag">AI 与金融</span><h3>俄罗斯联邦储蓄银行发布三年 AI 战略</h3><p>路透社11月12日实地报道，俄罗斯联邦储蓄银行提出新的三年战略，将 AI 能力与数字基础设施视为关键投入。该行称过去三年 AI 相关收入达到1.5万亿卢布，并预计2027年股本回报率至少21%；这些数字为银行自行披露，芯片供应渠道仍未说明。</p>
+<a class="source-link" href="https://www.reuters.com/business/finance/russias-sberbank-expects-roe-least-21-its-2027-2029-strategy-2026-11-12/" target="_blank">Reuters</a></div>
+<div class="card">
+<span class="tag">政策、监管与风险</span><h3>美国非营利组织起诉多家前沿 AI 公司，要求暂停最先进模型研发</h3><p>路透社11月12日报道，多个非营利组织在旧金山起诉 OpenAI、Anthropic、Google、Meta 及 SpaceX AI 部门，主张以加州不公平商业行为法限制前沿模型继续开发。诉讼请求尚待法院裁定，起诉方对模型危险性的描述不能当成法院已经认定的事实。</p>
+<a class="source-link" href="https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
+<div class="news-item">
+<div class="label">新闻核查</div><div class="title">Gemini 4 Hydrogen 面向开发者与企业发布</div><div class="summary">Google 11月12日发布 Gemini 4 Hydrogen，定位于快速编码与智能体工作流，覆盖 AI Studio、Gemini API、企业及消费端。官方披露可配置四档思考强度，并强调与 Carbon、Argon 配合使用；其基准分数属于厂商发布口径，不是独立实测。</div>
+<a class="source-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank">Google</a></div>
+</div>
+<div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
+</div>
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
+<div class="news-item">
+<div class="label">新闻核查</div><div class="title">路透：中国 AI 企业寻求锁定境外英伟达算力</div><div class="summary">路透社11月12日援引多名知情人士称，中国云服务商和部分模型公司正研究提前租用海外 Nvidia GPU 容量，担心美国进一步限制远程使用受出口管制的芯片。相关《远程访问安全法案》尚待参议院审议，报道所涉企业未被逐一具名，不能据此断言违法。</div>
+<a class="source-link" href="https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
+<div class="news-item">
+<div class="label">新闻核查</div><div class="title">黄仁勋辞任英伟达 CEO，Colette Kress 暂代</div><div class="summary">路透社11月12日报道，黄仁勋在私人关系丑闻与芯片出口争议持续发酵后辞去英伟达首席执行官职务，并将退出董事会。公司指定 CFO Colette Kress 暂任 CEO，Harvey Jones 出任董事长；关于相关人士涉嫌情报活动的指控尚未经司法认定，不能写成定论。</div>
+<a class="source-link" href="https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">新闻核查</div><div class="title">法国拟于2027年建立国际防务 AI 中心</div><div class="summary">路透社11月12日报道，法国武装部队部计划设立防务 AI 国际中心，拟于2027年夏季启用，并希望得到北约认可。中心旨在加强欧洲自主防务技术能力，但预算与国际参与名单尚未确定；当前属于筹建计划而非已落地机构。</div>
+<a class="source-link" href="https://www.reuters.com/technology/french-army-ministry-set-up-centre-defence-related-ai-2026-11-12/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
+<div class="news-item">
+<div class="label">新闻核查</div><div class="title">俄罗斯联邦储蓄银行发布三年 AI 战略</div><div class="summary">路透社11月12日实地报道，俄罗斯联邦储蓄银行提出新的三年战略，将 AI 能力与数字基础设施视为关键投入。该行称过去三年 AI 相关收入达到1.5万亿卢布，并预计2027年股本回报率至少21%；这些数字为银行自行披露，芯片供应渠道仍未说明。</div>
+<a class="source-link" href="https://www.reuters.com/business/finance/russias-sberbank-expects-roe-least-21-its-2027-2029-strategy-2026-11-12/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">新闻核查</div><div class="title">美联储 Barr 警告 AI 或加剧就业冲击与通胀压力</div><div class="summary">美联储理事 Michael Barr 在11月12日演讲中指出，AI 投资已推高数据中心、建设及算力投入价格，生产率收益兑现时间仍不确定；未来可能冲击初级岗位并扩大收入分配差距。这是风险评估与政策讨论，并非美联储已决定调整利率。</div>
+<a class="source-link" href="https://www.reuters.com/legal/government/feds-barr-us-should-prepare-serious-ai-job-disruption-widening-inequality-2026-11-12/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">新闻核查</div><div class="title">美国参议员要求评估英伟达对金融系统的系统性影响</div><div class="summary">路透社11月12日报道，美国参议员 Jack Reed 呼吁国会评估英伟达是否具有系统重要性，重点关注复杂融资安排以及银行、信贷市场和养老金对该公司的风险敞口。这是议员提出的审查要求，不是监管机构已认定英伟达为系统重要性金融机构。</div>
+<a class="source-link" href="https://www.reuters.com/business/finance/us-democratic-senator-wants-assessment-whether-nvidia-is-too-big-fail-2026-11-12/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">新闻核查</div><div class="title">高盛预测2027年美国 AI 投资年化规模或达1.4万亿美元</div><div class="summary">路透社11月12日披露，高盛预计 AI 相关硬件与知识产权年化支出2026年底超过9000亿美元，2027年底可能达到1.4万亿美元，约占美国经济4%。这是券商预测而非已发生的支出；报告还讨论融资成本和监管变化可能带来的不确定性。</div>
+<a class="source-link" href="https://www.reuters.com/business/ai-stay-dominant-force-behind-us-business-investment-2027-goldman-says-2026-11-12/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">新闻核查</div><div class="title">德国央行测算股市回调对保险与基金的连锁冲击</div><div class="summary">德国央行11月12日金融稳定评估经路透社报道：若股票下跌7%、债券下跌1%，投资基金净资产损失可能达到3.5%，保险公司证券投资损失约1.4%。报告关注保险机构持有基金的间接传染风险；AI 高估值是市场背景，不应把全部压力测试归因于 AI。</div>
+<a class="source-link" href="https://www.reuters.com/legal/litigation/german-insurers-set-triple-hit-if-stocks-fall-bundesbank-says-2026-11-12/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+<div class="news-item">
+<div class="label">新闻核查</div><div class="title">美国非营利组织起诉多家前沿 AI 公司，要求暂停最先进模型研发</div><div class="summary">路透社11月12日报道，多个非营利组织在旧金山起诉 OpenAI、Anthropic、Google、Meta 及 SpaceX AI 部门，主张以加州不公平商业行为法限制前沿模型继续开发。诉讼请求尚待法院裁定，起诉方对模型危险性的描述不能当成法院已经认定的事实。</div>
+<a class="source-link" href="https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
+<div class="news-item">
+<div class="label">社区观点</div><div class="title">llama.cpp 开发者讨论 v1.0 破坏性变更与迁移成本</div><div class="summary">llama.cpp 官方 GitHub Discussions 的11月12日回复围绕 v1.0 API 兼容性与版本命名展开。开发者建议显式列出 breaking changes，维护者此前说明版本跃迁将清理旧接口。这里记录的是开发者意见与维护计划，不能把讨论当成正式版已发布的证据。</div>
+<a class="source-link" href="https://github.com/ggml-org/llama.cpp/discussions/30566" target="_blank">GitHub Community</a></div>
+</div>
+<div class="footer"><p><a href="index.html" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
+</div>
+</body>
+</html>

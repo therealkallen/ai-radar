@@ -942,6 +942,22 @@ Asia/Singapore 11月9日09:30至11月11日09:30；2026-11-11出版日，原文�
 - 德国 Helsing 推出欧洲自主军用 AI 软件方案（https://www.reuters.com/business/media-telecom/germanys-helsing-unveil-ai-based-military-software-rival-palantir-2026-11-10/；2026-11-10）。新产品公开及欧洲数字主权讨论，不与澳洲监管合并。
 - 英飞凌、意法与恩智浦高管谈工业物理 AI 的欧洲机会（https://www.reuters.com/business/europe-can-compete-robotics-physical-ai-top-chipmaker-ceos-say-2026-11-10/；2026-11-10）。独立企业生产场景和产业判断，区别国防 AI 软件。
 
+### 第 62 期（2026.11.11 — 11.13）
+
+按Asia/Singapore 11月11日09:30至11月13日09:30出版窗口；补刊取回时间与原文发布时间分开。
+
+- Gemini 4 Hydrogen 面向开发者与企业发布（https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/；2026-11-12）。新模型发布，区别61期Carbon付费开放
+- 黄仁勋辞任英伟达 CEO，Colette Kress 暂代（https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/；2026-11-12）。区别60期董事会启动调查，新增正式离职与继任安排
+- 路透：中国 AI 企业寻求锁定境外英伟达算力（https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/；2026-11-12）。新算力采购行为报道，区别61期芯片公司IPO
+- 俄罗斯联邦储蓄银行发布三年 AI 战略（https://www.reuters.com/business/finance/russias-sberbank-expects-roe-least-21-its-2027-2029-strategy-2026-11-12/；2026-11-12）。银行经营战略与具体投入，区别61期银行FinOps研究
+- 美联储 Barr 警告 AI 或加剧就业冲击与通胀压力（https://www.reuters.com/legal/government/feds-barr-us-should-prepare-serious-ai-job-disruption-widening-inequality-2026-11-12/；2026-11-12）。新联储官员讲话，区别此前澳洲联储生产率评论
+- 美国参议员要求评估英伟达对金融系统的系统性影响（https://www.reuters.com/business/finance/us-democratic-senator-wants-assessment-whether-nvidia-is-too-big-fail-2026-11-12/；2026-11-12）。独立的金融系统风险审查倡议，不重复公司CEO辞任事实
+- 法国拟于2027年建立国际防务 AI 中心（https://www.reuters.com/technology/french-army-ministry-set-up-centre-defence-related-ai-2026-11-12/；2026-11-12）。法国独立政策计划，区别61期德国军用AI产品
+- 美国非营利组织起诉多家前沿 AI 公司，要求暂停最先进模型研发（https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/；2026-11-12）。本期新增联合诉讼，区别此前州检察长诉讼
+- 高盛预测2027年美国 AI 投资年化规模或达1.4万亿美元（https://www.reuters.com/business/ai-stay-dominant-force-behind-us-business-investment-2027-goldman-says-2026-11-12/；2026-11-12）。独立金融机构投资预测，区别61期软银季报
+- 德国央行测算股市回调对保险与基金的连锁冲击（https://www.reuters.com/legal/litigation/german-insurers-set-triple-hit-if-stocks-fall-bundesbank-says-2026-11-12/；2026-11-12）。金融稳定新压力测试，与58期ECB估值警示不同
+- llama.cpp 开发者讨论 v1.0 破坏性变更与迁移成本（https://github.com/ggml-org/llama.cpp/discussions/30566；2026-11-12）。原讨论创建于10月15日，仅引用11月12日可见的新回复，不使用11月15日追加评论
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

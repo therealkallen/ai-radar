@@ -1,0 +1,488 @@
+{
+  "num": 62,
+  "period_start": "2026-11-11",
+  "period_end": "2026-11-13",
+  "window_note": "按Asia/Singapore 11月11日09:30至11月13日09:30出版窗口；补刊取回时间与原文发布时间分开。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "11/11 09:30—11/13 09:30新加坡时间；两轮候选检索，实际打开Google官方、Reuters原创、GitHub原讨论。逐项核对61期及coverage台账；没有把11/13较晚公布的DeepSeek API与GitHub Hydrogen集成倒填本期。11条独立事件，已触发低于12条复核，未机械补足。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://api-docs.deepseek.com/zh-cn/updates/",
+        "https://qwenlm.github.io/blog/",
+        "https://www.z.ai/",
+        "https://www.kimi.com/",
+        "https://www.tencent.com/",
+        "https://ai.baidu.com/",
+        "https://seed.bytedance.com/",
+        "https://www.minimaxi.com/",
+        "https://www.iflytek.com/",
+        "https://www.36kr.com/",
+        "https://www.jiqizhixin.com/",
+        "https://www.qbitai.com/"
+      ],
+      "notes": "专项检索九家厂商与多家国内媒体。DeepSeek 11/13 API 全家桶公告可打开，但未核实其早于当日09:30截止，保守留给63期；本期中国算力租用行为由Reuters原创核实，不将媒体转载重复计数。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "https://x.com/",
+        "https://www.reddit.com/r/LocalLLaMA/",
+        "https://news.ycombinator.com/",
+        "https://github.com/ggml-org/llama.cpp/discussions/30566"
+      ],
+      "notes": "逐平台检索，只有GitHub讨论中11/12回复能核实时间与实质内容；其他未取得合格同期原帖。讨论创建于10/15，采用本窗口新增回复，排除11/15评论。"
+    },
+    "coverage_review": {
+      "reviewed_at": "2026-11-16T09:35:00+08:00",
+      "scope": "七栏首轮：官方Google/OpenAI/Anthropic、企业软件索引、九家国内厂商、Reuters原创金融/国际/政策、X/Reddit/HN/GitHub。第二轮从Reuters各分类与GitHub Changelog月索引查漏。",
+      "sections": [
+        {
+          "category": "模型与技术进展",
+          "count": 1,
+          "candidate_urls": [
+            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+          ],
+          "notes": "实际打开原文核对；排除超窗、重复、来源不足的候选。"
+        },
+        {
+          "category": "企业应用与工具观察",
+          "count": 0,
+          "candidate_urls": [],
+          "notes": "查 GitHub、Microsoft、SAP、Salesforce、AWS 等官方索引，未取得截止前可独立核实且足够重要的企业工具新事件，未用小补丁凑数。"
+        },
+        {
+          "category": "国内 AI 动态",
+          "count": 1,
+          "candidate_urls": [
+            "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/"
+          ],
+          "notes": "实际打开原文核对；排除超窗、重复、来源不足的候选。"
+        },
+        {
+          "category": "国际 AI 动态",
+          "count": 2,
+          "candidate_urls": [
+            "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/",
+            "https://www.reuters.com/technology/french-army-ministry-set-up-centre-defence-related-ai-2026-11-12/"
+          ],
+          "notes": "实际打开原文核对；排除超窗、重复、来源不足的候选。"
+        },
+        {
+          "category": "AI 与金融",
+          "count": 5,
+          "candidate_urls": [
+            "https://www.reuters.com/business/finance/russias-sberbank-expects-roe-least-21-its-2027-2029-strategy-2026-11-12/",
+            "https://www.reuters.com/legal/government/feds-barr-us-should-prepare-serious-ai-job-disruption-widening-inequality-2026-11-12/",
+            "https://www.reuters.com/business/finance/us-democratic-senator-wants-assessment-whether-nvidia-is-too-big-fail-2026-11-12/",
+            "https://www.reuters.com/business/ai-stay-dominant-force-behind-us-business-investment-2027-goldman-says-2026-11-12/",
+            "https://www.reuters.com/legal/litigation/german-insurers-set-triple-hit-if-stocks-fall-bundesbank-says-2026-11-12/"
+          ],
+          "notes": "实际打开原文核对；排除超窗、重复、来源不足的候选。"
+        },
+        {
+          "category": "政策、监管与风险",
+          "count": 1,
+          "candidate_urls": [
+            "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/"
+          ],
+          "notes": "实际打开原文核对；排除超窗、重复、来源不足的候选。"
+        },
+        {
+          "category": "社媒与开发者社区观察",
+          "count": 1,
+          "candidate_urls": [
+            "https://github.com/ggml-org/llama.cpp/discussions/30566"
+          ],
+          "notes": "实际打开原文核对；排除超窗、重复、来源不足的候选。"
+        }
+      ],
+      "second_pass": {
+        "completed": true,
+        "notes": "第二轮从Reuters金融/科技/法律分类查得德国央行保险压力测试、Jack Reed系统风险评估、法国防务AI中心；核查后入选。11/13 DeepSeek与Copilot Hydrogen缺确切截止前小时，留下一期；排除11/10旧Anthropic IPO与11/11前旧闻。"
+      },
+      "candidates": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+          "decision": "include",
+          "reason": "新模型发布，区别61期Carbon付费开放"
+        },
+        {
+          "url": "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/",
+          "decision": "include",
+          "reason": "区别60期董事会启动调查，新增正式离职与继任安排"
+        },
+        {
+          "url": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/",
+          "decision": "include",
+          "reason": "新算力采购行为报道，区别61期芯片公司IPO"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/russias-sberbank-expects-roe-least-21-its-2027-2029-strategy-2026-11-12/",
+          "decision": "include",
+          "reason": "银行经营战略与具体投入，区别61期银行FinOps研究"
+        },
+        {
+          "url": "https://www.reuters.com/legal/government/feds-barr-us-should-prepare-serious-ai-job-disruption-widening-inequality-2026-11-12/",
+          "decision": "include",
+          "reason": "新联储官员讲话，区别此前澳洲联储生产率评论"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/us-democratic-senator-wants-assessment-whether-nvidia-is-too-big-fail-2026-11-12/",
+          "decision": "include",
+          "reason": "独立的金融系统风险审查倡议，不重复公司CEO辞任事实"
+        },
+        {
+          "url": "https://www.reuters.com/technology/french-army-ministry-set-up-centre-defence-related-ai-2026-11-12/",
+          "decision": "include",
+          "reason": "法国独立政策计划，区别61期德国军用AI产品"
+        },
+        {
+          "url": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/",
+          "decision": "include",
+          "reason": "本期新增联合诉讼，区别此前州检察长诉讼"
+        },
+        {
+          "url": "https://www.reuters.com/business/ai-stay-dominant-force-behind-us-business-investment-2027-goldman-says-2026-11-12/",
+          "decision": "include",
+          "reason": "独立金融机构投资预测，区别61期软银季报"
+        },
+        {
+          "url": "https://www.reuters.com/legal/litigation/german-insurers-set-triple-hit-if-stocks-fall-bundesbank-says-2026-11-12/",
+          "decision": "include",
+          "reason": "金融稳定新压力测试，与58期ECB估值警示不同"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/discussions/30566",
+          "decision": "include",
+          "reason": "原讨论创建于10月15日，仅引用11月12日可见的新回复，不使用11月15日追加评论"
+        },
+        {
+          "url": "https://api-docs.deepseek.com/news/news261113/",
+          "decision": "exclude",
+          "reason": "11/13公告缺少可核实早于09:30新加坡时间的发布时间，留给63期"
+        },
+        {
+          "url": "https://github.blog/changelog/month/11-2026/",
+          "decision": "exclude",
+          "reason": "11/13 Hydrogen Copilot上线缺截止前小时证据，留下一期"
+        }
+      ],
+      "low_count_review": {
+        "completed": true,
+        "notes": "少于12条复核：企业栏零条，模型栏仅Hydrogen；复查OpenAI/Anthropic/Meta/Microsoft/NVIDIA/AWS/Mistral/HF、SAP/Salesforce/ServiceNow/Adobe/Slack/Notion/Zoom/Vercel及金融监管索引。排除无法确定出版窗口的11/13事件和小版本修复，保留真实重要性优先。"
+      }
+    }
+  },
+  "stories": [
+    {
+      "story_id": "gemini4-hydrogen-release-20261112",
+      "event_id": "gemini4-hydrogen-release-20261112",
+      "primary_category": "模型与技术进展",
+      "label": "新闻核查",
+      "title": "Gemini 4 Hydrogen 面向开发者与企业发布",
+      "summary": "Google 11月12日发布 Gemini 4 Hydrogen，定位于快速编码与智能体工作流，覆盖 AI Studio、Gemini API、企业及消费端。官方披露可配置四档思考强度，并强调与 Carbon、Argon 配合使用；其基准分数属于厂商发布口径，不是独立实测。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+          "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+          "source_name": "Google",
+          "source_domain": "blog.google",
+          "source_tier": "primary",
+          "raw_title": "Introducing Gemini 4 Hydrogen",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Hydrogen is built for rapid execution across diverse agentic workflows",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "新模型发布，区别61期Carbon付费开放"
+    },
+    {
+      "story_id": "nvidia-huang-resigns-20261112",
+      "event_id": "nvidia-huang-resigns-20261112",
+      "primary_category": "国际 AI 动态",
+      "label": "新闻核查",
+      "title": "黄仁勋辞任英伟达 CEO，Colette Kress 暂代",
+      "summary": "路透社11月12日报道，黄仁勋在私人关系丑闻与芯片出口争议持续发酵后辞去英伟达首席执行官职务，并将退出董事会。公司指定 CFO Colette Kress 暂任 CEO，Harvey Jones 出任董事长；关于相关人士涉嫌情报活动的指控尚未经司法认定，不能写成定论。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/",
+          "canonical_url": "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Nvidia CEO Jensen Huang resigns in blow to AI boom he helped foster",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "Colette Kress will take over as interim CEO",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "区别60期董事会启动调查，新增正式离职与继任安排"
+    },
+    {
+      "story_id": "china-overseas-gpu-reservations-20261112",
+      "event_id": "china-overseas-gpu-reservations-20261112",
+      "primary_category": "国内 AI 动态",
+      "label": "新闻核查",
+      "title": "路透：中国 AI 企业寻求锁定境外英伟达算力",
+      "summary": "路透社11月12日援引多名知情人士称，中国云服务商和部分模型公司正研究提前租用海外 Nvidia GPU 容量，担心美国进一步限制远程使用受出口管制的芯片。相关《远程访问安全法案》尚待参议院审议，报道所涉企业未被逐一具名，不能据此断言违法。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/",
+          "canonical_url": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Chinese AI firms rush to secure Nvidia chip capacity as spy scandal stirs fear of US curbs",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "Chinese AI companies are trying to rent Nvidia-powered computing capacity outside China",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "新算力采购行为报道，区别61期芯片公司IPO"
+    },
+    {
+      "story_id": "sberbank-ai-strategy-20261112",
+      "event_id": "sberbank-ai-strategy-20261112",
+      "primary_category": "AI 与金融",
+      "label": "新闻核查",
+      "title": "俄罗斯联邦储蓄银行发布三年 AI 战略",
+      "summary": "路透社11月12日实地报道，俄罗斯联邦储蓄银行提出新的三年战略，将 AI 能力与数字基础设施视为关键投入。该行称过去三年 AI 相关收入达到1.5万亿卢布，并预计2027年股本回报率至少21%；这些数字为银行自行披露，芯片供应渠道仍未说明。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/finance/russias-sberbank-expects-roe-least-21-its-2027-2029-strategy-2026-11-12/",
+          "canonical_url": "https://www.reuters.com/business/finance/russias-sberbank-expects-roe-least-21-its-2027-2029-strategy-2026-11-12/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Russia's Sberbank doubles down on AI after drone attack on data centre",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "AI-related revenue had reached 1.5 trillion roubles",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "银行经营战略与具体投入，区别61期银行FinOps研究"
+    },
+    {
+      "story_id": "fed-barr-ai-jobs-inflation-20261112",
+      "event_id": "fed-barr-ai-jobs-inflation-20261112",
+      "primary_category": "AI 与金融",
+      "label": "新闻核查",
+      "title": "美联储 Barr 警告 AI 或加剧就业冲击与通胀压力",
+      "summary": "美联储理事 Michael Barr 在11月12日演讲中指出，AI 投资已推高数据中心、建设及算力投入价格，生产率收益兑现时间仍不确定；未来可能冲击初级岗位并扩大收入分配差距。这是风险评估与政策讨论，并非美联储已决定调整利率。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/legal/government/feds-barr-us-should-prepare-serious-ai-job-disruption-widening-inequality-2026-11-12/",
+          "canonical_url": "https://www.reuters.com/legal/government/feds-barr-us-should-prepare-serious-ai-job-disruption-widening-inequality-2026-11-12/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Fed's Barr: US should prepare for 'serious' AI job disruption, widening inequality",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "serious short-term disruptions",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "新联储官员讲话，区别此前澳洲联储生产率评论"
+    },
+    {
+      "story_id": "nvidia-systemic-finance-review-20261112",
+      "event_id": "nvidia-systemic-finance-review-20261112",
+      "primary_category": "AI 与金融",
+      "label": "新闻核查",
+      "title": "美国参议员要求评估英伟达对金融系统的系统性影响",
+      "summary": "路透社11月12日报道，美国参议员 Jack Reed 呼吁国会评估英伟达是否具有系统重要性，重点关注复杂融资安排以及银行、信贷市场和养老金对该公司的风险敞口。这是议员提出的审查要求，不是监管机构已认定英伟达为系统重要性金融机构。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/finance/us-democratic-senator-wants-assessment-whether-nvidia-is-too-big-fail-2026-11-12/",
+          "canonical_url": "https://www.reuters.com/business/finance/us-democratic-senator-wants-assessment-whether-nvidia-is-too-big-fail-2026-11-12/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "US Democratic senator wants assessment of whether Nvidia is 'too big to fail'",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "an assessment of whether the company is ‘too big to fail’",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "独立的金融系统风险审查倡议，不重复公司CEO辞任事实"
+    },
+    {
+      "story_id": "france-defence-ai-centre-20261112",
+      "event_id": "france-defence-ai-centre-20261112",
+      "primary_category": "国际 AI 动态",
+      "label": "新闻核查",
+      "title": "法国拟于2027年建立国际防务 AI 中心",
+      "summary": "路透社11月12日报道，法国武装部队部计划设立防务 AI 国际中心，拟于2027年夏季启用，并希望得到北约认可。中心旨在加强欧洲自主防务技术能力，但预算与国际参与名单尚未确定；当前属于筹建计划而非已落地机构。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/technology/french-army-ministry-set-up-centre-defence-related-ai-2026-11-12/",
+          "canonical_url": "https://www.reuters.com/technology/french-army-ministry-set-up-centre-defence-related-ai-2026-11-12/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "French army ministry to set up centre for defence-related AI",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "due to open in summer 2027",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "法国独立政策计划，区别61期德国军用AI产品"
+    },
+    {
+      "story_id": "ai-frontier-lawsuit-20261112",
+      "event_id": "ai-frontier-lawsuit-20261112",
+      "primary_category": "政策、监管与风险",
+      "label": "新闻核查",
+      "title": "美国非营利组织起诉多家前沿 AI 公司，要求暂停最先进模型研发",
+      "summary": "路透社11月12日报道，多个非营利组织在旧金山起诉 OpenAI、Anthropic、Google、Meta 及 SpaceX AI 部门，主张以加州不公平商业行为法限制前沿模型继续开发。诉讼请求尚待法院裁定，起诉方对模型危险性的描述不能当成法院已经认定的事实。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/",
+          "canonical_url": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "OpenAI, Google, Anthropic hit with lawsuit seeking halt to frontier AI development",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "sued in San Francisco",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "本期新增联合诉讼，区别此前州检察长诉讼"
+    },
+    {
+      "story_id": "goldman-ai-capex-2027-20261112",
+      "event_id": "goldman-ai-capex-2027-20261112",
+      "primary_category": "AI 与金融",
+      "label": "新闻核查",
+      "title": "高盛预测2027年美国 AI 投资年化规模或达1.4万亿美元",
+      "summary": "路透社11月12日披露，高盛预计 AI 相关硬件与知识产权年化支出2026年底超过9000亿美元，2027年底可能达到1.4万亿美元，约占美国经济4%。这是券商预测而非已发生的支出；报告还讨论融资成本和监管变化可能带来的不确定性。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/ai-stay-dominant-force-behind-us-business-investment-2027-goldman-says-2026-11-12/",
+          "canonical_url": "https://www.reuters.com/business/ai-stay-dominant-force-behind-us-business-investment-2027-goldman-says-2026-11-12/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "AI to stay dominant force behind US business investment in 2027, Goldman says",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "$1.4 trillion by the end of 2027",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "独立金融机构投资预测，区别61期软银季报"
+    },
+    {
+      "story_id": "german-insurance-fund-stress-20261112",
+      "event_id": "german-insurance-fund-stress-20261112",
+      "primary_category": "AI 与金融",
+      "label": "新闻核查",
+      "title": "德国央行测算股市回调对保险与基金的连锁冲击",
+      "summary": "德国央行11月12日金融稳定评估经路透社报道：若股票下跌7%、债券下跌1%，投资基金净资产损失可能达到3.5%，保险公司证券投资损失约1.4%。报告关注保险机构持有基金的间接传染风险；AI 高估值是市场背景，不应把全部压力测试归因于 AI。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/legal/litigation/german-insurers-set-triple-hit-if-stocks-fall-bundesbank-says-2026-11-12/",
+          "canonical_url": "https://www.reuters.com/legal/litigation/german-insurers-set-triple-hit-if-stocks-fall-bundesbank-says-2026-11-12/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "German insurers set for triple hit if stocks fall, Bundesbank says",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "funds would lose 3.5% of net assets",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "金融稳定新压力测试，与58期ECB估值警示不同"
+    },
+    {
+      "story_id": "llamacpp-v1-discussion-20261112",
+      "event_id": "llamacpp-v1-discussion-20261112",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "社区观点",
+      "title": "llama.cpp 开发者讨论 v1.0 破坏性变更与迁移成本",
+      "summary": "llama.cpp 官方 GitHub Discussions 的11月12日回复围绕 v1.0 API 兼容性与版本命名展开。开发者建议显式列出 breaking changes，维护者此前说明版本跃迁将清理旧接口。这里记录的是开发者意见与维护计划，不能把讨论当成正式版已发布的证据。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.com/ggml-org/llama.cpp/discussions/30566",
+          "canonical_url": "https://github.com/ggml-org/llama.cpp/discussions/30566",
+          "source_name": "GitHub Community",
+          "source_domain": "github.com",
+          "source_tier": "social_signal",
+          "raw_title": "dev : preparing for v1.0.0",
+          "published_at": "2026-11-12",
+          "retrieved_at": "2026-11-16T09:35:00+08:00",
+          "evidence_type": "opened_community_thread",
+          "raw_excerpt": "the major version bump signifies breaking changes in the API",
+          "evidence_notes": "已实际打开原始页面核对，补刊检索日期与原文发表日期分开；仅采用出版截止前的事实。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "原讨论创建于10月15日，仅引用11月12日可见的新回复，不使用11月15日追加评论",
+      "evidence_type": "community_observation"
+    }
+  ]
+}

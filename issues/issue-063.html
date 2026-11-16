@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 63 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策、监管与风险</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+<div class="container">
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.11.13 — 11.16</span><span>第 63 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
+<div class="card">
+<span class="tag">国内 AI 动态</span><h3>DeepSeek 将搜索、文件、语音与安全能力开放为 API</h3><p>DeepSeek 11月13日发布应用功能 API，开发者可通过 V4.1-Flash 的 Messages、Responses 和 Chat Completions 接口启用网页搜索、文件输入、URL读取与安全检测，另有 OCR、ASR、TTS 独立接口。官方说明额外工具调用另行收费，面向公众的应用需启用安全检查。</p>
+<a class="source-link" href="https://api-docs.deepseek.com/news/news261113/" target="_blank">DeepSeek</a></div>
+<div class="card">
+<span class="tag">模型与技术进展</span><h3>llama.cpp 与 ggml 发布 v1.0，正式约定 API 兼容性规则</h3><p>ggml-org 11月13日正式发布 llama.cpp 和 ggml 的 v1.0.0，采用语义化版本规则：公开 C API 的破坏性变更触发主版本更新。此次还移除旧接口、加入 MoE 缓存与语音端点，并加强 llama-server 安全性。重点在开发者依赖稳定性，不应误称模型本身升级。</p>
+<a class="source-link" href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" target="_blank">Hugging Face</a></div>
+<div class="card">
+<span class="tag">企业应用与工具观察</span><h3>GitHub Copilot 上线 Gemini 4 Hydrogen，支持企业模型策略</h3><p>GitHub 11月13日宣布 Gemini 4 Hydrogen 在 Copilot 中一般可用，覆盖 VS Code、CLI、编码智能体和多种 IDE，企业管理员可通过模型策略控制访问。官方提醒逐步推送，并按提供商价格计费。该事件是第三方平台正式接入，与62期Google模型首次发布分属不同阶段。</p>
+<a class="source-link" href="https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/" target="_blank">GitHub</a></div>
+<div class="card">
+<span class="tag">AI 与金融</span><h3>美联储金融稳定报告：87%受访机构联系人关注 AI 风险</h3><p>美联储11月13日金融稳定报告显示，87%的受访市场联系人将 AI 列为显著金融稳定风险，较春季的50%上升；报告还关注数据中心融资、长期租约与担保形成的复杂风险敞口。该比例来自市场联系人调查，并非全体银行或公众调查。</p>
+<a class="source-link" href="https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">llama.cpp 与 ggml 发布 v1.0，正式约定 API 兼容性规则</div><div class="summary">ggml-org 11月13日正式发布 llama.cpp 和 ggml 的 v1.0.0，采用语义化版本规则：公开 C API 的破坏性变更触发主版本更新。此次还移除旧接口、加入 MoE 缓存与语音端点，并加强 llama-server 安全性。重点在开发者依赖稳定性，不应误称模型本身升级。</div>
+<a class="source-link" href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" target="_blank">Hugging Face</a></div>
+</div>
+<div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">GitHub Copilot 上线 Gemini 4 Hydrogen，支持企业模型策略</div><div class="summary">GitHub 11月13日宣布 Gemini 4 Hydrogen 在 Copilot 中一般可用，覆盖 VS Code、CLI、编码智能体和多种 IDE，企业管理员可通过模型策略控制访问。官方提醒逐步推送，并按提供商价格计费。该事件是第三方平台正式接入，与62期Google模型首次发布分属不同阶段。</div>
+<a class="source-link" href="https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/" target="_blank">GitHub</a></div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">GitHub Copilot App 正式支持连接企业自托管 GHES</div><div class="summary">GitHub 11月13日宣布 Copilot App 现可连接 GitHub Enterprise Server，处理远程仓库、Issues 和 PR。该功能从可选预览转为一般可用，要求 Copilot App 1.2.0 及以上，且 GHES 暂不支持云端会话；这对企业代码治理和本地仓库访问边界具有实际影响。</div>
+<a class="source-link" href="https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/" target="_blank">GitHub</a></div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">GitHub 公布12月 Copilot 模型下线计划，企业需核对策略</div><div class="summary">GitHub 11月13日公告，计划12月14日在 Copilot 各体验中停用若干旧模型，包括 Claude Fable 5、Gemini 3.8 Flash、Gemini 4 Argon 等，列出替代型号和企业模型策略操作。此次是未来下线预告，并非这些模型已经停用；对依赖固定模型的工作流需要提前检查。</div>
+<a class="source-link" href="https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/" target="_blank">GitHub</a></div>
+</div>
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">DeepSeek 将搜索、文件、语音与安全能力开放为 API</div><div class="summary">DeepSeek 11月13日发布应用功能 API，开发者可通过 V4.1-Flash 的 Messages、Responses 和 Chat Completions 接口启用网页搜索、文件输入、URL读取与安全检测，另有 OCR、ASR、TTS 独立接口。官方说明额外工具调用另行收费，面向公众的应用需启用安全检查。</div>
+<a class="source-link" href="https://api-docs.deepseek.com/news/news261113/" target="_blank">DeepSeek</a></div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">路透调查中国 AI 教育推进：普及目标与效果评估并存</div><div class="summary">路透社11月16日发布实地调查，梳理中国推动2030年前学生 AI 素养普及的政策、地方采购与学校实践，指出应用覆盖面大但统一评估标准尚未成熟。调查称部分学校借助 Qwen、字节和智谱模型生成课程，相关成绩改善为学校自述，研究中的相关性不能写成因果。</div>
+<a class="source-link" href="https://www.reuters.com/world/china/inside-chinas-drive-build-an-ai-native-generation-2026-11-16/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">美财长要求英伟达外聘 CEO，并就出口合规限期答复</div><div class="summary">路透社11月15日报道，美国财长 Bessent 公开建议英伟达从公司外部寻找继任 CEO，并要求董事会及外部律师在十天内回应出口合规文化相关问题。与此同时媒体报道称 Arm CEO Rene Haas 已获接触，但尚未确定人选。该进展区别62期黄仁勋正式辞任，属于后续治理与监管压力。</div>
+<a class="source-link" href="https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">美联储金融稳定报告：87%受访机构联系人关注 AI 风险</div><div class="summary">美联储11月13日金融稳定报告显示，87%的受访市场联系人将 AI 列为显著金融稳定风险，较春季的50%上升；报告还关注数据中心融资、长期租约与担保形成的复杂风险敞口。该比例来自市场联系人调查，并非全体银行或公众调查。</div>
+<a class="source-link" href="https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">路透：Anthropic IPO 路演获超额认购，投资人质疑优势持续性</div><div class="summary">路透社11月13日独家报道，Anthropic 的大型 IPO 在路演前几日吸引强劲机构订单，知情人士称截至周四订单约为可售股份六倍；投资者仍在评估 Google 等对手追赶速度、Claude 编码之外的市场空间与高估值。超额认购数字来自匿名人士，并非最终发行结果。</div>
+<a class="source-link" href="https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">联合国日内瓦会议讨论自主武器规则，美俄反对强制性协议</div><div class="summary">路透社11月16日报道，日内瓦相关会议将讨论是否启动致命自主武器的国际约束性规则谈判，多数缔约方支持进一步制定规则，美国、俄罗斯等倾向非约束性路径。会议尚在进行，不能把提案写成已达成条约；AI武器的责任与人类控制是核心争议。</div>
+<a class="source-link" href="https://www.reuters.com/world/us-russia-oppose-talks-limiting-autonomous-weapons-2026-11-16/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
+<div class="news-item">
+<div class="label">社区体验</div><div class="title">Reddit 讨论 llama.cpp v1.0：维护者数量与性能取舍引争议</div><div class="summary">11月13日 r/LocalLLaMA 原帖围绕 llama.cpp v1.0 展开，开发者一方面认可本地推理生态，另一方面反映积压 PR、维护人手和部分优化合入缓慢的问题。属于个人体验与社区治理争论，不等于官方承认产品性能下降，也不将发帖后的票数当作出版日热度。</div>
+<a class="source-link" href="https://www.reddit.com/r/LocalLLaMA/comments/1xv8t2e/llamacpp_v10_is_here/" target="_blank">Reddit</a></div>
+</div>
+<div class="footer"><p><a href="index.html" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
+</div>
+</body>
+</html>

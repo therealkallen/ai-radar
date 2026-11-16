@@ -1,0 +1,489 @@
+{
+  "num": 63,
+  "period_start": "2026-11-13",
+  "period_end": "2026-11-16",
+  "window_note": "按Asia/Singapore 11月13日09:30至11月16日09:30窗口，覆盖周末；11/13无小时公告保守归本期；补刊检索时间不冒充发表时间。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "第一轮逐栏检索Google、OpenAI、Anthropic、GitHub、Hugging Face、国内厂商及Reuters金融/政策/国际；第二轮从官方索引与Reuters金融/国际原报道反查。11条独立事件，按少于12条要求复核，未将相同事件拆分凑数。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://api-docs.deepseek.com/zh-cn/updates/",
+        "https://qwenlm.github.io/blog/",
+        "https://www.z.ai/",
+        "https://www.kimi.com/",
+        "https://www.tencent.com/",
+        "https://ai.baidu.com/",
+        "https://seed.bytedance.com/",
+        "https://www.minimaxi.com/",
+        "https://www.iflytek.com/",
+        "https://www.36kr.com/",
+        "https://www.jiqizhixin.com/",
+        "https://www.qbitai.com/"
+      ],
+      "notes": "检索九家厂商及国内原创媒体，核对DeepSeek 11/13 API与Reuters 11/16中国AI教育调查；未将11/12境外算力租用重复刊载。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "https://x.com/",
+        "https://www.reddit.com/r/LocalLLaMA/comments/1xv8t2e/llamacpp_v10_is_here/",
+        "https://news.ycombinator.com/",
+        "https://github.com/ggml-org/llama.cpp/discussions/30566"
+      ],
+      "notes": "专项检索X、Reddit、HN、GitHub；Reddit 11/13原帖有可核实的维护者与合并速度争议，其他未取得同窗非重复且日期明确的独立观点。"
+    },
+    "coverage_review": {
+      "reviewed_at": "2026-11-16T09:42:00+08:00",
+      "scope": "七栏两轮研究；重点复查模型官方索引、企业软件发布、国内九家、金融机构/监管原文、Reuters调查与四社区原帖。",
+      "sections": [
+        {
+          "category": "模型与技术进展",
+          "count": 1,
+          "candidate_urls": [
+            "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+          ],
+          "notes": "已检索并打开候选原文，逐项核对日期、事件独立性与62期/coverage台账；排除小修复与不确定消息。"
+        },
+        {
+          "category": "企业应用与工具观察",
+          "count": 3,
+          "candidate_urls": [
+            "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/",
+            "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/",
+            "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/"
+          ],
+          "notes": "已检索并打开候选原文，逐项核对日期、事件独立性与62期/coverage台账；排除小修复与不确定消息。"
+        },
+        {
+          "category": "国内 AI 动态",
+          "count": 2,
+          "candidate_urls": [
+            "https://api-docs.deepseek.com/news/news261113/",
+            "https://www.reuters.com/world/china/inside-chinas-drive-build-an-ai-native-generation-2026-11-16/"
+          ],
+          "notes": "已检索并打开候选原文，逐项核对日期、事件独立性与62期/coverage台账；排除小修复与不确定消息。"
+        },
+        {
+          "category": "国际 AI 动态",
+          "count": 1,
+          "candidate_urls": [
+            "https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/"
+          ],
+          "notes": "已检索并打开候选原文，逐项核对日期、事件独立性与62期/coverage台账；排除小修复与不确定消息。"
+        },
+        {
+          "category": "AI 与金融",
+          "count": 2,
+          "candidate_urls": [
+            "https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/",
+            "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/"
+          ],
+          "notes": "已检索并打开候选原文，逐项核对日期、事件独立性与62期/coverage台账；排除小修复与不确定消息。"
+        },
+        {
+          "category": "政策、监管与风险",
+          "count": 1,
+          "candidate_urls": [
+            "https://www.reuters.com/world/us-russia-oppose-talks-limiting-autonomous-weapons-2026-11-16/"
+          ],
+          "notes": "已检索并打开候选原文，逐项核对日期、事件独立性与62期/coverage台账；排除小修复与不确定消息。"
+        },
+        {
+          "category": "社媒与开发者社区观察",
+          "count": 1,
+          "candidate_urls": [
+            "https://www.reddit.com/r/LocalLLaMA/comments/1xv8t2e/llamacpp_v10_is_here/"
+          ],
+          "notes": "已检索并打开候选原文，逐项核对日期、事件独立性与62期/coverage台账；排除小修复与不确定消息。"
+        }
+      ],
+      "second_pass": {
+        "completed": true,
+        "notes": "从Reuters金融原报道发现美联储11/13金融稳定报告与Anthropic路演订单增量，从11/16国际报道发现自主武器谈判及中国AI教育调查；从GitHub月索引补充GHES正式接入与模型退役预告。排除重复的62期CEO辞任与62期Hydrogen首发。"
+      },
+      "candidates": [
+        {
+          "url": "https://api-docs.deepseek.com/news/news261113/",
+          "decision": "include",
+          "reason": "本期新API发布，区别旧V4.1模型本身"
+        },
+        {
+          "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+          "decision": "include",
+          "reason": "62期社区讨论是发布前API迁移意见，63期为正式版本硬进展"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/",
+          "decision": "include",
+          "reason": "独立的平台接入，不重复62期模型发布"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/",
+          "decision": "include",
+          "reason": "新GHES一般可用阶段，非模型接入重复"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/",
+          "decision": "include",
+          "reason": "独立企业生命周期治理变更，区别新模型上架"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/",
+          "decision": "include",
+          "reason": "新的11/13正式金融稳定报告，区别62期Barr个人讲话"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/",
+          "decision": "include",
+          "reason": "区别61期路演启动，本期新增订单进展与机构分歧"
+        },
+        {
+          "url": "https://www.reuters.com/world/china/inside-chinas-drive-build-an-ai-native-generation-2026-11-16/",
+          "decision": "include",
+          "reason": "11/16独立实地调查新发布，非旧教育政策重报"
+        },
+        {
+          "url": "https://www.reuters.com/world/us-russia-oppose-talks-limiting-autonomous-weapons-2026-11-16/",
+          "decision": "include",
+          "reason": "本期新谈判节点，区别此前欧洲军用AI产品及法国中心计划"
+        },
+        {
+          "url": "https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/",
+          "decision": "include",
+          "reason": "辞任后的新公开监管要求，不重复辞任事实"
+        },
+        {
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xv8t2e/llamacpp_v10_is_here/",
+          "decision": "include",
+          "reason": "与正式v1发布相关但独立社区反馈，记录治理争论而非重复产品规格"
+        },
+        {
+          "url": "https://www.theguardian.com/technology/2026/nov/16/ai-related-child-sexual-abuse-material-rise-exploitation-deepfakes",
+          "decision": "exclude",
+          "reason": "已打开原文但theguardian.com不在当前可信媒体allowlist；不改白名单、不用转载替代"
+        },
+        {
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-allege-deepseek-kimi-and-other-chinese-ai-models-were-trained-on-export-controlled-nvidia-blackwell-chips-statistical-analysis-on-model-weights-reveals-high-correlation-to-nvidia-hardware",
+          "decision": "exclude",
+          "reason": "来源不在允许媒体列表且研究本身不能证明出口违法，未作为新闻事实发布"
+        }
+      ],
+      "low_count_review": {
+        "completed": true,
+        "notes": "11条触发低条数复核；逐项复查模型栏、国际/政策及主要国际厂商和企业软件。剔除无独立硬进展、发布时间不明或不在来源allowlist的候选；不将金融市场同一主题拆分。"
+      }
+    }
+  },
+  "stories": [
+    {
+      "story_id": "deepseek-app-apis-202611",
+      "event_id": "deepseek-app-apis-202611",
+      "primary_category": "国内 AI 动态",
+      "label": "行业进展",
+      "title": "DeepSeek 将搜索、文件、语音与安全能力开放为 API",
+      "summary": "DeepSeek 11月13日发布应用功能 API，开发者可通过 V4.1-Flash 的 Messages、Responses 和 Chat Completions 接口启用网页搜索、文件输入、URL读取与安全检测，另有 OCR、ASR、TTS 独立接口。官方说明额外工具调用另行收费，面向公众的应用需启用安全检查。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://api-docs.deepseek.com/news/news261113/",
+          "canonical_url": "https://api-docs.deepseek.com/news/news261113/",
+          "source_name": "DeepSeek",
+          "source_domain": "api-docs.deepseek.com",
+          "source_tier": "primary",
+          "raw_title": "The full DeepSeek App experience, now via API",
+          "published_at": "2026-11-13",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "The capabilities behind the DeepSeek App are now available through the DeepSeek API",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "本期新API发布，区别旧V4.1模型本身"
+    },
+    {
+      "story_id": "llamacpp-v1-202611",
+      "event_id": "llamacpp-v1-202611",
+      "primary_category": "模型与技术进展",
+      "label": "行业进展",
+      "title": "llama.cpp 与 ggml 发布 v1.0，正式约定 API 兼容性规则",
+      "summary": "ggml-org 11月13日正式发布 llama.cpp 和 ggml 的 v1.0.0，采用语义化版本规则：公开 C API 的破坏性变更触发主版本更新。此次还移除旧接口、加入 MoE 缓存与语音端点，并加强 llama-server 安全性。重点在开发者依赖稳定性，不应误称模型本身升级。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+          "canonical_url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+          "source_name": "Hugging Face",
+          "source_domain": "huggingface.co",
+          "source_tier": "primary",
+          "raw_title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+          "published_at": "2026-11-13",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Today we release libraries v1.0.0",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "62期社区讨论是发布前API迁移意见，63期为正式版本硬进展"
+    },
+    {
+      "story_id": "github-copilot-hydrogen-202611",
+      "event_id": "github-copilot-hydrogen-202611",
+      "primary_category": "企业应用与工具观察",
+      "label": "行业进展",
+      "title": "GitHub Copilot 上线 Gemini 4 Hydrogen，支持企业模型策略",
+      "summary": "GitHub 11月13日宣布 Gemini 4 Hydrogen 在 Copilot 中一般可用，覆盖 VS Code、CLI、编码智能体和多种 IDE，企业管理员可通过模型策略控制访问。官方提醒逐步推送，并按提供商价格计费。该事件是第三方平台正式接入，与62期Google模型首次发布分属不同阶段。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/",
+          "canonical_url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Gemini 4 Hydrogen in GitHub Copilot",
+          "published_at": "2026-11-13",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Gemini 4 Hydrogen is now generally available in GitHub Copilot",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "独立的平台接入，不重复62期模型发布"
+    },
+    {
+      "story_id": "github-ghes-copilot-202611",
+      "event_id": "github-ghes-copilot-202611",
+      "primary_category": "企业应用与工具观察",
+      "label": "行业进展",
+      "title": "GitHub Copilot App 正式支持连接企业自托管 GHES",
+      "summary": "GitHub 11月13日宣布 Copilot App 现可连接 GitHub Enterprise Server，处理远程仓库、Issues 和 PR。该功能从可选预览转为一般可用，要求 Copilot App 1.2.0 及以上，且 GHES 暂不支持云端会话；这对企业代码治理和本地仓库访问边界具有实际影响。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/",
+          "canonical_url": "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "GitHub Enterprise Server support in the GitHub Copilot app",
+          "published_at": "2026-11-13",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "This feature was previously an opt-in preview, and is now generally available",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "新GHES一般可用阶段，非模型接入重复"
+    },
+    {
+      "story_id": "github-copilot-retirement-202611",
+      "event_id": "github-copilot-retirement-202611",
+      "primary_category": "企业应用与工具观察",
+      "label": "行业进展",
+      "title": "GitHub 公布12月 Copilot 模型下线计划，企业需核对策略",
+      "summary": "GitHub 11月13日公告，计划12月14日在 Copilot 各体验中停用若干旧模型，包括 Claude Fable 5、Gemini 3.8 Flash、Gemini 4 Argon 等，列出替代型号和企业模型策略操作。此次是未来下线预告，并非这些模型已经停用；对依赖固定模型的工作流需要提前检查。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/",
+          "canonical_url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Upcoming deprecation of selected GitHub Copilot models in December",
+          "published_at": "2026-11-13",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "We will deprecate the following models",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "独立企业生命周期治理变更，区别新模型上架"
+    },
+    {
+      "story_id": "fed-ai-stability-survey-202611",
+      "event_id": "fed-ai-stability-survey-202611",
+      "primary_category": "AI 与金融",
+      "label": "行业进展",
+      "title": "美联储金融稳定报告：87%受访机构联系人关注 AI 风险",
+      "summary": "美联储11月13日金融稳定报告显示，87%的受访市场联系人将 AI 列为显著金融稳定风险，较春季的50%上升；报告还关注数据中心融资、长期租约与担保形成的复杂风险敞口。该比例来自市场联系人调查，并非全体银行或公众调查。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/",
+          "canonical_url": "https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "AI rockets to top of worries about financial system in latest Fed survey",
+          "published_at": "2026-11-13",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "Eighty-seven percent of contacts surveyed cited AI",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "新的11/13正式金融稳定报告，区别62期Barr个人讲话"
+    },
+    {
+      "story_id": "anthropic-ipo-orders-202611",
+      "event_id": "anthropic-ipo-orders-202611",
+      "primary_category": "AI 与金融",
+      "label": "行业进展",
+      "title": "路透：Anthropic IPO 路演获超额认购，投资人质疑优势持续性",
+      "summary": "路透社11月13日独家报道，Anthropic 的大型 IPO 在路演前几日吸引强劲机构订单，知情人士称截至周四订单约为可售股份六倍；投资者仍在评估 Google 等对手追赶速度、Claude 编码之外的市场空间与高估值。超额认购数字来自匿名人士，并非最终发行结果。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/",
+          "canonical_url": "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Investors flock to Anthropic IPO but question durability of AI lead",
+          "published_at": "2026-11-13",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "By the end of Thursday, the book was six times oversubscribed",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "区别61期路演启动，本期新增订单进展与机构分歧"
+    },
+    {
+      "story_id": "china-ai-education-investigation-202611",
+      "event_id": "china-ai-education-investigation-202611",
+      "primary_category": "国内 AI 动态",
+      "label": "行业进展",
+      "title": "路透调查中国 AI 教育推进：普及目标与效果评估并存",
+      "summary": "路透社11月16日发布实地调查，梳理中国推动2030年前学生 AI 素养普及的政策、地方采购与学校实践，指出应用覆盖面大但统一评估标准尚未成熟。调查称部分学校借助 Qwen、字节和智谱模型生成课程，相关成绩改善为学校自述，研究中的相关性不能写成因果。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/china/inside-chinas-drive-build-an-ai-native-generation-2026-11-16/",
+          "canonical_url": "https://www.reuters.com/world/china/inside-chinas-drive-build-an-ai-native-generation-2026-11-16/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Inside China's drive to build an AI-native generation",
+          "published_at": "2026-11-16",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "China is undertaking one of the world's largest AI-assisted learning experiments",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "11/16独立实地调查新发布，非旧教育政策重报"
+    },
+    {
+      "story_id": "un-autonomous-weapons-talks-202611",
+      "event_id": "un-autonomous-weapons-talks-202611",
+      "primary_category": "政策、监管与风险",
+      "label": "行业进展",
+      "title": "联合国日内瓦会议讨论自主武器规则，美俄反对强制性协议",
+      "summary": "路透社11月16日报道，日内瓦相关会议将讨论是否启动致命自主武器的国际约束性规则谈判，多数缔约方支持进一步制定规则，美国、俄罗斯等倾向非约束性路径。会议尚在进行，不能把提案写成已达成条约；AI武器的责任与人类控制是核心争议。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/us-russia-oppose-talks-limiting-autonomous-weapons-2026-11-16/",
+          "canonical_url": "https://www.reuters.com/world/us-russia-oppose-talks-limiting-autonomous-weapons-2026-11-16/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "US and Russia to oppose talks on limiting autonomous weapons",
+          "published_at": "2026-11-16",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "Most of the 128 states party support",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "本期新谈判节点，区别此前欧洲军用AI产品及法国中心计划"
+    },
+    {
+      "story_id": "nvidia-successor-export-questions-202611",
+      "event_id": "nvidia-successor-export-questions-202611",
+      "primary_category": "国际 AI 动态",
+      "label": "行业进展",
+      "title": "美财长要求英伟达外聘 CEO，并就出口合规限期答复",
+      "summary": "路透社11月15日报道，美国财长 Bessent 公开建议英伟达从公司外部寻找继任 CEO，并要求董事会及外部律师在十天内回应出口合规文化相关问题。与此同时媒体报道称 Arm CEO Rene Haas 已获接触，但尚未确定人选。该进展区别62期黄仁勋正式辞任，属于后续治理与监管压力。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/",
+          "canonical_url": "https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Bessent says Nvidia must 'go outside the company' to find new CEO",
+          "published_at": "2026-11-15",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_original_media_report",
+          "raw_excerpt": "answer, within the next 10 days, questions",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "辞任后的新公开监管要求，不重复辞任事实"
+    },
+    {
+      "story_id": "reddit-llamacpp-maintainers-202611",
+      "event_id": "reddit-llamacpp-maintainers-202611",
+      "primary_category": "社媒与开发者社区观察",
+      "label": "社区体验",
+      "title": "Reddit 讨论 llama.cpp v1.0：维护者数量与性能取舍引争议",
+      "summary": "11月13日 r/LocalLLaMA 原帖围绕 llama.cpp v1.0 展开，开发者一方面认可本地推理生态，另一方面反映积压 PR、维护人手和部分优化合入缓慢的问题。属于个人体验与社区治理争论，不等于官方承认产品性能下降，也不将发帖后的票数当作出版日热度。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1xv8t2e/llamacpp_v10_is_here/",
+          "canonical_url": "https://www.reddit.com/r/LocalLLaMA/comments/1xv8t2e/llamacpp_v10_is_here/",
+          "source_name": "Reddit",
+          "source_domain": "reddit.com",
+          "source_tier": "social_signal",
+          "raw_title": "llama.cpp v1.0 is here 🦙",
+          "published_at": "2026-11-13",
+          "retrieved_at": "2026-11-16T09:42:00+08:00",
+          "evidence_type": "opened_community_thread",
+          "raw_excerpt": "Please add more maintainers to the project",
+          "evidence_notes": "实际打开原始页面核对，补刊检索日期独立于发布时间；仅采用截至11月16日09:30新加坡时间已公开的内容。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "与正式v1发布相关但独立社区反馈，记录治理争论而非重复产品规格",
+      "evidence_type": "community_observation"
+    }
+  ]
+}

@@ -958,6 +958,22 @@ Asia/Singapore 11月9日09:30至11月11日09:30；2026-11-11出版日，原文�
 - 德国央行测算股市回调对保险与基金的连锁冲击（https://www.reuters.com/legal/litigation/german-insurers-set-triple-hit-if-stocks-fall-bundesbank-says-2026-11-12/；2026-11-12）。金融稳定新压力测试，与58期ECB估值警示不同
 - llama.cpp 开发者讨论 v1.0 破坏性变更与迁移成本（https://github.com/ggml-org/llama.cpp/discussions/30566；2026-11-12）。原讨论创建于10月15日，仅引用11月12日可见的新回复，不使用11月15日追加评论
 
+### 第 63 期（2026.11.13 — 11.16）
+
+按Asia/Singapore 11月13日09:30至11月16日09:30窗口，覆盖周末；11/13无小时公告保守归本期；补刊检索时间不冒充发表时间。
+
+- DeepSeek 将搜索、文件、语音与安全能力开放为 API（https://api-docs.deepseek.com/news/news261113/；2026-11-13）。本期新API发布，区别旧V4.1模型本身
+- llama.cpp 与 ggml 发布 v1.0，正式约定 API 兼容性规则（https://huggingface.co/blog/ggml-org/llama-cpp-v1；2026-11-13）。62期社区讨论是发布前API迁移意见，63期为正式版本硬进展
+- GitHub Copilot 上线 Gemini 4 Hydrogen，支持企业模型策略（https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/；2026-11-13）。独立的平台接入，不重复62期模型发布
+- GitHub Copilot App 正式支持连接企业自托管 GHES（https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app/；2026-11-13）。新GHES一般可用阶段，非模型接入重复
+- GitHub 公布12月 Copilot 模型下线计划，企业需核对策略（https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/；2026-11-13）。独立企业生命周期治理变更，区别新模型上架
+- 美联储金融稳定报告：87%受访机构联系人关注 AI 风险（https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/；2026-11-13）。新的11/13正式金融稳定报告，区别62期Barr个人讲话
+- 路透：Anthropic IPO 路演获超额认购，投资人质疑优势持续性（https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/；2026-11-13）。区别61期路演启动，本期新增订单进展与机构分歧
+- 路透调查中国 AI 教育推进：普及目标与效果评估并存（https://www.reuters.com/world/china/inside-chinas-drive-build-an-ai-native-generation-2026-11-16/；2026-11-16）。11/16独立实地调查新发布，非旧教育政策重报
+- 联合国日内瓦会议讨论自主武器规则，美俄反对强制性协议（https://www.reuters.com/world/us-russia-oppose-talks-limiting-autonomous-weapons-2026-11-16/；2026-11-16）。本期新谈判节点，区别此前欧洲军用AI产品及法国中心计划
+- 美财长要求英伟达外聘 CEO，并就出口合规限期答复（https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/；2026-11-15）。辞任后的新公开监管要求，不重复辞任事实
+- Reddit 讨论 llama.cpp v1.0：维护者数量与性能取舍引争议（https://www.reddit.com/r/LocalLLaMA/comments/1xv8t2e/llamacpp_v10_is_here/；2026-11-13）。与正式v1发布相关但独立社区反馈，记录治理争论而非重复产品规格
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

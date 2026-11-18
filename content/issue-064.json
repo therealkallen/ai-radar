@@ -1,0 +1,477 @@
+{
+  "num": 64,
+  "period_start": "2026-11-16",
+  "period_end": "2026-11-18",
+  "window_note": "Asia/Singapore 2026-11-16 09:30 至 2026-11-18 09:30；不纳入出版截止后信息。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "七栏第一轮检索国际厂商、企业工具、国内厂商、金融及监管；第二轮从Reuters、GitHub Changelog、OpenAI索引反查。11条真实独立事件；低条数复核后不以重复更新凑数。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://api-docs.deepseek.com/zh-cn/updates/",
+        "https://qwenlm.github.io/blog/",
+        "https://www.z.ai/",
+        "https://www.kimi.com/",
+        "https://www.tencent.com/",
+        "https://ai.baidu.com/",
+        "https://seed.bytedance.com/",
+        "https://www.minimaxi.com/",
+        "https://www.iflytek.com/",
+        "https://www.36kr.com/",
+        "https://www.jiqizhixin.com/",
+        "https://www.qbitai.com/",
+        "https://www.reuters.com/world/china/china-taps-us-ai-models-train-homegrown-rivals-chip-curbs-bite-2026-11-17/"
+      ],
+      "notes": "检索DeepSeek、Qwen、智谱、Kimi、腾讯、百度、字节、MiniMax、讯飞及原创媒体；入选Reuters 11/17蒸馏调查，其他未核实为窗口内新的独立重大事件。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "https://x.com/",
+        "https://www.reddit.com/r/LocalLLaMA/",
+        "https://news.ycombinator.com/",
+        "https://github.com/ggml-org/llama.cpp/discussions"
+      ],
+      "notes": "专项检索X、Reddit、HN、GitHub；Reddit候选为已移除帖子，未获得可核验的窗口内原帖和独立使用体验，不将GitHub厂商公告当社区意见。"
+    },
+    "coverage_review": {
+      "reviewed_at": "2026-11-18T09:32:30+08:00",
+      "scope": "七栏第一轮及Reuters、GitHub、OpenAI索引第二轮；金融专项覆盖监管和发展金融，国内专项覆盖九家厂商。",
+      "sections": [
+        {
+          "category": "模型与技术进展",
+          "count": 2,
+          "candidate_urls": [
+            "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+            "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/"
+          ],
+          "notes": "已打开入选原文并核对日期；排除旧期重复、小版本与无法核验的候选。"
+        },
+        {
+          "category": "企业应用与工具观察",
+          "count": 4,
+          "candidate_urls": [
+            "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365/",
+            "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview/",
+            "https://github.blog/changelog/2026-11-17-let-github-copilot-interact-with-your-browser/",
+            "https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more/"
+          ],
+          "notes": "已打开入选原文并核对日期；排除旧期重复、小版本与无法核验的候选。"
+        },
+        {
+          "category": "国内 AI 动态",
+          "count": 1,
+          "candidate_urls": [
+            "https://www.reuters.com/world/china/china-taps-us-ai-models-train-homegrown-rivals-chip-curbs-bite-2026-11-17/"
+          ],
+          "notes": "已打开入选原文并核对日期；排除旧期重复、小版本与无法核验的候选。"
+        },
+        {
+          "category": "国际 AI 动态",
+          "count": 0,
+          "candidate_urls": [],
+          "notes": "已打开入选原文并核对日期；排除旧期重复、小版本与无法核验的候选。 国际企业发布主要归入模型及企业栏目，不重复刊载。"
+        },
+        {
+          "category": "AI 与金融",
+          "count": 2,
+          "candidate_urls": [
+            "https://www.reuters.com/world/feds-barr-warns-ai-risks-financial-system-2026-11-16/",
+            "https://www.reuters.com/business/finance/developing-economies-risk-missing-out-defence-ai-boom-ebrd-warns-2026-11-17/"
+          ],
+          "notes": "已打开入选原文并核对日期；排除旧期重复、小版本与无法核验的候选。"
+        },
+        {
+          "category": "政策、监管与风险",
+          "count": 2,
+          "candidate_urls": [
+            "https://www.reuters.com/world/china/china-says-it-will-take-countermeasures-if-us-imposes-new-chip-curbs-2026-11-17/",
+            "https://www.reuters.com/legal/government/new-york-bill-would-punish-judges-who-misuse-ai-2026-11-17/"
+          ],
+          "notes": "已打开入选原文并核对日期；排除旧期重复、小版本与无法核验的候选。"
+        },
+        {
+          "category": "社媒与开发者社区观察",
+          "count": 0,
+          "candidate_urls": [],
+          "notes": "已打开入选原文并核对日期；排除旧期重复、小版本与无法核验的候选。 Reddit帖子被删除，未获得合格社区原帖。"
+        }
+      ],
+      "second_pass": {
+        "completed": true,
+        "notes": "从Reuters 11/17原创报道补充中国蒸馏、出口管制、EBRD与司法AI法案；从GitHub 11/17索引补充Copilot Evals、Agent365、浏览器及审查更新；未将同一Ignite公告拆为多个模型新闻。"
+      },
+      "candidates": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        },
+        {
+          "url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-17-let-github-copilot-interact-with-your-browser/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        },
+        {
+          "url": "https://www.reuters.com/world/china/china-taps-us-ai-models-train-homegrown-rivals-chip-curbs-bite-2026-11-17/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        },
+        {
+          "url": "https://www.reuters.com/world/china/china-says-it-will-take-countermeasures-if-us-imposes-new-chip-curbs-2026-11-17/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        },
+        {
+          "url": "https://www.reuters.com/world/feds-barr-warns-ai-risks-financial-system-2026-11-16/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/developing-economies-risk-missing-out-defence-ai-boom-ebrd-warns-2026-11-17/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        },
+        {
+          "url": "https://www.reuters.com/legal/government/new-york-bill-would-punish-judges-who-misuse-ai-2026-11-17/",
+          "decision": "include",
+          "reason": "已打开原文并核对日期与独立事件增量"
+        }
+      ],
+      "low_count_review": {
+        "completed": true,
+        "notes": "11条触发复核：逐项检查国际大厂、金融、政策、国内与社区。未取得可核验的独立社区讨论；不为达到12条而重复拆分GitHub公告。"
+      }
+    }
+  },
+  "stories": [
+    {
+      "story_id": "radar64-gpt62",
+      "event_id": "radar64-gpt62",
+      "primary_category": "模型与技术进展",
+      "label": "行业进展",
+      "title": "OpenAI 发布 GPT-6.2 Astra 与 Sol，主攻专业工作和成本效率",
+      "summary": "OpenAI 11月17日发布 GPT-6.2 Astra 与 Sol，分别面向复杂专业项目和高频日常工作。官方称新模型改善文档、表格、幻灯片、编程及计算机操作，输出 token 更少，并公布定价及安全评估。性能数字属于厂商自测，实际企业部署仍需单独验证。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "canonical_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "source_name": "OpenAI",
+          "source_domain": "openai.com",
+          "source_tier": "primary",
+          "raw_title": "Introducing GPT-6.2 Astra and Sol",
+          "published_at": "2026-11-17",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work.",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    },
+    {
+      "story_id": "radar64-mai2",
+      "event_id": "radar64-mai2",
+      "primary_category": "模型与技术进展",
+      "label": "行业进展",
+      "title": "微软 Ignite 推出六款专用 AI 模型，降低对外部模型依赖",
+      "summary": "微软在 Ignite 公布六款覆盖编码、网络安全、图像及语音的专用模型，包括 MAI Code 2、MAI Code 2 Flash 和 MAI Cyber 2 Flash。微软声称在选定任务上具备明显成本优势，且企业可授权模型权重在 Azure 内定制；相关性能与价格比较仍应视为厂商口径。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/",
+          "canonical_url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Microsoft unveils AI models for coding, cybersecurity as it takes on Anthropic, OpenAI",
+          "published_at": "2026-11-17",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Microsoft on Tuesday announced a suite of AI models with powerful coding and cybersecurity capabilities",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    },
+    {
+      "story_id": "radar64-agent365",
+      "event_id": "radar64-agent365",
+      "primary_category": "企业应用与工具观察",
+      "label": "行业进展",
+      "title": "GitHub Copilot 活动接入 Microsoft Agent 365，强化企业智能体审计",
+      "summary": "GitHub 11月17日宣布，企业可将 Copilot 智能体活动流送至 Microsoft Agent 365，统一观察来自不同 Copilot 客户端的操作记录。对大规模部署编码智能体的企业，新增集中审计与治理路径；这属于监控集成，不意味着 Agent 365 自动批准所有智能体行为。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365/",
+          "canonical_url": "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Monitor GitHub Copilot activity through Microsoft Agent 365",
+          "published_at": "2026-11-17",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Enterprises can now stream GitHub Copilot agent activity directly into Microsoft Agent 365.",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    },
+    {
+      "story_id": "radar64-evals",
+      "event_id": "radar64-evals",
+      "primary_category": "企业应用与工具观察",
+      "label": "行业进展",
+      "title": "GitHub Copilot Evals 开放公测，支持对提示词、技能和工具做回归评估",
+      "summary": "GitHub 11月17日将 Copilot Evals 推向公开预览，开发者可比较提示词、模型、skills 与工具变更后的表现，查看失败执行步骤及预期与实际证据差异。这为企业自建智能体提供更可复现的质量检查，但目前仍是预览功能，不能将评估分数等同生产可靠性。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview/",
+          "canonical_url": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "GitHub Copilot Evals is now in public preview",
+          "published_at": "2026-11-17",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "You can now use GitHub Copilot Evals to optimize GitHub Copilot for yourself.",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    },
+    {
+      "story_id": "radar64-browser",
+      "event_id": "radar64-browser",
+      "primary_category": "企业应用与工具观察",
+      "label": "行业进展",
+      "title": "GitHub Copilot 推出浏览器操作预览，智能体可跨代码与网页执行任务",
+      "summary": "GitHub 11月17日宣布配合 Copilot Chrome 扩展，浏览器使用能力在 Copilot CLI、App、VS Code 与 JetBrains 开放公开预览。开发者可在编程工作流中让智能体与网页交互；涉及登录态、敏感页面和写入操作时仍需企业权限及安全审查。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-17-let-github-copilot-interact-with-your-browser/",
+          "canonical_url": "https://github.blog/changelog/2026-11-17-let-github-copilot-interact-with-your-browser/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Let GitHub Copilot interact with your browser",
+          "published_at": "2026-11-17",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "browser use is now available in public preview in GitHub Copilot CLI, GitHub Copilot app, VS Code and JetBrains.",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    },
+    {
+      "story_id": "radar64-review",
+      "event_id": "radar64-review",
+      "primary_category": "企业应用与工具观察",
+      "label": "行业进展",
+      "title": "GitHub Copilot 代码审查加入自适应深度与密钥检测",
+      "summary": "GitHub 11月17日更新 Copilot code review，推出根据 PR 情况调整审查力度的 Adaptive 选项，并强化跨仓库上下文及密钥检测。企业可用来优化审查成本和覆盖范围，但自动建议仍需人工核对，尤其是涉及安全或业务逻辑的变更。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more/",
+          "canonical_url": "https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Copilot code review: Adaptive effort, secret detection, and more",
+          "published_at": "2026-11-17",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "Adaptive matches review depth to each pull request",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    },
+    {
+      "story_id": "radar64-distill",
+      "event_id": "radar64-distill",
+      "primary_category": "国内 AI 动态",
+      "label": "行业进展",
+      "title": "路透调查：中国 AI 蒸馏技术走向产业化，引发跨境模型使用争议",
+      "summary": "路透11月17日调查超过300份论文、专利、招聘及政府文件，发现中国研究团队利用美国模型输出生成训练数据，辅助 Qwen 等较小模型训练。蒸馏本身并非违法，报道同时呈现中美双方对知识产权边界的不同观点；不应把所有蒸馏行为直接写成违规窃取。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/china/china-taps-us-ai-models-train-homegrown-rivals-chip-curbs-bite-2026-11-17/",
+          "canonical_url": "https://www.reuters.com/world/china/china-taps-us-ai-models-train-homegrown-rivals-chip-curbs-bite-2026-11-17/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "EXCLUSIVE: China taps US AI models to train homegrown rivals as chip curbs bite",
+          "published_at": "2026-11-17",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "A Reuters review of more than 300 Chinese academic papers, patents, corporate disclosures, recruitment notices and government documents",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    },
+    {
+      "story_id": "radar64-chip",
+      "event_id": "radar64-chip",
+      "primary_category": "政策、监管与风险",
+      "label": "行业进展",
+      "title": "中国商务部回应美国 AI 芯片新限制，警告可能采取反制",
+      "summary": "11月17日中国商务部表示反对美国进一步限制中国企业获取先进 AI 芯片的新规则，并称若美方坚持实施将采取反制措施。当前属于政策表态及条件性警告，不应写成反制措施已经落地；出口限制对跨境算力采购和供应链规划的影响仍需跟踪。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/china/china-says-it-will-take-countermeasures-if-us-imposes-new-chip-curbs-2026-11-17/",
+          "canonical_url": "https://www.reuters.com/world/china/china-says-it-will-take-countermeasures-if-us-imposes-new-chip-curbs-2026-11-17/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "China says it will take countermeasures if US imposes new chip curbs",
+          "published_at": "2026-11-17",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "The ministry added that it would take countermeasures if the US insisted on imposing the new rule.",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    },
+    {
+      "story_id": "radar64-barr",
+      "event_id": "radar64-barr",
+      "primary_category": "AI 与金融",
+      "label": "行业进展",
+      "title": "美联储理事 Barr 警告 AI 智能体可能加速银行挤兑",
+      "summary": "美联储理事 Michael Barr 11月16日讲话指出，AI 在交易中的趋同行为可能放大市场波动，银行也可能难以确认代理客户操作的智能体是否获得授权。其进一步警告高速自动交易可能使挤兑超过传统保护措施的响应能力；这是风险分析，不是已经发生的金融事故。",
+      "radar_pick": true,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/world/feds-barr-warns-ai-risks-financial-system-2026-11-16/",
+          "canonical_url": "https://www.reuters.com/world/feds-barr-warns-ai-risks-financial-system-2026-11-16/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Fed's Barr warns on AI risks to financial system",
+          "published_at": "2026-11-16",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "banks may be unable to confirm if an AI agent attempting to take actions in retail customer accounts is actually authorized",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    },
+    {
+      "story_id": "radar64-ebrd",
+      "event_id": "radar64-ebrd",
+      "primary_category": "AI 与金融",
+      "label": "行业进展",
+      "title": "欧洲复兴开发银行警告：电网与融资短板阻碍新兴经济体参与 AI 产业",
+      "summary": "欧洲复兴开发银行11月17日发布转型报告，指出其覆盖地区近半数国家的电网甚至不足以支撑一座数据中心，且相关国家在芯片、算力基础设施和融资上存在短板。报告认为轻资产 AI 应用仍有机会，强调应在产业转型过程中保护就业。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/business/finance/developing-economies-risk-missing-out-defence-ai-boom-ebrd-warns-2026-11-17/",
+          "canonical_url": "https://www.reuters.com/business/finance/developing-economies-risk-missing-out-defence-ai-boom-ebrd-warns-2026-11-17/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Developing economies risk missing out on defence and AI boom, EBRD warns",
+          "published_at": "2026-11-17",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "In almost half of EBRD countries, the power grid could not support a single data centre.",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    },
+    {
+      "story_id": "radar64-judges",
+      "event_id": "radar64-judges",
+      "primary_category": "政策、监管与风险",
+      "label": "行业进展",
+      "title": "纽约州提出法官 AI 虚构引证问责法案，针对裁判文书真实性",
+      "summary": "纽约州议员提出司法 AI 问责与诚信法案，拟将法官明知或鲁莽地在裁判文书引用虚构法律依据认定为不当行为，并可能触发纪律处分。法案并未禁止司法系统使用 AI，目前仍是提案而非生效法律，反映法律职业对生成式内容核验责任的关注。",
+      "radar_pick": false,
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.reuters.com/legal/government/new-york-bill-would-punish-judges-who-misuse-ai-2026-11-17/",
+          "canonical_url": "https://www.reuters.com/legal/government/new-york-bill-would-punish-judges-who-misuse-ai-2026-11-17/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
+          "source_tier": "trusted_media",
+          "raw_title": "New York bill would punish judges who misuse AI",
+          "published_at": "2026-11-17",
+          "retrieved_at": "2026-11-18T09:32:30+08:00",
+          "evidence_type": "opened_primary_publication",
+          "raw_excerpt": "knowingly or recklessly includes fabricated legal authority will be deemed to have engaged in misconduct.",
+          "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "对照第63期和coverage.md，按本期新增实质进展独立收录。"
+    }
+  ]
+}

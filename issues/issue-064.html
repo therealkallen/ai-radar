@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Radar · 第 64 期</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia','Noto Serif SC','Times New Roman',serif;background:#f7f5f0;color:#2c2c2c;line-height:1.7;font-size:15px;padding-top:56px}
+  .topnav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid #e6e3db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:auto;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav-inner{display:flex;align-items:center;gap:4px;max-width:768px;margin:0 auto;padding:10px 20px;white-space:nowrap}
+  .topnav .brand{font-weight:700;font-size:14px;color:#1a1a1a;margin-right:12px;flex-shrink:0}
+  .topnav a{font-size:13px;color:#888;text-decoration:none;padding:5px 12px;border-radius:6px;transition:background .2s;flex-shrink:0}
+  .topnav a:hover{background:#edeae3;color:#2c2c2c}
+  .container{max-width:720px;margin:0 auto;padding:36px 24px 64px}
+  .masthead{margin-bottom:36px}
+  .masthead h1{font-size:28px;font-weight:700;color:#1a1a1a}
+  .meta{font-size:13px;color:#888;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border-bottom:1px solid #e6e3db;padding:6px 0 14px;margin-top:2px}
+  .meta span{margin-right:16px}
+  .section{margin-bottom:40px;scroll-margin-top:72px}
+  .section-header{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:600;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #e6e3db}
+  .card{background:#fff;border:1px solid #e6e3db;border-radius:8px;padding:24px;margin-bottom:16px}
+  .card .tag{display:inline-block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:3px;margin-bottom:8px;background:#f0ede6;color:#555}
+  .card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:6px;line-height:1.4}
+  .card p{font-size:14px;color:#555;line-height:1.7}
+  .card .source-link{display:inline-block;margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#888;text-decoration:none;border-bottom:1px solid #ddd}
+  .card .source-link:hover{color:#2c2c2c;border-color:#2c2c2c}
+  .news-item{padding:14px 0;border-bottom:1px solid #eeeae1}
+  .news-item:first-child{padding-top:0}
+  .news-item:last-child{border-bottom:none;padding-bottom:0}
+  .news-item .label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;color:#999;margin-bottom:3px}
+  .news-item .title{font-size:15px;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+  .news-item .summary{font-size:14px;color:#555;line-height:1.7}
+  .news-item .source-link{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:#aaa;text-decoration:none;margin-top:4px;display:inline-block}
+  .news-item .source-link:hover{color:#555}
+  .footer{text-align:center;font-size:12px;color:#bbb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:40px;padding-top:20px;border-top:1px solid #e6e3db}
+  @media(max-width:600px){body{padding-top:50px}.topnav-inner{padding:8px 14px}.topnav .brand{font-size:13px;margin-right:8px}.topnav a{font-size:12px;padding:4px 10px}.container{padding:24px 16px 48px}.masthead h1{font-size:22px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<nav class="topnav"><div class="topnav-inner">
+  <span class="brand">AI Radar</span>
+  <a href="#picks">Radar Picks</a>
+  <a href="#models">模型与技术</a>
+  <a href="#enterprise">企业应用</a>
+  <a href="#china">国内动态</a>
+  <a href="#international">国际动态</a>
+  <a href="#finance">AI 与金融</a>
+  <a href="#policy">政策、监管与风险</a>
+  <a href="#community">社区观察</a>
+</div></nav>
+<div class="container">
+<div class="masthead"><h1>AI Radar</h1>
+<div class="meta"><span>2026.11.16 — 11.18</span><span>第 64 期</span></div></div>
+<div class="section" id="picks"><div class="section-header">Radar Picks</div>
+<div class="card">
+<span class="tag">模型与技术进展</span><h3>OpenAI 发布 GPT-6.2 Astra 与 Sol，主攻专业工作和成本效率</h3><p>OpenAI 11月17日发布 GPT-6.2 Astra 与 Sol，分别面向复杂专业项目和高频日常工作。官方称新模型改善文档、表格、幻灯片、编程及计算机操作，输出 token 更少，并公布定价及安全评估。性能数字属于厂商自测，实际企业部署仍需单独验证。</p>
+<a class="source-link" href="https://openai.com/index/introducing-gpt-6-2-astra-sol/" target="_blank">OpenAI</a></div>
+<div class="card">
+<span class="tag">模型与技术进展</span><h3>微软 Ignite 推出六款专用 AI 模型，降低对外部模型依赖</h3><p>微软在 Ignite 公布六款覆盖编码、网络安全、图像及语音的专用模型，包括 MAI Code 2、MAI Code 2 Flash 和 MAI Cyber 2 Flash。微软声称在选定任务上具备明显成本优势，且企业可授权模型权重在 Azure 内定制；相关性能与价格比较仍应视为厂商口径。</p>
+<a class="source-link" href="https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/" target="_blank">Reuters</a></div>
+<div class="card">
+<span class="tag">国内 AI 动态</span><h3>路透调查：中国 AI 蒸馏技术走向产业化，引发跨境模型使用争议</h3><p>路透11月17日调查超过300份论文、专利、招聘及政府文件，发现中国研究团队利用美国模型输出生成训练数据，辅助 Qwen 等较小模型训练。蒸馏本身并非违法，报道同时呈现中美双方对知识产权边界的不同观点；不应把所有蒸馏行为直接写成违规窃取。</p>
+<a class="source-link" href="https://www.reuters.com/world/china/china-taps-us-ai-models-train-homegrown-rivals-chip-curbs-bite-2026-11-17/" target="_blank">Reuters</a></div>
+<div class="card">
+<span class="tag">AI 与金融</span><h3>美联储理事 Barr 警告 AI 智能体可能加速银行挤兑</h3><p>美联储理事 Michael Barr 11月16日讲话指出，AI 在交易中的趋同行为可能放大市场波动，银行也可能难以确认代理客户操作的智能体是否获得授权。其进一步警告高速自动交易可能使挤兑超过传统保护措施的响应能力；这是风险分析，不是已经发生的金融事故。</p>
+<a class="source-link" href="https://www.reuters.com/world/feds-barr-warns-ai-risks-financial-system-2026-11-16/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="models"><div class="section-header">模型与技术进展</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">OpenAI 发布 GPT-6.2 Astra 与 Sol，主攻专业工作和成本效率</div><div class="summary">OpenAI 11月17日发布 GPT-6.2 Astra 与 Sol，分别面向复杂专业项目和高频日常工作。官方称新模型改善文档、表格、幻灯片、编程及计算机操作，输出 token 更少，并公布定价及安全评估。性能数字属于厂商自测，实际企业部署仍需单独验证。</div>
+<a class="source-link" href="https://openai.com/index/introducing-gpt-6-2-astra-sol/" target="_blank">OpenAI</a></div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">微软 Ignite 推出六款专用 AI 模型，降低对外部模型依赖</div><div class="summary">微软在 Ignite 公布六款覆盖编码、网络安全、图像及语音的专用模型，包括 MAI Code 2、MAI Code 2 Flash 和 MAI Cyber 2 Flash。微软声称在选定任务上具备明显成本优势，且企业可授权模型权重在 Azure 内定制；相关性能与价格比较仍应视为厂商口径。</div>
+<a class="source-link" href="https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="enterprise"><div class="section-header">企业应用与工具观察</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">GitHub Copilot 活动接入 Microsoft Agent 365，强化企业智能体审计</div><div class="summary">GitHub 11月17日宣布，企业可将 Copilot 智能体活动流送至 Microsoft Agent 365，统一观察来自不同 Copilot 客户端的操作记录。对大规模部署编码智能体的企业，新增集中审计与治理路径；这属于监控集成，不意味着 Agent 365 自动批准所有智能体行为。</div>
+<a class="source-link" href="https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365/" target="_blank">GitHub</a></div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">GitHub Copilot Evals 开放公测，支持对提示词、技能和工具做回归评估</div><div class="summary">GitHub 11月17日将 Copilot Evals 推向公开预览，开发者可比较提示词、模型、skills 与工具变更后的表现，查看失败执行步骤及预期与实际证据差异。这为企业自建智能体提供更可复现的质量检查，但目前仍是预览功能，不能将评估分数等同生产可靠性。</div>
+<a class="source-link" href="https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview/" target="_blank">GitHub</a></div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">GitHub Copilot 推出浏览器操作预览，智能体可跨代码与网页执行任务</div><div class="summary">GitHub 11月17日宣布配合 Copilot Chrome 扩展，浏览器使用能力在 Copilot CLI、App、VS Code 与 JetBrains 开放公开预览。开发者可在编程工作流中让智能体与网页交互；涉及登录态、敏感页面和写入操作时仍需企业权限及安全审查。</div>
+<a class="source-link" href="https://github.blog/changelog/2026-11-17-let-github-copilot-interact-with-your-browser/" target="_blank">GitHub</a></div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">GitHub Copilot 代码审查加入自适应深度与密钥检测</div><div class="summary">GitHub 11月17日更新 Copilot code review，推出根据 PR 情况调整审查力度的 Adaptive 选项，并强化跨仓库上下文及密钥检测。企业可用来优化审查成本和覆盖范围，但自动建议仍需人工核对，尤其是涉及安全或业务逻辑的变更。</div>
+<a class="source-link" href="https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more/" target="_blank">GitHub</a></div>
+</div>
+<div class="section" id="china"><div class="section-header">国内 AI 动态</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">路透调查：中国 AI 蒸馏技术走向产业化，引发跨境模型使用争议</div><div class="summary">路透11月17日调查超过300份论文、专利、招聘及政府文件，发现中国研究团队利用美国模型输出生成训练数据，辅助 Qwen 等较小模型训练。蒸馏本身并非违法，报道同时呈现中美双方对知识产权边界的不同观点；不应把所有蒸馏行为直接写成违规窃取。</div>
+<a class="source-link" href="https://www.reuters.com/world/china/china-taps-us-ai-models-train-homegrown-rivals-chip-curbs-bite-2026-11-17/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="international"><div class="section-header">国际 AI 动态</div>
+</div>
+<div class="section" id="finance"><div class="section-header">AI 与金融</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">美联储理事 Barr 警告 AI 智能体可能加速银行挤兑</div><div class="summary">美联储理事 Michael Barr 11月16日讲话指出，AI 在交易中的趋同行为可能放大市场波动，银行也可能难以确认代理客户操作的智能体是否获得授权。其进一步警告高速自动交易可能使挤兑超过传统保护措施的响应能力；这是风险分析，不是已经发生的金融事故。</div>
+<a class="source-link" href="https://www.reuters.com/world/feds-barr-warns-ai-risks-financial-system-2026-11-16/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">欧洲复兴开发银行警告：电网与融资短板阻碍新兴经济体参与 AI 产业</div><div class="summary">欧洲复兴开发银行11月17日发布转型报告，指出其覆盖地区近半数国家的电网甚至不足以支撑一座数据中心，且相关国家在芯片、算力基础设施和融资上存在短板。报告认为轻资产 AI 应用仍有机会，强调应在产业转型过程中保护就业。</div>
+<a class="source-link" href="https://www.reuters.com/business/finance/developing-economies-risk-missing-out-defence-ai-boom-ebrd-warns-2026-11-17/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="policy"><div class="section-header">政策、监管与风险</div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">中国商务部回应美国 AI 芯片新限制，警告可能采取反制</div><div class="summary">11月17日中国商务部表示反对美国进一步限制中国企业获取先进 AI 芯片的新规则，并称若美方坚持实施将采取反制措施。当前属于政策表态及条件性警告，不应写成反制措施已经落地；出口限制对跨境算力采购和供应链规划的影响仍需跟踪。</div>
+<a class="source-link" href="https://www.reuters.com/world/china/china-says-it-will-take-countermeasures-if-us-imposes-new-chip-curbs-2026-11-17/" target="_blank">Reuters</a></div>
+<div class="news-item">
+<div class="label">行业进展</div><div class="title">纽约州提出法官 AI 虚构引证问责法案，针对裁判文书真实性</div><div class="summary">纽约州议员提出司法 AI 问责与诚信法案，拟将法官明知或鲁莽地在裁判文书引用虚构法律依据认定为不当行为，并可能触发纪律处分。法案并未禁止司法系统使用 AI，目前仍是提案而非生效法律，反映法律职业对生成式内容核验责任的关注。</div>
+<a class="source-link" href="https://www.reuters.com/legal/government/new-york-bill-would-punish-judges-who-misuse-ai-2026-11-17/" target="_blank">Reuters</a></div>
+</div>
+<div class="section" id="community"><div class="section-header">社媒与开发者社区观察</div>
+</div>
+<div class="footer"><p><a href="index.html" style="color:#bbb;text-decoration:none;border-bottom:1px solid #ddd;">往期归档</a></p></div>
+</div>
+</body>
+</html>

@@ -43,7 +43,7 @@
           "count": 2,
           "candidate_urls": [
             "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-            "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite"
+            "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/"
           ],
           "notes": "已打开入选原文并核对日期；排除旧期重复、小版本与无法核验的候选。"
         },
@@ -108,7 +108,7 @@
           "reason": "已打开原文并核对日期与独立事件增量"
         },
         {
-          "url": "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite",
+          "url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/",
           "decision": "include",
           "reason": "已打开原文并核对日期与独立事件增量"
         },
@@ -205,16 +205,16 @@
       "verified": true,
       "sources": [
         {
-          "source_url": "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite",
-          "canonical_url": "https://www.axios.com/2026/11/17/microsoft-ai-models-openai-anthropic-ignite",
-          "source_name": "Axios",
-          "source_domain": "axios.com",
+          "source_url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/",
+          "canonical_url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/",
+          "source_name": "Reuters",
+          "source_domain": "reuters.com",
           "source_tier": "trusted_media",
-          "raw_title": "Microsoft debuts six AI models as it pushes toward frontier",
+          "raw_title": "Microsoft unveils AI models for coding, cybersecurity as it takes on Anthropic, OpenAI",
           "published_at": "2026-11-17",
           "retrieved_at": "2026-11-18T09:32:30+08:00",
           "evidence_type": "opened_primary_publication",
-          "raw_excerpt": "Microsoft is announcing six new AI models Tuesday at its Ignite conference in San Francisco.",
+          "raw_excerpt": "Microsoft on Tuesday announced a suite of AI models with powerful coding and cybersecurity capabilities",
           "evidence_notes": "本次实际打开原文，核对发布时间及事件状态；检索时刻与发布日期分开。",
           "opened_and_verified": true
         }

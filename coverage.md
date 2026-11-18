@@ -974,6 +974,22 @@ Asia/Singapore 11月9日09:30至11月11日09:30；2026-11-11出版日，原文�
 - 美财长要求英伟达外聘 CEO，并就出口合规限期答复（https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/；2026-11-15）。辞任后的新公开监管要求，不重复辞任事实
 - Reddit 讨论 llama.cpp v1.0：维护者数量与性能取舍引争议（https://www.reddit.com/r/LocalLLaMA/comments/1xv8t2e/llamacpp_v10_is_here/；2026-11-13）。与正式v1发布相关但独立社区反馈，记录治理争论而非重复产品规格
 
+### 第 64 期（2026.11.16 — 11.18）
+
+Asia/Singapore 2026-11-16 09:30 至 2026-11-18 09:30；不纳入出版截止后信息。
+
+- OpenAI 发布 GPT-6.2 Astra 与 Sol，主攻专业工作和成本效率（https://openai.com/index/introducing-gpt-6-2-astra-sol/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+- 微软 Ignite 推出六款专用 AI 模型，降低对外部模型依赖（https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+- GitHub Copilot 活动接入 Microsoft Agent 365，强化企业智能体审计（https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+- GitHub Copilot Evals 开放公测，支持对提示词、技能和工具做回归评估（https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+- GitHub Copilot 推出浏览器操作预览，智能体可跨代码与网页执行任务（https://github.blog/changelog/2026-11-17-let-github-copilot-interact-with-your-browser/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+- GitHub Copilot 代码审查加入自适应深度与密钥检测（https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+- 路透调查：中国 AI 蒸馏技术走向产业化，引发跨境模型使用争议（https://www.reuters.com/world/china/china-taps-us-ai-models-train-homegrown-rivals-chip-curbs-bite-2026-11-17/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+- 中国商务部回应美国 AI 芯片新限制，警告可能采取反制（https://www.reuters.com/world/china/china-says-it-will-take-countermeasures-if-us-imposes-new-chip-curbs-2026-11-17/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+- 美联储理事 Barr 警告 AI 智能体可能加速银行挤兑（https://www.reuters.com/world/feds-barr-warns-ai-risks-financial-system-2026-11-16/；2026-11-16）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+- 欧洲复兴开发银行警告：电网与融资短板阻碍新兴经济体参与 AI 产业（https://www.reuters.com/business/finance/developing-economies-risk-missing-out-defence-ai-boom-ebrd-warns-2026-11-17/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+- 纽约州提出法官 AI 虚构引证问责法案，针对裁判文书真实性（https://www.reuters.com/legal/government/new-york-bill-would-punish-judges-who-misuse-ai-2026-11-17/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）

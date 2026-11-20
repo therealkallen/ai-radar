@@ -1,0 +1,309 @@
+{
+  "num": 65,
+  "period_start": "2026-11-18",
+  "period_end": "2026-11-20",
+  "window_note": "Asia/Singapore 11月18日09:30至11月20日09:30；18日无小时标注的官方发布保守归本期；原文与取回日期分别记录。",
+  "editorial_review": {
+    "source_first": true,
+    "semantic_dedup": true,
+    "notes": "七栏第一轮和独立第二轮检索已做。5条可直接核验原文，另有多条重要候选因Reuters正文Cache miss且缺乏可核验替代原文未刊。采编覆盖不充分，不宣称完整。",
+    "domestic_review": {
+      "checked_sources": [
+        "https://www.tencent.com/wp-content/uploads/2026/11/Tencent-Announces-2026-Third-Quarter-Results.pdf",
+        "https://home.alibabagroup.com/en-US/document-2060213191907999744",
+        "https://api-docs.deepseek.com/zh-cn/updates/",
+        "https://qwenlm.github.io/blog/",
+        "https://www.z.ai/",
+        "https://www.kimi.com/",
+        "https://ai.baidu.com/",
+        "https://seed.bytedance.com/",
+        "https://www.minimaxi.com/",
+        "https://www.iflytek.com/",
+        "https://www.36kr.com/",
+        "https://www.jiqizhixin.com/",
+        "https://www.qbitai.com/"
+      ],
+      "notes": "腾讯官方PDF可读；阿里11/19财报官方网页及Reuters原文均Cache miss；DeepSeek、Qwen、智谱、Kimi、百度、字节、MiniMax、讯飞及国内原创媒体作窗口检索，未把未读候选写成新闻。"
+    },
+    "community_review": {
+      "checked_sources": [
+        "https://x.com/",
+        "https://www.reddit.com/r/LocalLLaMA/",
+        "https://news.ycombinator.com/",
+        "https://github.com/ggml-org/llama.cpp/discussions",
+        "https://www.reddit.com/r/LocalLLaMA/comments/1y05h6k/removed/"
+      ],
+      "notes": "X、HN、Reddit、GitHub专项检索；Reddit原帖已删除，HN/X未获得窗口内可核验的独立讨论；GitHub厂商公告不冒充社区体验。"
+    },
+    "coverage_review": {
+      "reviewed_at": "2026-11-20T09:32:00+08:00",
+      "scope": "11月18-20七栏第一轮；Reuters、AP、GitHub Changelog和国内新闻索引独立第二轮，金融/政策/国际专项排查。",
+      "sections": [
+        {
+          "category": "模型与技术进展",
+          "count": 1,
+          "candidate_urls": [
+            "https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot/"
+          ],
+          "notes": "已核对入选原文；未入选者因正文无法读取、日期不符、重复或证据不足排除。"
+        },
+        {
+          "category": "企业应用与工具观察",
+          "count": 2,
+          "candidate_urls": [
+            "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot/",
+            "https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team/"
+          ],
+          "notes": "已核对入选原文；未入选者因正文无法读取、日期不符、重复或证据不足排除。"
+        },
+        {
+          "category": "国内 AI 动态",
+          "count": 1,
+          "candidate_urls": [
+            "https://www.tencent.com/wp-content/uploads/2026/11/Tencent-Announces-2026-Third-Quarter-Results.pdf"
+          ],
+          "notes": "已核对入选原文；未入选者因正文无法读取、日期不符、重复或证据不足排除。"
+        },
+        {
+          "category": "国际 AI 动态",
+          "count": 1,
+          "candidate_urls": [
+            "https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649"
+          ],
+          "notes": "已核对入选原文；未入选者因正文无法读取、日期不符、重复或证据不足排除。"
+        },
+        {
+          "category": "AI 与金融",
+          "count": 0,
+          "candidate_urls": [
+            "https://www.reuters.com/business/goolsbee-says-feds-job-right-now-is-keep-ai-surge-overheating-economy-2026-11-19/"
+          ],
+          "notes": "已核对入选原文；未入选者因正文无法读取、日期不符、重复或证据不足排除。"
+        },
+        {
+          "category": "政策、监管与风险",
+          "count": 0,
+          "candidate_urls": [
+            "https://www.reuters.com/legal/transactional/arizona-says-it-is-investigating-openai-other-firms-over-possible-rogue-agents-2026-11-19/",
+            "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/",
+            "https://www.reuters.com/legal/government/musks-xai-urges-us-appeals-court-block-california-ai-disclosure-law-2026-11-18/"
+          ],
+          "notes": "已核对入选原文；未入选者因正文无法读取、日期不符、重复或证据不足排除。"
+        },
+        {
+          "category": "社媒与开发者社区观察",
+          "count": 0,
+          "candidate_urls": [],
+          "notes": "已核对入选原文；未入选者因正文无法读取、日期不符、重复或证据不足排除。"
+        }
+      ],
+      "second_pass": {
+        "completed": true,
+        "notes": "独立查到Anthropic IPO、阿里财报、亚利桑那州AI代理调查、美国芯片许可、联储AI通胀风险等；AP IPO原文已纳入，其余Reuters原文及阿里官方页面Cache miss，保留候选待核。"
+      },
+      "candidates": [
+        {
+          "url": "https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649",
+          "decision": "include",
+          "reason": "原文已打开，日期与核心事实核对"
+        },
+        {
+          "url": "https://www.tencent.com/wp-content/uploads/2026/11/Tencent-Announces-2026-Third-Quarter-Results.pdf",
+          "decision": "include",
+          "reason": "原文已打开，日期与核心事实核对"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot/",
+          "decision": "include",
+          "reason": "原文已打开，日期与核心事实核对"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot/",
+          "decision": "include",
+          "reason": "原文已打开，日期与核心事实核对"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team/",
+          "decision": "include",
+          "reason": "原文已打开，日期与核心事实核对"
+        },
+        {
+          "url": "https://www.reuters.com/business/retail-consumer/chinas-alibaba-beats-quarterly-revenue-estimates-2026-11-19/",
+          "decision": "exclude",
+          "reason": "Reuters原文Cache miss；阿里官方新闻稿同样Cache miss，未将摘要当原文"
+        },
+        {
+          "url": "https://www.reuters.com/legal/transactional/arizona-says-it-is-investigating-openai-other-firms-over-possible-rogue-agents-2026-11-19/",
+          "decision": "exclude",
+          "reason": "Reuters原文Cache miss，缺少可核验的第二原始报道"
+        },
+        {
+          "url": "https://www.reuters.com/business/goolsbee-says-feds-job-right-now-is-keep-ai-surge-overheating-economy-2026-11-19/",
+          "decision": "exclude",
+          "reason": "Reuters原文Cache miss，不能根据搜索摘要发布金融政策数字"
+        },
+        {
+          "url": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/",
+          "decision": "exclude",
+          "reason": "Reuters原文Cache miss，尚未获取众院原始披露"
+        },
+        {
+          "url": "https://www.reuters.com/legal/government/musks-xai-urges-us-appeals-court-block-california-ai-disclosure-law-2026-11-18/",
+          "decision": "exclude",
+          "reason": "Reuters原文Cache miss，未核实庭审完整材料"
+        },
+        {
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y05h6k/removed/",
+          "decision": "exclude",
+          "reason": "原帖已删除，只有机器人自动回复，不能代表社区观点"
+        }
+      ],
+      "low_count_review": {
+        "completed": true,
+        "notes": "5条触发复核：空的AI与金融、政策、社区及只有一条的国内/国际/模型栏目；OpenAI、Anthropic、Google、Meta、Microsoft、NVIDIA、AWS、Mistral、Hugging Face和国内九厂商已专项搜索。重要候选因原文读取Cache miss未刊，仍有明显覆盖缺口。"
+      }
+    }
+  },
+  "stories": [
+    {
+      "story_id": "radar65-anthropic-ipo-priced",
+      "event_id": "radar65-anthropic-ipo-priced",
+      "primary_category": "国际 AI 动态",
+      "label": "行业进展",
+      "title": "Anthropic IPO 以每股83美元定价，公开发行规模创纪录",
+      "summary": "美联社11月19日确认，Anthropic将以每股83美元启动纳斯达克交易，发行约9.8亿股，其中公司发行约9.56亿股，公开募资总额约810亿美元。公司仍未盈利，且披露未来多年约9000亿美元的算力和基础设施承诺。报道发出时交易尚未开始，本条不把后续收盘价格写成发行时已知事实。",
+      "radar_pick": "opened_original_media",
+      "major_claim": true,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649",
+          "canonical_url": "https://apnews.com/article/anthropic-ipo-nasdaq-ai-b6a74b8949021207dc162fcc876c4649",
+          "source_name": "Associated Press",
+          "source_domain": "apnews.com",
+          "source_tier": "trusted_media",
+          "raw_title": "Anthropic set to begin trading after pricing its stock at $83 per share in biggest IPO on record",
+          "published_at": "2026-11-19",
+          "retrieved_at": "2026-11-20T09:32:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "Anthropic said the offering consists of 980 million shares",
+          "evidence_notes": "实际打开并核对来源正文和日期；检索与发表时间分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "与完整coverage.md第1至64期对照；本条是11月18至19日的新发布/新财务披露，非旧事件重复。"
+    },
+    {
+      "story_id": "radar65-tencent-q3-ai",
+      "event_id": "radar65-tencent-q3-ai",
+      "primary_category": "国内 AI 动态",
+      "label": "行业进展",
+      "title": "腾讯第三季度披露WorkBuddy日活超千万，AI算力投入推动云业务增长",
+      "summary": "腾讯11月18日公布第三季度财报，称WorkBuddy日活超过1000万、日均使用量超过100万亿token，云服务收入同比增长35%。公司同期资本开支为814.33亿元，现金支付资本开支651亿元，因算力采购预付款等原因出现691亿元自由现金流净流出。上述使用量及模型排名属于腾讯披露口径，不能等同第三方审计结果。",
+      "radar_pick": "opened_official_pdf",
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://www.tencent.com/wp-content/uploads/2026/11/Tencent-Announces-2026-Third-Quarter-Results.pdf",
+          "canonical_url": "https://www.tencent.com/wp-content/uploads/2026/11/Tencent-Announces-2026-Third-Quarter-Results.pdf",
+          "source_name": "腾讯 / 混元",
+          "source_domain": "tencent.com",
+          "source_tier": "primary",
+          "raw_title": "TENCENT ANNOUNCES 2026 THIRD QUARTER RESULTS",
+          "published_at": "2026-11-18",
+          "retrieved_at": "2026-11-20T09:32:00+08:00",
+          "evidence_type": "opened_official_pdf",
+          "raw_excerpt": "WorkBuddy became the most used AI product in China",
+          "evidence_notes": "实际打开并核对来源正文和日期；检索与发表时间分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "与完整coverage.md第1至64期对照；本条是11月18至19日的新发布/新财务披露，非旧事件重复。"
+    },
+    {
+      "story_id": "radar65-github-connectors",
+      "event_id": "radar65-github-connectors",
+      "primary_category": "企业应用与工具观察",
+      "label": "行业进展",
+      "title": "GitHub Copilot新增八种MCP连接器，企业管理员仍控制接入权限",
+      "summary": "GitHub于11月18日宣布，Copilot公开预览新增Box、Supabase、Calendly、ClickUp、Mixpanel、Buildkite、Webflow和Wix等八种已验证MCP连接器，可在Copilot应用、CLI和VS Code中使用。Business与Enterprise需管理员允许编辑器预览功能，部分连接器还需更新MCP白名单，不能视为所有企业默认开放。",
+      "radar_pick": "opened_primary_publication",
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot/",
+          "canonical_url": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Connect Supabase, Box, Calendly, and more to Copilot",
+          "published_at": "2026-11-18",
+          "retrieved_at": "2026-11-20T09:32:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "You can now connect eight more services to Copilot",
+          "evidence_notes": "实际打开并核对来源正文和日期；检索与发表时间分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "与完整coverage.md第1至64期对照；本条是11月18至19日的新发布/新财务披露，非旧事件重复。"
+    },
+    {
+      "story_id": "radar65-github-neon",
+      "event_id": "radar65-github-neon",
+      "primary_category": "模型与技术进展",
+      "label": "行业进展",
+      "title": "Gemini 4 Neon接入GitHub Copilot，企业可按模型策略启用",
+      "summary": "GitHub11月18日宣布Gemini 4 Neon在Copilot中正式可用，覆盖VS Code、CLI、编码智能体、JetBrains等客户端，面向多步骤工具调用及编码任务。GitHub转述Google称其速度和成本效率优于Carbon，相关比较属于厂商主张；不同套餐和企业策略会影响可用性，推出过程亦为逐步开放。",
+      "radar_pick": "opened_primary_publication",
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot/",
+          "canonical_url": "https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Gemini 4 Neon in GitHub Copilot",
+          "published_at": "2026-11-18",
+          "retrieved_at": "2026-11-20T09:32:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "Gemini 4 Neon is now generally available in GitHub Copilot",
+          "evidence_notes": "实际打开并核对来源正文和日期；检索与发表时间分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "与完整coverage.md第1至64期对照；本条是11月18至19日的新发布/新财务披露，非旧事件重复。"
+    },
+    {
+      "story_id": "radar65-github-team-custom",
+      "event_id": "radar65-github-team-custom",
+      "primary_category": "企业应用与工具观察",
+      "label": "行业进展",
+      "title": "GitHub Copilot团队级插件配置正式可用，统一分发获批工具",
+      "summary": "GitHub11月18日将团队级Copilot定制功能正式开放给Business和Enterprise。团队维护者可将批准的Agent Plugins设为团队默认配置，供VS Code、Copilot App和CLI使用，成员仍可在政策允许时关闭。组织及企业级市场和插件策略优先于团队配置，适合统一管理但不能绕过合规审批。",
+      "radar_pick": "opened_primary_publication",
+      "major_claim": false,
+      "verified": true,
+      "sources": [
+        {
+          "source_url": "https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team/",
+          "canonical_url": "https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team/",
+          "source_name": "GitHub",
+          "source_domain": "github.blog",
+          "source_tier": "primary",
+          "raw_title": "Customize GitHub Copilot for your team",
+          "published_at": "2026-11-18",
+          "retrieved_at": "2026-11-20T09:32:00+08:00",
+          "evidence_type": "opened_original_media",
+          "raw_excerpt": "Team customizations are generally available for organization teams",
+          "evidence_notes": "实际打开并核对来源正文和日期；检索与发表时间分开。",
+          "opened_and_verified": true
+        }
+      ],
+      "dedup_notes": "与完整coverage.md第1至64期对照；本条是11月18至19日的新发布/新财务披露，非旧事件重复。"
+    }
+  ]
+}

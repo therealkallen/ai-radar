@@ -172,7 +172,7 @@
       "label": "行业进展",
       "title": "Anthropic IPO 以每股83美元定价，公开发行规模创纪录",
       "summary": "美联社11月19日确认，Anthropic将以每股83美元启动纳斯达克交易，发行约9.8亿股，其中公司发行约9.56亿股，公开募资总额约810亿美元。公司仍未盈利，且披露未来多年约9000亿美元的算力和基础设施承诺。报道发出时交易尚未开始，本条不把后续收盘价格写成发行时已知事实。",
-      "radar_pick": "opened_original_media",
+      "radar_pick": true,
       "major_claim": true,
       "verified": true,
       "sources": [
@@ -200,7 +200,7 @@
       "label": "行业进展",
       "title": "腾讯第三季度披露WorkBuddy日活超千万，AI算力投入推动云业务增长",
       "summary": "腾讯11月18日公布第三季度财报，称WorkBuddy日活超过1000万、日均使用量超过100万亿token，云服务收入同比增长35%。公司同期资本开支为814.33亿元，现金支付资本开支651亿元，因算力采购预付款等原因出现691亿元自由现金流净流出。上述使用量及模型排名属于腾讯披露口径，不能等同第三方审计结果。",
-      "radar_pick": "opened_official_pdf",
+      "radar_pick": true,
       "major_claim": false,
       "verified": true,
       "sources": [
@@ -228,7 +228,7 @@
       "label": "行业进展",
       "title": "GitHub Copilot新增八种MCP连接器，企业管理员仍控制接入权限",
       "summary": "GitHub于11月18日宣布，Copilot公开预览新增Box、Supabase、Calendly、ClickUp、Mixpanel、Buildkite、Webflow和Wix等八种已验证MCP连接器，可在Copilot应用、CLI和VS Code中使用。Business与Enterprise需管理员允许编辑器预览功能，部分连接器还需更新MCP白名单，不能视为所有企业默认开放。",
-      "radar_pick": "opened_primary_publication",
+      "radar_pick": true,
       "major_claim": false,
       "verified": true,
       "sources": [
@@ -256,7 +256,7 @@
       "label": "行业进展",
       "title": "Gemini 4 Neon接入GitHub Copilot，企业可按模型策略启用",
       "summary": "GitHub11月18日宣布Gemini 4 Neon在Copilot中正式可用，覆盖VS Code、CLI、编码智能体、JetBrains等客户端，面向多步骤工具调用及编码任务。GitHub转述Google称其速度和成本效率优于Carbon，相关比较属于厂商主张；不同套餐和企业策略会影响可用性，推出过程亦为逐步开放。",
-      "radar_pick": "opened_primary_publication",
+      "radar_pick": false,
       "major_claim": false,
       "verified": true,
       "sources": [
@@ -284,7 +284,7 @@
       "label": "行业进展",
       "title": "GitHub Copilot团队级插件配置正式可用，统一分发获批工具",
       "summary": "GitHub11月18日将团队级Copilot定制功能正式开放给Business和Enterprise。团队维护者可将批准的Agent Plugins设为团队默认配置，供VS Code、Copilot App和CLI使用，成员仍可在政策允许时关闭。组织及企业级市场和插件策略优先于团队配置，适合统一管理但不能绕过合规审批。",
-      "radar_pick": "opened_primary_publication",
+      "radar_pick": false,
       "major_claim": false,
       "verified": true,
       "sources": [

@@ -990,6 +990,16 @@ Asia/Singapore 2026-11-16 09:30 至 2026-11-18 09:30；不纳入出版截止后�
 - 欧洲复兴开发银行警告：电网与融资短板阻碍新兴经济体参与 AI 产业（https://www.reuters.com/business/finance/developing-economies-risk-missing-out-defence-ai-boom-ebrd-warns-2026-11-17/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
 - 纽约州提出法官 AI 虚构引证问责法案，针对裁判文书真实性（https://www.reuters.com/legal/government/new-york-bill-would-punish-judges-who-misuse-ai-2026-11-17/；2026-11-17）。对照第63期和coverage.md，按本期新增实质进展独立收录。
 
+### 第 65 期（2026.11.18 — 11.20）
+
+Asia/Singapore 11月18日09:30至11月20日09:30；18日无小时标注的官方发布保守归本期；原文与取回日期分别记录。
+
+- Anthropic IPO 以每股83美元定价，公开发行规模创纪录（https://www.anthropic.com/news/anthropic-prices-initial-public-offering；2026-11-18）。与11月10日IPO路演及11月13日超额认购不同，11月18日正式确定发行价格及股数；官方公告与AP独立报道相互核对。
+- 腾讯第三季度披露WorkBuddy日活超千万，AI算力投入推动云业务增长（https://www.tencent.com/wp-content/uploads/2026/11/Tencent-Announces-2026-Third-Quarter-Results.pdf；2026-11-18）。与完整coverage.md第1至64期对照；本条是11月18至19日的新发布/新财务披露，非旧事件重复。
+- GitHub Copilot新增八种MCP连接器，企业管理员仍控制接入权限（https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot/；2026-11-18）。与完整coverage.md第1至64期对照；本条是11月18至19日的新发布/新财务披露，非旧事件重复。
+- Gemini 4 Neon接入GitHub Copilot，企业可按模型策略启用（https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot/；2026-11-18）。与完整coverage.md第1至64期对照；本条是11月18至19日的新发布/新财务披露，非旧事件重复。
+- GitHub Copilot团队级插件配置正式可用，统一分发获批工具（https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team/；2026-11-18）。与完整coverage.md第1至64期对照；本条是11月18至19日的新发布/新财务披露，非旧事件重复。
+
 <!-- RADAR CONTENT END -->
 
 ## 去重机制（由编辑按语义判断，不靠关键词脚本）
